@@ -1,0 +1,57 @@
+### x1_drs/anib_60026.bin full (52 lines)
+   1| (load "petersen constants")
+   2| 
+   3| ;******************************
+   4| #load-if-defined WONDER-RACE
+   5| 
+   6| (load "wonder rush")
+   7| 
+   8| #end-if
+   9| ;******************************
+  10| #load-if-defined DEATH-MATCH
+  11| 
+  12| (load "petersen map loads")
+  13| (load "petersen diplomacy")
+  14| 
+  15| 
+  16| (load "petersen supplement")
+  17| (load "petersen groups")
+  18| (load "petersen resign")
+  19| 
+  20| 
+  21| (load "petersen deathmatch")
+  22| 
+  23| #end-if
+  24| ;******************************
+  25| #load-if-defined DEFEND-WONDER
+  26| 
+  27| (load "petersen map loads")
+  28| (load "petersen diplomacy")
+  29| 
+  30| (load "wonder kill")
+  31| 
+  32| #end-if
+  33| ;******************************
+  34| #load-if-not-defined DEATH-MATCH
+  35| #load-if-not-defined DEFEND-WONDER
+  36| #load-if-not-defined WONDER-RACE
+  37| 
+  38| (load "petersen map loads")
+  39| (load "petersen diplomacy")
+  40| 
+  41| (load "petersen supplement")
+  42| (load "petersen groups")
+  43| (load "petersen resign")
+  44| 
+  45| 
+  46| (load "AI petersen rules")
+  47| 
+  48| #end-if
+  49| #end-if
+  50| #end-if
+  51| ;******************************
+  52| 
+
+=== every (load "...deathmatch...") site in all unpacked DRS ===
+aok_drs anib_60026.bin      9| (load "petersen deathmatch")
+x1_drs anib_60026.bin     21| (load "petersen deathmatch")

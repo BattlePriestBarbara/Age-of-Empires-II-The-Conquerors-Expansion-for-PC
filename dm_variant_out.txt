@@ -1,0 +1,55 @@
+======================================================================
+aok_drs : D:\aoe2_work\aok_drs\anib_60002.bin  45718 bytes  2445 lines
+   secondary-build                    78
+   unit-max                           78
+   deathmatch-unit-max                39
+   need-deathmatch-villagers          41
+   my-unique-unit-line                 5
+   cc-add-resource                     0
+   can-train                          47
+   (train                             47
+   pop-cap                             0
+   POPULATION-CAP                      0
+   population                         87
+   disable-self                       30
+   can-train villager                  2
+   can-train my-unique-unit-line       1
+   set-goal secondary-build 1          1
+   set-goal secondary-build 0         33
+   food-amount                         6
+   wood-amount                         6
+   last 4 lines: ['\t(buy-commodity food)', ')', '', '']
+   set-goal secondary-build 1 at lines: [1873]
+   train-unique rule at line 1872; action context:
+      1871| =>
+      1872| 	(train my-unique-unit-line)
+      1873| 	(set-goal secondary-build 1)
+      1874| )
+
+======================================================================
+x1_drs : D:\aoe2_work\x1_drs\anib_60002.bin  54203 bytes  2884 lines
+   secondary-build                   120
+   unit-max                          112
+   deathmatch-unit-max                56
+   need-deathmatch-villagers          58
+   my-unique-unit-line                 5
+   cc-add-resource                     0
+   can-train                          75
+   (train                             64
+   pop-cap                             0
+   POPULATION-CAP                      0
+   population                        121
+   disable-self                       35
+   can-train villager                  2
+   can-train my-unique-unit-line       1
+   set-goal secondary-build 1          2
+   set-goal secondary-build 0         50
+   food-amount                         6
+   wood-amount                         6
+   last 4 lines: ['\t(buy-commodity food)', ')', '', '']
+   set-goal secondary-build 1 at lines: [18, 2343]
+   train-unique rule at line 2342; action context:
+      2341| =>
+      2342| 	(train my-unique-unit-line)
+      2343| 	(set-goal secondary-build 1)
+      2344| )

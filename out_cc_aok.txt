@@ -1,0 +1,12 @@
+﻿========================================================================
+anib_60008.bin  (727 lines, 4 hits)
+    L713   (defrule
+    L714   .(timer-triggered t-chatmore)
+    L715   =>
+  * L716   .(cc-add-resource wood 500)
+    L717   .(cc-add-resource food 500)
+    L718   .(cc-add-resource gold 500)
+    L719   .(cc-add-resource stone 500)
+    L720   .(disable-timer t-chatmore)
+    L721   .(enable-timer t-chatmore 1200)
+    L722   )

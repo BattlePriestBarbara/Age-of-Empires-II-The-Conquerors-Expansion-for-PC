@@ -1,0 +1,148 @@
+﻿========================================================================
+anib_60001.bin  (1386 lines, 20 hits)
+    L148   (defrule
+    L149   .(current-age == dark-age)
+    L150   =>
+  * L151   .(cc-add-resource wood 100)
+    L152   .(cc-add-resource food 100)
+    L153   .(cc-add-resource gold 100)
+    L154   .(cc-add-resource stone 100)
+    L155   .(disable-self)
+    L156   )
+    L157   
+    L158   (defrule
+    L159   .(current-age == feudal-age)
+    L160   =>
+  * L161   .(cc-add-resource wood 200)
+    L162   .(cc-add-resource food 200)
+    L163   .(cc-add-resource gold 200)
+    L164   .(cc-add-resource stone 200)
+    L165   .(disable-self)
+    L166   )
+    L167   
+    L168   (defrule
+    L169   .(current-age == castle-age)
+    L170   =>
+  * L171   .(cc-add-resource wood 500)
+    L172   .(cc-add-resource food 500)
+    L173   .(cc-add-resource gold 500)
+    L174   .(cc-add-resource stone 500)
+    L175   .(disable-self)
+    L176   )
+    L177   
+    L178   (defrule
+    L179   .(current-age == imperial-age)
+    L180   =>
+  * L181   .(cc-add-resource wood 1000)
+    L182   .(cc-add-resource food 1000)
+    L183   .(cc-add-resource gold 1000)
+    L184   .(cc-add-resource stone 1000)
+    L185   .(disable-timer t-chatmore)
+    L186   .(enable-timer t-chatmore 1800)
+    L187   .(disable-self)
+    L190   (defrule
+    L191   .(timer-triggered t-chatmore)
+    L192   =>
+  * L193   .(cc-add-resource wood 500)
+    L194   .(cc-add-resource food 500)
+    L195   .(cc-add-resource gold 500)
+    L196   .(cc-add-resource stone 500)
+    L197   .(disable-timer t-chatmore)
+    L198   .(enable-timer t-chatmore 1200)
+    L199   )
+========================================================================
+anib_60008.bin  (222 lines, 4 hits)
+    L208   (defrule
+    L209   .(timer-triggered t-chatmore)
+    L210   =>
+  * L211   .(cc-add-resource wood 500)
+    L212   .(cc-add-resource food 500)
+    L213   .(cc-add-resource gold 500)
+    L214   .(cc-add-resource stone 500)
+    L215   .(disable-timer t-chatmore)
+    L216   .(enable-timer t-chatmore 1200)
+    L217   )
+========================================================================
+anib_60028.bin  (2628 lines, 4 hits)
+    L887   (defrule
+    L888   .(timer-triggered t-chatmore)
+    L889   =>
+  * L890   .(cc-add-resource wood 500)
+    L891   .(cc-add-resource food 500)
+    L892   .(cc-add-resource gold 500)
+    L893   .(cc-add-resource stone 500)
+    L894   .(disable-timer t-chatmore)
+    L895   .(enable-timer t-chatmore 1200)
+    L896   )
+========================================================================
+anib_60029.bin  (2581 lines, 28 hits)
+    L95    .(difficulty == hardest)
+    L96    .(goal wonder-attempt ATTACK)
+    L97    =>
+  * L98    .(cc-add-resource wood 10000)
+    L99    .(cc-add-resource food 10000)
+    L100   .(cc-add-resource gold 10000)
+    L101   .(cc-add-resource stone 10000)
+    L102   .(disable-self)
+    L103   )
+    L104   
+    L106   .(difficulty == hard)
+    L107   .(goal wonder-attempt ATTACK)
+    L108   =>
+  * L109   .(cc-add-resource wood 5000)
+    L110   .(cc-add-resource food 5000)
+    L111   .(cc-add-resource gold 5000)
+    L112   .(cc-add-resource stone 5000)
+    L113   .(disable-self)
+    L114   )
+    L115   
+    L117   .(difficulty == moderate)
+    L118   .(goal wonder-attempt ATTACK)
+    L119   =>
+  * L120   .(cc-add-resource wood 1000)
+    L121   .(cc-add-resource food 1500)
+    L122   .(cc-add-resource gold 1500)
+    L123   .(cc-add-resource stone 1000)
+    L124   .(disable-self)
+    L125   )
+    L126   
+    L128   .(difficulty == hardest)
+    L129   .(goal wonder-attempt DEFEND)
+    L130   =>
+  * L131   .(cc-add-resource wood 5000)
+    L132   .(cc-add-resource food 5000)
+    L133   .(cc-add-resource gold 5000)
+    L134   .(cc-add-resource stone 5000)
+    L135   .(disable-self)
+    L136   )
+    L137   
+    L139   .(difficulty == hard)
+    L140   .(goal wonder-attempt DEFEND)
+    L141   =>
+  * L142   .(cc-add-resource wood 1000)
+    L143   .(cc-add-resource food 1000)
+    L144   .(cc-add-resource gold 1000)
+    L145   .(cc-add-resource stone 1000)
+    L146   .(disable-self)
+    L147   )
+    L148   
+    L150   .(difficulty == moderate)
+    L151   .(goal wonder-attempt DEFEND)
+    L152   =>
+  * L153   .(cc-add-resource wood 500)
+    L154   .(cc-add-resource food 500)
+    L155   .(cc-add-resource gold 500)
+    L156   .(cc-add-resource stone 500)
+    L157   .(disable-self)
+    L158   )
+    L159   
+    L1645  (defrule
+    L1646  .(timer-triggered t-chatmore)
+    L1647  =>
+  * L1648  .(cc-add-resource wood 500)
+    L1649  .(cc-add-resource food 500)
+    L1650  .(cc-add-resource gold 500)
+    L1651  .(cc-add-resource stone 500)
+    L1652  .(disable-timer t-chatmore)
+    L1653  .(enable-timer t-chatmore 1200)
+    L1654  )

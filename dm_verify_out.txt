@@ -1,0 +1,267 @@
+==============================================================================
+--- petersen deathmatch (Conquerors)
+--- ORIGINAL  {'file': 'D:\\aoe2_work\\x1_drs\\anib_60002.bin', 'bytes': 54203, 'lines': 2884, 'crlf_lines': 2883, 'paren_depth_end': 0, 'paren_min_depth': 0, 'paren_min_line': 0, 'n_defrule': 244, 'pp_depth_end': 0, 'pp_stray_end': 0, 'non_ascii_bytes': 0}
+--- PATCHED   {'file': 'D:\\aoe2_work\\patch_out\\x1_drs_anib_60002.bin', 'bytes': 55928, 'lines': 2936, 'crlf_lines': 2935, 'paren_depth_end': 0, 'paren_min_depth': 0, 'paren_min_line': 0, 'n_defrule': 248, 'pp_depth_end': 0, 'pp_stray_end': 0, 'non_ascii_bytes': 0}
+--- appended 1673 bytes, 4 rules, 0 lines, 0 x #load-if-not-defined
+;##############################################################################
+;##  HD DEATH-MATCH AI PATCH  (appended by dm_patch.py)                      ##
+;##                                                                          ##
+;##  1. keeps "(goal secondary-build 1)" armed  -> the per-civ unit rules     ##
+;##     of this script keep training units for ever (originally the goal was  ##
+;##     only re-armed by the unique-unit rule, which needs a castle)          ##
+;##  2. builds houses on hard/hardest too (the original file only houses on   ##
+;##     difficulty <= moderate, so population was stuck at the start limit)   ##
+;##  3. tops up food/wood/gold/stone whenever any of them drops below 5000    ##
+;##############################################################################
+;---- 1) keep the unit-production loop permanently armed ----------------------
+(defrule
+	(goal secondary-build 0)
+=>
+	(set-goal secondary-build 1)
+)
+;---- 2) keep building houses on the harder difficulties ----------------------
+(defrule
+	(or
+		(difficulty == hard)
+		(difficulty == hardest)
+	)
+	(housing-headroom < 10)
+	(population-headroom > 0)
+	(can-build house)
+=>
+	(build house)
+)
+;---- 3) effectively unlimited resources --------------------------------------
+(defrule
+	(true)
+=>
+	(enable-timer t-production 10)
+	(disable-self)
+)
+
+(defrule
+	(timer-triggered t-production)
+	(or
+		(food-amount < 5000)
+		(wood-amount < 5000)
+		(gold-amount < 5000)
+		(stone-amount < 5000)
+	)
+=>
+	(disable-timer t-production)
+	(enable-timer t-production 5)
+	(cc-add-resource food 10000)
+	(cc-add-resource wood 10000)
+	(cc-add-resource gold 10000)
+	(cc-add-resource stone 10000)
+)
+
+==============================================================================
+--- petersen deathmatch (Age of Kings)
+--- ORIGINAL  {'file': 'D:\\aoe2_work\\aok_drs\\anib_60002.bin', 'bytes': 45718, 'lines': 2445, 'crlf_lines': 2444, 'paren_depth_end': 0, 'paren_min_depth': 0, 'paren_min_line': 0, 'n_defrule': 212, 'pp_depth_end': 0, 'pp_stray_end': 0, 'non_ascii_bytes': 0}
+--- PATCHED   {'file': 'D:\\aoe2_work\\patch_out\\aok_drs_anib_60002.bin', 'bytes': 47443, 'lines': 2497, 'crlf_lines': 2496, 'paren_depth_end': 0, 'paren_min_depth': 0, 'paren_min_line': 0, 'n_defrule': 216, 'pp_depth_end': 0, 'pp_stray_end': 0, 'non_ascii_bytes': 0}
+--- appended 1673 bytes, 4 rules, 0 lines, 0 x #load-if-not-defined
+;##############################################################################
+;##  HD DEATH-MATCH AI PATCH  (appended by dm_patch.py)                      ##
+;##                                                                          ##
+;##  1. keeps "(goal secondary-build 1)" armed  -> the per-civ unit rules     ##
+;##     of this script keep training units for ever (originally the goal was  ##
+;##     only re-armed by the unique-unit rule, which needs a castle)          ##
+;##  2. builds houses on hard/hardest too (the original file only houses on   ##
+;##     difficulty <= moderate, so population was stuck at the start limit)   ##
+;##  3. tops up food/wood/gold/stone whenever any of them drops below 5000    ##
+;##############################################################################
+;---- 1) keep the unit-production loop permanently armed ----------------------
+(defrule
+	(goal secondary-build 0)
+=>
+	(set-goal secondary-build 1)
+)
+;---- 2) keep building houses on the harder difficulties ----------------------
+(defrule
+	(or
+		(difficulty == hard)
+		(difficulty == hardest)
+	)
+	(housing-headroom < 10)
+	(population-headroom > 0)
+	(can-build house)
+=>
+	(build house)
+)
+;---- 3) effectively unlimited resources --------------------------------------
+(defrule
+	(true)
+=>
+	(enable-timer t-production 10)
+	(disable-self)
+)
+
+(defrule
+	(timer-triggered t-production)
+	(or
+		(food-amount < 5000)
+		(wood-amount < 5000)
+		(gold-amount < 5000)
+		(stone-amount < 5000)
+	)
+=>
+	(disable-timer t-production)
+	(enable-timer t-production 5)
+	(cc-add-resource food 10000)
+	(cc-add-resource wood 10000)
+	(cc-add-resource gold 10000)
+	(cc-add-resource stone 10000)
+)
+
+==============================================================================
+--- petersen constants (Conquerors) - fix 4
+--- ORIGINAL  {'file': 'D:\\aoe2_work\\x1_drs\\anib_60027.bin', 'bytes': 19383, 'lines': 629, 'crlf_lines': 628, 'paren_depth_end': 0, 'paren_min_depth': 0, 'paren_min_line': 0, 'n_defrule': 0, 'pp_depth_end': 0, 'pp_stray_end': 0, 'non_ascii_bytes': 0}
+--- PATCHED   {'file': 'D:\\aoe2_work\\patch_out\\x1_drs_anib_60027.bin', 'bytes': 21924, 'lines': 700, 'crlf_lines': 699, 'paren_depth_end': 0, 'paren_min_depth': 0, 'paren_min_line': 0, 'n_defrule': 0, 'pp_depth_end': 0, 'pp_stray_end': 0, 'non_ascii_bytes': 0}
+--- appended 2470 bytes, 0 rules, 0 lines, 8 x #load-if-not-defined
+;##############################################################################
+;##  HD DEATH-MATCH AI PATCH - catch-all for unknown population limits        ##
+;##                                                                          ##
+;##  Problem: the engine defines only POPULATION-CAP-25/50/75/100/125/150/   ##
+;##  175/200 (that symbol table lives in AoK HD.exe).  At any other lobby    ##
+;##  limit - e.g. 500 - NOT ONE of them is defined, so every constant the    ##
+;##  retail file defines *only* inside those blocks (deathmatch-unit-max,     ##
+;##  unit-max, civ-*, *-percent-pop, town sizes ...) stays undefined.  A rule ##
+;##  that mentions an undefined constant is invalid, which killed the whole   ##
+;##  death-match AI: no villagers, no houses, no army.                        ##
+;##                                                                          ##
+;##  Fix: this block is compiled only if none of the 8 classic caps is        ##
+;##  active.  It repeats the POPULATION-CAP-200 block scaled to a 500 slot      ##
+;##  game (x2.5); town sizes keep their cap-200 values.                     ##
+;##############################################################################
+#load-if-not-defined POPULATION-CAP-25
+#load-if-not-defined POPULATION-CAP-50
+#load-if-not-defined POPULATION-CAP-75
+#load-if-not-defined POPULATION-CAP-100
+#load-if-not-defined POPULATION-CAP-125
+#load-if-not-defined POPULATION-CAP-150
+#load-if-not-defined POPULATION-CAP-175
+#load-if-not-defined POPULATION-CAP-200
+(defconst civ-dark-rush 50)
+(defconst civ-dark 63)
+(defconst civ-dark-mod 38)
+(defconst civ-feudal-mod 50)
+(defconst civ-feudal 100)
+(defconst civ-castle 175)
+(defconst pop-cap 500)
+(defconst deathmatch-unit-max 425)
+
+(defconst feudal-town-size 20)
+(defconst castle-town-size 35)
+(defconst imperial-town-size 40)
+(defconst town-center-count 9)
+
+#load-if-defined DIFFICULTY-EASIEST
+(defconst unit-max 325)
+#end-if
+
+#load-if-defined DIFFICULTY-EASY
+(defconst unit-max 325)
+#end-if
+
+#load-if-defined DIFFICULTY-MODERATE
+(defconst unit-max 400)
+#end-if
+
+#load-if-defined DIFFICULTY-HARD
+(defconst unit-max 475)
+#end-if
+
+#load-if-defined DIFFICULTY-HARDEST
+(defconst unit-max 475)
+#end-if
+
+(defconst five-percent-pop 25)
+(defconst ten-percent-pop 50)
+(defconst fifteen-percent-pop 75)
+(defconst twenty-percent-pop 100)
+(defconst thirty-percent-pop 150)
+(defconst fifty-percent-pop 250)
+#end-if
+#end-if
+#end-if
+#end-if
+#end-if
+#end-if
+#end-if
+#end-if
+
+==============================================================================
+--- constants (Age of Kings) - fix 4
+--- ORIGINAL  {'file': 'D:\\aoe2_work\\aok_drs\\anib_60010.bin', 'bytes': 14168, 'lines': 674, 'crlf_lines': 673, 'paren_depth_end': 0, 'paren_min_depth': 0, 'paren_min_line': 0, 'n_defrule': 26, 'pp_depth_end': 0, 'pp_stray_end': 0, 'non_ascii_bytes': 0}
+--- PATCHED   {'file': 'D:\\aoe2_work\\patch_out\\aok_drs_anib_60010.bin', 'bytes': 16587, 'lines': 742, 'crlf_lines': 741, 'paren_depth_end': 0, 'paren_min_depth': 0, 'paren_min_line': 0, 'n_defrule': 26, 'pp_depth_end': 0, 'pp_stray_end': 0, 'non_ascii_bytes': 0}
+--- appended 2351 bytes, 0 rules, 0 lines, 8 x #load-if-not-defined
+
+;##############################################################################
+;##  HD DEATH-MATCH AI PATCH - catch-all for unknown population limits        ##
+;##                                                                          ##
+;##  Problem: the engine defines only POPULATION-CAP-25/50/75/100/125/150/   ##
+;##  175/200 (that symbol table lives in AoK HD.exe).  At any other lobby    ##
+;##  limit - e.g. 500 - NOT ONE of them is defined, so every constant the    ##
+;##  retail file defines *only* inside those blocks (deathmatch-unit-max,     ##
+;##  unit-max, civ-*, *-percent-pop, town sizes ...) stays undefined.  A rule ##
+;##  that mentions an undefined constant is invalid, which killed the whole   ##
+;##  death-match AI: no villagers, no houses, no army.                        ##
+;##                                                                          ##
+;##  Fix: this block is compiled only if none of the 8 classic caps is        ##
+;##  active.  It repeats the POPULATION-CAP-200 block scaled to a 500 slot      ##
+;##  game (x2.5); town sizes keep their cap-200 values.                     ##
+;##############################################################################
+#load-if-not-defined POPULATION-CAP-25
+#load-if-not-defined POPULATION-CAP-50
+#load-if-not-defined POPULATION-CAP-75
+#load-if-not-defined POPULATION-CAP-100
+#load-if-not-defined POPULATION-CAP-125
+#load-if-not-defined POPULATION-CAP-150
+#load-if-not-defined POPULATION-CAP-175
+#load-if-not-defined POPULATION-CAP-200
+(defconst civ-dark-rush 50)
+(defconst civ-dark 63)
+(defconst civ-feudal 100)
+(defconst civ-castle 175)
+(defconst pop-cap 500)
+(defconst deathmatch-unit-max 425)
+
+(defconst feudal-town-size 20)
+(defconst castle-town-size 35)
+(defconst imperial-town-size 40)
+
+#load-if-defined DIFFICULTY-EASIEST
+(defconst unit-max 325)
+#end-if
+
+#load-if-defined DIFFICULTY-EASY
+(defconst unit-max 325)
+#end-if
+
+#load-if-defined DIFFICULTY-MODERATE
+(defconst unit-max 400)
+#end-if
+
+#load-if-defined DIFFICULTY-HARD
+(defconst unit-max 475)
+#end-if
+
+#load-if-defined DIFFICULTY-HARDEST
+(defconst unit-max 475)
+#end-if
+
+(defconst five-percent-pop 25)
+(defconst ten-percent-pop 50)
+(defconst fifteen-percent-pop 75)
+(defconst twenty-percent-pop 100)
+(defconst thirty-percent-pop 150)
+#end-if
+#end-if
+#end-if
+#end-if
+#end-if
+#end-if
+#end-if
+#end-if
+

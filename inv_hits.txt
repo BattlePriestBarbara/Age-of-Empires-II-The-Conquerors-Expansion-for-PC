@@ -1,0 +1,75 @@
+﻿    + Docs
+    tr_spred.txt                                   97204  2013-04-06 01:04:57
+    游戏打不开请安装.txt                                      84  2017-02-02 10:53:25
+    说明.txt                                          1959  2017-11-16 15:58:44
+    AI.txt                                             8  2013-04-06 01:03:38
+    Avi.txt                                            9  2013-04-06 01:03:45
+    language_base.txt                               4851  2013-04-06 01:03:45
+    language.txt                                    3794  2013-04-06 01:04:57
+    custome_palette_list.txt                         125  2013-04-06 01:04:06
+    Load.txt                                          10  2013-04-06 01:04:17
+[DIR] Docs  (0 files, 1 subdirs)
+[DIR] Docs\zh  (4 files, 0 subdirs)
+    Armies.txt                                      1250  2013-04-06 01:05:14
+    ArmiesMongols.txt                               2853  2013-04-06 01:05:14
+    ArmiesOrg.txt                                   4035  2013-04-06 01:05:14
+    ArmiesStrat.txt                                 1376  2013-04-06 01:05:14
+    ArmiesTactics.txt                               7794  2013-04-06 01:05:14
+    Aztecs.txt                                      1795  2013-04-06 01:05:14
+    British original.txt                            3767  2013-04-06 01:05:14
+    Byzantines.txt                                  2606  2013-04-06 01:05:14
+    CastleDefenses.txt                              3934  2013-04-06 01:05:14
+    CastleEvolution.txt                             3074  2013-04-06 01:05:14
+    CastleSiege.txt                                 8326  2013-04-06 01:05:14
+    Castles.txt                                      718  2013-04-06 01:05:14
+    Celts.txt                                       1787  2013-04-06 01:05:14
+    Chinese.txt                                     2240  2013-04-06 01:05:14
+    DarkArmies.txt                                  2917  2013-04-06 01:05:15
+    Franks.txt                                      2298  2013-04-06 01:05:15
+    Goths.txt                                       2012  2013-04-06 01:05:15
+    Gunpowder.txt                                   1912  2013-04-06 01:05:15
+    Huns.txt                                        2401  2013-04-06 01:05:15
+    Japanese.txt                                    1873  2013-04-06 01:05:15
+    Knights.txt                                     7082  2013-04-06 01:05:15
+    Koreans.txt                                     1332  2013-04-06 01:05:15
+    Mayans.txt                                      1115  2013-04-06 01:05:16
+    Mongols.txt                                     2296  2013-04-06 01:05:16
+    Naval.txt                                       4083  2013-04-06 01:05:16
+    Persians.txt                                    1027  2013-04-06 01:05:16
+    Saracens.txt                                    2433  2013-04-06 01:05:16
+    Spanish.txt                                     2290  2013-04-06 01:05:16
+    Teutons.txt                                     2360  2013-04-06 01:05:16
+    Turks.txt                                       2065  2013-04-06 01:05:17
+    Vikings.txt                                     2426  2013-04-06 01:05:17
+    Warfare.txt                                     1115  2013-04-06 01:05:17
+    Weapons.txt                                      606  2013-04-06 01:05:17
+    WeaponsCav.txt                                  4006  2013-04-06 01:05:17
+    WeaponsHand.txt                                 2254  2013-04-06 01:05:17
+    WeaponsMissile.txt                              2779  2013-04-06 01:05:17
+    barbarianinvaders.txt                           1951  2013-04-06 01:05:14
+    british regular.txt                             3767  2013-04-06 01:05:14
+    british test.txt                               19213  2013-04-06 01:05:14
+    british.txt                                     2447  2013-04-06 01:05:14
+    charlemagne.txt                                 1371  2013-04-06 01:05:14
+    darkagereligion.txt                             2196  2013-04-06 01:05:14
+    darkages.txt                                     264  2013-04-06 01:05:14
+    economy.txt                                     1592  2013-04-06 01:05:15
+    feudalcontract.txt                              1216  2013-04-06 01:05:15
+    feudalism.txt                                    194  2013-04-06 01:05:15
+    feudalismdecline.txt                            3030  2013-04-06 01:05:15
+    history.txt                                     3171  2013-04-06 01:05:15
+    latemiddleages.txt                               306  2013-04-06 01:05:16
+    middleages.txt                                   809  2013-04-06 01:05:16
+    politics.txt                                    1380  2013-04-06 01:05:16
+    religion.txt                                     994  2013-04-06 01:05:16
+    renaissance.txt                                 1736  2013-04-06 01:05:16
+    technology.txt                                   710  2013-04-06 01:05:16
+    thecrusades.txt                                 3169  2013-04-06 01:05:16
+    thefallofrome.txt                               2187  2013-04-06 01:05:16
+    themanor.txt                                    1422  2013-04-06 01:05:16
+    thevikings.txt                                  1996  2013-04-06 01:05:16
+    Learn.txt                                         11  2013-04-06 01:04:42
+    forbidden_files.txt                              433  2013-04-06 01:04:42
+    Random.txt                                        12  2013-04-06 01:04:42
+    Support.txt                                       13  2013-04-06 01:04:54
+AI.txt bytes (8): b'AI.txt\r\n'

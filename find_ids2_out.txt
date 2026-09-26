@@ -1,0 +1,210 @@
+== i32 == 60027 : 0 aligned hits ==
+
+== i32 == 60026 : 1 aligned hits ==
+   0x143bc0  ... 57295044 2017204328 -361142272 1634205696 -396203666 -403528 141034346 1744861244 60026 1768841576 -677189534 57343993 2017194088 -361011200 1634205696 -396203666 -403572 -530054294 1744861243 60028 ...
+
+== i32 == 60028 : 2 aligned hits ==
+   0x143bec  ... 57343993 2017194088 -361011200 1634205696 -396203666 -403572 -530054294 1744861243 60028 1768841576 -680073118 -997982215 1745054272 7879632 15367528 1851877376 1575510633 -2080376361 -859631420 -858993460 ...
+   0x14b734  ... 18284 608487168 36208 608487168 36468 608487168 20344 608487168 60028 612681472 128 235 -2077981497 -335544320 -956301312 8922244 5373952 -2067333120 35876 8448 ...
+
+== i32 == 60029 : 0 aligned hits ==
+
+== i32 == 60001 : 1 aligned hits ==
+   0x143988  ... 2025410642 -402615962 -423268 69487755 1577602697 574041 1147667306 1744861246 60001 1768841576 -639965086 57343993 2017340520 -362649600 1634205696 -396203666 -403004 342360938 1744861246 60003 ...
+
+== i32 == 54000 : 0 aligned hits ==
+
+== i32 == 54202 : 0 aligned hits ==
+
+== strings 0x382c00..0x384200 ==
+   0x382c04  button7.wav
+   0x382c10  button6.wav
+   0x382c1c  button5.wav
+   0x382c28  button4.wav
+   0x382c34  button3.wav
+   0x382c40  scr2
+   0x382c48  avg view time=%lu, count=%lu
+   0x382c68  t%lu,f%lu,max,r(v%lu,m%lu,o%lu),s%lu,u%lu,c%lu,lg%lu,sp%lu,ss%lu,sm%lu,m%lu,o%lu,p%lu
+   0x382cc0  t%lu,f%lu,avg,r(v%lu,m%lu,o%lu),s%lu,u%lu,c%lu,lg%lu,sp%lu,ss%lu,sm%lu,m%lu,o%lu,p%lu
+   0x382d18  %s - %s %s.mgx
+   0x382d28  random\%s.rms
+   0x382d38  video_changed_res=%d, double_size=%d
+   0x382d60  %s%s%s%c
+   0x382d6c  %s%s%s%s
+   0x382d7c  gamedata.drs
+   0x382d8c  interfac.drs
+   0x382d9c  terrain.drs
+   0x382da8  graphics.drs
+   0x382db8  sounds.drs
+   0x382dc4  gamedata_x1_p1.drs
+   0x382dd8  gamedata_x1.drs
+   0x382de8  sounds_x1.drs
+   0x382df8  TutorialInfo
+   0x382e08  HistoryInfo
+   0x382e14  TechInfo
+   0x382e20  CampaignInfo
+   0x382e30  DeathMatchInfo
+   0x382e40  RandomMapInfo
+   0x382e50  Game Mission Dialog
+   0x382e64  History Screen
+   0x382e74  Custom Multimedia Screen
+   0x382e90  Multimedia Screen
+   0x382ea4  Logo2Screen
+   0x382eb0  Logo1Screen
+   0x382ebc  QuotesInfo
+   0x382ec8  FeaturesInfo
+   0x382ed8  ScenarioEditorInfo
+   0x382eec  Name Selection Screen
+   0x382f04  New Name Dialog
+   0x382f14  Sprite Editor Screen
+   0x382f2c  Combat Comparison Screen
+   0x382f48  Single Player Menu
+   0x382f5c  Scenario Editor Menu
+   0x382f74  Player Select
+   0x382f84  Join Screen
+   0x382f90  Connecting Screen
+   0x382fa4  Main Error Screen
+   0x382fb8  MP Startup Screen
+   0x382fcc  Campaign Game Screen
+   0x382fe4  Campaign Selection Screen
+   0x383000  Select Scenario Screen
+   0x383018  Game Settings Screen
+   0x383030  Game Setup Screen
+   0x383044  Campaign Editor Screen
+   0x38305c  Create Dialog
+   0x38306c  Lobby Browser Screen
+   0x383084  Video Screen
+   0x383094  One Click Garrisoning
+   0x3830ac  Advanced Buttons
+   0x383268  AUTOSAVE=
+   0x383274  AUTO_SAVE
+   0x383280  AUTO SAVE
+   0x38328c  AUTOSAVE
+   0x383298  LIMIT=
+   0x3832a0  NOTERRAINSOUND
+   0x3832b0  %s%s.wmv
+   0x3832bc  intro
+   0x3832c4  King Scenarios
+   0x3832d4  %s.scx
+   0x3832dc  %s.scn
+   0x3832e4  43%^%^Jm 43%^%^Jm
+   0x3832f8  Jm_j%%#L%^_j1$  ^@)Am %c%^dWcWAm:: *_%^::
+   0x383324  w>%^+!%^
+   0x383330  %chx%%3C%^
+   0x38333c  hxAm1Z#L1$
+   0x383348  %%%^3CcW %^dW
+   0x383358  +!_j%c*_Am%%}{hx3CcW
+   0x383370  %%%^*_#LdW @)%^%^?>
+   0x383384  3C@)AmAm1$Am 1$ ^AmhxcW }{#L%c%c::'1$
+   0x3833ac  dWhx ^_j%%hx+! 43%^dW?>Am%%1$
+   0x3833cc  %%Am1$#L1ZdW
+   0x3833dc  43#L%cw>::43#L%cw>::43#L%cw>::
+   0x3833fc  #L +!%^&TAm  ^@)Am %c%^dWcWAm:: @)Amhx?>
+   0x383428  @)%^43 ?>%^ ::%^_j  ^_j%%dW  ^@)#L1$ %^dW
+   0x383454   ^%^ 1$%c#L ^@)Am%%AmAmdW1$
+   0x383470   ^%^%%w>Am?>%^8
+   0x383480   ^%^%%w>Am?>%^7
+   0x383490   ^%^%%w>Am?>%^6
+   0x3834a0   ^%^%%w>Am?>%^5
+   0x3834b0   ^%^%%w>Am?>%^4
+   0x3834c0   ^%^%%w>Am?>%^3
+   0x3834d0   ^%^%%w>Am?>%^2
+   0x3834e0   ^%^%%w>Am?>%^1
+   0x3834f0  *_+!hx3CcW ?>Amhx ^@)
+   0x383508  #L %% 43#LdWdWAm%%
+   0x38351c  Multiplayer
+   0x383528  %s%d
+   0x383534  xcam
+   0x38353c  age2_x1
+   0x383544  eslogo
+   0x38354e   @scr3
+   0x383558  auto%03d.gax
+   0x383568  $$$ PROBLEM COMMUNICATING WITH %s
+   0x38358c  Reloading Demo
+   0x38359c  scr1
+   0x3835a4  AOEIIHD
+   0x3835ac  CONNECT_LOBBY
+   0x3835bc  LOADDB
+   0x3835c4  loaddb
+   0x3835cc  STATIC
+   0x3835d4  InputDisabledWindow
+   0x3835e8  tribe
+   0x3835f0  Ip Launch
+   0x3835fc  CLIENT_IP_LAUNCH
+   0x383610  HOST_IP_LAUNCH
+   0x383620  %s.mgx
+   0x383628  %s.gam
+   0x383630  %s.gax
+   0x383638  scenario\<locale>\%s.mp3
+   0x383654  scenario\<locale>\%s.wav
+   0x38367f  ?ffffff
+   0x3837f0  diam_map_view::draw_objects
+   0x383aac  Victory Condition:       %s
+   0x383acc  Map Type:                %s
+   0x383aec  Map Size:                %s
+   0x383b0c  Scenario:                %s
+   0x383b2c  Number Players:          %d
+   0x383b4c  AI Log file for Game Started %s
+   0x383b6f  *****************************************************
+   0x383ba8  tr_tree.txt
+   0x383bb4  %d %d %d %d %d %d %d
+   0x383bd0  wonder kill.per
+   0x383be0  wonder rush.per
+   0x383bf0  petersen constants.per
+   0x383c08  randomgame.per
+   0x383c18  petersen rush.per
+   0x383c2c  petersen warboat island.per
+   0x383c48  petersen dip bully.per
+   0x383c60  petersen dip insult.per
+   0x383c78  petersen groups.per
+   0x383c8c  petersen dip feeder.per
+   0x383ca4  petersen gather.per
+   0x383cb8  petersen dip boomer.per
+   0x383cd0  petersen market.per
+   0x383ce4  petersen wonder.per
+   0x383cf8  petersen resign.per
+   0x383d0c  petersen castle.per
+   0x383d20  petersen diplomacy.per
+   0x383d38  petersen tower.per
+   0x383d4c  petersen civ loads.per
+   0x383d64  petersen map loads.per
+   0x383d7c  petersen full tech.per
+   0x383d94  petersen difficulty loads.per
+   0x383db4  petersen supplement.per
+   0x383dcc  petersen warboat.per
+   0x383de4  petersen dip liar.per
+   0x383dfc  petersen fishboat.per
+   0x383e14  petersen upgrades.per
+   0x383e2c  petersen deathmatch.per
+   0x383e44  ai petersen rules.per
+   0x383e5c  33;AR
+   0x383e62  :Aq=:A
+   0x383e72  7A)\7A
+   0x383e79  z4A\
+   0x383e91  Q(A.exp
+   0x383e9c  send_zone_score_info
+   0x383eb4  *.per
+   0x383ede  HCsetInChatGroup(%d, TRUE) - %d, %d, %d, %d, %d
+   0x383f10  setInChatGroup(%d, FALSE) - %d, %d, %d, %d, %d
+   0x383f40  any_team_mate - %d, %d, %d, %d, %d
+   0x383f78  explore %d percent of the map
+   0x383f98  aqquire %d of attribute %d
+   0x383fb4  Bring %s to %s
+   0x383fc4  Bring %s to area (%f, %f) - (%f, %f)
+   0x383fec  Destroy all %s of player %d
+   0x384008  Destroy %d %s of player %d
+   0x384024  Destroy %s
+   0x384030  Create %d %s in area (%f, %f) - (%f, %f)
+   0x38405c  Create %d %s
+   0x38406c  Capture %s
+   0x384078  BlkEdge.Dat
+   0x384084  TileEdge.Dat
+   0x384094  view::ScrollTerrainBuffer
+   0x3840b0  LoqMaps.dat
+   0x3840bc  blendomatic_x1.dat
+   0x3840d0  PatternMasks.dat
+   0x3840e4  LightMaps.dat
+   0x3840f4  FilterMaps.dat
+   0x384104  STEMPLET.DAT
+   0x384114  VIEW_ICM.DAT
+   0x384124  Full Map Buffer

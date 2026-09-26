@@ -1,0 +1,109 @@
+### x1_drs anib_60002.bin (2884 lines)  last 12 non-empty:
+  2870| =>
+  2871| 	(chat-local-to-self "need wood")
+  2872| 	(buy-commodity wood)
+  2873| )
+  2875| (defrule
+  2876| 	(food-amount < 1600)
+  2877| 	(gold-amount > 5000)
+  2878| 	(can-buy-commodity food)
+  2879| =>
+  2880| 	(chat-local-to-self "need food")
+  2881| 	(buy-commodity food)
+  2882| )
+
+### x1_drs anib_60007.bin (1164 lines)  last 12 non-empty:
+  1151| (defrule
+  1152| 	(goal siege-available YES)
+  1153| 	(goal monk-rating GOOD)
+  1154| 	(difficulty <= moderate)
+  1155| 	(soldier-count > ten-percent-pop)
+  1156| 	(gold-amount >= 300)
+  1157| 	(unit-type-count-total missionary < fifteen-percent-pop)
+  1158| 	(can-train missionary)
+  1159| =>
+  1160| 	(train missionary)
+  1161| )
+  1162| #end-if
+
+### x1_drs anib_60026.bin (52 lines)  last 12 non-empty:
+    35| #load-if-not-defined DEFEND-WONDER
+    36| #load-if-not-defined WONDER-RACE
+    38| (load "petersen map loads")
+    39| (load "petersen diplomacy")
+    41| (load "petersen supplement")
+    42| (load "petersen groups")
+    43| (load "petersen resign")
+    46| (load "AI petersen rules")
+    48| #end-if
+    49| #end-if
+    50| #end-if
+    51| ;******************************
+
+### x1_drs anib_60027.bin (629 lines)  last 12 non-empty:
+   617| (defconst feudal-mill-count 1)
+   618| (defconst castle-mill-count 2)
+   619| (defconst imperial-mill-count 3)
+   620| (defconst mining-count 12)
+   621| #end-if
+   622| ;**************************
+   623| #load-if-defined GIANT-MAP
+   624| (defconst feudal-mill-count 2)
+   625| (defconst castle-mill-count 3)
+   626| (defconst imperial-mill-count 4)
+   627| (defconst mining-count 15)
+   628| #end-if
+
+### aok_drs anib_60002.bin (2445 lines)  last 12 non-empty:
+  2431| =>
+  2432| 	(chat-local-to-self "need wood")
+  2433| 	(buy-commodity wood)
+  2434| )
+  2436| (defrule
+  2437| 	(food-amount < 1600)
+  2438| 	(gold-amount > 5000)
+  2439| 	(can-buy-commodity food)
+  2440| =>
+  2441| 	(chat-local-to-self "need food")
+  2442| 	(buy-commodity food)
+  2443| )
+
+### aok_drs anib_60007.bin (803 lines)  last 12 non-empty:
+   791| (defrule
+   792| 	(goal siege-available YES)
+   793| 	(goal monk-rating GOOD)
+   794| 	(difficulty <= moderate)
+   795| 	(soldier-count > ten-percent-pop)
+   796| 	(gold-amount >= 300)
+   797| 	(unit-type-count-total monk < fifteen-percent-pop)
+   798| 	(can-train monk)
+   799| =>
+   800| 	(train monk)
+   801| )
+   802| ;************************************************
+
+### aok_drs anib_60026.bin (16 lines)  last 12 non-empty:
+     1| (load "petersen constants")
+     2| (load "petersen map loads")
+     3| (load "petersen supplement")
+     4| (load "petersen groups")
+     5| (load "petersen resign")
+     7| #load-if-defined DEATH-MATCH
+     9| 	(load "petersen deathmatch")
+    11| #else
+    13| (load "AI petersen rules")
+    15| #end-if
+
+### aok_drs anib_60027.bin (233 lines)  last 12 non-empty:
+   222| ;timer 9 = the lumber-camp timer
+   223| ;timer 10 = used to see if we've risen in age. Once we're imperial, used to build extraneous units
+   224| (defconst t-tribute 1)
+   225| (defconst t-attackgroup 2)
+   226| (defconst t-production 3)
+   227| (defconst t-chat 5)
+   228| (defconst t-chathelp 6)
+   229| (defconst t-tower 7)
+   230| (defconst t-chatmore 8)
+   231| (defconst t-lumbercamp 9)
+   232| (defconst t-ageup 10)
+   233| ;;;  ]ma

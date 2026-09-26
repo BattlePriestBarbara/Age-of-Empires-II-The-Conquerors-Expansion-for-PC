@@ -1,0 +1,129 @@
+======================================================================
+x1_drs/anib_60002.bin : 2884 lines
+  1589| farm           pp=-
+        conds: (building-type-count-total lumber-camp > 0) (idle-farm-count == 0) (sheep-and-forage-too-far) (can-build farm)
+        acts+: ;********************************* | ;age advancement
+  1679| house          pp=-
+        conds: (difficulty <= moderate) (building-type-count-total house <= fifteen-percent-pop) (can-build house)
+        acts+: #load-if-defined DIFFICULTY-EASIEST | (military-population < 10)
+  1689| house          pp=DIFFICULTY-EASIEST
+        conds: (military-population < 10) (housing-headroom < 5) (population-headroom > 0) (can-build house)
+        acts+: #end-if | #load-if-defined DIFFICULTY-EASY
+  1700| house          pp=DIFFICULTY-EASY
+        conds: (military-population < civ-dark-rush) (housing-headroom < 5) (population-headroom > 0) (can-build house)
+        acts+: #end-if | (strategic-number sn-gold-gatherer-percentage > 0)
+  1710| mining-camp    pp=-
+        conds: (strategic-number sn-gold-gatherer-percentage > 0) (building-type-count mining-camp == 0) (resource-found gold) (can-build mining-camp)
+        acts+: (strategic-number sn-wood-gatherer-percentage > 0) | (building-type-count lumber-camp == 0)
+  1718| lumber-camp    pp=-
+        conds: (strategic-number sn-wood-gatherer-percentage > 0) (building-type-count lumber-camp == 0) (can-build lumber-camp)
+        acts+: (current-age == imperial-age) | (building-type-count siege-workshop > 0)
+  1728| town-center    pp=-
+        conds: (current-age == imperial-age) (building-type-count siege-workshop > 0) (building-type-count castle > 0) (building-type-count town-center < 3) (can-build town-center)
+        acts+: ;build the following after running low on resources
+  1744| town-center    pp=-
+        conds: (strategic-number sn-percent-civilian-gatherers >= 85) (timer-triggered t-lumbercamp) (resource-found gold) (resource-found stone) (or (dropsite-min-distance gold > 7) (dropsite-min-distance stone > 7) ) (can-build town-center)
+        acts+: (strategic-number sn-percent-civilian-gatherers >= 85) | (timer-triggered t-lumbercamp)
+  1754| town-center    pp=-
+        conds: (strategic-number sn-percent-civilian-gatherers >= 85) (timer-triggered t-lumbercamp) (resource-found wood) (dropsite-min-distance wood > 7) (can-build town-center)
+        acts+: (timer-triggered t-lumbercamp) | =>
+  1769| mill           pp=-
+        conds: (building-type-count-total mill == 0) (building-type-count-total market == 0) (can-build mill)
+        acts+: (building-type-count-total market == 0) | (can-build market)
+  1776| market         pp=-
+        conds: (building-type-count-total market == 0) (can-build market)
+        acts+: (building-type-count-total monastery < 3) | (can-build monastery)
+  1783| monastery      pp=-
+        conds: (building-type-count-total monastery < 3) (can-build monastery)
+        acts+: (can-build barracks) | (building-type-count-total barracks < 2)
+  1790| barracks       pp=-
+        conds: (can-build barracks) (building-type-count-total barracks < 2)
+        acts+: (building-type-count-total barracks == 2) | (unit-type-count villager > 6)
+  1805| archery-range  pp=-
+        conds: (building-type-count-total archery-range < 2) (can-build archery-range)
+        acts+: (building-type-count-total archery-range == 2) | (unit-type-count villager > 6)
+  1820| stable         pp=-
+        conds: (building-type-count-total stable < 2) (can-build stable)
+        acts+: (building-type-count-total stable == 2) | (unit-type-count villager > 6)
+  1835| siege-workshop pp=-
+        conds: (building-type-count-total siege-workshop < 2) (can-build siege-workshop)
+        acts+: (building-type-count-total siege-workshop > 1) | (building-type-count-total siege-workshop < 4)
+  1851| castle         pp=-
+        conds: (building-type-count-total castle < 3) (can-build castle)
+        acts+: (building-type-count-total castle > 2) | (building-type-count-total castle < 5)
+  1876| dock           pp=-
+        conds: (or (and (goal 1 1) (building-type-count-total dock < 2) ) (and (goal 1 10) (building-type-count-total dock < 4) ) ) (can-build dock)
+        acts+: (building-type-count-total blacksmith < 2) | (can-build blacksmith)
+  1883| blacksmith     pp=-
+        conds: (building-type-count-total blacksmith < 2) (can-build blacksmith)
+        acts+: (building-type-count-total university == 0) | (can-build university)
+  1890| university     pp=-
+        conds: (building-type-count-total university == 0) (can-build university)
+        acts+: ;***************************************** | ;UPGRADES | (can-research my-unique-unit-upgrade)
+
+--- headroom tokens: housing=2 population=2
+
+======================================================================
+aok_drs/anib_60002.bin : 2445 lines
+  1146| farm           pp=-
+        conds: (building-type-count-total lumber-camp > 0) (idle-farm-count == 0) (sheep-and-forage-too-far) (can-build farm)
+        acts+: ;********************************* | ;age advancement
+  1236| house          pp=-
+        conds: (difficulty <= moderate) (building-type-count-total house <= fifteen-percent-pop) (can-build house)
+        acts+: #load-if-defined DIFFICULTY-EASIEST | (military-population < 10)
+  1246| house          pp=DIFFICULTY-EASIEST
+        conds: (military-population < 10) (housing-headroom < 5) (population-headroom > 0) (can-build house)
+        acts+: #end-if | #load-if-defined DIFFICULTY-EASY
+  1257| house          pp=DIFFICULTY-EASY
+        conds: (military-population < civ-dark-rush) (housing-headroom < 5) (population-headroom > 0) (can-build house)
+        acts+: #end-if | (strategic-number sn-gold-gatherer-percentage > 0)
+  1267| mining-camp    pp=-
+        conds: (strategic-number sn-gold-gatherer-percentage > 0) (building-type-count mining-camp == 0) (resource-found gold) (can-build mining-camp)
+        acts+: (strategic-number sn-wood-gatherer-percentage > 0) | (building-type-count lumber-camp == 0)
+  1275| lumber-camp    pp=-
+        conds: (strategic-number sn-wood-gatherer-percentage > 0) (building-type-count lumber-camp == 0) (can-build lumber-camp)
+        acts+: (current-age == imperial-age) | (building-type-count siege-workshop > 0)
+  1285| town-center    pp=-
+        conds: (current-age == imperial-age) (building-type-count siege-workshop > 0) (building-type-count castle > 0) (building-type-count town-center < 3) (can-build town-center)
+        acts+: ;build the following after running low on resources
+  1301| town-center    pp=-
+        conds: (strategic-number sn-percent-civilian-gatherers >= 85) (timer-triggered t-lumbercamp) (resource-found gold) (resource-found stone) (or (dropsite-min-distance gold > 7) (dropsite-min-distance stone > 7) ) (can-build town-center)
+        acts+: (strategic-number sn-percent-civilian-gatherers >= 85) | (timer-triggered t-lumbercamp)
+  1311| town-center    pp=-
+        conds: (strategic-number sn-percent-civilian-gatherers >= 85) (timer-triggered t-lumbercamp) (resource-found wood) (dropsite-min-distance wood > 7) (can-build town-center)
+        acts+: (timer-triggered t-lumbercamp) | =>
+  1326| mill           pp=-
+        conds: (building-type-count-total mill == 0) (building-type-count-total market == 0) (can-build mill)
+        acts+: (building-type-count-total market == 0) | (can-build market)
+  1333| market         pp=-
+        conds: (building-type-count-total market == 0) (can-build market)
+        acts+: (building-type-count-total blacksmith < 2) | (can-build blacksmith)
+  1340| blacksmith     pp=-
+        conds: (building-type-count-total blacksmith < 2) (can-build blacksmith)
+        acts+: (building-type-count-total university == 0) | (can-build university)
+  1347| university     pp=-
+        conds: (building-type-count-total university == 0) (can-build university)
+        acts+: (building-type-count-total monastery < 3) | (can-build monastery)
+  1354| monastery      pp=-
+        conds: (building-type-count-total monastery < 3) (can-build monastery)
+        acts+: (can-build barracks) | (building-type-count-total barracks < 2)
+  1361| barracks       pp=-
+        conds: (can-build barracks) (building-type-count-total barracks < 2)
+        acts+: (building-type-count-total barracks == 2) | (unit-type-count villager > 6)
+  1376| archery-range  pp=-
+        conds: (building-type-count-total archery-range < 2) (can-build archery-range)
+        acts+: (building-type-count-total archery-range == 2) | (unit-type-count villager > 6)
+  1391| stable         pp=-
+        conds: (building-type-count-total stable < 2) (can-build stable)
+        acts+: (building-type-count-total stable == 2) | (unit-type-count villager > 6)
+  1406| siege-workshop pp=-
+        conds: (building-type-count-total siege-workshop < 2) (can-build siege-workshop)
+        acts+: (building-type-count-total siege-workshop > 1) | (building-type-count-total siege-workshop < 4)
+  1422| castle         pp=-
+        conds: (building-type-count-total castle < 3) (can-build castle)
+        acts+: (building-type-count-total castle > 2) | (building-type-count-total castle < 5)
+  1447| dock           pp=-
+        conds: (or (and (goal 1 1) (building-type-count-total dock < 2) ) (and (goal 1 10) (building-type-count-total dock < 4) ) ) (can-build dock)
+        acts+: ;********************************************************* | ;DIPLOMACY | #load-if-not-defined TEAMS-LOCKED
+
+--- headroom tokens: housing=2 population=2

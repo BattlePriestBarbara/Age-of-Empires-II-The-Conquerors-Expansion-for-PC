@@ -1,0 +1,160 @@
+installed gamedata.drs     md5 0504f9fcaed2a1b87dde1a6db04576e7
+patched   gamedata.drs     md5 0504f9fcaed2a1b87dde1a6db04576e7   identical=True
+installed gamedata_x1.drs  md5 46ebe235b2c5099b01be545ec8ae0240
+patched   gamedata_x1.drs  md5 46ebe235b2c5099b01be545ec8ae0240   identical=True
+
+installed anib_60002 (gamedata_x1.drs): 55928 bytes, 2936 lines
+--- last 42 lines ---
+(defrule
+	(goal secondary-build 0)
+=>
+	(set-goal secondary-build 1)
+)
+;---- 2) keep building houses on the harder difficulties ----------------------
+(defrule
+	(or
+		(difficulty == hard)
+		(difficulty == hardest)
+	)
+	(housing-headroom < 10)
+	(population-headroom > 0)
+	(can-build house)
+=>
+	(build house)
+)
+;---- 3) effectively unlimited resources --------------------------------------
+(defrule
+	(true)
+=>
+	(enable-timer t-production 10)
+	(disable-self)
+)
+
+(defrule
+	(timer-triggered t-production)
+	(or
+		(food-amount < 5000)
+		(wood-amount < 5000)
+		(gold-amount < 5000)
+		(stone-amount < 5000)
+	)
+=>
+	(disable-timer t-production)
+	(enable-timer t-production 5)
+	(cc-add-resource food 10000)
+	(cc-add-resource wood 10000)
+	(cc-add-resource gold 10000)
+	(cc-add-resource stone 10000)
+)
+
+
+installed anib_60027 (gamedata_x1.drs): 21924 bytes, 700 lines
+--- last 46 lines ---
+(defconst civ-feudal-mod 50)
+(defconst civ-feudal 100)
+(defconst civ-castle 175)
+(defconst pop-cap 500)
+(defconst deathmatch-unit-max 425)
+
+(defconst feudal-town-size 20)
+(defconst castle-town-size 35)
+(defconst imperial-town-size 40)
+(defconst town-center-count 9)
+
+#load-if-defined DIFFICULTY-EASIEST
+(defconst unit-max 325)
+#end-if
+
+#load-if-defined DIFFICULTY-EASY
+(defconst unit-max 325)
+#end-if
+
+#load-if-defined DIFFICULTY-MODERATE
+(defconst unit-max 400)
+#end-if
+
+#load-if-defined DIFFICULTY-HARD
+(defconst unit-max 475)
+#end-if
+
+#load-if-defined DIFFICULTY-HARDEST
+(defconst unit-max 475)
+#end-if
+
+(defconst five-percent-pop 25)
+(defconst ten-percent-pop 50)
+(defconst fifteen-percent-pop 75)
+(defconst twenty-percent-pop 100)
+(defconst thirty-percent-pop 150)
+(defconst fifty-percent-pop 250)
+#end-if
+#end-if
+#end-if
+#end-if
+#end-if
+#end-if
+#end-if
+#end-if
+
+
+installed anib_60010 (gamedata.drs): 16587 bytes, 742 lines
+--- last 46 lines ---
+#load-if-not-defined POPULATION-CAP-200
+(defconst civ-dark-rush 50)
+(defconst civ-dark 63)
+(defconst civ-feudal 100)
+(defconst civ-castle 175)
+(defconst pop-cap 500)
+(defconst deathmatch-unit-max 425)
+
+(defconst feudal-town-size 20)
+(defconst castle-town-size 35)
+(defconst imperial-town-size 40)
+
+#load-if-defined DIFFICULTY-EASIEST
+(defconst unit-max 325)
+#end-if
+
+#load-if-defined DIFFICULTY-EASY
+(defconst unit-max 325)
+#end-if
+
+#load-if-defined DIFFICULTY-MODERATE
+(defconst unit-max 400)
+#end-if
+
+#load-if-defined DIFFICULTY-HARD
+(defconst unit-max 475)
+#end-if
+
+#load-if-defined DIFFICULTY-HARDEST
+(defconst unit-max 475)
+#end-if
+
+(defconst five-percent-pop 25)
+(defconst ten-percent-pop 50)
+(defconst fifteen-percent-pop 75)
+(defconst twenty-percent-pop 100)
+(defconst thirty-percent-pop 150)
+#end-if
+#end-if
+#end-if
+#end-if
+#end-if
+#end-if
+#end-if
+#end-if
+
+
+--- potential competing AI sources ---
+  D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\AI\AI.txt
+  D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\mods\forbidden_files.txt
+  D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\custome_palette_list.txt
+  D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\terrain.drs
+  D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\fonts\GEORGIAI.TTF
+  D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Load\Load.txt
+  D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\btnmain.slp
+  D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\dlg_main_popup.sin
+  D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\main.sin
+  D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\main_32.slp
+  D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\xmain_32.slp

@@ -1,0 +1,153 @@
+=== EXE AoK HD.exe (4444160 bytes) ===
+
+### pattern b'AI\\'
+
+### pattern b'anib'
+   A 0x000D003D  $..Y.D$(;.tU.T$.R.L$.QPhanib........9\$...u+.T$.R..J%..L$.QVP.D$..%Y%..D$.....D$........
+   A 0x000E0ADF  .........D$0;.t{W.L$4QPhanib.|$@..........t_.T$0R.L$..D$.P....|$..|$.......|$$j..D$4P.xf
+   A 0x000EEEA0  ..V.t$(...t'.D$.P.L$.QVhanib.7#.......;.......L$.ue.T$$;.t-.:.t(WR.T$.R.D$.P.xf...b.....
+   A 0x000EEF01  ......0...t#.L$.Q.T$.RVhanib..".......;..L$.............=.....q....S.Y.+.U.i.....;..\$ .
+   A 0x0014398D  L$..N.^Y...j.hD>x.ha...hanib.....j.h,>x.hb...hanib.....j.h.>x.hc...hanib.....j.h.=x.hd..
+   A 0x001439A3  .hanib.....j.h,>x.hb...hanib.....j.h.>x.hc...hanib.....j.h.=x.hd...hanib.......@j.h.=x.h
+   A 0x001439B9  .hanib.....j.h.>x.hc...hanib.....j.h.=x.hd...hanib.......@j.h.=x.he...hanib.....j.h.=x.h
+   A 0x001439CF  .hanib.....j.h.=x.hd...hanib.......@j.h.=x.he...hanib.....j.h.=x.hf...hanib.i...j.h.=x.h
+   A 0x001439E8  nib.......@j.h.=x.he...hanib.....j.h.=x.hf...hanib.i...j.h.=x.hg...hanib.S...j.h.=x.hh..
+   A 0x001439FE  .hanib.....j.h.=x.hf...hanib.i...j.h.=x.hg...hanib.S...j.h.=x.hh...hanib.=.....@j.h|=x.h
+   A 0x00143A14  .hanib.i...j.h.=x.hg...hanib.S...j.h.=x.hh...hanib.=.....@j.h|=x.hi...hanib.$...j.hd=x.h
+   A 0x00143A2A  .hanib.S...j.h.=x.hh...hanib.=.....@j.h|=x.hi...hanib.$...j.hd=x.hj...hanib.....j.hL=x.h
+   A 0x00143A43  nib.=.....@j.h|=x.hi...hanib.$...j.hd=x.hj...hanib.....j.hL=x.hk...hanib.....j.h8=x.hl..
+   A 0x00143A59  .hanib.$...j.hd=x.hj...hanib.....j.hL=x.hk...hanib.....j.h8=x.hl...hanib.......@j.h =x.h
+   A 0x00143A6F  .hanib.....j.hL=x.hk...hanib.....j.h8=x.hl...hanib.......@j.h =x.hm...hanib.....j.h.=x.h
+   A 0x00143A85  .hanib.....j.h8=x.hl...hanib.......@j.h =x.hm...hanib.....j.h.=x.hn...hanib.....j.h.<x.h
+   A 0x00143A9E  nib.......@j.h =x.hm...hanib.....j.h.=x.hn...hanib.....j.h.<x.ho...hanib.....j.h.<x.hp..
+   A 0x00143AB4  .hanib.....j.h.=x.hn...hanib.....j.h.<x.ho...hanib.....j.h.<x.hp...hanib.......@j.h.<x.h
+   A 0x00143ACA  .hanib.....j.h.<x.ho...hanib.....j.h.<x.hp...hanib.......@j.h.<x.hq...hanib.n...j.h.<x.h
+   A 0x00143AE0  .hanib.....j.h.<x.hp...hanib.......@j.h.<x.hq...hanib.n...j.h.<x.hr...hanib.X...j.h.<x.h
+   A 0x00143AF9  nib.......@j.h.<x.hq...hanib.n...j.h.<x.hr...hanib.X...j.h.<x.hs...hanib.B...j.h.<x.ht..
+   A 0x00143B0F  .hanib.n...j.h.<x.hr...hanib.X...j.h.<x.hs...hanib.B...j.h.<x.ht...hanib.,.....@j.hx<x.h
+   A 0x00143B25  .hanib.X...j.h.<x.hs...hanib.B...j.h.<x.ht...hanib.,.....@j.hx<x.hu...hanib.....j.h`<x.h
+   A 0x00143B3B  .hanib.B...j.h.<x.ht...hanib.,.....@j.hx<x.hu...hanib.....j.h`<x.hv...hanib.....j.hH<x.h
+   A 0x00143B54  nib.,.....@j.hx<x.hu...hanib.....j.h`<x.hv...hanib.....j.hH<x.hw...hanib.....j.h,<x.hx..
+   A 0x00143B6A  .hanib.....j.h`<x.hv...hanib.....j.hH<x.hw...hanib.....j.h,<x.hx...hanib.......@j.h.<x.h
+   A 0x00143B80  .hanib.....j.hH<x.hw...hanib.....j.h,<x.hx...hanib.......@j.h.<x.hy...hanib.....j.h.<x.h
+   A 0x00143B96  .hanib.....j.h,<x.hx...hanib.......@j.h.<x.hy...hanib.....j.h.<x.hz...hanib.....j.h.;x.h
+   A 0x00143BAF  nib.......@j.h.<x.hy...hanib.....j.h.<x.hz...hanib.....j.h.;x.h{...hanib.....j.h.;x.h|..
+   A 0x00143BC5  .hanib.....j.h.<x.hz...hanib.....j.h.;x.h{...hanib.....j.h.;x.h|...hanib.v.....@j.h.;x.h
+   A 0x00143BDB  .hanib.....j.h.;x.h{...hanib.....j.h.;x.h|...hanib.v.....@j.h.;x.h}...hanib.]...........
+   A 0x00143BF1  .hanib.....j.h.;x.h|...hanib.v.....@j.h.;x.h}...hanib.]................VWj.j.j..........
+   A 0x00143C0A  nib.v.....@j.h.;x.h}...hanib.]................VWj.j.j..............G........f9~H~%.FL...
+   A 0x00167D5A  .D$@P.........3.S.L$.QPhanib.\$ .)$.......tn.T$.R.L$..D$.P....\$ .\$$.t!....$H...j..D$.P
+   A 0x001B33DA  ...........$....Q.T$.RPhanib........;..D$.........$....Q.T$4R.L$@Q..$....R.L$PQ.T$\R.L$h
+   A 0x001D9B5B  .....Y_^......3.W.L$,QPhanib.|$8.(........tb.T$(R.L$..D$.P....|$..|$..s....|$ j..D$,P.xf
+   A 0x001F8BA5  ...L$.Q%.....T$,R.....Phanib.2........;........D$.P.#....L$ Q..VW.|$@.........|$(.u.V.G.
+   A 0x001FA0C0  ...........L$.Q.T$ R..Phanib..q...........{....D$.SUP......L$.Q..VS.\$<.........|$$.u.V.
+   A 0x0021953E  ...\......te.L$.Q.T$.RPhanib.D$ .....D$$......|.........t..>.t..|$..v..|$..t.V.L$..s....
+
+### pattern b'.per'
+   A 0x00377C4E  X..\X.PKG.."X..\X.pFG.%s.per..RandomGame..)\.AOKDialog....: ......                      
+   A 0x00377CBB  %s..    %s %d.    %s  %s.per.    %s..                                           %s..    
+   A 0x00377D0B  %s..    %s %d.    %s  %s.per.    %s %d: %s...Line....File....Player..AI Script Error.ERR
+   A 0x0037E1A8  *.cpn;*.cpx;*.mp3;*.ai;*.per;*.scx;*.png;*.jpg;*.mgx;*.slp;*.sin;*.pal........Scenario.*
+   A 0x0037E24F  n;*.pal........AI.*.ai;*.per........Images.*.png;*.jpg........Recorded Game.*.mgx....Mod
+   A 0x00381DE4  mp_CityPlan%d.tmp...%s%s.per....%stemp_AiRules%d.tmp....%s.cty..%s.ai.......H.z..G.?%s.b
+   A 0x00383BDB  %d %d....%s .wonder kill.per.wonder rush.per.petersen constants.per..randomgame.per..pet
+   A 0x00383BEB  der kill.per.wonder rush.per.petersen constants.per..randomgame.per..petersen rush.per..
+   A 0x00383C02  h.per.petersen constants.per..randomgame.per..petersen rush.per...petersen warboat islan
+   A 0x00383C12  onstants.per..randomgame.per..petersen rush.per...petersen warboat island.per.petersen d
+   A 0x00383C25  mgame.per..petersen rush.per...petersen warboat island.per.petersen dip bully.per..peter
+   A 0x00383C43  .petersen warboat island.per.petersen dip bully.per..petersen dip insult.per.petersen gr
+   A 0x00383C5A  d.per.petersen dip bully.per..petersen dip insult.per.petersen groups.per.petersen dip f
+   A 0x00383C73  per..petersen dip insult.per.petersen groups.per.petersen dip feeder.per.petersen gather
+   A 0x00383C87  sult.per.petersen groups.per.petersen dip feeder.per.petersen gather.per.petersen dip bo
+   A 0x00383C9F  .per.petersen dip feeder.per.petersen gather.per.petersen dip boomer.per.petersen market
+   A 0x00383CB3  eder.per.petersen gather.per.petersen dip boomer.per.petersen market.per.petersen wonder
+   A 0x00383CCB  .per.petersen dip boomer.per.petersen market.per.petersen wonder.per.petersen resign.per
+   A 0x00383CDF  omer.per.petersen market.per.petersen wonder.per.petersen resign.per.petersen castle.per
+   A 0x00383CF3  rket.per.petersen wonder.per.petersen resign.per.petersen castle.per.petersen diplomacy.
+   A 0x00383D07  nder.per.petersen resign.per.petersen castle.per.petersen diplomacy.per..petersen tower.
+   A 0x00383D1B  sign.per.petersen castle.per.petersen diplomacy.per..petersen tower.per..petersen civ lo
+   A 0x00383D32  e.per.petersen diplomacy.per..petersen tower.per..petersen civ loads.per..petersen map l
+   A 0x00383D46  macy.per..petersen tower.per..petersen civ loads.per..petersen map loads.per..petersen f
+   A 0x00383D5E  .per..petersen civ loads.per..petersen map loads.per..petersen full tech.per..petersen d
+   A 0x00383D76  .per..petersen map loads.per..petersen full tech.per..petersen difficulty loads.per...pe
+   A 0x00383D8E  .per..petersen full tech.per..petersen difficulty loads.per...petersen supplement.per.pe
+   A 0x00383DAD  etersen difficulty loads.per...petersen supplement.per.petersen warboat.per....petersen 
+   A 0x00383DC7  er...petersen supplement.per.petersen warboat.per....petersen dip liar.per...petersen fi
+   A 0x00383DDC  ent.per.petersen warboat.per....petersen dip liar.per...petersen fishboat.per...petersen
+   A 0x00383DF5  per....petersen dip liar.per...petersen fishboat.per...petersen upgrades.per...petersen 
+   A 0x00383E0D  .per...petersen fishboat.per...petersen upgrades.per...petersen deathmatch.per.ai peters
+   A 0x00383E25  .per...petersen upgrades.per...petersen deathmatch.per.ai petersen rules.per...33;AR.:Aq
+   A 0x00383E3F  er...petersen deathmatch.per.ai petersen rules.per...33;AR.:Aq=:A..9A..8A..7A)\7A.z4A\.:
+   A 0x00383E55  ch.per.ai petersen rules.per...33;AR.:Aq=:A..9A..8A..7A)\7A.z4A\.:A.p9A..4A..3A..9A.Q(A.
+   A 0x00383EB5  end_zone_score_info....*.per......C.@.E.@.F...C...C..HD../D...C..HCsetInChatGroup(%d, TR
+
+### pattern b'.ai'
+   A 0x0037E1A3  .avi;*.cpn;*.cpx;*.mp3;*.ai;*.per;*.scx;*.png;*.jpg;*.mgx;*.slp;*.sin;*.pal........Scena
+   A 0x0037E24A  ;*.sin;*.pal........AI.*.ai;*.per........Images.*.png;*.jpg........Recorded Game.*.mgx..
+   A 0x00381DA0  `....\X.`.P.`.T...P.%s%s.ai.%stemp_buildlist%d.tmp..%s%s.cty....%stemp_CityPlan%d.tmp...
+   A 0x00381E0E  ules%d.tmp....%s.cty..%s.ai.......H.z..G.?%s.bmp.........?q=...p.?..(\...?...Q...?..G.z.
+   A 0x0038CD09  UPDATE SUMMARY.INVITE..*.ai....btnmain.shp.$$$ CHAT SCREEN: CONSTRUCTOR BEGIN..$$$ SELEC
+   A 0x0038D834  scr_sed::draw....avi.....ai.8.....b.p.Z.P.Z. .Z...Z...Z.@.Z...Z. .Z...Z...a...Z.p.Z...a.
+
+### pattern b'gamedata'
+   A 0x00382D7C  %s%c....%s%s%s%s....%s-.gamedata.drs....interfac.drs....terrain.drs.graphics.drs....soun
+   A 0x00382DC4  hics.drs....sounds.drs..gamedata_x1_p1.drs..gamedata_x1.drs.sounds_x1.drs...TutorialInfo
+   A 0x00382DD8  rs..gamedata_x1_p1.drs..gamedata_x1.drs.sounds_x1.drs...TutorialInfo....HistoryInfo.Tech
+
+### pattern b'AI.txt'
+
+### pattern b'Load'
+   A 0x003735DC  f %f %f %f %f %d %s ....Loading construction plan in file '%s'..NONE........4[..@YB...B.
+   A 0x0037ABF9  Running....UNLINK GameIsLoading....UNLINK CommSettingsExcahanged...UNLINK GameOptionsExc
+   A 0x0037DFD7  .QuitGameDialog..QuitAndLoadDialog...Save Game Screen.....z..@|K.p.Z.P.Z. .Z.`\[...Z.@.Z
+   A 0x00380780  us = %u.\n..\t......\\..LoadDynamicLibrary failed to load '%s'...dll....1.00....fact....
+   A 0x003828CC  h Screen....End Screen..Load Multiplayer Saved Game Screen..Load Saved Game Screen..Obje
+   A 0x003828F0  ayer Saved Game Screen..Load Saved Game Screen..Object List Dialog..Mission Dialog..Canc
+   A 0x0038299C  Dialog..NewSaveDialog...Load Dialog.Quit Dialog.YesNoDialog.SaveGame\...athiesm.wav.spie
+   A 0x00387C2C  ode-controlled options..Loading random game selected rule set=%s....RandomGameSpecialize
+   A 0x00387C70  RandomGameSpecialized...Loading rule set=%s.....Loading city plan=%s....Loading no city 
+   A 0x00387C88  Loading rule set=%s.....Loading city plan=%s....Loading no city plan (influence placemen
+   A 0x00387CA0  Loading city plan=%s....Loading no city plan (influence placement will be used).........
+   A 0x00414534  Free....LockResource....LoadResource..6.FindResourceA...GetModuleHandleA....GetLastError
+   A 0x00414760  Byte....SetLastError....LoadLibraryA..T.QueryPerformanceCounter.f.GetTickCount....MulDiv
+   A 0x00414C36  trcmpiA.KERNEL32.dll....LoadCursorA...PostMessageA....WinHelpA....GetActiveWindow...Mess
+   A 0x00414D7E  sorPos....MessageBoxA...LoadStringA.^.SendMessageA....DestroyWindow.g.CreateWindowExA...
+   A 0x00414E28  eA..3.RegisterClassA....LoadIconA...FillRect....UpdateWindow....GetWindowTextA..U.GetPar
+   A 0x00420C75  n@@.............?AVTribeLoadSavedGameScreen@@...........?AVTribeLobbyBrowserScreen@@....
+   A 0x00420E9D  u@@.............?AVTribeLoadMultiplayerSavedGameScreen@@............?AVTribeMPRestoreScr
+
+### pattern b'DRS'
+   A 0x001A22ED  .T$ R.D$ P.L$ Q.......T$DRS.kT....f.L$0f.L0...T$....T$$S.D$(.\0...T$...f.T1...D$....D$(.
+   A 0x0023608C  j.j.j(h....h....h.....T$DRSV........D$.j.j.j.j.hv...h....h....h....PWV.........j.Q..,...
+
+### pattern b'drs\\'
+
+### pattern b'Load\\'
+
+### pattern b'Random\\'
+
+### pattern b'mods'
+   A 0x003722D8  Bin\....DATA....data\...mods\...ai\.scenario\...savegame\multi\.savegame\...sound\..mcur
+
+### pattern b'Scenario'
+   A 0x0037E1DE  .slp;*.sin;*.pal........Scenario.*.scn;*.scx........Campaign.*.avi;*.cpn;*.cpx;*.mp3....
+   A 0x0037EAE0  ..[.`.[...[...[..Z[..Y[.Scenario Menu Dialog....New Dialog..Open Dialog.Scenario Editor 
+   A 0x0037EB10  New Dialog..Open Dialog.Scenario Editor Open....Scenario Editor Screen...|....K.p.Z.P.Z.
+   A 0x0037EB28  Scenario Editor Open....Scenario Editor Screen...|....K.p.Z.P.Z. .Z.`\[...Z.@.Z...Z. .Z.
+   A 0x00382ED8  esInfo..FeaturesInfo....ScenarioEditorInfo..Name Selection Screen...New Name Dialog.Spri
+   A 0x00382F5C  ....Single Player Menu..Scenario Editor Menu....Player Select...Join Screen.Connecting S
+   A 0x00383007  lection Screen...Select Scenario Screen..Game Settings Screen....Game Setup Screen...Cam
+   A 0x003832C9  s%s.wmv....intro...King Scenarios..%s.scx..%s.scn..43%^%^Jm 43%^%^Jm...Jm_j%%#L%^_j1$  ^
+   A 0x00383B0C  :                %s.....Scenario:                %s.....Number Players:          %d.....
+   A 0x0038B210  ..[...[...[.`.[...[...[.Scenario Difficulty Dialog..........`._.p.Z.P.Z. .Z...Z...Z.@.Z.
+   A 0x0041A15C  .................?AVRGE_Scenario_Header@@............?AVRGE_Scenario@@...!...........?AV
+   A 0x0041A180  der@@............?AVRGE_Scenario@@...!...........?AVTRIBE_Hotkey_Handler@@...........?AV
+   A 0x0041CFDA  .....?.........?AVTRIBE_Scenario_Header@@..........?AVT_Scenario@@.............?AVTRIBE_
+   A 0x0041CFFA  _Header@@..........?AVT_Scenario@@.............?AVTRIBE_Victory_Conditions@@...........?
+   A 0x004207F2  @@.............?AVTRIBE_Scenario_Editor_Panel_Object@@.............?AVTRIBE_Panel_Object
+   A 0x00420C25  reen@@..........?AVTribeScenarioDifficultyDialog@@..........?AVTribeHistoryScreen@@.....
+   A 0x0042113F  ..........?AVTribeSelectScenarioScreen@@..........?AVTRIBE_Screen_Status_Message@@......
+
+### pattern b'open_read'
+
+### pattern b'fopen'

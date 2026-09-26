@@ -1,0 +1,110 @@
+﻿1591 
+1592 ;*********************************
+1593 ;age advancement
+1594 (defrule
+1595 	(can-research feudal-age)
+1596 	(or
+1597 		(players-current-age every-human >= feudal-age)
+1598 		(difficulty <= moderate)
+1599 	)
+1600 =>
+1601 	(research feudal-age)
+1602 	(set-goal age-advancement NOTICE)
+1603 	(enable-timer t-ageup 140)
+1604 )
+1605 
+1606 (defrule
+1607 	(current-age == feudal-age)
+1608 =>
+1609 	(disable-timer t-ageup)
+1610 	(set-goal age-advancement NO)
+1611 	(disable-self)
+1612 )
+1613 
+1614 (defrule
+1615 	(can-research castle-age)
+1616 	(or
+1617 		(players-current-age every-human >= castle-age)
+1618 		(difficulty <= moderate)
+1619 	)
+1620 =>
+1621 	(research castle-age)
+1622 	(set-goal age-advancement NOTICE)
+1623 	(enable-timer t-ageup 170)
+1624 )
+1625 
+1626 (defrule
+1627 	(current-age == castle-age)
+1628 =>
+1629 	(disable-timer t-ageup)
+1630 	(set-goal age-advancement NO)
+1631 	(disable-self)
+1632 )
+1633 
+1634 (defrule
+1635 	(can-research imperial-age)
+1636 	(or
+1637 		(difficulty <= moderate)
+1638 		(and
+1639 			(players-current-age every-human == imperial-age)
+1640 			(difficulty == easy)
+1641 		)
+1642 	)
+1643 =>
+1644 	(research imperial-age)
+1645 	(set-goal age-advancement NOTICE)
+1646 	(enable-timer t-ageup 200)
+1647 )
+1648 
+1649 (defrule
+1650 	(difficulty <= moderate)
+1651 	(current-age == imperial-age)
+1652 =>
+1653 	(disable-timer t-ageup)
+1654 	(set-goal age-advancement NO)
+1655 	(disable-self)
+1656 )
+1657 
+1658 (defrule
+1659 	(goal age-advancement NOTICE)
+1660 	(or
+1661 		(current-age < imperial-age)
+1662 		(and
+1663 			(current-age < imperial-age)
+1664 			(difficulty <= easy)
+1665 		)
+1666 	)
+1667 	(timer-triggered t-ageup)
+1668 =>
+1669 	(disable-timer t-ageup)
+1670 	(set-goal age-advancement NO)
+1671 )
+1672 ;*********************************
+1673 ;buildings
+1674 (defrule
+1675 	(difficulty <= moderate)
+1676 	(building-type-count-total house <= fifteen-percent-pop)
+1677 	(can-build house)
+1678 =>
+1679 	(build house)
+1680 )
+1681 
+1682 #load-if-defined DIFFICULTY-EASIEST
+1683 (defrule
+1684 	(military-population < 10)
+1685 	(housing-headroom < 5)
+1686 	(population-headroom > 0)
+1687 	(can-build house)
+1688 =>
+1689 	(build house)
+1690 )
+1691 #end-if
+1692 
+1693 #load-if-defined DIFFICULTY-EASY
+1694 (defrule
+1695 	(military-population < civ-dark-rush)
+1696 	(housing-headroom < 5)
+1697 	(population-headroom > 0)
+1698 	(can-build house)
+1699 =>
+1700 	(build house)

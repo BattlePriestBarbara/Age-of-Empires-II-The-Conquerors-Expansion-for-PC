@@ -1,0 +1,436 @@
+######################################################################
+DIR aok_drs
+--- anib_60001.bin (1286 lines)
+   [secondary-build] 1 hits: lines 20
+           20| 	(set-goal secondary-build NO)	;goal 8
+   [civ-dark-rush] 8 hits: lines 187, 224, 792, 805, 821, 836, 856, 901
+          187| 		(civilian-population < civ-dark-rush)
+          224| 	(military-population < civ-dark-rush)
+          792| 	(unit-type-count villager >= civ-dark-rush)
+          805| 	(unit-type-count villager >= civ-dark-rush)
+          821| 	(unit-type-count villager >= civ-dark-rush)
+          836| 	(unit-type-count villager >= civ-dark-rush)
+          856| 	(unit-type-count villager > civ-dark-rush)
+          901| 	(unit-type-count villager > civ-dark-rush)
+   [population-headroom] 3 hits: lines 205, 215, 226
+          205| 	(population-headroom > 0)
+          215| 	(population-headroom > 0)
+          226| 	(population-headroom > 0)
+--- anib_60002.bin (2445 lines)
+   [secondary-build] 78 hits: lines 32, 38, 50, 54, 92, 98, 110, 114, 130, 153, 159, 171, 175, 191, 195, 207, 211, 223, 247, 253, 265, 269, 281, 285, 297
+           32| 	(goal secondary-build 1)
+           38| 	(goal secondary-build 1)
+           50| 	(set-goal secondary-build 0)
+           54| 	(goal secondary-build 1)
+           92| 	(goal secondary-build 1)
+           98| 	(goal secondary-build 1)
+          110| 	(set-goal secondary-build 0)
+          114| 	(goal secondary-build 1)
+   [deathmatch-unit-max] 39 hits: lines 42, 62, 102, 121, 163, 179, 199, 215, 257, 273, 289, 330, 346, 366, 382, 423, 439, 455, 496, 515, 532, 566, 600, 642, 661
+           42| 		(population < deathmatch-unit-max)
+           62| 		(population < deathmatch-unit-max)
+          102| 		(population < deathmatch-unit-max)
+          121| 		(population < deathmatch-unit-max)
+          163| 		(population < deathmatch-unit-max)
+          179| 		(population < deathmatch-unit-max)
+          199| 		(population < deathmatch-unit-max)
+          215| 		(population < deathmatch-unit-max)
+   [unit-max] 78 hits: lines 42, 44, 62, 64, 102, 104, 121, 123, 163, 165, 179, 181, 199, 201, 215, 217, 257, 259, 273, 275, 289, 291, 330, 332, 346
+           42| 		(population < deathmatch-unit-max)
+           44| 			(population < unit-max)
+           62| 		(population < deathmatch-unit-max)
+           64| 			(population < unit-max)
+          102| 		(population < deathmatch-unit-max)
+          104| 			(population < unit-max)
+          121| 		(population < deathmatch-unit-max)
+          123| 			(population < unit-max)
+   [fifteen-percent-pop] 1 hits: lines 1233
+         1233| 	(building-type-count-total house <= fifteen-percent-pop)
+   [civ-dark-rush] 2 hits: lines 1124, 1252
+         1124| 				(civilian-population < civ-dark-rush)
+         1252| 	(military-population < civ-dark-rush)
+   [set-difficulty-parameter] 10 hits: lines 886, 887, 902, 903, 919, 920, 936, 937, 952, 953
+          886| 	(set-difficulty-parameter ability-to-maintain-distance 100)
+          887| 	(set-difficulty-parameter ability-to-dodge-missiles 100)
+          902| 	(set-difficulty-parameter ability-to-maintain-distance 75)
+          903| 	(set-difficulty-parameter ability-to-dodge-missiles 75)
+          919| 	(set-difficulty-parameter ability-to-maintain-distance 50)
+          920| 	(set-difficulty-parameter ability-to-dodge-missiles 50)
+          936| 	(set-difficulty-parameter ability-to-maintain-distance 0)
+          937| 	(set-difficulty-parameter ability-to-dodge-missiles 0)
+   [population-headroom] 2 hits: lines 1243, 1254
+         1243| 	(population-headroom > 0)
+         1254| 	(population-headroom > 0)
+--- anib_60004.bin (158 lines)
+   [secondary-build] 2 hits: lines 95, 108
+           95| 	(goal secondary-build 1)
+          108| 	(goal secondary-build 1)
+--- anib_60006.bin (214 lines)
+   [fifteen-percent-pop] 8 hits: lines 6, 14, 85, 103, 123, 162, 179, 206
+            6| 	(soldier-count >= fifteen-percent-pop)
+           14| 	(soldier-count >= fifteen-percent-pop)
+           85| 			(warboat-count < fifteen-percent-pop)
+          103| 			(warboat-count < fifteen-percent-pop)
+          123| 			(warboat-count < fifteen-percent-pop)
+          162| 			(warboat-count < fifteen-percent-pop)
+          179| 			(warboat-count < fifteen-percent-pop)
+          206| 			(warboat-count < fifteen-percent-pop)
+--- anib_60007.bin (803 lines)
+   [secondary-build] 7 hits: lines 339, 348, 357, 366, 375, 383, 388
+          339| 	(set-goal secondary-build 0)
+          348| 	(set-goal secondary-build 0)
+          357| 	(set-goal secondary-build 0)
+          366| 	(set-goal secondary-build 0)
+          375| 	(set-goal secondary-build 0)
+          383| 		(goal secondary-build 0)
+          388| 	(set-goal secondary-build 1)
+   [unit-max] 6 hits: lines 334, 343, 352, 361, 370, 379
+          334| 	(population < unit-max)
+          343| 	(population < unit-max)
+          352| 	(population < unit-max)
+          361| 	(population < unit-max)
+          370| 	(population < unit-max)
+          379| 	(population < unit-max)
+   [fifteen-percent-pop] 2 hits: lines 272, 797
+          272| 	(soldier-count > fifteen-percent-pop)
+          797| 	(unit-type-count-total monk < fifteen-percent-pop)
+--- anib_60008.bin (728 lines)
+   [set-difficulty-parameter] 10 hits: lines 89, 90, 577, 578, 664, 665, 682, 683, 701, 702
+           89| 	(set-difficulty-parameter ability-to-maintain-distance 100)
+           90| 	(set-difficulty-parameter ability-to-dodge-missiles 100)
+          577| 	(set-difficulty-parameter ability-to-maintain-distance 75)
+          578| 	(set-difficulty-parameter ability-to-dodge-missiles 75)
+          664| 	(set-difficulty-parameter ability-to-maintain-distance 50)
+          665| 	(set-difficulty-parameter ability-to-dodge-missiles 50)
+          682| 	(set-difficulty-parameter ability-to-maintain-distance 0)
+          683| 	(set-difficulty-parameter ability-to-dodge-missiles 0)
+--- anib_60009.bin (1019 lines)
+   [secondary-build] 41 hits: lines 561, 573, 577, 583, 605, 624, 638, 650, 654, 660, 677, 690, 700, 704, 716, 738, 757, 775, 793, 805, 809, 815, 829, 833, 839
+          561| 	(set-goal secondary-build 0)
+          573| 	(set-goal secondary-build 0)
+          577| 	(goal secondary-build 0)
+          583| 	(set-goal secondary-build 1)
+          605| 	(set-goal secondary-build 0)
+          624| 	(set-goal secondary-build 0)
+          638| 	(set-goal secondary-build 0)
+          650| 	(set-goal secondary-build 0)
+   [unit-max] 16 hits: lines 565, 579, 642, 656, 682, 696, 705, 797, 811, 821, 835, 865, 880, 892, 902, 961
+          565| 	(population < unit-max)
+          579| 	(population < unit-max)
+          642| 	(population < unit-max)
+          656| 	(population < unit-max)
+          682| 	(population < unit-max)
+          696| 	(population < unit-max)
+          705| 	(population < unit-max)
+          797| 	(population < unit-max)
+--- anib_60010.bin (674 lines)
+   [deathmatch-unit-max] 8 hits: lines 23, 62, 101, 140, 179, 218, 257, 296
+           23| (defconst deathmatch-unit-max 13)
+           62| (defconst deathmatch-unit-max 25)
+          101| (defconst deathmatch-unit-max 55)
+          140| (defconst deathmatch-unit-max 70)
+          179| (defconst deathmatch-unit-max 95)
+          218| (defconst deathmatch-unit-max 120)
+          257| (defconst deathmatch-unit-max 145)
+          296| (defconst deathmatch-unit-max 170)
+   [unit-max] 48 hits: lines 23, 30, 34, 38, 42, 46, 62, 69, 73, 77, 81, 85, 101, 108, 112, 116, 120, 124, 140, 147, 151, 155, 159, 163, 179
+           23| (defconst deathmatch-unit-max 13)
+           30| (defconst unit-max 19)
+           34| (defconst unit-max 19)
+           38| (defconst unit-max 21)
+           42| (defconst unit-max 23)
+           46| (defconst unit-max 23)
+           62| (defconst deathmatch-unit-max 25)
+           69| (defconst unit-max 35)
+   [fifteen-percent-pop] 8 hits: lines 51, 90, 129, 168, 207, 246, 285, 324
+           51| (defconst fifteen-percent-pop 4)
+           90| (defconst fifteen-percent-pop 7)
+          129| (defconst fifteen-percent-pop 10)
+          168| (defconst fifteen-percent-pop 15)
+          207| (defconst fifteen-percent-pop 18)
+          246| (defconst fifteen-percent-pop 22)
+          285| (defconst fifteen-percent-pop 27)
+          324| (defconst fifteen-percent-pop 30)
+   [civ-dark-rush] 8 hits: lines 18, 57, 96, 135, 174, 213, 252, 291
+           18| (defconst civ-dark-rush 10)
+           57| (defconst civ-dark-rush 15)
+           96| (defconst civ-dark-rush 20)
+          135| (defconst civ-dark-rush 20)
+          174| (defconst civ-dark-rush 20)
+          213| (defconst civ-dark-rush 20)
+          252| (defconst civ-dark-rush 20)
+          291| (defconst civ-dark-rush 20)
+   [defconst] 182 hits: lines 18, 19, 20, 21, 22, 23, 25, 26, 27, 30, 34, 38, 42, 46, 49, 50, 51, 52, 53, 57, 58, 59, 60, 61, 62
+           18| (defconst civ-dark-rush 10)
+           19| (defconst civ-dark 11)
+           20| (defconst civ-feudal 13)
+           21| (defconst civ-castle 15)
+           22| (defconst pop-cap 25)
+           23| (defconst deathmatch-unit-max 13)
+           25| (defconst feudal-town-size 20)
+           26| (defconst castle-town-size 25)
+--- anib_60016.bin (128 lines)
+   [unit-max] 1 hits: lines 24
+           24| 	(population > unit-max)
+--- anib_60017.bin (598 lines)
+   [civ-dark-rush] 4 hits: lines 503, 538, 555, 574
+          503| 		(civilian-population >= civ-dark-rush)
+          538| 		(civilian-population >= civ-dark-rush)
+          555| 		(civilian-population >= civ-dark-rush)
+          574| 		(civilian-population >= civ-dark-rush)
+--- anib_60019.bin (712 lines)
+   [fifteen-percent-pop] 2 hits: lines 449, 459
+          449| 	(warboat-count < fifteen-percent-pop)
+          459| 	(warboat-count < fifteen-percent-pop)
+--- anib_60021.bin (571 lines)
+   [fifteen-percent-pop] 1 hits: lines 316
+          316| 		(defend-soldier-count >= fifteen-percent-pop)
+--- anib_60024.bin (433 lines)
+   [fifteen-percent-pop] 1 hits: lines 331
+          331| 			(unit-type-count-total cannon-galleon-line < fifteen-percent-pop)
+--- anib_60025.bin (181 lines)
+   [civ-dark-rush] 1 hits: lines 121
+          121| 		(civilian-population >= civ-dark-rush)
+--- anib_60027.bin (233 lines)
+   [secondary-build] 2 hits: lines 67, 68
+           67| ;goal 8 secondary-build controls secondary builds (ensures there are already soldiers before doing a secondary build)
+           68| 	(defconst secondary-build 8)
+   [defconst] 99 hits: lines 3, 4, 5, 6, 9, 10, 11, 12, 13, 16, 17, 18, 19, 20, 21, 22, 23, 26, 27, 28, 31, 32, 33, 36, 38
+            3| 	(defconst NO 0)		 ;Used to indicate not set or initial value (as Normal)
+            4| 	(defconst YES 1)		 ;Used to indicate set
+            5| 	(defconst NORMAL 0)	 ;Used for default values
+            6| 	(defconst NOTICE 99)  ;Used for special highlight or initialization values that should be set
+            9| 	(defconst EXCELLENT 100); For any rating-type value highest to lowest
+           10| 	(defconst GOOD	70)
+           11| 	(defconst MEDIUM 50)
+           12| 	(defconst FAIR 30)
+
+######################################################################
+DIR x1_drs
+--- anib_60001.bin (1387 lines)
+   [secondary-build] 1 hits: lines 10
+           10| 	(set-goal secondary-build NO)	;goal 8
+   [civ-dark-rush] 7 hits: lines 359, 1114, 1127, 1143, 1158, 1178, 1223
+          359| 	(military-population < civ-dark-rush)
+         1114| 	(unit-type-count villager >= civ-dark-rush)
+         1127| 	(unit-type-count villager >= civ-dark-rush)
+         1143| 	(unit-type-count villager >= civ-dark-rush)
+         1158| 	(unit-type-count villager >= civ-dark-rush)
+         1178| 	(unit-type-count villager > civ-dark-rush)
+         1223| 	(unit-type-count villager > civ-dark-rush)
+   [population-headroom] 3 hits: lines 330, 341, 361
+          330| 	(population-headroom > 0)
+          341| 	(population-headroom > 0)
+          361| 	(population-headroom > 0)
+--- anib_60002.bin (2884 lines)
+   [secondary-build] 120 hits: lines 18, 61, 67, 79, 83, 95, 119, 125, 137, 141, 157, 182, 188, 200, 204, 216, 241, 247, 259, 263, 275, 300, 306, 318, 322
+           18| 	(set-goal secondary-build 1)	;goal 8
+           61| 	(goal secondary-build 1)
+           67| 	(goal secondary-build 1)
+           79| 	(set-goal secondary-build 0)
+           83| 	(goal secondary-build 1)
+           95| 	(set-goal secondary-build 0)
+          119| 	(goal secondary-build 1)
+          125| 	(goal secondary-build 1)
+   [deathmatch-unit-max] 56 hits: lines 71, 87, 129, 149, 192, 208, 251, 267, 310, 326, 343, 363, 380, 423, 439, 481, 500, 521, 564, 581, 597, 613, 656, 672, 688
+           71| 		(population < deathmatch-unit-max)
+           87| 		(population < deathmatch-unit-max)
+          129| 		(population < deathmatch-unit-max)
+          149| 		(population < deathmatch-unit-max)
+          192| 		(population < deathmatch-unit-max)
+          208| 		(population < deathmatch-unit-max)
+          251| 		(population < deathmatch-unit-max)
+          267| 		(population < deathmatch-unit-max)
+   [unit-max] 112 hits: lines 71, 73, 87, 89, 129, 131, 149, 151, 192, 194, 208, 210, 251, 253, 267, 269, 310, 312, 326, 328, 343, 345, 363, 365, 380
+           71| 		(population < deathmatch-unit-max)
+           73| 			(population < unit-max)
+           87| 		(population < deathmatch-unit-max)
+           89| 			(population < unit-max)
+          129| 		(population < deathmatch-unit-max)
+          131| 			(population < unit-max)
+          149| 		(population < deathmatch-unit-max)
+          151| 			(population < unit-max)
+   [fifteen-percent-pop] 1 hits: lines 1676
+         1676| 	(building-type-count-total house <= fifteen-percent-pop)
+   [civ-dark-rush] 2 hits: lines 1567, 1695
+         1567| 				(civilian-population < civ-dark-rush)
+         1695| 	(military-population < civ-dark-rush)
+   [set-difficulty-parameter] 10 hits: lines 1357, 1358, 1373, 1374, 1390, 1391, 1407, 1408, 1423, 1424
+         1357| 	(set-difficulty-parameter ability-to-maintain-distance 100)
+         1358| 	(set-difficulty-parameter ability-to-dodge-missiles 100)
+         1373| 	(set-difficulty-parameter ability-to-maintain-distance 75)
+         1374| 	(set-difficulty-parameter ability-to-dodge-missiles 75)
+         1390| 	(set-difficulty-parameter ability-to-maintain-distance 50)
+         1391| 	(set-difficulty-parameter ability-to-dodge-missiles 50)
+         1407| 	(set-difficulty-parameter ability-to-maintain-distance 0)
+         1408| 	(set-difficulty-parameter ability-to-dodge-missiles 0)
+   [population-headroom] 2 hits: lines 1686, 1697
+         1686| 	(population-headroom > 0)
+         1697| 	(population-headroom > 0)
+--- anib_60004.bin (224 lines)
+   [secondary-build] 2 hits: lines 115, 128
+          115| 	(goal secondary-build 1)
+          128| 	(goal secondary-build 1)
+--- anib_60006.bin (143 lines)
+   [fifteen-percent-pop] 3 hits: lines 51, 108, 133
+           51| 		(warboat-count < fifteen-percent-pop)
+          108| 		(warboat-count < fifteen-percent-pop)
+          133| 		(warboat-count < fifteen-percent-pop)
+--- anib_60007.bin (1164 lines)
+   [secondary-build] 7 hits: lines 382, 391, 400, 409, 418, 426, 431
+          382| 	(set-goal secondary-build 0)
+          391| 	(set-goal secondary-build 0)
+          400| 	(set-goal secondary-build 0)
+          409| 	(set-goal secondary-build 0)
+          418| 	(set-goal secondary-build 0)
+          426| 		(goal secondary-build 0)
+          431| 	(set-goal secondary-build 1)
+   [unit-max] 6 hits: lines 377, 386, 395, 404, 413, 422
+          377| 	(population < unit-max)
+          386| 	(population < unit-max)
+          395| 	(population < unit-max)
+          404| 	(population < unit-max)
+          413| 	(population < unit-max)
+          422| 	(population < unit-max)
+   [fifteen-percent-pop] 4 hits: lines 169, 315, 1106, 1157
+          169| 	(unit-type-count-total mangonel-line < fifteen-percent-pop)
+          315| 	(soldier-count > fifteen-percent-pop)
+         1106| 	(unit-type-count-total monk < fifteen-percent-pop)
+         1157| 	(unit-type-count-total missionary < fifteen-percent-pop)
+--- anib_60008.bin (223 lines)
+   [set-difficulty-parameter] 10 hits: lines 8, 9, 74, 75, 160, 161, 177, 178, 195, 196
+            8| 	(set-difficulty-parameter ability-to-maintain-distance 100)
+            9| 	(set-difficulty-parameter ability-to-dodge-missiles 100)
+           74| 	(set-difficulty-parameter ability-to-maintain-distance 75)
+           75| 	(set-difficulty-parameter ability-to-dodge-missiles 75)
+          160| 	(set-difficulty-parameter ability-to-maintain-distance 50)
+          161| 	(set-difficulty-parameter ability-to-dodge-missiles 50)
+          177| 	(set-difficulty-parameter ability-to-maintain-distance 25)
+          178| 	(set-difficulty-parameter ability-to-dodge-missiles 25)
+--- anib_60009.bin (1220 lines)
+   [secondary-build] 48 hits: lines 715, 727, 731, 737, 756, 772, 783, 792, 796, 802, 821, 840, 854, 866, 870, 876, 893, 906, 916, 920, 932, 954, 973, 991, 1009
+          715| 	(set-goal secondary-build 0)
+          727| 	(set-goal secondary-build 0)
+          731| 	(goal secondary-build 0)
+          737| 	(set-goal secondary-build 1)
+          756| 	(set-goal secondary-build 0)
+          772| 	(set-goal secondary-build 0)
+          783| 	(set-goal secondary-build 0)
+          792| 	(set-goal secondary-build 0)
+   [unit-max] 18 hits: lines 719, 733, 787, 798, 858, 872, 898, 912, 921, 1013, 1027, 1037, 1051, 1081, 1096, 1108, 1118, 1148
+          719| 	(population < unit-max)
+          733| 	(population < unit-max)
+          787| 	(population < unit-max)
+          798| 	(population < unit-max)
+          858| 	(population < unit-max)
+          872| 	(population < unit-max)
+          898| 	(population < unit-max)
+          912| 	(population < unit-max)
+--- anib_60013.bin (1044 lines)
+   [deathmatch-unit-max] 1 hits: lines 235
+          235| 	(civilian-population < deathmatch-unit-max)
+   [unit-max] 1 hits: lines 235
+          235| 	(civilian-population < deathmatch-unit-max)
+--- anib_60016.bin (158 lines)
+   [unit-max] 1 hits: lines 24
+           24| 	(population > unit-max)
+--- anib_60017.bin (629 lines)
+   [civ-dark-rush] 1 hits: lines 547
+          547| 		(civilian-population >= civ-dark-rush)
+--- anib_60021.bin (618 lines)
+   [fifteen-percent-pop] 1 hits: lines 323
+          323| 		(defend-soldier-count >= fifteen-percent-pop)
+--- anib_60025.bin (159 lines)
+   [civ-dark-rush] 1 hits: lines 99
+           99| 		(civilian-population >= civ-dark-rush)
+--- anib_60027.bin (629 lines)
+   [secondary-build] 2 hits: lines 68, 69
+           68| ;goal 8 secondary-build controls secondary builds (ensures there are already soldiers before doing a secondary build)
+           69| 	(defconst secondary-build 8)
+   [deathmatch-unit-max] 8 hits: lines 251, 294, 337, 380, 423, 466, 509, 552
+          251| (defconst deathmatch-unit-max 13)
+          294| (defconst deathmatch-unit-max 25)
+          337| (defconst deathmatch-unit-max 55)
+          380| (defconst deathmatch-unit-max 70)
+          423| (defconst deathmatch-unit-max 95)
+          466| (defconst deathmatch-unit-max 120)
+          509| (defconst deathmatch-unit-max 145)
+          552| (defconst deathmatch-unit-max 170)
+   [unit-max] 48 hits: lines 251, 259, 263, 267, 271, 275, 294, 302, 306, 310, 314, 318, 337, 345, 349, 353, 357, 361, 380, 388, 392, 396, 400, 404, 423
+          251| (defconst deathmatch-unit-max 13)
+          259| (defconst unit-max 19)
+          263| (defconst unit-max 19)
+          267| (defconst unit-max 21)
+          271| (defconst unit-max 23)
+          275| (defconst unit-max 23)
+          294| (defconst deathmatch-unit-max 25)
+          302| (defconst unit-max 35)
+   [fifteen-percent-pop] 8 hits: lines 280, 323, 366, 409, 452, 495, 538, 581
+          280| (defconst fifteen-percent-pop 4)
+          323| (defconst fifteen-percent-pop 7)
+          366| (defconst fifteen-percent-pop 10)
+          409| (defconst fifteen-percent-pop 15)
+          452| (defconst fifteen-percent-pop 18)
+          495| (defconst fifteen-percent-pop 22)
+          538| (defconst fifteen-percent-pop 27)
+          581| (defconst fifteen-percent-pop 30)
+   [civ-dark-rush] 8 hits: lines 244, 287, 330, 373, 416, 459, 502, 545
+          244| (defconst civ-dark-rush 10)
+          287| (defconst civ-dark-rush 15)
+          330| (defconst civ-dark-rush 20)
+          373| (defconst civ-dark-rush 20)
+          416| (defconst civ-dark-rush 20)
+          459| (defconst civ-dark-rush 20)
+          502| (defconst civ-dark-rush 20)
+          545| (defconst civ-dark-rush 20)
+   [defconst] 312 hits: lines 3, 4, 5, 6, 9, 10, 11, 12, 13, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 32, 33, 34, 37
+            3| 	(defconst NO 0)		 ;Used to indicate not set or initial value (as Normal)
+            4| 	(defconst YES 1)		 ;Used to indicate set
+            5| 	(defconst NORMAL 0)	 ;Used for default values
+            6| 	(defconst NOTICE 99)  ;Used for special highlight or initialization values that should be set
+            9| 	(defconst EXCELLENT 99); For any rating-type value highest to lowest
+           10| 	(defconst GOOD	70)
+           11| 	(defconst MEDIUM 50)
+           12| 	(defconst FAIR 30)
+--- anib_60028.bin (2629 lines)
+   [deathmatch-unit-max] 1 hits: lines 2546
+         2546| 	(civilian-population < deathmatch-unit-max)
+   [unit-max] 2 hits: lines 1228, 2546
+         1228| 	(population > unit-max)
+         2546| 	(civilian-population < deathmatch-unit-max)
+   [civ-dark-rush] 1 hits: lines 512
+          512| 		(civilian-population >= civ-dark-rush)
+   [population-headroom] 1 hits: lines 2283
+         2283| 	(population-headroom > 0)
+--- anib_60029.bin (2582 lines)
+   [secondary-build] 1 hits: lines 18
+           18| 	(set-goal secondary-build YES)	;goal 8
+   [unit-max] 1 hits: lines 2476
+         2476| 	(population >= unit-max)
+   [fifteen-percent-pop] 5 hits: lines 164, 246, 257, 2488, 2489
+          164| 	(building-type-count-total house <= fifteen-percent-pop)
+          246| 	(unit-type-count-total monk <= fifteen-percent-pop)
+          257| 	(unit-type-count-total missionary <= fifteen-percent-pop)
+         2488| 				(players-military-population any-enemy < fifteen-percent-pop)
+         2489| 				(military-population >= fifteen-percent-pop)
+   [civ-dark-rush] 2 hits: lines 183, 1792
+          183| 	(military-population < civ-dark-rush)
+         1792| 	(military-population < civ-dark-rush)
+   [set-difficulty-parameter] 10 hits: lines 1572, 1573, 1587, 1588, 1602, 1603, 1617, 1618, 1632, 1633
+         1572| 	(set-difficulty-parameter ability-to-maintain-distance 100)
+         1573| 	(set-difficulty-parameter ability-to-dodge-missiles 100)
+         1587| 	(set-difficulty-parameter ability-to-maintain-distance 75)
+         1588| 	(set-difficulty-parameter ability-to-dodge-missiles 75)
+         1602| 	(set-difficulty-parameter ability-to-maintain-distance 50)
+         1603| 	(set-difficulty-parameter ability-to-dodge-missiles 50)
+         1617| 	(set-difficulty-parameter ability-to-maintain-distance 0)
+         1618| 	(set-difficulty-parameter ability-to-dodge-missiles 0)
+   [population-headroom] 5 hits: lines 174, 185, 1773, 1783, 1794
+          174| 	(population-headroom > 0)
+          185| 	(population-headroom > 0)
+         1773| 	(population-headroom > 0)
+         1783| 	(population-headroom > 0)
+         1794| 	(population-headroom > 0)
+
+######################################################################
+DIR x1p1_drs

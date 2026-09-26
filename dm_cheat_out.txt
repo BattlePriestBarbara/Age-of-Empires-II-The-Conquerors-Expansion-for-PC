@@ -1,0 +1,3750 @@
+======================================================================
+DIR aok_drs
+--- anib_60001.bin line 89
+      85|	(set-strategic-number sn-stone-defend-priority 3)
+      86|
+      87|	(set-strategic-number sn-forage-defend-priority 0)
+      88|	(set-strategic-number sn-relic-defend-priority 0)
+      89|	(set-strategic-number sn-cap-civilian-builders 8)
+      90|
+      91|	(set-strategic-number sn-cap-civilian-gatherers 100)
+
+--- anib_60002.bin line 42
+      38|	(goal secondary-build 1)
+      39|	(random-number == 1)
+      40|	(can-train champion)
+      41|	(or
+      42|		(population < deathmatch-unit-max)
+      43|		(and
+      44|			(population < unit-max)
+
+--- anib_60002.bin line 44
+      40|	(can-train champion)
+      41|	(or
+      42|		(population < deathmatch-unit-max)
+      43|		(and
+      44|			(population < unit-max)
+      45|			(goal need-deathmatch-villagers NO)
+      46|		)
+
+--- anib_60002.bin line 62
+      58|		(goal combat-arm 1)
+      59|		(goal combat-arm 5)
+      60|	)
+      61|	(or
+      62|		(population < deathmatch-unit-max)
+      63|		(and
+      64|			(population < unit-max)
+
+--- anib_60002.bin line 64
+      60|	)
+      61|	(or
+      62|		(population < deathmatch-unit-max)
+      63|		(and
+      64|			(population < unit-max)
+      65|			(goal need-deathmatch-villagers NO)
+      66|		)
+
+--- anib_60002.bin line 102
+      98|	(goal secondary-build 1)
+      99|	(random-number == 1)
+     100|	(can-train heavy-cavalry-archer)
+     101|	(or
+     102|		(population < deathmatch-unit-max)
+     103|		(and
+     104|			(population < unit-max)
+
+--- anib_60002.bin line 104
+     100|	(can-train heavy-cavalry-archer)
+     101|	(or
+     102|		(population < deathmatch-unit-max)
+     103|		(and
+     104|			(population < unit-max)
+     105|			(goal need-deathmatch-villagers NO)
+     106|		)
+
+--- anib_60002.bin line 121
+     117|		(can-train hand-cannoneer)
+     118|		(can-train arbalest)
+     119|	)
+     120|	(or
+     121|		(population < deathmatch-unit-max)
+     122|		(and
+     123|			(population < unit-max)
+
+--- anib_60002.bin line 123
+     119|	)
+     120|	(or
+     121|		(population < deathmatch-unit-max)
+     122|		(and
+     123|			(population < unit-max)
+     124|			(goal need-deathmatch-villagers NO)
+     125|		)
+
+--- anib_60002.bin line 163
+     159|	(goal secondary-build 1)
+     160|	(random-number == 1)
+     161|	(can-train paladin)
+     162|	(or
+     163|		(population < deathmatch-unit-max)
+     164|		(and
+     165|			(population < unit-max)
+
+--- anib_60002.bin line 165
+     161|	(can-train paladin)
+     162|	(or
+     163|		(population < deathmatch-unit-max)
+     164|		(and
+     165|			(population < unit-max)
+     166|			(goal need-deathmatch-villagers NO)
+     167|		)
+
+--- anib_60002.bin line 179
+     175|	(goal secondary-build 1)
+     176|	(random-number == 2)
+     177|	(can-train light-cavalry)
+     178|	(or
+     179|		(population < deathmatch-unit-max)
+     180|		(and
+     181|			(population < unit-max)
+
+--- anib_60002.bin line 181
+     177|	(can-train light-cavalry)
+     178|	(or
+     179|		(population < deathmatch-unit-max)
+     180|		(and
+     181|			(population < unit-max)
+     182|			(goal need-deathmatch-villagers NO)
+     183|		)
+
+--- anib_60002.bin line 199
+     195|	(goal secondary-build 1)
+     196|	(random-number == 3)
+     197|	(can-train heavy-cavalry-archer)
+     198|	(or
+     199|		(population < deathmatch-unit-max)
+     200|		(and
+     201|			(population < unit-max)
+
+--- anib_60002.bin line 201
+     197|	(can-train heavy-cavalry-archer)
+     198|	(or
+     199|		(population < deathmatch-unit-max)
+     200|		(and
+     201|			(population < unit-max)
+     202|			(goal need-deathmatch-villagers NO)
+     203|		)
+
+--- anib_60002.bin line 215
+     211|	(goal secondary-build 1)
+     212|	(random-number == 4)
+     213|	(can-train heavy-scorpion)
+     214|	(or
+     215|		(population < deathmatch-unit-max)
+     216|		(and
+     217|			(population < unit-max)
+
+--- anib_60002.bin line 217
+     213|	(can-train heavy-scorpion)
+     214|	(or
+     215|		(population < deathmatch-unit-max)
+     216|		(and
+     217|			(population < unit-max)
+     218|			(goal need-deathmatch-villagers NO)
+     219|		)
+
+--- anib_60002.bin line 257
+     253|	(goal secondary-build 1)
+     254|	(random-number == 1)
+     255|	(can-train champion)
+     256|	(or
+     257|		(population < deathmatch-unit-max)
+     258|		(and
+     259|			(population < unit-max)
+
+--- anib_60002.bin line 259
+     255|	(can-train champion)
+     256|	(or
+     257|		(population < deathmatch-unit-max)
+     258|		(and
+     259|			(population < unit-max)
+     260|			(goal need-deathmatch-villagers NO)
+     261|		)
+
+--- anib_60002.bin line 273
+     269|	(goal secondary-build 1)
+     270|	(random-number == 3)
+     271|	(can-train light-cavalry)
+     272|	(or
+     273|		(population < deathmatch-unit-max)
+     274|		(and
+     275|			(population < unit-max)
+
+--- anib_60002.bin line 275
+     271|	(can-train light-cavalry)
+     272|	(or
+     273|		(population < deathmatch-unit-max)
+     274|		(and
+     275|			(population < unit-max)
+     276|			(goal need-deathmatch-villagers NO)
+     277|		)
+
+--- anib_60002.bin line 289
+     285|	(goal secondary-build 1)
+     286|	(random-number == 3)
+     287|	(can-train heavy-scorpion)
+     288|	(or
+     289|		(population < deathmatch-unit-max)
+     290|		(and
+     291|			(population < unit-max)
+
+--- anib_60002.bin line 291
+     287|	(can-train heavy-scorpion)
+     288|	(or
+     289|		(population < deathmatch-unit-max)
+     290|		(and
+     291|			(population < unit-max)
+     292|			(goal need-deathmatch-villagers NO)
+     293|		)
+
+--- anib_60002.bin line 330
+     326|	(goal secondary-build 1)
+     327|	(random-number == 1)
+     328|	(can-train paladin)
+     329|	(or
+     330|		(population < deathmatch-unit-max)
+     331|		(and
+     332|			(population < unit-max)
+
+--- anib_60002.bin line 332
+     328|	(can-train paladin)
+     329|	(or
+     330|		(population < deathmatch-unit-max)
+     331|		(and
+     332|			(population < unit-max)
+     333|			(goal need-deathmatch-villagers NO)
+     334|		)
+
+--- anib_60002.bin line 346
+     342|	(goal secondary-build 1)
+     343|	(random-number == 2)
+     344|	(can-train light-cavalry)
+     345|	(or
+     346|		(population < deathmatch-unit-max)
+     347|		(and
+     348|			(population < unit-max)
+
+--- anib_60002.bin line 348
+     344|	(can-train light-cavalry)
+     345|	(or
+     346|		(population < deathmatch-unit-max)
+     347|		(and
+     348|			(population < unit-max)
+     349|			(goal need-deathmatch-villagers NO)
+     350|		)
+
+--- anib_60002.bin line 366
+     362|	(goal secondary-build 1)
+     363|	(random-number == 3)
+     364|	(can-train heavy-cavalry-archer)
+     365|	(or
+     366|		(population < deathmatch-unit-max)
+     367|		(and
+     368|			(population < unit-max)
+
+--- anib_60002.bin line 368
+     364|	(can-train heavy-cavalry-archer)
+     365|	(or
+     366|		(population < deathmatch-unit-max)
+     367|		(and
+     368|			(population < unit-max)
+     369|			(goal need-deathmatch-villagers NO)
+     370|		)
+
+--- anib_60002.bin line 382
+     378|	(goal secondary-build 1)
+     379|	(random-number == 4)
+     380|	(can-train heavy-scorpion)
+     381|	(or
+     382|		(population < deathmatch-unit-max)
+     383|		(and
+     384|			(population < unit-max)
+
+--- anib_60002.bin line 384
+     380|	(can-train heavy-scorpion)
+     381|	(or
+     382|		(population < deathmatch-unit-max)
+     383|		(and
+     384|			(population < unit-max)
+     385|			(goal need-deathmatch-villagers NO)
+     386|		)
+
+--- anib_60002.bin line 423
+     419|	(goal secondary-build 1)
+     420|	(random-number == 1)
+     421|	(can-train light-cavalry)
+     422|	(or
+     423|		(population < deathmatch-unit-max)
+     424|		(and
+     425|			(population < unit-max)
+
+--- anib_60002.bin line 425
+     421|	(can-train light-cavalry)
+     422|	(or
+     423|		(population < deathmatch-unit-max)
+     424|		(and
+     425|			(population < unit-max)
+     426|			(goal need-deathmatch-villagers NO)
+     427|		)
+
+--- anib_60002.bin line 439
+     435|	(goal secondary-build 1)
+     436|	(random-number == 2)
+     437|	(can-train heavy-cavalry-archer)
+     438|	(or
+     439|		(population < deathmatch-unit-max)
+     440|		(and
+     441|			(population < unit-max)
+
+--- anib_60002.bin line 441
+     437|	(can-train heavy-cavalry-archer)
+     438|	(or
+     439|		(population < deathmatch-unit-max)
+     440|		(and
+     441|			(population < unit-max)
+     442|			(goal need-deathmatch-villagers NO)
+     443|		)
+
+--- anib_60002.bin line 455
+     451|	(goal secondary-build 1)
+     452|	(random-number == 3)
+     453|	(can-train heavy-scorpion)
+     454|	(or
+     455|		(population < deathmatch-unit-max)
+     456|		(and
+     457|			(population < unit-max)
+
+--- anib_60002.bin line 457
+     453|	(can-train heavy-scorpion)
+     454|	(or
+     455|		(population < deathmatch-unit-max)
+     456|		(and
+     457|			(population < unit-max)
+     458|			(goal need-deathmatch-villagers NO)
+     459|		)
+
+--- anib_60002.bin line 496
+     492|	(goal secondary-build 1)
+     493|	(random-number == 1)
+     494|	(can-train heavy-cavalry-archer)
+     495|	(or
+     496|		(population < deathmatch-unit-max)
+     497|		(and
+     498|			(population < unit-max)
+
+--- anib_60002.bin line 498
+     494|	(can-train heavy-cavalry-archer)
+     495|	(or
+     496|		(population < deathmatch-unit-max)
+     497|		(and
+     498|			(population < unit-max)
+     499|			(goal need-deathmatch-villagers NO)
+     500|		)
+
+--- anib_60002.bin line 515
+     511|		(can-train hand-cannoneer)
+     512|		(can-train arbalest)
+     513|	)
+     514|	(or
+     515|		(population < deathmatch-unit-max)
+     516|		(and
+     517|			(population < unit-max)
+
+--- anib_60002.bin line 517
+     513|	)
+     514|	(or
+     515|		(population < deathmatch-unit-max)
+     516|		(and
+     517|			(population < unit-max)
+     518|			(goal need-deathmatch-villagers NO)
+     519|		)
+
+--- anib_60002.bin line 532
+     528|	(goal secondary-build 1)
+     529|	(random-number == 3)
+     530|	(can-train heavy-scorpion)
+     531|	(or
+     532|		(population < deathmatch-unit-max)
+     533|		(and
+     534|			(population < unit-max)
+
+--- anib_60002.bin line 534
+     530|	(can-train heavy-scorpion)
+     531|	(or
+     532|		(population < deathmatch-unit-max)
+     533|		(and
+     534|			(population < unit-max)
+     535|			(goal need-deathmatch-villagers NO)
+     536|		)
+
+--- anib_60002.bin line 566
+     562|(defrule
+     563|	(goal secondary-build 1)
+     564|	(can-train champion)
+     565|	(or
+     566|		(population < deathmatch-unit-max)
+     567|		(and
+     568|			(population < unit-max)
+
+--- anib_60002.bin line 568
+     564|	(can-train champion)
+     565|	(or
+     566|		(population < deathmatch-unit-max)
+     567|		(and
+     568|			(population < unit-max)
+     569|			(goal need-deathmatch-villagers NO)
+     570|		)
+
+--- anib_60002.bin line 600
+     596|(defrule
+     597|	(goal secondary-build 1)
+     598|	(can-train heavy-cavalry-archer)
+     599|	(or
+     600|		(population < deathmatch-unit-max)
+     601|		(and
+     602|			(population < unit-max)
+
+--- anib_60002.bin line 602
+     598|	(can-train heavy-cavalry-archer)
+     599|	(or
+     600|		(population < deathmatch-unit-max)
+     601|		(and
+     602|			(population < unit-max)
+     603|			(goal need-deathmatch-villagers NO)
+     604|		)
+
+--- anib_60002.bin line 642
+     638|	(goal secondary-build 1)
+     639|	(random-number == 1)
+     640|	(can-train heavy-cavalry-archer)
+     641|	(or
+     642|		(population < deathmatch-unit-max)
+     643|		(and
+     644|			(population < unit-max)
+
+--- anib_60002.bin line 644
+     640|	(can-train heavy-cavalry-archer)
+     641|	(or
+     642|		(population < deathmatch-unit-max)
+     643|		(and
+     644|			(population < unit-max)
+     645|			(goal need-deathmatch-villagers NO)
+     646|		)
+
+--- anib_60002.bin line 661
+     657|		(can-train hand-cannoneer)
+     658|		(can-train arbalest)
+     659|	)
+     660|	(or
+     661|		(population < deathmatch-unit-max)
+     662|		(and
+     663|			(population < unit-max)
+
+--- anib_60002.bin line 663
+     659|	)
+     660|	(or
+     661|		(population < deathmatch-unit-max)
+     662|		(and
+     663|			(population < unit-max)
+     664|			(goal need-deathmatch-villagers NO)
+     665|		)
+
+--- anib_60002.bin line 704
+     700|	(goal secondary-build 1)
+     701|	(random-number == 1)
+     702|	(can-train paladin)
+     703|	(or
+     704|		(population < deathmatch-unit-max)
+     705|		(and
+     706|			(population < unit-max)
+
+--- anib_60002.bin line 706
+     702|	(can-train paladin)
+     703|	(or
+     704|		(population < deathmatch-unit-max)
+     705|		(and
+     706|			(population < unit-max)
+     707|			(goal need-deathmatch-villagers NO)
+     708|		)
+
+--- anib_60002.bin line 720
+     716|	(goal secondary-build 1)
+     717|	(random-number == 2)
+     718|	(can-train heavy-scorpion)
+     719|	(or
+     720|		(population < deathmatch-unit-max)
+     721|		(and
+     722|			(population < unit-max)
+
+--- anib_60002.bin line 722
+     718|	(can-train heavy-scorpion)
+     719|	(or
+     720|		(population < deathmatch-unit-max)
+     721|		(and
+     722|			(population < unit-max)
+     723|			(goal need-deathmatch-villagers NO)
+     724|		)
+
+--- anib_60002.bin line 761
+     757|	(goal secondary-build 1)
+     758|	(random-number == 1)
+     759|	(can-train champion)
+     760|	(or
+     761|		(population < deathmatch-unit-max)
+     762|		(and
+     763|			(population < unit-max)
+
+--- anib_60002.bin line 763
+     759|	(can-train champion)
+     760|	(or
+     761|		(population < deathmatch-unit-max)
+     762|		(and
+     763|			(population < unit-max)
+     764|			(goal need-deathmatch-villagers NO)
+     765|		)
+
+--- anib_60002.bin line 777
+     773|	(goal secondary-build 1)
+     774|	(random-number == 2)
+     775|	(can-train light-cavalry)
+     776|	(or
+     777|		(population < deathmatch-unit-max)
+     778|		(and
+     779|			(population < unit-max)
+
+--- anib_60002.bin line 779
+     775|	(can-train light-cavalry)
+     776|	(or
+     777|		(population < deathmatch-unit-max)
+     778|		(and
+     779|			(population < unit-max)
+     780|			(goal need-deathmatch-villagers NO)
+     781|		)
+
+--- anib_60002.bin line 793
+     789|	(goal secondary-build 1)
+     790|	(random-number == 3)
+     791|	(can-train heavy-scorpion)
+     792|	(or
+     793|		(population < deathmatch-unit-max)
+     794|		(and
+     795|			(population < unit-max)
+
+--- anib_60002.bin line 795
+     791|	(can-train heavy-scorpion)
+     792|	(or
+     793|		(population < deathmatch-unit-max)
+     794|		(and
+     795|			(population < unit-max)
+     796|			(goal need-deathmatch-villagers NO)
+     797|		)
+
+--- anib_60002.bin line 834
+     830|	(goal secondary-build 1)
+     831|	(random-number == 1)
+     832|	(can-train light-cavalry)
+     833|	(or
+     834|		(population < deathmatch-unit-max)
+     835|		(and
+     836|			(population < unit-max)
+
+--- anib_60002.bin line 836
+     832|	(can-train light-cavalry)
+     833|	(or
+     834|		(population < deathmatch-unit-max)
+     835|		(and
+     836|			(population < unit-max)
+     837|			(goal need-deathmatch-villagers NO)
+     838|		)
+
+--- anib_60002.bin line 850
+     846|	(goal secondary-build 1)
+     847|	(random-number == 2)
+     848|	(can-train arbalest)
+     849|	(or
+     850|		(population < deathmatch-unit-max)
+     851|		(and
+     852|			(population < unit-max)
+
+--- anib_60002.bin line 852
+     848|	(can-train arbalest)
+     849|	(or
+     850|		(population < deathmatch-unit-max)
+     851|		(and
+     852|			(population < unit-max)
+     853|			(goal need-deathmatch-villagers NO)
+     854|		)
+
+--- anib_60002.bin line 866
+     862|	(goal secondary-build 1)
+     863|	(random-number == 3)
+     864|	(can-train heavy-scorpion)
+     865|	(or
+     866|		(population < deathmatch-unit-max)
+     867|		(and
+     868|			(population < unit-max)
+
+--- anib_60002.bin line 868
+     864|	(can-train heavy-scorpion)
+     865|	(or
+     866|		(population < deathmatch-unit-max)
+     867|		(and
+     868|			(population < unit-max)
+     869|			(goal need-deathmatch-villagers NO)
+     870|		)
+
+--- anib_60002.bin line 1055
+    1051|	(set-strategic-number sn-minimum-civilian-explorers 0)
+    1052|	(set-strategic-number sn-cap-civilian-explorers 0)
+    1053|	(set-strategic-number sn-percent-civilian-explorers 0)
+    1054|
+    1055|	(set-strategic-number sn-cap-civilian-builders 12)
+    1056|	(set-strategic-number sn-percent-civilian-builders 100)
+    1057|
+
+--- anib_60002.bin line 1790
+    1786|(defrule
+    1787|	(building-type-count castle == 0)
+    1788|	(can-train militiaman-line)
+    1789|	(or
+    1790|		(population < deathmatch-unit-max)
+    1791|		(and
+    1792|			(population < unit-max)
+
+--- anib_60002.bin line 1792
+    1788|	(can-train militiaman-line)
+    1789|	(or
+    1790|		(population < deathmatch-unit-max)
+    1791|		(and
+    1792|			(population < unit-max)
+    1793|			(goal need-deathmatch-villagers NO)
+    1794|		)
+
+--- anib_60002.bin line 1805
+    1801|(defrule
+    1802|	(building-type-count castle == 0)
+    1803|	(can-train knight-line)
+    1804|	(or
+    1805|		(population < deathmatch-unit-max)
+    1806|		(and
+    1807|			(population < unit-max)
+
+--- anib_60002.bin line 1807
+    1803|	(can-train knight-line)
+    1804|	(or
+    1805|		(population < deathmatch-unit-max)
+    1806|		(and
+    1807|			(population < unit-max)
+    1808|			(goal need-deathmatch-villagers NO)
+    1809|		)
+
+--- anib_60002.bin line 1820
+    1816|(defrule
+    1817|	(building-type-count castle == 0)
+    1818|	(can-train cavalry-archer-line)
+    1819|	(or
+    1820|		(population < deathmatch-unit-max)
+    1821|		(and
+    1822|			(population < unit-max)
+
+--- anib_60002.bin line 1822
+    1818|	(can-train cavalry-archer-line)
+    1819|	(or
+    1820|		(population < deathmatch-unit-max)
+    1821|		(and
+    1822|			(population < unit-max)
+    1823|			(goal need-deathmatch-villagers NO)
+    1824|		)
+
+--- anib_60002.bin line 1836
+    1832|	(building-type-count castle == 0)
+    1833|	(can-train archer-line)
+    1834|	(not (unit-available hand-cannoneer) )
+    1835|	(or
+    1836|		(population < deathmatch-unit-max)
+    1837|		(and
+    1838|			(population < unit-max)
+
+--- anib_60002.bin line 1838
+    1834|	(not (unit-available hand-cannoneer) )
+    1835|	(or
+    1836|		(population < deathmatch-unit-max)
+    1837|		(and
+    1838|			(population < unit-max)
+    1839|			(goal need-deathmatch-villagers NO)
+    1840|		)
+
+--- anib_60002.bin line 1851
+    1847|(defrule
+    1848|	(building-type-count castle == 0)
+    1849|	(can-train hand-cannoneer)
+    1850|	(or
+    1851|		(population < deathmatch-unit-max)
+    1852|		(and
+    1853|			(population < unit-max)
+
+--- anib_60002.bin line 1853
+    1849|	(can-train hand-cannoneer)
+    1850|	(or
+    1851|		(population < deathmatch-unit-max)
+    1852|		(and
+    1853|			(population < unit-max)
+    1854|			(goal need-deathmatch-villagers NO)
+    1855|		)
+
+--- anib_60002.bin line 1865
+    1861|
+    1862|(defrule
+    1863|	(can-train my-unique-unit-line)
+    1864|	(or
+    1865|		(population < deathmatch-unit-max)
+    1866|		(and
+    1867|			(population < unit-max)
+
+--- anib_60002.bin line 1867
+    1863|	(can-train my-unique-unit-line)
+    1864|	(or
+    1865|		(population < deathmatch-unit-max)
+    1866|		(and
+    1867|			(population < unit-max)
+    1868|			(goal need-deathmatch-villagers NO)
+    1869|		)
+
+--- anib_60007.bin line 334
+     330|	(disable-self)
+     331|)
+     332|
+     333|(defrule
+     334|	(population < unit-max)
+     335|	(timer-triggered  t-ageup)
+     336|	(can-train my-unique-unit-line)
+
+--- anib_60007.bin line 343
+     339|	(set-goal secondary-build 0)
+     340|)
+     341|
+     342|(defrule
+     343|	(population < unit-max)
+     344|	(timer-triggered  t-ageup)
+     345|	(can-train champion)
+
+--- anib_60007.bin line 352
+     348|	(set-goal secondary-build 0)
+     349|)
+     350|
+     351|(defrule
+     352|	(population < unit-max)
+     353|	(timer-triggered  t-ageup)
+     354|	(can-train paladin)
+
+--- anib_60007.bin line 361
+     357|	(set-goal secondary-build 0)
+     358|)
+     359|
+     360|(defrule
+     361|	(population < unit-max)
+     362|	(timer-triggered  t-ageup)
+     363|	(can-train heavy-cavalry-archer)
+
+--- anib_60007.bin line 370
+     366|	(set-goal secondary-build 0)
+     367|)
+     368|
+     369|(defrule
+     370|	(population < unit-max)
+     371|	(timer-triggered  t-ageup)
+     372|	(can-train hand-cannoneer)
+
+--- anib_60007.bin line 379
+     375|	(set-goal secondary-build 0)
+     376|)
+     377|
+     378|(defrule
+     379|	(population < unit-max)
+     380|	(timer-triggered  t-ageup)
+     381|	(can-train arbalest)
+
+--- anib_60008.bin line 716
+     712|
+     713|(defrule
+     714|	(timer-triggered t-chatmore)
+     715|=>
+     716|	(cc-add-resource wood 500)
+     717|	(cc-add-resource food 500)
+     718|	(cc-add-resource gold 500)
+
+--- anib_60008.bin line 717
+     713|(defrule
+     714|	(timer-triggered t-chatmore)
+     715|=>
+     716|	(cc-add-resource wood 500)
+     717|	(cc-add-resource food 500)
+     718|	(cc-add-resource gold 500)
+     719|	(cc-add-resource stone 500)
+
+--- anib_60008.bin line 718
+     714|	(timer-triggered t-chatmore)
+     715|=>
+     716|	(cc-add-resource wood 500)
+     717|	(cc-add-resource food 500)
+     718|	(cc-add-resource gold 500)
+     719|	(cc-add-resource stone 500)
+     720|	(disable-timer t-chatmore)
+
+--- anib_60008.bin line 719
+     715|=>
+     716|	(cc-add-resource wood 500)
+     717|	(cc-add-resource food 500)
+     718|	(cc-add-resource gold 500)
+     719|	(cc-add-resource stone 500)
+     720|	(disable-timer t-chatmore)
+     721|	(enable-timer t-chatmore 1200)
+
+--- anib_60009.bin line 565
+     561|	(set-goal secondary-build 0)
+     562|)
+     563|
+     564|(defrule
+     565|	(population < unit-max)
+     566|	(can-train militiaman-line)
+     567|	(or
+
+--- anib_60009.bin line 579
+     575|
+     576|(defrule
+     577|	(goal secondary-build 0)
+     578|	(goal combat-supp INFANTRY)
+     579|	(population < unit-max)
+     580|	(can-train militiaman-line)
+     581|=>
+
+--- anib_60009.bin line 642
+     638|	(set-goal secondary-build 0)
+     639|)
+     640|
+     641|(defrule
+     642|	(population < unit-max)
+     643|	(can-train knight-line)
+     644|	(or
+
+--- anib_60009.bin line 656
+     652|
+     653|(defrule
+     654|	(goal secondary-build 0)
+     655|	(goal combat-supp CAVALRY)
+     656|	(population < unit-max)
+     657|	(can-train knight-line)
+     658|=>
+
+--- anib_60009.bin line 682
+     678|)
+     679|
+     680|(defrule
+     681|	(goal combat-arm LIGHTCAV)
+     682|	(population < unit-max)
+     683|	(can-train light-cavalry)
+     684|	(or
+
+--- anib_60009.bin line 696
+     692|
+     693|(defrule
+     694|	(goal combat-arm LIGHTCAV)
+     695|	(current-age == imperial-age)
+     696|	(population < unit-max)
+     697|	(can-train knight-line)
+     698|=>
+
+--- anib_60009.bin line 705
+     701|)
+     702|
+     703|(defrule
+     704|	(goal secondary-build 0)
+     705|	(population < unit-max)
+     706|	(can-train light-cavalry)
+     707|	(or
+
+--- anib_60009.bin line 797
+     793|	(set-goal secondary-build 0)
+     794|)
+     795|
+     796|(defrule
+     797|	(population < unit-max)
+     798|	(can-train cavalry-archer-line)
+     799|	(or
+
+--- anib_60009.bin line 811
+     807|
+     808|(defrule
+     809|	(goal secondary-build 0)
+     810|	(goal combat-supp CAVARCHER)
+     811|	(population < unit-max)
+     812|	(can-train cavalry-archer-line)
+     813|=>
+
+--- anib_60009.bin line 821
+     817|
+     818|;*******************************************************
+     819|;HAND-CANNONEERS
+     820|(defrule
+     821|	(population < unit-max)
+     822|	(can-train hand-cannoneer)
+     823|	(or
+
+--- anib_60009.bin line 835
+     831|
+     832|(defrule
+     833|	(goal secondary-build 0)
+     834|	(goal combat-supp ARCHER)
+     835|	(population < unit-max)
+     836|	(can-train hand-cannoneer)
+     837|=>
+
+--- anib_60009.bin line 865
+     861|	(set-goal secondary-build 0)
+     862|)
+     863|
+     864|(defrule
+     865|	(population < unit-max)
+     866|	(can-train archer-line)
+     867|	(not (unit-available hand-cannoneer) )
+
+--- anib_60009.bin line 880
+     876|
+     877|(defrule
+     878|	(goal secondary-build 0)
+     879|	(goal combat-supp ARCHER)
+     880|	(population < unit-max)
+     881|	(can-train archer-line)
+     882|=>
+
+--- anib_60009.bin line 892
+     888|;SCORPION SUPPORT == goal combat-supp SCORPION
+     889|(defrule
+     890|	(goal secondary-build 0)
+     891|	(goal combat-supp SCORPION)
+     892|	(population < unit-max)
+     893|	(can-train scorpion-line)
+     894|=>
+
+--- anib_60009.bin line 902
+     898|
+     899|(defrule
+     900|	(goal secondary-build 0)
+     901|	(goal combat-supp SCORPION)
+     902|	(population < unit-max)
+     903|	(building-type-count siege-workshop == 0)
+     904|	(can-train militiaman-line)
+
+--- anib_60009.bin line 961
+     957|)
+     958|
+     959|(defrule
+     960|	(goal combat-arm UNIQUE)
+     961|	(population < unit-max)
+     962|	(can-train my-unique-unit-line)
+     963|=>
+
+--- anib_60010.bin line 23
+      19|(defconst civ-dark 11)
+      20|(defconst civ-feudal 13)
+      21|(defconst civ-castle 15)
+      22|(defconst pop-cap 25)
+      23|(defconst deathmatch-unit-max 13)
+      24|
+      25|(defconst feudal-town-size 20)
+
+--- anib_60010.bin line 30
+      26|(defconst castle-town-size 25)
+      27|(defconst imperial-town-size 25)
+      28|
+      29|#load-if-defined DIFFICULTY-EASIEST
+      30|(defconst unit-max 19)
+      31|#end-if
+      32|
+
+--- anib_60010.bin line 34
+      30|(defconst unit-max 19)
+      31|#end-if
+      32|
+      33|#load-if-defined DIFFICULTY-EASY
+      34|(defconst unit-max 19)
+      35|#end-if
+      36|
+
+--- anib_60010.bin line 38
+      34|(defconst unit-max 19)
+      35|#end-if
+      36|
+      37|#load-if-defined DIFFICULTY-MODERATE
+      38|(defconst unit-max 21)
+      39|#end-if
+      40|
+
+--- anib_60010.bin line 42
+      38|(defconst unit-max 21)
+      39|#end-if
+      40|
+      41|#load-if-defined DIFFICULTY-HARD
+      42|(defconst unit-max 23)
+      43|#end-if
+      44|
+
+--- anib_60010.bin line 46
+      42|(defconst unit-max 23)
+      43|#end-if
+      44|
+      45|#load-if-defined DIFFICULTY-HARDEST
+      46|(defconst unit-max 23)
+      47|#end-if
+      48|
+
+--- anib_60010.bin line 62
+      58|(defconst civ-dark 20)
+      59|(defconst civ-feudal 30)
+      60|(defconst civ-castle 35)
+      61|(defconst pop-cap 50)
+      62|(defconst deathmatch-unit-max 25)
+      63|
+      64|(defconst feudal-town-size 20)
+
+--- anib_60010.bin line 69
+      65|(defconst castle-town-size 25)
+      66|(defconst imperial-town-size 30)
+      67|
+      68|#load-if-defined DIFFICULTY-EASIEST
+      69|(defconst unit-max 35)
+      70|#end-if
+      71|
+
+--- anib_60010.bin line 73
+      69|(defconst unit-max 35)
+      70|#end-if
+      71|
+      72|#load-if-defined DIFFICULTY-EASY
+      73|(defconst unit-max 35)
+      74|#end-if
+      75|
+
+--- anib_60010.bin line 77
+      73|(defconst unit-max 35)
+      74|#end-if
+      75|
+      76|#load-if-defined DIFFICULTY-MODERATE
+      77|(defconst unit-max 40)
+      78|#end-if
+      79|
+
+--- anib_60010.bin line 81
+      77|(defconst unit-max 40)
+      78|#end-if
+      79|
+      80|#load-if-defined DIFFICULTY-HARD
+      81|(defconst unit-max 45)
+      82|#end-if
+      83|
+
+--- anib_60010.bin line 85
+      81|(defconst unit-max 45)
+      82|#end-if
+      83|
+      84|#load-if-defined DIFFICULTY-HARDEST
+      85|(defconst unit-max 45)
+      86|#end-if
+      87|
+
+--- anib_60010.bin line 101
+      97|(defconst civ-dark 25)
+      98|(defconst civ-feudal 35)
+      99|(defconst civ-castle 40)
+     100|(defconst pop-cap 75)
+     101|(defconst deathmatch-unit-max 55)
+     102|
+     103|(defconst feudal-town-size 20)
+
+--- anib_60010.bin line 108
+     104|(defconst castle-town-size 30)
+     105|(defconst imperial-town-size 30)
+     106|
+     107|#load-if-defined DIFFICULTY-EASIEST
+     108|(defconst unit-max 56)
+     109|#end-if
+     110|
+
+--- anib_60010.bin line 112
+     108|(defconst unit-max 56)
+     109|#end-if
+     110|
+     111|#load-if-defined DIFFICULTY-EASY
+     112|(defconst unit-max 56)
+     113|#end-if
+     114|
+
+--- anib_60010.bin line 116
+     112|(defconst unit-max 56)
+     113|#end-if
+     114|
+     115|#load-if-defined DIFFICULTY-MODERATE
+     116|(defconst unit-max 63)
+     117|#end-if
+     118|
+
+--- anib_60010.bin line 120
+     116|(defconst unit-max 63)
+     117|#end-if
+     118|
+     119|#load-if-defined DIFFICULTY-HARD
+     120|(defconst unit-max 70)
+     121|#end-if
+     122|
+
+--- anib_60010.bin line 124
+     120|(defconst unit-max 70)
+     121|#end-if
+     122|
+     123|#load-if-defined DIFFICULTY-HARDEST
+     124|(defconst unit-max 70)
+     125|#end-if
+     126|
+
+--- anib_60010.bin line 140
+     136|(defconst civ-dark 25)
+     137|(defconst civ-feudal 40)
+     138|(defconst civ-castle 50)
+     139|(defconst pop-cap 100)
+     140|(defconst deathmatch-unit-max 70)
+     141|
+     142|(defconst feudal-town-size 20)
+
+--- anib_60010.bin line 147
+     143|(defconst castle-town-size 30)
+     144|(defconst imperial-town-size 35)
+     145|
+     146|#load-if-defined DIFFICULTY-EASIEST
+     147|(defconst unit-max 70)
+     148|#end-if
+     149|
+
+--- anib_60010.bin line 151
+     147|(defconst unit-max 70)
+     148|#end-if
+     149|
+     150|#load-if-defined DIFFICULTY-EASY
+     151|(defconst unit-max 70)
+     152|#end-if
+     153|
+
+--- anib_60010.bin line 155
+     151|(defconst unit-max 70)
+     152|#end-if
+     153|
+     154|#load-if-defined DIFFICULTY-MODERATE
+     155|(defconst unit-max 80)
+     156|#end-if
+     157|
+
+--- anib_60010.bin line 159
+     155|(defconst unit-max 80)
+     156|#end-if
+     157|
+     158|#load-if-defined DIFFICULTY-HARD
+     159|(defconst unit-max 90)
+     160|#end-if
+     161|
+
+--- anib_60010.bin line 163
+     159|(defconst unit-max 90)
+     160|#end-if
+     161|
+     162|#load-if-defined DIFFICULTY-HARDEST
+     163|(defconst unit-max 90)
+     164|#end-if
+     165|
+
+--- anib_60010.bin line 179
+     175|(defconst civ-dark 25)
+     176|(defconst civ-feudal 40)
+     177|(defconst civ-castle 55)
+     178|(defconst pop-cap 125)
+     179|(defconst deathmatch-unit-max 95)
+     180|
+     181|(defconst feudal-town-size 20)
+
+--- anib_60010.bin line 186
+     182|(defconst castle-town-size 35)
+     183|(defconst imperial-town-size 40)
+     184|
+     185|#load-if-defined DIFFICULTY-EASIEST
+     186|(defconst unit-max 90)
+     187|#end-if
+     188|
+
+--- anib_60010.bin line 190
+     186|(defconst unit-max 90)
+     187|#end-if
+     188|
+     189|#load-if-defined DIFFICULTY-EASY
+     190|(defconst unit-max 90)
+     191|#end-if
+     192|
+
+--- anib_60010.bin line 194
+     190|(defconst unit-max 90)
+     191|#end-if
+     192|
+     193|#load-if-defined DIFFICULTY-MODERATE
+     194|(defconst unit-max 103)
+     195|#end-if
+     196|
+
+--- anib_60010.bin line 198
+     194|(defconst unit-max 103)
+     195|#end-if
+     196|
+     197|#load-if-defined DIFFICULTY-HARD
+     198|(defconst unit-max 115)
+     199|#end-if
+     200|
+
+--- anib_60010.bin line 202
+     198|(defconst unit-max 115)
+     199|#end-if
+     200|
+     201|#load-if-defined DIFFICULTY-HARDEST
+     202|(defconst unit-max 115)
+     203|#end-if
+     204|
+
+--- anib_60010.bin line 218
+     214|(defconst civ-dark 25)
+     215|(defconst civ-feudal 40)
+     216|(defconst civ-castle 60)
+     217|(defconst pop-cap 150)
+     218|(defconst deathmatch-unit-max 120)
+     219|
+     220|(defconst feudal-town-size 20)
+
+--- anib_60010.bin line 225
+     221|(defconst castle-town-size 35)
+     222|(defconst imperial-town-size 40)
+     223|
+     224|#load-if-defined DIFFICULTY-EASIEST
+     225|(defconst unit-max 110)
+     226|#end-if
+     227|
+
+--- anib_60010.bin line 229
+     225|(defconst unit-max 110)
+     226|#end-if
+     227|
+     228|#load-if-defined DIFFICULTY-EASY
+     229|(defconst unit-max 110)
+     230|#end-if
+     231|
+
+--- anib_60010.bin line 233
+     229|(defconst unit-max 110)
+     230|#end-if
+     231|
+     232|#load-if-defined DIFFICULTY-MODERATE
+     233|(defconst unit-max 125)
+     234|#end-if
+     235|
+
+--- anib_60010.bin line 237
+     233|(defconst unit-max 125)
+     234|#end-if
+     235|
+     236|#load-if-defined DIFFICULTY-HARD
+     237|(defconst unit-max 140)
+     238|#end-if
+     239|
+
+--- anib_60010.bin line 241
+     237|(defconst unit-max 140)
+     238|#end-if
+     239|
+     240|#load-if-defined DIFFICULTY-HARDEST
+     241|(defconst unit-max 140)
+     242|#end-if
+     243|
+
+--- anib_60010.bin line 257
+     253|(defconst civ-dark 25)
+     254|(defconst civ-feudal 40)
+     255|(defconst civ-castle 65)
+     256|(defconst pop-cap 175)
+     257|(defconst deathmatch-unit-max 145)
+     258|
+     259|(defconst feudal-town-size 20)
+
+--- anib_60010.bin line 264
+     260|(defconst castle-town-size 35)
+     261|(defconst imperial-town-size 40)
+     262|
+     263|#load-if-defined DIFFICULTY-EASIEST
+     264|(defconst unit-max 125)
+     265|#end-if
+     266|
+
+--- anib_60010.bin line 268
+     264|(defconst unit-max 125)
+     265|#end-if
+     266|
+     267|#load-if-defined DIFFICULTY-EASY
+     268|(defconst unit-max 125)
+     269|#end-if
+     270|
+
+--- anib_60010.bin line 272
+     268|(defconst unit-max 125)
+     269|#end-if
+     270|
+     271|#load-if-defined DIFFICULTY-MODERATE
+     272|(defconst unit-max 145)
+     273|#end-if
+     274|
+
+--- anib_60010.bin line 276
+     272|(defconst unit-max 145)
+     273|#end-if
+     274|
+     275|#load-if-defined DIFFICULTY-HARD
+     276|(defconst unit-max 165)
+     277|#end-if
+     278|
+
+--- anib_60010.bin line 280
+     276|(defconst unit-max 165)
+     277|#end-if
+     278|
+     279|#load-if-defined DIFFICULTY-HARDEST
+     280|(defconst unit-max 165)
+     281|#end-if
+     282|
+
+--- anib_60010.bin line 296
+     292|(defconst civ-dark 25)
+     293|(defconst civ-feudal 40)
+     294|(defconst civ-castle 70)
+     295|(defconst pop-cap 200)
+     296|(defconst deathmatch-unit-max 170)
+     297|
+     298|(defconst feudal-town-size 20)
+
+--- anib_60010.bin line 303
+     299|(defconst castle-town-size 35)
+     300|(defconst imperial-town-size 40)
+     301|
+     302|#load-if-defined DIFFICULTY-EASIEST
+     303|(defconst unit-max 130)
+     304|#end-if
+     305|
+
+--- anib_60010.bin line 307
+     303|(defconst unit-max 130)
+     304|#end-if
+     305|
+     306|#load-if-defined DIFFICULTY-EASY
+     307|(defconst unit-max 130)
+     308|#end-if
+     309|
+
+--- anib_60010.bin line 311
+     307|(defconst unit-max 130)
+     308|#end-if
+     309|
+     310|#load-if-defined DIFFICULTY-MODERATE
+     311|(defconst unit-max 160)
+     312|#end-if
+     313|
+
+--- anib_60010.bin line 315
+     311|(defconst unit-max 160)
+     312|#end-if
+     313|
+     314|#load-if-defined DIFFICULTY-HARD
+     315|(defconst unit-max 190)
+     316|#end-if
+     317|
+
+--- anib_60010.bin line 319
+     315|(defconst unit-max 190)
+     316|#end-if
+     317|
+     318|#load-if-defined DIFFICULTY-HARDEST
+     319|(defconst unit-max 190)
+     320|#end-if
+     321|
+
+--- anib_60014.bin line 20
+      16|	(can-build-with-escrow castle)
+      17|=>
+      18|	(release-escrow stone)
+      19|	(set-strategic-number sn-percent-civilian-builders 75)
+      20|	(set-strategic-number sn-cap-civilian-builders 15)
+      21|	(set-strategic-number sn-percent-civilian-gatherers 25)
+      22|	(build castle)
+
+--- anib_60014.bin line 34
+      30|		(strategic-number sn-cap-civilian-builders == 15)
+      31|	)
+      32|=>
+      33|	(set-strategic-number sn-percent-civilian-builders 10)
+      34|	(set-strategic-number sn-cap-civilian-builders 8)
+      35|	(set-strategic-number sn-percent-civilian-gatherers 90)
+      36|	(set-goal castle-attempt 2)
+
+--- anib_60016.bin line 24
+      20|;should we construct a wonder?
+      21|(defrule
+      22|	(goal wonder-attempt MAYBE)
+      23|	(current-age == imperial-age)
+      24|	(population > unit-max)
+      25|	(wood-amount >= 500)
+      26|	(gold-amount >= 500)
+
+--- anib_60016.bin line 46
+      42|	(can-build-with-escrow wonder)
+      43|=>
+      44|	(set-strategic-number sn-maximum-town-size 10)
+      45|	(set-strategic-number sn-percent-civilian-builders 90)
+      46|	(set-strategic-number sn-cap-civilian-builders 50)
+      47|	(set-strategic-number sn-percent-civilian-gatherers 10)
+      48|	(chat-local-to-self "Time to Wonder")
+
+--- anib_60016.bin line 85
+      81|(defrule
+      82|	(building-type-count wonder > 0)
+      83|=>
+      84|	(set-strategic-number sn-percent-civilian-builders 15)
+      85|	(set-strategic-number sn-cap-civilian-builders 8)
+      86|	(set-strategic-number sn-percent-civilian-gatherers 85)
+      87|	(disable-self)
+
+--- anib_60016.bin line 108
+     104|=>
+     105|	(delete-building wonder)
+     106|	(set-strategic-number sn-maximum-town-size imperial-town-size)
+     107|	(set-strategic-number sn-percent-civilian-builders 15)
+     108|	(set-strategic-number sn-cap-civilian-builders 8)
+     109|	(set-strategic-number sn-percent-civilian-gatherers 85)
+     110|	(set-goal wonder-attempt NO)
+
+======================================================================
+DIR x1_drs
+--- anib_60001.bin line 95
+      91|	(set-strategic-number sn-stone-defend-priority 3)
+      92|
+      93|	(set-strategic-number sn-forage-defend-priority 0)
+      94|	(set-strategic-number sn-relic-defend-priority 0)
+      95|	(set-strategic-number sn-cap-civilian-builders 8)
+      96|
+      97|	(set-strategic-number sn-cap-civilian-gatherers 100)
+
+--- anib_60001.bin line 151
+     147|#load-if-not-defined DIFFICULTY-MODERATE
+     148|(defrule
+     149|	(current-age == dark-age)
+     150|=>
+     151|	(cc-add-resource wood 100)
+     152|	(cc-add-resource food 100)
+     153|	(cc-add-resource gold 100)
+
+--- anib_60001.bin line 152
+     148|(defrule
+     149|	(current-age == dark-age)
+     150|=>
+     151|	(cc-add-resource wood 100)
+     152|	(cc-add-resource food 100)
+     153|	(cc-add-resource gold 100)
+     154|	(cc-add-resource stone 100)
+
+--- anib_60001.bin line 153
+     149|	(current-age == dark-age)
+     150|=>
+     151|	(cc-add-resource wood 100)
+     152|	(cc-add-resource food 100)
+     153|	(cc-add-resource gold 100)
+     154|	(cc-add-resource stone 100)
+     155|	(disable-self)
+
+--- anib_60001.bin line 154
+     150|=>
+     151|	(cc-add-resource wood 100)
+     152|	(cc-add-resource food 100)
+     153|	(cc-add-resource gold 100)
+     154|	(cc-add-resource stone 100)
+     155|	(disable-self)
+     156|)
+
+--- anib_60001.bin line 161
+     157|
+     158|(defrule
+     159|	(current-age == feudal-age)
+     160|=>
+     161|	(cc-add-resource wood 200)
+     162|	(cc-add-resource food 200)
+     163|	(cc-add-resource gold 200)
+
+--- anib_60001.bin line 162
+     158|(defrule
+     159|	(current-age == feudal-age)
+     160|=>
+     161|	(cc-add-resource wood 200)
+     162|	(cc-add-resource food 200)
+     163|	(cc-add-resource gold 200)
+     164|	(cc-add-resource stone 200)
+
+--- anib_60001.bin line 163
+     159|	(current-age == feudal-age)
+     160|=>
+     161|	(cc-add-resource wood 200)
+     162|	(cc-add-resource food 200)
+     163|	(cc-add-resource gold 200)
+     164|	(cc-add-resource stone 200)
+     165|	(disable-self)
+
+--- anib_60001.bin line 164
+     160|=>
+     161|	(cc-add-resource wood 200)
+     162|	(cc-add-resource food 200)
+     163|	(cc-add-resource gold 200)
+     164|	(cc-add-resource stone 200)
+     165|	(disable-self)
+     166|)
+
+--- anib_60001.bin line 171
+     167|
+     168|(defrule
+     169|	(current-age == castle-age)
+     170|=>
+     171|	(cc-add-resource wood 500)
+     172|	(cc-add-resource food 500)
+     173|	(cc-add-resource gold 500)
+
+--- anib_60001.bin line 172
+     168|(defrule
+     169|	(current-age == castle-age)
+     170|=>
+     171|	(cc-add-resource wood 500)
+     172|	(cc-add-resource food 500)
+     173|	(cc-add-resource gold 500)
+     174|	(cc-add-resource stone 500)
+
+--- anib_60001.bin line 173
+     169|	(current-age == castle-age)
+     170|=>
+     171|	(cc-add-resource wood 500)
+     172|	(cc-add-resource food 500)
+     173|	(cc-add-resource gold 500)
+     174|	(cc-add-resource stone 500)
+     175|	(disable-self)
+
+--- anib_60001.bin line 174
+     170|=>
+     171|	(cc-add-resource wood 500)
+     172|	(cc-add-resource food 500)
+     173|	(cc-add-resource gold 500)
+     174|	(cc-add-resource stone 500)
+     175|	(disable-self)
+     176|)
+
+--- anib_60001.bin line 181
+     177|
+     178|(defrule
+     179|	(current-age == imperial-age)
+     180|=>
+     181|	(cc-add-resource wood 1000)
+     182|	(cc-add-resource food 1000)
+     183|	(cc-add-resource gold 1000)
+
+--- anib_60001.bin line 182
+     178|(defrule
+     179|	(current-age == imperial-age)
+     180|=>
+     181|	(cc-add-resource wood 1000)
+     182|	(cc-add-resource food 1000)
+     183|	(cc-add-resource gold 1000)
+     184|	(cc-add-resource stone 1000)
+
+--- anib_60001.bin line 183
+     179|	(current-age == imperial-age)
+     180|=>
+     181|	(cc-add-resource wood 1000)
+     182|	(cc-add-resource food 1000)
+     183|	(cc-add-resource gold 1000)
+     184|	(cc-add-resource stone 1000)
+     185|	(disable-timer t-chatmore)
+
+--- anib_60001.bin line 184
+     180|=>
+     181|	(cc-add-resource wood 1000)
+     182|	(cc-add-resource food 1000)
+     183|	(cc-add-resource gold 1000)
+     184|	(cc-add-resource stone 1000)
+     185|	(disable-timer t-chatmore)
+     186|	(enable-timer t-chatmore 1800)
+
+--- anib_60001.bin line 193
+     189|
+     190|(defrule
+     191|	(timer-triggered t-chatmore)
+     192|=>
+     193|	(cc-add-resource wood 500)
+     194|	(cc-add-resource food 500)
+     195|	(cc-add-resource gold 500)
+
+--- anib_60001.bin line 194
+     190|(defrule
+     191|	(timer-triggered t-chatmore)
+     192|=>
+     193|	(cc-add-resource wood 500)
+     194|	(cc-add-resource food 500)
+     195|	(cc-add-resource gold 500)
+     196|	(cc-add-resource stone 500)
+
+--- anib_60001.bin line 195
+     191|	(timer-triggered t-chatmore)
+     192|=>
+     193|	(cc-add-resource wood 500)
+     194|	(cc-add-resource food 500)
+     195|	(cc-add-resource gold 500)
+     196|	(cc-add-resource stone 500)
+     197|	(disable-timer t-chatmore)
+
+--- anib_60001.bin line 196
+     192|=>
+     193|	(cc-add-resource wood 500)
+     194|	(cc-add-resource food 500)
+     195|	(cc-add-resource gold 500)
+     196|	(cc-add-resource stone 500)
+     197|	(disable-timer t-chatmore)
+     198|	(enable-timer t-chatmore 1200)
+
+--- anib_60002.bin line 71
+      67|	(goal secondary-build 1)
+      68|	(random-number == 1)
+      69|	(can-train elite-eagle-warrior)
+      70|	(or
+      71|		(population < deathmatch-unit-max)
+      72|		(and
+      73|			(population < unit-max)
+
+--- anib_60002.bin line 73
+      69|	(can-train elite-eagle-warrior)
+      70|	(or
+      71|		(population < deathmatch-unit-max)
+      72|		(and
+      73|			(population < unit-max)
+      74|			(goal need-deathmatch-villagers NO)
+      75|		)
+
+--- anib_60002.bin line 87
+      83|	(goal secondary-build 1)
+      84|	(random-number == 2)
+      85|	(can-train arbalest)
+      86|	(or
+      87|		(population < deathmatch-unit-max)
+      88|		(and
+      89|			(population < unit-max)
+
+--- anib_60002.bin line 89
+      85|	(can-train arbalest)
+      86|	(or
+      87|		(population < deathmatch-unit-max)
+      88|		(and
+      89|			(population < unit-max)
+      90|			(goal need-deathmatch-villagers NO)
+      91|		)
+
+--- anib_60002.bin line 129
+     125|	(goal secondary-build 1)
+     126|	(random-number == 1)
+     127|	(can-train heavy-cavalry-archer)
+     128|	(or
+     129|		(population < deathmatch-unit-max)
+     130|		(and
+     131|			(population < unit-max)
+
+--- anib_60002.bin line 131
+     127|	(can-train heavy-cavalry-archer)
+     128|	(or
+     129|		(population < deathmatch-unit-max)
+     130|		(and
+     131|			(population < unit-max)
+     132|			(goal need-deathmatch-villagers NO)
+     133|		)
+
+--- anib_60002.bin line 149
+     145|		(can-train elite-tarkan)
+     146|		(can-train paladin)
+     147|	)
+     148|	(or
+     149|		(population < deathmatch-unit-max)
+     150|		(and
+     151|			(population < unit-max)
+
+--- anib_60002.bin line 151
+     147|	)
+     148|	(or
+     149|		(population < deathmatch-unit-max)
+     150|		(and
+     151|			(population < unit-max)
+     152|			(goal need-deathmatch-villagers NO)
+     153|		)
+
+--- anib_60002.bin line 192
+     188|	(goal secondary-build 1)
+     189|	(random-number == 1)
+     190|	(can-train heavy-cavalry-archer)
+     191|	(or
+     192|		(population < deathmatch-unit-max)
+     193|		(and
+     194|			(population < unit-max)
+
+--- anib_60002.bin line 194
+     190|	(can-train heavy-cavalry-archer)
+     191|	(or
+     192|		(population < deathmatch-unit-max)
+     193|		(and
+     194|			(population < unit-max)
+     195|			(goal need-deathmatch-villagers NO)
+     196|		)
+
+--- anib_60002.bin line 208
+     204|	(goal secondary-build 1)
+     205|	(random-number == 2)
+     206|	(can-train hand-cannoneer)
+     207|	(or
+     208|		(population < deathmatch-unit-max)
+     209|		(and
+     210|			(population < unit-max)
+
+--- anib_60002.bin line 210
+     206|	(can-train hand-cannoneer)
+     207|	(or
+     208|		(population < deathmatch-unit-max)
+     209|		(and
+     210|			(population < unit-max)
+     211|			(goal need-deathmatch-villagers NO)
+     212|		)
+
+--- anib_60002.bin line 251
+     247|	(goal secondary-build 1)
+     248|	(random-number == 1)
+     249|	(can-train champion)
+     250|	(or
+     251|		(population < deathmatch-unit-max)
+     252|		(and
+     253|			(population < unit-max)
+
+--- anib_60002.bin line 253
+     249|	(can-train champion)
+     250|	(or
+     251|		(population < deathmatch-unit-max)
+     252|		(and
+     253|			(population < unit-max)
+     254|			(goal need-deathmatch-villagers NO)
+     255|		)
+
+--- anib_60002.bin line 267
+     263|	(goal secondary-build 1)
+     264|	(random-number == 2)
+     265|	(can-train elite-eagle-warrior)
+     266|	(or
+     267|		(population < deathmatch-unit-max)
+     268|		(and
+     269|			(population < unit-max)
+
+--- anib_60002.bin line 269
+     265|	(can-train elite-eagle-warrior)
+     266|	(or
+     267|		(population < deathmatch-unit-max)
+     268|		(and
+     269|			(population < unit-max)
+     270|			(goal need-deathmatch-villagers NO)
+     271|		)
+
+--- anib_60002.bin line 310
+     306|	(goal secondary-build 1)
+     307|	(random-number == 1)
+     308|	(can-train champion)
+     309|	(or
+     310|		(population < deathmatch-unit-max)
+     311|		(and
+     312|			(population < unit-max)
+
+--- anib_60002.bin line 312
+     308|	(can-train champion)
+     309|	(or
+     310|		(population < deathmatch-unit-max)
+     311|		(and
+     312|			(population < unit-max)
+     313|			(goal need-deathmatch-villagers NO)
+     314|		)
+
+--- anib_60002.bin line 326
+     322|	(goal secondary-build 1)
+     323|	(random-number == 2)
+     324|	(can-train paladin)
+     325|	(or
+     326|		(population < deathmatch-unit-max)
+     327|		(and
+     328|			(population < unit-max)
+
+--- anib_60002.bin line 328
+     324|	(can-train paladin)
+     325|	(or
+     326|		(population < deathmatch-unit-max)
+     327|		(and
+     328|			(population < unit-max)
+     329|			(goal need-deathmatch-villagers NO)
+     330|		)
+
+--- anib_60002.bin line 343
+     339|	(random-number == 3)
+     340|	(can-train hussar)
+     341|	(not (can-train paladin) )
+     342|	(or
+     343|		(population < deathmatch-unit-max)
+     344|		(and
+     345|			(population < unit-max)
+
+--- anib_60002.bin line 345
+     341|	(not (can-train paladin) )
+     342|	(or
+     343|		(population < deathmatch-unit-max)
+     344|		(and
+     345|			(population < unit-max)
+     346|			(goal need-deathmatch-villagers NO)
+     347|		)
+
+--- anib_60002.bin line 363
+     359|		(can-train elite-conquistador)
+     360|		(can-train heavy-cavalry-archer)
+     361|	)
+     362|	(or
+     363|		(population < deathmatch-unit-max)
+     364|		(and
+     365|			(population < unit-max)
+
+--- anib_60002.bin line 365
+     361|	)
+     362|	(or
+     363|		(population < deathmatch-unit-max)
+     364|		(and
+     365|			(population < unit-max)
+     366|			(goal need-deathmatch-villagers NO)
+     367|		)
+
+--- anib_60002.bin line 380
+     376|	(random-number == 5)
+     377|	(can-train heavy-cavalry-archer)
+     378|	(not (can-train elite-conquistador) )
+     379|	(or
+     380|		(population < deathmatch-unit-max)
+     381|		(and
+     382|			(population < unit-max)
+
+--- anib_60002.bin line 382
+     378|	(not (can-train elite-conquistador) )
+     379|	(or
+     380|		(population < deathmatch-unit-max)
+     381|		(and
+     382|			(population < unit-max)
+     383|			(goal need-deathmatch-villagers NO)
+     384|		)
+
+--- anib_60002.bin line 423
+     419|	(goal secondary-build 1)
+     420|	(random-number == 1)
+     421|	(can-train champion)
+     422|	(or
+     423|		(population < deathmatch-unit-max)
+     424|		(and
+     425|			(population < unit-max)
+
+--- anib_60002.bin line 425
+     421|	(can-train champion)
+     422|	(or
+     423|		(population < deathmatch-unit-max)
+     424|		(and
+     425|			(population < unit-max)
+     426|			(goal need-deathmatch-villagers NO)
+     427|		)
+
+--- anib_60002.bin line 439
+     435|	(goal secondary-build 1)
+     436|	(random-number == 2)
+     437|	(can-train hussar)
+     438|	(or
+     439|		(population < deathmatch-unit-max)
+     440|		(and
+     441|			(population < unit-max)
+
+--- anib_60002.bin line 441
+     437|	(can-train hussar)
+     438|	(or
+     439|		(population < deathmatch-unit-max)
+     440|		(and
+     441|			(population < unit-max)
+     442|			(goal need-deathmatch-villagers NO)
+     443|		)
+
+--- anib_60002.bin line 481
+     477|	(goal secondary-build 1)
+     478|	(random-number == 1)
+     479|	(can-train heavy-cavalry-archer)
+     480|	(or
+     481|		(population < deathmatch-unit-max)
+     482|		(and
+     483|			(population < unit-max)
+
+--- anib_60002.bin line 483
+     479|	(can-train heavy-cavalry-archer)
+     480|	(or
+     481|		(population < deathmatch-unit-max)
+     482|		(and
+     483|			(population < unit-max)
+     484|			(goal need-deathmatch-villagers NO)
+     485|		)
+
+--- anib_60002.bin line 500
+     496|		(can-train hand-cannoneer)
+     497|		(can-train arbalest)
+     498|	)
+     499|	(or
+     500|		(population < deathmatch-unit-max)
+     501|		(and
+     502|			(population < unit-max)
+
+--- anib_60002.bin line 502
+     498|	)
+     499|	(or
+     500|		(population < deathmatch-unit-max)
+     501|		(and
+     502|			(population < unit-max)
+     503|			(goal need-deathmatch-villagers NO)
+     504|		)
+
+--- anib_60002.bin line 521
+     517|		(can-train elite-cataphract)
+     518|		(can-train paladin)
+     519|	)
+     520|	(or
+     521|		(population < deathmatch-unit-max)
+     522|		(and
+     523|			(population < unit-max)
+
+--- anib_60002.bin line 523
+     519|	)
+     520|	(or
+     521|		(population < deathmatch-unit-max)
+     522|		(and
+     523|			(population < unit-max)
+     524|			(goal need-deathmatch-villagers NO)
+     525|		)
+
+--- anib_60002.bin line 564
+     560|	(goal secondary-build 1)
+     561|	(random-number == 1)
+     562|	(can-train paladin)
+     563|	(or
+     564|		(population < deathmatch-unit-max)
+     565|		(and
+     566|			(population < unit-max)
+
+--- anib_60002.bin line 566
+     562|	(can-train paladin)
+     563|	(or
+     564|		(population < deathmatch-unit-max)
+     565|		(and
+     566|			(population < unit-max)
+     567|			(goal need-deathmatch-villagers NO)
+     568|		)
+
+--- anib_60002.bin line 581
+     577|	(random-number == 2)
+     578|	(can-train light-cavalry)
+     579|	(not (can-afford-unit paladin) )
+     580|	(or
+     581|		(population < deathmatch-unit-max)
+     582|		(and
+     583|			(population < unit-max)
+
+--- anib_60002.bin line 583
+     579|	(not (can-afford-unit paladin) )
+     580|	(or
+     581|		(population < deathmatch-unit-max)
+     582|		(and
+     583|			(population < unit-max)
+     584|			(goal need-deathmatch-villagers NO)
+     585|		)
+
+--- anib_60002.bin line 597
+     593|	(goal secondary-build 1)
+     594|	(random-number == 3)
+     595|	(can-train heavy-cavalry-archer)
+     596|	(or
+     597|		(population < deathmatch-unit-max)
+     598|		(and
+     599|			(population < unit-max)
+
+--- anib_60002.bin line 599
+     595|	(can-train heavy-cavalry-archer)
+     596|	(or
+     597|		(population < deathmatch-unit-max)
+     598|		(and
+     599|			(population < unit-max)
+     600|			(goal need-deathmatch-villagers NO)
+     601|		)
+
+--- anib_60002.bin line 613
+     609|	(goal secondary-build 1)
+     610|	(random-number == 4)
+     611|	(can-train heavy-scorpion)
+     612|	(or
+     613|		(population < deathmatch-unit-max)
+     614|		(and
+     615|			(population < unit-max)
+
+--- anib_60002.bin line 615
+     611|	(can-train heavy-scorpion)
+     612|	(or
+     613|		(population < deathmatch-unit-max)
+     614|		(and
+     615|			(population < unit-max)
+     616|			(goal need-deathmatch-villagers NO)
+     617|		)
+
+--- anib_60002.bin line 656
+     652|	(goal secondary-build 1)
+     653|	(random-number == 1)
+     654|	(can-train champion)
+     655|	(or
+     656|		(population < deathmatch-unit-max)
+     657|		(and
+     658|			(population < unit-max)
+
+--- anib_60002.bin line 658
+     654|	(can-train champion)
+     655|	(or
+     656|		(population < deathmatch-unit-max)
+     657|		(and
+     658|			(population < unit-max)
+     659|			(goal need-deathmatch-villagers NO)
+     660|		)
+
+--- anib_60002.bin line 672
+     668|	(goal secondary-build 1)
+     669|	(random-number == 2)
+     670|	(can-train hussar)
+     671|	(or
+     672|		(population < deathmatch-unit-max)
+     673|		(and
+     674|			(population < unit-max)
+
+--- anib_60002.bin line 674
+     670|	(can-train hussar)
+     671|	(or
+     672|		(population < deathmatch-unit-max)
+     673|		(and
+     674|			(population < unit-max)
+     675|			(goal need-deathmatch-villagers NO)
+     676|		)
+
+--- anib_60002.bin line 688
+     684|	(goal secondary-build 1)
+     685|	(random-number == 3)
+     686|	(can-train heavy-scorpion)
+     687|	(or
+     688|		(population < deathmatch-unit-max)
+     689|		(and
+     690|			(population < unit-max)
+
+--- anib_60002.bin line 690
+     686|	(can-train heavy-scorpion)
+     687|	(or
+     688|		(population < deathmatch-unit-max)
+     689|		(and
+     690|			(population < unit-max)
+     691|			(goal need-deathmatch-villagers NO)
+     692|		)
+
+--- anib_60002.bin line 730
+     726|	(goal secondary-build 1)
+     727|	(random-number == 1)
+     728|	(can-train paladin)
+     729|	(or
+     730|		(population < deathmatch-unit-max)
+     731|		(and
+     732|			(population < unit-max)
+
+--- anib_60002.bin line 732
+     728|	(can-train paladin)
+     729|	(or
+     730|		(population < deathmatch-unit-max)
+     731|		(and
+     732|			(population < unit-max)
+     733|			(goal need-deathmatch-villagers NO)
+     734|		)
+
+--- anib_60002.bin line 747
+     743|	(random-number == 2)
+     744|	(can-train hussar)
+     745|	(not (can-afford-unit paladin) )
+     746|	(or
+     747|		(population < deathmatch-unit-max)
+     748|		(and
+     749|			(population < unit-max)
+
+--- anib_60002.bin line 749
+     745|	(not (can-afford-unit paladin) )
+     746|	(or
+     747|		(population < deathmatch-unit-max)
+     748|		(and
+     749|			(population < unit-max)
+     750|			(goal need-deathmatch-villagers NO)
+     751|		)
+
+--- anib_60002.bin line 763
+     759|	(goal secondary-build 1)
+     760|	(random-number == 3)
+     761|	(can-train heavy-cavalry-archer)
+     762|	(or
+     763|		(population < deathmatch-unit-max)
+     764|		(and
+     765|			(population < unit-max)
+
+--- anib_60002.bin line 765
+     761|	(can-train heavy-cavalry-archer)
+     762|	(or
+     763|		(population < deathmatch-unit-max)
+     764|		(and
+     765|			(population < unit-max)
+     766|			(goal need-deathmatch-villagers NO)
+     767|		)
+
+--- anib_60002.bin line 779
+     775|	(goal secondary-build 1)
+     776|	(random-number == 4)
+     777|	(can-train heavy-scorpion)
+     778|	(or
+     779|		(population < deathmatch-unit-max)
+     780|		(and
+     781|			(population < unit-max)
+
+--- anib_60002.bin line 781
+     777|	(can-train heavy-scorpion)
+     778|	(or
+     779|		(population < deathmatch-unit-max)
+     780|		(and
+     781|			(population < unit-max)
+     782|			(goal need-deathmatch-villagers NO)
+     783|		)
+
+--- anib_60002.bin line 821
+     817|	(goal secondary-build 1)
+     818|	(random-number == 1)
+     819|	(can-train hussar)
+     820|	(or
+     821|		(population < deathmatch-unit-max)
+     822|		(and
+     823|			(population < unit-max)
+
+--- anib_60002.bin line 823
+     819|	(can-train hussar)
+     820|	(or
+     821|		(population < deathmatch-unit-max)
+     822|		(and
+     823|			(population < unit-max)
+     824|			(goal need-deathmatch-villagers NO)
+     825|		)
+
+--- anib_60002.bin line 837
+     833|	(goal secondary-build 1)
+     834|	(random-number == 2)
+     835|	(can-train heavy-cavalry-archer)
+     836|	(or
+     837|		(population < deathmatch-unit-max)
+     838|		(and
+     839|			(population < unit-max)
+
+--- anib_60002.bin line 839
+     835|	(can-train heavy-cavalry-archer)
+     836|	(or
+     837|		(population < deathmatch-unit-max)
+     838|		(and
+     839|			(population < unit-max)
+     840|			(goal need-deathmatch-villagers NO)
+     841|		)
+
+--- anib_60002.bin line 853
+     849|	(goal secondary-build 1)
+     850|	(random-number == 3)
+     851|	(can-train heavy-scorpion)
+     852|	(or
+     853|		(population < deathmatch-unit-max)
+     854|		(and
+     855|			(population < unit-max)
+
+--- anib_60002.bin line 855
+     851|	(can-train heavy-scorpion)
+     852|	(or
+     853|		(population < deathmatch-unit-max)
+     854|		(and
+     855|			(population < unit-max)
+     856|			(goal need-deathmatch-villagers NO)
+     857|		)
+
+--- anib_60002.bin line 895
+     891|	(goal secondary-build 1)
+     892|	(random-number == 1)
+     893|	(can-train heavy-cavalry-archer)
+     894|	(or
+     895|		(population < deathmatch-unit-max)
+     896|		(and
+     897|			(population < unit-max)
+
+--- anib_60002.bin line 897
+     893|	(can-train heavy-cavalry-archer)
+     894|	(or
+     895|		(population < deathmatch-unit-max)
+     896|		(and
+     897|			(population < unit-max)
+     898|			(goal need-deathmatch-villagers NO)
+     899|		)
+
+--- anib_60002.bin line 914
+     910|		(can-train hand-cannoneer)
+     911|		(can-train arbalest)
+     912|	)
+     913|	(or
+     914|		(population < deathmatch-unit-max)
+     915|		(and
+     916|			(population < unit-max)
+
+--- anib_60002.bin line 916
+     912|	)
+     913|	(or
+     914|		(population < deathmatch-unit-max)
+     915|		(and
+     916|			(population < unit-max)
+     917|			(goal need-deathmatch-villagers NO)
+     918|		)
+
+--- anib_60002.bin line 931
+     927|	(goal secondary-build 1)
+     928|	(random-number == 3)
+     929|	(can-train heavy-scorpion)
+     930|	(or
+     931|		(population < deathmatch-unit-max)
+     932|		(and
+     933|			(population < unit-max)
+
+--- anib_60002.bin line 933
+     929|	(can-train heavy-scorpion)
+     930|	(or
+     931|		(population < deathmatch-unit-max)
+     932|		(and
+     933|			(population < unit-max)
+     934|			(goal need-deathmatch-villagers NO)
+     935|		)
+
+--- anib_60002.bin line 973
+     969|	(goal secondary-build 1)
+     970|	(random-number == 1)
+     971|	(can-train champion)
+     972|	(or
+     973|		(population < deathmatch-unit-max)
+     974|		(and
+     975|			(population < unit-max)
+
+--- anib_60002.bin line 975
+     971|	(can-train champion)
+     972|	(or
+     973|		(population < deathmatch-unit-max)
+     974|		(and
+     975|			(population < unit-max)
+     976|			(goal need-deathmatch-villagers NO)
+     977|		)
+
+--- anib_60002.bin line 989
+     985|	(goal secondary-build 1)
+     986|	(random-number == 2)
+     987|	(can-train hussar)
+     988|	(or
+     989|		(population < deathmatch-unit-max)
+     990|		(and
+     991|			(population < unit-max)
+
+--- anib_60002.bin line 991
+     987|	(can-train hussar)
+     988|	(or
+     989|		(population < deathmatch-unit-max)
+     990|		(and
+     991|			(population < unit-max)
+     992|			(goal need-deathmatch-villagers NO)
+     993|		)
+
+--- anib_60002.bin line 1031
+    1027|	(goal secondary-build 1)
+    1028|	(random-number == 1)
+    1029|	(can-train heavy-cavalry-archer)
+    1030|	(or
+    1031|		(population < deathmatch-unit-max)
+    1032|		(and
+    1033|			(population < unit-max)
+
+--- anib_60002.bin line 1033
+    1029|	(can-train heavy-cavalry-archer)
+    1030|	(or
+    1031|		(population < deathmatch-unit-max)
+    1032|		(and
+    1033|			(population < unit-max)
+    1034|			(goal need-deathmatch-villagers NO)
+    1035|		)
+
+--- anib_60002.bin line 1051
+    1047|		(can-train elite-war-elephant)
+    1048|		(can-train paladin)
+    1049|	)
+    1050|	(or
+    1051|		(population < deathmatch-unit-max)
+    1052|		(and
+    1053|			(population < unit-max)
+
+--- anib_60002.bin line 1053
+    1049|	)
+    1050|	(or
+    1051|		(population < deathmatch-unit-max)
+    1052|		(and
+    1053|			(population < unit-max)
+    1054|			(goal need-deathmatch-villagers NO)
+    1055|		)
+
+--- anib_60002.bin line 1094
+    1090|	(goal secondary-build 1)
+    1091|	(random-number == 1)
+    1092|	(can-train heavy-cavalry-archer)
+    1093|	(or
+    1094|		(population < deathmatch-unit-max)
+    1095|		(and
+    1096|			(population < unit-max)
+
+--- anib_60002.bin line 1096
+    1092|	(can-train heavy-cavalry-archer)
+    1093|	(or
+    1094|		(population < deathmatch-unit-max)
+    1095|		(and
+    1096|			(population < unit-max)
+    1097|			(goal need-deathmatch-villagers NO)
+    1098|		)
+
+--- anib_60002.bin line 1113
+    1109|		(can-train hand-cannoneer)
+    1110|		(can-train arbalest)
+    1111|	)
+    1112|	(or
+    1113|		(population < deathmatch-unit-max)
+    1114|		(and
+    1115|			(population < unit-max)
+
+--- anib_60002.bin line 1115
+    1111|	)
+    1112|	(or
+    1113|		(population < deathmatch-unit-max)
+    1114|		(and
+    1115|			(population < unit-max)
+    1116|			(goal need-deathmatch-villagers NO)
+    1117|		)
+
+--- anib_60002.bin line 1131
+    1127|	(random-number == 3)
+    1128|	(can-train hussar)
+    1129|	(not (can-train elite-mameluke) )
+    1130|	(or
+    1131|		(population < deathmatch-unit-max)
+    1132|		(and
+    1133|			(population < unit-max)
+
+--- anib_60002.bin line 1133
+    1129|	(not (can-train elite-mameluke) )
+    1130|	(or
+    1131|		(population < deathmatch-unit-max)
+    1132|		(and
+    1133|			(population < unit-max)
+    1134|			(goal need-deathmatch-villagers NO)
+    1135|		)
+
+--- anib_60002.bin line 1173
+    1169|	(goal secondary-build 1)
+    1170|	(random-number == 1)
+    1171|	(can-train paladin)
+    1172|	(or
+    1173|		(population < deathmatch-unit-max)
+    1174|		(and
+    1175|			(population < unit-max)
+
+--- anib_60002.bin line 1175
+    1171|	(can-train paladin)
+    1172|	(or
+    1173|		(population < deathmatch-unit-max)
+    1174|		(and
+    1175|			(population < unit-max)
+    1176|			(goal need-deathmatch-villagers NO)
+    1177|		)
+
+--- anib_60002.bin line 1189
+    1185|	(goal secondary-build 1)
+    1186|	(random-number == 2)
+    1187|	(can-train heavy-scorpion)
+    1188|	(or
+    1189|		(population < deathmatch-unit-max)
+    1190|		(and
+    1191|			(population < unit-max)
+
+--- anib_60002.bin line 1191
+    1187|	(can-train heavy-scorpion)
+    1188|	(or
+    1189|		(population < deathmatch-unit-max)
+    1190|		(and
+    1191|			(population < unit-max)
+    1192|			(goal need-deathmatch-villagers NO)
+    1193|		)
+
+--- anib_60002.bin line 1231
+    1227|	(goal secondary-build 1)
+    1228|	(random-number == 1)
+    1229|	(can-train champion)
+    1230|	(or
+    1231|		(population < deathmatch-unit-max)
+    1232|		(and
+    1233|			(population < unit-max)
+
+--- anib_60002.bin line 1233
+    1229|	(can-train champion)
+    1230|	(or
+    1231|		(population < deathmatch-unit-max)
+    1232|		(and
+    1233|			(population < unit-max)
+    1234|			(goal need-deathmatch-villagers NO)
+    1235|		)
+
+--- anib_60002.bin line 1247
+    1243|	(goal secondary-build 1)
+    1244|	(random-number == 2)
+    1245|	(can-train hussar)
+    1246|	(or
+    1247|		(population < deathmatch-unit-max)
+    1248|		(and
+    1249|			(population < unit-max)
+
+--- anib_60002.bin line 1249
+    1245|	(can-train hussar)
+    1246|	(or
+    1247|		(population < deathmatch-unit-max)
+    1248|		(and
+    1249|			(population < unit-max)
+    1250|			(goal need-deathmatch-villagers NO)
+    1251|		)
+
+--- anib_60002.bin line 1263
+    1259|	(goal secondary-build 1)
+    1260|	(random-number == 3)
+    1261|	(can-train heavy-scorpion)
+    1262|	(or
+    1263|		(population < deathmatch-unit-max)
+    1264|		(and
+    1265|			(population < unit-max)
+
+--- anib_60002.bin line 1265
+    1261|	(can-train heavy-scorpion)
+    1262|	(or
+    1263|		(population < deathmatch-unit-max)
+    1264|		(and
+    1265|			(population < unit-max)
+    1266|			(goal need-deathmatch-villagers NO)
+    1267|		)
+
+--- anib_60002.bin line 1305
+    1301|	(goal secondary-build 1)
+    1302|	(random-number == 1)
+    1303|	(can-train light-cavalry)
+    1304|	(or
+    1305|		(population < deathmatch-unit-max)
+    1306|		(and
+    1307|			(population < unit-max)
+
+--- anib_60002.bin line 1307
+    1303|	(can-train light-cavalry)
+    1304|	(or
+    1305|		(population < deathmatch-unit-max)
+    1306|		(and
+    1307|			(population < unit-max)
+    1308|			(goal need-deathmatch-villagers NO)
+    1309|		)
+
+--- anib_60002.bin line 1321
+    1317|	(goal secondary-build 1)
+    1318|	(random-number == 2)
+    1319|	(can-train arbalest)
+    1320|	(or
+    1321|		(population < deathmatch-unit-max)
+    1322|		(and
+    1323|			(population < unit-max)
+
+--- anib_60002.bin line 1323
+    1319|	(can-train arbalest)
+    1320|	(or
+    1321|		(population < deathmatch-unit-max)
+    1322|		(and
+    1323|			(population < unit-max)
+    1324|			(goal need-deathmatch-villagers NO)
+    1325|		)
+
+--- anib_60002.bin line 1337
+    1333|	(goal secondary-build 1)
+    1334|	(random-number == 3)
+    1335|	(can-train heavy-scorpion)
+    1336|	(or
+    1337|		(population < deathmatch-unit-max)
+    1338|		(and
+    1339|			(population < unit-max)
+
+--- anib_60002.bin line 1339
+    1335|	(can-train heavy-scorpion)
+    1336|	(or
+    1337|		(population < deathmatch-unit-max)
+    1338|		(and
+    1339|			(population < unit-max)
+    1340|			(goal need-deathmatch-villagers NO)
+    1341|		)
+
+--- anib_60002.bin line 1498
+    1494|	(set-strategic-number sn-minimum-civilian-explorers 0)
+    1495|	(set-strategic-number sn-cap-civilian-explorers 0)
+    1496|	(set-strategic-number sn-percent-civilian-explorers 0)
+    1497|
+    1498|	(set-strategic-number sn-cap-civilian-builders 12)
+    1499|	(set-strategic-number sn-percent-civilian-builders 100)
+    1500|
+
+--- anib_60002.bin line 2260
+    2256|(defrule
+    2257|	(building-type-count castle == 0)
+    2258|	(can-train militiaman-line)
+    2259|	(or
+    2260|		(population < deathmatch-unit-max)
+    2261|		(and
+    2262|			(population < unit-max)
+
+--- anib_60002.bin line 2262
+    2258|	(can-train militiaman-line)
+    2259|	(or
+    2260|		(population < deathmatch-unit-max)
+    2261|		(and
+    2262|			(population < unit-max)
+    2263|			(goal need-deathmatch-villagers NO)
+    2264|		)
+
+--- anib_60002.bin line 2275
+    2271|(defrule
+    2272|	(building-type-count castle == 0)
+    2273|	(can-train knight-line)
+    2274|	(or
+    2275|		(population < deathmatch-unit-max)
+    2276|		(and
+    2277|			(population < unit-max)
+
+--- anib_60002.bin line 2277
+    2273|	(can-train knight-line)
+    2274|	(or
+    2275|		(population < deathmatch-unit-max)
+    2276|		(and
+    2277|			(population < unit-max)
+    2278|			(goal need-deathmatch-villagers NO)
+    2279|		)
+
+--- anib_60002.bin line 2290
+    2286|(defrule
+    2287|	(building-type-count castle == 0)
+    2288|	(can-train cavalry-archer-line)
+    2289|	(or
+    2290|		(population < deathmatch-unit-max)
+    2291|		(and
+    2292|			(population < unit-max)
+
+--- anib_60002.bin line 2292
+    2288|	(can-train cavalry-archer-line)
+    2289|	(or
+    2290|		(population < deathmatch-unit-max)
+    2291|		(and
+    2292|			(population < unit-max)
+    2293|			(goal need-deathmatch-villagers NO)
+    2294|		)
+
+--- anib_60002.bin line 2306
+    2302|	(building-type-count castle == 0)
+    2303|	(can-train archer-line)
+    2304|	(not (unit-available hand-cannoneer) )
+    2305|	(or
+    2306|		(population < deathmatch-unit-max)
+    2307|		(and
+    2308|			(population < unit-max)
+
+--- anib_60002.bin line 2308
+    2304|	(not (unit-available hand-cannoneer) )
+    2305|	(or
+    2306|		(population < deathmatch-unit-max)
+    2307|		(and
+    2308|			(population < unit-max)
+    2309|			(goal need-deathmatch-villagers NO)
+    2310|		)
+
+--- anib_60002.bin line 2321
+    2317|(defrule
+    2318|	(building-type-count castle == 0)
+    2319|	(can-train hand-cannoneer)
+    2320|	(or
+    2321|		(population < deathmatch-unit-max)
+    2322|		(and
+    2323|			(population < unit-max)
+
+--- anib_60002.bin line 2323
+    2319|	(can-train hand-cannoneer)
+    2320|	(or
+    2321|		(population < deathmatch-unit-max)
+    2322|		(and
+    2323|			(population < unit-max)
+    2324|			(goal need-deathmatch-villagers NO)
+    2325|		)
+
+--- anib_60002.bin line 2335
+    2331|
+    2332|(defrule
+    2333|	(can-train my-unique-unit-line)
+    2334|	(or
+    2335|		(population < deathmatch-unit-max)
+    2336|		(and
+    2337|			(population < unit-max)
+
+--- anib_60002.bin line 2337
+    2333|	(can-train my-unique-unit-line)
+    2334|	(or
+    2335|		(population < deathmatch-unit-max)
+    2336|		(and
+    2337|			(population < unit-max)
+    2338|			(goal need-deathmatch-villagers NO)
+    2339|		)
+
+--- anib_60007.bin line 377
+     373|	(disable-self)
+     374|)
+     375|
+     376|(defrule
+     377|	(population < unit-max)
+     378|	(timer-triggered t-ageup)
+     379|	(can-train my-unique-unit-line)
+
+--- anib_60007.bin line 386
+     382|	(set-goal secondary-build 0)
+     383|)
+     384|
+     385|(defrule
+     386|	(population < unit-max)
+     387|	(timer-triggered t-ageup)
+     388|	(can-train champion)
+
+--- anib_60007.bin line 395
+     391|	(set-goal secondary-build 0)
+     392|)
+     393|
+     394|(defrule
+     395|	(population < unit-max)
+     396|	(timer-triggered t-ageup)
+     397|	(can-train paladin)
+
+--- anib_60007.bin line 404
+     400|	(set-goal secondary-build 0)
+     401|)
+     402|
+     403|(defrule
+     404|	(population < unit-max)
+     405|	(timer-triggered t-ageup)
+     406|	(can-train heavy-cavalry-archer)
+
+--- anib_60007.bin line 413
+     409|	(set-goal secondary-build 0)
+     410|)
+     411|
+     412|(defrule
+     413|	(population < unit-max)
+     414|	(timer-triggered t-ageup)
+     415|	(can-train hand-cannoneer)
+
+--- anib_60007.bin line 422
+     418|	(set-goal secondary-build 0)
+     419|)
+     420|
+     421|(defrule
+     422|	(population < unit-max)
+     423|	(timer-triggered t-ageup)
+     424|	(can-train arbalest)
+
+--- anib_60008.bin line 211
+     207|
+     208|(defrule
+     209|	(timer-triggered t-chatmore)
+     210|=>
+     211|	(cc-add-resource wood 500)
+     212|	(cc-add-resource food 500)
+     213|	(cc-add-resource gold 500)
+
+--- anib_60008.bin line 212
+     208|(defrule
+     209|	(timer-triggered t-chatmore)
+     210|=>
+     211|	(cc-add-resource wood 500)
+     212|	(cc-add-resource food 500)
+     213|	(cc-add-resource gold 500)
+     214|	(cc-add-resource stone 500)
+
+--- anib_60008.bin line 213
+     209|	(timer-triggered t-chatmore)
+     210|=>
+     211|	(cc-add-resource wood 500)
+     212|	(cc-add-resource food 500)
+     213|	(cc-add-resource gold 500)
+     214|	(cc-add-resource stone 500)
+     215|	(disable-timer t-chatmore)
+
+--- anib_60008.bin line 214
+     210|=>
+     211|	(cc-add-resource wood 500)
+     212|	(cc-add-resource food 500)
+     213|	(cc-add-resource gold 500)
+     214|	(cc-add-resource stone 500)
+     215|	(disable-timer t-chatmore)
+     216|	(enable-timer t-chatmore 1200)
+
+--- anib_60009.bin line 719
+     715|	(set-goal secondary-build 0)
+     716|)
+     717|
+     718|(defrule
+     719|	(population < unit-max)
+     720|	(can-train militiaman-line)
+     721|	(or
+
+--- anib_60009.bin line 733
+     729|
+     730|(defrule
+     731|	(goal secondary-build 0)
+     732|	(goal combat-supp INFANTRY)
+     733|	(population < unit-max)
+     734|	(can-train militiaman-line)
+     735|=>
+
+--- anib_60009.bin line 787
+     783|	(set-goal secondary-build 0)
+     784|)
+     785|
+     786|(defrule
+     787|	(population < unit-max)
+     788|	(can-train eagle-warrior-line)
+     789|	(goal combat-arm EAGLEMAN)
+
+--- anib_60009.bin line 798
+     794|
+     795|(defrule
+     796|	(goal secondary-build 0)
+     797|	(goal combat-supp EAGLEMAN)
+     798|	(population < unit-max)
+     799|	(can-train eagle-warrior-line)
+     800|=>
+
+--- anib_60009.bin line 858
+     854|	(set-goal secondary-build 0)
+     855|)
+     856|
+     857|(defrule
+     858|	(population < unit-max)
+     859|	(can-train knight-line)
+     860|	(or
+
+--- anib_60009.bin line 872
+     868|
+     869|(defrule
+     870|	(goal secondary-build 0)
+     871|	(goal combat-supp CAVALRY)
+     872|	(population < unit-max)
+     873|	(can-train knight-line)
+     874|=>
+
+--- anib_60009.bin line 898
+     894|)
+     895|
+     896|(defrule
+     897|	(goal combat-arm LIGHTCAV)
+     898|	(population < unit-max)
+     899|	(can-train light-cavalry)
+     900|	(or
+
+--- anib_60009.bin line 912
+     908|
+     909|(defrule
+     910|	(goal combat-arm LIGHTCAV)
+     911|	(current-age == imperial-age)
+     912|	(population < unit-max)
+     913|	(can-train knight-line)
+     914|=>
+
+--- anib_60009.bin line 921
+     917|)
+     918|
+     919|(defrule
+     920|	(goal secondary-build 0)
+     921|	(population < unit-max)
+     922|	(can-train light-cavalry)
+     923|	(or
+
+--- anib_60009.bin line 1013
+    1009|	(set-goal secondary-build 0)
+    1010|)
+    1011|
+    1012|(defrule
+    1013|	(population < unit-max)
+    1014|	(can-train cavalry-archer-line)
+    1015|	(or
+
+--- anib_60009.bin line 1027
+    1023|
+    1024|(defrule
+    1025|	(goal secondary-build 0)
+    1026|	(goal combat-supp CAVARCHER)
+    1027|	(population < unit-max)
+    1028|	(can-train cavalry-archer-line)
+    1029|=>
+
+--- anib_60009.bin line 1037
+    1033|
+    1034|;*******************************************************
+    1035|;HAND-CANNONEERS
+    1036|(defrule
+    1037|	(population < unit-max)
+    1038|	(can-train hand-cannoneer)
+    1039|	(or
+
+--- anib_60009.bin line 1051
+    1047|
+    1048|(defrule
+    1049|	(goal secondary-build 0)
+    1050|	(goal combat-supp ARCHER)
+    1051|	(population < unit-max)
+    1052|	(can-train hand-cannoneer)
+    1053|=>
+
+--- anib_60009.bin line 1081
+    1077|	(set-goal secondary-build 0)
+    1078|)
+    1079|
+    1080|(defrule
+    1081|	(population < unit-max)
+    1082|	(can-train archer-line)
+    1083|	(not (unit-available hand-cannoneer) )
+
+--- anib_60009.bin line 1096
+    1092|
+    1093|(defrule
+    1094|	(goal secondary-build 0)
+    1095|	(goal combat-supp ARCHER)
+    1096|	(population < unit-max)
+    1097|	(can-train archer-line)
+    1098|=>
+
+--- anib_60009.bin line 1108
+    1104|;SCORPION SUPPORT == goal combat-supp SCORPION
+    1105|(defrule
+    1106|	(goal secondary-build 0)
+    1107|	(goal combat-supp SCORPION)
+    1108|	(population < unit-max)
+    1109|	(can-train scorpion-line)
+    1110|=>
+
+--- anib_60009.bin line 1118
+    1114|
+    1115|(defrule
+    1116|	(goal secondary-build 0)
+    1117|	(goal combat-supp SCORPION)
+    1118|	(population < unit-max)
+    1119|	(building-type-count siege-workshop == 0)
+    1120|	(can-train militiaman-line)
+
+--- anib_60009.bin line 1148
+    1144|)
+    1145|
+    1146|(defrule
+    1147|	(goal combat-arm UNIQUE)
+    1148|	(population < unit-max)
+    1149|	(can-train my-unique-unit-line)
+    1150|=>
+
+--- anib_60010.bin line 444
+     440|=>
+     441|	(set-strategic-number sn-minimum-civilian-explorers 6)
+     442|
+     443|	(set-strategic-number sn-cap-civilian-explorers 6)
+     444|	(set-strategic-number sn-cap-civilian-builders 0)
+     445|	(set-strategic-number sn-cap-civilian-gatherers 0)
+     446|
+
+--- anib_60013.bin line 235
+     231|
+     232|(defrule
+     233|	(current-age >= castle-age)
+     234|	(goal make-villagers YES)
+     235|	(civilian-population < deathmatch-unit-max)
+     236|	(can-train villager)
+     237|=>
+
+--- anib_60014.bin line 32
+      28|	(can-build-with-escrow castle)
+      29|=>
+      30|	(release-escrow stone)
+      31|	(set-strategic-number sn-percent-civilian-builders 75)
+      32|	(set-strategic-number sn-cap-civilian-builders 15)
+      33|	(set-strategic-number sn-percent-civilian-gatherers 25)
+      34|	(build castle)
+
+--- anib_60014.bin line 46
+      42|		(strategic-number sn-cap-civilian-builders == 15)
+      43|	)
+      44|=>
+      45|	(set-strategic-number sn-percent-civilian-builders 10)
+      46|	(set-strategic-number sn-cap-civilian-builders 8)
+      47|	(set-strategic-number sn-percent-civilian-gatherers 90)
+      48|	(set-goal castle-attempt 2)
+
+--- anib_60016.bin line 24
+      20|;should we construct a wonder?
+      21|(defrule
+      22|	(goal wonder-attempt MAYBE)
+      23|	(current-age == imperial-age)
+      24|	(population > unit-max)
+      25|	(wood-amount >= 500)
+      26|	(gold-amount >= 500)
+
+--- anib_60016.bin line 83
+      79|	(can-build-with-escrow wonder)
+      80|=>
+      81|	(set-strategic-number sn-maximum-town-size 10)
+      82|	(set-strategic-number sn-percent-civilian-builders 90)
+      83|	(set-strategic-number sn-cap-civilian-builders 50)
+      84|	(set-strategic-number sn-percent-civilian-gatherers 10)
+      85|	(chat-local-to-self "Time to Wonder")
+
+--- anib_60016.bin line 124
+     120|(defrule
+     121|	(building-type-count wonder > 0)
+     122|=>
+     123|	(set-strategic-number sn-percent-civilian-builders 15)
+     124|	(set-strategic-number sn-cap-civilian-builders 8)
+     125|	(set-strategic-number sn-percent-civilian-gatherers 85)
+     126|	(disable-self)
+
+--- anib_60016.bin line 147
+     143|=>
+     144|	(delete-building wonder)
+     145|	(set-strategic-number sn-maximum-town-size imperial-town-size)
+     146|	(set-strategic-number sn-percent-civilian-builders 15)
+     147|	(set-strategic-number sn-cap-civilian-builders 8)
+     148|	(set-strategic-number sn-percent-civilian-gatherers 85)
+     149|	(set-goal wonder-attempt NO)
+
+--- anib_60027.bin line 251
+     247|(defconst civ-feudal-mod 12)
+     248|(defconst civ-feudal 13)
+     249|(defconst civ-castle 15)
+     250|(defconst pop-cap 25)
+     251|(defconst deathmatch-unit-max 13)
+     252|
+     253|(defconst feudal-town-size 20)
+
+--- anib_60027.bin line 259
+     255|(defconst imperial-town-size 25)
+     256|(defconst town-center-count 2)
+     257|
+     258|#load-if-defined DIFFICULTY-EASIEST
+     259|(defconst unit-max 19)
+     260|#end-if
+     261|
+
+--- anib_60027.bin line 263
+     259|(defconst unit-max 19)
+     260|#end-if
+     261|
+     262|#load-if-defined DIFFICULTY-EASY
+     263|(defconst unit-max 19)
+     264|#end-if
+     265|
+
+--- anib_60027.bin line 267
+     263|(defconst unit-max 19)
+     264|#end-if
+     265|
+     266|#load-if-defined DIFFICULTY-MODERATE
+     267|(defconst unit-max 21)
+     268|#end-if
+     269|
+
+--- anib_60027.bin line 271
+     267|(defconst unit-max 21)
+     268|#end-if
+     269|
+     270|#load-if-defined DIFFICULTY-HARD
+     271|(defconst unit-max 23)
+     272|#end-if
+     273|
+
+--- anib_60027.bin line 275
+     271|(defconst unit-max 23)
+     272|#end-if
+     273|
+     274|#load-if-defined DIFFICULTY-HARDEST
+     275|(defconst unit-max 23)
+     276|#end-if
+     277|
+
+--- anib_60027.bin line 294
+     290|(defconst civ-feudal-mod 20)
+     291|(defconst civ-feudal 30)
+     292|(defconst civ-castle 35)
+     293|(defconst pop-cap 50)
+     294|(defconst deathmatch-unit-max 25)
+     295|
+     296|(defconst feudal-town-size 20)
+
+--- anib_60027.bin line 302
+     298|(defconst imperial-town-size 30)
+     299|(defconst town-center-count 3)
+     300|
+     301|#load-if-defined DIFFICULTY-EASIEST
+     302|(defconst unit-max 35)
+     303|#end-if
+     304|
+
+--- anib_60027.bin line 306
+     302|(defconst unit-max 35)
+     303|#end-if
+     304|
+     305|#load-if-defined DIFFICULTY-EASY
+     306|(defconst unit-max 35)
+     307|#end-if
+     308|
+
+--- anib_60027.bin line 310
+     306|(defconst unit-max 35)
+     307|#end-if
+     308|
+     309|#load-if-defined DIFFICULTY-MODERATE
+     310|(defconst unit-max 40)
+     311|#end-if
+     312|
+
+--- anib_60027.bin line 314
+     310|(defconst unit-max 40)
+     311|#end-if
+     312|
+     313|#load-if-defined DIFFICULTY-HARD
+     314|(defconst unit-max 45)
+     315|#end-if
+     316|
+
+--- anib_60027.bin line 318
+     314|(defconst unit-max 45)
+     315|#end-if
+     316|
+     317|#load-if-defined DIFFICULTY-HARDEST
+     318|(defconst unit-max 45)
+     319|#end-if
+     320|
+
+--- anib_60027.bin line 337
+     333|(defconst civ-feudal-mod 20)
+     334|(defconst civ-feudal 35)
+     335|(defconst civ-castle 40)
+     336|(defconst pop-cap 75)
+     337|(defconst deathmatch-unit-max 55)
+     338|
+     339|(defconst feudal-town-size 20)
+
+--- anib_60027.bin line 345
+     341|(defconst imperial-town-size 30)
+     342|(defconst town-center-count 4)
+     343|
+     344|#load-if-defined DIFFICULTY-EASIEST
+     345|(defconst unit-max 56)
+     346|#end-if
+     347|
+
+--- anib_60027.bin line 349
+     345|(defconst unit-max 56)
+     346|#end-if
+     347|
+     348|#load-if-defined DIFFICULTY-EASY
+     349|(defconst unit-max 56)
+     350|#end-if
+     351|
+
+--- anib_60027.bin line 353
+     349|(defconst unit-max 56)
+     350|#end-if
+     351|
+     352|#load-if-defined DIFFICULTY-MODERATE
+     353|(defconst unit-max 63)
+     354|#end-if
+     355|
+
+--- anib_60027.bin line 357
+     353|(defconst unit-max 63)
+     354|#end-if
+     355|
+     356|#load-if-defined DIFFICULTY-HARD
+     357|(defconst unit-max 70)
+     358|#end-if
+     359|
+
+--- anib_60027.bin line 361
+     357|(defconst unit-max 70)
+     358|#end-if
+     359|
+     360|#load-if-defined DIFFICULTY-HARDEST
+     361|(defconst unit-max 70)
+     362|#end-if
+     363|
+
+--- anib_60027.bin line 380
+     376|(defconst civ-feudal-mod 20)
+     377|(defconst civ-feudal 40)
+     378|(defconst civ-castle 50)
+     379|(defconst pop-cap 100)
+     380|(defconst deathmatch-unit-max 70)
+     381|
+     382|(defconst feudal-town-size 20)
+
+--- anib_60027.bin line 388
+     384|(defconst imperial-town-size 35)
+     385|(defconst town-center-count 5)
+     386|
+     387|#load-if-defined DIFFICULTY-EASIEST
+     388|(defconst unit-max 70)
+     389|#end-if
+     390|
+
+--- anib_60027.bin line 392
+     388|(defconst unit-max 70)
+     389|#end-if
+     390|
+     391|#load-if-defined DIFFICULTY-EASY
+     392|(defconst unit-max 70)
+     393|#end-if
+     394|
+
+--- anib_60027.bin line 396
+     392|(defconst unit-max 70)
+     393|#end-if
+     394|
+     395|#load-if-defined DIFFICULTY-MODERATE
+     396|(defconst unit-max 80)
+     397|#end-if
+     398|
+
+--- anib_60027.bin line 400
+     396|(defconst unit-max 80)
+     397|#end-if
+     398|
+     399|#load-if-defined DIFFICULTY-HARD
+     400|(defconst unit-max 90)
+     401|#end-if
+     402|
+
+--- anib_60027.bin line 404
+     400|(defconst unit-max 90)
+     401|#end-if
+     402|
+     403|#load-if-defined DIFFICULTY-HARDEST
+     404|(defconst unit-max 90)
+     405|#end-if
+     406|
+
+--- anib_60027.bin line 423
+     419|(defconst civ-feudal-mod 20)
+     420|(defconst civ-feudal 40)
+     421|(defconst civ-castle 55)
+     422|(defconst pop-cap 125)
+     423|(defconst deathmatch-unit-max 95)
+     424|(defconst town-center-count 6)
+     425|
+
+--- anib_60027.bin line 431
+     427|(defconst castle-town-size 35)
+     428|(defconst imperial-town-size 40)
+     429|
+     430|#load-if-defined DIFFICULTY-EASIEST
+     431|(defconst unit-max 90)
+     432|#end-if
+     433|
+
+--- anib_60027.bin line 435
+     431|(defconst unit-max 90)
+     432|#end-if
+     433|
+     434|#load-if-defined DIFFICULTY-EASY
+     435|(defconst unit-max 90)
+     436|#end-if
+     437|
+
+--- anib_60027.bin line 439
+     435|(defconst unit-max 90)
+     436|#end-if
+     437|
+     438|#load-if-defined DIFFICULTY-MODERATE
+     439|(defconst unit-max 103)
+     440|#end-if
+     441|
+
+--- anib_60027.bin line 443
+     439|(defconst unit-max 103)
+     440|#end-if
+     441|
+     442|#load-if-defined DIFFICULTY-HARD
+     443|(defconst unit-max 115)
+     444|#end-if
+     445|
+
+--- anib_60027.bin line 447
+     443|(defconst unit-max 115)
+     444|#end-if
+     445|
+     446|#load-if-defined DIFFICULTY-HARDEST
+     447|(defconst unit-max 115)
+     448|#end-if
+     449|
+
+--- anib_60027.bin line 466
+     462|(defconst civ-feudal-mod 20)
+     463|(defconst civ-feudal 40)
+     464|(defconst civ-castle 60)
+     465|(defconst pop-cap 150)
+     466|(defconst deathmatch-unit-max 120)
+     467|
+     468|(defconst feudal-town-size 20)
+
+--- anib_60027.bin line 474
+     470|(defconst imperial-town-size 40)
+     471|(defconst town-center-count 7)
+     472|
+     473|#load-if-defined DIFFICULTY-EASIEST
+     474|(defconst unit-max 110)
+     475|#end-if
+     476|
+
+--- anib_60027.bin line 478
+     474|(defconst unit-max 110)
+     475|#end-if
+     476|
+     477|#load-if-defined DIFFICULTY-EASY
+     478|(defconst unit-max 110)
+     479|#end-if
+     480|
+
+--- anib_60027.bin line 482
+     478|(defconst unit-max 110)
+     479|#end-if
+     480|
+     481|#load-if-defined DIFFICULTY-MODERATE
+     482|(defconst unit-max 125)
+     483|#end-if
+     484|
+
+--- anib_60027.bin line 486
+     482|(defconst unit-max 125)
+     483|#end-if
+     484|
+     485|#load-if-defined DIFFICULTY-HARD
+     486|(defconst unit-max 140)
+     487|#end-if
+     488|
+
+--- anib_60027.bin line 490
+     486|(defconst unit-max 140)
+     487|#end-if
+     488|
+     489|#load-if-defined DIFFICULTY-HARDEST
+     490|(defconst unit-max 140)
+     491|#end-if
+     492|
+
+--- anib_60027.bin line 509
+     505|(defconst civ-feudal-mod 20)
+     506|(defconst civ-feudal 40)
+     507|(defconst civ-castle 65)
+     508|(defconst pop-cap 175)
+     509|(defconst deathmatch-unit-max 145)
+     510|
+     511|(defconst feudal-town-size 20)
+
+--- anib_60027.bin line 517
+     513|(defconst imperial-town-size 40)
+     514|(defconst town-center-count 8)
+     515|
+     516|#load-if-defined DIFFICULTY-EASIEST
+     517|(defconst unit-max 125)
+     518|#end-if
+     519|
+
+--- anib_60027.bin line 521
+     517|(defconst unit-max 125)
+     518|#end-if
+     519|
+     520|#load-if-defined DIFFICULTY-EASY
+     521|(defconst unit-max 125)
+     522|#end-if
+     523|
+
+--- anib_60027.bin line 525
+     521|(defconst unit-max 125)
+     522|#end-if
+     523|
+     524|#load-if-defined DIFFICULTY-MODERATE
+     525|(defconst unit-max 145)
+     526|#end-if
+     527|
+
+--- anib_60027.bin line 529
+     525|(defconst unit-max 145)
+     526|#end-if
+     527|
+     528|#load-if-defined DIFFICULTY-HARD
+     529|(defconst unit-max 165)
+     530|#end-if
+     531|
+
+--- anib_60027.bin line 533
+     529|(defconst unit-max 165)
+     530|#end-if
+     531|
+     532|#load-if-defined DIFFICULTY-HARDEST
+     533|(defconst unit-max 165)
+     534|#end-if
+     535|
+
+--- anib_60027.bin line 552
+     548|(defconst civ-feudal-mod 20)
+     549|(defconst civ-feudal 40)
+     550|(defconst civ-castle 70)
+     551|(defconst pop-cap 200)
+     552|(defconst deathmatch-unit-max 170)
+     553|
+     554|(defconst feudal-town-size 20)
+
+--- anib_60027.bin line 560
+     556|(defconst imperial-town-size 40)
+     557|(defconst town-center-count 9)
+     558|
+     559|#load-if-defined DIFFICULTY-EASIEST
+     560|(defconst unit-max 130)
+     561|#end-if
+     562|
+
+--- anib_60027.bin line 564
+     560|(defconst unit-max 130)
+     561|#end-if
+     562|
+     563|#load-if-defined DIFFICULTY-EASY
+     564|(defconst unit-max 130)
+     565|#end-if
+     566|
+
+--- anib_60027.bin line 568
+     564|(defconst unit-max 130)
+     565|#end-if
+     566|
+     567|#load-if-defined DIFFICULTY-MODERATE
+     568|(defconst unit-max 160)
+     569|#end-if
+     570|
+
+--- anib_60027.bin line 572
+     568|(defconst unit-max 160)
+     569|#end-if
+     570|
+     571|#load-if-defined DIFFICULTY-HARD
+     572|(defconst unit-max 190)
+     573|#end-if
+     574|
+
+--- anib_60027.bin line 576
+     572|(defconst unit-max 190)
+     573|#end-if
+     574|
+     575|#load-if-defined DIFFICULTY-HARDEST
+     576|(defconst unit-max 190)
+     577|#end-if
+     578|
+
+--- anib_60028.bin line 890
+     886|
+     887|(defrule
+     888|	(timer-triggered t-chatmore)
+     889|=>
+     890|	(cc-add-resource wood 500)
+     891|	(cc-add-resource food 500)
+     892|	(cc-add-resource gold 500)
+
+--- anib_60028.bin line 891
+     887|(defrule
+     888|	(timer-triggered t-chatmore)
+     889|=>
+     890|	(cc-add-resource wood 500)
+     891|	(cc-add-resource food 500)
+     892|	(cc-add-resource gold 500)
+     893|	(cc-add-resource stone 500)
+
+--- anib_60028.bin line 892
+     888|	(timer-triggered t-chatmore)
+     889|=>
+     890|	(cc-add-resource wood 500)
+     891|	(cc-add-resource food 500)
+     892|	(cc-add-resource gold 500)
+     893|	(cc-add-resource stone 500)
+     894|	(disable-timer t-chatmore)
+
+--- anib_60028.bin line 893
+     889|=>
+     890|	(cc-add-resource wood 500)
+     891|	(cc-add-resource food 500)
+     892|	(cc-add-resource gold 500)
+     893|	(cc-add-resource stone 500)
+     894|	(disable-timer t-chatmore)
+     895|	(enable-timer t-chatmore 1200)
+
+--- anib_60028.bin line 1228
+    1224|;**********************************************
+    1225|;build that wonder
+    1226|(defrule
+    1227|	(current-age == imperial-age)
+    1228|	(population > unit-max)
+    1229|	(wood-amount >= 500)
+    1230|	(gold-amount >= 500)
+
+--- anib_60028.bin line 1245
+    1241|	(release-escrow gold)
+    1242|	(release-escrow stone)
+    1243|	(set-strategic-number sn-maximum-town-size 10)
+    1244|	(set-strategic-number sn-percent-civilian-builders 90)
+    1245|	(set-strategic-number sn-cap-civilian-builders 50)
+    1246|	(set-strategic-number sn-percent-civilian-gatherers 10)
+    1247|	(build wonder)
+
+--- anib_60028.bin line 2165
+    2161|	(set-strategic-number sn-stone-defend-priority 3)
+    2162|	(set-strategic-number sn-forage-defend-priority 0)
+    2163|	(set-strategic-number sn-relic-defend-priority 0)
+    2164|
+    2165|	(set-strategic-number sn-cap-civilian-builders 8)
+    2166|	(set-strategic-number sn-cap-civilian-gatherers 100)
+    2167|	(set-strategic-number sn-minimum-civilian-explorers 0)
+
+--- anib_60028.bin line 2546
+    2542|; villager count
+    2543|(defrule
+    2544|	(current-age == castle-age)
+    2545|	(difficulty <= moderate)
+    2546|	(civilian-population < deathmatch-unit-max)
+    2547|	(civilian-population < 40)
+    2548|	(can-train villager)
+
+--- anib_60029.bin line 98
+      94|(defrule
+      95|	(difficulty == hardest)
+      96|	(goal wonder-attempt ATTACK)
+      97|=>
+      98|	(cc-add-resource wood 10000)
+      99|	(cc-add-resource food 10000)
+     100|	(cc-add-resource gold 10000)
+
+--- anib_60029.bin line 99
+      95|	(difficulty == hardest)
+      96|	(goal wonder-attempt ATTACK)
+      97|=>
+      98|	(cc-add-resource wood 10000)
+      99|	(cc-add-resource food 10000)
+     100|	(cc-add-resource gold 10000)
+     101|	(cc-add-resource stone 10000)
+
+--- anib_60029.bin line 100
+      96|	(goal wonder-attempt ATTACK)
+      97|=>
+      98|	(cc-add-resource wood 10000)
+      99|	(cc-add-resource food 10000)
+     100|	(cc-add-resource gold 10000)
+     101|	(cc-add-resource stone 10000)
+     102|	(disable-self)
+
+--- anib_60029.bin line 101
+      97|=>
+      98|	(cc-add-resource wood 10000)
+      99|	(cc-add-resource food 10000)
+     100|	(cc-add-resource gold 10000)
+     101|	(cc-add-resource stone 10000)
+     102|	(disable-self)
+     103|)
+
+--- anib_60029.bin line 109
+     105|(defrule
+     106|	(difficulty == hard)
+     107|	(goal wonder-attempt ATTACK)
+     108|=>
+     109|	(cc-add-resource wood 5000)
+     110|	(cc-add-resource food 5000)
+     111|	(cc-add-resource gold 5000)
+
+--- anib_60029.bin line 110
+     106|	(difficulty == hard)
+     107|	(goal wonder-attempt ATTACK)
+     108|=>
+     109|	(cc-add-resource wood 5000)
+     110|	(cc-add-resource food 5000)
+     111|	(cc-add-resource gold 5000)
+     112|	(cc-add-resource stone 5000)
+
+--- anib_60029.bin line 111
+     107|	(goal wonder-attempt ATTACK)
+     108|=>
+     109|	(cc-add-resource wood 5000)
+     110|	(cc-add-resource food 5000)
+     111|	(cc-add-resource gold 5000)
+     112|	(cc-add-resource stone 5000)
+     113|	(disable-self)
+
+--- anib_60029.bin line 112
+     108|=>
+     109|	(cc-add-resource wood 5000)
+     110|	(cc-add-resource food 5000)
+     111|	(cc-add-resource gold 5000)
+     112|	(cc-add-resource stone 5000)
+     113|	(disable-self)
+     114|)
+
+--- anib_60029.bin line 120
+     116|(defrule
+     117|	(difficulty == moderate)
+     118|	(goal wonder-attempt ATTACK)
+     119|=>
+     120|	(cc-add-resource wood 1000)
+     121|	(cc-add-resource food 1500)
+     122|	(cc-add-resource gold 1500)
+
+--- anib_60029.bin line 121
+     117|	(difficulty == moderate)
+     118|	(goal wonder-attempt ATTACK)
+     119|=>
+     120|	(cc-add-resource wood 1000)
+     121|	(cc-add-resource food 1500)
+     122|	(cc-add-resource gold 1500)
+     123|	(cc-add-resource stone 1000)
+
+--- anib_60029.bin line 122
+     118|	(goal wonder-attempt ATTACK)
+     119|=>
+     120|	(cc-add-resource wood 1000)
+     121|	(cc-add-resource food 1500)
+     122|	(cc-add-resource gold 1500)
+     123|	(cc-add-resource stone 1000)
+     124|	(disable-self)
+
+--- anib_60029.bin line 123
+     119|=>
+     120|	(cc-add-resource wood 1000)
+     121|	(cc-add-resource food 1500)
+     122|	(cc-add-resource gold 1500)
+     123|	(cc-add-resource stone 1000)
+     124|	(disable-self)
+     125|)
+
+--- anib_60029.bin line 131
+     127|(defrule
+     128|	(difficulty == hardest)
+     129|	(goal wonder-attempt DEFEND)
+     130|=>
+     131|	(cc-add-resource wood 5000)
+     132|	(cc-add-resource food 5000)
+     133|	(cc-add-resource gold 5000)
+
+--- anib_60029.bin line 132
+     128|	(difficulty == hardest)
+     129|	(goal wonder-attempt DEFEND)
+     130|=>
+     131|	(cc-add-resource wood 5000)
+     132|	(cc-add-resource food 5000)
+     133|	(cc-add-resource gold 5000)
+     134|	(cc-add-resource stone 5000)
+
+--- anib_60029.bin line 133
+     129|	(goal wonder-attempt DEFEND)
+     130|=>
+     131|	(cc-add-resource wood 5000)
+     132|	(cc-add-resource food 5000)
+     133|	(cc-add-resource gold 5000)
+     134|	(cc-add-resource stone 5000)
+     135|	(disable-self)
+
+--- anib_60029.bin line 134
+     130|=>
+     131|	(cc-add-resource wood 5000)
+     132|	(cc-add-resource food 5000)
+     133|	(cc-add-resource gold 5000)
+     134|	(cc-add-resource stone 5000)
+     135|	(disable-self)
+     136|)
+
+--- anib_60029.bin line 142
+     138|(defrule
+     139|	(difficulty == hard)
+     140|	(goal wonder-attempt DEFEND)
+     141|=>
+     142|	(cc-add-resource wood 1000)
+     143|	(cc-add-resource food 1000)
+     144|	(cc-add-resource gold 1000)
+
+--- anib_60029.bin line 143
+     139|	(difficulty == hard)
+     140|	(goal wonder-attempt DEFEND)
+     141|=>
+     142|	(cc-add-resource wood 1000)
+     143|	(cc-add-resource food 1000)
+     144|	(cc-add-resource gold 1000)
+     145|	(cc-add-resource stone 1000)
+
+--- anib_60029.bin line 144
+     140|	(goal wonder-attempt DEFEND)
+     141|=>
+     142|	(cc-add-resource wood 1000)
+     143|	(cc-add-resource food 1000)
+     144|	(cc-add-resource gold 1000)
+     145|	(cc-add-resource stone 1000)
+     146|	(disable-self)
+
+--- anib_60029.bin line 145
+     141|=>
+     142|	(cc-add-resource wood 1000)
+     143|	(cc-add-resource food 1000)
+     144|	(cc-add-resource gold 1000)
+     145|	(cc-add-resource stone 1000)
+     146|	(disable-self)
+     147|)
+
+--- anib_60029.bin line 153
+     149|(defrule
+     150|	(difficulty == moderate)
+     151|	(goal wonder-attempt DEFEND)
+     152|=>
+     153|	(cc-add-resource wood 500)
+     154|	(cc-add-resource food 500)
+     155|	(cc-add-resource gold 500)
+
+--- anib_60029.bin line 154
+     150|	(difficulty == moderate)
+     151|	(goal wonder-attempt DEFEND)
+     152|=>
+     153|	(cc-add-resource wood 500)
+     154|	(cc-add-resource food 500)
+     155|	(cc-add-resource gold 500)
+     156|	(cc-add-resource stone 500)
+
+--- anib_60029.bin line 155
+     151|	(goal wonder-attempt DEFEND)
+     152|=>
+     153|	(cc-add-resource wood 500)
+     154|	(cc-add-resource food 500)
+     155|	(cc-add-resource gold 500)
+     156|	(cc-add-resource stone 500)
+     157|	(disable-self)
+
+--- anib_60029.bin line 156
+     152|=>
+     153|	(cc-add-resource wood 500)
+     154|	(cc-add-resource food 500)
+     155|	(cc-add-resource gold 500)
+     156|	(cc-add-resource stone 500)
+     157|	(disable-self)
+     158|)
+
+--- anib_60029.bin line 1648
+    1644|
+    1645|(defrule
+    1646|	(timer-triggered t-chatmore)
+    1647|=>
+    1648|	(cc-add-resource wood 500)
+    1649|	(cc-add-resource food 500)
+    1650|	(cc-add-resource gold 500)
+
+--- anib_60029.bin line 1649
+    1645|(defrule
+    1646|	(timer-triggered t-chatmore)
+    1647|=>
+    1648|	(cc-add-resource wood 500)
+    1649|	(cc-add-resource food 500)
+    1650|	(cc-add-resource gold 500)
+    1651|	(cc-add-resource stone 500)
+
+--- anib_60029.bin line 1650
+    1646|	(timer-triggered t-chatmore)
+    1647|=>
+    1648|	(cc-add-resource wood 500)
+    1649|	(cc-add-resource food 500)
+    1650|	(cc-add-resource gold 500)
+    1651|	(cc-add-resource stone 500)
+    1652|	(disable-timer t-chatmore)
+
+--- anib_60029.bin line 1651
+    1647|=>
+    1648|	(cc-add-resource wood 500)
+    1649|	(cc-add-resource food 500)
+    1650|	(cc-add-resource gold 500)
+    1651|	(cc-add-resource stone 500)
+    1652|	(disable-timer t-chatmore)
+    1653|	(enable-timer t-chatmore 1200)
+
+--- anib_60029.bin line 1713
+    1709|	(set-strategic-number sn-minimum-civilian-explorers 0)
+    1710|
+    1711|	(set-strategic-number sn-cap-civilian-explorers 0)
+    1712|	(set-strategic-number sn-percent-civilian-explorers 0)
+    1713|	(set-strategic-number sn-cap-civilian-builders 12)
+    1714|
+    1715|	(set-strategic-number sn-percent-civilian-builders 100)
+
+--- anib_60029.bin line 2476
+    2472|
+    2473|(defrule
+    2474|	(goal wonder-attempt ATTACK)
+    2475|	(timer-triggered t-attackgroup)
+    2476|	(population >= unit-max)
+    2477|=>
+    2478|	(set-goal military-parity YES)
+
+======================================================================
+DIR x1p1_drs

@@ -1,0 +1,565 @@
+﻿========================================================================
+anib_60002.bin  (2883 lines, 114 hits)
+    L14    .(set-goal military-parity YES).;goal 3
+    L15    .(set-goal attack-control NO).;goal 4
+  * L16    .(set-goal need-deathmatch-villagers NO).;goal 7
+    L17    
+    L18    .(set-goal secondary-build 1).;goal 8
+    L69    .(can-train elite-eagle-warrior)
+    L70    .(or
+  * L71    ..(population < deathmatch-unit-max)
+    L72    ..(and
+    L73    ...(population < unit-max)
+  * L74    ...(goal need-deathmatch-villagers NO)
+    L75    ..)
+    L76    .)
+    L85    .(can-train arbalest)
+    L86    .(or
+  * L87    ..(population < deathmatch-unit-max)
+    L88    ..(and
+    L89    ...(population < unit-max)
+  * L90    ...(goal need-deathmatch-villagers NO)
+    L91    ..)
+    L92    .)
+    L127   .(can-train heavy-cavalry-archer)
+    L128   .(or
+  * L129   ..(population < deathmatch-unit-max)
+    L130   ..(and
+    L131   ...(population < unit-max)
+  * L132   ...(goal need-deathmatch-villagers NO)
+    L133   ..)
+    L134   .)
+    L147   .)
+    L148   .(or
+  * L149   ..(population < deathmatch-unit-max)
+    L150   ..(and
+    L151   ...(population < unit-max)
+  * L152   ...(goal need-deathmatch-villagers NO)
+    L153   ..)
+    L154   .)
+    L190   .(can-train heavy-cavalry-archer)
+    L191   .(or
+  * L192   ..(population < deathmatch-unit-max)
+    L193   ..(and
+    L194   ...(population < unit-max)
+  * L195   ...(goal need-deathmatch-villagers NO)
+    L196   ..)
+    L197   .)
+    L206   .(can-train hand-cannoneer)
+    L207   .(or
+  * L208   ..(population < deathmatch-unit-max)
+    L209   ..(and
+    L210   ...(population < unit-max)
+  * L211   ...(goal need-deathmatch-villagers NO)
+    L212   ..)
+    L213   .)
+    L249   .(can-train champion)
+    L250   .(or
+  * L251   ..(population < deathmatch-unit-max)
+    L252   ..(and
+    L253   ...(population < unit-max)
+  * L254   ...(goal need-deathmatch-villagers NO)
+    L255   ..)
+    L256   .)
+    L265   .(can-train elite-eagle-warrior)
+    L266   .(or
+  * L267   ..(population < deathmatch-unit-max)
+    L268   ..(and
+    L269   ...(population < unit-max)
+  * L270   ...(goal need-deathmatch-villagers NO)
+    L271   ..)
+    L272   .)
+    L308   .(can-train champion)
+    L309   .(or
+  * L310   ..(population < deathmatch-unit-max)
+    L311   ..(and
+    L312   ...(population < unit-max)
+  * L313   ...(goal need-deathmatch-villagers NO)
+    L314   ..)
+    L315   .)
+    L324   .(can-train paladin)
+    L325   .(or
+  * L326   ..(population < deathmatch-unit-max)
+    L327   ..(and
+    L328   ...(population < unit-max)
+  * L329   ...(goal need-deathmatch-villagers NO)
+    L330   ..)
+    L331   .)
+    L341   .(not (can-train paladin) )
+    L342   .(or
+  * L343   ..(population < deathmatch-unit-max)
+    L344   ..(and
+    L345   ...(population < unit-max)
+  * L346   ...(goal need-deathmatch-villagers NO)
+    L347   ..)
+    L348   .)
+    L361   .)
+    L362   .(or
+  * L363   ..(population < deathmatch-unit-max)
+    L364   ..(and
+    L365   ...(population < unit-max)
+  * L366   ...(goal need-deathmatch-villagers NO)
+    L367   ..)
+    L368   .)
+    L378   .(not (can-train elite-conquistador) )
+    L379   .(or
+  * L380   ..(population < deathmatch-unit-max)
+    L381   ..(and
+    L382   ...(population < unit-max)
+  * L383   ...(goal need-deathmatch-villagers NO)
+    L384   ..)
+    L385   .)
+    L421   .(can-train champion)
+    L422   .(or
+  * L423   ..(population < deathmatch-unit-max)
+    L424   ..(and
+    L425   ...(population < unit-max)
+  * L426   ...(goal need-deathmatch-villagers NO)
+    L427   ..)
+    L428   .)
+    L437   .(can-train hussar)
+    L438   .(or
+  * L439   ..(population < deathmatch-unit-max)
+    L440   ..(and
+    L441   ...(population < unit-max)
+  * L442   ...(goal need-deathmatch-villagers NO)
+    L443   ..)
+    L444   .)
+    L479   .(can-train heavy-cavalry-archer)
+    L480   .(or
+  * L481   ..(population < deathmatch-unit-max)
+    L482   ..(and
+    L483   ...(population < unit-max)
+  * L484   ...(goal need-deathmatch-villagers NO)
+    L485   ..)
+    L486   .)
+    L498   .)
+    L499   .(or
+  * L500   ..(population < deathmatch-unit-max)
+    L501   ..(and
+    L502   ...(population < unit-max)
+  * L503   ...(goal need-deathmatch-villagers NO)
+    L504   ..)
+    L505   .)
+    L519   .)
+    L520   .(or
+  * L521   ..(population < deathmatch-unit-max)
+    L522   ..(and
+    L523   ...(population < unit-max)
+  * L524   ...(goal need-deathmatch-villagers NO)
+    L525   ..)
+    L526   .)
+    L562   .(can-train paladin)
+    L563   .(or
+  * L564   ..(population < deathmatch-unit-max)
+    L565   ..(and
+    L566   ...(population < unit-max)
+  * L567   ...(goal need-deathmatch-villagers NO)
+    L568   ..)
+    L569   .)
+    L579   .(not (can-afford-unit paladin) )
+    L580   .(or
+  * L581   ..(population < deathmatch-unit-max)
+    L582   ..(and
+    L583   ...(population < unit-max)
+  * L584   ...(goal need-deathmatch-villagers NO)
+    L585   ..)
+    L586   .)
+    L595   .(can-train heavy-cavalry-archer)
+    L596   .(or
+  * L597   ..(population < deathmatch-unit-max)
+    L598   ..(and
+    L599   ...(population < unit-max)
+  * L600   ...(goal need-deathmatch-villagers NO)
+    L601   ..)
+    L602   .)
+    L611   .(can-train heavy-scorpion)
+    L612   .(or
+  * L613   ..(population < deathmatch-unit-max)
+    L614   ..(and
+    L615   ...(population < unit-max)
+  * L616   ...(goal need-deathmatch-villagers NO)
+    L617   ..)
+    L618   .)
+    L654   .(can-train champion)
+    L655   .(or
+  * L656   ..(population < deathmatch-unit-max)
+    L657   ..(and
+    L658   ...(population < unit-max)
+  * L659   ...(goal need-deathmatch-villagers NO)
+    L660   ..)
+    L661   .)
+    L670   .(can-train hussar)
+    L671   .(or
+  * L672   ..(population < deathmatch-unit-max)
+    L673   ..(and
+    L674   ...(population < unit-max)
+  * L675   ...(goal need-deathmatch-villagers NO)
+    L676   ..)
+    L677   .)
+    L686   .(can-train heavy-scorpion)
+    L687   .(or
+  * L688   ..(population < deathmatch-unit-max)
+    L689   ..(and
+    L690   ...(population < unit-max)
+  * L691   ...(goal need-deathmatch-villagers NO)
+    L692   ..)
+    L693   .)
+    L728   .(can-train paladin)
+    L729   .(or
+  * L730   ..(population < deathmatch-unit-max)
+    L731   ..(and
+    L732   ...(population < unit-max)
+  * L733   ...(goal need-deathmatch-villagers NO)
+    L734   ..)
+    L735   .)
+    L745   .(not (can-afford-unit paladin) )
+    L746   .(or
+  * L747   ..(population < deathmatch-unit-max)
+    L748   ..(and
+    L749   ...(population < unit-max)
+  * L750   ...(goal need-deathmatch-villagers NO)
+    L751   ..)
+    L752   .)
+    L761   .(can-train heavy-cavalry-archer)
+    L762   .(or
+  * L763   ..(population < deathmatch-unit-max)
+    L764   ..(and
+    L765   ...(population < unit-max)
+  * L766   ...(goal need-deathmatch-villagers NO)
+    L767   ..)
+    L768   .)
+    L777   .(can-train heavy-scorpion)
+    L778   .(or
+  * L779   ..(population < deathmatch-unit-max)
+    L780   ..(and
+    L781   ...(population < unit-max)
+  * L782   ...(goal need-deathmatch-villagers NO)
+    L783   ..)
+    L784   .)
+    L819   .(can-train hussar)
+    L820   .(or
+  * L821   ..(population < deathmatch-unit-max)
+    L822   ..(and
+    L823   ...(population < unit-max)
+  * L824   ...(goal need-deathmatch-villagers NO)
+    L825   ..)
+    L826   .)
+    L835   .(can-train heavy-cavalry-archer)
+    L836   .(or
+  * L837   ..(population < deathmatch-unit-max)
+    L838   ..(and
+    L839   ...(population < unit-max)
+  * L840   ...(goal need-deathmatch-villagers NO)
+    L841   ..)
+    L842   .)
+    L851   .(can-train heavy-scorpion)
+    L852   .(or
+  * L853   ..(population < deathmatch-unit-max)
+    L854   ..(and
+    L855   ...(population < unit-max)
+  * L856   ...(goal need-deathmatch-villagers NO)
+    L857   ..)
+    L858   .)
+    L893   .(can-train heavy-cavalry-archer)
+    L894   .(or
+  * L895   ..(population < deathmatch-unit-max)
+    L896   ..(and
+    L897   ...(population < unit-max)
+  * L898   ...(goal need-deathmatch-villagers NO)
+    L899   ..)
+    L900   .)
+    L912   .)
+    L913   .(or
+  * L914   ..(population < deathmatch-unit-max)
+    L915   ..(and
+    L916   ...(population < unit-max)
+  * L917   ...(goal need-deathmatch-villagers NO)
+    L918   ..)
+    L919   .)
+    L929   .(can-train heavy-scorpion)
+    L930   .(or
+  * L931   ..(population < deathmatch-unit-max)
+    L932   ..(and
+    L933   ...(population < unit-max)
+  * L934   ...(goal need-deathmatch-villagers NO)
+    L935   ..)
+    L936   .)
+    L971   .(can-train champion)
+    L972   .(or
+  * L973   ..(population < deathmatch-unit-max)
+    L974   ..(and
+    L975   ...(population < unit-max)
+  * L976   ...(goal need-deathmatch-villagers NO)
+    L977   ..)
+    L978   .)
+    L987   .(can-train hussar)
+    L988   .(or
+  * L989   ..(population < deathmatch-unit-max)
+    L990   ..(and
+    L991   ...(population < unit-max)
+  * L992   ...(goal need-deathmatch-villagers NO)
+    L993   ..)
+    L994   .)
+    L1029  .(can-train heavy-cavalry-archer)
+    L1030  .(or
+  * L1031  ..(population < deathmatch-unit-max)
+    L1032  ..(and
+    L1033  ...(population < unit-max)
+  * L1034  ...(goal need-deathmatch-villagers NO)
+    L1035  ..)
+    L1036  .)
+    L1049  .)
+    L1050  .(or
+  * L1051  ..(population < deathmatch-unit-max)
+    L1052  ..(and
+    L1053  ...(population < unit-max)
+  * L1054  ...(goal need-deathmatch-villagers NO)
+    L1055  ..)
+    L1056  .)
+    L1092  .(can-train heavy-cavalry-archer)
+    L1093  .(or
+  * L1094  ..(population < deathmatch-unit-max)
+    L1095  ..(and
+    L1096  ...(population < unit-max)
+  * L1097  ...(goal need-deathmatch-villagers NO)
+    L1098  ..)
+    L1099  .)
+    L1111  .)
+    L1112  .(or
+  * L1113  ..(population < deathmatch-unit-max)
+    L1114  ..(and
+    L1115  ...(population < unit-max)
+  * L1116  ...(goal need-deathmatch-villagers NO)
+    L1117  ..)
+    L1118  .)
+    L1129  .(not (can-train elite-mameluke) )
+    L1130  .(or
+  * L1131  ..(population < deathmatch-unit-max)
+    L1132  ..(and
+    L1133  ...(population < unit-max)
+  * L1134  ...(goal need-deathmatch-villagers NO)
+    L1135  ..)
+    L1136  .)
+    L1171  .(can-train paladin)
+    L1172  .(or
+  * L1173  ..(population < deathmatch-unit-max)
+    L1174  ..(and
+    L1175  ...(population < unit-max)
+  * L1176  ...(goal need-deathmatch-villagers NO)
+    L1177  ..)
+    L1178  .)
+    L1187  .(can-train heavy-scorpion)
+    L1188  .(or
+  * L1189  ..(population < deathmatch-unit-max)
+    L1190  ..(and
+    L1191  ...(population < unit-max)
+  * L1192  ...(goal need-deathmatch-villagers NO)
+    L1193  ..)
+    L1194  .)
+    L1229  .(can-train champion)
+    L1230  .(or
+  * L1231  ..(population < deathmatch-unit-max)
+    L1232  ..(and
+    L1233  ...(population < unit-max)
+  * L1234  ...(goal need-deathmatch-villagers NO)
+    L1235  ..)
+    L1236  .)
+    L1245  .(can-train hussar)
+    L1246  .(or
+  * L1247  ..(population < deathmatch-unit-max)
+    L1248  ..(and
+    L1249  ...(population < unit-max)
+  * L1250  ...(goal need-deathmatch-villagers NO)
+    L1251  ..)
+    L1252  .)
+    L1261  .(can-train heavy-scorpion)
+    L1262  .(or
+  * L1263  ..(population < deathmatch-unit-max)
+    L1264  ..(and
+    L1265  ...(population < unit-max)
+  * L1266  ...(goal need-deathmatch-villagers NO)
+    L1267  ..)
+    L1268  .)
+    L1303  .(can-train light-cavalry)
+    L1304  .(or
+  * L1305  ..(population < deathmatch-unit-max)
+    L1306  ..(and
+    L1307  ...(population < unit-max)
+  * L1308  ...(goal need-deathmatch-villagers NO)
+    L1309  ..)
+    L1310  .)
+    L1319  .(can-train arbalest)
+    L1320  .(or
+  * L1321  ..(population < deathmatch-unit-max)
+    L1322  ..(and
+    L1323  ...(population < unit-max)
+  * L1324  ...(goal need-deathmatch-villagers NO)
+    L1325  ..)
+    L1326  .)
+    L1335  .(can-train heavy-scorpion)
+    L1336  .(or
+  * L1337  ..(population < deathmatch-unit-max)
+    L1338  ..(and
+    L1339  ...(population < unit-max)
+  * L1340  ...(goal need-deathmatch-villagers NO)
+    L1341  ..)
+    L1342  .)
+    L2250  .)
+    L2251  =>
+  * L2252  .(set-goal need-deathmatch-villagers YES)
+    L2253  .(disable-self)
+    L2254  )
+    L2258  .(can-train militiaman-line)
+    L2259  .(or
+  * L2260  ..(population < deathmatch-unit-max)
+    L2261  ..(and
+    L2262  ...(population < unit-max)
+  * L2263  ...(goal need-deathmatch-villagers NO)
+    L2264  ..)
+    L2265  .)
+    L2273  .(can-train knight-line)
+    L2274  .(or
+  * L2275  ..(population < deathmatch-unit-max)
+    L2276  ..(and
+    L2277  ...(population < unit-max)
+  * L2278  ...(goal need-deathmatch-villagers NO)
+    L2279  ..)
+    L2280  .)
+    L2288  .(can-train cavalry-archer-line)
+    L2289  .(or
+  * L2290  ..(population < deathmatch-unit-max)
+    L2291  ..(and
+    L2292  ...(population < unit-max)
+  * L2293  ...(goal need-deathmatch-villagers NO)
+    L2294  ..)
+    L2295  .)
+    L2304  .(not (unit-available hand-cannoneer) )
+    L2305  .(or
+  * L2306  ..(population < deathmatch-unit-max)
+    L2307  ..(and
+    L2308  ...(population < unit-max)
+  * L2309  ...(goal need-deathmatch-villagers NO)
+    L2310  ..)
+    L2311  .)
+    L2319  .(can-train hand-cannoneer)
+    L2320  .(or
+  * L2321  ..(population < deathmatch-unit-max)
+    L2322  ..(and
+    L2323  ...(population < unit-max)
+  * L2324  ...(goal need-deathmatch-villagers NO)
+    L2325  ..)
+    L2326  .)
+    L2333  .(can-train my-unique-unit-line)
+    L2334  .(or
+  * L2335  ..(population < deathmatch-unit-max)
+    L2336  ..(and
+    L2337  ...(population < unit-max)
+  * L2338  ...(goal need-deathmatch-villagers NO)
+    L2339  ..)
+    L2340  .)
+========================================================================
+anib_60004.bin  (224 lines, 1 hits)
+    L88    
+    L89    #load-if-not-defined DEFEND-WONDER
+  * L90    #load-if-not-defined DEATH-MATCH
+    L91    ;build fishing ships in dark age
+    L92    
+========================================================================
+anib_60007.bin  (1163 lines, 1 hits)
+    L363   
+    L364   ;*********************************
+  * L365   #load-if-not-defined DEATH-MATCH
+    L366   
+    L367   ;build superunits
+========================================================================
+anib_60013.bin  (1044 lines, 1 hits)
+    L233   .(current-age >= castle-age)
+    L234   .(goal make-villagers YES)
+  * L235   .(civilian-population < deathmatch-unit-max)
+    L236   .(can-train villager)
+    L237   =>
+========================================================================
+anib_60026.bin  (51 lines, 3 hits)
+    L8     #end-if
+    L9     ;******************************
+  * L10    #load-if-defined DEATH-MATCH
+    L11    
+    L12    (load "petersen map loads")
+    L19    
+    L20    
+  * L21    (load "petersen deathmatch")
+    L22    
+    L23    #end-if
+    L32    #end-if
+    L33    ;******************************
+  * L34    #load-if-not-defined DEATH-MATCH
+    L35    #load-if-not-defined DEFEND-WONDER
+    L36    #load-if-not-defined WONDER-RACE
+========================================================================
+anib_60027.bin  (628 lines, 11 hits)
+    L63    .(defconst BOOMING 18)
+    L64    .(defconst FEEDING 19)
+  * L65    ;goal 7 used for deathmatch to determine whether or not to build more units
+    L66    .(defconst need-deathmatch-villagers 7)
+    L67    .;uses NO, YES
+    L68    ;goal 8 secondary-build controls secondary builds (ensures there are already soldiers before doing a secondary build)
+    L81    ;goal 10 used to keep from building siege if I have few or no other units
+    L82    .(defconst soldiers-available 10)
+  * L83    ;goal 11 = used to determine your main combat arm; in deathmatch, it determines your unique unit type
+    L84    .(defconst combat-arm  11)
+    L85    .;--Converted to constant  combat-arm, uses common offense/defense unit line numbers.
+    L249   (defconst civ-castle 15)
+    L250   (defconst pop-cap 25)
+  * L251   (defconst deathmatch-unit-max 13)
+    L252   
+    L253   (defconst feudal-town-size 20)
+    L292   (defconst civ-castle 35)
+    L293   (defconst pop-cap 50)
+  * L294   (defconst deathmatch-unit-max 25)
+    L295   
+    L296   (defconst feudal-town-size 20)
+    L335   (defconst civ-castle 40)
+    L336   (defconst pop-cap 75)
+  * L337   (defconst deathmatch-unit-max 55)
+    L338   
+    L339   (defconst feudal-town-size 20)
+    L378   (defconst civ-castle 50)
+    L379   (defconst pop-cap 100)
+  * L380   (defconst deathmatch-unit-max 70)
+    L381   
+    L382   (defconst feudal-town-size 20)
+    L421   (defconst civ-castle 55)
+    L422   (defconst pop-cap 125)
+  * L423   (defconst deathmatch-unit-max 95)
+    L424   (defconst town-center-count 6)
+    L425   
+    L464   (defconst civ-castle 60)
+    L465   (defconst pop-cap 150)
+  * L466   (defconst deathmatch-unit-max 120)
+    L467   
+    L468   (defconst feudal-town-size 20)
+    L507   (defconst civ-castle 65)
+    L508   (defconst pop-cap 175)
+  * L509   (defconst deathmatch-unit-max 145)
+    L510   
+    L511   (defconst feudal-town-size 20)
+    L550   (defconst civ-castle 70)
+    L551   (defconst pop-cap 200)
+  * L552   (defconst deathmatch-unit-max 170)
+    L553   
+    L554   (defconst feudal-town-size 20)
+========================================================================
+anib_60028.bin  (2628 lines, 1 hits)
+    L2544  .(current-age == castle-age)
+    L2545  .(difficulty <= moderate)
+  * L2546  .(civilian-population < deathmatch-unit-max)
+    L2547  .(civilian-population < 40)
+    L2548  .(can-train villager)
+========================================================================
+anib_60029.bin  (2581 lines, 1 hits)
+    L14    .(set-goal military-parity NO).;goal 3
+    L15    .(set-goal attack-control NO).;goal 4
+  * L16    .(set-goal need-deathmatch-villagers NO).;goal 7
+    L17    
+    L18    .(set-goal secondary-build YES).;goal 8

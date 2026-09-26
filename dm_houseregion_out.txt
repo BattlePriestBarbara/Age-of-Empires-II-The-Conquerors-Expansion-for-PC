@@ -1,0 +1,283 @@
+======================================================================
+x1_drs  (2884 lines)
+--- preprocessor lines with line number >= 1600 ---
+      41| #load-if-defined AZTEC-CIV
+      97| #end-if
+      99| #load-if-defined HUN-CIV
+     160| #end-if
+     162| #load-if-defined KOREAN-CIV
+     219| #end-if
+     221| #load-if-defined MAYAN-CIV
+     278| #end-if
+     280| #load-if-defined SPANISH-CIV
+     391| #end-if
+     393| #load-if-defined BRITON-CIV
+     449| #end-if
+     451| #load-if-defined BYZANTINE-CIV
+     532| #end-if
+     534| #load-if-defined CELTIC-CIV
+     624| #end-if
+     626| #load-if-defined CHINESE-CIV
+     698| #end-if
+     700| #load-if-defined FRANKISH-CIV
+     789| #end-if
+     791| #load-if-defined GOTHIC-CIV
+     863| #end-if
+     865| #load-if-defined JAPANESE-CIV
+     941| #end-if
+     943| #load-if-defined MONGOL-CIV
+     999| #end-if
+    1001| #load-if-defined PERSIAN-CIV
+    1062| #end-if
+    1064| #load-if-defined SARACEN-CIV
+    1141| #end-if
+    1143| #load-if-defined TEUTONIC-CIV
+    1199| #end-if
+    1201| #load-if-defined TURKISH-CIV
+    1273| #end-if
+    1275| #load-if-defined VIKING-CIV
+    1347| #end-if
+    1350| #load-if-defined DIFFICULTY-EASIEST
+    1361| #end-if
+    1363| #load-if-defined DIFFICULTY-EASY
+    1377| #end-if
+    1380| #load-if-defined DIFFICULTY-MODERATE
+    1394| #end-if
+    1397| #load-if-defined DIFFICULTY-HARD
+    1411| #end-if
+    1414| #load-if-defined DIFFICULTY-HARDEST
+    1427| #end-if
+    1682| #load-if-defined DIFFICULTY-EASIEST
+    1691| #end-if
+    1693| #load-if-defined DIFFICULTY-EASY
+    1702| #end-if
+--- region 1655..1745 ---
+    1655| 	(disable-self)
+    1656| )
+    1657| 
+    1658| (defrule
+    1659| 	(goal age-advancement NOTICE)
+    1660| 	(or
+    1661| 		(current-age < imperial-age)
+    1662| 		(and
+    1663| 			(current-age < imperial-age)
+    1664| 			(difficulty <= easy)
+    1665| 		)
+    1666| 	)
+    1667| 	(timer-triggered t-ageup)
+    1668| =>
+    1669| 	(disable-timer t-ageup)
+    1670| 	(set-goal age-advancement NO)
+    1671| )
+    1672| ;*********************************
+    1673| ;buildings
+    1674| (defrule
+    1675| 	(difficulty <= moderate)
+    1676| 	(building-type-count-total house <= fifteen-percent-pop)
+    1677| 	(can-build house)
+    1678| =>
+    1679| 	(build house)
+    1680| )
+    1681| 
+    1682| #load-if-defined DIFFICULTY-EASIEST
+    1683| (defrule
+    1684| 	(military-population < 10)
+    1685| 	(housing-headroom < 5)
+    1686| 	(population-headroom > 0)
+    1687| 	(can-build house)
+    1688| =>
+    1689| 	(build house)
+    1690| )
+    1691| #end-if
+    1692| 
+    1693| #load-if-defined DIFFICULTY-EASY
+    1694| (defrule
+    1695| 	(military-population < civ-dark-rush)
+    1696| 	(housing-headroom < 5)
+    1697| 	(population-headroom > 0)
+    1698| 	(can-build house)
+    1699| =>
+    1700| 	(build house)
+    1701| )
+    1702| #end-if
+    1703| 
+    1704| (defrule
+    1705| 	(strategic-number sn-gold-gatherer-percentage > 0)
+    1706| 	(building-type-count mining-camp == 0)
+    1707| 	(resource-found gold)
+    1708| 	(can-build mining-camp)
+    1709| =>
+    1710| 	(build mining-camp)
+    1711| )
+    1712| 
+    1713| (defrule
+    1714| 	(strategic-number sn-wood-gatherer-percentage > 0)
+    1715| 	(building-type-count lumber-camp == 0)
+    1716| 	(can-build lumber-camp)
+    1717| =>
+    1718| 	(build lumber-camp)
+    1719| )
+    1720| 
+    1721| (defrule
+    1722| 	(current-age == imperial-age)
+    1723| 	(building-type-count siege-workshop > 0)
+    1724| 	(building-type-count castle > 0)
+    1725| 	(building-type-count town-center < 3)
+    1726| 	(can-build town-center)
+    1727| =>
+    1728| 	(build town-center)
+    1729| )
+    1730| 
+    1731| ;build the following after running low on resources
+    1732| 
+    1733| (defrule
+    1734| 	(strategic-number sn-percent-civilian-gatherers >= 85)
+    1735| 	(timer-triggered t-lumbercamp)
+    1736| 	(resource-found gold)
+    1737| 	(resource-found stone)
+    1738| 	(or
+    1739| 		(dropsite-min-distance gold > 7)
+    1740| 		(dropsite-min-distance stone > 7)
+    1741| 	)
+    1742| 	(can-build town-center)
+    1743| =>
+    1744| 	(build town-center)
+    1745| )
+
+======================================================================
+aok_drs  (2445 lines)
+--- preprocessor lines with line number >= 1600 ---
+      13| #load-if-defined BRITON-CIV
+      71| #end-if
+      73| #load-if-defined BYZANTINE-CIV
+     132| #end-if
+     134| #load-if-defined CELTIC-CIV
+     226| #end-if
+     228| #load-if-defined CHINESE-CIV
+     299| #end-if
+     301| #load-if-defined FRANKISH-CIV
+     392| #end-if
+     394| #load-if-defined GOTHIC-CIV
+     465| #end-if
+     467| #load-if-defined JAPANESE-CIV
+     542| #end-if
+     544| #load-if-defined MONGOL-CIV
+     576| #end-if
+     578| #load-if-defined PERSIAN-CIV
+     611| #end-if
+     613| #load-if-defined SARACEN-CIV
+     673| #end-if
+     675| #load-if-defined TEUTONIC-CIV
+     730| #end-if
+     732| #load-if-defined TURKISH-CIV
+     803| #end-if
+     805| #load-if-defined VIKING-CIV
+     876| #end-if
+     879| #load-if-defined DIFFICULTY-EASIEST
+     890| #end-if
+     892| #load-if-defined DIFFICULTY-EASY
+     906| #end-if
+     909| #load-if-defined DIFFICULTY-MODERATE
+     923| #end-if
+     926| #load-if-defined DIFFICULTY-HARD
+     940| #end-if
+     943| #load-if-defined DIFFICULTY-HARDEST
+     956| #end-if
+    1239| #load-if-defined DIFFICULTY-EASIEST
+    1248| #end-if
+    1250| #load-if-defined DIFFICULTY-EASY
+    1259| #end-if
+    1451| #load-if-not-defined TEAMS-LOCKED
+    1493| #end-if
+--- region 1240..1330 ---
+    1240| (defrule
+    1241| 	(military-population < 10)
+    1242| 	(housing-headroom < 5)
+    1243| 	(population-headroom > 0)
+    1244| 	(can-build house)
+    1245| =>
+    1246| 	(build house)
+    1247| )
+    1248| #end-if
+    1249| 
+    1250| #load-if-defined DIFFICULTY-EASY
+    1251| (defrule
+    1252| 	(military-population < civ-dark-rush)
+    1253| 	(housing-headroom < 5)
+    1254| 	(population-headroom > 0)
+    1255| 	(can-build house)
+    1256| =>
+    1257| 	(build house)
+    1258| )
+    1259| #end-if
+    1260| 
+    1261| (defrule
+    1262| 	(strategic-number sn-gold-gatherer-percentage > 0)
+    1263| 	(building-type-count mining-camp == 0)
+    1264| 	(resource-found gold)
+    1265| 	(can-build mining-camp)
+    1266| =>
+    1267| 	(build mining-camp)
+    1268| )
+    1269| 
+    1270| (defrule
+    1271| 	(strategic-number sn-wood-gatherer-percentage > 0)
+    1272| 	(building-type-count lumber-camp == 0)
+    1273| 	(can-build lumber-camp)
+    1274| =>
+    1275| 	(build lumber-camp)
+    1276| )
+    1277| 
+    1278| (defrule
+    1279| 	(current-age == imperial-age)
+    1280| 	(building-type-count siege-workshop > 0)
+    1281| 	(building-type-count castle > 0)
+    1282| 	(building-type-count town-center < 3)
+    1283| 	(can-build town-center)
+    1284| =>
+    1285| 	(build town-center)
+    1286| )
+    1287| 
+    1288| ;build the following after running low on resources
+    1289| 
+    1290| (defrule
+    1291| 	(strategic-number sn-percent-civilian-gatherers >= 85)
+    1292| 	(timer-triggered t-lumbercamp)
+    1293| 	(resource-found gold)
+    1294| 	(resource-found stone)
+    1295| 	(or
+    1296| 		(dropsite-min-distance gold > 7)
+    1297| 		(dropsite-min-distance stone > 7)
+    1298| 	)
+    1299| 	(can-build town-center)
+    1300| =>
+    1301| 	(build town-center)
+    1302| )
+    1303| 
+    1304| (defrule
+    1305| 	(strategic-number sn-percent-civilian-gatherers >= 85)
+    1306| 	(timer-triggered t-lumbercamp)
+    1307| 	(resource-found wood)
+    1308| 	(dropsite-min-distance wood > 7)
+    1309| 	(can-build town-center)
+    1310| =>
+    1311| 	(build town-center)
+    1312| )
+    1313| 
+    1314| (defrule
+    1315| 	(timer-triggered t-lumbercamp)
+    1316| =>
+    1317| 	(disable-timer t-lumbercamp)
+    1318| 	(enable-timer t-lumbercamp 60)
+    1319| )
+    1320| 
+    1321| (defrule
+    1322| 	(building-type-count-total mill == 0)
+    1323| 	(building-type-count-total market == 0)
+    1324| 	(can-build mill)
+    1325| =>
+    1326| 	(build mill)
+    1327| )
+    1328| 
+    1329| (defrule
+    1330| 	(building-type-count-total market == 0)

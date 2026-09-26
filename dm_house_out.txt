@@ -1,0 +1,29 @@
+=== (build house) rules with their conditions, per DM-loaded file ===
+--- anib_60027 : (build house)=0  housing-headroom=0  population-headroom=0
+
+--- anib_60010 : (build house)=0  housing-headroom=0  population-headroom=0
+
+--- anib_60013 : (build house)=0  housing-headroom=0  population-headroom=0
+
+--- anib_60007 : (build house)=0  housing-headroom=0  population-headroom=0
+
+--- anib_60022 : (build house)=0  housing-headroom=0  population-headroom=0
+
+--- anib_60023 : (build house)=0  housing-headroom=0  population-headroom=0
+
+--- anib_60002 : (build house)=3  housing-headroom=2  population-headroom=2
+    line  1679 | (difficulty <= moderate) (building-type-count-total house <= fifteen-percent-pop) (can-build house)
+    line  1689 | (military-population < 10) (housing-headroom < 5) (population-headroom > 0) (can-build house)
+    line  1700 | (military-population < civ-dark-rush) (housing-headroom < 5) (population-headroom > 0) (can-build house)
+
+--- anib_60019 : (build house)=0  housing-headroom=0  population-headroom=0
+
+--- anib_60016 : (build house)=0  housing-headroom=0  population-headroom=0
+
+--- anib_60026 : (build house)=0  housing-headroom=0  population-headroom=0
+
+=== every x1 script mentioning (build house) ===
+   anib_60001.bin : 4
+   anib_60002.bin : 3
+   anib_60028.bin : 1
+   anib_60029.bin : 6

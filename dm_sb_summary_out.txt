@@ -1,0 +1,73 @@
+### x1_drs/anib_60002.bin : 18 civ blocks, 2884 lines
+  civ blocks      : (goal secondary-build ..) conditions = 68,  (set-goal secondary-build ..) actions = 50
+  outside blocks  : conditions at []
+  outside blocks  : actions at [18, 2343]
+  --- enclosing rule lines 11-27 ---
+      11| (defrule
+      12| (true)
+      13| =>
+      14| (set-goal military-parity YES)	;goal 3
+      15| (set-goal attack-control NO)	;goal 4
+      16| (set-goal need-deathmatch-villagers NO)	;goal 7
+      17| 
+      18| (set-goal secondary-build 1)	;goal 8
+      19| (set-goal soldiers-available NO);goal 10
+      20| (set-goal attack-enabled YES)	;goal 13
+      21| (set-goal age-advancement NO)	;goal 14
+      22| 
+      23| (set-goal make-warboat NO)		;goal 15
+      24| (set-goal upgrade-conflict NO)	;goal 16
+      25| 
+      26| (disable-self)
+      27| )
+  --- enclosing rule lines 2332-2344 ---
+    2332| (defrule
+    2333| (can-train my-unique-unit-line)
+    2334| (or
+    2335| (population < deathmatch-unit-max)
+    2336| (and
+    2337| (population < unit-max)
+    2338| (goal need-deathmatch-villagers NO)
+    2339| )
+    2340| )
+    2341| =>
+    2342| (train my-unique-unit-line)
+    2343| (set-goal secondary-build 1)
+    2344| )
+
+### aok_drs/anib_60002.bin : 13 civ blocks, 2445 lines
+  civ blocks      : (goal secondary-build ..) conditions = 44,  (set-goal secondary-build ..) actions = 32
+  outside blocks  : conditions at []
+  outside blocks  : actions at [967, 1873]
+  --- enclosing rule lines 960-976 ---
+     960| (defrule
+     961| (true)
+     962| =>
+     963| (set-goal military-parity YES)	;goal 3
+     964| (set-goal attack-control NO)	;goal 4
+     965| (set-goal need-deathmatch-villagers NO)	;goal 7
+     966| 
+     967| (set-goal secondary-build 0)	;goal 8
+     968| (set-goal soldiers-available NO);goal 10
+     969| (set-goal combat-arm NOTICE)	;goal 11
+     970| 
+     971| (set-goal age-advancement NO)	;goal 14
+     972| (set-goal make-warboat NO)		;goal 15
+     973| (set-goal upgrade-conflict NO)	;goal 16
+     974| 
+     975| (disable-self)
+     976| )
+  --- enclosing rule lines 1862-1874 ---
+    1862| (defrule
+    1863| (can-train my-unique-unit-line)
+    1864| (or
+    1865| (population < deathmatch-unit-max)
+    1866| (and
+    1867| (population < unit-max)
+    1868| (goal need-deathmatch-villagers NO)
+    1869| )
+    1870| )
+    1871| =>
+    1872| (train my-unique-unit-line)
+    1873| (set-goal secondary-build 1)
+    1874| )

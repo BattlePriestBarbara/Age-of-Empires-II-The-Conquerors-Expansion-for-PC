@@ -1,0 +1,265 @@
+=== files defining unit-max / pop-cap / deathmatch-unit-max ===
+anib_60027.bin     L250    (defconst pop-cap 25)
+anib_60027.bin     L251    (defconst deathmatch-unit-max 13)
+anib_60027.bin     L259    (defconst unit-max 19)
+anib_60027.bin     L263    (defconst unit-max 19)
+anib_60027.bin     L267    (defconst unit-max 21)
+anib_60027.bin     L271    (defconst unit-max 23)
+anib_60027.bin     L275    (defconst unit-max 23)
+anib_60027.bin     L293    (defconst pop-cap 50)
+anib_60027.bin     L294    (defconst deathmatch-unit-max 25)
+anib_60027.bin     L302    (defconst unit-max 35)
+anib_60027.bin     L306    (defconst unit-max 35)
+anib_60027.bin     L310    (defconst unit-max 40)
+anib_60027.bin     L314    (defconst unit-max 45)
+anib_60027.bin     L318    (defconst unit-max 45)
+anib_60027.bin     L336    (defconst pop-cap 75)
+anib_60027.bin     L337    (defconst deathmatch-unit-max 55)
+anib_60027.bin     L345    (defconst unit-max 56)
+anib_60027.bin     L349    (defconst unit-max 56)
+anib_60027.bin     L353    (defconst unit-max 63)
+anib_60027.bin     L357    (defconst unit-max 70)
+anib_60027.bin     L361    (defconst unit-max 70)
+anib_60027.bin     L379    (defconst pop-cap 100)
+anib_60027.bin     L380    (defconst deathmatch-unit-max 70)
+anib_60027.bin     L388    (defconst unit-max 70)
+anib_60027.bin     L392    (defconst unit-max 70)
+anib_60027.bin     L396    (defconst unit-max 80)
+anib_60027.bin     L400    (defconst unit-max 90)
+anib_60027.bin     L404    (defconst unit-max 90)
+anib_60027.bin     L422    (defconst pop-cap 125)
+anib_60027.bin     L423    (defconst deathmatch-unit-max 95)
+anib_60027.bin     L431    (defconst unit-max 90)
+anib_60027.bin     L435    (defconst unit-max 90)
+anib_60027.bin     L439    (defconst unit-max 103)
+anib_60027.bin     L443    (defconst unit-max 115)
+anib_60027.bin     L447    (defconst unit-max 115)
+anib_60027.bin     L465    (defconst pop-cap 150)
+anib_60027.bin     L466    (defconst deathmatch-unit-max 120)
+anib_60027.bin     L474    (defconst unit-max 110)
+anib_60027.bin     L478    (defconst unit-max 110)
+anib_60027.bin     L482    (defconst unit-max 125)
+anib_60027.bin     L486    (defconst unit-max 140)
+anib_60027.bin     L490    (defconst unit-max 140)
+anib_60027.bin     L508    (defconst pop-cap 175)
+anib_60027.bin     L509    (defconst deathmatch-unit-max 145)
+anib_60027.bin     L517    (defconst unit-max 125)
+anib_60027.bin     L521    (defconst unit-max 125)
+anib_60027.bin     L525    (defconst unit-max 145)
+anib_60027.bin     L529    (defconst unit-max 165)
+anib_60027.bin     L533    (defconst unit-max 165)
+anib_60027.bin     L551    (defconst pop-cap 200)
+anib_60027.bin     L552    (defconst deathmatch-unit-max 170)
+anib_60027.bin     L560    (defconst unit-max 130)
+anib_60027.bin     L564    (defconst unit-max 130)
+anib_60027.bin     L568    (defconst unit-max 160)
+anib_60027.bin     L572    (defconst unit-max 190)
+anib_60027.bin     L576    (defconst unit-max 190)
+
+=== x1 anib_60027.bin: lines around each pop-cap block (with #if context) ===
+--- block at line 250 (context from 243) ---
+  243| #load-if-defined POPULATION-CAP-25
+  244| (defconst civ-dark-rush 10)
+  245| (defconst civ-dark 11)
+  246| (defconst civ-dark-mod 10)
+  247| (defconst civ-feudal-mod 12)
+  248| (defconst civ-feudal 13)
+  249| (defconst civ-castle 15)
+  250| (defconst pop-cap 25)
+  251| (defconst deathmatch-unit-max 13)
+  252| 
+  253| (defconst feudal-town-size 20)
+--- block at line 293 (context from 286) ---
+  286| #load-if-defined POPULATION-CAP-50
+  287| (defconst civ-dark-rush 15)
+  288| (defconst civ-dark 20)
+  289| (defconst civ-dark-mod 15)
+  290| (defconst civ-feudal-mod 20)
+  291| (defconst civ-feudal 30)
+  292| (defconst civ-castle 35)
+  293| (defconst pop-cap 50)
+  294| (defconst deathmatch-unit-max 25)
+  295| 
+  296| (defconst feudal-town-size 20)
+--- block at line 336 (context from 329) ---
+  329| #load-if-defined POPULATION-CAP-75
+  330| (defconst civ-dark-rush 20)
+  331| (defconst civ-dark 25)
+  332| (defconst civ-dark-mod 15)
+  333| (defconst civ-feudal-mod 20)
+  334| (defconst civ-feudal 35)
+  335| (defconst civ-castle 40)
+  336| (defconst pop-cap 75)
+  337| (defconst deathmatch-unit-max 55)
+  338| 
+  339| (defconst feudal-town-size 20)
+--- block at line 379 (context from 372) ---
+  372| #load-if-defined POPULATION-CAP-100
+  373| (defconst civ-dark-rush 20)
+  374| (defconst civ-dark 25)
+  375| (defconst civ-dark-mod 15)
+  376| (defconst civ-feudal-mod 20)
+  377| (defconst civ-feudal 40)
+  378| (defconst civ-castle 50)
+  379| (defconst pop-cap 100)
+  380| (defconst deathmatch-unit-max 70)
+  381| 
+  382| (defconst feudal-town-size 20)
+--- block at line 422 (context from 415) ---
+  415| #load-if-defined POPULATION-CAP-125
+  416| (defconst civ-dark-rush 20)
+  417| (defconst civ-dark 25)
+  418| (defconst civ-dark-mod 15)
+  419| (defconst civ-feudal-mod 20)
+  420| (defconst civ-feudal 40)
+  421| (defconst civ-castle 55)
+  422| (defconst pop-cap 125)
+  423| (defconst deathmatch-unit-max 95)
+  424| (defconst town-center-count 6)
+  425| 
+--- block at line 465 (context from 458) ---
+  458| #load-if-defined POPULATION-CAP-150
+  459| (defconst civ-dark-rush 20)
+  460| (defconst civ-dark 25)
+  461| (defconst civ-dark-mod 15)
+  462| (defconst civ-feudal-mod 20)
+  463| (defconst civ-feudal 40)
+  464| (defconst civ-castle 60)
+  465| (defconst pop-cap 150)
+  466| (defconst deathmatch-unit-max 120)
+  467| 
+  468| (defconst feudal-town-size 20)
+--- block at line 508 (context from 501) ---
+  501| #load-if-defined POPULATION-CAP-175
+  502| (defconst civ-dark-rush 20)
+  503| (defconst civ-dark 25)
+  504| (defconst civ-dark-mod 15)
+  505| (defconst civ-feudal-mod 20)
+  506| (defconst civ-feudal 40)
+  507| (defconst civ-castle 65)
+  508| (defconst pop-cap 175)
+  509| (defconst deathmatch-unit-max 145)
+  510| 
+  511| (defconst feudal-town-size 20)
+--- block at line 551 (context from 544) ---
+  544| #load-if-defined POPULATION-CAP-200
+  545| (defconst civ-dark-rush 20)
+  546| (defconst civ-dark 25)
+  547| (defconst civ-dark-mod 15)
+  548| (defconst civ-feudal-mod 20)
+  549| (defconst civ-feudal 40)
+  550| (defconst civ-castle 70)
+  551| (defconst pop-cap 200)
+  552| (defconst deathmatch-unit-max 170)
+  553| 
+  554| (defconst feudal-town-size 20)
+
+=== every # directiive in anib_60027.bin ===
+  243| #load-if-defined POPULATION-CAP-25
+  258| #load-if-defined DIFFICULTY-EASIEST
+  260| #end-if
+  262| #load-if-defined DIFFICULTY-EASY
+  264| #end-if
+  266| #load-if-defined DIFFICULTY-MODERATE
+  268| #end-if
+  270| #load-if-defined DIFFICULTY-HARD
+  272| #end-if
+  274| #load-if-defined DIFFICULTY-HARDEST
+  276| #end-if
+  284| #end-if
+  286| #load-if-defined POPULATION-CAP-50
+  301| #load-if-defined DIFFICULTY-EASIEST
+  303| #end-if
+  305| #load-if-defined DIFFICULTY-EASY
+  307| #end-if
+  309| #load-if-defined DIFFICULTY-MODERATE
+  311| #end-if
+  313| #load-if-defined DIFFICULTY-HARD
+  315| #end-if
+  317| #load-if-defined DIFFICULTY-HARDEST
+  319| #end-if
+  327| #end-if
+  329| #load-if-defined POPULATION-CAP-75
+  344| #load-if-defined DIFFICULTY-EASIEST
+  346| #end-if
+  348| #load-if-defined DIFFICULTY-EASY
+  350| #end-if
+  352| #load-if-defined DIFFICULTY-MODERATE
+  354| #end-if
+  356| #load-if-defined DIFFICULTY-HARD
+  358| #end-if
+  360| #load-if-defined DIFFICULTY-HARDEST
+  362| #end-if
+  370| #end-if
+  372| #load-if-defined POPULATION-CAP-100
+  387| #load-if-defined DIFFICULTY-EASIEST
+  389| #end-if
+  391| #load-if-defined DIFFICULTY-EASY
+  393| #end-if
+  395| #load-if-defined DIFFICULTY-MODERATE
+  397| #end-if
+  399| #load-if-defined DIFFICULTY-HARD
+  401| #end-if
+  403| #load-if-defined DIFFICULTY-HARDEST
+  405| #end-if
+  413| #end-if
+  415| #load-if-defined POPULATION-CAP-125
+  430| #load-if-defined DIFFICULTY-EASIEST
+  432| #end-if
+  434| #load-if-defined DIFFICULTY-EASY
+  436| #end-if
+  438| #load-if-defined DIFFICULTY-MODERATE
+  440| #end-if
+  442| #load-if-defined DIFFICULTY-HARD
+  444| #end-if
+  446| #load-if-defined DIFFICULTY-HARDEST
+  448| #end-if
+  456| #end-if
+  458| #load-if-defined POPULATION-CAP-150
+  473| #load-if-defined DIFFICULTY-EASIEST
+  475| #end-if
+  477| #load-if-defined DIFFICULTY-EASY
+  479| #end-if
+  481| #load-if-defined DIFFICULTY-MODERATE
+  483| #end-if
+  485| #load-if-defined DIFFICULTY-HARD
+  487| #end-if
+  489| #load-if-defined DIFFICULTY-HARDEST
+  491| #end-if
+  499| #end-if
+  501| #load-if-defined POPULATION-CAP-175
+  516| #load-if-defined DIFFICULTY-EASIEST
+  518| #end-if
+  520| #load-if-defined DIFFICULTY-EASY
+  522| #end-if
+  524| #load-if-defined DIFFICULTY-MODERATE
+  526| #end-if
+  528| #load-if-defined DIFFICULTY-HARD
+  530| #end-if
+  532| #load-if-defined DIFFICULTY-HARDEST
+  534| #end-if
+  542| #end-if
+  544| #load-if-defined POPULATION-CAP-200
+  559| #load-if-defined DIFFICULTY-EASIEST
+  561| #end-if
+  563| #load-if-defined DIFFICULTY-EASY
+  565| #end-if
+  567| #load-if-defined DIFFICULTY-MODERATE
+  569| #end-if
+  571| #load-if-defined DIFFICULTY-HARD
+  573| #end-if
+  575| #load-if-defined DIFFICULTY-HARDEST
+  577| #end-if
+  585| #end-if
+  588| #load-if-defined TINY-MAP
+  593| #end-if
+  595| #load-if-defined SMALL-MAP
+  600| #end-if
+  602| #load-if-defined MEDIUM-MAP
+  607| #end-if
+  609| #load-if-defined NORMAL-MAP
+  614| #end-if
+  616| #load-if-defined LARGE-MAP
+  621| #end-if
+  623| #load-if-defined GIANT-MAP
+  628| #end-if

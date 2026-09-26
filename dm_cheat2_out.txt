@@ -1,0 +1,144 @@
+======================================================================
+DIR aok_drs
+--- anib_60008.bin : 4 hits (728 lines)
+   rule at line 713:
+        713|(defrule
+        714|	(timer-triggered t-chatmore)
+        715|=>
+        716|	(cc-add-resource wood 500)
+        717|	(cc-add-resource food 500)
+        718|	(cc-add-resource gold 500)
+   rule at line 713:
+        713|(defrule
+        714|	(timer-triggered t-chatmore)
+        715|=>
+        716|	(cc-add-resource wood 500)
+        717|	(cc-add-resource food 500)
+        718|	(cc-add-resource gold 500)
+        719|	(cc-add-resource stone 500)
+   rule at line 713:
+        713|(defrule
+        714|	(timer-triggered t-chatmore)
+        715|=>
+        716|	(cc-add-resource wood 500)
+        717|	(cc-add-resource food 500)
+        718|	(cc-add-resource gold 500)
+        719|	(cc-add-resource stone 500)
+        720|	(disable-timer t-chatmore)
+   ... and 1 more hits
+
+======================================================================
+DIR x1_drs
+--- anib_60001.bin : 20 hits (1387 lines)
+   rule at line 148:
+        148|(defrule
+        149|	(current-age == dark-age)
+        150|=>
+        151|	(cc-add-resource wood 100)
+        152|	(cc-add-resource food 100)
+        153|	(cc-add-resource gold 100)
+   rule at line 148:
+        148|(defrule
+        149|	(current-age == dark-age)
+        150|=>
+        151|	(cc-add-resource wood 100)
+        152|	(cc-add-resource food 100)
+        153|	(cc-add-resource gold 100)
+        154|	(cc-add-resource stone 100)
+   rule at line 148:
+        148|(defrule
+        149|	(current-age == dark-age)
+        150|=>
+        151|	(cc-add-resource wood 100)
+        152|	(cc-add-resource food 100)
+        153|	(cc-add-resource gold 100)
+        154|	(cc-add-resource stone 100)
+        155|	(disable-self)
+   ... and 17 more hits
+
+--- anib_60008.bin : 4 hits (223 lines)
+   rule at line 208:
+        208|(defrule
+        209|	(timer-triggered t-chatmore)
+        210|=>
+        211|	(cc-add-resource wood 500)
+        212|	(cc-add-resource food 500)
+        213|	(cc-add-resource gold 500)
+   rule at line 208:
+        208|(defrule
+        209|	(timer-triggered t-chatmore)
+        210|=>
+        211|	(cc-add-resource wood 500)
+        212|	(cc-add-resource food 500)
+        213|	(cc-add-resource gold 500)
+        214|	(cc-add-resource stone 500)
+   rule at line 208:
+        208|(defrule
+        209|	(timer-triggered t-chatmore)
+        210|=>
+        211|	(cc-add-resource wood 500)
+        212|	(cc-add-resource food 500)
+        213|	(cc-add-resource gold 500)
+        214|	(cc-add-resource stone 500)
+        215|	(disable-timer t-chatmore)
+   ... and 1 more hits
+
+--- anib_60028.bin : 4 hits (2629 lines)
+   rule at line 887:
+        887|(defrule
+        888|	(timer-triggered t-chatmore)
+        889|=>
+        890|	(cc-add-resource wood 500)
+        891|	(cc-add-resource food 500)
+        892|	(cc-add-resource gold 500)
+   rule at line 887:
+        887|(defrule
+        888|	(timer-triggered t-chatmore)
+        889|=>
+        890|	(cc-add-resource wood 500)
+        891|	(cc-add-resource food 500)
+        892|	(cc-add-resource gold 500)
+        893|	(cc-add-resource stone 500)
+   rule at line 887:
+        887|(defrule
+        888|	(timer-triggered t-chatmore)
+        889|=>
+        890|	(cc-add-resource wood 500)
+        891|	(cc-add-resource food 500)
+        892|	(cc-add-resource gold 500)
+        893|	(cc-add-resource stone 500)
+        894|	(disable-timer t-chatmore)
+   ... and 1 more hits
+
+--- anib_60029.bin : 28 hits (2582 lines)
+   rule at line 94:
+         94|(defrule
+         95|	(difficulty == hardest)
+         96|	(goal wonder-attempt ATTACK)
+         97|=>
+         98|	(cc-add-resource wood 10000)
+         99|	(cc-add-resource food 10000)
+        100|	(cc-add-resource gold 10000)
+   rule at line 94:
+         94|(defrule
+         95|	(difficulty == hardest)
+         96|	(goal wonder-attempt ATTACK)
+         97|=>
+         98|	(cc-add-resource wood 10000)
+         99|	(cc-add-resource food 10000)
+        100|	(cc-add-resource gold 10000)
+        101|	(cc-add-resource stone 10000)
+   rule at line 94:
+         94|(defrule
+         95|	(difficulty == hardest)
+         96|	(goal wonder-attempt ATTACK)
+         97|=>
+         98|	(cc-add-resource wood 10000)
+         99|	(cc-add-resource food 10000)
+        100|	(cc-add-resource gold 10000)
+        101|	(cc-add-resource stone 10000)
+        102|	(disable-self)
+   ... and 25 more hits
+
+======================================================================
+DIR x1p1_drs

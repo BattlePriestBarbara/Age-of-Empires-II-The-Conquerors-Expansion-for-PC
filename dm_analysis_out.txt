@@ -1,0 +1,866 @@
+=== x1 anib_60002.bin (= petersen deathmatch.per) 54203 bytes, 2884 lines ===
+defrule count: 244
+
+--- first 90 lines ---
+    1| ;goals 1 and 2 = boats
+    2| ;goal 3 = groups
+    3| ;goal combat-arm = his unique unit type (also loads correct upgrades)
+    4| ;goal 36 = good infantry -- 36 NO = don't build, YES = build, 
+    5| ;	2 = only build if we don't have a castle. 
+    6| ;goal 37 = good cavalry
+    7| ;goal 38 = good horse-archers
+    8| ;goal 39 = good archers
+    9| 
+   10| ;starting goals
+   11| (defrule
+   12| 	(true)
+   13| =>
+   14| 	(set-goal military-parity YES)	;goal 3
+   15| 	(set-goal attack-control NO)	;goal 4
+   16| 	(set-goal need-deathmatch-villagers NO)	;goal 7
+   17| 
+   18| 	(set-goal secondary-build 1)	;goal 8
+   19| 	(set-goal soldiers-available NO);goal 10
+   20| 	(set-goal attack-enabled YES)	;goal 13
+   21| 	(set-goal age-advancement NO)	;goal 14
+   22| 
+   23| 	(set-goal make-warboat NO)		;goal 15
+   24| 	(set-goal upgrade-conflict NO)	;goal 16
+   25| 
+   26| 	(disable-self)
+   27| )
+   28| 
+   29| (defrule
+   30| 	(true)
+   31| =>
+   32| 	(set-goal pre-unique-arm NO)	;goal 17
+   33| 	(set-goal wonder-attempt MAYBE)	;goal 20
+   34| 	(set-goal sea-owner NO)			;goal 23
+   35| 	(set-goal enemy-soldiers NO)	;goal 26
+   36| 	(set-goal siege-available YES)	;goal 34
+   37| 	(disable-self)
+   38| )
+   39| 
+   40| ;*********************************************************
+   41| #load-if-defined AZTEC-CIV
+   42| ;train jaguar men, eagle men, champs, arbalests
+   43| (defrule
+   44| 	(goal combat-arm NOTICE)
+   45| =>
+   46| 	(set-goal combat-arm INFANTRY)
+   47| 	(set-goal monk-rating GOOD)
+   48| 	(set-goal 36 2)
+   49| 	(set-goal 37 NO)
+   50| 	(set-goal 38 NO)
+   51| 	(set-goal 39 YES)
+   52| 
+   53| 	(set-strategic-number sn-wood-gatherer-percentage 20)
+   54| 	(set-strategic-number sn-food-gatherer-percentage 50)
+   55| 	(set-strategic-number sn-gold-gatherer-percentage 25)
+   56| 	(set-strategic-number sn-stone-gatherer-percentage 5)
+   57| 	(disable-self)
+   58| )
+   59| 
+   60| (defrule
+   61| 	(goal secondary-build 1)
+   62| =>
+   63| 	(generate-random-number 2)
+   64| )
+   65| 
+   66| (defrule
+   67| 	(goal secondary-build 1)
+   68| 	(random-number == 1)
+   69| 	(can-train elite-eagle-warrior)
+   70| 	(or
+   71| 		(population < deathmatch-unit-max)
+   72| 		(and
+   73| 			(population < unit-max)
+   74| 			(goal need-deathmatch-villagers NO)
+   75| 		)
+   76| 	)
+   77| =>
+   78| 	(train elite-eagle-warrior)
+   79| 	(set-goal secondary-build 0)
+   80| )
+   81| 
+   82| (defrule
+   83| 	(goal secondary-build 1)
+   84| 	(random-number == 2)
+   85| 	(can-train arbalest)
+   86| 	(or
+   87| 		(population < deathmatch-unit-max)
+   88| 		(and
+   89| 			(population < unit-max)
+   90| 			(goal need-deathmatch-villagers NO)
+
+--- deathmatch-unit-max contexts (first 12) ---
+   65| 
+   66| (defrule
+   67| 	(goal secondary-build 1)
+   68| 	(random-number == 1)
+   69| 	(can-train elite-eagle-warrior)
+   70| 	(or
+   71| 		(population < deathmatch-unit-max)
+   72| 		(and
+   73| 			(population < unit-max)
+   74| 			(goal need-deathmatch-villagers NO)
+  ---
+   81| 
+   82| (defrule
+   83| 	(goal secondary-build 1)
+   84| 	(random-number == 2)
+   85| 	(can-train arbalest)
+   86| 	(or
+   87| 		(population < deathmatch-unit-max)
+   88| 		(and
+   89| 			(population < unit-max)
+   90| 			(goal need-deathmatch-villagers NO)
+  ---
+  123| 
+  124| (defrule
+  125| 	(goal secondary-build 1)
+  126| 	(random-number == 1)
+  127| 	(can-train heavy-cavalry-archer)
+  128| 	(or
+  129| 		(population < deathmatch-unit-max)
+  130| 		(and
+  131| 			(population < unit-max)
+  132| 			(goal need-deathmatch-villagers NO)
+  ---
+  143| 	(can-train hussar)
+  144| 	(nor 
+  145| 		(can-train elite-tarkan)
+  146| 		(can-train paladin)
+  147| 	)
+  148| 	(or
+  149| 		(population < deathmatch-unit-max)
+  150| 		(and
+  151| 			(population < unit-max)
+  152| 			(goal need-deathmatch-villagers NO)
+  ---
+  186| 
+  187| (defrule
+  188| 	(goal secondary-build 1)
+  189| 	(random-number == 1)
+  190| 	(can-train heavy-cavalry-archer)
+  191| 	(or
+  192| 		(population < deathmatch-unit-max)
+  193| 		(and
+  194| 			(population < unit-max)
+  195| 			(goal need-deathmatch-villagers NO)
+  ---
+  202| 
+  203| (defrule
+  204| 	(goal secondary-build 1)
+  205| 	(random-number == 2)
+  206| 	(can-train hand-cannoneer)
+  207| 	(or
+  208| 		(population < deathmatch-unit-max)
+  209| 		(and
+  210| 			(population < unit-max)
+  211| 			(goal need-deathmatch-villagers NO)
+  ---
+  245| 
+  246| (defrule
+  247| 	(goal secondary-build 1)
+  248| 	(random-number == 1)
+  249| 	(can-train champion)
+  250| 	(or
+  251| 		(population < deathmatch-unit-max)
+  252| 		(and
+  253| 			(population < unit-max)
+  254| 			(goal need-deathmatch-villagers NO)
+  ---
+  261| 
+  262| (defrule
+  263| 	(goal secondary-build 1)
+  264| 	(random-number == 2)
+  265| 	(can-train elite-eagle-warrior)
+  266| 	(or
+  267| 		(population < deathmatch-unit-max)
+  268| 		(and
+  269| 			(population < unit-max)
+  270| 			(goal need-deathmatch-villagers NO)
+  ---
+  304| 
+  305| (defrule
+  306| 	(goal secondary-build 1)
+  307| 	(random-number == 1)
+  308| 	(can-train champion)
+  309| 	(or
+  310| 		(population < deathmatch-unit-max)
+  311| 		(and
+  312| 			(population < unit-max)
+  313| 			(goal need-deathmatch-villagers NO)
+  ---
+  320| 
+  321| (defrule
+  322| 	(goal secondary-build 1)
+  323| 	(random-number == 2)
+  324| 	(can-train paladin)
+  325| 	(or
+  326| 		(population < deathmatch-unit-max)
+  327| 		(and
+  328| 			(population < unit-max)
+  329| 			(goal need-deathmatch-villagers NO)
+  ---
+  337| (defrule
+  338| 	(goal secondary-build 1)
+  339| 	(random-number == 3)
+  340| 	(can-train hussar)
+  341| 	(not (can-train paladin) )
+  342| 	(or
+  343| 		(population < deathmatch-unit-max)
+  344| 		(and
+  345| 			(population < unit-max)
+  346| 			(goal need-deathmatch-villagers NO)
+  ---
+  357| 	(can-train hand-cannoneer)
+  358| 	(nor 
+  359| 		(can-train elite-conquistador) 
+  360| 		(can-train heavy-cavalry-archer)
+  361| 	)
+  362| 	(or
+  363| 		(population < deathmatch-unit-max)
+  364| 		(and
+  365| 			(population < unit-max)
+  366| 			(goal need-deathmatch-villagers NO)
+  ---
+
+--- preprocessor lines ---
+   41| #load-if-defined AZTEC-CIV
+   97| #end-if
+   99| #load-if-defined HUN-CIV
+  160| #end-if
+  162| #load-if-defined KOREAN-CIV
+  219| #end-if
+  221| #load-if-defined MAYAN-CIV
+  278| #end-if
+  280| #load-if-defined SPANISH-CIV
+  391| #end-if
+  393| #load-if-defined BRITON-CIV
+  449| #end-if
+  451| #load-if-defined BYZANTINE-CIV
+  532| #end-if
+  534| #load-if-defined CELTIC-CIV
+  624| #end-if
+  626| #load-if-defined CHINESE-CIV
+  698| #end-if
+  700| #load-if-defined FRANKISH-CIV
+  789| #end-if
+  791| #load-if-defined GOTHIC-CIV
+  863| #end-if
+  865| #load-if-defined JAPANESE-CIV
+  941| #end-if
+  943| #load-if-defined MONGOL-CIV
+  999| #end-if
+ 1001| #load-if-defined PERSIAN-CIV
+ 1062| #end-if
+ 1064| #load-if-defined SARACEN-CIV
+ 1141| #end-if
+ 1143| #load-if-defined TEUTONIC-CIV
+ 1199| #end-if
+ 1201| #load-if-defined TURKISH-CIV
+ 1273| #end-if
+ 1275| #load-if-defined VIKING-CIV
+ 1347| #end-if
+ 1350| #load-if-defined DIFFICULTY-EASIEST
+ 1361| #end-if
+ 1363| #load-if-defined DIFFICULTY-EASY
+ 1377| #end-if
+ 1380| #load-if-defined DIFFICULTY-MODERATE
+ 1394| #end-if
+ 1397| #load-if-defined DIFFICULTY-HARD
+ 1411| #end-if
+ 1414| #load-if-defined DIFFICULTY-HARDEST
+ 1427| #end-if
+ 1682| #load-if-defined DIFFICULTY-EASIEST
+ 1691| #end-if
+ 1693| #load-if-defined DIFFICULTY-EASY
+ 1702| #end-if
+
+--- token frequency (top 120) ---
+   defrule                                    244
+   goal                                       208
+   set-goal                                   183
+   set-strategic-number                       123
+   population                                 112
+   or                                         104
+   can-research                               93
+   research                                   93
+   can-train                                  75
+   and                                        73
+   train                                      64
+   random-number                              50
+   disable-self                               35
+   not                                        31
+   building-type-count-total                  29
+   can-build                                  25
+   true                                       22
+   building-type-count                        22
+   build                                      20
+   unit-type-count                            19
+   generate-random-number                     18
+   strategic-number                           12
+   nand                                       11
+   set-difficulty-parameter                   10
+   cc-players-building-type-count             10
+   current-age                                10
+   gold-amount                                9
+   difficulty                                 9
+   chat-local-to-self                         8
+   load                                       7
+   wood-amount                                6
+   food-amount                                6
+   unit-type-count-total                      6
+   cc-players-unit-type-count                 6
+   stone-amount                               5
+   enable-timer                               5
+   civilian-population                        5
+   disable-timer                              5
+   build-forward                              5
+   can-sell-commodity                         5
+   sell-commodity                             5
+   nor                                        4
+   timer-triggered                            4
+   resource-found                             4
+   players-current-age                        3
+   dropsite-min-distance                      3
+   player-in-game                             3
+   can-buy-commodity                          3
+   buy-commodity                              3
+   can-afford-unit                            2
+   military-population                        2
+   housing-headroom                           2
+   population-headroom                        2
+   research-completed                         2
+   commodity-selling-price                    2
+   also                                       1
+   game-time                                  1
+   idle-farm-count                            1
+   sheep-and-forage-too-far                   1
+   unit-available                             1
+
+--- unit names used in (train X) ---
+   train hussar                                   11
+   train heavy-cavalry-archer                     10
+   train heavy-scorpion                           8
+   train hand-cannoneer                           6
+   train champion                                 6
+   train arbalest                                 5
+   train paladin                                  4
+   train monk                                     3
+   train elite-eagle-warrior                      2
+   train light-cavalry                            2
+   train villager                                 2
+   train militiaman-line                          1
+   train knight-line                              1
+   train cavalry-archer-line                      1
+   train archer-line                              1
+   train my-unique-unit-line                      1
+
+--- subjects in (research X) ---
+   research feudal-age                               1
+   research castle-age                               1
+   research imperial-age                             1
+   research my-unique-unit-upgrade                   1
+   research my-unique-research                       1
+   research ri-war-galley                            1
+   research ri-galleon                               1
+   research ri-fast-fire-ship                        1
+   research ri-heavy-demolition-ship                 1
+   research ri-cannon-galleon                        1
+   research ri-deck-guns                             1
+   research ri-man-at-arms                           1
+   research ri-long-swordsman                        1
+   research ri-two-handed-swordsman                  1
+   research ri-champion                              1
+   research ri-pikeman                               1
+   research ri-halberdier                            1
+   research ri-elite-eagle-warrior                   1
+   research ri-tracking                              1
+   research ri-squires                               1
+   research ri-cavalier                              1
+   research ri-paladin                               1
+   research ri-light-cavalry                         1
+   research ri-hussar                                1
+   research ri-heavy-camel                           1
+   research ri-husbandry                             1
+   research ri-bloodlines                            1
+   research ri-heavy-cavalry-archer                  1
+   research ri-crossbow                              1
+   research ri-arbalest                              1
+   research ri-hand-cannon                           1
+   research ri-elite-skirmisher                      1
+   research ri-thumb-ring                            1
+   research ri-parthian-tactics                      1
+   research ri-heavy-scorpion                        1
+   research ri-capped-ram                            1
+   research ri-siege-ram                             1
+   research ri-onager                                1
+   research ri-siege-onager                          1
+   research ri-bombard-cannon                        1
+   research ri-forging                               1
+   research ri-fletching                             1
+   research ri-padded-archer-armor                   1
+   research ri-scale-mail                            1
+   research ri-scale-barding                         1
+   research ri-iron-casting                          1
+   research ri-bodkin-arrow                          1
+   research ri-leather-archer-armor                  1
+   research ri-chain-mail                            1
+   research ri-chain-barding                         1
+   research ri-blast-furnace                         1
+   research ri-bracer                                1
+   research ri-ring-archer-armor                     1
+   research ri-plate-mail                            1
+   research ri-plate-barding                         1
+   research ri-siege-engineers                       1
+   research ri-hoardings                             1
+   research ri-heated-shot                           1
+   research ri-guard-tower                           1
+   research ri-keep                                  1
+   research ri-bombard-tower                         1
+   research ri-fortified-wall                        1
+   research ri-careening                             1
+   research ri-dry-dock                              1
+   research ri-shipwright                            1
+   research ri-ballistics                            1
+   research ri-chemistry                             1
+   research ri-conscription                          1
+   research ri-gold-mining                           1
+   research ri-gold-shaft-mining                     1
+   research ri-stone-mining                          1
+   research ri-stone-shaft-mining                    1
+   research ri-masonry                               1
+   research ri-architecture                          1
+   research ri-stonecutting                          1
+   research ri-town-watch                            1
+   research ri-town-patrol                           1
+   research ri-cartography                           1
+   research ri-caravan                               1
+   research ri-guilds                                1
+   research ri-loom                                  1
+   research ri-wheel-barrow                          1
+   research ri-hand-cart                             1
+   research ri-coinage                               1
+   research ri-banking                               1
+   research ri-faith                                 1
+   research ri-heresy                                1
+   research ri-atonement                             1
+   research ri-block-printing                        1
+   research ri-illumination                          1
+   research ri-fervor                                1
+   research ri-redemption                            1
+   research ri-sanctity                              1
+
+--- timers (enable-timer X N) ---
+   enable-timer t-lumbercamp                 1      x1
+   enable-timer t-ageup                      140    x1
+   enable-timer t-ageup                      170    x1
+   enable-timer t-ageup                      200    x1
+   enable-timer t-lumbercamp                 60     x1
+
+--- all (load "...") in DM file ---
+   petersen tower
+   petersen wonder
+
+--- facts with numeric comparisons (unit/pop/resource related) ---
+   (population  < deathmatch-unit-max)  x56
+   (population  < unit-max)  x56
+   (building-type-count castle == 0)  x15
+   (unit-type-count villager > 6)  x5
+   (current-age  == imperial-age)  x4
+   (unit-type-count my-unique-unit-line > ten-percent-pop)  x3
+   (building-type-count-total watch-tower > 0)  x3
+   (unit-type-count-total war-galley > 0)  x3
+   (unit-type-count monk > 1)  x3
+   (gold-amount  < 1200)  x3
+   (gold-amount  > 5000)  x3
+   (wood-amount  < 5000)  x2
+   (food-amount  < 5000)  x2
+   (gold-amount  < 2000)  x2
+   (stone-amount  < 700)  x2
+   (current-age  == feudal-age)  x2
+   (current-age  == castle-age)  x2
+   (current-age  < imperial-age)  x2
+   (housing-headroom  < 5)  x2
+   (population -headroom > 0)  x2
+   (building-type-count-total market == 0)  x2
+   (building-type-count-total castle < 5)  x2
+   (unit-type-count monk > five-percent-pop)  x2
+   (wood-amount  > 5000)  x2
+   (food-amount  > 5000)  x2
+   (game-time  > 600)  x1
+   (building-type-count siege-workshop >= 3)  x1
+   (building-type-count castle >= 3)  x1
+   (wood-amount  < 500)  x1
+   (food-amount  < 500)  x1
+   (gold-amount  < 500)  x1
+   (stone-amount  < 100)  x1
+   (civilian-population  < 6)  x1
+   (civilian-population  < 8)  x1
+   (civilian-population  < 10)  x1
+   (civilian-population  < civ-dark-rush)  x1
+   (civilian-population  < civ-castle)  x1
+   (building-type-count-total lumber-camp > 0)  x1
+   (idle-farm-count  == 0)  x1
+   (building-type-count-total house <= fifteen-percent-pop)  x1
+   (military-population  < 10)  x1
+   (military-population  < civ-dark-rush)  x1
+   (building-type-count mining-camp == 0)  x1
+   (building-type-count lumber-camp == 0)  x1
+   (building-type-count siege-workshop > 0)  x1
+   (building-type-count castle > 0)  x1
+   (building-type-count town-center < 3)  x1
+   (building-type-count-total mill == 0)  x1
+   (building-type-count-total monastery < 3)  x1
+   (building-type-count-total barracks < 2)  x1
+   (building-type-count-total barracks == 2)  x1
+   (building-type-count-total archery-range < 2)  x1
+   (building-type-count-total archery-range == 2)  x1
+   (building-type-count-total stable < 2)  x1
+   (building-type-count-total stable == 2)  x1
+   (building-type-count-total siege-workshop < 2)  x1
+   (building-type-count-total siege-workshop > 1)  x1
+   (building-type-count-total siege-workshop < 4)  x1
+   (building-type-count-total castle < 3)  x1
+   (building-type-count-total castle > 2)  x1
+   (building-type-count-total dock < 2)  x1
+   (building-type-count-total dock < 4)  x1
+   (building-type-count-total blacksmith < 2)  x1
+   (building-type-count-total university == 0)  x1
+   (unit-type-count spearman > 0)  x1
+   (unit-type-count pikeman > 0)  x1
+   (unit-type-count camel > 0)  x1
+   (unit-type-count skirmisher > 0)  x1
+   (unit-type-count-total monk == 0)  x1
+   (unit-type-count-total monk < five-percent-pop)  x1
+   (unit-type-count-total monk < ten-percent-pop)  x1
+   (building-type-count-total watch-tower > 2)  x1
+   (building-type-count-total guard-tower > 2)  x1
+   (unit-type-count trade-cart > 1)  x1
+   (unit-type-count trade-cog > 1)  x1
+   (stone-amount  > 1000)  x1
+   (building-type-count-total castle >= 5)  x1
+   (stone-amount  < 650)  x1
+   (wood-amount  < 1100)  x1
+   (food-amount  < 1600)  x1
+
+=== x1 anib_60027.bin (= petersen constants.per) ===
+--- defconts mentioning deathmatch / pop / timer ---
+    3| 	(defconst NO 0)		 ;Used to indicate not set or initial value (as Normal)
+    4| 	(defconst YES 1)		 ;Used to indicate set
+    5| 	(defconst NORMAL 0)	 ;Used for default values
+    6| 	(defconst NOTICE 99)  ;Used for special highlight or initialization values that should be set
+    9| 	(defconst EXCELLENT 99); For any rating-type value highest to lowest
+   10| 	(defconst GOOD	70)		
+   11| 	(defconst MEDIUM 50)
+   12| 	(defconst FAIR 30)
+   13| 	(defconst POOR 10) 
+   16| 	(defconst INFANTRY 1)
+   17| 	(defconst CAVALRY 2)
+   18| 	(defconst LIGHTCAV 3)
+   19| 	(defconst CAVARCHER 4)
+   20| 	(defconst ARCHER 5)
+   21| 	(defconst EAGLEMAN 6)
+   22| 	(defconst SCORPION 12)
+   23| 	(defconst UNIQUE 13)
+   24| 	(defconst UNIT20 20) ;SP - wasn't sure what 20 was used for in combat-arm and combat-supp
+   27| 	(defconst boat-strategy 1)
+   28| 	(defconst SOMEBOATS 1)	;this actually means we're on a water map
+   29| 	(defconst MANYBOATS 10)	; this actually means we're on an islands map
+   32| 	(defconst boats-needed 2)
+   33| 	(defconst WARSHIPS 1)	;I don't think this is used any more
+   34| 	(defconst CONTROL 2)
+   37| 	(defconst military-parity 3)
+   39| 	(defconst SUPERIOR 2)
+   42| 	(defconst attack-control 4)
+   50| 	(defconst resource-needed 5)
+   51| 	(defconst WOOD 1)
+   52| 	(defconst FOOD 2)
+   53| 	(defconst GOLD 3)
+   54| 	(defconst STONE 4)
+   55| 	;(defconst GOLD-STONE 5) this means you want both gold & stone
+   58| 	(defconst rush-control 6)
+   59| 	(defconst FEUDAL 2) ;we have just eliminated this as too puny
+   60| 	(defconst CASTLE 3)
+   61| 	(defconst IMPERIAL 4)
+   62| 	(defconst RUSHING 10)
+   63| 	(defconst BOOMING 18)
+   64| 	(defconst FEEDING 19)
+   65| ;goal 7 used for deathmatch to determine whether or not to build more units
+   66| 	(defconst need-deathmatch-villagers 7)
+   69| 	(defconst secondary-build 8)
+   73| 	(defconst resource-supp 9)
+   74| 	(defconst FOOD-ONLY 2)
+   75| 	(defconst GOLD-ONLY 3)
+   76| 	(defconst WOOD-FOOD 12)
+   77| 	(defconst WOOD-GOLD 13)
+   78| 	(defconst WOOD-STONE 14)
+   79| 	(defconst FOOD-GOLD 23)
+   80| 	(defconst FOOD-STONE 24)
+   82| 	(defconst soldiers-available 10)
+   83| ;goal 11 = used to determine your main combat arm; in deathmatch, it determines your unique unit type
+   84| 	(defconst combat-arm  11)
+   96| 	(defconst combat-supp 12)
+  100| 	(defconst attack-enabled 13)
+  104| 			(defconst age-advancement 14) ; Uses NO, NOTICE
+  110| ;goal  15 controls warboat builds according to pop cap; 15 0 = build warships
+  111| 			(defconst make-warboat 15) ; Uses NO, YES
+  114| 			(defconst upgrade-conflict 16)
+  117| 			(defconst pre-unique-arm 17)
+  127| 			(defconst personality 18)
+  128| 			(defconst FEEDER 1)
+  129| 			(defconst BOOMER 2)
+  130| 			(defconst BULLY  3) ;m
+  131| 			(defconst LIAR 4)  
+  132| 			(defconst ALLY 5) ;m
+  133| 			(defconst SENTTRIBUTE 10) ;SP - not sure about this one, check and correct
+  139| 			(defconst TRADENEUTRAL 50) ;SP - not sure about this one, check and correct
+  142| 			(defconst make-villagers 19)
+  144| 			(defconst wonder-attempt 20) ; Uses NO, YES, POSSIBLE, MAYBE, NOTICE
+  145| 			(defconst POSSIBLE 10)
+  146| 			(defconst MAYBE 90)		  ;SP:Not sure on this one, took a guess.
+  149| 			(defconst ATTACK 1)	;kill the wonder
+  150| 			(defconst DEFEND 0) ;save the wonder
+  152| 			(defconst castle-attempt 21) ; Uses: NO, YES
+  160| 			(defconst sea-owner 23) ; Uses: NO, YES, NOTICE
+  168| 			(defconst CASTLE-AGE-WOOD 11)
+  169| 			(defconst CASTLE-AGE-FOOD 12)
+  170| 			(defconst CASTLE-AGE-GOLD 13)
+  171| 			(defconst CASTLE-AGE-STONE 14)
+  172| 			(defconst IMPERIAL-AGE-WOOD 21)
+  173| 			(defconst IMPERIAL-AGE-FOOD 22)
+  174| 			(defconst IMPERIAL-AGE-GOLD 23)
+  175| 			(defconst IMPERIAL-AGE-STONE 24)
+  177| 			(defconst enemy-soldiers 26) ;the number given is app the enemy's size
+  178| 			(defconst siege-rating 26) ;uses GOOD, FAIR, POOR -- used only in wonder-kill
+  180| 			(defconst monk-rating 27)  ;Uses: GOOD, FAIR, NO
+  184| 			(defconst get-mad 28)
+  186| 			(defconst ANGRY 2)
+  187| 			(defconst ANGRIER 3)
+  188| 			(defconst ANGRIEST 4)
+  191| 			(defconst make-fire-boat 30) ; Uses: NO, YES
+  194| 			(defconst infantry-upgrades 31)
+  199| 			(defconst archer-upgrades 32)
+  204| 			(defconst cav-upgrades 33)
+  209| 			(defconst siege-available 34)
+  217| 			(defconst wall-build 40) ; Uses: NO, YES, NOTICE
+  232| (defconst t-tribute 1)
+  233| (defconst t-attackgroup 2)
+  234| (defconst t-production 3)
+  235| (defconst t-chat 5)
+  236| (defconst t-chathelp 6)
+  237| (defconst t-tower 7)
+  238| (defconst t-chatmore 8)
+  239| (defconst t-lumbercamp 9)
+  240| (defconst t-ageup 10)
+  244| (defconst civ-dark-rush 10)
+  245| (defconst civ-dark 11)
+  246| (defconst civ-dark-mod 10)
+  247| (defconst civ-feudal-mod 12)
+  248| (defconst civ-feudal 13)
+  249| (defconst civ-castle 15)
+  250| (defconst pop-cap 25)
+  251| (defconst deathmatch-unit-max 13)
+  253| (defconst feudal-town-size 20)
+  254| (defconst castle-town-size 25)
+  255| (defconst imperial-town-size 25)
+  256| (defconst town-center-count 2)
+  259| (defconst unit-max 19)
+  263| (defconst unit-max 19)
+  267| (defconst unit-max 21)
+  271| (defconst unit-max 23)
+  275| (defconst unit-max 23)
+  278| (defconst five-percent-pop 1)
+  279| (defconst ten-percent-pop 3)
+  280| (defconst fifteen-percent-pop 4)
+  281| (defconst twenty-percent-pop 5)
+  282| (defconst thirty-percent-pop 8)
+  283| (defconst fifty-percent-pop 12)
+  287| (defconst civ-dark-rush 15)
+  288| (defconst civ-dark 20)
+  289| (defconst civ-dark-mod 15)
+  290| (defconst civ-feudal-mod 20)
+  291| (defconst civ-feudal 30)
+  292| (defconst civ-castle 35)
+  293| (defconst pop-cap 50)
+  294| (defconst deathmatch-unit-max 25)
+  296| (defconst feudal-town-size 20)
+  297| (defconst castle-town-size 25)
+  298| (defconst imperial-town-size 30)
+  299| (defconst town-center-count 3)
+  302| (defconst unit-max 35)
+  306| (defconst unit-max 35)
+  310| (defconst unit-max 40)
+  314| (defconst unit-max 45)
+  318| (defconst unit-max 45)
+  321| (defconst five-percent-pop 2)
+  322| (defconst ten-percent-pop 5)
+  323| (defconst fifteen-percent-pop 7)
+  324| (defconst twenty-percent-pop 10)
+  325| (defconst thirty-percent-pop 15)
+  326| (defconst fifty-percent-pop 25)
+  330| (defconst civ-dark-rush 20)
+  331| (defconst civ-dark 25)
+  332| (defconst civ-dark-mod 15)
+  333| (defconst civ-feudal-mod 20)
+  334| (defconst civ-feudal 35)
+  335| (defconst civ-castle 40)
+  336| (defconst pop-cap 75)
+  337| (defconst deathmatch-unit-max 55)
+  339| (defconst feudal-town-size 20)
+  340| (defconst castle-town-size 30)
+  341| (defconst imperial-town-size 30)
+  342| (defconst town-center-count 4)
+  345| (defconst unit-max 56)
+  349| (defconst unit-max 56)
+  353| (defconst unit-max 63)
+  357| (defconst unit-max 70)
+  361| (defconst unit-max 70)
+  364| (defconst five-percent-pop 3)
+  365| (defconst ten-percent-pop 8)
+  366| (defconst fifteen-percent-pop 10)
+  367| (defconst twenty-percent-pop 15)
+  368| (defconst thirty-percent-pop 23)
+  369| (defconst fifty-percent-pop 37)
+  373| (defconst civ-dark-rush 20)
+  374| (defconst civ-dark 25)
+  375| (defconst civ-dark-mod 15)
+  376| (defconst civ-feudal-mod 20)
+  377| (defconst civ-feudal 40)
+  378| (defconst civ-castle 50)
+  379| (defconst pop-cap 100)
+  380| (defconst deathmatch-unit-max 70)
+  382| (defconst feudal-town-size 20)
+  383| (defconst castle-town-size 30)
+  384| (defconst imperial-town-size 35)
+  385| (defconst town-center-count 5)
+  388| (defconst unit-max 70)
+  392| (defconst unit-max 70)
+  396| (defconst unit-max 80)
+  400| (defconst unit-max 90)
+  404| (defconst unit-max 90)
+  407| (defconst five-percent-pop 5)
+  408| (defconst ten-percent-pop 10)
+  409| (defconst fifteen-percent-pop 15)
+  410| (defconst twenty-percent-pop 20)
+  411| (defconst thirty-percent-pop 30)
+  412| (defconst fifty-percent-pop 50)
+  416| (defconst civ-dark-rush 20)
+  417| (defconst civ-dark 25)
+  418| (defconst civ-dark-mod 15)
+  419| (defconst civ-feudal-mod 20)
+  420| (defconst civ-feudal 40)
+  421| (defconst civ-castle 55)
+  422| (defconst pop-cap 125)
+  423| (defconst deathmatch-unit-max 95)
+  424| (defconst town-center-count 6)
+  426| (defconst feudal-town-size 20)
+  427| (defconst castle-town-size 35)
+  428| (defconst imperial-town-size 40)
+  431| (defconst unit-max 90)
+  435| (defconst unit-max 90)
+  439| (defconst unit-max 103)
+  443| (defconst unit-max 115)
+  447| (defconst unit-max 115)
+  450| (defconst five-percent-pop 6)
+  451| (defconst ten-percent-pop 13)
+  452| (defconst fifteen-percent-pop 18)
+  453| (defconst twenty-percent-pop 25)
+  454| (defconst thirty-percent-pop 38)
+  455| (defconst fifty-percent-pop 62)
+  459| (defconst civ-dark-rush 20)
+  460| (defconst civ-dark 25)
+  461| (defconst civ-dark-mod 15)
+  462| (defconst civ-feudal-mod 20)
+  463| (defconst civ-feudal 40)
+  464| (defconst civ-castle 60)
+  465| (defconst pop-cap 150)
+  466| (defconst deathmatch-unit-max 120)
+  468| (defconst feudal-town-size 20)
+  469| (defconst castle-town-size 35)
+  470| (defconst imperial-town-size 40)
+  471| (defconst town-center-count 7)
+  474| (defconst unit-max 110)
+  478| (defconst unit-max 110)
+  482| (defconst unit-max 125)
+  486| (defconst unit-max 140)
+  490| (defconst unit-max 140)
+  493| (defconst five-percent-pop 7)
+  494| (defconst ten-percent-pop 15)
+  495| (defconst fifteen-percent-pop 22)
+  496| (defconst twenty-percent-pop 30)
+  497| (defconst thirty-percent-pop 45)
+  498| (defconst fifty-percent-pop 75)
+  502| (defconst civ-dark-rush 20)
+  503| (defconst civ-dark 25)
+  504| (defconst civ-dark-mod 15)
+  505| (defconst civ-feudal-mod 20)
+  506| (defconst civ-feudal 40)
+  507| (defconst civ-castle 65)
+  508| (defconst pop-cap 175)
+  509| (defconst deathmatch-unit-max 145)
+  511| (defconst feudal-town-size 20)
+  512| (defconst castle-town-size 35)
+  513| (defconst imperial-town-size 40)
+  514| (defconst town-center-count 8)
+  517| (defconst unit-max 125)
+  521| (defconst unit-max 125)
+  525| (defconst unit-max 145)
+  529| (defconst unit-max 165)
+  533| (defconst unit-max 165)
+  536| (defconst five-percent-pop 8)
+  537| (defconst ten-percent-pop 18)
+  538| (defconst fifteen-percent-pop 27)
+  539| (defconst twenty-percent-pop 35)
+  540| (defconst thirty-percent-pop 53)
+  541| (defconst fifty-percent-pop 87)
+  545| (defconst civ-dark-rush 20)
+  546| (defconst civ-dark 25)
+  547| (defconst civ-dark-mod 15)
+  548| (defconst civ-feudal-mod 20)
+  549| (defconst civ-feudal 40)
+  550| (defconst civ-castle 70)
+  551| (defconst pop-cap 200)
+  552| (defconst deathmatch-unit-max 170)
+  554| (defconst feudal-town-size 20)
+  555| (defconst castle-town-size 35)
+  556| (defconst imperial-town-size 40)
+  557| (defconst town-center-count 9)
+  560| (defconst unit-max 130)
+  564| (defconst unit-max 130)
+  568| (defconst unit-max 160)
+  572| (defconst unit-max 190)
+  576| (defconst unit-max 190)
+  579| (defconst five-percent-pop 10)
+  580| (defconst ten-percent-pop 20)
+  581| (defconst fifteen-percent-pop 30)
+  582| (defconst twenty-percent-pop 40)
+  583| (defconst thirty-percent-pop 60)
+  584| (defconst fifty-percent-pop 100)
+  589| (defconst feudal-mill-count 1)
+  590| (defconst castle-mill-count 1)
+  591| (defconst imperial-mill-count 1)
+  592| (defconst mining-count 8)
+  596| (defconst feudal-mill-count 1)
+  597| (defconst castle-mill-count 1)
+  598| (defconst imperial-mill-count 1)
+  599| (defconst mining-count 8)
+  603| (defconst feudal-mill-count 1)
+  604| (defconst castle-mill-count 1)
+  605| (defconst imperial-mill-count 1)
+  606| (defconst mining-count 10)
+  610| (defconst feudal-mill-count 1)
+  611| (defconst castle-mill-count 1)
+  612| (defconst imperial-mill-count 2)
+  613| (defconst mining-count 11)
+  617| (defconst feudal-mill-count 1)
+  618| (defconst castle-mill-count 2)
+  619| (defconst imperial-mill-count 3)
+  620| (defconst mining-count 12)
+  624| (defconst feudal-mill-count 2)
+  625| (defconst castle-mill-count 3)
+  626| (defconst imperial-mill-count 4)
+  627| (defconst mining-count 15)

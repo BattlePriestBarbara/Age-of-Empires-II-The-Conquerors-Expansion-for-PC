@@ -1,0 +1,146 @@
+
+=== gamedata.drs (535528 bytes)
+   table anib   entries=48
+      anib_54000    3584B rules=0    caps=-                        /* random map types for ai */
+      anib_54101    6380B rules=0    caps=-                        /* ******* STANDARD MINIMUM RESOURCES ************ *
+      anib_54102   11501B rules=0    caps=-                        /* ******* LAND AND WATER RESOURCES ************ */
+      anib_54103   11451B rules=0    caps=-                        /* ******* LAND RESOURCES ************ */
+      anib_54201    5020B rules=0    caps=-                        /* ************ ARABIA ************ */
+      anib_54202   22800B rules=0    caps=-                        /* ************ ARCHIPELAGO ************ */
+      anib_54203    7333B rules=0    caps=-                        /* ********* BALTIC ********** */
+      anib_54204    4790B rules=0    caps=-                        /* ************* BLACK FOREST ****************** */
+      anib_54205   12646B rules=0    caps=-                        /* ************ COASTAL ************ */
+      anib_54206   11586B rules=0    caps=-                        /* ************ CONTINENTAL ************ */
+      anib_54207    6546B rules=0    caps=-                        /* ********* CRATER LAKE ********** */
+      anib_54208   15095B rules=0    caps=-                        /* ************ FORTRESS ************ */
+      anib_54209    6777B rules=0    caps=-                        /* ********* GOLD RUSH ********** */
+      anib_54210    9128B rules=0    caps=-                        /* ************ HIGHLAND ************ */
+      anib_54211   21559B rules=0    caps=-                        /* ************ ISLANDS ************ */
+      anib_54212    7935B rules=0    caps=-                        /* ********* MEDITERRANEAN ********** */
+      anib_54213   17632B rules=0    caps=-                        /* ************ MIGRATION ************ */
+      anib_54214   14552B rules=0    caps=-                        /* ************ NOMAD ************ */
+      anib_54216     731B rules=0    caps=-                        /* ************ RANDOM ************ */
+      anib_54217    9748B rules=0    caps=-                        /* ********* RIVERS ********** */
+      anib_54218   11204B rules=0    caps=-                        /* ************ TEAM ISLANDS ************ */
+      anib_60001   28550B rules=91   caps=-                        ;starting loads
+      anib_60002   47443B rules=216  caps=-                        ;goals 1 and 2 = boats
+      anib_60003   41578B rules=152  caps=-                        ;start the run-through
+      anib_60004    3276B rules=13   caps=-                        (defrule
+      anib_60005    3544B rules=14   caps=-                        ;need to add a section in which he joins our side th
+      anib_60006    4083B rules=16   caps=-                        ;for war war-galleys
+      anib_60007   17783B rules=51   caps=-                        (defrule
+      anib_60008   17098B rules=51   caps=-                        #load-if-defined DIFFICULTY-EASIEST
+      anib_60009   19315B rules=67   caps=-                        (defrule
+      anib_60010   16587B rules=26   caps=25,50,75,100,125,150,175,200 #load-if-defined GAME-SPEED-LOCKED
+      anib_60011   15124B rules=106  caps=-                        ;***************************************************
+      anib_60012    4583B rules=22   caps=-                        ;start the pass
+      anib_60013    1350B rules=4    caps=-                        ;UPGRADES & BUILDS RELATED TO OTHER PLAYERS
+      anib_60014    1013B rules=4    caps=-                        ;make the castle
+      anib_60015    2370B rules=9    caps=-                        (defrule
+      anib_60016    3050B rules=10   caps=-                        #load-if-not-defined VICTORY-CONQUEST
+      anib_60017   12154B rules=45   caps=-                        ;if I'm short on resources, ask allies for some befo
+      anib_60018     338B rules=2    caps=-                        ;all this file really does for now is ensure more vi
+      anib_60019   15138B rules=73   caps=-                        (defrule
+      anib_60020    5177B rules=20   caps=-                        ;make sure we have allies
+      anib_60021   12002B rules=42   caps=-                        (defrule
+      anib_60022    4272B rules=24   caps=-                        ;insults the player
+      anib_60023   19478B rules=55   caps=-                        ;THE BULLY
+      anib_60024    8218B rules=26   caps=-                        ;for a variety of warships	goal 2 1 = "normal" statu
+      anib_60025    3267B rules=17   caps=-                        ;error trapping
+      anib_60026     255B rules=0    caps=-                        (load "petersen constants")
+      anib_60027    9832B rules=0    caps=-                        ; Common constants used in AI goals - other constant
+
+=== gamedata_x1.drs (948422 bytes)
+   table anib   entries=76
+      anib_54000   18733B rules=0    caps=-                        /* random map types for ai */
+      anib_54101    6380B rules=0    caps=-                        /* ******* STANDARD MINIMUM RESOURCES ************ *
+      anib_54102   13504B rules=0    caps=-                        /* ******* LAND AND WATER RESOURCES ************ */
+      anib_54103   13468B rules=0    caps=-                        /* ******* LAND RESOURCES ************ */
+      anib_54201    4989B rules=0    caps=-                        /* ************ ARABIA ************ */
+      anib_54202   22761B rules=0    caps=-                        /* ************ ARCHIPELAGO ************ */
+      anib_54203    7422B rules=0    caps=-                        /* ********* BALTIC ********** */
+      anib_54204    7676B rules=0    caps=-                        /* ************* BLACK FOREST ****************** */
+      anib_54205   15783B rules=0    caps=-                        /* ************ COASTAL ************ */
+      anib_54206   11548B rules=0    caps=-                        /* ************ CONTINENTAL ************ */
+      anib_54207    6508B rules=0    caps=-                        /* ********* CRATER LAKE ********** */
+      anib_54208   16815B rules=0    caps=-                        /* ************ FORTRESS ************ */
+      anib_54209    6743B rules=0    caps=-                        /* ********* GOLD RUSH ********** */
+      anib_54210   11179B rules=0    caps=-                        /* ************ HIGHLAND ************ */
+      anib_54211   23331B rules=0    caps=-                        /* ************ ISLANDS ************ */
+      anib_54212    7894B rules=0    caps=-                        /* ********* MEDITERRANEAN ********** */
+      anib_54213   17595B rules=0    caps=-                        /* ************ MIGRATION ************ */
+      anib_54217    9714B rules=0    caps=-                        /* ********* RIVERS ********** */
+      anib_54218   13502B rules=0    caps=-                        /* ************ TEAM ISLANDS ************ */
+      anib_54219   13773B rules=0    caps=-                        /* ************ SCANDINAVIA ************ */
+      anib_54220    3165B rules=0    caps=-                        /* ************ MONGOLIA ************ */
+      anib_54221   15458B rules=0    caps=-                        /* ************* YUCATAN ****************** */
+      anib_54222   18514B rules=0    caps=-                        /* ********* SALT MARSH ********** */
+      anib_54223   20500B rules=0    caps=-                        /* ************ ARENA ************ */
+      anib_54225    6722B rules=0    caps=-                        /* ********* OASIS ********** */
+      anib_54226    4813B rules=0    caps=-                        /* ********* GHOST LAKE ********** */
+      anib_54227   19818B rules=0    caps=-                        /* ************ NOMAD ************ */
+      anib_55001    5116B rules=0    caps=-                        /* ************ SPAIN ************ */
+      anib_55002    3636B rules=0    caps=-                        /* ************ BRITAIN ************ */
+      anib_55003    3224B rules=0    caps=-                        /* ************ MIDEAST ************ */
+      anib_55004   17634B rules=0    caps=-                        /* ************ BRITAIN ************ */
+      anib_55005   14202B rules=0    caps=-                        /* ************ ITALY ************ */
+      anib_55006    3977B rules=0    caps=-                        /* ************ CARIBBEAN ************ */
+      anib_55007    4882B rules=0    caps=-                        /* ************ FRANCE ************ */
+      anib_55008    4370B rules=0    caps=-                        /* ************ NORSE LANDS ************ */
+      anib_55009   13921B rules=0    caps=-                        /* ************ JAPAN ************ */
+      anib_55010    4882B rules=0    caps=-                        /* ************ BYZANTIUM ************ */
+      anib_56001    8197B rules=0    caps=-                        1.21      Ø¬Ò8           ì{¬]ÇUÿíäÆvì¤'
+      anib_56002    8557B rules=0    caps=-                        1.21      Ï	9           ì[¬&ÇQø¿½Ø^¯/q²%$ÐÚ~À
+      anib_56003    6703B rules=0    caps=-                        1.21      OÊ	9           ì{¬eW]ÇÏ<:e_èQ!1Qo(D§
+      anib_56004    3515B rules=0    caps=-                        1.21      ù9           ìË%UïtÏºPÄwPÑ8Æ
+      anib_56005    5087B rules=0    caps=-                        1.21      Ü«Ò8           ì{%EÆï¾wfßHÔhã.Ô,  
+      anib_56006    4065B rules=0    caps=-                        1.21      ·«Ò8           ìÍo$GÛöî&íÍ$+C
+      anib_56007    4666B rules=0    caps=-                        1.21      É«Ò8           ìË\GÇûÄ¹'lXÁb) )
+      anib_56008    4492B rules=0    caps=-                        1.21      ¬Ò8           ìK%7ÇïÉä9aH(,P+#$@
+      anib_56009    4852B rules=0    caps=-                        1.21      ×	9           ìÍo]GÆ¯'mC­D%²Z
+      anib_56010    5434B rules=0    caps=-                        1.21      ³¤	9           ìk^ÇYÇßõ-¶ã[so&nÒÆ¹
+      anib_60001   29337B rules=96   caps=-                        ;starting goals
+      anib_60002   55928B rules=248  caps=-                        ;goals 1 and 2 = boats
+      anib_60003   49519B rules=180  caps=-                        ;start the run-through
+      anib_60004    4463B rules=20   caps=-                        (defrule
+      anib_60005    3544B rules=14   caps=-                        ;need to add a section in which he joins our side th
+      anib_60006    2693B rules=8    caps=-                        ;goal 2 NO = no problem; 2 YES = we've won at sea!
+      anib_60007   26355B rules=71   caps=-                        (defrule
+      anib_60008    4827B rules=19   caps=-                        #load-if-defined DIFFICULTY-EASIEST
+      anib_60009   23059B rules=84   caps=-                        (defrule
+      anib_60010   13739B rules=60   caps=-                        #load-if-defined GAME-SPEED-LOCKED
+      anib_60011   19573B rules=130  caps=-                        ;***************************************************
+      anib_60012    5078B rules=24   caps=-                        ;start the pass
+      anib_60013   20650B rules=74   caps=-                        ;UPGRADES & BUILDS RELATED TO OTHER PLAYERS
+      anib_60014    1251B rules=5    caps=-                        ;make the castle
+      anib_60015    2647B rules=10   caps=-                        (defrule
+      anib_60016    3609B rules=13   caps=-                        #load-if-not-defined VICTORY-CONQUEST
+      anib_60017   12623B rules=45   caps=-                        ;if I'm short on resources, ask allies for some befo
+      anib_60018     475B rules=3    caps=-                        ;all this file really does for now is ensure more vi
+      anib_60019    9574B rules=38   caps=-                        ;DARK AGE
+      anib_60020    5062B rules=21   caps=-                        ;make sure we have allies
+      anib_60021   12949B rules=48   caps=-                        (defrule
+      anib_60022    4272B rules=24   caps=-                        ;insults the player
+      anib_60023   30008B rules=83   caps=-                        ;THE BULLY
+      anib_60024    3129B rules=12   caps=-                        ;best ship-builders = byzantines, japanese, persian,
+      anib_60025    2842B rules=15   caps=-                        ;error trapping
+      anib_60026     918B rules=0    caps=-                        (load "petersen constants")
+      anib_60027   21924B rules=0    caps=25,50,75,100,125,150,175,200 ; Common constants used in AI goals - other constant
+      anib_60028   55492B rules=226  caps=-                        ;if I'm short on resources, ask allies for some befo
+      anib_60029   52174B rules=229  caps=-                        ;goals 1 and 2 = boats
+
+=== gamedata_x1_p1.drs (530869 bytes)
+   table anib   entries=1
+      anib_54228    1281B rules=0    caps=-                        /* ********* BLIND RANDOM ********** */
+   table  pls   entries=6
+
+=== how the exe names the data archives
+  gamedata.drs           1 hit(s)
+      @0x00382d7c ..video_changed_res=%d, double_size=%d....%s%s%s%c....%s%s%s%s....%s-.gamedata.drs....interfac.drs....terrain.drs.graphics.drs....sounds.drs
+  gamedata_x1.drs        1 hit(s)
+      @0x00382dd8 ac.drs....terrain.drs.graphics.drs....sounds.drs..gamedata_x1_p1.drs..gamedata_x1.drs.sounds_x1.drs...TutorialInfo....HistoryInfo.TechInfo..
+  gamedata_x1_p1.drs     1 hit(s)
+      @0x00382dc4 medata.drs....interfac.drs....terrain.drs.graphics.drs....sounds.drs..gamedata_x1_p1.drs..gamedata_x1.drs.sounds_x1.drs...TutorialInfo....Hi
+  gamedata_x2            0 hit(s)
+  gamedata_x1.dat        0 hit(s)
+  gamedata.dat           0 hit(s)

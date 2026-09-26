@@ -1,0 +1,105 @@
+== x1_drs ==
+file                  size  deathmatch-unit-ma         DEATH-MATCH     cc-add-resource             (train              (build              (load "
+anib_60001.bin       29337                   0                   0                  20                  14                  39                   7
+anib_60002.bin       54203                  56                   0                   0                  64                  20                   7
+anib_60004.bin        4463                   0                   1                   0                   3                   7                   0
+anib_60006.bin        2693                   0                   0                   0                   8                   0                   0
+anib_60007.bin       26355                   0                   1                   0                  58                   0                   0
+anib_60008.bin        4827                   0                   0                   4                   0                   0                  10
+anib_60009.bin       23059                   0                   0                   0                  38                   0                   0
+anib_60010.bin       13739                   0                   0                   0                   2                   3                  58
+anib_60012.bin        5078                   0                   0                   0                   0                   6                   0
+anib_60013.bin       20650                   1                   0                   0                   3                   0                   0
+anib_60014.bin        1251                   0                   0                   0                   0                   1                   0
+anib_60016.bin        3609                   0                   0                   0                   0                   1                   0
+anib_60018.bin         475                   0                   0                   0                   1                   0                   0
+anib_60021.bin       12949                   0                   0                   0                   2                   0                   0
+anib_60024.bin        3129                   0                   0                   0                   2                   0                   0
+anib_60025.bin        2842                   0                   0                   0                   1                   0                   0
+anib_60026.bin         918                   0                   2                   0                   0                   0                  17
+anib_60027.bin       19383                   8                   0                   0                   0                   0                   0
+anib_60028.bin       55492                   1                   0                   4                   9                  24                   0
+anib_60029.bin       52174                   0                   0                  28                 109                  29                   0
+
+== aok_drs ==
+file                  size  deathmatch-unit-ma         DEATH-MATCH     cc-add-resource             (train              (build              (load "
+anib_60001.bin       28550                   0                   0                   0                   8                  32                   7
+anib_60002.bin       45718                  39                   0                   0                  47                  20                   7
+anib_60004.bin        3276                   0                   1                   0                   3                   4                   0
+anib_60006.bin        4083                   0                   0                   0                  11                   0                   0
+anib_60007.bin       17783                   0                   1                   0                  39                   0                   0
+anib_60008.bin       17098                   0                   0                   4                   0                   0                  13
+anib_60009.bin       19315                   0                   0                   0                  33                   0                   0
+anib_60010.bin       14168                   8                   0                   0                   2                   1                  22
+anib_60012.bin        4583                   0                   0                   0                   0                   6                   0
+anib_60014.bin        1013                   0                   0                   0                   0                   1                   0
+anib_60016.bin        3050                   0                   0                   0                   0                   1                   0
+anib_60021.bin       12002                   0                   0                   0                   1                   0                   0
+anib_60024.bin        8218                   0                   0                   0                  18                   0                   0
+anib_60025.bin        3267                   0                   0                   0                   1                   0                   0
+anib_60026.bin         255                   0                   1                   0                   0                   0                   7
+
+== x1p1_drs ==
+file                  size  deathmatch-unit-ma         DEATH-MATCH     cc-add-resource             (train              (build              (load "
+
+== cc-add-resource contexts ==
+x1_drs\anib_60001.bin L151: (cc-add-resource wood 100)
+x1_drs\anib_60001.bin L152: (cc-add-resource food 100)
+x1_drs\anib_60001.bin L153: (cc-add-resource gold 100)
+x1_drs\anib_60001.bin L154: (cc-add-resource stone 100)
+x1_drs\anib_60001.bin L161: (cc-add-resource wood 200)
+x1_drs\anib_60001.bin L162: (cc-add-resource food 200)
+x1_drs\anib_60001.bin L163: (cc-add-resource gold 200)
+x1_drs\anib_60001.bin L164: (cc-add-resource stone 200)
+x1_drs\anib_60001.bin L171: (cc-add-resource wood 500)
+x1_drs\anib_60001.bin L172: (cc-add-resource food 500)
+x1_drs\anib_60001.bin L173: (cc-add-resource gold 500)
+x1_drs\anib_60001.bin L174: (cc-add-resource stone 500)
+x1_drs\anib_60001.bin L181: (cc-add-resource wood 1000)
+x1_drs\anib_60001.bin L182: (cc-add-resource food 1000)
+x1_drs\anib_60001.bin L183: (cc-add-resource gold 1000)
+x1_drs\anib_60001.bin L184: (cc-add-resource stone 1000)
+x1_drs\anib_60001.bin L193: (cc-add-resource wood 500)
+x1_drs\anib_60001.bin L194: (cc-add-resource food 500)
+x1_drs\anib_60001.bin L195: (cc-add-resource gold 500)
+x1_drs\anib_60001.bin L196: (cc-add-resource stone 500)
+x1_drs\anib_60008.bin L211: (cc-add-resource wood 500)
+x1_drs\anib_60008.bin L212: (cc-add-resource food 500)
+x1_drs\anib_60008.bin L213: (cc-add-resource gold 500)
+x1_drs\anib_60008.bin L214: (cc-add-resource stone 500)
+x1_drs\anib_60028.bin L890: (cc-add-resource wood 500)
+x1_drs\anib_60028.bin L891: (cc-add-resource food 500)
+x1_drs\anib_60028.bin L892: (cc-add-resource gold 500)
+x1_drs\anib_60028.bin L893: (cc-add-resource stone 500)
+x1_drs\anib_60029.bin L98: (cc-add-resource wood 10000)
+x1_drs\anib_60029.bin L99: (cc-add-resource food 10000)
+x1_drs\anib_60029.bin L100: (cc-add-resource gold 10000)
+x1_drs\anib_60029.bin L101: (cc-add-resource stone 10000)
+x1_drs\anib_60029.bin L109: (cc-add-resource wood 5000)
+x1_drs\anib_60029.bin L110: (cc-add-resource food 5000)
+x1_drs\anib_60029.bin L111: (cc-add-resource gold 5000)
+x1_drs\anib_60029.bin L112: (cc-add-resource stone 5000)
+x1_drs\anib_60029.bin L120: (cc-add-resource wood 1000)
+x1_drs\anib_60029.bin L121: (cc-add-resource food 1500)
+x1_drs\anib_60029.bin L122: (cc-add-resource gold 1500)
+x1_drs\anib_60029.bin L123: (cc-add-resource stone 1000)
+x1_drs\anib_60029.bin L131: (cc-add-resource wood 5000)
+x1_drs\anib_60029.bin L132: (cc-add-resource food 5000)
+x1_drs\anib_60029.bin L133: (cc-add-resource gold 5000)
+x1_drs\anib_60029.bin L134: (cc-add-resource stone 5000)
+x1_drs\anib_60029.bin L142: (cc-add-resource wood 1000)
+x1_drs\anib_60029.bin L143: (cc-add-resource food 1000)
+x1_drs\anib_60029.bin L144: (cc-add-resource gold 1000)
+x1_drs\anib_60029.bin L145: (cc-add-resource stone 1000)
+x1_drs\anib_60029.bin L153: (cc-add-resource wood 500)
+x1_drs\anib_60029.bin L154: (cc-add-resource food 500)
+x1_drs\anib_60029.bin L155: (cc-add-resource gold 500)
+x1_drs\anib_60029.bin L156: (cc-add-resource stone 500)
+x1_drs\anib_60029.bin L1648: (cc-add-resource wood 500)
+x1_drs\anib_60029.bin L1649: (cc-add-resource food 500)
+x1_drs\anib_60029.bin L1650: (cc-add-resource gold 500)
+x1_drs\anib_60029.bin L1651: (cc-add-resource stone 500)
+aok_drs\anib_60008.bin L716: (cc-add-resource wood 500)
+aok_drs\anib_60008.bin L717: (cc-add-resource food 500)
+aok_drs\anib_60008.bin L718: (cc-add-resource gold 500)
+aok_drs\anib_60008.bin L719: (cc-add-resource stone 500)

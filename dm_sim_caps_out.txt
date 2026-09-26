@@ -1,0 +1,196 @@
+﻿
+==============================================================================
+LIVE  gamedata_x1.drs  anib_60027 (patched, Conquerors)  (symbols=DEATH-MATCH,DEATHMATCH,DIFFICULTY-HARD,DIFFICULTY-HARDEST,GAME-SPEED-LOCKED,POPULATION-CAP-200,POPULATION-CAP-25,POPULATION-CAP-500,REVEAL-MAP)
+  defconst total : 123   duplicates: 21   errors: none
+     !! duplicate unit-max : 23 line 271  ->  23 line 275
+     !! duplicate civ-dark-rush : 10 line 244  ->  20 line 545
+     !! duplicate civ-dark : 11 line 245  ->  25 line 546
+     !! duplicate civ-dark-mod : 10 line 246  ->  15 line 547
+     !! duplicate civ-feudal-mod : 12 line 247  ->  20 line 548
+     !! duplicate civ-feudal : 13 line 248  ->  40 line 549
+     !! duplicate civ-castle : 15 line 249  ->  70 line 550
+     !! duplicate pop-cap : 25 line 250  ->  200 line 551
+     !! duplicate deathmatch-unit-max : 13 line 251  ->  170 line 552
+     !! duplicate feudal-town-size : 20 line 253  ->  20 line 554
+     !! duplicate castle-town-size : 25 line 254  ->  35 line 555
+     !! duplicate imperial-town-size : 25 line 255  ->  40 line 556
+     !! duplicate town-center-count : 2 line 256  ->  9 line 557
+     !! duplicate unit-max : 23 line 275  ->  190 line 572
+     !! duplicate unit-max : 190 line 572  ->  190 line 576
+     !! duplicate five-percent-pop : 1 line 278  ->  10 line 579
+     !! duplicate ten-percent-pop : 3 line 279  ->  20 line 580
+     !! duplicate fifteen-percent-pop : 4 line 280  ->  30 line 581
+     !! duplicate twenty-percent-pop : 5 line 281  ->  40 line 582
+     !! duplicate thirty-percent-pop : 8 line 282  ->  60 line 583
+     !! duplicate fifty-percent-pop : 12 line 283  ->  100 line 584
+   pop-cap                  = 200    (line 551)
+   unit-max                 = 190    (line 576)
+   deathmatch-unit-max      = 170    (line 552)
+   five-percent-pop         = 10     (line 579)
+   ten-percent-pop          = 20     (line 580)
+   fifteen-percent-pop      = 30     (line 581)
+   civ-dark-rush            = 20     (line 545)
+   civ-dark                 = 25     (line 546)
+   civ-feudal               = 40     (line 549)
+   civ-castle               = 70     (line 550)
+   imperial-town-size       = 40     (line 556)
+   t-production             = 3      (line 234)
+   secondary-build          = 8      (line 69)
+   town-size                = ** UNDEFINED **
+
+==============================================================================
+LIVE  gamedata.drs     anib_60010 (patched, AoK)  (symbols=DEATH-MATCH,DEATHMATCH,DIFFICULTY-HARD,DIFFICULTY-HARDEST,GAME-SPEED-LOCKED,POPULATION-CAP-200,POPULATION-CAP-25,POPULATION-CAP-500,REVEAL-MAP)
+  defconst total : 15   duplicates: 17   errors: none
+     !! duplicate unit-max : 23 line 42  ->  23 line 46
+     !! duplicate civ-dark-rush : 10 line 18  ->  20 line 291
+     !! duplicate civ-dark : 11 line 19  ->  25 line 292
+     !! duplicate civ-feudal : 13 line 20  ->  40 line 293
+     !! duplicate civ-castle : 15 line 21  ->  70 line 294
+     !! duplicate pop-cap : 25 line 22  ->  200 line 295
+     !! duplicate deathmatch-unit-max : 13 line 23  ->  170 line 296
+     !! duplicate feudal-town-size : 20 line 25  ->  20 line 298
+     !! duplicate castle-town-size : 25 line 26  ->  35 line 299
+     !! duplicate imperial-town-size : 25 line 27  ->  40 line 300
+     !! duplicate unit-max : 23 line 46  ->  190 line 315
+     !! duplicate unit-max : 190 line 315  ->  190 line 319
+     !! duplicate five-percent-pop : 1 line 49  ->  10 line 322
+     !! duplicate ten-percent-pop : 3 line 50  ->  20 line 323
+     !! duplicate fifteen-percent-pop : 4 line 51  ->  30 line 324
+     !! duplicate twenty-percent-pop : 5 line 52  ->  40 line 325
+     !! duplicate thirty-percent-pop : 8 line 53  ->  60 line 326
+   pop-cap                  = 200    (line 295)
+   unit-max                 = 190    (line 319)
+   deathmatch-unit-max      = 170    (line 296)
+   five-percent-pop         = 10     (line 322)
+   ten-percent-pop          = 20     (line 323)
+   fifteen-percent-pop      = 30     (line 324)
+   civ-dark-rush            = 20     (line 291)
+   civ-dark                 = 25     (line 292)
+   civ-feudal               = 40     (line 293)
+   civ-castle               = 70     (line 294)
+   imperial-town-size       = 40     (line 300)
+   t-production             = ** UNDEFINED **
+   secondary-build          = ** UNDEFINED **
+   town-size                = ** UNDEFINED **
+
+==============================================================================
+RETAIL gamedata_x1.drs anib_60027  (symbols=DEATH-MATCH,DEATHMATCH,DIFFICULTY-HARD,DIFFICULTY-HARDEST,GAME-SPEED-LOCKED,POPULATION-CAP-200,POPULATION-CAP-25,POPULATION-CAP-500,REVEAL-MAP)
+  defconst total : 123   duplicates: 21   errors: none
+     !! duplicate unit-max : 23 line 271  ->  23 line 275
+     !! duplicate civ-dark-rush : 10 line 244  ->  20 line 545
+     !! duplicate civ-dark : 11 line 245  ->  25 line 546
+     !! duplicate civ-dark-mod : 10 line 246  ->  15 line 547
+     !! duplicate civ-feudal-mod : 12 line 247  ->  20 line 548
+     !! duplicate civ-feudal : 13 line 248  ->  40 line 549
+     !! duplicate civ-castle : 15 line 249  ->  70 line 550
+     !! duplicate pop-cap : 25 line 250  ->  200 line 551
+     !! duplicate deathmatch-unit-max : 13 line 251  ->  170 line 552
+     !! duplicate feudal-town-size : 20 line 253  ->  20 line 554
+     !! duplicate castle-town-size : 25 line 254  ->  35 line 555
+     !! duplicate imperial-town-size : 25 line 255  ->  40 line 556
+     !! duplicate town-center-count : 2 line 256  ->  9 line 557
+     !! duplicate unit-max : 23 line 275  ->  190 line 572
+     !! duplicate unit-max : 190 line 572  ->  190 line 576
+     !! duplicate five-percent-pop : 1 line 278  ->  10 line 579
+     !! duplicate ten-percent-pop : 3 line 279  ->  20 line 580
+     !! duplicate fifteen-percent-pop : 4 line 280  ->  30 line 581
+     !! duplicate twenty-percent-pop : 5 line 281  ->  40 line 582
+     !! duplicate thirty-percent-pop : 8 line 282  ->  60 line 583
+     !! duplicate fifty-percent-pop : 12 line 283  ->  100 line 584
+   pop-cap                  = 200    (line 551)
+   unit-max                 = 190    (line 576)
+   deathmatch-unit-max      = 170    (line 552)
+   five-percent-pop         = 10     (line 579)
+   ten-percent-pop          = 20     (line 580)
+   fifteen-percent-pop      = 30     (line 581)
+   civ-dark-rush            = 20     (line 545)
+   civ-dark                 = 25     (line 546)
+   civ-feudal               = 40     (line 549)
+   civ-castle               = 70     (line 550)
+   imperial-town-size       = 40     (line 556)
+   t-production             = 3      (line 234)
+   secondary-build          = 8      (line 69)
+   town-size                = ** UNDEFINED **
+
+==============================================================================
+RETAIL gamedata.drs    anib_60010  (symbols=DEATH-MATCH,DEATHMATCH,DIFFICULTY-HARD,DIFFICULTY-HARDEST,GAME-SPEED-LOCKED,POPULATION-CAP-200,POPULATION-CAP-25,POPULATION-CAP-500,REVEAL-MAP)
+  defconst total : 15   duplicates: 17   errors: none
+     !! duplicate unit-max : 23 line 42  ->  23 line 46
+     !! duplicate civ-dark-rush : 10 line 18  ->  20 line 291
+     !! duplicate civ-dark : 11 line 19  ->  25 line 292
+     !! duplicate civ-feudal : 13 line 20  ->  40 line 293
+     !! duplicate civ-castle : 15 line 21  ->  70 line 294
+     !! duplicate pop-cap : 25 line 22  ->  200 line 295
+     !! duplicate deathmatch-unit-max : 13 line 23  ->  170 line 296
+     !! duplicate feudal-town-size : 20 line 25  ->  20 line 298
+     !! duplicate castle-town-size : 25 line 26  ->  35 line 299
+     !! duplicate imperial-town-size : 25 line 27  ->  40 line 300
+     !! duplicate unit-max : 23 line 46  ->  190 line 315
+     !! duplicate unit-max : 190 line 315  ->  190 line 319
+     !! duplicate five-percent-pop : 1 line 49  ->  10 line 322
+     !! duplicate ten-percent-pop : 3 line 50  ->  20 line 323
+     !! duplicate fifteen-percent-pop : 4 line 51  ->  30 line 324
+     !! duplicate twenty-percent-pop : 5 line 52  ->  40 line 325
+     !! duplicate thirty-percent-pop : 8 line 53  ->  60 line 326
+   pop-cap                  = 200    (line 295)
+   unit-max                 = 190    (line 319)
+   deathmatch-unit-max      = 170    (line 296)
+   five-percent-pop         = 10     (line 322)
+   ten-percent-pop          = 20     (line 323)
+   fifteen-percent-pop      = 30     (line 324)
+   civ-dark-rush            = 20     (line 291)
+   civ-dark                 = 25     (line 292)
+   civ-feudal               = 40     (line 293)
+   civ-castle               = 70     (line 294)
+   imperial-town-size       = 40     (line 300)
+   t-production             = ** UNDEFINED **
+   secondary-build          = ** UNDEFINED **
+   town-size                = ** UNDEFINED **
+
+(tail of the live x1 constants file -- the appended catch-all)
+  584| (defconst fifty-percent-pop 100)
+  585| #end-if
+  586| ;*************************************************************
+  587| ;*************************************************************
+  588| #load-if-defined TINY-MAP
+  589| (defconst feudal-mill-count 1)
+  590| (defconst castle-mill-count 1)
+  591| (defconst imperial-mill-count 1)
+  592| (defconst mining-count 8)
+  593| #end-if
+  594| ;**************************
+  595| #load-if-defined SMALL-MAP
+  596| (defconst feudal-mill-count 1)
+  597| (defconst castle-mill-count 1)
+  598| (defconst imperial-mill-count 1)
+  599| (defconst mining-count 8)
+  600| #end-if
+  601| ;**************************
+  602| #load-if-defined MEDIUM-MAP
+  603| (defconst feudal-mill-count 1)
+  604| (defconst castle-mill-count 1)
+  605| (defconst imperial-mill-count 1)
+  606| (defconst mining-count 10)
+  607| #end-if
+  608| ;**************************
+  609| #load-if-defined NORMAL-MAP
+  610| (defconst feudal-mill-count 1)
+  611| (defconst castle-mill-count 1)
+  612| (defconst imperial-mill-count 2)
+  613| (defconst mining-count 11)
+  614| #end-if
+  615| ;**************************
+  616| #load-if-defined LARGE-MAP
+  617| (defconst feudal-mill-count 1)
+  618| (defconst castle-mill-count 2)
+  619| (defconst imperial-mill-count 3)
+  620| (defconst mining-count 12)
+  621| #end-if
+  622| ;**************************
+  623| #load-if-defined GIANT-MAP
+  624| (defconst feudal-mill-count 2)
+  625| (defconst castle-mill-count 3)
+  626| (defconst imperial-mill-count 4)
+  627| (defconst mining-count 15)
+  628| #end-if
+  629| 

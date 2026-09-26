@@ -1,0 +1,18 @@
+total top-level forms parsed: 250
+rules gated by (goal secondary-build 1): 68
+  of those: 50 train something, 50 carry (population < ...), 50 use deathmatch-unit-max, 50 reset the goal to 0
+  train rules WITHOUT any population guard:
+
+first 12 consumers:
+  (60, 64) pop-gate=False dm-max=False zero=False [] ['(generate-random-number 2)', ')']
+  (66, 80) pop-gate=True dm-max=True zero=True ['(train elite-eagle-warrior)'] ['(train elite-eagle-warrior)', '(set-goal secondary-build 0)']
+  (82, 96) pop-gate=True dm-max=True zero=True ['(train arbalest)'] ['(train arbalest)', '(set-goal secondary-build 0)']
+  (118, 122) pop-gate=False dm-max=False zero=False [] ['(generate-random-number 2)', ')']
+  (124, 138) pop-gate=True dm-max=True zero=True ['(train heavy-cavalry-archer)'] ['(train heavy-cavalry-archer)', '(set-goal secondary-build 0)']
+  (140, 158) pop-gate=True dm-max=True zero=True ['(train hussar)'] ['(train hussar)', '(set-goal secondary-build 0)']
+  (181, 185) pop-gate=False dm-max=False zero=False [] ['(generate-random-number 2)', ')']
+  (187, 201) pop-gate=True dm-max=True zero=True ['(train heavy-cavalry-archer)'] ['(train heavy-cavalry-archer)', '(set-goal secondary-build 0)']
+  (203, 217) pop-gate=True dm-max=True zero=True ['(train hand-cannoneer)'] ['(train hand-cannoneer)', '(set-goal secondary-build 0)']
+  (240, 244) pop-gate=False dm-max=False zero=False [] ['(generate-random-number 2)', ')']
+  (246, 260) pop-gate=True dm-max=True zero=True ['(train champion)'] ['(train champion)', '(set-goal secondary-build 0)']
+  (262, 276) pop-gate=True dm-max=True zero=True ['(train elite-eagle-warrior)'] ['(train elite-eagle-warrior)', '(set-goal secondary-build 0)']

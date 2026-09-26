@@ -1,0 +1,2637 @@
+=== can-* vocabulary used in DM script ===
+-- can-train: arbalest, archer-line, cavalry-archer-line, champion, elite-cataphract, elite-conquistador, elite-eagle-warrior, elite-mameluke, elite-tarkan, elite-war-elephant, hand-cannoneer, heavy-cavalry-archer, heavy-scorpion, hussar, knight-line, light-cavalry, militiaman-line, monk, my-unique-unit-line, paladin, villager
+-- can-research: castle-age, feudal-age, imperial-age, my-unique-research, my-unique-unit-upgrade, ri-arbalest, ri-architecture, ri-atonement, ri-ballistics, ri-banking, ri-blast-furnace, ri-block-printing, ri-bloodlines, ri-bodkin-arrow, ri-bombard-cannon, ri-bombard-tower, ri-bracer, ri-cannon-galleon, ri-capped-ram, ri-caravan, ri-careening, ri-cartography, ri-cavalier, ri-chain-barding, ri-chain-mail, ri-champion, ri-chemistry, ri-coinage, ri-conscription, ri-crossbow, ri-deck-guns, ri-dry-dock, ri-elite-eagle-warrior, ri-elite-skirmisher, ri-faith, ri-fast-fire-ship, ri-fervor, ri-fletching, ri-forging, ri-fortified-wall, ri-galleon, ri-gold-mining, ri-gold-shaft-mining, ri-guard-tower, ri-guilds, ri-halberdier, ri-hand-cannon, ri-hand-cart, ri-heated-shot, ri-heavy-camel, ri-heavy-cavalry-archer, ri-heavy-demolition-ship, ri-heavy-scorpion, ri-heresy, ri-hoardings, ri-husbandry, ri-hussar, ri-illumination, ri-iron-casting, ri-keep, ri-leather-archer-armor, ri-light-cavalry, ri-long-swordsman, ri-loom, ri-man-at-arms, ri-masonry, ri-onager, ri-padded-archer-armor, ri-paladin, ri-parthian-tactics, ri-pikeman, ri-plate-barding, ri-plate-mail, ri-redemption, ri-ring-archer-armor, ri-sanctity, ri-scale-barding, ri-scale-mail, ri-shipwright, ri-siege-engineers, ri-siege-onager, ri-siege-ram, ri-squires, ri-stone-mining, ri-stone-shaft-mining, ri-stonecutting, ri-thumb-ring, ri-town-patrol, ri-town-watch, ri-tracking, ri-two-handed-swordsman, ri-war-galley, ri-wheel-barrow
+-- can-build: archery-range, barracks, blacksmith, castle, dock, farm, house, lumber-camp, market, mill, mining-camp, monastery, siege-workshop, stable, town-center, university
+-- can-sell-commodity: food, stone, wood
+-- can-buy-commodity: food, stone, wood
+
+=== every rule containing (train ...) with its conditions ===
+   66| (defrule
+   67| 	(goal secondary-build 1)
+   68| 	(random-number == 1)
+   69| 	(can-train elite-eagle-warrior)
+   70| 	(or
+   71| 		(population < deathmatch-unit-max)
+   72| 		(and
+   73| 			(population < unit-max)
+   74| 			(goal need-deathmatch-villagers NO)
+   75| 		)
+   76| 	)
+   77| =>
+   78| 	(train elite-eagle-warrior)
+   79| 	(set-goal secondary-build 0)
+   80| )
+
+   82| (defrule
+   83| 	(goal secondary-build 1)
+   84| 	(random-number == 2)
+   85| 	(can-train arbalest)
+   86| 	(or
+   87| 		(population < deathmatch-unit-max)
+   88| 		(and
+   89| 			(population < unit-max)
+   90| 			(goal need-deathmatch-villagers NO)
+   91| 		)
+   92| 	)
+   93| =>
+   94| 	(train arbalest)
+   95| 	(set-goal secondary-build 0)
+   96| )
+
+  124| (defrule
+  125| 	(goal secondary-build 1)
+  126| 	(random-number == 1)
+  127| 	(can-train heavy-cavalry-archer)
+  128| 	(or
+  129| 		(population < deathmatch-unit-max)
+  130| 		(and
+  131| 			(population < unit-max)
+  132| 			(goal need-deathmatch-villagers NO)
+  133| 		)
+  134| 	)
+  135| =>
+  136| 	(train heavy-cavalry-archer)
+  137| 	(set-goal secondary-build 0)
+  138| )
+
+  140| (defrule
+  141| 	(goal secondary-build 1)
+  142| 	(random-number == 2)
+  143| 	(can-train hussar)
+  144| 	(nor 
+  145| 		(can-train elite-tarkan)
+  146| 		(can-train paladin)
+  147| 	)
+  148| 	(or
+  149| 		(population < deathmatch-unit-max)
+  150| 		(and
+  151| 			(population < unit-max)
+  152| 			(goal need-deathmatch-villagers NO)
+  153| 		)
+  154| 	)
+  155| =>
+  156| 	(train hussar)
+  157| 	(set-goal secondary-build 0)
+  158| )
+
+  187| (defrule
+  188| 	(goal secondary-build 1)
+  189| 	(random-number == 1)
+  190| 	(can-train heavy-cavalry-archer)
+  191| 	(or
+  192| 		(population < deathmatch-unit-max)
+  193| 		(and
+  194| 			(population < unit-max)
+  195| 			(goal need-deathmatch-villagers NO)
+  196| 		)
+  197| 	)
+  198| =>
+  199| 	(train heavy-cavalry-archer)
+  200| 	(set-goal secondary-build 0)
+  201| )
+
+  203| (defrule
+  204| 	(goal secondary-build 1)
+  205| 	(random-number == 2)
+  206| 	(can-train hand-cannoneer)
+  207| 	(or
+  208| 		(population < deathmatch-unit-max)
+  209| 		(and
+  210| 			(population < unit-max)
+  211| 			(goal need-deathmatch-villagers NO)
+  212| 		)
+  213| 	)
+  214| =>
+  215| 	(train hand-cannoneer)
+  216| 	(set-goal secondary-build 0)
+  217| )
+
+  246| (defrule
+  247| 	(goal secondary-build 1)
+  248| 	(random-number == 1)
+  249| 	(can-train champion)
+  250| 	(or
+  251| 		(population < deathmatch-unit-max)
+  252| 		(and
+  253| 			(population < unit-max)
+  254| 			(goal need-deathmatch-villagers NO)
+  255| 		)
+  256| 	)
+  257| =>
+  258| 	(train champion)
+  259| 	(set-goal secondary-build 0)
+  260| )
+
+  262| (defrule
+  263| 	(goal secondary-build 1)
+  264| 	(random-number == 2)
+  265| 	(can-train elite-eagle-warrior)
+  266| 	(or
+  267| 		(population < deathmatch-unit-max)
+  268| 		(and
+  269| 			(population < unit-max)
+  270| 			(goal need-deathmatch-villagers NO)
+  271| 		)
+  272| 	)
+  273| =>
+  274| 	(train elite-eagle-warrior)
+  275| 	(set-goal secondary-build 0)
+  276| )
+
+  305| (defrule
+  306| 	(goal secondary-build 1)
+  307| 	(random-number == 1)
+  308| 	(can-train champion)
+  309| 	(or
+  310| 		(population < deathmatch-unit-max)
+  311| 		(and
+  312| 			(population < unit-max)
+  313| 			(goal need-deathmatch-villagers NO)
+  314| 		)
+  315| 	)
+  316| =>
+  317| 	(train champion)
+  318| 	(set-goal secondary-build 0)
+  319| )
+
+  321| (defrule
+  322| 	(goal secondary-build 1)
+  323| 	(random-number == 2)
+  324| 	(can-train paladin)
+  325| 	(or
+  326| 		(population < deathmatch-unit-max)
+  327| 		(and
+  328| 			(population < unit-max)
+  329| 			(goal need-deathmatch-villagers NO)
+  330| 		)
+  331| 	)
+  332| =>
+  333| 	(train paladin)
+  334| 	(set-goal secondary-build 0)
+  335| )
+
+  337| (defrule
+  338| 	(goal secondary-build 1)
+  339| 	(random-number == 3)
+  340| 	(can-train hussar)
+  341| 	(not (can-train paladin) )
+  342| 	(or
+  343| 		(population < deathmatch-unit-max)
+  344| 		(and
+  345| 			(population < unit-max)
+  346| 			(goal need-deathmatch-villagers NO)
+  347| 		)
+  348| 	)
+  349| =>
+  350| 	(train hussar)
+  351| 	(set-goal secondary-build 0)
+  352| )
+
+  354| (defrule
+  355| 	(goal secondary-build 1)
+  356| 	(random-number == 4)
+  357| 	(can-train hand-cannoneer)
+  358| 	(nor 
+  359| 		(can-train elite-conquistador) 
+  360| 		(can-train heavy-cavalry-archer)
+  361| 	)
+  362| 	(or
+  363| 		(population < deathmatch-unit-max)
+  364| 		(and
+  365| 			(population < unit-max)
+  366| 			(goal need-deathmatch-villagers NO)
+  367| 		)
+  368| 	)
+  369| =>
+  370| 	(train hand-cannoneer)
+  371| 	(set-goal secondary-build 0)
+  372| )
+
+  374| (defrule
+  375| 	(goal secondary-build 1)
+  376| 	(random-number == 5)
+  377| 	(can-train heavy-cavalry-archer)
+  378| 	(not (can-train elite-conquistador) )
+  379| 	(or
+  380| 		(population < deathmatch-unit-max)
+  381| 		(and
+  382| 			(population < unit-max)
+  383| 			(goal need-deathmatch-villagers NO)
+  384| 		)
+  385| 	)
+  386| =>
+  387| 	(train heavy-cavalry-archer)
+  388| 	(set-goal secondary-build 0)
+  389| )
+
+  418| (defrule
+  419| 	(goal secondary-build 1)
+  420| 	(random-number == 1)
+  421| 	(can-train champion)
+  422| 	(or
+  423| 		(population < deathmatch-unit-max)
+  424| 		(and
+  425| 			(population < unit-max)
+  426| 			(goal need-deathmatch-villagers NO)
+  427| 		)
+  428| 	)
+  429| =>
+  430| 	(train champion)
+  431| 	(set-goal secondary-build 0)
+  432| )
+
+  434| (defrule
+  435| 	(goal secondary-build 1)
+  436| 	(random-number == 2)
+  437| 	(can-train hussar)
+  438| 	(or
+  439| 		(population < deathmatch-unit-max)
+  440| 		(and
+  441| 			(population < unit-max)
+  442| 			(goal need-deathmatch-villagers NO)
+  443| 		)
+  444| 	)
+  445| =>
+  446| 	(train hussar)
+  447| 	(set-goal secondary-build 0)
+  448| )
+
+  476| (defrule
+  477| 	(goal secondary-build 1)
+  478| 	(random-number == 1)
+  479| 	(can-train heavy-cavalry-archer)
+  480| 	(or
+  481| 		(population < deathmatch-unit-max)
+  482| 		(and
+  483| 			(population < unit-max)
+  484| 			(goal need-deathmatch-villagers NO)
+  485| 		)
+  486| 	)
+  487| =>
+  488| 	(train heavy-cavalry-archer)
+  489| 	(set-goal secondary-build 0)
+  490| )
+
+  492| (defrule
+  493| 	(goal secondary-build 1)
+  494| 	(random-number == 2)
+  495| 	(or
+  496| 		(can-train hand-cannoneer)
+  497| 		(can-train arbalest)
+  498| 	)
+  499| 	(or
+  500| 		(population < deathmatch-unit-max)
+  501| 		(and
+  502| 			(population < unit-max)
+  503| 			(goal need-deathmatch-villagers NO)
+  504| 		)
+  505| 	)
+  506| =>
+  507| 	(train hand-cannoneer)
+  508| 	(train arbalest)
+  509| 	(set-goal secondary-build 0)
+  510| )
+
+  492| (defrule
+  493| 	(goal secondary-build 1)
+  494| 	(random-number == 2)
+  495| 	(or
+  496| 		(can-train hand-cannoneer)
+  497| 		(can-train arbalest)
+  498| 	)
+  499| 	(or
+  500| 		(population < deathmatch-unit-max)
+  501| 		(and
+  502| 			(population < unit-max)
+  503| 			(goal need-deathmatch-villagers NO)
+  504| 		)
+  505| 	)
+  506| =>
+  507| 	(train hand-cannoneer)
+  508| 	(train arbalest)
+  509| 	(set-goal secondary-build 0)
+  510| )
+
+  512| (defrule
+  513| 	(goal secondary-build 1)
+  514| 	(random-number == 3)
+  515| 	(can-train hussar)
+  516| 	(nor
+  517| 		(can-train elite-cataphract)
+  518| 		(can-train paladin)
+  519| 	)
+  520| 	(or
+  521| 		(population < deathmatch-unit-max)
+  522| 		(and
+  523| 			(population < unit-max)
+  524| 			(goal need-deathmatch-villagers NO)
+  525| 		)
+  526| 	)
+  527| =>
+  528| 	(train hussar)
+  529| 	(set-goal secondary-build 0)
+  530| )
+
+  559| (defrule
+  560| 	(goal secondary-build 1)
+  561| 	(random-number == 1)
+  562| 	(can-train paladin)
+  563| 	(or
+  564| 		(population < deathmatch-unit-max)
+  565| 		(and
+  566| 			(population < unit-max)
+  567| 			(goal need-deathmatch-villagers NO)
+  568| 		)
+  569| 	)
+  570| =>
+  571| 	(train paladin)
+  572| 	(set-goal secondary-build 0)
+  573| )
+
+  575| (defrule
+  576| 	(goal secondary-build 1)
+  577| 	(random-number == 2)
+  578| 	(can-train light-cavalry)
+  579| 	(not (can-afford-unit paladin) )
+  580| 	(or
+  581| 		(population < deathmatch-unit-max)
+  582| 		(and
+  583| 			(population < unit-max)
+  584| 			(goal need-deathmatch-villagers NO)
+  585| 		)
+  586| 	)
+  587| =>
+  588| 	(train light-cavalry)
+  589| 	(set-goal secondary-build 0)
+  590| )
+
+  592| (defrule
+  593| 	(goal secondary-build 1)
+  594| 	(random-number == 3)
+  595| 	(can-train heavy-cavalry-archer)
+  596| 	(or
+  597| 		(population < deathmatch-unit-max)
+  598| 		(and
+  599| 			(population < unit-max)
+  600| 			(goal need-deathmatch-villagers NO)
+  601| 		)
+  602| 	)
+  603| =>
+  604| 	(train heavy-cavalry-archer)
+  605| 	(set-goal secondary-build 0)
+  606| )
+
+  608| (defrule
+  609| 	(goal secondary-build 1)
+  610| 	(random-number == 4)
+  611| 	(can-train heavy-scorpion)
+  612| 	(or
+  613| 		(population < deathmatch-unit-max)
+  614| 		(and
+  615| 			(population < unit-max)
+  616| 			(goal need-deathmatch-villagers NO)
+  617| 		)
+  618| 	)
+  619| =>
+  620| 	(train heavy-scorpion)
+  621| 	(set-goal secondary-build 0)
+  622| )
+
+  651| (defrule
+  652| 	(goal secondary-build 1)
+  653| 	(random-number == 1)
+  654| 	(can-train champion)
+  655| 	(or
+  656| 		(population < deathmatch-unit-max)
+  657| 		(and
+  658| 			(population < unit-max)
+  659| 			(goal need-deathmatch-villagers NO)
+  660| 		)
+  661| 	)
+  662| =>
+  663| 	(train champion)
+  664| 	(set-goal secondary-build 0)
+  665| )
+
+  667| (defrule
+  668| 	(goal secondary-build 1)
+  669| 	(random-number == 2)
+  670| 	(can-train hussar)
+  671| 	(or
+  672| 		(population < deathmatch-unit-max)
+  673| 		(and
+  674| 			(population < unit-max)
+  675| 			(goal need-deathmatch-villagers NO)
+  676| 		)
+  677| 	)
+  678| =>
+  679| 	(train hussar)
+  680| 	(set-goal secondary-build 0)
+  681| )
+
+  683| (defrule
+  684| 	(goal secondary-build 1)
+  685| 	(random-number == 3)
+  686| 	(can-train heavy-scorpion)
+  687| 	(or
+  688| 		(population < deathmatch-unit-max)
+  689| 		(and
+  690| 			(population < unit-max)
+  691| 			(goal need-deathmatch-villagers NO)
+  692| 		)
+  693| 	)
+  694| =>
+  695| 	(train heavy-scorpion)
+  696| 	(set-goal secondary-build 0)
+  697| )
+
+  725| (defrule
+  726| 	(goal secondary-build 1)
+  727| 	(random-number == 1)
+  728| 	(can-train paladin)
+  729| 	(or
+  730| 		(population < deathmatch-unit-max)
+  731| 		(and
+  732| 			(population < unit-max)
+  733| 			(goal need-deathmatch-villagers NO)
+  734| 		)
+  735| 	)
+  736| =>
+  737| 	(train paladin)
+  738| 	(set-goal secondary-build 0)
+  739| )
+
+  741| (defrule
+  742| 	(goal secondary-build 1)
+  743| 	(random-number == 2)
+  744| 	(can-train hussar)
+  745| 	(not (can-afford-unit paladin) )
+  746| 	(or
+  747| 		(population < deathmatch-unit-max)
+  748| 		(and
+  749| 			(population < unit-max)
+  750| 			(goal need-deathmatch-villagers NO)
+  751| 		)
+  752| 	)
+  753| =>
+  754| 	(train hussar)
+  755| 	(set-goal secondary-build 0)
+  756| )
+
+  758| (defrule
+  759| 	(goal secondary-build 1)
+  760| 	(random-number == 3)
+  761| 	(can-train heavy-cavalry-archer)
+  762| 	(or
+  763| 		(population < deathmatch-unit-max)
+  764| 		(and
+  765| 			(population < unit-max)
+  766| 			(goal need-deathmatch-villagers NO)
+  767| 		)
+  768| 	)
+  769| =>
+  770| 	(train heavy-cavalry-archer)
+  771| 	(set-goal secondary-build 0)
+  772| )
+
+  774| (defrule
+  775| 	(goal secondary-build 1)
+  776| 	(random-number == 4)
+  777| 	(can-train heavy-scorpion)
+  778| 	(or
+  779| 		(population < deathmatch-unit-max)
+  780| 		(and
+  781| 			(population < unit-max)
+  782| 			(goal need-deathmatch-villagers NO)
+  783| 		)
+  784| 	)
+  785| =>
+  786| 	(train heavy-scorpion)
+  787| 	(set-goal secondary-build 0)
+  788| )
+
+  816| (defrule
+  817| 	(goal secondary-build 1)
+  818| 	(random-number == 1)
+  819| 	(can-train hussar)
+  820| 	(or
+  821| 		(population < deathmatch-unit-max)
+  822| 		(and
+  823| 			(population < unit-max)
+  824| 			(goal need-deathmatch-villagers NO)
+  825| 		)
+  826| 	)
+  827| =>
+  828| 	(train hussar)
+  829| 	(set-goal secondary-build 0)
+  830| )
+
+  832| (defrule
+  833| 	(goal secondary-build 1)
+  834| 	(random-number == 2)
+  835| 	(can-train heavy-cavalry-archer)
+  836| 	(or
+  837| 		(population < deathmatch-unit-max)
+  838| 		(and
+  839| 			(population < unit-max)
+  840| 			(goal need-deathmatch-villagers NO)
+  841| 		)
+  842| 	)
+  843| =>
+  844| 	(train heavy-cavalry-archer)
+  845| 	(set-goal secondary-build 0)
+  846| )
+
+  848| (defrule
+  849| 	(goal secondary-build 1)
+  850| 	(random-number == 3)
+  851| 	(can-train heavy-scorpion)
+  852| 	(or
+  853| 		(population < deathmatch-unit-max)
+  854| 		(and
+  855| 			(population < unit-max)
+  856| 			(goal need-deathmatch-villagers NO)
+  857| 		)
+  858| 	)
+  859| =>
+  860| 	(train heavy-scorpion)
+  861| 	(set-goal secondary-build 0)
+  862| )
+
+  890| (defrule
+  891| 	(goal secondary-build 1)
+  892| 	(random-number == 1)
+  893| 	(can-train heavy-cavalry-archer)
+  894| 	(or
+  895| 		(population < deathmatch-unit-max)
+  896| 		(and
+  897| 			(population < unit-max)
+  898| 			(goal need-deathmatch-villagers NO)
+  899| 		)
+  900| 	)
+  901| =>
+  902| 	(train heavy-cavalry-archer)
+  903| 	(set-goal secondary-build 0)
+  904| )
+
+  906| (defrule
+  907| 	(goal secondary-build 1)
+  908| 	(random-number == 2)
+  909| 	(or
+  910| 		(can-train hand-cannoneer)
+  911| 		(can-train arbalest)
+  912| 	)
+  913| 	(or
+  914| 		(population < deathmatch-unit-max)
+  915| 		(and
+  916| 			(population < unit-max)
+  917| 			(goal need-deathmatch-villagers NO)
+  918| 		)
+  919| 	)
+  920| =>
+  921| 	(train hand-cannoneer)
+  922| 	(train arbalest)
+  923| 	(set-goal secondary-build 0)
+  924| )
+
+  906| (defrule
+  907| 	(goal secondary-build 1)
+  908| 	(random-number == 2)
+  909| 	(or
+  910| 		(can-train hand-cannoneer)
+  911| 		(can-train arbalest)
+  912| 	)
+  913| 	(or
+  914| 		(population < deathmatch-unit-max)
+  915| 		(and
+  916| 			(population < unit-max)
+  917| 			(goal need-deathmatch-villagers NO)
+  918| 		)
+  919| 	)
+  920| =>
+  921| 	(train hand-cannoneer)
+  922| 	(train arbalest)
+  923| 	(set-goal secondary-build 0)
+  924| )
+
+  926| (defrule
+  927| 	(goal secondary-build 1)
+  928| 	(random-number == 3)
+  929| 	(can-train heavy-scorpion)
+  930| 	(or
+  931| 		(population < deathmatch-unit-max)
+  932| 		(and
+  933| 			(population < unit-max)
+  934| 			(goal need-deathmatch-villagers NO)
+  935| 		)
+  936| 	)
+  937| =>
+  938| 	(train heavy-scorpion)
+  939| 	(set-goal secondary-build 0)
+  940| )
+
+  968| (defrule
+  969| 	(goal secondary-build 1)
+  970| 	(random-number == 1)
+  971| 	(can-train champion)
+  972| 	(or
+  973| 		(population < deathmatch-unit-max)
+  974| 		(and
+  975| 			(population < unit-max)
+  976| 			(goal need-deathmatch-villagers NO)
+  977| 		)
+  978| 	)
+  979| =>
+  980| 	(train champion)
+  981| 	(set-goal secondary-build 0)
+  982| )
+
+  984| (defrule
+  985| 	(goal secondary-build 1)
+  986| 	(random-number == 2)
+  987| 	(can-train hussar)
+  988| 	(or
+  989| 		(population < deathmatch-unit-max)
+  990| 		(and
+  991| 			(population < unit-max)
+  992| 			(goal need-deathmatch-villagers NO)
+  993| 		)
+  994| 	)
+  995| =>
+  996| 	(train hussar)
+  997| 	(set-goal secondary-build 0)
+  998| )
+
+ 1026| (defrule
+ 1027| 	(goal secondary-build 1)
+ 1028| 	(random-number == 1)
+ 1029| 	(can-train heavy-cavalry-archer)
+ 1030| 	(or
+ 1031| 		(population < deathmatch-unit-max)
+ 1032| 		(and
+ 1033| 			(population < unit-max)
+ 1034| 			(goal need-deathmatch-villagers NO)
+ 1035| 		)
+ 1036| 	)
+ 1037| =>
+ 1038| 	(train heavy-cavalry-archer)
+ 1039| 	(set-goal secondary-build 0)
+ 1040| )
+
+ 1042| (defrule
+ 1043| 	(goal secondary-build 1)
+ 1044| 	(random-number == 2)
+ 1045| 	(can-train hussar)
+ 1046| 	(nor
+ 1047| 		(can-train elite-war-elephant)
+ 1048| 		(can-train paladin)
+ 1049| 	)
+ 1050| 	(or
+ 1051| 		(population < deathmatch-unit-max)
+ 1052| 		(and
+ 1053| 			(population < unit-max)
+ 1054| 			(goal need-deathmatch-villagers NO)
+ 1055| 		)
+ 1056| 	)
+ 1057| =>
+ 1058| 	(train hussar)
+ 1059| 	(set-goal secondary-build 0)
+ 1060| )
+
+ 1089| (defrule
+ 1090| 	(goal secondary-build 1)
+ 1091| 	(random-number == 1)
+ 1092| 	(can-train heavy-cavalry-archer)
+ 1093| 	(or
+ 1094| 		(population < deathmatch-unit-max)
+ 1095| 		(and
+ 1096| 			(population < unit-max)
+ 1097| 			(goal need-deathmatch-villagers NO)
+ 1098| 		)
+ 1099| 	)
+ 1100| =>
+ 1101| 	(train heavy-cavalry-archer)
+ 1102| 	(set-goal secondary-build 0)
+ 1103| )
+
+ 1105| (defrule
+ 1106| 	(goal secondary-build 1)
+ 1107| 	(random-number == 2)
+ 1108| 	(or
+ 1109| 		(can-train hand-cannoneer)
+ 1110| 		(can-train arbalest)
+ 1111| 	)
+ 1112| 	(or
+ 1113| 		(population < deathmatch-unit-max)
+ 1114| 		(and
+ 1115| 			(population < unit-max)
+ 1116| 			(goal need-deathmatch-villagers NO)
+ 1117| 		)
+ 1118| 	)
+ 1119| =>
+ 1120| 	(train hand-cannoneer)
+ 1121| 	(train arbalest)
+ 1122| 	(set-goal secondary-build 0)
+ 1123| )
+
+ 1105| (defrule
+ 1106| 	(goal secondary-build 1)
+ 1107| 	(random-number == 2)
+ 1108| 	(or
+ 1109| 		(can-train hand-cannoneer)
+ 1110| 		(can-train arbalest)
+ 1111| 	)
+ 1112| 	(or
+ 1113| 		(population < deathmatch-unit-max)
+ 1114| 		(and
+ 1115| 			(population < unit-max)
+ 1116| 			(goal need-deathmatch-villagers NO)
+ 1117| 		)
+ 1118| 	)
+ 1119| =>
+ 1120| 	(train hand-cannoneer)
+ 1121| 	(train arbalest)
+ 1122| 	(set-goal secondary-build 0)
+ 1123| )
+
+ 1125| (defrule
+ 1126| 	(goal secondary-build 1)
+ 1127| 	(random-number == 3)
+ 1128| 	(can-train hussar)
+ 1129| 	(not (can-train elite-mameluke) )
+ 1130| 	(or
+ 1131| 		(population < deathmatch-unit-max)
+ 1132| 		(and
+ 1133| 			(population < unit-max)
+ 1134| 			(goal need-deathmatch-villagers NO)
+ 1135| 		)
+ 1136| 	)
+ 1137| =>
+ 1138| 	(train hussar)
+ 1139| 	(set-goal secondary-build 0)
+ 1140| )
+
+ 1168| (defrule
+ 1169| 	(goal secondary-build 1)
+ 1170| 	(random-number == 1)
+ 1171| 	(can-train paladin)
+ 1172| 	(or
+ 1173| 		(population < deathmatch-unit-max)
+ 1174| 		(and
+ 1175| 			(population < unit-max)
+ 1176| 			(goal need-deathmatch-villagers NO)
+ 1177| 		)
+ 1178| 	)
+ 1179| =>
+ 1180| 	(train paladin)
+ 1181| 	(set-goal secondary-build 0)
+ 1182| )
+
+ 1184| (defrule
+ 1185| 	(goal secondary-build 1)
+ 1186| 	(random-number == 2)
+ 1187| 	(can-train heavy-scorpion)
+ 1188| 	(or
+ 1189| 		(population < deathmatch-unit-max)
+ 1190| 		(and
+ 1191| 			(population < unit-max)
+ 1192| 			(goal need-deathmatch-villagers NO)
+ 1193| 		)
+ 1194| 	)
+ 1195| =>
+ 1196| 	(train heavy-scorpion)
+ 1197| 	(set-goal secondary-build 0)
+ 1198| )
+
+ 1226| (defrule
+ 1227| 	(goal secondary-build 1)
+ 1228| 	(random-number == 1)
+ 1229| 	(can-train champion)
+ 1230| 	(or
+ 1231| 		(population < deathmatch-unit-max)
+ 1232| 		(and
+ 1233| 			(population < unit-max)
+ 1234| 			(goal need-deathmatch-villagers NO)
+ 1235| 		)
+ 1236| 	)
+ 1237| =>
+ 1238| 	(train champion)
+ 1239| 	(set-goal secondary-build 0)
+ 1240| )
+
+ 1242| (defrule
+ 1243| 	(goal secondary-build 1)
+ 1244| 	(random-number == 2)
+ 1245| 	(can-train hussar)
+ 1246| 	(or
+ 1247| 		(population < deathmatch-unit-max)
+ 1248| 		(and
+ 1249| 			(population < unit-max)
+ 1250| 			(goal need-deathmatch-villagers NO)
+ 1251| 		)
+ 1252| 	)
+ 1253| =>
+ 1254| 	(train hussar)
+ 1255| 	(set-goal secondary-build 0)
+ 1256| )
+
+ 1258| (defrule
+ 1259| 	(goal secondary-build 1)
+ 1260| 	(random-number == 3)
+ 1261| 	(can-train heavy-scorpion)
+ 1262| 	(or
+ 1263| 		(population < deathmatch-unit-max)
+ 1264| 		(and
+ 1265| 			(population < unit-max)
+ 1266| 			(goal need-deathmatch-villagers NO)
+ 1267| 		)
+ 1268| 	)
+ 1269| =>
+ 1270| 	(train heavy-scorpion)
+ 1271| 	(set-goal secondary-build 0)
+ 1272| )
+
+ 1300| (defrule
+ 1301| 	(goal secondary-build 1)
+ 1302| 	(random-number == 1)
+ 1303| 	(can-train light-cavalry)
+ 1304| 	(or
+ 1305| 		(population < deathmatch-unit-max)
+ 1306| 		(and
+ 1307| 			(population < unit-max)
+ 1308| 			(goal need-deathmatch-villagers NO)
+ 1309| 		)
+ 1310| 	)
+ 1311| =>
+ 1312| 	(train light-cavalry)
+ 1313| 	(set-goal secondary-build 0)
+ 1314| )
+
+ 1316| (defrule
+ 1317| 	(goal secondary-build 1)
+ 1318| 	(random-number == 2)
+ 1319| 	(can-train arbalest)
+ 1320| 	(or
+ 1321| 		(population < deathmatch-unit-max)
+ 1322| 		(and
+ 1323| 			(population < unit-max)
+ 1324| 			(goal need-deathmatch-villagers NO)
+ 1325| 		)
+ 1326| 	)
+ 1327| =>
+ 1328| 	(train arbalest)
+ 1329| 	(set-goal secondary-build 0)
+ 1330| )
+
+ 1332| (defrule
+ 1333| 	(goal secondary-build 1)
+ 1334| 	(random-number == 3)
+ 1335| 	(can-train heavy-scorpion)
+ 1336| 	(or
+ 1337| 		(population < deathmatch-unit-max)
+ 1338| 		(and
+ 1339| 			(population < unit-max)
+ 1340| 			(goal need-deathmatch-villagers NO)
+ 1341| 		)
+ 1342| 	)
+ 1343| =>
+ 1344| 	(train heavy-scorpion)
+ 1345| 	(set-goal secondary-build 0)
+ 1346| )
+
+ 1550| (defrule
+ 1551| 	(can-train villager)
+ 1552| 	(or
+ 1553| 		(or
+ 1554| 			(civilian-population < 6)
+ 1555| 			(and
+ 1556| 				(current-age == feudal-age)
+ 1557| 				(civilian-population < 8)
+ 1558| 			)
+ 1559| 		)
+ 1560| 		(or
+ 1561| 			(and
+ 1562| 				(current-age == castle-age)
+ 1563| 				(civilian-population < 10)
+ 1564| 			)
+ 1565| 			(and
+ 1566| 				(current-age == imperial-age)
+ 1567| 				(civilian-population < civ-dark-rush)
+ 1568| 			)
+ 1569| 		)
+ 1570| 	)
+ 1571| =>
+ 1572| 	(train villager)
+ 1573| )
+
+ 1575| (defrule
+ 1576| 	(strategic-number sn-percent-civilian-gatherers == 90)
+ 1577| 	(civilian-population < civ-castle)
+ 1578| 	(can-train villager)
+ 1579| =>
+ 1580| 	(train villager)
+ 1581| )
+
+ 2256| (defrule
+ 2257| 	(building-type-count castle == 0)
+ 2258| 	(can-train militiaman-line)
+ 2259| 	(or
+ 2260| 		(population < deathmatch-unit-max)
+ 2261| 		(and
+ 2262| 			(population < unit-max)
+ 2263| 			(goal need-deathmatch-villagers NO)
+ 2264| 		)
+ 2265| 	)
+ 2266| 	(not (goal 36 NO) )
+ 2267| =>
+ 2268| 	(train militiaman-line)
+ 2269| )
+
+ 2271| (defrule
+ 2272| 	(building-type-count castle == 0)
+ 2273| 	(can-train knight-line)
+ 2274| 	(or
+ 2275| 		(population < deathmatch-unit-max)
+ 2276| 		(and
+ 2277| 			(population < unit-max)
+ 2278| 			(goal need-deathmatch-villagers NO)
+ 2279| 		)
+ 2280| 	)
+ 2281| 	(not (goal 37 NO) )
+ 2282| =>
+ 2283| 	(train knight-line)
+ 2284| )
+
+ 2286| (defrule
+ 2287| 	(building-type-count castle == 0)
+ 2288| 	(can-train cavalry-archer-line)
+ 2289| 	(or
+ 2290| 		(population < deathmatch-unit-max)
+ 2291| 		(and
+ 2292| 			(population < unit-max)
+ 2293| 			(goal need-deathmatch-villagers NO)
+ 2294| 		)
+ 2295| 	)
+ 2296| 	(not (goal 38 NO) )
+ 2297| =>
+ 2298| 	(train cavalry-archer-line)
+ 2299| )
+
+ 2301| (defrule
+ 2302| 	(building-type-count castle == 0)
+ 2303| 	(can-train archer-line)
+ 2304| 	(not (unit-available hand-cannoneer) )
+ 2305| 	(or
+ 2306| 		(population < deathmatch-unit-max)
+ 2307| 		(and
+ 2308| 			(population < unit-max)
+ 2309| 			(goal need-deathmatch-villagers NO)
+ 2310| 		)
+ 2311| 	)
+ 2312| 	(not (goal 39 NO) )
+ 2313| =>
+ 2314| 	(train archer-line)
+ 2315| )
+
+ 2317| (defrule
+ 2318| 	(building-type-count castle == 0)
+ 2319| 	(can-train hand-cannoneer)
+ 2320| 	(or
+ 2321| 		(population < deathmatch-unit-max)
+ 2322| 		(and
+ 2323| 			(population < unit-max)
+ 2324| 			(goal need-deathmatch-villagers NO)
+ 2325| 		)
+ 2326| 	)
+ 2327| 	(not (goal 39 NO) )
+ 2328| =>
+ 2329| 	(train hand-cannoneer)
+ 2330| )
+
+ 2332| (defrule
+ 2333| 	(can-train my-unique-unit-line)
+ 2334| 	(or
+ 2335| 		(population < deathmatch-unit-max)
+ 2336| 		(and
+ 2337| 			(population < unit-max)
+ 2338| 			(goal need-deathmatch-villagers NO)
+ 2339| 		)
+ 2340| 	)
+ 2341| =>
+ 2342| 	(train my-unique-unit-line)
+ 2343| 	(set-goal secondary-build 1)
+ 2344| )
+
+ 2347| (defrule
+ 2348| 	(unit-type-count my-unique-unit-line > ten-percent-pop)
+ 2349| 	(unit-type-count-total monk == 0)
+ 2350| 	(goal monk-rating POOR)
+ 2351| 	(can-train monk)
+ 2352| =>
+ 2353| 	(train monk)
+ 2354| )
+
+ 2356| (defrule
+ 2357| 	(unit-type-count my-unique-unit-line > ten-percent-pop)
+ 2358| 	(unit-type-count-total monk < five-percent-pop)
+ 2359| 	(goal monk-rating FAIR)
+ 2360| 	(can-train monk)
+ 2361| =>
+ 2362| 	(train monk)
+ 2363| )
+
+ 2365| (defrule
+ 2366| 	(unit-type-count my-unique-unit-line > ten-percent-pop)
+ 2367| 	(unit-type-count-total monk < ten-percent-pop)
+ 2368| 	(goal monk-rating GOOD)
+ 2369| 	(can-train monk)
+ 2370| =>
+ 2371| 	(train monk)
+ 2372| )
+
+
+=== rules containing (build ...) : only conditions ===
+ 1589| (defrule (building-type-count-total lumber-camp > 0) (idle-farm-count == 0) (sheep-and-forage-too-far) (can-build farm) =>   ==> (build farm)
+ 1679| (defrule (difficulty <= moderate) (building-type-count-total house <= fifteen-percent-pop) (can-build house) =>   ==> (build house)
+ 1689| (defrule (military-population < 10) (housing-headroom < 5) (population-headroom > 0) (can-build house) =>   ==> (build house)
+ 1700| (defrule (military-population < civ-dark-rush) (housing-headroom < 5) (population-headroom > 0) (can-build house) =>   ==> (build house)
+ 1710| (defrule (strategic-number sn-gold-gatherer-percentage > 0) (building-type-count mining-camp == 0) (resource-found gold) (can-build mining-camp) =>   ==> (build mining-camp)
+ 1718| (defrule (strategic-number sn-wood-gatherer-percentage > 0) (building-type-count lumber-camp == 0) (can-build lumber-camp) =>   ==> (build lumber-camp)
+ 1728| (defrule (current-age == imperial-age) (building-type-count siege-workshop > 0) (building-type-count castle > 0) (building-type-count town-center < 3) (can-build town-center) =>   ==> (build town-center)
+ 1744| (defrule (strategic-number sn-percent-civilian-gatherers >= 85) (timer-triggered t-lumbercamp) (resource-found gold) (resource-found stone) (or (dropsite-min-distance gold > 7) (dropsite-min-distance stone > 7) ) (can-build town-center) =>   ==> (build town-center)
+ 1754| (defrule (strategic-number sn-percent-civilian-gatherers >= 85) (timer-triggered t-lumbercamp) (resource-found wood) (dropsite-min-distance wood > 7) (can-build town-center) =>   ==> (build town-center)
+ 1769| (defrule (building-type-count-total mill == 0) (building-type-count-total market == 0) (can-build mill) =>   ==> (build mill)
+ 1776| (defrule (building-type-count-total market == 0) (can-build market) =>   ==> (build market)
+ 1783| (defrule (building-type-count-total monastery < 3) (can-build monastery) =>   ==> (build monastery)
+ 1790| (defrule (can-build barracks) (building-type-count-total barracks < 2) =>   ==> (build barracks)
+ 1805| (defrule (building-type-count-total archery-range < 2) (can-build archery-range) =>   ==> (build archery-range)
+ 1820| (defrule (building-type-count-total stable < 2) (can-build stable) =>   ==> (build stable)
+ 1835| (defrule (building-type-count-total siege-workshop < 2) (can-build siege-workshop) =>   ==> (build siege-workshop)
+ 1851| (defrule (building-type-count-total castle < 3) (can-build castle) =>   ==> (build castle)
+ 1876| (defrule (or (and (goal 1 1) (building-type-count-total dock < 2) ) (and (goal 1 10) (building-type-count-total dock < 4) ) ) (can-build dock) =>   ==> (build dock)
+ 1883| (defrule (building-type-count-total blacksmith < 2) (can-build blacksmith) =>   ==> (build blacksmith)
+ 1890| (defrule (building-type-count-total university == 0) (can-build university) =>   ==> (build university)
+
+=== constants file: unit-max / deathmatch-unit-max blocks ===
+  242| ;*************************************************************
+  243| #load-if-defined POPULATION-CAP-25
+  244| (defconst civ-dark-rush 10)
+  245| (defconst civ-dark 11)
+  246| (defconst civ-dark-mod 10)
+  247| (defconst civ-feudal-mod 12)
+  248| (defconst civ-feudal 13)
+  249| (defconst civ-castle 15)
+  250| (defconst pop-cap 25)
+  251| (defconst deathmatch-unit-max 13)
+  252| 
+   ---
+  243| #load-if-defined POPULATION-CAP-25
+  244| (defconst civ-dark-rush 10)
+  245| (defconst civ-dark 11)
+  246| (defconst civ-dark-mod 10)
+  247| (defconst civ-feudal-mod 12)
+  248| (defconst civ-feudal 13)
+  249| (defconst civ-castle 15)
+  250| (defconst pop-cap 25)
+  251| (defconst deathmatch-unit-max 13)
+  252| 
+  253| (defconst feudal-town-size 20)
+   ---
+  251| (defconst deathmatch-unit-max 13)
+  252| 
+  253| (defconst feudal-town-size 20)
+  254| (defconst castle-town-size 25)
+  255| (defconst imperial-town-size 25)
+  256| (defconst town-center-count 2)
+  257| 
+  258| #load-if-defined DIFFICULTY-EASIEST
+  259| (defconst unit-max 19)
+  260| #end-if
+  261| 
+   ---
+  255| (defconst imperial-town-size 25)
+  256| (defconst town-center-count 2)
+  257| 
+  258| #load-if-defined DIFFICULTY-EASIEST
+  259| (defconst unit-max 19)
+  260| #end-if
+  261| 
+  262| #load-if-defined DIFFICULTY-EASY
+  263| (defconst unit-max 19)
+  264| #end-if
+  265| 
+   ---
+  259| (defconst unit-max 19)
+  260| #end-if
+  261| 
+  262| #load-if-defined DIFFICULTY-EASY
+  263| (defconst unit-max 19)
+  264| #end-if
+  265| 
+  266| #load-if-defined DIFFICULTY-MODERATE
+  267| (defconst unit-max 21)
+  268| #end-if
+  269| 
+   ---
+  263| (defconst unit-max 19)
+  264| #end-if
+  265| 
+  266| #load-if-defined DIFFICULTY-MODERATE
+  267| (defconst unit-max 21)
+  268| #end-if
+  269| 
+  270| #load-if-defined DIFFICULTY-HARD
+  271| (defconst unit-max 23)
+  272| #end-if
+  273| 
+   ---
+  267| (defconst unit-max 21)
+  268| #end-if
+  269| 
+  270| #load-if-defined DIFFICULTY-HARD
+  271| (defconst unit-max 23)
+  272| #end-if
+  273| 
+  274| #load-if-defined DIFFICULTY-HARDEST
+  275| (defconst unit-max 23)
+  276| #end-if
+  277| 
+   ---
+  270| #load-if-defined DIFFICULTY-HARD
+  271| (defconst unit-max 23)
+  272| #end-if
+  273| 
+  274| #load-if-defined DIFFICULTY-HARDEST
+  275| (defconst unit-max 23)
+  276| #end-if
+  277| 
+  278| (defconst five-percent-pop 1)
+  279| (defconst ten-percent-pop 3)
+  280| (defconst fifteen-percent-pop 4)
+   ---
+  271| (defconst unit-max 23)
+  272| #end-if
+  273| 
+  274| #load-if-defined DIFFICULTY-HARDEST
+  275| (defconst unit-max 23)
+  276| #end-if
+  277| 
+  278| (defconst five-percent-pop 1)
+  279| (defconst ten-percent-pop 3)
+  280| (defconst fifteen-percent-pop 4)
+  281| (defconst twenty-percent-pop 5)
+   ---
+  272| #end-if
+  273| 
+  274| #load-if-defined DIFFICULTY-HARDEST
+  275| (defconst unit-max 23)
+  276| #end-if
+  277| 
+  278| (defconst five-percent-pop 1)
+  279| (defconst ten-percent-pop 3)
+  280| (defconst fifteen-percent-pop 4)
+  281| (defconst twenty-percent-pop 5)
+  282| (defconst thirty-percent-pop 8)
+   ---
+  273| 
+  274| #load-if-defined DIFFICULTY-HARDEST
+  275| (defconst unit-max 23)
+  276| #end-if
+  277| 
+  278| (defconst five-percent-pop 1)
+  279| (defconst ten-percent-pop 3)
+  280| (defconst fifteen-percent-pop 4)
+  281| (defconst twenty-percent-pop 5)
+  282| (defconst thirty-percent-pop 8)
+  283| (defconst fifty-percent-pop 12)
+   ---
+  274| #load-if-defined DIFFICULTY-HARDEST
+  275| (defconst unit-max 23)
+  276| #end-if
+  277| 
+  278| (defconst five-percent-pop 1)
+  279| (defconst ten-percent-pop 3)
+  280| (defconst fifteen-percent-pop 4)
+  281| (defconst twenty-percent-pop 5)
+  282| (defconst thirty-percent-pop 8)
+  283| (defconst fifty-percent-pop 12)
+  284| #end-if
+   ---
+  275| (defconst unit-max 23)
+  276| #end-if
+  277| 
+  278| (defconst five-percent-pop 1)
+  279| (defconst ten-percent-pop 3)
+  280| (defconst fifteen-percent-pop 4)
+  281| (defconst twenty-percent-pop 5)
+  282| (defconst thirty-percent-pop 8)
+  283| (defconst fifty-percent-pop 12)
+  284| #end-if
+  285| ;***************************
+   ---
+  285| ;***************************
+  286| #load-if-defined POPULATION-CAP-50
+  287| (defconst civ-dark-rush 15)
+  288| (defconst civ-dark 20)
+  289| (defconst civ-dark-mod 15)
+  290| (defconst civ-feudal-mod 20)
+  291| (defconst civ-feudal 30)
+  292| (defconst civ-castle 35)
+  293| (defconst pop-cap 50)
+  294| (defconst deathmatch-unit-max 25)
+  295| 
+   ---
+  286| #load-if-defined POPULATION-CAP-50
+  287| (defconst civ-dark-rush 15)
+  288| (defconst civ-dark 20)
+  289| (defconst civ-dark-mod 15)
+  290| (defconst civ-feudal-mod 20)
+  291| (defconst civ-feudal 30)
+  292| (defconst civ-castle 35)
+  293| (defconst pop-cap 50)
+  294| (defconst deathmatch-unit-max 25)
+  295| 
+  296| (defconst feudal-town-size 20)
+   ---
+  294| (defconst deathmatch-unit-max 25)
+  295| 
+  296| (defconst feudal-town-size 20)
+  297| (defconst castle-town-size 25)
+  298| (defconst imperial-town-size 30)
+  299| (defconst town-center-count 3)
+  300| 
+  301| #load-if-defined DIFFICULTY-EASIEST
+  302| (defconst unit-max 35)
+  303| #end-if
+  304| 
+   ---
+  298| (defconst imperial-town-size 30)
+  299| (defconst town-center-count 3)
+  300| 
+  301| #load-if-defined DIFFICULTY-EASIEST
+  302| (defconst unit-max 35)
+  303| #end-if
+  304| 
+  305| #load-if-defined DIFFICULTY-EASY
+  306| (defconst unit-max 35)
+  307| #end-if
+  308| 
+   ---
+  302| (defconst unit-max 35)
+  303| #end-if
+  304| 
+  305| #load-if-defined DIFFICULTY-EASY
+  306| (defconst unit-max 35)
+  307| #end-if
+  308| 
+  309| #load-if-defined DIFFICULTY-MODERATE
+  310| (defconst unit-max 40)
+  311| #end-if
+  312| 
+   ---
+  306| (defconst unit-max 35)
+  307| #end-if
+  308| 
+  309| #load-if-defined DIFFICULTY-MODERATE
+  310| (defconst unit-max 40)
+  311| #end-if
+  312| 
+  313| #load-if-defined DIFFICULTY-HARD
+  314| (defconst unit-max 45)
+  315| #end-if
+  316| 
+   ---
+  310| (defconst unit-max 40)
+  311| #end-if
+  312| 
+  313| #load-if-defined DIFFICULTY-HARD
+  314| (defconst unit-max 45)
+  315| #end-if
+  316| 
+  317| #load-if-defined DIFFICULTY-HARDEST
+  318| (defconst unit-max 45)
+  319| #end-if
+  320| 
+   ---
+  313| #load-if-defined DIFFICULTY-HARD
+  314| (defconst unit-max 45)
+  315| #end-if
+  316| 
+  317| #load-if-defined DIFFICULTY-HARDEST
+  318| (defconst unit-max 45)
+  319| #end-if
+  320| 
+  321| (defconst five-percent-pop 2)
+  322| (defconst ten-percent-pop 5)
+  323| (defconst fifteen-percent-pop 7)
+   ---
+  314| (defconst unit-max 45)
+  315| #end-if
+  316| 
+  317| #load-if-defined DIFFICULTY-HARDEST
+  318| (defconst unit-max 45)
+  319| #end-if
+  320| 
+  321| (defconst five-percent-pop 2)
+  322| (defconst ten-percent-pop 5)
+  323| (defconst fifteen-percent-pop 7)
+  324| (defconst twenty-percent-pop 10)
+   ---
+  315| #end-if
+  316| 
+  317| #load-if-defined DIFFICULTY-HARDEST
+  318| (defconst unit-max 45)
+  319| #end-if
+  320| 
+  321| (defconst five-percent-pop 2)
+  322| (defconst ten-percent-pop 5)
+  323| (defconst fifteen-percent-pop 7)
+  324| (defconst twenty-percent-pop 10)
+  325| (defconst thirty-percent-pop 15)
+   ---
+  316| 
+  317| #load-if-defined DIFFICULTY-HARDEST
+  318| (defconst unit-max 45)
+  319| #end-if
+  320| 
+  321| (defconst five-percent-pop 2)
+  322| (defconst ten-percent-pop 5)
+  323| (defconst fifteen-percent-pop 7)
+  324| (defconst twenty-percent-pop 10)
+  325| (defconst thirty-percent-pop 15)
+  326| (defconst fifty-percent-pop 25)
+   ---
+  317| #load-if-defined DIFFICULTY-HARDEST
+  318| (defconst unit-max 45)
+  319| #end-if
+  320| 
+  321| (defconst five-percent-pop 2)
+  322| (defconst ten-percent-pop 5)
+  323| (defconst fifteen-percent-pop 7)
+  324| (defconst twenty-percent-pop 10)
+  325| (defconst thirty-percent-pop 15)
+  326| (defconst fifty-percent-pop 25)
+  327| #end-if
+   ---
+  318| (defconst unit-max 45)
+  319| #end-if
+  320| 
+  321| (defconst five-percent-pop 2)
+  322| (defconst ten-percent-pop 5)
+  323| (defconst fifteen-percent-pop 7)
+  324| (defconst twenty-percent-pop 10)
+  325| (defconst thirty-percent-pop 15)
+  326| (defconst fifty-percent-pop 25)
+  327| #end-if
+  328| ;***************************
+   ---
+  328| ;***************************
+  329| #load-if-defined POPULATION-CAP-75
+  330| (defconst civ-dark-rush 20)
+  331| (defconst civ-dark 25)
+  332| (defconst civ-dark-mod 15)
+  333| (defconst civ-feudal-mod 20)
+  334| (defconst civ-feudal 35)
+  335| (defconst civ-castle 40)
+  336| (defconst pop-cap 75)
+  337| (defconst deathmatch-unit-max 55)
+  338| 
+   ---
+  329| #load-if-defined POPULATION-CAP-75
+  330| (defconst civ-dark-rush 20)
+  331| (defconst civ-dark 25)
+  332| (defconst civ-dark-mod 15)
+  333| (defconst civ-feudal-mod 20)
+  334| (defconst civ-feudal 35)
+  335| (defconst civ-castle 40)
+  336| (defconst pop-cap 75)
+  337| (defconst deathmatch-unit-max 55)
+  338| 
+  339| (defconst feudal-town-size 20)
+   ---
+  337| (defconst deathmatch-unit-max 55)
+  338| 
+  339| (defconst feudal-town-size 20)
+  340| (defconst castle-town-size 30)
+  341| (defconst imperial-town-size 30)
+  342| (defconst town-center-count 4)
+  343| 
+  344| #load-if-defined DIFFICULTY-EASIEST
+  345| (defconst unit-max 56)
+  346| #end-if
+  347| 
+   ---
+  341| (defconst imperial-town-size 30)
+  342| (defconst town-center-count 4)
+  343| 
+  344| #load-if-defined DIFFICULTY-EASIEST
+  345| (defconst unit-max 56)
+  346| #end-if
+  347| 
+  348| #load-if-defined DIFFICULTY-EASY
+  349| (defconst unit-max 56)
+  350| #end-if
+  351| 
+   ---
+  345| (defconst unit-max 56)
+  346| #end-if
+  347| 
+  348| #load-if-defined DIFFICULTY-EASY
+  349| (defconst unit-max 56)
+  350| #end-if
+  351| 
+  352| #load-if-defined DIFFICULTY-MODERATE
+  353| (defconst unit-max 63)
+  354| #end-if
+  355| 
+   ---
+  349| (defconst unit-max 56)
+  350| #end-if
+  351| 
+  352| #load-if-defined DIFFICULTY-MODERATE
+  353| (defconst unit-max 63)
+  354| #end-if
+  355| 
+  356| #load-if-defined DIFFICULTY-HARD
+  357| (defconst unit-max 70)
+  358| #end-if
+  359| 
+   ---
+  353| (defconst unit-max 63)
+  354| #end-if
+  355| 
+  356| #load-if-defined DIFFICULTY-HARD
+  357| (defconst unit-max 70)
+  358| #end-if
+  359| 
+  360| #load-if-defined DIFFICULTY-HARDEST
+  361| (defconst unit-max 70)
+  362| #end-if
+  363| 
+   ---
+  356| #load-if-defined DIFFICULTY-HARD
+  357| (defconst unit-max 70)
+  358| #end-if
+  359| 
+  360| #load-if-defined DIFFICULTY-HARDEST
+  361| (defconst unit-max 70)
+  362| #end-if
+  363| 
+  364| (defconst five-percent-pop 3)
+  365| (defconst ten-percent-pop 8)
+  366| (defconst fifteen-percent-pop 10)
+   ---
+  357| (defconst unit-max 70)
+  358| #end-if
+  359| 
+  360| #load-if-defined DIFFICULTY-HARDEST
+  361| (defconst unit-max 70)
+  362| #end-if
+  363| 
+  364| (defconst five-percent-pop 3)
+  365| (defconst ten-percent-pop 8)
+  366| (defconst fifteen-percent-pop 10)
+  367| (defconst twenty-percent-pop 15)
+   ---
+  358| #end-if
+  359| 
+  360| #load-if-defined DIFFICULTY-HARDEST
+  361| (defconst unit-max 70)
+  362| #end-if
+  363| 
+  364| (defconst five-percent-pop 3)
+  365| (defconst ten-percent-pop 8)
+  366| (defconst fifteen-percent-pop 10)
+  367| (defconst twenty-percent-pop 15)
+  368| (defconst thirty-percent-pop 23)
+   ---
+  359| 
+  360| #load-if-defined DIFFICULTY-HARDEST
+  361| (defconst unit-max 70)
+  362| #end-if
+  363| 
+  364| (defconst five-percent-pop 3)
+  365| (defconst ten-percent-pop 8)
+  366| (defconst fifteen-percent-pop 10)
+  367| (defconst twenty-percent-pop 15)
+  368| (defconst thirty-percent-pop 23)
+  369| (defconst fifty-percent-pop 37)
+   ---
+  360| #load-if-defined DIFFICULTY-HARDEST
+  361| (defconst unit-max 70)
+  362| #end-if
+  363| 
+  364| (defconst five-percent-pop 3)
+  365| (defconst ten-percent-pop 8)
+  366| (defconst fifteen-percent-pop 10)
+  367| (defconst twenty-percent-pop 15)
+  368| (defconst thirty-percent-pop 23)
+  369| (defconst fifty-percent-pop 37)
+  370| #end-if
+   ---
+  361| (defconst unit-max 70)
+  362| #end-if
+  363| 
+  364| (defconst five-percent-pop 3)
+  365| (defconst ten-percent-pop 8)
+  366| (defconst fifteen-percent-pop 10)
+  367| (defconst twenty-percent-pop 15)
+  368| (defconst thirty-percent-pop 23)
+  369| (defconst fifty-percent-pop 37)
+  370| #end-if
+  371| ;***************************
+   ---
+  371| ;***************************
+  372| #load-if-defined POPULATION-CAP-100
+  373| (defconst civ-dark-rush 20)
+  374| (defconst civ-dark 25)
+  375| (defconst civ-dark-mod 15)
+  376| (defconst civ-feudal-mod 20)
+  377| (defconst civ-feudal 40)
+  378| (defconst civ-castle 50)
+  379| (defconst pop-cap 100)
+  380| (defconst deathmatch-unit-max 70)
+  381| 
+   ---
+  372| #load-if-defined POPULATION-CAP-100
+  373| (defconst civ-dark-rush 20)
+  374| (defconst civ-dark 25)
+  375| (defconst civ-dark-mod 15)
+  376| (defconst civ-feudal-mod 20)
+  377| (defconst civ-feudal 40)
+  378| (defconst civ-castle 50)
+  379| (defconst pop-cap 100)
+  380| (defconst deathmatch-unit-max 70)
+  381| 
+  382| (defconst feudal-town-size 20)
+   ---
+  380| (defconst deathmatch-unit-max 70)
+  381| 
+  382| (defconst feudal-town-size 20)
+  383| (defconst castle-town-size 30)
+  384| (defconst imperial-town-size 35)
+  385| (defconst town-center-count 5)
+  386| 
+  387| #load-if-defined DIFFICULTY-EASIEST
+  388| (defconst unit-max 70)
+  389| #end-if
+  390| 
+   ---
+  384| (defconst imperial-town-size 35)
+  385| (defconst town-center-count 5)
+  386| 
+  387| #load-if-defined DIFFICULTY-EASIEST
+  388| (defconst unit-max 70)
+  389| #end-if
+  390| 
+  391| #load-if-defined DIFFICULTY-EASY
+  392| (defconst unit-max 70)
+  393| #end-if
+  394| 
+   ---
+  388| (defconst unit-max 70)
+  389| #end-if
+  390| 
+  391| #load-if-defined DIFFICULTY-EASY
+  392| (defconst unit-max 70)
+  393| #end-if
+  394| 
+  395| #load-if-defined DIFFICULTY-MODERATE
+  396| (defconst unit-max 80)
+  397| #end-if
+  398| 
+   ---
+  392| (defconst unit-max 70)
+  393| #end-if
+  394| 
+  395| #load-if-defined DIFFICULTY-MODERATE
+  396| (defconst unit-max 80)
+  397| #end-if
+  398| 
+  399| #load-if-defined DIFFICULTY-HARD
+  400| (defconst unit-max 90)
+  401| #end-if
+  402| 
+   ---
+  396| (defconst unit-max 80)
+  397| #end-if
+  398| 
+  399| #load-if-defined DIFFICULTY-HARD
+  400| (defconst unit-max 90)
+  401| #end-if
+  402| 
+  403| #load-if-defined DIFFICULTY-HARDEST
+  404| (defconst unit-max 90)
+  405| #end-if
+  406| 
+   ---
+  399| #load-if-defined DIFFICULTY-HARD
+  400| (defconst unit-max 90)
+  401| #end-if
+  402| 
+  403| #load-if-defined DIFFICULTY-HARDEST
+  404| (defconst unit-max 90)
+  405| #end-if
+  406| 
+  407| (defconst five-percent-pop 5)
+  408| (defconst ten-percent-pop 10)
+  409| (defconst fifteen-percent-pop 15)
+   ---
+  400| (defconst unit-max 90)
+  401| #end-if
+  402| 
+  403| #load-if-defined DIFFICULTY-HARDEST
+  404| (defconst unit-max 90)
+  405| #end-if
+  406| 
+  407| (defconst five-percent-pop 5)
+  408| (defconst ten-percent-pop 10)
+  409| (defconst fifteen-percent-pop 15)
+  410| (defconst twenty-percent-pop 20)
+   ---
+  401| #end-if
+  402| 
+  403| #load-if-defined DIFFICULTY-HARDEST
+  404| (defconst unit-max 90)
+  405| #end-if
+  406| 
+  407| (defconst five-percent-pop 5)
+  408| (defconst ten-percent-pop 10)
+  409| (defconst fifteen-percent-pop 15)
+  410| (defconst twenty-percent-pop 20)
+  411| (defconst thirty-percent-pop 30)
+   ---
+  402| 
+  403| #load-if-defined DIFFICULTY-HARDEST
+  404| (defconst unit-max 90)
+  405| #end-if
+  406| 
+  407| (defconst five-percent-pop 5)
+  408| (defconst ten-percent-pop 10)
+  409| (defconst fifteen-percent-pop 15)
+  410| (defconst twenty-percent-pop 20)
+  411| (defconst thirty-percent-pop 30)
+  412| (defconst fifty-percent-pop 50)
+   ---
+  403| #load-if-defined DIFFICULTY-HARDEST
+  404| (defconst unit-max 90)
+  405| #end-if
+  406| 
+  407| (defconst five-percent-pop 5)
+  408| (defconst ten-percent-pop 10)
+  409| (defconst fifteen-percent-pop 15)
+  410| (defconst twenty-percent-pop 20)
+  411| (defconst thirty-percent-pop 30)
+  412| (defconst fifty-percent-pop 50)
+  413| #end-if
+   ---
+  404| (defconst unit-max 90)
+  405| #end-if
+  406| 
+  407| (defconst five-percent-pop 5)
+  408| (defconst ten-percent-pop 10)
+  409| (defconst fifteen-percent-pop 15)
+  410| (defconst twenty-percent-pop 20)
+  411| (defconst thirty-percent-pop 30)
+  412| (defconst fifty-percent-pop 50)
+  413| #end-if
+  414| ;***************************
+   ---
+  414| ;***************************
+  415| #load-if-defined POPULATION-CAP-125
+  416| (defconst civ-dark-rush 20)
+  417| (defconst civ-dark 25)
+  418| (defconst civ-dark-mod 15)
+  419| (defconst civ-feudal-mod 20)
+  420| (defconst civ-feudal 40)
+  421| (defconst civ-castle 55)
+  422| (defconst pop-cap 125)
+  423| (defconst deathmatch-unit-max 95)
+  424| (defconst town-center-count 6)
+   ---
+  415| #load-if-defined POPULATION-CAP-125
+  416| (defconst civ-dark-rush 20)
+  417| (defconst civ-dark 25)
+  418| (defconst civ-dark-mod 15)
+  419| (defconst civ-feudal-mod 20)
+  420| (defconst civ-feudal 40)
+  421| (defconst civ-castle 55)
+  422| (defconst pop-cap 125)
+  423| (defconst deathmatch-unit-max 95)
+  424| (defconst town-center-count 6)
+  425| 
+   ---
+  423| (defconst deathmatch-unit-max 95)
+  424| (defconst town-center-count 6)
+  425| 
+  426| (defconst feudal-town-size 20)
+  427| (defconst castle-town-size 35)
+  428| (defconst imperial-town-size 40)
+  429| 
+  430| #load-if-defined DIFFICULTY-EASIEST
+  431| (defconst unit-max 90)
+  432| #end-if
+  433| 
+   ---
+  427| (defconst castle-town-size 35)
+  428| (defconst imperial-town-size 40)
+  429| 
+  430| #load-if-defined DIFFICULTY-EASIEST
+  431| (defconst unit-max 90)
+  432| #end-if
+  433| 
+  434| #load-if-defined DIFFICULTY-EASY
+  435| (defconst unit-max 90)
+  436| #end-if
+  437| 
+   ---
+  431| (defconst unit-max 90)
+  432| #end-if
+  433| 
+  434| #load-if-defined DIFFICULTY-EASY
+  435| (defconst unit-max 90)
+  436| #end-if
+  437| 
+  438| #load-if-defined DIFFICULTY-MODERATE
+  439| (defconst unit-max 103)
+  440| #end-if
+  441| 
+   ---
+  435| (defconst unit-max 90)
+  436| #end-if
+  437| 
+  438| #load-if-defined DIFFICULTY-MODERATE
+  439| (defconst unit-max 103)
+  440| #end-if
+  441| 
+  442| #load-if-defined DIFFICULTY-HARD
+  443| (defconst unit-max 115)
+  444| #end-if
+  445| 
+   ---
+  439| (defconst unit-max 103)
+  440| #end-if
+  441| 
+  442| #load-if-defined DIFFICULTY-HARD
+  443| (defconst unit-max 115)
+  444| #end-if
+  445| 
+  446| #load-if-defined DIFFICULTY-HARDEST
+  447| (defconst unit-max 115)
+  448| #end-if
+  449| 
+   ---
+  442| #load-if-defined DIFFICULTY-HARD
+  443| (defconst unit-max 115)
+  444| #end-if
+  445| 
+  446| #load-if-defined DIFFICULTY-HARDEST
+  447| (defconst unit-max 115)
+  448| #end-if
+  449| 
+  450| (defconst five-percent-pop 6)
+  451| (defconst ten-percent-pop 13)
+  452| (defconst fifteen-percent-pop 18)
+   ---
+  443| (defconst unit-max 115)
+  444| #end-if
+  445| 
+  446| #load-if-defined DIFFICULTY-HARDEST
+  447| (defconst unit-max 115)
+  448| #end-if
+  449| 
+  450| (defconst five-percent-pop 6)
+  451| (defconst ten-percent-pop 13)
+  452| (defconst fifteen-percent-pop 18)
+  453| (defconst twenty-percent-pop 25)
+   ---
+  444| #end-if
+  445| 
+  446| #load-if-defined DIFFICULTY-HARDEST
+  447| (defconst unit-max 115)
+  448| #end-if
+  449| 
+  450| (defconst five-percent-pop 6)
+  451| (defconst ten-percent-pop 13)
+  452| (defconst fifteen-percent-pop 18)
+  453| (defconst twenty-percent-pop 25)
+  454| (defconst thirty-percent-pop 38)
+   ---
+  445| 
+  446| #load-if-defined DIFFICULTY-HARDEST
+  447| (defconst unit-max 115)
+  448| #end-if
+  449| 
+  450| (defconst five-percent-pop 6)
+  451| (defconst ten-percent-pop 13)
+  452| (defconst fifteen-percent-pop 18)
+  453| (defconst twenty-percent-pop 25)
+  454| (defconst thirty-percent-pop 38)
+  455| (defconst fifty-percent-pop 62)
+   ---
+  446| #load-if-defined DIFFICULTY-HARDEST
+  447| (defconst unit-max 115)
+  448| #end-if
+  449| 
+  450| (defconst five-percent-pop 6)
+  451| (defconst ten-percent-pop 13)
+  452| (defconst fifteen-percent-pop 18)
+  453| (defconst twenty-percent-pop 25)
+  454| (defconst thirty-percent-pop 38)
+  455| (defconst fifty-percent-pop 62)
+  456| #end-if
+   ---
+  447| (defconst unit-max 115)
+  448| #end-if
+  449| 
+  450| (defconst five-percent-pop 6)
+  451| (defconst ten-percent-pop 13)
+  452| (defconst fifteen-percent-pop 18)
+  453| (defconst twenty-percent-pop 25)
+  454| (defconst thirty-percent-pop 38)
+  455| (defconst fifty-percent-pop 62)
+  456| #end-if
+  457| ;***************************
+   ---
+  457| ;***************************
+  458| #load-if-defined POPULATION-CAP-150
+  459| (defconst civ-dark-rush 20)
+  460| (defconst civ-dark 25)
+  461| (defconst civ-dark-mod 15)
+  462| (defconst civ-feudal-mod 20)
+  463| (defconst civ-feudal 40)
+  464| (defconst civ-castle 60)
+  465| (defconst pop-cap 150)
+  466| (defconst deathmatch-unit-max 120)
+  467| 
+   ---
+  458| #load-if-defined POPULATION-CAP-150
+  459| (defconst civ-dark-rush 20)
+  460| (defconst civ-dark 25)
+  461| (defconst civ-dark-mod 15)
+  462| (defconst civ-feudal-mod 20)
+  463| (defconst civ-feudal 40)
+  464| (defconst civ-castle 60)
+  465| (defconst pop-cap 150)
+  466| (defconst deathmatch-unit-max 120)
+  467| 
+  468| (defconst feudal-town-size 20)
+   ---
+  466| (defconst deathmatch-unit-max 120)
+  467| 
+  468| (defconst feudal-town-size 20)
+  469| (defconst castle-town-size 35)
+  470| (defconst imperial-town-size 40)
+  471| (defconst town-center-count 7)
+  472| 
+  473| #load-if-defined DIFFICULTY-EASIEST
+  474| (defconst unit-max 110)
+  475| #end-if
+  476| 
+   ---
+  470| (defconst imperial-town-size 40)
+  471| (defconst town-center-count 7)
+  472| 
+  473| #load-if-defined DIFFICULTY-EASIEST
+  474| (defconst unit-max 110)
+  475| #end-if
+  476| 
+  477| #load-if-defined DIFFICULTY-EASY
+  478| (defconst unit-max 110)
+  479| #end-if
+  480| 
+   ---
+  474| (defconst unit-max 110)
+  475| #end-if
+  476| 
+  477| #load-if-defined DIFFICULTY-EASY
+  478| (defconst unit-max 110)
+  479| #end-if
+  480| 
+  481| #load-if-defined DIFFICULTY-MODERATE
+  482| (defconst unit-max 125)
+  483| #end-if
+  484| 
+   ---
+  478| (defconst unit-max 110)
+  479| #end-if
+  480| 
+  481| #load-if-defined DIFFICULTY-MODERATE
+  482| (defconst unit-max 125)
+  483| #end-if
+  484| 
+  485| #load-if-defined DIFFICULTY-HARD
+  486| (defconst unit-max 140)
+  487| #end-if
+  488| 
+   ---
+  482| (defconst unit-max 125)
+  483| #end-if
+  484| 
+  485| #load-if-defined DIFFICULTY-HARD
+  486| (defconst unit-max 140)
+  487| #end-if
+  488| 
+  489| #load-if-defined DIFFICULTY-HARDEST
+  490| (defconst unit-max 140)
+  491| #end-if
+  492| 
+   ---
+  485| #load-if-defined DIFFICULTY-HARD
+  486| (defconst unit-max 140)
+  487| #end-if
+  488| 
+  489| #load-if-defined DIFFICULTY-HARDEST
+  490| (defconst unit-max 140)
+  491| #end-if
+  492| 
+  493| (defconst five-percent-pop 7)
+  494| (defconst ten-percent-pop 15)
+  495| (defconst fifteen-percent-pop 22)
+   ---
+  486| (defconst unit-max 140)
+  487| #end-if
+  488| 
+  489| #load-if-defined DIFFICULTY-HARDEST
+  490| (defconst unit-max 140)
+  491| #end-if
+  492| 
+  493| (defconst five-percent-pop 7)
+  494| (defconst ten-percent-pop 15)
+  495| (defconst fifteen-percent-pop 22)
+  496| (defconst twenty-percent-pop 30)
+   ---
+  487| #end-if
+  488| 
+  489| #load-if-defined DIFFICULTY-HARDEST
+  490| (defconst unit-max 140)
+  491| #end-if
+  492| 
+  493| (defconst five-percent-pop 7)
+  494| (defconst ten-percent-pop 15)
+  495| (defconst fifteen-percent-pop 22)
+  496| (defconst twenty-percent-pop 30)
+  497| (defconst thirty-percent-pop 45)
+   ---
+  488| 
+  489| #load-if-defined DIFFICULTY-HARDEST
+  490| (defconst unit-max 140)
+  491| #end-if
+  492| 
+  493| (defconst five-percent-pop 7)
+  494| (defconst ten-percent-pop 15)
+  495| (defconst fifteen-percent-pop 22)
+  496| (defconst twenty-percent-pop 30)
+  497| (defconst thirty-percent-pop 45)
+  498| (defconst fifty-percent-pop 75)
+   ---
+  489| #load-if-defined DIFFICULTY-HARDEST
+  490| (defconst unit-max 140)
+  491| #end-if
+  492| 
+  493| (defconst five-percent-pop 7)
+  494| (defconst ten-percent-pop 15)
+  495| (defconst fifteen-percent-pop 22)
+  496| (defconst twenty-percent-pop 30)
+  497| (defconst thirty-percent-pop 45)
+  498| (defconst fifty-percent-pop 75)
+  499| #end-if
+   ---
+  490| (defconst unit-max 140)
+  491| #end-if
+  492| 
+  493| (defconst five-percent-pop 7)
+  494| (defconst ten-percent-pop 15)
+  495| (defconst fifteen-percent-pop 22)
+  496| (defconst twenty-percent-pop 30)
+  497| (defconst thirty-percent-pop 45)
+  498| (defconst fifty-percent-pop 75)
+  499| #end-if
+  500| ;***************************
+   ---
+  500| ;***************************
+  501| #load-if-defined POPULATION-CAP-175
+  502| (defconst civ-dark-rush 20)
+  503| (defconst civ-dark 25)
+  504| (defconst civ-dark-mod 15)
+  505| (defconst civ-feudal-mod 20)
+  506| (defconst civ-feudal 40)
+  507| (defconst civ-castle 65)
+  508| (defconst pop-cap 175)
+  509| (defconst deathmatch-unit-max 145)
+  510| 
+   ---
+  501| #load-if-defined POPULATION-CAP-175
+  502| (defconst civ-dark-rush 20)
+  503| (defconst civ-dark 25)
+  504| (defconst civ-dark-mod 15)
+  505| (defconst civ-feudal-mod 20)
+  506| (defconst civ-feudal 40)
+  507| (defconst civ-castle 65)
+  508| (defconst pop-cap 175)
+  509| (defconst deathmatch-unit-max 145)
+  510| 
+  511| (defconst feudal-town-size 20)
+   ---
+  509| (defconst deathmatch-unit-max 145)
+  510| 
+  511| (defconst feudal-town-size 20)
+  512| (defconst castle-town-size 35)
+  513| (defconst imperial-town-size 40)
+  514| (defconst town-center-count 8)
+  515| 
+  516| #load-if-defined DIFFICULTY-EASIEST
+  517| (defconst unit-max 125)
+  518| #end-if
+  519| 
+   ---
+  513| (defconst imperial-town-size 40)
+  514| (defconst town-center-count 8)
+  515| 
+  516| #load-if-defined DIFFICULTY-EASIEST
+  517| (defconst unit-max 125)
+  518| #end-if
+  519| 
+  520| #load-if-defined DIFFICULTY-EASY
+  521| (defconst unit-max 125)
+  522| #end-if
+  523| 
+   ---
+  517| (defconst unit-max 125)
+  518| #end-if
+  519| 
+  520| #load-if-defined DIFFICULTY-EASY
+  521| (defconst unit-max 125)
+  522| #end-if
+  523| 
+  524| #load-if-defined DIFFICULTY-MODERATE
+  525| (defconst unit-max 145)
+  526| #end-if
+  527| 
+   ---
+  521| (defconst unit-max 125)
+  522| #end-if
+  523| 
+  524| #load-if-defined DIFFICULTY-MODERATE
+  525| (defconst unit-max 145)
+  526| #end-if
+  527| 
+  528| #load-if-defined DIFFICULTY-HARD
+  529| (defconst unit-max 165)
+  530| #end-if
+  531| 
+   ---
+  525| (defconst unit-max 145)
+  526| #end-if
+  527| 
+  528| #load-if-defined DIFFICULTY-HARD
+  529| (defconst unit-max 165)
+  530| #end-if
+  531| 
+  532| #load-if-defined DIFFICULTY-HARDEST
+  533| (defconst unit-max 165)
+  534| #end-if
+  535| 
+   ---
+  528| #load-if-defined DIFFICULTY-HARD
+  529| (defconst unit-max 165)
+  530| #end-if
+  531| 
+  532| #load-if-defined DIFFICULTY-HARDEST
+  533| (defconst unit-max 165)
+  534| #end-if
+  535| 
+  536| (defconst five-percent-pop 8)
+  537| (defconst ten-percent-pop 18)
+  538| (defconst fifteen-percent-pop 27)
+   ---
+  529| (defconst unit-max 165)
+  530| #end-if
+  531| 
+  532| #load-if-defined DIFFICULTY-HARDEST
+  533| (defconst unit-max 165)
+  534| #end-if
+  535| 
+  536| (defconst five-percent-pop 8)
+  537| (defconst ten-percent-pop 18)
+  538| (defconst fifteen-percent-pop 27)
+  539| (defconst twenty-percent-pop 35)
+   ---
+  530| #end-if
+  531| 
+  532| #load-if-defined DIFFICULTY-HARDEST
+  533| (defconst unit-max 165)
+  534| #end-if
+  535| 
+  536| (defconst five-percent-pop 8)
+  537| (defconst ten-percent-pop 18)
+  538| (defconst fifteen-percent-pop 27)
+  539| (defconst twenty-percent-pop 35)
+  540| (defconst thirty-percent-pop 53)
+   ---
+  531| 
+  532| #load-if-defined DIFFICULTY-HARDEST
+  533| (defconst unit-max 165)
+  534| #end-if
+  535| 
+  536| (defconst five-percent-pop 8)
+  537| (defconst ten-percent-pop 18)
+  538| (defconst fifteen-percent-pop 27)
+  539| (defconst twenty-percent-pop 35)
+  540| (defconst thirty-percent-pop 53)
+  541| (defconst fifty-percent-pop 87)
+   ---
+  532| #load-if-defined DIFFICULTY-HARDEST
+  533| (defconst unit-max 165)
+  534| #end-if
+  535| 
+  536| (defconst five-percent-pop 8)
+  537| (defconst ten-percent-pop 18)
+  538| (defconst fifteen-percent-pop 27)
+  539| (defconst twenty-percent-pop 35)
+  540| (defconst thirty-percent-pop 53)
+  541| (defconst fifty-percent-pop 87)
+  542| #end-if
+   ---
+  533| (defconst unit-max 165)
+  534| #end-if
+  535| 
+  536| (defconst five-percent-pop 8)
+  537| (defconst ten-percent-pop 18)
+  538| (defconst fifteen-percent-pop 27)
+  539| (defconst twenty-percent-pop 35)
+  540| (defconst thirty-percent-pop 53)
+  541| (defconst fifty-percent-pop 87)
+  542| #end-if
+  543| ;***************************
+   ---
+  543| ;***************************
+  544| #load-if-defined POPULATION-CAP-200
+  545| (defconst civ-dark-rush 20)
+  546| (defconst civ-dark 25)
+  547| (defconst civ-dark-mod 15)
+  548| (defconst civ-feudal-mod 20)
+  549| (defconst civ-feudal 40)
+  550| (defconst civ-castle 70)
+  551| (defconst pop-cap 200)
+  552| (defconst deathmatch-unit-max 170)
+  553| 
+   ---
+  544| #load-if-defined POPULATION-CAP-200
+  545| (defconst civ-dark-rush 20)
+  546| (defconst civ-dark 25)
+  547| (defconst civ-dark-mod 15)
+  548| (defconst civ-feudal-mod 20)
+  549| (defconst civ-feudal 40)
+  550| (defconst civ-castle 70)
+  551| (defconst pop-cap 200)
+  552| (defconst deathmatch-unit-max 170)
+  553| 
+  554| (defconst feudal-town-size 20)
+   ---
+  552| (defconst deathmatch-unit-max 170)
+  553| 
+  554| (defconst feudal-town-size 20)
+  555| (defconst castle-town-size 35)
+  556| (defconst imperial-town-size 40)
+  557| (defconst town-center-count 9)
+  558| 
+  559| #load-if-defined DIFFICULTY-EASIEST
+  560| (defconst unit-max 130)
+  561| #end-if
+  562| 
+   ---
+  556| (defconst imperial-town-size 40)
+  557| (defconst town-center-count 9)
+  558| 
+  559| #load-if-defined DIFFICULTY-EASIEST
+  560| (defconst unit-max 130)
+  561| #end-if
+  562| 
+  563| #load-if-defined DIFFICULTY-EASY
+  564| (defconst unit-max 130)
+  565| #end-if
+  566| 
+   ---
+  560| (defconst unit-max 130)
+  561| #end-if
+  562| 
+  563| #load-if-defined DIFFICULTY-EASY
+  564| (defconst unit-max 130)
+  565| #end-if
+  566| 
+  567| #load-if-defined DIFFICULTY-MODERATE
+  568| (defconst unit-max 160)
+  569| #end-if
+  570| 
+   ---
+  564| (defconst unit-max 130)
+  565| #end-if
+  566| 
+  567| #load-if-defined DIFFICULTY-MODERATE
+  568| (defconst unit-max 160)
+  569| #end-if
+  570| 
+  571| #load-if-defined DIFFICULTY-HARD
+  572| (defconst unit-max 190)
+  573| #end-if
+  574| 
+   ---
+  568| (defconst unit-max 160)
+  569| #end-if
+  570| 
+  571| #load-if-defined DIFFICULTY-HARD
+  572| (defconst unit-max 190)
+  573| #end-if
+  574| 
+  575| #load-if-defined DIFFICULTY-HARDEST
+  576| (defconst unit-max 190)
+  577| #end-if
+  578| 
+   ---
+  571| #load-if-defined DIFFICULTY-HARD
+  572| (defconst unit-max 190)
+  573| #end-if
+  574| 
+  575| #load-if-defined DIFFICULTY-HARDEST
+  576| (defconst unit-max 190)
+  577| #end-if
+  578| 
+  579| (defconst five-percent-pop 10)
+  580| (defconst ten-percent-pop 20)
+  581| (defconst fifteen-percent-pop 30)
+   ---
+  572| (defconst unit-max 190)
+  573| #end-if
+  574| 
+  575| #load-if-defined DIFFICULTY-HARDEST
+  576| (defconst unit-max 190)
+  577| #end-if
+  578| 
+  579| (defconst five-percent-pop 10)
+  580| (defconst ten-percent-pop 20)
+  581| (defconst fifteen-percent-pop 30)
+  582| (defconst twenty-percent-pop 40)
+   ---
+  573| #end-if
+  574| 
+  575| #load-if-defined DIFFICULTY-HARDEST
+  576| (defconst unit-max 190)
+  577| #end-if
+  578| 
+  579| (defconst five-percent-pop 10)
+  580| (defconst ten-percent-pop 20)
+  581| (defconst fifteen-percent-pop 30)
+  582| (defconst twenty-percent-pop 40)
+  583| (defconst thirty-percent-pop 60)
+   ---
+  574| 
+  575| #load-if-defined DIFFICULTY-HARDEST
+  576| (defconst unit-max 190)
+  577| #end-if
+  578| 
+  579| (defconst five-percent-pop 10)
+  580| (defconst ten-percent-pop 20)
+  581| (defconst fifteen-percent-pop 30)
+  582| (defconst twenty-percent-pop 40)
+  583| (defconst thirty-percent-pop 60)
+  584| (defconst fifty-percent-pop 100)
+   ---
+  575| #load-if-defined DIFFICULTY-HARDEST
+  576| (defconst unit-max 190)
+  577| #end-if
+  578| 
+  579| (defconst five-percent-pop 10)
+  580| (defconst ten-percent-pop 20)
+  581| (defconst fifteen-percent-pop 30)
+  582| (defconst twenty-percent-pop 40)
+  583| (defconst thirty-percent-pop 60)
+  584| (defconst fifty-percent-pop 100)
+  585| #end-if
+   ---
+  576| (defconst unit-max 190)
+  577| #end-if
+  578| 
+  579| (defconst five-percent-pop 10)
+  580| (defconst ten-percent-pop 20)
+  581| (defconst fifteen-percent-pop 30)
+  582| (defconst twenty-percent-pop 40)
+  583| (defconst thirty-percent-pop 60)
+  584| (defconst fifty-percent-pop 100)
+  585| #end-if
+  586| ;*************************************************************
+   ---
+
+=== constants file: every defconst line (name value) ===
+    3| NO                                 0
+    4| YES                                1
+    5| NORMAL                             0
+    6| NOTICE                             99
+    9| EXCELLENT                          99
+   10| GOOD                               70
+   11| MEDIUM                             50
+   12| FAIR                               30
+   13| POOR                               10
+   16| INFANTRY                           1
+   17| CAVALRY                            2
+   18| LIGHTCAV                           3
+   19| CAVARCHER                          4
+   20| ARCHER                             5
+   21| EAGLEMAN                           6
+   22| SCORPION                           12
+   23| UNIQUE                             13
+   24| UNIT20                             20
+   27| boat-strategy                      1
+   28| SOMEBOATS                          1
+   29| MANYBOATS                          10
+   32| boats-needed                       2
+   33| WARSHIPS                           1
+   34| CONTROL                            2
+   37| military-parity                    3
+   39| SUPERIOR                           2
+   42| attack-control                     4
+   50| resource-needed                    5
+   51| WOOD                               1
+   52| FOOD                               2
+   53| GOLD                               3
+   54| STONE                              4
+   55| GOLD-STONE                         5
+   58| rush-control                       6
+   59| FEUDAL                             2
+   60| CASTLE                             3
+   61| IMPERIAL                           4
+   62| RUSHING                            10
+   63| BOOMING                            18
+   64| FEEDING                            19
+   66| need-deathmatch-villagers          7
+   69| secondary-build                    8
+   73| resource-supp                      9
+   74| FOOD-ONLY                          2
+   75| GOLD-ONLY                          3
+   76| WOOD-FOOD                          12
+   77| WOOD-GOLD                          13
+   78| WOOD-STONE                         14
+   79| FOOD-GOLD                          23
+   80| FOOD-STONE                         24
+   82| soldiers-available                 10
+   84| combat-arm                         11
+   96| combat-supp                        12
+  100| attack-enabled                     13
+  104| age-advancement                    14
+  111| make-warboat                       15
+  114| upgrade-conflict                   16
+  117| pre-unique-arm                     17
+  127| personality                        18
+  128| FEEDER                             1
+  129| BOOMER                             2
+  130| BULLY                              3
+  131| LIAR                               4
+  132| ALLY                               5
+  133| SENTTRIBUTE                        10
+  139| TRADENEUTRAL                       50
+  142| make-villagers                     19
+  144| wonder-attempt                     20
+  145| POSSIBLE                           10
+  146| MAYBE                              90
+  149| ATTACK                             1
+  150| DEFEND                             0
+  152| castle-attempt                     21
+  160| sea-owner                          23
+  168| CASTLE-AGE-WOOD                    11
+  169| CASTLE-AGE-FOOD                    12
+  170| CASTLE-AGE-GOLD                    13
+  171| CASTLE-AGE-STONE                   14
+  172| IMPERIAL-AGE-WOOD                  21
+  173| IMPERIAL-AGE-FOOD                  22
+  174| IMPERIAL-AGE-GOLD                  23
+  175| IMPERIAL-AGE-STONE                 24
+  177| enemy-soldiers                     26
+  178| siege-rating                       26
+  180| monk-rating                        27
+  184| get-mad                            28
+  186| ANGRY                              2
+  187| ANGRIER                            3
+  188| ANGRIEST                           4
+  191| make-fire-boat                     30
+  194| infantry-upgrades                  31
+  199| archer-upgrades                    32
+  204| cav-upgrades                       33
+  209| siege-available                    34
+  217| wall-build                         40
+  232| t-tribute                          1
+  233| t-attackgroup                      2
+  234| t-production                       3
+  235| t-chat                             5
+  236| t-chathelp                         6
+  237| t-tower                            7
+  238| t-chatmore                         8
+  239| t-lumbercamp                       9
+  240| t-ageup                            10
+  244| civ-dark-rush                      10
+  245| civ-dark                           11
+  246| civ-dark-mod                       10
+  247| civ-feudal-mod                     12
+  248| civ-feudal                         13
+  249| civ-castle                         15
+  250| pop-cap                            25
+  251| deathmatch-unit-max                13
+  253| feudal-town-size                   20
+  254| castle-town-size                   25
+  255| imperial-town-size                 25
+  256| town-center-count                  2
+  259| unit-max                           19
+  263| unit-max                           19
+  267| unit-max                           21
+  271| unit-max                           23
+  275| unit-max                           23
+  278| five-percent-pop                   1
+  279| ten-percent-pop                    3
+  280| fifteen-percent-pop                4
+  281| twenty-percent-pop                 5
+  282| thirty-percent-pop                 8
+  283| fifty-percent-pop                  12
+  287| civ-dark-rush                      15
+  288| civ-dark                           20
+  289| civ-dark-mod                       15
+  290| civ-feudal-mod                     20
+  291| civ-feudal                         30
+  292| civ-castle                         35
+  293| pop-cap                            50
+  294| deathmatch-unit-max                25
+  296| feudal-town-size                   20
+  297| castle-town-size                   25
+  298| imperial-town-size                 30
+  299| town-center-count                  3
+  302| unit-max                           35
+  306| unit-max                           35
+  310| unit-max                           40
+  314| unit-max                           45
+  318| unit-max                           45
+  321| five-percent-pop                   2
+  322| ten-percent-pop                    5
+  323| fifteen-percent-pop                7
+  324| twenty-percent-pop                 10
+  325| thirty-percent-pop                 15
+  326| fifty-percent-pop                  25
+  330| civ-dark-rush                      20
+  331| civ-dark                           25
+  332| civ-dark-mod                       15
+  333| civ-feudal-mod                     20
+  334| civ-feudal                         35
+  335| civ-castle                         40
+  336| pop-cap                            75
+  337| deathmatch-unit-max                55
+  339| feudal-town-size                   20
+  340| castle-town-size                   30
+  341| imperial-town-size                 30
+  342| town-center-count                  4
+  345| unit-max                           56
+  349| unit-max                           56
+  353| unit-max                           63
+  357| unit-max                           70
+  361| unit-max                           70
+  364| five-percent-pop                   3
+  365| ten-percent-pop                    8
+  366| fifteen-percent-pop                10
+  367| twenty-percent-pop                 15
+  368| thirty-percent-pop                 23
+  369| fifty-percent-pop                  37
+  373| civ-dark-rush                      20
+  374| civ-dark                           25
+  375| civ-dark-mod                       15
+  376| civ-feudal-mod                     20
+  377| civ-feudal                         40
+  378| civ-castle                         50
+  379| pop-cap                            100
+  380| deathmatch-unit-max                70
+  382| feudal-town-size                   20
+  383| castle-town-size                   30
+  384| imperial-town-size                 35
+  385| town-center-count                  5
+  388| unit-max                           70
+  392| unit-max                           70
+  396| unit-max                           80
+  400| unit-max                           90
+  404| unit-max                           90
+  407| five-percent-pop                   5
+  408| ten-percent-pop                    10
+  409| fifteen-percent-pop                15
+  410| twenty-percent-pop                 20
+  411| thirty-percent-pop                 30
+  412| fifty-percent-pop                  50
+  416| civ-dark-rush                      20
+  417| civ-dark                           25
+  418| civ-dark-mod                       15
+  419| civ-feudal-mod                     20
+  420| civ-feudal                         40
+  421| civ-castle                         55
+  422| pop-cap                            125
+  423| deathmatch-unit-max                95
+  424| town-center-count                  6
+  426| feudal-town-size                   20
+  427| castle-town-size                   35
+  428| imperial-town-size                 40
+  431| unit-max                           90
+  435| unit-max                           90
+  439| unit-max                           103
+  443| unit-max                           115
+  447| unit-max                           115
+  450| five-percent-pop                   6
+  451| ten-percent-pop                    13
+  452| fifteen-percent-pop                18
+  453| twenty-percent-pop                 25
+  454| thirty-percent-pop                 38
+  455| fifty-percent-pop                  62
+  459| civ-dark-rush                      20
+  460| civ-dark                           25
+  461| civ-dark-mod                       15
+  462| civ-feudal-mod                     20
+  463| civ-feudal                         40
+  464| civ-castle                         60
+  465| pop-cap                            150
+  466| deathmatch-unit-max                120
+  468| feudal-town-size                   20
+  469| castle-town-size                   35
+  470| imperial-town-size                 40
+  471| town-center-count                  7
+  474| unit-max                           110
+  478| unit-max                           110
+  482| unit-max                           125
+  486| unit-max                           140
+  490| unit-max                           140
+  493| five-percent-pop                   7
+  494| ten-percent-pop                    15
+  495| fifteen-percent-pop                22
+  496| twenty-percent-pop                 30
+  497| thirty-percent-pop                 45
+  498| fifty-percent-pop                  75
+  502| civ-dark-rush                      20
+  503| civ-dark                           25
+  504| civ-dark-mod                       15
+  505| civ-feudal-mod                     20
+  506| civ-feudal                         40
+  507| civ-castle                         65
+  508| pop-cap                            175
+  509| deathmatch-unit-max                145
+  511| feudal-town-size                   20
+  512| castle-town-size                   35
+  513| imperial-town-size                 40
+  514| town-center-count                  8
+  517| unit-max                           125
+  521| unit-max                           125
+  525| unit-max                           145
+  529| unit-max                           165
+  533| unit-max                           165
+  536| five-percent-pop                   8
+  537| ten-percent-pop                    18
+  538| fifteen-percent-pop                27
+  539| twenty-percent-pop                 35
+  540| thirty-percent-pop                 53
+  541| fifty-percent-pop                  87
+  545| civ-dark-rush                      20
+  546| civ-dark                           25
+  547| civ-dark-mod                       15
+  548| civ-feudal-mod                     20
+  549| civ-feudal                         40
+  550| civ-castle                         70
+  551| pop-cap                            200
+  552| deathmatch-unit-max                170
+  554| feudal-town-size                   20
+  555| castle-town-size                   35
+  556| imperial-town-size                 40
+  557| town-center-count                  9
+  560| unit-max                           130
+  564| unit-max                           130
+  568| unit-max                           160
+  572| unit-max                           190
+  576| unit-max                           190
+  579| five-percent-pop                   10
+  580| ten-percent-pop                    20
+  581| fifteen-percent-pop                30
+  582| twenty-percent-pop                 40
+  583| thirty-percent-pop                 60
+  584| fifty-percent-pop                  100
+  589| feudal-mill-count                  1
+  590| castle-mill-count                  1
+  591| imperial-mill-count                1
+  592| mining-count                       8
+  596| feudal-mill-count                  1
+  597| castle-mill-count                  1
+  598| imperial-mill-count                1
+  599| mining-count                       8
+  603| feudal-mill-count                  1
+  604| castle-mill-count                  1
+  605| imperial-mill-count                1
+  606| mining-count                       10
+  610| feudal-mill-count                  1
+  611| castle-mill-count                  1
+  612| imperial-mill-count                2
+  613| mining-count                       11
+  617| feudal-mill-count                  1
+  618| castle-mill-count                  2
+  619| imperial-mill-count                3
+  620| mining-count                       12
+  624| feudal-mill-count                  2
+  625| castle-mill-count                  3
+  626| imperial-mill-count                4
+  627| mining-count                       15

@@ -1,0 +1,152 @@
+;##############################################################################
+;##  HD DEATH-MATCH AI FIX v2              (appended by dm_patch2.py)        ##
+;##############################################################################
+
+;------------------------------------------------------------------------------
+; 0.  M1 - in-game proof that the engine runs this patched script: the AI
+;     says so in the chat panel at start-up
+;------------------------------------------------------------------------------
+(defrule
+	(true)
+=>
+	(chat-to-all "DM AI fix v2 loaded [x1]")
+	(disable-self)
+)
+
+;------------------------------------------------------------------------------
+; 1.  H1 - the retail house rule of the "(difficulty <= moderate)" block
+;     (line 1675-1680), gate removed
+;------------------------------------------------------------------------------
+(defrule
+	(building-type-count-total house <= fifteen-percent-pop)
+	(can-build house)
+=>
+	(build house)
+)
+
+;------------------------------------------------------------------------------
+; 2.  H2 - the retail house rule of the "#load-if-defined DIFFICULTY-EASY"
+;     block (line 1694-1701); "(military-population < civ-dark-rush)" dropped
+;     because it is a difficulty handicap, not a housing requirement
+;------------------------------------------------------------------------------
+(defrule
+	(housing-headroom < 5)
+	(population-headroom > 0)
+	(can-build house)
+=>
+	(build house)
+)
+
+;------------------------------------------------------------------------------
+; 3.  H3 - the retail house rule of the "#load-if-defined DIFFICULTY-EASIEST"
+;     block (line 1683-1690); "(military-population < 10)" dropped
+;------------------------------------------------------------------------------
+(defrule
+	(housing-headroom < 5)
+	(can-build house)
+=>
+	(build house)
+)
+
+;------------------------------------------------------------------------------
+; 4.  H4 - housing safety net that does not depend on the meaning of the two
+;     headroom facts: while the AI owns fewer than 40 houses (40 x 5 = 200
+;     population slots), build one - first check 30 s after start, then
+;     every 20 s.  Timer t-tribute is retail timer index 1 (declared in the
+;     constants file) and is touched by neither anib_60001 nor anib_60002.
+;------------------------------------------------------------------------------
+(defrule
+	(true)
+=>
+	(enable-timer t-tribute 30)
+	(disable-self)
+)
+(defrule
+	(timer-triggered t-tribute)
+	(building-type-count-total house < 40)
+	(can-build house)
+=>
+	(build house)
+)
+(defrule
+	(timer-triggered t-tribute)
+=>
+	(disable-timer t-tribute)
+	(enable-timer t-tribute 20)
+)
+
+;------------------------------------------------------------------------------
+; 5.  A1-A3 - the three retail age rules, lines 1594-1604 (feudal),
+;     1614-1624 (castle) and 1634-1647 (imperial), with their
+;         (or (players-current-age every-human >= <age>) (difficulty <= moderate))
+;     gate removed.  Conditions, actions, the t-ageup timer and the
+;     age-advancement goal are the retail ones, so the retail rules that react
+;     to t-ageup (lines 1606-1612, 1626-1632, 1658-1671) keep working.
+;------------------------------------------------------------------------------
+(defrule
+	(can-research feudal-age)
+=>
+	(research feudal-age)
+	(set-goal age-advancement NOTICE)
+	(enable-timer t-ageup 140)
+)
+(defrule
+	(can-research castle-age)
+=>
+	(research castle-age)
+	(set-goal age-advancement NOTICE)
+	(enable-timer t-ageup 170)
+)
+(defrule
+	(can-research imperial-age)
+=>
+	(research imperial-age)
+	(set-goal age-advancement NOTICE)
+	(enable-timer t-ageup 200)
+)
+
+;------------------------------------------------------------------------------
+; 6.  R1 - keep the per-civ unit rules armed.  The retail file clears
+;     "(goal secondary-build 1)" in all 50 unit rules and re-arms it only in
+;     the unique-unit rule (line 2343), which needs a castle; in death-match
+;     the AI has none, so the goal stays 0 and production stops.
+;------------------------------------------------------------------------------
+(defrule
+	(goal secondary-build 0)
+=>
+	(set-goal secondary-build 1)
+)
+
+;------------------------------------------------------------------------------
+; 7.  S1 - top the four resources up (shipped idiom "(cc-add-resource
+;     <resource> <amount>)", used by anib_60001 / anib_60029, absent from the
+;     death-match script).  Timer t-attackgroup is retail timer index 2: the constants
+;     file declares it and no death-match rule triggers it, so the countdown
+;     below is the only user.  It stays idle while the AI is rich.
+;------------------------------------------------------------------------------
+(defrule
+	(true)
+=>
+	(enable-timer t-attackgroup 10)
+	(disable-self)
+)
+(defrule
+	(timer-triggered t-attackgroup)
+	(or
+		(wood-amount < 5000)
+		(food-amount < 5000)
+		(gold-amount < 5000)
+		(stone-amount < 5000)
+	)
+=>
+	(cc-add-resource wood 10000)
+	(cc-add-resource food 10000)
+	(cc-add-resource gold 10000)
+	(cc-add-resource stone 10000)
+)
+(defrule
+	(timer-triggered t-attackgroup)
+=>
+	(disable-timer t-attackgroup)
+	(enable-timer t-attackgroup 60)
+)

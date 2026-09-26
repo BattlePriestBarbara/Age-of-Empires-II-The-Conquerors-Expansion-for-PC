@@ -1,0 +1,127 @@
+x1_drs     anib_60002.bin       2884 lines,   60 distinct tokens
+
+aok_drs    anib_60002.bin       2445 lines,   62 distinct tokens
+
+x1_drs     anib_60029.bin       2582 lines,   65 distinct tokens
+
+x1_drs     anib_60001.bin       1387 lines,   56 distinct tokens
+
+x1_drs     anib_60008.bin        223 lines,   17 distinct tokens
+
+x1_drs     anib_60027.bin        629 lines,    9 distinct tokens
+
+=== tokens used in the DM scripts, checked against my patch vocabulary ===
+  cc-add-resource                  files_using=3  OK
+  train                            files_using=4  OK
+  build                            files_using=4  OK
+  set-goal                         files_using=5  OK
+  goal                             files_using=5  OK
+  enable-timer                     files_using=5  OK
+  disable-timer                    files_using=5  OK
+  disable-self                     files_using=5  OK
+  generate-random-number           files_using=3  OK
+  up-reset-unit-counts             files_using=0  *** NOT FOUND ***
+  reset-unit-counts                files_using=0  *** NOT FOUND ***
+  set-strategic-number             files_using=5  OK
+  population                       files_using=4  OK
+  population-headroom              files_using=4  OK
+  housing-headroom                 files_using=4  OK
+  can-train                        files_using=4  OK
+  can-build                        files_using=4  OK
+  unit-type-count                  files_using=4  OK
+  building-type-count              files_using=4  OK
+  building-type-count-total        files_using=4  OK
+  current-age                      files_using=4  OK
+  difficulty                       files_using=4  OK
+  timer-triggered                  files_using=5  OK
+  strategic-number                 files_using=4  OK
+  up-get-fact                      files_using=0  *** NOT FOUND ***
+  up-full-reset-search             files_using=0  *** NOT FOUND ***
+  up-reset-search                  files_using=0  *** NOT FOUND ***
+  up-find-remote                   files_using=0  *** NOT FOUND ***
+  release-escrow                   files_using=3  OK
+  craft-random-number              files_using=0  *** NOT FOUND ***
+  random-number                    files_using=3  OK
+  set-difficulty-parameter         files_using=4  OK
+  set-timer                        files_using=0  *** NOT FOUND ***
+
+=== ALL distinct tokens (sorted) ===
+  acknowledge-taunt also and as attack-now attack-soldier-count build build-forward build-gate build-wall building-type-count building-type-count-total buy-commodity can-afford-complete-wall can-afford-unit can-build can-build-gate-with-escrow can-build-wall-with-escrow can-build-with-escrow can-buy-commodity can-research can-research-with-escrow can-sell-commodity can-train can-train-with-escrow cc-add-resource cc-players-building-type-count cc-players-unit-type-count chat-local-to-self chat-to-player-using-id civ-selected civilian-population commodity-buying-price commodity-selling-price current-age current-age-time defconst defrule delete-unit difficulty disable-self disable-timer dropsite-min-distance enable-timer ensures food-amount game-time generate-random-number goal gold-amount hold-koh-ruin housing-headroom i idle-farm-count island load map-type military-population nand nor not or player-computer player-in-game players-current-age players-military-population players-stance population population-headroom random-number release-escrow research research-completed resource-found sell-commodity set-difficulty-parameter set-escrow-percentage set-goal set-stance set-strategic-number sheep-and-forage-too-far starting-resources stone-amount strategic-number taunt-detected till timer-triggered town-under-attack train true unit-available unit-type-count unit-type-count-total until wall-completed-percentage was we wood-amount
+
+=== lines mentioning reset/escrow ===
+  x1_drs/anib_60029.bin  323| (release-escrow wood)
+  x1_drs/anib_60029.bin  324| (release-escrow gold)
+  x1_drs/anib_60029.bin  341| (release-escrow wood)
+  x1_drs/anib_60029.bin  342| (release-escrow gold)
+  x1_drs/anib_60029.bin  586| (can-train-with-escrow elite-war-wagon)
+  x1_drs/anib_60029.bin  588| (release-escrow wood)
+  x1_drs/anib_60029.bin  589| (release-escrow gold)
+  x1_drs/anib_60029.bin 1238| (can-train-with-escrow elite-war-elephant)
+  x1_drs/anib_60029.bin 1240| (release-escrow food)
+  x1_drs/anib_60029.bin 1241| (release-escrow gold)
+  x1_drs/anib_60029.bin 1533| (set-escrow-percentage wood 40)
+  x1_drs/anib_60029.bin 1534| (set-escrow-percentage food 0)
+  x1_drs/anib_60029.bin 1535| (set-escrow-percentage gold 40)
+  x1_drs/anib_60029.bin 1536| (set-escrow-percentage stone 0)
+  x1_drs/anib_60029.bin 1543| (set-escrow-percentage wood 70)
+  x1_drs/anib_60029.bin 1544| (set-escrow-percentage gold 70)
+  x1_drs/anib_60029.bin 1551| (set-escrow-percentage food 40)
+  x1_drs/anib_60029.bin 2369| (can-build-wall-with-escrow 2 stone-wall-line)
+  x1_drs/anib_60029.bin 2371| (release-escrow stone)
+  x1_drs/anib_60029.bin 2378| (can-build-gate-with-escrow 2)
+  x1_drs/anib_60029.bin 2380| (release-escrow stone)
+  x1_drs/anib_60001.bin  461| (can-build-with-escrow barracks)
+  x1_drs/anib_60001.bin  469| (release-escrow wood)
+  x1_drs/anib_60001.bin  475| (can-build-with-escrow barracks)
+  x1_drs/anib_60001.bin  480| (release-escrow wood)
+  x1_drs/anib_60001.bin  545| (can-build-with-escrow barracks)
+  x1_drs/anib_60001.bin  555| (release-escrow wood)
+  x1_drs/anib_60001.bin  644| (can-build-with-escrow mining-camp)
+  x1_drs/anib_60001.bin  652| (release-escrow wood)
+  x1_drs/anib_60001.bin  660| (can-build-with-escrow mining-camp)
+  x1_drs/anib_60001.bin  669| (release-escrow wood)
+  x1_drs/anib_60001.bin  677| (can-build-with-escrow mining-camp)
+  x1_drs/anib_60001.bin  686| (release-escrow wood)
+  x1_drs/anib_60001.bin  731| (can-build-with-escrow archery-range)
+  x1_drs/anib_60001.bin  733| (release-escrow wood)
+  x1_drs/anib_60001.bin  744| (can-build-with-escrow stable)
+  x1_drs/anib_60001.bin  746| (release-escrow wood)
+  x1_drs/anib_60001.bin  753| (can-build-with-escrow market)
+  x1_drs/anib_60001.bin  755| (release-escrow wood)
+  x1_drs/anib_60001.bin  762| (can-build-with-escrow blacksmith)
+  x1_drs/anib_60001.bin  772| (release-escrow wood)
+  x1_drs/anib_60001.bin  784| (can-build-with-escrow archery-range)
+  x1_drs/anib_60001.bin  786| (release-escrow wood)
+  x1_drs/anib_60001.bin  804| (can-build-with-escrow archery-range)
+  x1_drs/anib_60001.bin  806| (release-escrow wood)
+  x1_drs/anib_60001.bin  824| (can-build-with-escrow stable)
+  x1_drs/anib_60001.bin  826| (release-escrow wood)
+  x1_drs/anib_60001.bin  838| (can-build-with-escrow stable)
+  x1_drs/anib_60001.bin  840| (release-escrow wood)
+  x1_drs/anib_60001.bin  943| (can-build-with-escrow town-center)
+  x1_drs/anib_60001.bin  945| (release-escrow wood)
+  x1_drs/anib_60001.bin  946| (release-escrow stone)
+  x1_drs/anib_60001.bin  967| (can-build-with-escrow siege-workshop)
+  x1_drs/anib_60001.bin  969| (release-escrow wood)
+  x1_drs/anib_60001.bin  984| (can-build-with-escrow university)
+  x1_drs/anib_60001.bin  986| (release-escrow wood)
+  x1_drs/anib_60001.bin 1005| (can-build-with-escrow monastery)
+  x1_drs/anib_60001.bin 1007| (release-escrow wood)
+  x1_drs/anib_60001.bin 1180| (can-build-with-escrow castle)
+  x1_drs/anib_60001.bin 1214| (can-build-with-escrow castle)
+  x1_drs/anib_60001.bin 1216| (release-escrow stone)
+  x1_drs/anib_60001.bin 1225| (can-build-with-escrow castle)
+  x1_drs/anib_60001.bin 1231| (release-escrow stone)
+  x1_drs/anib_60008.bin   17| (can-research-with-escrow feudal-age)
+  x1_drs/anib_60008.bin   19| (release-escrow food)
+  x1_drs/anib_60008.bin   36| (can-research-with-escrow castle-age)
+  x1_drs/anib_60008.bin   38| (release-escrow food)
+  x1_drs/anib_60008.bin   39| (release-escrow gold)
+  x1_drs/anib_60008.bin   83| (can-research-with-escrow feudal-age)
+  x1_drs/anib_60008.bin   85| (release-escrow food)
+  x1_drs/anib_60008.bin  102| (can-research-with-escrow castle-age)
+  x1_drs/anib_60008.bin  104| (release-escrow food)
+  x1_drs/anib_60008.bin  105| (release-escrow gold)
+  x1_drs/anib_60008.bin  122| (can-research-with-escrow imperial-age)
+  x1_drs/anib_60008.bin  124| (release-escrow food)
+  x1_drs/anib_60008.bin  125| (release-escrow gold)

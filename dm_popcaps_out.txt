@@ -1,0 +1,8 @@
+POPULATION-CAP-25      line  251  deathmatch-unit-max = 13
+POPULATION-CAP-50      line  294  deathmatch-unit-max = 25
+POPULATION-CAP-75      line  337  deathmatch-unit-max = 55
+POPULATION-CAP-100     line  380  deathmatch-unit-max = 70
+POPULATION-CAP-125     line  423  deathmatch-unit-max = 95
+POPULATION-CAP-150     line  466  deathmatch-unit-max = 120
+POPULATION-CAP-175     line  509  deathmatch-unit-max = 145
+POPULATION-CAP-200     line  552  deathmatch-unit-max = 170

@@ -1,0 +1,118 @@
+AI\AI.txt bytes=8 repr=b'AI.txt\r\n'
+
+=== 60002 lines 1348-1440 (difficulty blocks / age up) ===
+ 1348| ;*********************************************************
+ 1349| ;*********************************************************
+ 1350| #load-if-defined DIFFICULTY-EASIEST
+ 1351| (defrule
+ 1352| 	(true)
+ 1353| =>
+ 1354| 	(set-strategic-number sn-percent-enemy-sighted-response 10)
+ 1355| 	(set-strategic-number sn-consecutive-idle-unit-limit 60)
+ 1356| 	(set-strategic-number sn-easiest-reaction-percentage 20)
+ 1357| 	(set-difficulty-parameter ability-to-maintain-distance 100)
+ 1358| 	(set-difficulty-parameter ability-to-dodge-missiles 100)
+ 1359| 	(disable-self)
+ 1360| )
+ 1361| #end-if
+ 1362| ;********************************
+ 1363| #load-if-defined DIFFICULTY-EASY
+ 1364| (load "petersen tower")
+ 1365| 
+ 1366| (defrule
+ 1367| 	(true)
+ 1368| =>
+ 1369| 	(set-strategic-number sn-percent-enemy-sighted-response 25)
+ 1370| 	(set-strategic-number sn-consecutive-idle-unit-limit 20)
+ 1371| 	(set-strategic-number sn-easier-reaction-percentage 20)
+ 1372| 	(set-strategic-number sn-hits-before-alliance-change 50)
+ 1373| 	(set-difficulty-parameter ability-to-maintain-distance 75)
+ 1374| 	(set-difficulty-parameter ability-to-dodge-missiles 75)
+ 1375| 	(disable-self)
+ 1376| )
+ 1377| #end-if
+ 1378| 
+ 1379| ;********************************
+ 1380| #load-if-defined DIFFICULTY-MODERATE
+ 1381| (load "petersen tower")
+ 1382| (load "petersen wonder")
+ 1383| 
+ 1384| (defrule
+ 1385| 	(true)
+ 1386| =>
+ 1387| 	(set-strategic-number sn-percent-enemy-sighted-response 75)
+ 1388| 	(set-strategic-number sn-consecutive-idle-unit-limit 5)
+ 1389| 	(set-strategic-number sn-hits-before-alliance-change 25)
+ 1390| 	(set-difficulty-parameter ability-to-maintain-distance 50)
+ 1391| 	(set-difficulty-parameter ability-to-dodge-missiles 50)
+ 1392| 	(disable-self)
+ 1393| )
+ 1394| #end-if
+ 1395| 
+ 1396| ;********************************
+ 1397| #load-if-defined DIFFICULTY-HARD
+ 1398| (load "petersen tower")
+ 1399| (load "petersen wonder")
+ 1400| 
+ 1401| (defrule
+ 1402| 	(true)
+ 1403| =>
+ 1404| 	(set-strategic-number sn-percent-enemy-sighted-response 99)
+ 1405| 	(set-strategic-number sn-consecutive-idle-unit-limit 1)
+ 1406| 	(set-strategic-number sn-hits-before-alliance-change 10)
+ 1407| 	(set-difficulty-parameter ability-to-maintain-distance 0)
+ 1408| 	(set-difficulty-parameter ability-to-dodge-missiles 0)
+ 1409| 	(disable-self)
+ 1410| )
+ 1411| #end-if
+ 1412| 
+ 1413| ;********************************
+ 1414| #load-if-defined DIFFICULTY-HARDEST
+ 1415| (load "petersen tower")
+ 1416| (load "petersen wonder")
+ 1417| 
+ 1418| (defrule
+ 1419| 	(true)
+ 1420| =>
+ 1421| 	(set-strategic-number sn-percent-enemy-sighted-response 99)
+ 1422| 	(set-strategic-number sn-hits-before-alliance-change 10)
+ 1423| 	(set-difficulty-parameter ability-to-maintain-distance 0)
+ 1424| 	(set-difficulty-parameter ability-to-dodge-missiles 0)
+ 1425| 	(disable-self)
+ 1426| )
+ 1427| #end-if
+ 1428| ;********************************
+ 1429| ;********************************
+ 1430| 
+ 1431| (defrule
+ 1432| 	(cc-players-building-type-count any-enemy castle == 0)
+ 1433| =>
+ 1434| 	(set-goal rush-control RUSHING)
+ 1435| )
+ 1436| 
+ 1437| (defrule
+ 1438| 	(goal rush-control RUSHING)
+ 1439| 	(cc-players-building-type-count every-enemy castle > 0)
+ 1440| =>
+
+=== 60002 rules mentioning age research ===
+ 1595| 	(can-research feudal-age)
+ 1601| 	(research feudal-age)
+ 1615| 	(can-research castle-age)
+ 1621| 	(research castle-age)
+ 1635| 	(can-research imperial-age)
+ 1644| 	(research imperial-age)
+ 2221| 	(can-research ri-onager)
+ 2223|     (research ri-onager)
+ 2227| 	(can-research ri-siege-onager)
+ 2229|     (research ri-siege-onager)
+ 2728| 	(can-research ri-coinage)
+ 2730| 	(research ri-coinage)
+
+=== 60002 rules mentioning cc-add-resource ===
+
+=== 60002 mentions of population-headroom / housing-headroom ===
+ 1685| 	(housing-headroom < 5)
+ 1686| 	(population-headroom > 0)
+ 1696| 	(housing-headroom < 5)
+ 1697| 	(population-headroom > 0)

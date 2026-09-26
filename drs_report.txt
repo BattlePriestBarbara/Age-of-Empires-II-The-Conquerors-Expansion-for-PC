@@ -1,0 +1,157 @@
+========================================================================
+FILE: D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\gamedata.drs size: 531384
+copyright : b'Copyright (c) 1997 Ensemble Studios.\x1a\x00\x00\x00'
+version   : b'1.00'
+ftype     : b'tribe\x00\x00\x00\x00\x00\x00\x00'
+n_tables  : 1  first_file_offset: 652
+------------------------------------------------------------------------
+table ext=b'anib' table_offset=76 n_files=48
+   id=54000  off=652       size=3584     head=/* random map types for ai */||/* Numbers come from Object Categ
+   id=54101  off=4236      size=6380     head=/* ******* STANDARD MINIMUM RESOURCES ************ */||/* 11 AUG
+   id=54102  off=10616     size=11501    head=/* ******* LAND AND WATER RESOURCES ************ */||/* 24 JUNE 
+   id=54103  off=22117     size=11451    head=/* ******* LAND RESOURCES ************ */||/* 28 JUNE 99 */||||/
+   id=54201  off=33568     size=5020     head=/* ************ ARABIA ************ */||/* 5 AUG 99 */||||#inclu
+   id=54202  off=38588     size=22800    head=/* ************ ARCHIPELAGO ************ */||/* 21 JULY 99 */|||
+   id=54203  off=61388     size=7333     head=/* ********* BALTIC ********** */||/* 21 JULY 99 */||||#include_
+   id=54204  off=68721     size=4790     head=/* ************* BLACK FOREST ****************** */||/* 4 MAY 99
+   id=54205  off=73511     size=12646    head=/* ************ COASTAL ************ */||/* 21 JULY 99 */||||#in
+   id=54206  off=86157     size=11586    head=/* ************ CONTINENTAL ************ */||/* 21 JULY 99 */|||
+   id=54207  off=97743     size=6546     head=/* ********* CRATER LAKE ********** */||/* 21 JULY 99 */||||#inc
+   id=54208  off=104289    size=15095    head=/* ************ FORTRESS ************ */||/* 16 AUG 99 */||||#in
+   id=54209  off=119384    size=6777     head=/* ********* GOLD RUSH ********** */||/* 4 MAY 99 */||||#include
+   id=54210  off=126161    size=9128     head=/* ************ HIGHLAND ************ */||/* 7 JULY 99 */||||#in
+   id=54211  off=135289    size=21559    head=/* ************ ISLANDS ************ */||/* 21 JULY 99 */||||#in
+   id=54212  off=156848    size=7935     head=/* ********* MEDITERRANEAN ********** */||/* 21 JULY 99 */||||#i
+   id=54213  off=164783    size=17632    head=/* ************ MIGRATION ************ */||/* 21 JULY 99 */||||#
+   id=54214  off=182415    size=14552    head=/* ************ NOMAD ************ */||/* 5 APR 99 */||||#includ
+   id=54216  off=196967    size=731      head=/* ************ RANDOM ************ */||/* ** RANDOMLY CHOOSES A
+   id=54217  off=197698    size=9748     head=/* ********* RIVERS ********** */||/* 21 JULY 99 */||||#include_
+   id=54218  off=207446    size=11204    head=/* ************ TEAM ISLANDS ************ */||/* 21 JULY 99 */||
+   id=60001  off=218650    size=28550    head=;starting loads||(load "petersen civ loads")||(load "petersen di
+   id=60002  off=247200    size=45718    head=;goals 1 and 2 = boats||;goal 3 = groups||;goal combat-arm = his
+   id=60003  off=292918    size=41578    head=;start the run-through||(defrule||~(true)||=>||~(set-goal infant
+   id=60004  off=334496    size=3276     head=(defrule||~(true)||=>||~(set-strategic-number sn-number-boat-exp
+   id=60005  off=337772    size=3544     head=;need to add a section in which he joins our side then betrays u
+   id=60006  off=341316    size=4083     head=;for war war-galleys||;goal 2 0 = no problem; 2 1 = enemy warshi
+   id=60007  off=345399    size=17783    head=(defrule||~(goal siege-available YES)||~(or||~~(building-type-co
+   id=60008  off=363182    size=17098    head=#load-if-defined DIFFICULTY-EASIEST||||~#load-if-not-defined TEA
+   id=60009  off=380280    size=19315    head=(defrule||~(timer-triggered  t-production)||=>||~(generate-rando
+   id=60010  off=399595    size=14168    head=#load-if-defined GAME-SPEED-LOCKED||(defrule||~(true)||=>||~(set
+   id=60011  off=413763    size=15124    head=;*********************************************************||#loa
+   id=60012  off=428887    size=4583     head=;start the pass||(defrule||~(difficulty <= easy)||~(not (map-typ
+   id=60013  off=433470    size=1350     head=;UPGRADES & BUILDS RELATED TO OTHER PLAYERS||||#load-if-defined 
+   id=60014  off=434820    size=1013     head=;make the castle||(defrule||~(goal castle-attempt NO)||~(current
+   id=60015  off=435833    size=2370     head=(defrule||~(difficulty >= easy)||~(game-time > 300)||~(soldier-c
+   id=60016  off=438203    size=3050     head=#load-if-not-defined VICTORY-CONQUEST||||(defrule||~(goal person
+   id=60017  off=441253    size=12154    head=;if I'm short on resources, ask allies for some before using the
+   id=60018  off=453407    size=338      head=;all this file really does for now is ensure more villagers than
+   id=60019  off=453745    size=15138    head=(defrule||~(true)||=>||~(set-strategic-number sn-wood-gatherer-p
+   id=60020  off=468883    size=5177     head=;make sure we have allies||(defrule||~(difficulty < easy)||~(gam
+   id=60021  off=474060    size=12002    head=(defrule||~(strategic-number sn-number-explore-groups != 1)||=>|
+   id=60022  off=486062    size=4272     head=;insults the player||(defrule||~(true)||=>||~(enable-timer t-cha
+   id=60023  off=490334    size=19478    head=;THE BULLY||#load-if-not-defined TEAMS-LOCKED||||~(defrule||~~(t
+   id=60024  off=509812    size=8218     head=;for a variety of warships~goal 2 1 = "normal" status; goal 2 2 
+   id=60025  off=518030    size=3267     head=;error trapping||(defrule||~(current-age == imperial-age)||~(not
+   id=60026  off=521297    size=255      head=(load "petersen constants")||(load "petersen map loads")||(load 
+   id=60027  off=521552    size=9832     head=; Common constants used in AI goals - other constants will follo
+========================================================================
+FILE: D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\gamedata_x1.drs size: 944156
+copyright : b'Copyright (c) 1997 Ensemble Studios.\x1a\x00\x00\x00'
+version   : b'1.00'
+ftype     : b'tribe\x00\x00\x00\x00\x00\x00\x00'
+n_tables  : 1  first_file_offset: 988
+------------------------------------------------------------------------
+table ext=b'anib' table_offset=76 n_files=76
+   id=54000  off=988       size=18733    head=/* random map types for ai */||/* Numbers come from Object Categ
+   id=54101  off=19721     size=6380     head=/* ******* STANDARD MINIMUM RESOURCES ************ */||/* 11 AUG
+   id=54102  off=26101     size=13504    head=/* ******* LAND AND WATER RESOURCES ************ */||/* 24 JUNE 
+   id=54103  off=39605     size=13468    head=/* ******* LAND RESOURCES ************ */||/* 28 JUNE 99 */||||/
+   id=54201  off=53073     size=4989     head=/* ************ ARABIA ************ */||/* 21 DEC 99 */||||#incl
+   id=54202  off=58062     size=22761    head=/* ************ ARCHIPELAGO ************ */||/* 21 DEC 99 */||||
+   id=54203  off=80823     size=7422     head=/* ********* BALTIC ********** */||/* 21 DEC 99 */||||#include_d
+   id=54204  off=88245     size=7676     head=/* ************* BLACK FOREST ****************** */||/* 21 DEC 9
+   id=54205  off=95921     size=15783    head=/* ************ COASTAL ************ */||/* 6 JAN 00 */||||#incl
+   id=54206  off=111704    size=11548    head=/* ************ CONTINENTAL ************ */||/* 21 DEC 99 */||||
+   id=54207  off=123252    size=6508     head=/* ********* CRATER LAKE ********** */||/* 21 DEC 99 */||||#incl
+   id=54208  off=129760    size=16815    head=/* ************ FORTRESS ************ */||/* 21 DEC 99 */||||#in
+   id=54209  off=146575    size=6743     head=/* ********* GOLD RUSH ********** */||/* 21 DEC 99 */||||#includ
+   id=54210  off=153318    size=11179    head=/* ************ HIGHLAND ************ */||/* 7 JULY 99 */||||#in
+   id=54211  off=164497    size=23331    head=/* ************ ISLANDS ************ */||/* 21 DEC 99 */||||#inc
+   id=54212  off=187828    size=7894     head=/* ********* MEDITERRANEAN ********** */||/* 21 DEC 99 */||||#in
+   id=54213  off=195722    size=17595    head=/* ************ MIGRATION ************ */||/* 21 DEC 99 */||||#i
+   id=54217  off=213317    size=9714     head=/* ********* RIVERS ********** */||/* 21 DEC 99 */||||#include_d
+   id=54218  off=223031    size=13502    head=/* ************ TEAM ISLANDS ************ */||/* 21 DEC 99 */|||
+   id=54219  off=236533    size=13773    head=/* ************ SCANDINAVIA ************ */||/* 21 DEC 99 */||||
+   id=54220  off=250306    size=3165     head=/* ************ MONGOLIA ************ */||/* 21 DEC 99 */||||#in
+   id=54221  off=253471    size=15458    head=/* ************* YUCATAN ****************** */||/* 10 JAN 99 */|
+   id=54222  off=268929    size=18514    head=/* ********* SALT MARSH ********** */||/* 7 APR 99 */||||#includ
+   id=54223  off=287443    size=20500    head=/* ************ ARENA ************ */||/* 21 DEC 99 */||||#inclu
+   id=54225  off=307943    size=6722     head=/* ********* OASIS ********** */||/* 21 DEC 99 */||||#include_dr
+   id=54226  off=314665    size=4813     head=/* ********* GHOST LAKE ********** */||/* 29 FEB 99 */||||#inclu
+   id=54227  off=319478    size=19818    head=/* ************ NOMAD ************ */||/* 14 FEB 00 */||||#inclu
+   id=55001  off=339296    size=5116     head=/* ************ SPAIN ************ */||/* 21 JULY 99 */||||#incl
+   id=55002  off=344412    size=3636     head=/* ************ BRITAIN ************ */||||#include_drs random_m
+   id=55003  off=348048    size=3224     head=/* ************ MIDEAST ************ */||||#include_drs random_m
+   id=55004  off=351272    size=17634    head=/* ************ BRITAIN ************ */||||#include_drs random_m
+   id=55005  off=368906    size=14202    head=/* ************ ITALY ************ */||||#include_drs random_map
+   id=55006  off=383108    size=3977     head=/* ************ CARIBBEAN ************ */||||#include_drs random
+   id=55007  off=387085    size=4882     head=/* ************ FRANCE ************ */||||#include_drs random_ma
+   id=55008  off=391967    size=4370     head=/* ************ NORSE LANDS ************ */||||#include_drs rand
+   id=55009  off=396337    size=13921    head=/* ************ JAPAN ************ */||||#include_drs random_map
+   id=55010  off=410258    size=4882     head=/* ************ BYZANTIUM ************ */||||#include_drs random
+   id=56001  off=415140    size=8197     head=1.21~~~~~~~~~~~8~~~~~~~~~~~~~~{~]~U~~~~~v~~~~'~|d~~~~CJCRR~~~~4)
+   id=56002  off=423337    size=8557     head=1.21~~~~~~~~~~~9~~~~~~~~~~~~~~[~&~Q~~~~^~/q~~%$~~~~~~~~~~~~~~~D~
+   id=56003  off=431894    size=6703     head=1.21~~~~~~~~O~~9~~~~~~~~~~~~~~{~eW]~~<:e_~Q~!1Qo(~D~~~~T~~~~~~~J
+   id=56004  off=438597    size=3515     head=1.21~~~~~~~~~~|9~~~~~~~~~~~~~~~~%U~~~t~~~~~P~w~P~8~~~~~~~(.D3~~~
+   id=56005  off=442112    size=5087     head=1.21~~~~~~~~~~~8~~~~~~~~~~~~~~{~%E~~~~wf~H~h~~.~~,~ "~g~.~h"n~~~
+   id=56006  off=447199    size=4065     head=1.21~~~~~~~~~~~8~~~~~~~~~~~~~~~o$G~~~~~&~~~~$~~~+~C~i~~|~$l~GX~X
+   id=56007  off=451264    size=4666     head=1.21~~~~~~~~~~~8~~~~~~~~~~~~~~~~\G~~~~~~'~lX~b~~)~~)\B~~~~1~~!~"
+   id=56008  off=455930    size=4492     head=1.21~~~~~~~~~~~8~~~~~~~~~~~~~~K~%7~~~~~9a~H(~,P+#$@~$~~~~d2~~~~(
+   id=56009  off=460422    size=4852     head=1.21~~~~~~~~~~~9~~~~~~~~~~~~~~~o]G~~~~'mC~~D%~~~Z~|~~M[ZZ v~~)~i
+   id=56010  off=465274    size=5434     head=1.21~~~~~~~~~~~9~~~~~~~~~~~~~~k~^~Y~~~-~~[so~&n~~~~~8~&Uwm~~S5!|
+   id=60001  off=470708    size=29337    head=;starting goals||(defrule||~(true)||=>||~(set-goal military-pari
+   id=60002  off=500045    size=54203    head=;goals 1 and 2 = boats||;goal 3 = groups||;goal combat-arm = his
+   id=60003  off=554248    size=49519    head=;start the run-through||(defrule||~(true)||=>||~(set-goal infant
+   id=60004  off=603767    size=4463     head=(defrule||~(true)||=>||~(set-strategic-number sn-number-boat-exp
+   id=60005  off=608230    size=3544     head=;need to add a section in which he joins our side then betrays u
+   id=60006  off=611774    size=2693     head=;goal 2 NO = no problem; 2 YES = we've won at sea!||||; transpor
+   id=60007  off=614467    size=26355    head=(defrule||~(goal siege-available YES)||~(or||~~(or||~~~(players-
+   id=60008  off=640822    size=4827     head=#load-if-defined DIFFICULTY-EASIEST||||(defrule||~(true)||=>||~(
+   id=60009  off=645649    size=23059    head=(defrule||~(timer-triggered  t-production)||=>||~(generate-rando
+   id=60010  off=668708    size=13739    head=#load-if-defined GAME-SPEED-LOCKED||(defrule||~(true)||=>||~(set
+   id=60011  off=682447    size=19573    head=;*********************************************************||#loa
+   id=60012  off=702020    size=5078     head=;start the pass||(defrule||~(difficulty <= easy)||~(nor||~~(map-
+   id=60013  off=707098    size=20650    head=;UPGRADES & BUILDS RELATED TO OTHER PLAYERS||||#load-if-not-defi
+   id=60014  off=727748    size=1251     head=;make the castle||(defrule||~(goal castle-attempt NO)||~(current
+   id=60015  off=728999    size=2647     head=(defrule||~(difficulty >= easy)||~(game-time > 600)||~(soldier-c
+   id=60016  off=731646    size=3609     head=#load-if-not-defined VICTORY-CONQUEST||||(defrule||~(goal person
+   id=60017  off=735255    size=12623    head=;if I'm short on resources, ask allies for some before using the
+   id=60018  off=747878    size=475      head=;all this file really does for now is ensure more villagers than
+   id=60019  off=748353    size=9574     head=;DARK AGE||(defrule||~(current-age == dark-age)||~(civilian-popu
+   id=60020  off=757927    size=5062     head=;make sure we have allies||(defrule||~(difficulty < easy)||~(gam
+   id=60021  off=762989    size=12949    head=(defrule||~(strategic-number sn-number-explore-groups != 1)||=>|
+   id=60022  off=775938    size=4272     head=;insults the player||(defrule||~(true)||=>||~(enable-timer t-cha
+   id=60023  off=780210    size=30008    head=;THE BULLY||#load-if-not-defined TEAMS-LOCKED||#load-if-defined 
+   id=60024  off=810218    size=3129     head=;best ship-builders = byzantines, japanese, persian, saracen, vi
+   id=60025  off=813347    size=2842     head=;error trapping||(defrule||~(current-age == imperial-age)||~(not
+   id=60026  off=816189    size=918      head=(load "petersen constants")||||;******************************||
+   id=60027  off=817107    size=19383    head=; Common constants used in AI goals - other constants will follo
+   id=60028  off=836490    size=55492    head=;if I'm short on resources, ask allies for some before using the
+   id=60029  off=891982    size=52174    head=;goals 1 and 2 = boats||;goal 3 = groups||;goal combat-arm = his
+========================================================================
+FILE: D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\gamedata_x1_p1.drs size: 530869
+copyright : b'Copyright (c) 1997 Ensemble Studios.\x1a\x00\x00\x00'
+version   : b'1.00'
+ftype     : b'tribe\x00\x00\x00\x00\x00\x00\x00'
+n_tables  : 2  first_file_offset: 172
+------------------------------------------------------------------------
+table ext=b'anib' table_offset=88 n_files=1
+   id=54228  off=172       size=1281     head=/* ********* BLIND RANDOM ********** */||/* 25 spr 01 */||||||#i
+------------------------------------------------------------------------
+table ext=b' pls' table_offset=100 n_files=6
+   id=5168   off=1453      size=14466    head=2.0N~~~~ArtDesk 1.00 SLP Writer~~~~~@~~~~~~~~~~~~~~~^~~~O~~~~~~~
+   id=5176   off=15919     size=14466    head=2.0N~~~~ArtDesk 1.00 SLP Writer~~~~~@~~~~~~~~~~~~~~~^~~~O~~~~~~~
+   id=5182   off=30385     size=14466    head=2.0N~~~~ArtDesk 1.00 SLP Writer~~~~~@~~~~~~~~~~~~~~~^~~~O~~~~~~~
+   id=5218   off=44851     size=162006   head=2.0N~~~~ArtDesk 1.00 SLP Writer~~~~~@~~~~~~~~~~~~~~~~~~~O~~~i~~~
+   id=5219   off=206857    size=162006   head=2.0N~~~~ArtDesk 1.00 SLP Writer~~~~~@~~~~~~~~~~~~~~~~~~~O~~~i~~~
+   id=5220   off=368863    size=162006   head=2.0N~~~~ArtDesk 1.00 SLP Writer~~~~~@~~~~~~~~~~~~~~~~~~~O~~~i~~~

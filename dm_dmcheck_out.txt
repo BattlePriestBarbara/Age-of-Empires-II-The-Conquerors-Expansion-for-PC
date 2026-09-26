@@ -1,0 +1,184 @@
+
+============================================================================================
+LIVE x1  anib_60002 (DM script, patched)   (3047 lines)
+  nesting depth at EOF = 0
+  retail lines=2884 live lines=3047 (+163)  prefix-ok=True
+  --- last 8 retail lines ---
+   r 2877| 	(gold-amount > 5000)
+   r 2878| 	(can-buy-commodity food)
+   r 2879| =>
+   r 2880| 	(chat-local-to-self "need food")
+   r 2881| 	(buy-commodity food)
+   r 2882| )
+   r 2883| 
+   r 2884| 
+  --- live lines 2884..2944 (the appended part) ---
+   l 2884| ;##############################################################################
+   l 2885| ;##  HD DEATH-MATCH AI FIX v3              (appended by dm_patch2.py)        ##
+   l 2886| ;##############################################################################
+   l 2887| 
+   l 2888| ;------------------------------------------------------------------------------
+   l 2889| ; 0.  M1 - in-game proof that the engine runs this patched script: the AI
+   l 2890| ;     says so in the chat panel at start-up.  The number in the text also
+   l 2891| ;     separates this build from the superseded one: that build's start-up line
+   l 2892| ;     still ended in the tag but its number was one lower, and it tripped
+   l 2893| ;     ERR2011 (missing closing parenthesis) at line 3021 - see the header of
+   l 2894| ;     this file for the measured reason.
+   l 2895| ;------------------------------------------------------------------------------
+   l 2896| (defrule
+   l 2897| 	(true)
+   l 2898| =>
+   l 2899| 	(chat-to-all "DM AI fix v3 loaded [x1]")
+   l 2900| 	(disable-self)
+   l 2901| )
+   l 2902| 
+   l 2903| ;------------------------------------------------------------------------------
+   l 2904| ; 1.  H1 - the retail house rule of the "(difficulty <= moderate)" block
+   l 2905| ;     (line 1675-1680), gate removed
+   l 2906| ;------------------------------------------------------------------------------
+   l 2907| (defrule
+   l 2908| 	(building-type-count-total house <= fifteen-percent-pop)
+   l 2909| 	(can-build house)
+   l 2910| =>
+   l 2911| 	(build house)
+   l 2912| )
+   l 2913| 
+   l 2914| ;------------------------------------------------------------------------------
+   l 2915| ; 2.  H2 - the retail house rule of the "#load-if-defined DIFFICULTY-EASY"
+   l 2916| ;     block (line 1694-1701); "(military-population < civ-dark-rush)" dropped
+   l 2917| ;     because it is a difficulty handicap, not a housing requirement
+   l 2918| ;------------------------------------------------------------------------------
+   l 2919| (defrule
+   l 2920| 	(housing-headroom < 5)
+   l 2921| 	(population-headroom > 0)
+   l 2922| 	(can-build house)
+   l 2923| =>
+   l 2924| 	(build house)
+   l 2925| )
+   l 2926| 
+   l 2927| ;------------------------------------------------------------------------------
+   l 2928| ; 3.  H3 - the retail house rule of the "#load-if-defined DIFFICULTY-EASIEST"
+   l 2929| ;     block (line 1683-1690); "(military-population < 10)" dropped
+   l 2930| ;------------------------------------------------------------------------------
+   l 2931| (defrule
+   l 2932| 	(housing-headroom < 5)
+   l 2933| 	(can-build house)
+   l 2934| =>
+   l 2935| 	(build house)
+   l 2936| )
+   l 2937| 
+   l 2938| ;------------------------------------------------------------------------------
+   l 2939| ; 4.  H4 - housing safety net that does not depend on the meaning of the two
+   l 2940| ;     headroom facts: while the AI owns fewer than 40 houses (40 x 5 = 200
+   l 2941| ;     population slots), build one - first check 30 s after start, then
+   l 2942| ;     every 20 s.  Timer t-tribute is retail timer index 1 (declared in the
+   l 2943| ;     constants file) and is touched by neither anib_60001 nor anib_60002.
+   l 2944| ;------------------------------------------------------------------------------
+
+============================================================================================
+RETAIL x1 anib_60002 (DM script)   (2884 lines)
+  nesting depth at EOF = 0
+  retail lines=2884 live lines=2884 (+0)  prefix-ok=True
+  --- last 8 retail lines ---
+   r 2877| 	(gold-amount > 5000)
+   r 2878| 	(can-buy-commodity food)
+   r 2879| =>
+   r 2880| 	(chat-local-to-self "need food")
+   r 2881| 	(buy-commodity food)
+   r 2882| )
+   r 2883| 
+   r 2884| 
+  --- live lines 2884..2884 (the appended part) ---
+   l 2884| 
+
+============================================================================================
+LIVE aok anib_60002 (DM script?, patched)   (2608 lines)
+  nesting depth at EOF = 0
+  retail lines=2445 live lines=2608 (+163)  prefix-ok=True
+  --- last 8 retail lines ---
+   r 2438| 	(gold-amount > 5000)
+   r 2439| 	(can-buy-commodity food)
+   r 2440| =>
+   r 2441| 	(chat-local-to-self "need food")
+   r 2442| 	(buy-commodity food)
+   r 2443| )
+   r 2444| 
+   r 2445| 
+  --- live lines 2445..2505 (the appended part) ---
+   l 2445| ;##############################################################################
+   l 2446| ;##  HD DEATH-MATCH AI FIX v3              (appended by dm_patch2.py)        ##
+   l 2447| ;##############################################################################
+   l 2448| 
+   l 2449| ;------------------------------------------------------------------------------
+   l 2450| ; 0.  M1 - in-game proof that the engine runs this patched script: the AI
+   l 2451| ;     says so in the chat panel at start-up.  The number in the text also
+   l 2452| ;     separates this build from the superseded one: that build's start-up line
+   l 2453| ;     still ended in the tag but its number was one lower, and it tripped
+   l 2454| ;     ERR2011 (missing closing parenthesis) at line 3021 - see the header of
+   l 2455| ;     this file for the measured reason.
+   l 2456| ;------------------------------------------------------------------------------
+   l 2457| (defrule
+   l 2458| 	(true)
+   l 2459| =>
+   l 2460| 	(chat-to-all "DM AI fix v3 loaded [aok]")
+   l 2461| 	(disable-self)
+   l 2462| )
+   l 2463| 
+   l 2464| ;------------------------------------------------------------------------------
+   l 2465| ; 1.  H1 - the retail house rule of the "(difficulty <= moderate)" block
+   l 2466| ;     (line 1675-1680), gate removed
+   l 2467| ;------------------------------------------------------------------------------
+   l 2468| (defrule
+   l 2469| 	(building-type-count-total house <= fifteen-percent-pop)
+   l 2470| 	(can-build house)
+   l 2471| =>
+   l 2472| 	(build house)
+   l 2473| )
+   l 2474| 
+   l 2475| ;------------------------------------------------------------------------------
+   l 2476| ; 2.  H2 - the retail house rule of the "#load-if-defined DIFFICULTY-EASY"
+   l 2477| ;     block (line 1694-1701); "(military-population < civ-dark-rush)" dropped
+   l 2478| ;     because it is a difficulty handicap, not a housing requirement
+   l 2479| ;------------------------------------------------------------------------------
+   l 2480| (defrule
+   l 2481| 	(housing-headroom < 5)
+   l 2482| 	(population-headroom > 0)
+   l 2483| 	(can-build house)
+   l 2484| =>
+   l 2485| 	(build house)
+   l 2486| )
+   l 2487| 
+   l 2488| ;------------------------------------------------------------------------------
+   l 2489| ; 3.  H3 - the retail house rule of the "#load-if-defined DIFFICULTY-EASIEST"
+   l 2490| ;     block (line 1683-1690); "(military-population < 10)" dropped
+   l 2491| ;------------------------------------------------------------------------------
+   l 2492| (defrule
+   l 2493| 	(housing-headroom < 5)
+   l 2494| 	(can-build house)
+   l 2495| =>
+   l 2496| 	(build house)
+   l 2497| )
+   l 2498| 
+   l 2499| ;------------------------------------------------------------------------------
+   l 2500| ; 4.  H4 - housing safety net that does not depend on the meaning of the two
+   l 2501| ;     headroom facts: while the AI owns fewer than 40 houses (40 x 5 = 200
+   l 2502| ;     population slots), build one - first check 30 s after start, then
+   l 2503| ;     every 20 s.  Timer t-tribute is retail timer index 1 (declared in the
+   l 2504| ;     constants file) and is touched by neither anib_60001 nor anib_60002.
+   l 2505| ;------------------------------------------------------------------------------
+
+============================================================================================
+RETAIL aok anib_60002   (2445 lines)
+  nesting depth at EOF = 0
+  retail lines=2445 live lines=2445 (+0)  prefix-ok=True
+  --- last 8 retail lines ---
+   r 2438| 	(gold-amount > 5000)
+   r 2439| 	(can-buy-commodity food)
+   r 2440| =>
+   r 2441| 	(chat-local-to-self "need food")
+   r 2442| 	(buy-commodity food)
+   r 2443| )
+   r 2444| 
+   r 2445| 
+  --- live lines 2445..2445 (the appended part) ---
+   l 2445| 

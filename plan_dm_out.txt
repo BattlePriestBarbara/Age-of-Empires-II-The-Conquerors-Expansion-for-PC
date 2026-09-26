@@ -1,0 +1,573 @@
+== files: 76 ==
+   anib_54000.bin       rules=0      bytes=18733
+   anib_54101.bin       rules=0      bytes=6380
+   anib_54102.bin       rules=0      bytes=13504
+   anib_54103.bin       rules=0      bytes=13468
+   anib_54201.bin       rules=0      bytes=4989
+   anib_54202.bin       rules=0      bytes=22761
+   anib_54203.bin       rules=0      bytes=7422
+   anib_54204.bin       rules=0      bytes=7676
+   anib_54205.bin       rules=0      bytes=15783
+   anib_54206.bin       rules=0      bytes=11548
+   anib_54207.bin       rules=0      bytes=6508
+   anib_54208.bin       rules=0      bytes=16815
+   anib_54209.bin       rules=0      bytes=6743
+   anib_54210.bin       rules=0      bytes=11179
+   anib_54211.bin       rules=0      bytes=23331
+   anib_54212.bin       rules=0      bytes=7894
+   anib_54213.bin       rules=0      bytes=17595
+   anib_54217.bin       rules=0      bytes=9714
+   anib_54218.bin       rules=0      bytes=13502
+   anib_54219.bin       rules=0      bytes=13773
+   anib_54220.bin       rules=0      bytes=3165
+   anib_54221.bin       rules=0      bytes=15458
+   anib_54222.bin       rules=0      bytes=18514
+   anib_54223.bin       rules=0      bytes=20500
+   anib_54225.bin       rules=0      bytes=6722
+   anib_54226.bin       rules=0      bytes=4813
+   anib_54227.bin       rules=0      bytes=19818
+   anib_55001.bin       rules=0      bytes=5116
+   anib_55002.bin       rules=0      bytes=3636
+   anib_55003.bin       rules=0      bytes=3224
+   anib_55004.bin       rules=0      bytes=17634
+   anib_55005.bin       rules=0      bytes=14202
+   anib_55006.bin       rules=0      bytes=3977
+   anib_55007.bin       rules=0      bytes=4882
+   anib_55008.bin       rules=0      bytes=4370
+   anib_55009.bin       rules=0      bytes=13921
+   anib_55010.bin       rules=0      bytes=4882
+   anib_56001.bin       rules=0      bytes=8197
+   anib_56002.bin       rules=0      bytes=8557
+   anib_56003.bin       rules=0      bytes=6703
+   anib_56004.bin       rules=0      bytes=3515
+   anib_56005.bin       rules=0      bytes=5087
+   anib_56006.bin       rules=0      bytes=4065
+   anib_56007.bin       rules=0      bytes=4666
+   anib_56008.bin       rules=0      bytes=4492
+   anib_56009.bin       rules=0      bytes=4852
+   anib_56010.bin       rules=0      bytes=5434
+   anib_60001.bin       rules=96     bytes=29337
+   anib_60002.bin       rules=244    bytes=54203
+   anib_60003.bin       rules=180    bytes=49519
+   anib_60004.bin       rules=20     bytes=4463
+   anib_60005.bin       rules=14     bytes=3544
+   anib_60006.bin       rules=8      bytes=2693
+   anib_60007.bin       rules=71     bytes=26355
+   anib_60008.bin       rules=19     bytes=4827
+   anib_60009.bin       rules=84     bytes=23059
+   anib_60010.bin       rules=60     bytes=13739
+   anib_60011.bin       rules=130    bytes=19573
+   anib_60012.bin       rules=24     bytes=5078
+   anib_60013.bin       rules=74     bytes=20650
+   anib_60014.bin       rules=5      bytes=1251
+   anib_60015.bin       rules=10     bytes=2647
+   anib_60016.bin       rules=13     bytes=3609
+   anib_60017.bin       rules=45     bytes=12623
+   anib_60018.bin       rules=3      bytes=475
+   anib_60019.bin       rules=38     bytes=9574
+   anib_60020.bin       rules=21     bytes=5062
+   anib_60021.bin       rules=48     bytes=12949
+   anib_60022.bin       rules=24     bytes=4272
+   anib_60023.bin       rules=83     bytes=30008
+   anib_60024.bin       rules=12     bytes=3129
+   anib_60025.bin       rules=15     bytes=2842
+   anib_60026.bin       rules=0      bytes=918
+   anib_60027.bin       rules=0      bytes=19383
+   anib_60028.bin       rules=226    bytes=55492
+   anib_60029.bin       rules=229    bytes=52174
+   TOTAL defrule count = 1796
+
+== train : 66 unique ==
+   villager                           24
+   champion                           21
+   hussar                             21
+   heavy-cavalry-archer               20
+   hand-cannoneer                     19
+   arbalest                           13
+   heavy-scorpion                     12
+   paladin                            12
+   monk                               10
+   eagle-warrior-line                 9
+   militiaman-line                    9
+   scout-cavalry-line                 8
+   skirmisher-line                    7
+   spearman-line                      7
+   archer-line                        6
+   camel-line                         6
+   fishing-ship                       6
+   battering-ram-line                 5
+   bombard-cannon                     5
+   knight-line                        5
+   trebuchet                          5
+   cavalry-archer-line                4
+   elite-eagle-warrior                4
+   elite-skirmisher                   4
+   halberdier                         4
+   heavy-camel                        4
+   light-cavalry                      4
+   mangonel-line                      4
+   missionary                         4
+   my-unique-unit-line                4
+   transport-ship                     4
+   elite-huskarl                      3
+   cannon-galleon-line                2
+   elite-jaguar-man                   2
+   militiaman                         2
+   petard                             2
+   siege-onager                       2
+   trade-cart                         2
+   trade-cog                          2
+   archer                             1
+   battering-ram                      1
+   demolition-ship-line               1
+   elite-berserk                      1
+   elite-cataphract                   1
+   elite-chu-ko-nu                    1
+   elite-conquistador                 1
+   elite-janissary                    1
+   elite-longbowman                   1
+   elite-mameluke                     1
+   elite-mangudai                     1
+   elite-plumed-archer                1
+   elite-samurai                      1
+   elite-tarkan                       1
+   elite-teutonic-knight              1
+   elite-throwing-axeman              1
+   elite-war-elephant                 1
+   elite-war-wagon                    1
+   elite-woad-raider                  1
+   fire-ship-line                     1
+   galley-line                        1
+   longboat-line                      1
+   scorpion-line                      1
+   siege-ram                          1
+   turtle-ship-line                   1
+   war-elephant-line                  1
+   war-wagon-line                     1
+
+== can-train : 63 unique ==
+   villager                           25
+   champion                           21
+   heavy-cavalry-archer               21
+   hussar                             21
+   hand-cannoneer                     19
+   paladin                            16
+   arbalest                           13
+   heavy-scorpion                     12
+   monk                               10
+   eagle-warrior-line                 9
+   militiaman-line                    9
+   scout-cavalry-line                 8
+   skirmisher-line                    7
+   spearman-line                      7
+   camel-line                         6
+   fishing-ship                       6
+   archer-line                        5
+   battering-ram-line                 5
+   knight-line                        5
+   bombard-cannon                     4
+   cavalry-archer-line                4
+   elite-eagle-warrior                4
+   elite-skirmisher                   4
+   halberdier                         4
+   heavy-camel                        4
+   light-cavalry                      4
+   mangonel-line                      4
+   missionary                         4
+   my-unique-unit-line                4
+   trebuchet                          4
+   elite-conquistador                 3
+   elite-huskarl                      3
+   elite-war-elephant                 3
+   transport-ship                     3
+   archer                             2
+   elite-cataphract                   2
+   elite-jaguar-man                   2
+   elite-mameluke                     2
+   elite-tarkan                       2
+   elite-war-wagon                    2
+   militiaman                         2
+   petard                             2
+   siege-onager                       2
+   trade-cart                         2
+   trade-cog                          2
+   battering-ram                      1
+   cannon-galleon-line                1
+   demolition-ship-line               1
+   elite-berserk                      1
+   elite-chu-ko-nu                    1
+   elite-janissary                    1
+   elite-longbowman                   1
+   elite-mangudai                     1
+   elite-plumed-archer                1
+   elite-samurai                      1
+   elite-teutonic-knight              1
+   elite-throwing-axeman              1
+   elite-woad-raider                  1
+   fire-ship-line                     1
+   galley-line                        1
+   longboat-line                      1
+   scorpion-line                      1
+   siege-ram                          1
+
+== unit-type-count-total : 36 unique ==
+   monk                               16
+   villager                           10
+   bombard-cannon                     8
+   battering-ram-line                 7
+   camel-line                         7
+   fishing-ship                       7
+   trebuchet                          7
+   eagle-warrior-line                 6
+   scout-cavalry-line                 6
+   skirmisher-line                    6
+   spearman-line                      6
+   petard                             5
+   elite-skirmisher                   4
+   elite-tarkan                       4
+   halberdier                         4
+   heavy-camel                        4
+   mangonel-line                      4
+   missionary                         4
+   siege-onager                       4
+   trade-cart                         4
+   trade-cog                          4
+   transport-ship                     4
+   war-galley                         3
+   cannon-galleon                     2
+   fire-ship-line                     2
+   galley-line                        2
+   turtle-ship-line                   2
+   bombard-tower                      1
+   cannon-galleon-line                1
+   capped-ram                         1
+   demolition-ship-line               1
+   galley                             1
+   light-cavalry                      1
+   longboat                           1
+   onager                             1
+   scout-cavalry                      1
+
+== build : 20 unique ==
+   house                              14
+   mining-camp                        14
+   dock                               12
+   town-center                        12
+   mill                               10
+   lumber-camp                        7
+   monastery                          7
+   archery-range                      6
+   stable                             6
+   watch-tower-line                   6
+   barracks                           5
+   bombard-tower                      5
+   farm                               5
+   castle                             4
+   market                             4
+   siege-workshop                     4
+   blacksmith                         3
+   university                         3
+   wonder                             2
+   watch-tower                        1
+
+== research : 101 unique ==
+   castle-age                         5
+   feudal-age                         5
+   ri-hand-cart                       5
+   ri-wheel-barrow                    5
+   imperial-age                       4
+   ri-cannon-galleon                  3
+   ri-caravan                         3
+   ri-careening                       3
+   ri-cartography                     3
+   ri-cavalier                        3
+   ri-deck-guns                       3
+   ri-fast-fire-ship                  3
+   ri-galleon                         3
+   ri-gold-mining                     3
+   ri-gold-shaft-mining               3
+   ri-guilds                          3
+   ri-loom                            3
+   ri-pikeman                         3
+   ri-stone-mining                    3
+   ri-stone-shaft-mining              3
+   ri-stonecutting                    3
+   ri-town-watch                      3
+   ri-war-galley                      3
+   my-unique-research                 2
+   my-unique-unit-upgrade             2
+   ri-arbalest                        2
+   ri-architecture                    2
+   ri-atonement                       2
+   ri-ballistics                      2
+   ri-banking                         2
+   ri-blast-furnace                   2
+   ri-block-printing                  2
+   ri-bloodlines                      2
+   ri-bodkin-arrow                    2
+   ri-bombard-cannon                  2
+   ri-bombard-tower                   2
+   ri-bow-saw                         2
+   ri-bracer                          2
+   ri-capped-ram                      2
+   ri-chain-barding                   2
+   ri-chain-mail                      2
+   ri-champion                        2
+   ri-chemistry                       2
+   ri-coinage                         2
+   ri-conscription                    2
+   ri-crop-rotation                   2
+   ri-crossbow                        2
+   ri-double-bit-axe                  2
+   ri-dry-dock                        2
+   ri-elite-skirmisher                2
+   ri-faith                           2
+   ri-fervor                          2
+   ri-fletching                       2
+   ri-forging                         2
+   ri-fortified-wall                  2
+   ri-guard-tower                     2
+   ri-halberdier                      2
+   ri-hand-cannon                     2
+   ri-heated-shot                     2
+   ri-heavy-camel                     2
+   ri-heavy-cavalry-archer            2
+   ri-heavy-demolition-ship           2
+   ri-heavy-plow                      2
+   ri-heavy-scorpion                  2
+   ri-heresy                          2
+   ri-hoardings                       2
+   ri-horse-collar                    2
+   ri-husbandry                       2
+   ri-hussar                          2
+   ri-illumination                    2
+   ri-iron-casting                    2
+   ri-keep                            2
+   ri-leather-archer-armor            2
+   ri-light-cavalry                   2
+   ri-long-swordsman                  2
+   ri-man-at-arms                     2
+   ri-masonry                         2
+   ri-onager                          2
+   ri-padded-archer-armor             2
+   ri-paladin                         2
+   ri-parthian-tactics                2
+   ri-plate-barding                   2
+   ri-plate-mail                      2
+   ri-redemption                      2
+   ri-ring-archer-armor               2
+   ri-sanctity                        2
+   ri-scale-barding                   2
+   ri-scale-mail                      2
+   ri-shipwright                      2
+   ri-siege-engineers                 2
+   ri-siege-onager                    2
+   ri-siege-ram                       2
+   ri-squires                         2
+   ri-thumb-ring                      2
+   ri-town-patrol                     2
+   ri-tracking                        2
+   ri-two-handed-swordsman            2
+   ri-two-man-saw                     2
+   ri-elite-eagle-warrior             1
+   ri-elite-longboat                  1
+   ri-murder-holes                    1
+
+== can-research : 93 unique ==
+   ri-hand-cart                       5
+   ri-wheel-barrow                    5
+   ri-cannon-galleon                  3
+   ri-caravan                         3
+   ri-careening                       3
+   ri-deck-guns                       3
+   ri-fast-fire-ship                  3
+   ri-galleon                         3
+   ri-pikeman                         3
+   ri-war-galley                      3
+   ri-loom                            2
+   castle-age                         1
+   feudal-age                         1
+   imperial-age                       1
+   my-unique-research                 1
+   my-unique-unit-upgrade             1
+   ri-arbalest                        1
+   ri-architecture                    1
+   ri-atonement                       1
+   ri-ballistics                      1
+   ri-banking                         1
+   ri-blast-furnace                   1
+   ri-block-printing                  1
+   ri-bloodlines                      1
+   ri-bodkin-arrow                    1
+   ri-bombard-cannon                  1
+   ri-bombard-tower                   1
+   ri-bracer                          1
+   ri-capped-ram                      1
+   ri-cartography                     1
+   ri-cavalier                        1
+   ri-chain-barding                   1
+   ri-chain-mail                      1
+   ri-champion                        1
+   ri-chemistry                       1
+   ri-coinage                         1
+   ri-conscription                    1
+   ri-crossbow                        1
+   ri-dry-dock                        1
+   ri-elite-eagle-warrior             1
+   ri-elite-skirmisher                1
+   ri-faith                           1
+   ri-fervor                          1
+   ri-fletching                       1
+   ri-forging                         1
+   ri-fortified-wall                  1
+   ri-gold-mining                     1
+   ri-gold-shaft-mining               1
+   ri-guard-tower                     1
+   ri-guilds                          1
+   ri-halberdier                      1
+   ri-hand-cannon                     1
+   ri-heated-shot                     1
+   ri-heavy-camel                     1
+   ri-heavy-cavalry-archer            1
+   ri-heavy-demolition-ship           1
+   ri-heavy-scorpion                  1
+   ri-heresy                          1
+   ri-hoardings                       1
+   ri-husbandry                       1
+   ri-hussar                          1
+   ri-illumination                    1
+   ri-iron-casting                    1
+   ri-keep                            1
+   ri-leather-archer-armor            1
+   ri-light-cavalry                   1
+   ri-long-swordsman                  1
+   ri-man-at-arms                     1
+   ri-masonry                         1
+   ri-onager                          1
+   ri-padded-archer-armor             1
+   ri-paladin                         1
+   ri-parthian-tactics                1
+   ri-plate-barding                   1
+   ri-plate-mail                      1
+   ri-redemption                      1
+   ri-ring-archer-armor               1
+   ri-sanctity                        1
+   ri-scale-barding                   1
+   ri-scale-mail                      1
+   ri-shipwright                      1
+   ri-siege-engineers                 1
+   ri-siege-onager                    1
+   ri-siege-ram                       1
+   ri-squires                         1
+   ri-stone-mining                    1
+   ri-stone-shaft-mining              1
+   ri-stonecutting                    1
+   ri-thumb-ring                      1
+   ri-town-patrol                     1
+   ri-town-watch                      1
+   ri-tracking                        1
+   ri-two-handed-swordsman            1
+
+== attack : 1 unique ==
+   (attack-now)                       16
+
+== enable-timer : 34 unique ==
+   t-chat=300                         10
+   t-chat=150                         9
+   t-chathelp=120                     9
+   t-attackgroup=1                    6
+   t-chat=360                         6
+   t-chatmore=1200                    6
+   t-ageup=300                        5
+   t-chat=1200                        5
+   t-chat=200                         4
+   t-ageup=140                        3
+   t-ageup=150                        3
+   t-ageup=170                        3
+   t-ageup=200                        3
+   t-ageup=30                         3
+   t-chat=10                          3
+   t-lumbercamp=1                     3
+   t-production=60                    3
+   t-tribute=120                      3
+   t-tribute=300                      3
+   1=60                               2
+   t-attackgroup=120                  2
+   t-attackgroup=30                   2
+   t-attackgroup=300                  2
+   t-chat=600                         2
+   t-chatmore=1800                    2
+   t-lumbercamp=30                    2
+   t-ageup=1                          1
+   t-attackgroup=900                  1
+   t-lumbercamp=60                    1
+   t-production=1                     1
+   t-production=300                   1
+   t-tower=1                          1
+   t-tower=300                        1
+   t-tower=60                         1
+
+== timer-triggered : 9 unique ==
+   t-chat                             54
+   t-production                       45
+   t-tribute                          28
+   t-attackgroup                      26
+   t-ageup                            15
+   t-lumbercamp                       11
+   t-chathelp                         7
+   t-tower                            6
+   t-chatmore                         4
+
+== defconst-t : 9 unique ==
+   t-ageup=10                         1
+   t-attackgroup=2                    1
+   t-chat=5                           1
+   t-chathelp=6                       1
+   t-chatmore=8                       1
+   t-lumbercamp=9                     1
+   t-production=3                     1
+   t-tower=7                          1
+   t-tribute=1                        1
+
+== goal-set : 41 unique ==
+   upgrade-conflict                   165
+   combat-supp                        142
+   combat-arm                         103
+   secondary-build                    97
+   resource-supp                      84
+   resource-needed                    73
+   monk-rating                        57
+   1                                  55
+   castle-attempt                     43
+   personality                        41
+   pre-unique-arm                     41
+   age-advancement                    37
+   2                                  27
+   rush-control                       25
+   wall-build                         24
+   siege-rating                       23
+   36                                 20
+   37                                 20
+   38                                 20
+   39                                 20
+   get-mad                            20
+   25                                 19
+   attack-control                     17
+   24                                 13
+   military-parity                    13
+   sea-owner                          12
+   wonder-attempt                     12
+   siege-available                    8
+   35                                 7
+   make-warboat                       7
+   enemy-soldiers                     6
+   22                                 5
+   soldiers-available                 5
+   attack-enabled                     4
+   make-fire-boat                     4
+   29                                 3
+   archer-upgrades                    3
+   cav-upgrades                       3
+   infantry-upgrades                  3
+   make-villagers                     3
+   need-deathmatch-villagers          3

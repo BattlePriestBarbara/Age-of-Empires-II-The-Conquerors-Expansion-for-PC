@@ -1,0 +1,120 @@
+﻿
+==============================================================================
+LIVE  gamedata_x1.drs  anib_60027 (patched, Conquerors)  (symbols=DEATH-MATCH,DEATHMATCH,DIFFICULTY-HARD,DIFFICULTY-HARDEST,GAME-SPEED-LOCKED,REVEAL-MAP)
+  defconst total : 104   duplicates: 0   errors: none
+   pop-cap                  = ** UNDEFINED **
+   unit-max                 = ** UNDEFINED **
+   deathmatch-unit-max      = ** UNDEFINED **
+   five-percent-pop         = ** UNDEFINED **
+   ten-percent-pop          = ** UNDEFINED **
+   fifteen-percent-pop      = ** UNDEFINED **
+   civ-dark-rush            = ** UNDEFINED **
+   civ-dark                 = ** UNDEFINED **
+   civ-feudal               = ** UNDEFINED **
+   civ-castle               = ** UNDEFINED **
+   imperial-town-size       = ** UNDEFINED **
+   t-production             = 3      (line 234)
+   secondary-build          = 8      (line 69)
+   town-size                = ** UNDEFINED **
+
+==============================================================================
+LIVE  gamedata.drs     anib_60010 (patched, AoK)  (symbols=DEATH-MATCH,DEATHMATCH,DIFFICULTY-HARD,DIFFICULTY-HARDEST,GAME-SPEED-LOCKED,REVEAL-MAP)
+  defconst total : 0   duplicates: 0   errors: none
+   pop-cap                  = ** UNDEFINED **
+   unit-max                 = ** UNDEFINED **
+   deathmatch-unit-max      = ** UNDEFINED **
+   five-percent-pop         = ** UNDEFINED **
+   ten-percent-pop          = ** UNDEFINED **
+   fifteen-percent-pop      = ** UNDEFINED **
+   civ-dark-rush            = ** UNDEFINED **
+   civ-dark                 = ** UNDEFINED **
+   civ-feudal               = ** UNDEFINED **
+   civ-castle               = ** UNDEFINED **
+   imperial-town-size       = ** UNDEFINED **
+   t-production             = ** UNDEFINED **
+   secondary-build          = ** UNDEFINED **
+   town-size                = ** UNDEFINED **
+
+==============================================================================
+RETAIL gamedata_x1.drs anib_60027  (symbols=DEATH-MATCH,DEATHMATCH,DIFFICULTY-HARD,DIFFICULTY-HARDEST,GAME-SPEED-LOCKED,REVEAL-MAP)
+  defconst total : 104   duplicates: 0   errors: none
+   pop-cap                  = ** UNDEFINED **
+   unit-max                 = ** UNDEFINED **
+   deathmatch-unit-max      = ** UNDEFINED **
+   five-percent-pop         = ** UNDEFINED **
+   ten-percent-pop          = ** UNDEFINED **
+   fifteen-percent-pop      = ** UNDEFINED **
+   civ-dark-rush            = ** UNDEFINED **
+   civ-dark                 = ** UNDEFINED **
+   civ-feudal               = ** UNDEFINED **
+   civ-castle               = ** UNDEFINED **
+   imperial-town-size       = ** UNDEFINED **
+   t-production             = 3      (line 234)
+   secondary-build          = 8      (line 69)
+   town-size                = ** UNDEFINED **
+
+==============================================================================
+RETAIL gamedata.drs    anib_60010  (symbols=DEATH-MATCH,DEATHMATCH,DIFFICULTY-HARD,DIFFICULTY-HARDEST,GAME-SPEED-LOCKED,REVEAL-MAP)
+  defconst total : 0   duplicates: 0   errors: none
+   pop-cap                  = ** UNDEFINED **
+   unit-max                 = ** UNDEFINED **
+   deathmatch-unit-max      = ** UNDEFINED **
+   five-percent-pop         = ** UNDEFINED **
+   ten-percent-pop          = ** UNDEFINED **
+   fifteen-percent-pop      = ** UNDEFINED **
+   civ-dark-rush            = ** UNDEFINED **
+   civ-dark                 = ** UNDEFINED **
+   civ-feudal               = ** UNDEFINED **
+   civ-castle               = ** UNDEFINED **
+   imperial-town-size       = ** UNDEFINED **
+   t-production             = ** UNDEFINED **
+   secondary-build          = ** UNDEFINED **
+   town-size                = ** UNDEFINED **
+
+(tail of the live x1 constants file -- the appended catch-all)
+  584| (defconst fifty-percent-pop 100)
+  585| #end-if
+  586| ;*************************************************************
+  587| ;*************************************************************
+  588| #load-if-defined TINY-MAP
+  589| (defconst feudal-mill-count 1)
+  590| (defconst castle-mill-count 1)
+  591| (defconst imperial-mill-count 1)
+  592| (defconst mining-count 8)
+  593| #end-if
+  594| ;**************************
+  595| #load-if-defined SMALL-MAP
+  596| (defconst feudal-mill-count 1)
+  597| (defconst castle-mill-count 1)
+  598| (defconst imperial-mill-count 1)
+  599| (defconst mining-count 8)
+  600| #end-if
+  601| ;**************************
+  602| #load-if-defined MEDIUM-MAP
+  603| (defconst feudal-mill-count 1)
+  604| (defconst castle-mill-count 1)
+  605| (defconst imperial-mill-count 1)
+  606| (defconst mining-count 10)
+  607| #end-if
+  608| ;**************************
+  609| #load-if-defined NORMAL-MAP
+  610| (defconst feudal-mill-count 1)
+  611| (defconst castle-mill-count 1)
+  612| (defconst imperial-mill-count 2)
+  613| (defconst mining-count 11)
+  614| #end-if
+  615| ;**************************
+  616| #load-if-defined LARGE-MAP
+  617| (defconst feudal-mill-count 1)
+  618| (defconst castle-mill-count 2)
+  619| (defconst imperial-mill-count 3)
+  620| (defconst mining-count 12)
+  621| #end-if
+  622| ;**************************
+  623| #load-if-defined GIANT-MAP
+  624| (defconst feudal-mill-count 2)
+  625| (defconst castle-mill-count 3)
+  626| (defconst imperial-mill-count 4)
+  627| (defconst mining-count 15)
+  628| #end-if
+  629| 

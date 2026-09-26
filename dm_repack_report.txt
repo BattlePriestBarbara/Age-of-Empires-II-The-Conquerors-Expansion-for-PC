@@ -1,0 +1,20 @@
+=== gamedata.drs
+  source    : D:\aoe2_work\backup_drs\gamedata.drs.orig  md5 be574545e247b85a196109836a1f9d44  (531384 bytes)
+  dst     D:\aoe2_work\patched_drs\gamedata.drs  (535528 bytes)
+  payload   : aok_drs_anib_60002.bin   -> anib_60002  (47443 bytes)
+  payload   : aok_drs_anib_60010.bin   -> anib_60010  (16587 bytes)
+  entries: 48 total, 46 byte-identical, 2 changed
+    CHANGED ext=b'anib' id=60002  45718 -> 47443 bytes  md5 369e8466f747ff9f503408e081c566c6 -> 533717b597ee815a3c0bffe0b0412fd5
+    CHANGED ext=b'anib' id=60010  14168 -> 16587 bytes  md5 d70770b528caf21520c73bced85781da -> a273baf57e0b3f7c17554e8a5176920e
+  round-trip ok: anib_60002 in the patched archive == 47443 bytes, md5 533717b597ee815a3c0bffe0b0412fd5
+  round-trip ok: anib_60010 in the patched archive == 16587 bytes, md5 a273baf57e0b3f7c17554e8a5176920e
+=== gamedata_x1.drs
+  source    : D:\aoe2_work\backup_drs\gamedata_x1.drs.orig  md5 f41c418333e624b7a1077ad166f9dcb0  (944156 bytes)
+  dst     D:\aoe2_work\patched_drs\gamedata_x1.drs  (948422 bytes)
+  payload   : x1_drs_anib_60002.bin    -> anib_60002  (55928 bytes)
+  payload   : x1_drs_anib_60027.bin    -> anib_60027  (21924 bytes)
+  entries: 76 total, 74 byte-identical, 2 changed
+    CHANGED ext=b'anib' id=60002  54203 -> 55928 bytes  md5 430feba4dc7ecb3ee47c68d2917adac2 -> a1f4880e8bfeb2ca7dc2bde0e14985f6
+    CHANGED ext=b'anib' id=60027  19383 -> 21924 bytes  md5 45e05207f2f0d1988f7c2c9561033e94 -> 854ca2fd4a07df644b6642696105ccfd
+  round-trip ok: anib_60002 in the patched archive == 55928 bytes, md5 a1f4880e8bfeb2ca7dc2bde0e14985f6
+  round-trip ok: anib_60027 in the patched archive == 21924 bytes, md5 854ca2fd4a07df644b6642696105ccfd

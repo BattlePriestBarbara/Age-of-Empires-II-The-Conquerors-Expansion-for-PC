@@ -1,0 +1,20 @@
+=== gamedata.drs
+  pristine source : D:\aoe2_aoefix\backup_drs\gamedata.drs.orig  md5 be574545e247b85a196109836a1f9d44  (531384 bytes)
+  patched         : D:\aoe2_aoefix\patched_drs2\gamedata.drs  md5 bc3ae18a686cbd6b1804ecaa9e72d589  (537558 bytes)
+  payload         : aok_drs_anib_60002.bin   -> anib_60002  (51587 bytes, md5 20e5c89f82180b052c2b22efc66e918b)
+  payload         : aok_drs_anib_60001.bin   -> anib_60001  (28855 bytes, md5 09c7e83cd8119089e4ac1c2c2a753228)
+  entries: 48 total, 46 byte-identical, 2 changed
+    CHANGED ext=b'anib' id=60001  28550 -> 28855 bytes  md5 9dbdc8fc63d053ce7346cab7e3a0dceb -> 09c7e83cd8119089e4ac1c2c2a753228
+    CHANGED ext=b'anib' id=60002  45718 -> 51587 bytes  md5 369e8466f747ff9f503408e081c566c6 -> 20e5c89f82180b052c2b22efc66e918b
+  round-trip ok   : anib_60001 == 28855 bytes, md5 09c7e83cd8119089e4ac1c2c2a753228  | marker appended to the retail script (28550 + 305 bytes)
+  round-trip ok   : anib_60002 == 51587 bytes, md5 20e5c89f82180b052c2b22efc66e918b  | retail script kept as a byte-exact prefix (45718 bytes) + 5869 appended
+=== gamedata_x1.drs
+  pristine source : D:\aoe2_aoefix\backup_drs\gamedata_x1.drs.orig  md5 f41c418333e624b7a1077ad166f9dcb0  (944156 bytes)
+  patched         : D:\aoe2_aoefix\patched_drs2\gamedata_x1.drs  md5 59ca9130ce14f649a52d47f64b1357b3  (950328 bytes)
+  payload         : x1_drs_anib_60002.bin    -> anib_60002  (60071 bytes, md5 19898a758e1d48a3f4a5b36b73317489)
+  payload         : x1_drs_anib_60001.bin    -> anib_60001  (29641 bytes, md5 cf2f4a5bb43308a274c998e4fbec7567)
+  entries: 76 total, 74 byte-identical, 2 changed
+    CHANGED ext=b'anib' id=60001  29337 -> 29641 bytes  md5 5a2604d430a89493e76aac820d34bef9 -> cf2f4a5bb43308a274c998e4fbec7567
+    CHANGED ext=b'anib' id=60002  54203 -> 60071 bytes  md5 430feba4dc7ecb3ee47c68d2917adac2 -> 19898a758e1d48a3f4a5b36b73317489
+  round-trip ok   : anib_60001 == 29641 bytes, md5 cf2f4a5bb43308a274c998e4fbec7567  | marker appended to the retail script (29337 + 304 bytes)
+  round-trip ok   : anib_60002 == 60071 bytes, md5 19898a758e1d48a3f4a5b36b73317489  | retail script kept as a byte-exact prefix (54203 bytes) + 5868 appended

@@ -1,0 +1,37 @@
+=== timer names used, per AI script ===
+  aok_drs/anib_60001.bin       t-ageup t-chat t-chathelp t-lumbercamp t-production
+  aok_drs/anib_60002.bin       t-ageup t-lumbercamp
+  aok_drs/anib_60005.bin       t-chat
+  aok_drs/anib_60007.bin       t-ageup
+  aok_drs/anib_60008.bin       t-ageup t-chat t-chathelp t-chatmore
+  aok_drs/anib_60009.bin       t-production
+  aok_drs/anib_60012.bin       t-tower
+  aok_drs/anib_60017.bin       t-ageup t-tribute
+  aok_drs/anib_60020.bin       t-tribute
+  aok_drs/anib_60021.bin       t-attackgroup
+  aok_drs/anib_60022.bin       t-chat
+  aok_drs/anib_60023.bin       t-chat
+  aok_drs/anib_60027.bin       t-ageup t-attackgroup t-chat t-chathelp t-chatmore t-lumbercamp t-production t-tower t-tribute
+  x1_drs/anib_60001.bin        t-ageup t-chatmore t-lumbercamp t-production
+  x1_drs/anib_60002.bin        t-ageup t-lumbercamp
+  x1_drs/anib_60005.bin        t-chat
+  x1_drs/anib_60007.bin        t-ageup
+  x1_drs/anib_60008.bin        t-ageup t-chatmore
+  x1_drs/anib_60009.bin        t-production
+  x1_drs/anib_60012.bin        t-tower
+  x1_drs/anib_60013.bin        t-ageup t-attackgroup t-chathelp
+  x1_drs/anib_60016.bin        t-ageup
+  x1_drs/anib_60017.bin        t-ageup t-tribute
+  x1_drs/anib_60021.bin        t-attackgroup
+  x1_drs/anib_60022.bin        t-chat
+  x1_drs/anib_60023.bin        t-chat
+  x1_drs/anib_60027.bin        t-ageup t-attackgroup t-chat t-chathelp t-chatmore t-lumbercamp t-production t-tower t-tribute
+  x1_drs/anib_60028.bin        t-ageup t-chatmore t-lumbercamp t-tribute
+  x1_drs/anib_60029.bin        t-attackgroup t-chatmore t-production
+
+=== union of timer names used by scripts: 9 ===
+  t-ageup t-attackgroup t-chat t-chathelp t-chatmore t-lumbercamp t-production t-tower t-tribute
+
+=== 't-...' strings in exe (len>=4) ===
+
+total exe timer-name strings: 0

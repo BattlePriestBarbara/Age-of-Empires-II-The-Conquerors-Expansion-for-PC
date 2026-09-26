@@ -1,0 +1,369 @@
+======================================================================
+x1_drs  anib_60007.bin  (1164 lines)  60007 supplement secondary-build flow
+     310| )
+     311| 
+     312| (defrule
+     313| 	(goal soldiers-available YES)
+     314| 	(unit-type-count-total trebuchet < 3)
+     315| 	(soldier-count > fifteen-percent-pop)
+     316| 	(can-train trebuchet)
+     317| 	(not (town-under-attack) )
+     318| =>
+     319| 	(train trebuchet)
+     320| )
+     321| 
+     322| (defrule
+     323| 	(goal soldiers-available YES)
+     324| 	(unit-type-count-total trebuchet < 3)
+     325| 	(can-train-with-escrow trebuchet)
+     326| 	(nor
+     327| 		(can-train trebuchet)
+     328| 		(or
+     329| 			(goal upgrade-conflict NOTICE)
+     330| 			(town-under-attack)
+     331| 		)
+     332| 	)
+     333| 	(or
+     334| 		(cc-players-building-type-count any-enemy town-center > 1)
+     335| 		(map-type black-forest)
+     336| 	)
+     337| =>
+     338| 	(release-escrow wood)
+     339| 	(release-escrow gold)
+     340| 	(train trebuchet)
+     341| )
+     342| 
+     343| (defrule
+     344| 	(goal soldiers-available YES)
+     345| 	(unit-type-count-total trebuchet < 3)
+     346| 	(can-train-with-escrow trebuchet)
+     347| 	(nor
+     348| 		(can-train trebuchet)
+     349| 		(or
+     350| 			(goal upgrade-conflict NOTICE)
+     351| 			(town-under-attack)
+     352| 		)
+     353| 	)
+     354| 	(or
+     355| 		(cc-players-building-type-count any-enemy castle > 0)
+     356| 		(cc-players-building-type-count any-enemy watch-tower-line > 3)
+     357| 	)
+     358| =>
+     359| 	(release-escrow wood)
+     360| 	(release-escrow gold)
+     361| 	(train trebuchet)
+     362| )
+     363| 
+     364| ;*********************************
+     365| #load-if-not-defined DEATH-MATCH
+     366| 
+     367| ;build superunits
+     368| (defrule
+     369| 	(current-age == imperial-age)
+     370| =>
+     371| 	(disable-timer t-ageup)
+     372| 	(enable-timer t-ageup 30)
+     373| 	(disable-self)
+     374| )
+     375| 
+     376| (defrule
+     377| 	(population < unit-max)
+     378| 	(timer-triggered t-ageup)
+     379| 	(can-train my-unique-unit-line)
+     380| =>
+     381| 	(train my-unique-unit-line)
+     382| 	(set-goal secondary-build 0)
+     383| )
+     384| 
+     385| (defrule
+     386| 	(population < unit-max)
+     387| 	(timer-triggered t-ageup)
+     388| 	(can-train champion)
+     389| =>
+     390| 	(train champion)
+     391| 	(set-goal secondary-build 0)
+     392| )
+     393| 
+     394| (defrule
+     395| 	(population < unit-max)
+     396| 	(timer-triggered t-ageup)
+     397| 	(can-train paladin)
+     398| =>
+     399| 	(train paladin)
+     400| 	(set-goal secondary-build 0)
+
+======================================================================
+x1_drs  anib_60009.bin  (1220 lines)  60009 secondary-build flow start
+     545| 	)
+     546| =>
+     547| 	(set-goal combat-supp CAVALRY)
+     548| )
+     549| 
+     550| (defrule
+     551| 	(goal combat-supp UNIT20)
+     552| 	(timer-triggered  t-production)
+     553| 	(random-number <= 7)
+     554| 	(or
+     555| 		(goal combat-arm ARCHER)
+     556| 		(and
+     557| 			(building-type-count castle > 0)
+     558| 			(or
+     559| 				(civ-selected mongol)
+     560| 				(civ-selected turkish)
+     561| 			)
+     562| 		)
+     563| 	)
+     564| =>
+     565| 	(set-goal combat-supp CAVALRY)
+     566| )
+     567| 
+     568| (defrule
+     569| 	(goal combat-supp UNIT20)
+     570| 	(timer-triggered  t-production)
+     571| 	(random-number <= 11)
+     572| 	(or
+     573| 		(goal combat-arm ARCHER)
+     574| 		(and
+     575| 			(building-type-count castle > 0)
+     576| 			(or
+     577| 				(or
+     578| 					(civ-selected briton)
+     579| 					(civ-selected chinese)
+     580| 				)
+     581| 				(civ-selected mayan)
+     582| 			)
+     583| 		)
+     584| 	)
+     585| =>
+     586| 	(set-goal combat-supp LIGHTCAV)
+     587| )
+     588| 
+     589| (defrule
+     590| 	(goal combat-supp UNIT20)
+     591| 	(timer-triggered  t-production)
+     592| 	(random-number <= 11)
+     593| 	(or
+     594| 		(goal combat-arm ARCHER)
+     595| 		(and
+     596| 			(building-type-count castle > 0)
+     597| 			(or
+     598| 				(civ-selected mongol)
+     599| 				(civ-selected turkish)
+     600| 			)
+     601| 		)
+     602| 	)
+     603| =>
+     604| 	(set-goal combat-supp LIGHTCAV)
+     605| )
+     606| 
+     607| (defrule
+     608| 	(goal combat-supp UNIT20)
+     609| 	(timer-triggered  t-production)
+     610| 	(random-number == 12)
+     611| 	(or
+     612| 		(goal combat-arm ARCHER)
+     613| 		(and
+     614| 			(building-type-count castle > 0)
+     615| 			(or
+     616| 				(civ-selected mayan)
+     617| 				(or
+     618| 					(civ-selected briton)
+     619| 					(civ-selected chinese)
+     620| 				)
+
+======================================================================
+aok_drs  anib_60007.bin  (803 lines)  60007 supplement secondary-build flow
+     310| 	)
+     311| 	(or
+     312| 		(cc-players-building-type-count any-enemy castle > 0)
+     313| 		(cc-players-building-type-count any-enemy watch-tower-line > 3)
+     314| 	)
+     315| =>
+     316| 	(release-escrow wood)
+     317| 	(release-escrow gold)
+     318| 	(train trebuchet)
+     319| )
+     320| 
+     321| ;*********************************
+     322| #load-if-not-defined DEATH-MATCH
+     323| 
+     324| ;build superunits
+     325| (defrule
+     326| 	(current-age == imperial-age)
+     327| =>
+     328| 	(disable-timer t-ageup)
+     329| 	(enable-timer t-ageup 30)
+     330| 	(disable-self)
+     331| )
+     332| 
+     333| (defrule
+     334| 	(population < unit-max)
+     335| 	(timer-triggered  t-ageup)
+     336| 	(can-train my-unique-unit-line)
+     337| =>
+     338| 	(train my-unique-unit-line)
+     339| 	(set-goal secondary-build 0)
+     340| )
+     341| 
+     342| (defrule
+     343| 	(population < unit-max)
+     344| 	(timer-triggered  t-ageup)
+     345| 	(can-train champion)
+     346| =>
+     347| 	(train champion)
+     348| 	(set-goal secondary-build 0)
+     349| )
+     350| 
+     351| (defrule
+     352| 	(population < unit-max)
+     353| 	(timer-triggered  t-ageup)
+     354| 	(can-train paladin)
+     355| =>
+     356| 	(train paladin)
+     357| 	(set-goal secondary-build 0)
+     358| )
+     359| 
+     360| (defrule
+     361| 	(population < unit-max)
+     362| 	(timer-triggered  t-ageup)
+     363| 	(can-train heavy-cavalry-archer)
+     364| =>
+     365| 	(train heavy-cavalry-archer)
+     366| 	(set-goal secondary-build 0)
+     367| )
+     368| 
+     369| (defrule
+     370| 	(population < unit-max)
+     371| 	(timer-triggered  t-ageup)
+     372| 	(can-train hand-cannoneer)
+     373| =>
+     374| 	(train hand-cannoneer)
+     375| 	(set-goal secondary-build 0)
+     376| )
+     377| 
+     378| (defrule
+     379| 	(population < unit-max)
+     380| 	(timer-triggered  t-ageup)
+     381| 	(can-train arbalest)
+     382| 	(or
+     383| 		(goal secondary-build 0)
+     384| 		(not (unit-available hand-cannoneer) )
+     385| 	)
+     386| =>
+     387| 	(train arbalest)
+     388| 	(set-goal secondary-build 1)
+     389| )
+     390| 
+     391| (defrule
+     392| 	(current-age == imperial-age)
+     393| 	(timer-triggered  t-ageup)
+     394| =>
+     395| 	(disable-timer t-ageup)
+     396| 	(enable-timer t-ageup 30)
+     397| )
+     398| #end-if
+     399| ;******************************************************
+     400| ;train specialty units
+
+======================================================================
+aok_drs  anib_60009.bin  (1019 lines)  60009 secondary-build flow start
+     545| (defrule
+     546| 	(goal rush-control RUSHING)
+     547| 	(soldier-count < ten-percent-pop)
+     548| 	(can-train-with-escrow militiaman-line)
+     549| 	(nor
+     550| 		(can-train militiaman-line)
+     551| 		(goal upgrade-conflict NOTICE)
+     552| 	)
+     553| 	(or
+     554| 		(goal combat-arm INFANTRY)
+     555| 		(goal pre-unique-arm INFANTRY)
+     556| 	)
+     557| =>
+     558| 	(release-escrow food)
+     559| 	(release-escrow gold)
+     560| 	(train militiaman-line)
+     561| 	(set-goal secondary-build 0)
+     562| )
+     563| 
+     564| (defrule
+     565| 	(population < unit-max)
+     566| 	(can-train militiaman-line)
+     567| 	(or
+     568| 		(goal combat-arm INFANTRY)
+     569| 		(goal pre-unique-arm INFANTRY)
+     570| 	)
+     571| =>
+     572| 	(train militiaman-line)
+     573| 	(set-goal secondary-build 0)
+     574| )
+     575| 
+     576| (defrule
+     577| 	(goal secondary-build 0)
+     578| 	(goal combat-supp INFANTRY)
+     579| 	(population < unit-max)
+     580| 	(can-train militiaman-line)
+     581| =>
+     582| 	(train militiaman-line)
+     583| 	(set-goal secondary-build 1)
+     584| )
+     585| 
+     586| ;********************************************************************
+     587| ;CAVALRY ARMY == goal combat-arm CAVALRY & goal combat-supp CAVALRY
+     588| (defrule
+     589| 	(goal rush-control RUSHING)
+     590| 	(current-age < castle-age)
+     591| 	(soldier-count < ten-percent-pop)
+     592| 	(can-train-with-escrow militiaman-line)
+     593| 	(nor
+     594| 		(can-train militiaman-line)
+     595| 		(goal upgrade-conflict NOTICE)
+     596| 	)
+     597| 	(or
+     598| 		(goal combat-arm CAVALRY)
+     599| 		(goal pre-unique-arm CAVALRY)
+     600| 	)
+     601| =>
+     602| 	(release-escrow food)
+     603| 	(release-escrow gold)
+     604| 	(train militiaman-line)
+     605| 	(set-goal secondary-build 0)
+     606| )
+     607| 
+     608| (defrule
+     609| 	(goal rush-control RUSHING)
+     610| 	(soldier-count < ten-percent-pop)
+     611| 	(can-train-with-escrow knight-line)
+     612| 	(nor
+     613| 		(can-train knight-line)
+     614| 		(goal upgrade-conflict NOTICE)
+     615| 	)
+     616| 	(or
+     617| 		(goal combat-arm CAVALRY)
+     618| 		(goal pre-unique-arm CAVALRY)
+     619| 	)
+     620| =>
+
+=== all uses of '(goal secondary-build 0)' as a CONDITION (all files) ===
+   aok_drs/anib_60007.bin   383| 		(goal secondary-build 0)
+   aok_drs/anib_60009.bin   577| 	(goal secondary-build 0)
+   aok_drs/anib_60009.bin   654| 	(goal secondary-build 0)
+   aok_drs/anib_60009.bin   704| 	(goal secondary-build 0)
+   aok_drs/anib_60009.bin   809| 	(goal secondary-build 0)
+   aok_drs/anib_60009.bin   833| 	(goal secondary-build 0)
+   aok_drs/anib_60009.bin   878| 	(goal secondary-build 0)
+   aok_drs/anib_60009.bin   890| 	(goal secondary-build 0)
+   aok_drs/anib_60009.bin   900| 	(goal secondary-build 0)
+   aok_drs/anib_60009.bin   970| 	(goal secondary-build 0)
+   x1_drs/anib_60007.bin   426| 		(goal secondary-build 0)
+   x1_drs/anib_60009.bin   731| 	(goal secondary-build 0)
+   x1_drs/anib_60009.bin   796| 	(goal secondary-build 0)
+   x1_drs/anib_60009.bin   870| 	(goal secondary-build 0)
+   x1_drs/anib_60009.bin   920| 	(goal secondary-build 0)
+   x1_drs/anib_60009.bin  1025| 	(goal secondary-build 0)
+   x1_drs/anib_60009.bin  1049| 	(goal secondary-build 0)
+   x1_drs/anib_60009.bin  1094| 	(goal secondary-build 0)
+   x1_drs/anib_60009.bin  1106| 	(goal secondary-build 0)
+   x1_drs/anib_60009.bin  1116| 	(goal secondary-build 0)
+   x1_drs/anib_60009.bin  1157| 	(goal secondary-build 0)
+   x1_drs/anib_60009.bin  1171| 	(goal secondary-build 0)

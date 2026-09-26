@@ -1,0 +1,192 @@
+========================================================================
+anib_60028.bin  (2628 lines, 38 hits)
+    L5     =>
+    L6     .(enable-timer 1 60)
+  * L7     .(disable-self)
+    L8     )
+    L9     
+    L12    =>
+    L13    .(set-goal resource-needed NO)
+  * L14    .(disable-self)
+    L15    )
+    L16    
+    L596   =>
+    L597   .(set-strategic-number sn-minimum-water-body-size-for-dock 3000)
+  * L598   .(disable-self)
+    L599   )
+    L600   ;*************************************************************
+    L609   ..;"If this is an all-land or an island map, then please"
+    L610   ..;"rework thy AI script accordingly."
+  * L611   ;.(disable-self)
+    L612   ;)
+    L613   
+    L621   .(chat-local-to-self "detecting ocean map!")
+    L622   .(set-goal 1 1)
+  * L623   .(disable-self)
+    L624   )
+    L625   
+    L633   .(chat-local-to-self "detecting ocean map!")
+    L634   .(set-goal 1 1)
+  * L635   .(disable-self)
+    L636   )
+    L637   
+    L645   .(chat-local-to-self "detecting ocean map!")
+    L646   .(set-goal 1 1)
+  * L647   .(disable-self)
+    L648   )
+    L649   
+    L657   .(chat-local-to-self "detecting ocean map!")
+    L658   .(set-goal 1 1)
+  * L659   .(disable-self)
+    L660   )
+    L661   
+    L669   .(chat-local-to-self "detecting water map!")
+    L670   .(set-goal 1 1)
+  * L671   .(disable-self)
+    L672   )
+    L673   #end-if
+    L680   .(chat-local-to-self "detecting water map!")
+    L681   .(set-goal 1 1)
+  * L682   .(disable-self)
+    L683   )
+    L684   #end-if
+    L691   .(chat-local-to-self "detecting water map!")
+    L692   .(set-goal 1 1)
+  * L693   .(disable-self)
+    L694   )
+    L695   #end-if
+    L702   .(chat-local-to-self "detecting water map!")
+    L703   .(set-goal 1 1)
+  * L704   .(disable-self)
+    L705   )
+    L706   #end-if
+    L713   .(chat-local-to-self "detecting water map!")
+    L714   .(set-goal 1 1)
+  * L715   .(disable-self)
+    L716   )
+    L717   #end-if
+    L724   .(chat-local-to-self "detecting water map!")
+    L725   .(set-goal 1 1)
+  * L726   .(disable-self)
+    L727   )
+    L728   #end-if
+    L735   .(chat-local-to-self "detecting land map!")
+    L736   .(set-goal 1 0)
+  * L737   .(disable-self)
+    L738   )
+    L739   #end-if
+    L746   .(chat-local-to-self "detecting land map!")
+    L747   .(set-goal 1 0)
+  * L748   .(disable-self)
+    L749   )
+    L750   #end-if
+    L757   .(chat-local-to-self "detecting land map!")
+    L758   .(set-goal 1 0)
+  * L759   .(disable-self)
+    L760   )
+    L761   #end-if
+    L768   .(chat-local-to-self "detecting land map!")
+    L769   .(set-goal 1 0)
+  * L770   .(disable-self)
+    L771   )
+    L772   
+    L786   .(chat-local-to-self "detecting land map!")
+    L787   .(set-goal 1 0)
+  * L788   .(disable-self)
+    L789   )
+    L790   
+    L795   =>
+    L796   .(set-strategic-number sn-number-boat-explore-groups 1)
+  * L797   .(disable-self)
+    L798   )
+    L799   
+    L873   .(set-goal age-advancement NO).;goal 14
+    L874   .(set-goal upgrade-conflict NO).;goal 16
+  * L875   .(disable-self)
+    L876   )
+    L877   
+    L882   .(disable-timer t-chatmore)
+    L883   .(enable-timer t-chatmore 1200)
+  * L884   .(disable-self)
+    L885   )
+    L886   
+    L1232  =>
+    L1233  .(set-goal upgrade-conflict NOTICE)
+  * L1234  .(disable-self)
+    L1235  )
+    L1236  
+    L1246  .(set-strategic-number sn-percent-civilian-gatherers 10)
+    L1247  .(build wonder)
+  * L1248  .(disable-self)
+    L1249  )
+    L1250  
+    L1258  .(set-strategic-number sn-gold-gatherer-percentage 0)
+    L1259  .(set-strategic-number sn-stone-gatherer-percentage 0)
+  * L1260  .(disable-self)
+    L1261  )
+    L1262  
+    L2148  .(set-strategic-number sn-mill-max-distance 20)
+    L2149  .(set-strategic-number sn-group-form-distance 10)
+  * L2150  .(disable-self)
+    L2151  )
+    L2152  
+    L2169  .(set-strategic-number sn-cap-civilian-explorers 0)
+    L2170  .(set-strategic-number sn-percent-civilian-explorers 0)
+  * L2171  .(disable-self)
+    L2172  )
+    L2173  
+    L2182  .(set-strategic-number sn-maximum-gold-drop-distance 20)
+    L2183  .(set-strategic-number sn-maximum-stone-drop-distance 20)
+  * L2184  .(disable-self)
+    L2185  )
+    L2186  
+    L2189  =>
+    L2190  .(set-strategic-number sn-maximum-fish-boat-drop-distance 7)
+  * L2191  .(disable-self)
+    L2192  )
+    L2193  
+    L2204  .(set-strategic-number sn-percent-civilian-builders 15)
+    L2205  .(set-strategic-number sn-percent-civilian-gatherers 85)
+  * L2206  .(disable-self)
+    L2207  )
+    L2208  
+    L2215  .(set-strategic-number sn-percent-civilian-builders 85)
+    L2216  .(set-strategic-number sn-percent-civilian-gatherers 15)
+  * L2217  .(disable-self)
+    L2218  )
+    L2219  
+    L2264  =>
+    L2265  .(build town-center)
+  * L2266  .(disable-self)
+    L2267  )
+    L2268  
+    L2394  .(set-strategic-number sn-mill-max-distance 35)
+    L2395  .(set-strategic-number sn-group-form-distance 20)
+  * L2396  .(disable-self)
+    L2397  )
+    L2398  
+    L2403  .(enable-timer t-lumbercamp 1)
+    L2404  .(disable-timer t-ageup)
+  * L2405  .(disable-self)
+    L2406  )
+    L2407  
+    L2413  .(set-strategic-number sn-percent-civilian-builders 50)
+    L2414  .(set-strategic-number sn-percent-civilian-gatherers 50)
+  * L2415  .(disable-self)
+    L2416  )
+    L2417  
+    L2422  .(set-strategic-number sn-percent-civilian-builders 15)
+    L2423  .(set-strategic-number sn-percent-civilian-gatherers 85)
+  * L2424  .(disable-self)
+    L2425  )
+    L2426  
+    L2537  
+    L2538  .(disable-timer t-ageup)
+  * L2539  .(disable-self)
+    L2540  )
+    L2541  
+    L2593  .(set-goal age-advancement NO)
+    L2594  
+  * L2595  .(disable-self)
+    L2596  )
+    L2597  

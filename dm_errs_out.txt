@@ -1,0 +1,1062 @@
+=== every ERR#### string in the exe (AI error catalogue)
+   ERR2001: Missing opening parenthesis
+   ERR2002: Missing keyword
+   ERR2003: Invalid keyword
+   ERR2004: Missing identifier
+   ERR2005: Invalid identifier
+   ERR2006: Missing file name
+   ERR2007: Missing left-hand side (LHS) of the rule
+   ERR2008: Missing arrow
+   ERR2009: Missing right-hand side (RHS) of the rule
+   ERR2010: Missing closing quote
+   ERR2011: Missing closing parenthesis
+   ERR2012: Constant Already Defined
+   ERR2013: Unexpected end-of-file
+   ERR3001: Invalid preprocessor directive
+   ERR3002: Missing preprocessor symbol
+   ERR3003: Preprocessor nesting too deep
+   ERR3004: Unexpected #else
+   ERR3005: Unexpected #end-if
+   ERR3006: Missing #end-if
+   ERR5001: File open failed
+   ERR5002: File read failed
+   ERR6001: List full
+   ERR6002: Rule too long
+   ERR6003: String table full
+   ERR8001: No rules
+   ERR9000: Undocumented error
+   ERR9001: Unexpected error
+
+=== strings mentioning nested / constant / too many / limit
+    P#%d reported P#%d (dco=%llu) was invalid 
+    unknown trigger 
+   $$$ USER_COMMAND: UNKNOWN (%d, %d)
+   '%s' : macro redefinition
+   (unknown D3D_ Error)
+   (unknown caller)
+   (unknown)
+   +++Too many commands in one comm turn.  Seq#=%d
+   <invalid tag>
+   <program name unknown>
+   ><unknown tag>
+   ?Invalid status line number.
+   Application transferred too many scanlines
+   COM Invalid Handle
+   COM Invalid Pointer
+   CONSTANT
+   Constant variable '%s' bound to register greater than 8191 (%d requested)
+   D3DERR_DRIVERINVALIDCALL
+   D3DERR_INVALIDCALL
+   D3DERR_INVALIDDEVICE
+   ERR2003: Invalid keyword
+   ERR2005: Invalid identifier
+   ERR2012: Constant Already Defined
+   ERR3001: Invalid preprocessor directive
+   E_INVALIDARG
+   GUnknown sRGB intent
+   ID3DXEffectCompiler: Invalid sampler index %d
+   INVALID
+   Invalid
+   Invalid %s semantics - POSITIONT0
+   Invalid IHDR chunk
+   Invalid JPEG file structure: SOS before SOF
+   Invalid JPEG file structure: missing SOS marker
+   Invalid JPEG file structure: two SOF markers
+   Invalid JPEG file structure: two SOI markers
+   Invalid PLTE after IDAT
+   Invalid SOS parameters for sequential JPEG
+   Invalid attempt to read row data
+   Invalid bit depth in IHDR
+   Invalid color quantization mode change
+   Invalid color type in IHDR
+   Invalid color type/bit depth combination in IHDR
+   Invalid component ID %d in SOS
+   Invalid currentUpdateComputerPlayer...
+   Invalid gAMA after IDAT
+   Invalid image size in IHDR
+   Invalid input register '%s' specified
+   Invalid memory pool code %d
+   Invalid output register '%s' specified
+   Invalid palette chunk
+   Invalid pixel shader input register '%s' specified
+   Invalid player req.
+   Invalid progressive parameters Ss=%d Se=%d Ah=%d Al=%d
+   Invalid progressive parameters at scan script entry %d
+   Invalid sRGB after IDAT
+   Invalid scan script at entry %d
+   Invalid tRNS after IDAT
+   InvalidateRect
+   Invalidated
+   LIMIT=
+   P2P:: Received unknown message on our listen socket
+   PIXELSHADERCONSTANT
+   PIXELSHADERCONSTANT1
+   PIXELSHADERCONSTANT2
+   PIXELSHADERCONSTANT3
+   PIXELSHADERCONSTANT4
+   PIXELSHADERCONSTANTB
+   PIXELSHADERCONSTANTF
+   PIXELSHADERCONSTANTI
+   Player number invalid.  Returning.
+   Player was defeated, was computer, or is invalid.
+   SaveMultiplayerGameHeader() invalid save, checksum %ld
+   Too many color components: %d, max %d
+   UNKNOWN
+   UNLINK Unknown
+   Unknown
+   Unknown APP0 marker (not JFIF), length %u
+   Unknown APP14 marker (not Adobe), length %u
+   Unknown Adobe color transform code %d
+   Unknown compression method in IHDR
+   Unknown exception
+   Unknown filter method in IHDR
+   Unknown interlace method in IHDR
+   Unknown message : %d '%c'
+   Unknown zlib error
+   UnknownVendr
+   Updating Filters: GameType %d MapFileType %d MapType %d MapSize %d Resources %d Age %d Limit %d Victory %d
+   Updating Filters: GameType %d MapFileType %d MapType %d MapSize %d Resources %d Age %d Limit %d Victory %d Cheating %d
+   VERTEXSHADERCONSTANT
+   VERTEXSHADERCONSTANT1
+   VERTEXSHADERCONSTANT2
+   VERTEXSHADERCONSTANT3
+   VERTEXSHADERCONSTANT4
+   VERTEXSHADERCONSTANTB
+   VERTEXSHADERCONSTANTF
+   VERTEXSHADERCONSTANTI
+   VICTORY-TIME-LIMIT
+   Warning: unknown JFIF revision number %d.%02d
+   boolean constant register '%s' must be defined as a variable of type bool only
+   cannot bind the same variable to multiple constants in the same constant bank
+   clip cannot be performed from a constant or literal
+   constant register '%s' must be defined as a variable '%s'
+   constant register address out of bounds on constant '%s', size %d, offset %d
+   constant table info exceeds maximum comment size
+   exceeded maximum constant registers
+   float constant
+   integer constant
+   integer constant register '%s' must be defined as a variable of type int3 or int4 only
+   internal error: invalid swizzle found
+   internal error: result register invalid
+   internal error: unknown node
+   invalid %s
+   invalid %s semantic '%s'
+   invalid bit length repeat
+   invalid block type
+   invalid chunk type
+   invalid complement expression
+   invalid distance code
+   invalid input semantic '%s', only _centroid allowed
+   invalid instruction modifiers '%s'
+   invalid literal/length code
+   invalid mask '%s'
+   invalid or unsupported integer constant expression
+   invalid preprocessor command '%s'
+   invalid reference to %s semantic '%s'
+   invalid reference to input semantic '%s%d'
+   invalid reference to output semantic '%s%d'
+   invalid register '%s'
+   invalid register '%s[%u]'
+   invalid register '%s[...]'
+   invalid register semantic '%s', or variable must be bound to multiple register banks (%c register binding required)
+   invalid register, input, or constant name '%s'
+   invalid stored block lengths
+   invalid string position
+   invalid subscript '%s'
+   invalid swizzle '%s'
+   invalid type used for '%s' %s semantics
+   invalid use of '%s'
+   invalid window size
+   maximum boolean register index exceeded - Try reducing number of constant branches
+   maximum constant register index exceeded - Try reducing number of constants referenced
+   petersen constants.per
+   program too complex: exceeded available constant registers.
+   redefinition of '%s'
+   redefinition of formal parameter '%s'
+   sn-consecutive-idle-unit-limit
+   string constant
+   temporary and constant registers are not allowed in assembly fragments
+   temporary, constant, and output registers are not allowed in vs_3_0 assembly fragments
+   time-limit
+   too many arguments to target TX
+   too many length or distance symbols
+   too many nested #includes
+   too many outputs to target TX
+   too many texture loads and reads from texcoords
+   unknown
+   unknown compression method
+   unknown critical chunk
+   unknown device name
+   unknown module name
+
+=== symbol / token table around 0x373600-0x374600
+   s'.
+   NONE
+   
+   
+   
+   
+   
+   
+   
+   4[.
+   @YB
+   ..B
+   
+   "X
+   `.T
+   
+   "X
+   ..B
+    .B
+   `.T
+   .\X
+   .\X
+   .\X
+   .\X
+   `YB
+   
+   "X
+   .\X
+   .TB
+   Diplomacy AI
+   
+   
+   
+   
+   
+   
+   
+   .[.
+   ._B
+   ..B
+   
+   "X
+   `.T
+   
+   "X
+   ..B
+    .B
+   `.T
+   .\X
+   .\X
+   .\X
+   .\X
+   .\X
+   
+   "X
+   .\X
+   .\B
+   Vengeful
+   
+   
+   
+   Passive
+   Friendly
+   
+   
+   
+   Defensive
+   
+   
+   Compassionate
+   
+   
+   Aggressive
+   
+   Emotional AI
+   
+   
+   
+   .[.
+   .oB
+   .\.
+   .|B
+   #end-if
+   #else
+   
+   
+   #load-if-not-defined
+   
+   
+   
+   #load-if-defined
+   
+   
+   
+   =>
+   
+   defconst
+   
+   
+   
+   defrule
+   load-random
+   load
+   
+   
+   
+   
+   
+   
+   
+   `\.
+   P.B
+   ..B
+   
+   "X
+   `.T
+   
+   "X
+   ..B
+    .B
+   `.T
+   .\X
+   .\X
+   .\X
+   .\X
+   .\X
+   
+   "X
+   .\X
+   InfAI
+   
+   
+   .\.
+    .B
+   ERROR!  %d is an unrecognized action id.
+   
+   
+   
+   
+   
+   
+   
+   ,].
+   ..B
+   ..B
+   
+   "X
+   `.T
+   
+   "X
+   ..B
+    .B
+   `.T
+   .\X
+   .\X
+   .\X
+   .\X
+   .\X
+   
+   "X
+   .\X
+   ..B
+   `.B
+   ..B
+   ppZ
+   ..B
+   ..V
+   .\X
+   .\X
+   Main Decision AI
+   
+   
+   
+   x].
+   ..B
+   
+   
+   
+   
+   .].
+   0.B
+   ..B
+   
+   "X
+   `.T
+   
+   "X
+   ..B
+    .B
+   `.T
+   .\X
+   .\X
+   .\X
+   .\X
+   .\X
+   
+   "X
+   .\X
+   P#%d.
+   
+   
+   P#%d %s: %s.
+   
+   
+   
+   Common AI History File Started %s
+   
+   
+   c:\aoeai.txt
+   
+   
+   
+   a
+   
+   
+   .].
+   ..B
+   Resource AI
+   
+   
+   
+   
+   .^.
+   ..B
+   ..B
+   
+   "X
+   `.T
+   
+   "X
+   ..B
+    .B
+   `.T
+   .\X
+   .\X
+   .\X
+   .\X
+   .\X
+   
+   "X
+   .\X
+   Strategy AI
+   
+   
+   
+   
+   h^.
+   ..B
+   ..B
+   
+   "X
+   `.T
+   
+   "X
+   ..B
+    .B
+   `.T
+   .\X
+   .\X
+   .\X
+   .\X
+   .\X
+   
+   "X
+   .\X
+   TacAI
+   
+   
+   .^.
+   ..B
+   ..B
+   
+   "X
+   `.T
+   
+   "X
+   ..B
+    .B
+   `.T
+   .\X
+   .\X
+   .\X
+   .\X
+   .\X
+   
+   "X
+   .\X
+   `.B
+   Trade AI
+   
+   
+   
+   
+   
+   .@
+   
+    A
+   
+   .B
+   
+    ANoAttack
+   
+   
+   
+   StandGround
+   Defend
+   
+   
+   _.
+   ..B
+   ..B
+   ..B
+   
+   .B
+   ..B
+   ..B
+   P.B
+    .B
+   ..B
+   ..H
+   .\X
+   ..B
+   ..B
+   ..B
+   
+   .C
+   ..B
+   @.B
+   ..B
+   ..B
+   `.B
+   `.B
+   ..B
+   P.B
+   ..B
+   ..B
+   ..B
+   ..B
+   0.B
+   ..B
+   @.B
+   ..B
+   ..B
+   ..B
+   
+   .B
+   ..B
+   ..B
+   `.B
+   ..B
+   ..B
+   0.B
+   ..C
+   @.B
+   ..B
+   p.B
+   ..B
+   @.B
+   ..B
+   ppZ
+   ..V
+   ..B
+   `.B
+   P.B
+   ..V
+   ..B
+   
+   .C
+   P!C
+   ."C
+   
+   .B
+   =.7Aq=2A..0A..0A
+   
+   (A..'A
+   `jG
+   
+   .O
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   ..
+   
+   
+   @
+   
+   .@
+   
+   
+   @...?
+   
+   @@
+   
+   .@
+   
+   .@
+   
+   @@...>
+   
+    @
+   
+   .@
+   
+   .@
+   
+   .?
+   
+   .?=..A
+   
+   ,A.( A)\+A{..AH..A33.A=..A.G)A{."A.z A)\.A...A...A.z.A.(.A...A..!A
+   
+   .A..!A...A
+   
+   
+   
+   H_.
+   ..D
+   ..C
+   ..C
+   .$B
+    .C
+   0.C
+   ..D
+   @.C
+   P.C
+   p.C
+   ..C
+   ..C
+   ..C
+   ..C
+   ..C
+   ..C
+   ..C
+   ..C
+   ..C
+   .=B
+    .C
+   0.C
+   @.C
+   P.C
+   `.C
+   ..V
+   ..D
+   p.C
+   ..C
+   ..D
+   p.D
+   ..D
+   ..D
+   P.D
+   p.C
+   
+   "X
+   ./O
+   ..C
+   ..C
+   .hC
+   p.C
+   .1D
+   ...?..4A.(,A..+AH.*AH..AH."A..!A...AR."A\."A..5A.Q4A.(4A..0A..)A.p)Aq="A...A...A
+   
+   .@
+   
+   .A._.
+   .@D
+   .
+   
+   
+   ..L=...?.`.
+   ..D
+   ..C
+   ..C
+   .$B
+    .C
+   0.C
+   ..D
+   @.C
+   P.C
+   p.C
+   ..C
+   ..C
+   ..C
+   ..C
+   ..C
+   ..C
+   ..C
+   ..C
+   ..C
+   .=B
+    .C
+   0.C
+   @.C
+   P.C
+   `.C
+   ..V
+   ..D
+   p.C
+   ..C
+   ..D
+   p.D
+   ..D
+   ..D
+   P.D
+   `.D
+   
+   "X
+   ./O
+   ..C
+   ..C
+   @.D
+   ..D
+   ..L....8..#<...?..5?...>^.l?
+   
+   
+   
+   
+   
+   ..
+   
+   
+   
+   
+   
+   .?
+   
+   ..
+   
+   
+   
+   
+   
+   .?
+   
+   
+   
+   
+   
+   
+   ?.
+   
+   
+   
+   
+   .B....
+   
+   .Co..:
+   
+   $A33#A..#A=..Aff"A$`.
+   ..E
+   
+   
+   .A...?..I?
+   
+   
+   
+   
+   
+   
+   
+   ..SA
+   
+   
+   
+   
+   
+   .A
+   
+   
+   
+   
+   
+   Y@wt
+   
+   Trace %d
+   
+   
+   
+   %d
+   
+   tribute-to-player
+   
+   
+   train
+   
+   
+   taunt-using-range
+   
+   
+   taunt
+   
+   
+   spy
+   ..#=set-strategic-number
+   
+   
+   
+   set-stance
+   
+   set-signal
+   
+   set-shared-goal
+   .Q.=set-goal
+   
+   
+   
+   set-escrow-percentage
+   
+   
+   set-doctrine
+   
+   
+   
+   set-difficulty-parameter
+   
+   
+   
+   set-author-version
+   
+   set-author-email
+   
+   
+   
+   set-author-name
+   sell-commodity
+   
+   resign
+   
+   research
+   
+   
+   
+   release-escrow
+   
+   log-trace
+   
+   
+   log
+   generate-random-number
+   
+   enable-wall-placement
+   
+   
+   .Ga>enable-timer
+   
+   
+   
+   enable-rule
+   do-nothing
+   
+   disable-timer
+   
+   
+   disable-self
+   
+   
+   
+   disable-rule
+   
+   
+   
+   delete-unit
+   delete-building
+   clear-tribute-memory
+   
+   
+   
+   chat-trace
+   
+   chat-to-player-using-range
+   
+   chat-to-player-using-id
+   chat-to-player
+   
+   chat-to-enemies-using-range
+   chat-to-enemies-using-id
+   
+   
+   
+   chat-to-enemies
+   chat-to-allies-using-range
+   
+   chat-to-allies-using-id
+   chat-to-allies
+   
+   chat-to-all-using-range
+   chat-to-all-using-id
+   
+   
+   
+   chat-to-all
+   chat-local-to-self
+   
+   chat-local-using-range
+   
+   chat-local-using-id
+   ...<chat-local
+   
+   cc-add-resource
+   .Q8>buy-commodity
+   
+   
+   build-wall
+   
+   build-gate
+   
+   build-forward
+   
+   
+   )\.=build
+   
+   
+   attack-now
+   
+   ..u=acknowledge-taunt
+   
+   
+   ...=acknowledge-event
+   
+   
+   AILog LOGGING STARTED --------------------------------------------
+   
+   
+   
+   
+   
+   l`.
+    oE
+   ..B
+   
+   "X
+   `.T
+   
+   "X
+   ..B
+    .B
+   `.T
+   .\X
+   .\X
+   .\X
+   .\X
+   .\X
+   
+   "X
+   .\X
+   .iE
+   P*B
+   
+   ,B
+   
+   
+   
+   
+   .`.
+    {E
+   ..B
+   
+   "X
+   `.T
+   
+   "X
+   ..B
+    .B
+   `.T
+   .\X
+   .\X
+   .\X
+   .\X
+   .\X
+   
+   "X
+   .\X
+   PHB
+   .OB
+   .\X
+   
+   >B
+   .>B
+   P>B
+   .OB
+   POB
+   .z.>)\.>TEAMS-LOCKED
+   
+   
+   
+   GAME-SPEED-LOCKED
+   
+   
+   LOW-RESOURCES-START
+   MEDIUM-RESOURCES-START
+   
+   HIGH-RESOURCES-START
+   
+   
+   
+   POPULATION-CAP-200
+   
+   POPULATION-CAP-175
+   
+   POPULATION-CAP-150
+   
+   POPULATION-CAP-125
+   
+   POPULATION-CAP-100
+   
+   POPULATION-CAP-75
+   
+   
+   POPULATION-CAP-50
+   
+   
+   POPULATION-CAP-25
+   
+   
+   DIFFICULTY-HARDEST
+   
+   DIFFICULTY-HARD
+   DIFFICULTY-MODERATE
+   DIFFICULTY-EASY
+   DIFFICULTY-EASIEST
+   
+   POST-IMPERIAL-AGE-START
+   IMPERIAL-AGE-START
+   
+   CASTLE-AGE-START
+   
+   
+   
+   FEUDAL-AGE-START
+   
+   
+   
+   DARK-AGE-START
+   
+   VICTORY-CUSTOM
+   
+   VICTORY-SCORE
+   
+   
+   VICTORY-TIME-LIMIT
+   
+   VICTORY-CONQUEST
+   
+   
+   
+   VICTORY-STANDARD
+   
+   
+   
+   SCENARIO-MAP
+   
+   
+   
+   CUSTOM-MAP
+   
+   REAL-WORLD-BYZANTIUM-MAP
+   
+   
+   
+   REAL-WORLD-NIPPON-MAP
+   
+   
+   REAL-WORLD-JUTLAND-MAP
+   
+   REAL-WORLD-FRANCE-MA

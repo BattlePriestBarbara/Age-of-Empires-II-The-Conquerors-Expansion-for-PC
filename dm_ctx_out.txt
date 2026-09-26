@@ -1,0 +1,349 @@
+
+### around 'AILog LOGGING STARTED'  (file 0x00374260)
+   00373fa4  generate-random-number
+   00373fbc  enable-wall-placement
+   00373fd5  Ga>enable-timer
+   00373fe8  enable-rule
+   00373ff4  do-nothing
+   00374000  disable-timer
+   00374010  disable-self
+   00374020  disable-rule
+   00374030  delete-unit
+   0037403c  delete-building
+   0037404c  clear-tribute-memory
+   00374064  chat-trace
+   00374070  chat-to-player-using-range
+   0037408c  chat-to-player-using-id
+   003740a4  chat-to-player
+   003740b4  chat-to-enemies-using-range
+   003740d0  chat-to-enemies-using-id
+   003740ec  chat-to-enemies
+   003740fc  chat-to-allies-using-range
+   00374118  chat-to-allies-using-id
+   00374130  chat-to-allies
+   00374140  chat-to-all-using-range
+   00374158  chat-to-all-using-id
+   00374170  chat-to-all
+   0037417c  chat-local-to-self
+   00374190  chat-local-using-range
+   003741a8  chat-local-using-id
+   003741bf  <chat-local
+   003741cc  cc-add-resource
+   003741dd  Q8>buy-commodity
+   003741f0  build-wall
+   003741fc  build-gate
+   00374208  build-forward
+   0037421b  =build
+   00374224  attack-now
+   00374232  u=acknowledge-taunt
+   0037424b  =acknowledge-event
+   00374260  AILog LOGGING STARTED --------------------------------------------
+   003742ac   oE
+   003742ec  P*B
+   003742fc   {E
+   00374338  PHB
+   0037434c  P>B
+   00374354  POB
+   0037435b  >)\
+   0037435f  >TEAMS-LOCKED
+   00374370  GAME-SPEED-LOCKED
+   00374384  LOW-RESOURCES-START
+   00374398  MEDIUM-RESOURCES-START
+   003743b0  HIGH-RESOURCES-START
+   003743c8  POPULATION-CAP-200
+   003743dc  POPULATION-CAP-175
+   003743f0  POPULATION-CAP-150
+   00374404  POPULATION-CAP-125
+   00374418  POPULATION-CAP-100
+   0037442c  POPULATION-CAP-75
+   00374440  POPULATION-CAP-50
+   00374454  POPULATION-CAP-25
+   00374468  DIFFICULTY-HARDEST
+   0037447c  DIFFICULTY-HARD
+   0037448c  DIFFICULTY-MODERATE
+   003744a0  DIFFICULTY-EASY
+   003744b0  DIFFICULTY-EASIEST
+   003744c4  POST-IMPERIAL-AGE-START
+   003744dc  IMPERIAL-AGE-START
+   003744f0  CASTLE-AGE-START
+   00374504  FEUDAL-AGE-START
+
+### around 'AI Script Error'  (file 0x00377d38)
+   00377a7d  (8A
+   00377a81  z,A
+   00377a89  p5A333A
+   00377a92  3A33+AH
+   00377aa3  @learn\%s%s.%d
+   00377ab4  learn\default.%d
+   00377b38  q=.A\
+   00377b3f  @  Player #%d: Dislike=%d, Like=%d, Ambivalence=%d.
+   00377b74  Initial Diplomacy Settings:
+   00377bd0  p#G
+   00377bd4  ResAI
+   00377bdc  Gold
+   00377be4  Stone
+   00377bec  Wood
+   00377bf4  Food
+   00377c3c  PKG
+   00377c48  pFG
+   00377c4c  %s.per
+   00377c54  RandomGame
+   00377c63  AOKDialog
+   00377c78                                             %s
+   00377ca7      %s %d
+   00377cb1      %s  %s.per
+   00377cc0      %s
+   00377cc8                                             %s
+   00377cf7      %s %d
+   00377d01      %s  %s.per
+   00377d10      %s %d: %s
+   00377d20  Line
+   00377d28  File
+   00377d30  Player
+   00377d38  AI Script Error
+   00377d48  ERR9001: Unexpected error
+   00377d64  ERR2013: Unexpected end-of-file
+   00377d84  ERR3005: Unexpected #end-if
+   00377da0  ERR3004: Unexpected #else
+   00377dbc  ERR9000: Undocumented error
+   00377dd8  ERR6003: String table full
+   00377df4  ERR6002: Rule too long
+   00377e0c  ERR3003: Preprocessor nesting too deep
+   00377e34  ERR8001: No rules
+   00377e48  ERR2009: Missing right-hand side (RHS) of the rule
+   00377e7c  ERR3002: Missing preprocessor symbol
+   00377ea4  ERR2001: Missing opening parenthesis
+   00377ecc  ERR2007: Missing left-hand side (LHS) of the rule
+   00377f00  ERR2002: Missing keyword
+   00377f1c  ERR2004: Missing identifier
+   00377f38  ERR2006: Missing file name
+   00377f54  ERR3006: Missing #end-if
+   00377f70  ERR2010: Missing closing quote
+   00377f90  ERR2011: Missing closing parenthesis
+   00377fb8  ERR2008: Missing arrow
+   00377fd0  ERR6001: List full
+
+### around 'AILog\\%s.log'  (file 0x00384934)
+   00384680   tV
+   00384684  `uV
+   0038468c  P&V
+   00384690  p#V
+   00384698  p&V
+   003846b0  0;V
+   003846b8  pBV
+   003846c0  PJV
+   00384730  pVV
+   00384734  Auto-save %2d-%2d-%2d %d.gax
+   00384754    World: end_of_new_game (rand=%d)
+   00384778    World: after_players (rand=%d)
+   0038479c    World: after_gaia (rand=%d)
+   003847bc    World: after_new_map (rand=%d)
+   003847e0  World: new_game (rand=%d)
+   003847fc    World: after_player_update (rand=%d)
+   00384824    World: after_player_random_start (rand=%d)
+   00384854    World: after_map_gen (rand=%d)
+   00384878    World: before_map_gen (rand=%d)
+   0038489c  c:\%s
+   003848c3  Aff6AH
+   003848cd  (<A
+   003848d3  A  Player #%d Lost.
+   003848e8    Player #%d Won.
+   003848fc  GAME OVER!
+   00384909  Status Log at GameTime %02ld:%02ld:%02ld:
+   00384934  AILog\%s.log
+   00384944  %s - worldtime: %ld
+   00384974  `}X
+   00384abc  pq]
+   00384b9c  @{X
+
+### around 'Logging to File %s'  (file 0x0037f9c0)
+   0037f7e8   <None> 
+   0037f80c  `\[
+   0037f838   \[
+   0037f858  p8[
+   0037f948  Objective Dialog
+   0037f95c  objtabs.slp
+   0037f968  dlg_objx
+   0037f974  %d %d %d %d %d %d %d %d
+   0037f98c  shadow.col
+   0037f998   has been deactivated.
+   0037f9b0   is now ACTIVE.
+   0037f9c0  Logging to File %s
+   0037f9d4  Logging to OUTPUT %s
+   0037f9ec  Timestamp milliseconds %s
+   0037fa08  Date & Time stamp%s
+   0037fa1c  >>>TIME>>>  %s   [%7.1f sec. elapsed]
+   0037fa44  Flush queue each message %s
+   0037fa60  Sequence numbering%s
+   0037fa78  c:\%s%.2d.txt
+   0037fa88  c:\%s.txt
+   0037fa94  Log file %s is opened
+   0037faac  %s%s%.2d.txt
+   0037fabc  %s%s.txt
+   0037fac8  %s%s%s%.2d.txt
+   0037fad8  %s%s%s.txt
+   0037fae4  aoelog
+   0037faec  Log file is closed
+   0037fb00  Closing debug log file '%s'.
+   0037fb20  ===Logging===
+   0037fb3c  (unknown caller)
+   0037fb50  (unknown)
+   0037fb5c  (no surface name)
+   0037fb70  ::PtrClear
+   0037fb7c  take_snapshot
+   0037fb8c  blend2
+   0037fba0  vcr
+   0037fba4  vcr
+   0037fba8  vcr
+   0037fbac  vcr
+   0037fbb0  vcr
+   0037fbb4  vcr
+   0037fbb8  vcr
+   0037fbbc  vcr
+   0037fbc0  vcr
+   0037fbc4  vcr
+   0037fbc8  vcr
+   0037fbcc  vcr
+   0037fbd0  vcr
+   0037fbd4  vcr
+   0037fbd8  vcr
+   0037fbdc  vcr
+   0037fbe0  vcr
+   0037fbe4  vcr
+   0037fbe8  vcr
+   0037fbec  vcr
+   0037fbf0  vcr
+   0037fbf4  vcr
+   0037fbf8  vcr
+   0037fbfc  vcr
+   0037fc00  vcr
+   0037fc04  vcr
+   0037fc08  vcr
+   0037fc0c  vcr
+   0037fc10  vcr
+   0037fc14  vcr
+   0037fc18  vcr
+   0037fc1c  vcr
+   0037fc20  vcr
+   0037fc24  vcr
+   0037fc28  vcr
+   0037fc2c  vcr
+   0037fc30  vcr
+   0037fc34  vcr
+   0037fc38  vcr
+   0037fc3c  vcr
+   0037fc40  vcr
+   0037fc44  vcr
+   0037fc48  vcr
+   0037fc4c  vcr
+   0037fc50  vcr
+   0037fc54  vcr
+   0037fc58  vcr
+   0037fc5c  vcr
+   0037fc60  vcr
+   0037fc64  vcr
+   0037fc68  D3DOK_NOAUTOGEN
+
+### around '===Logging==='  (file 0x0037fb20)
+   0037f948  Objective Dialog
+   0037f95c  objtabs.slp
+   0037f968  dlg_objx
+   0037f974  %d %d %d %d %d %d %d %d
+   0037f98c  shadow.col
+   0037f998   has been deactivated.
+   0037f9b0   is now ACTIVE.
+   0037f9c0  Logging to File %s
+   0037f9d4  Logging to OUTPUT %s
+   0037f9ec  Timestamp milliseconds %s
+   0037fa08  Date & Time stamp%s
+   0037fa1c  >>>TIME>>>  %s   [%7.1f sec. elapsed]
+   0037fa44  Flush queue each message %s
+   0037fa60  Sequence numbering%s
+   0037fa78  c:\%s%.2d.txt
+   0037fa88  c:\%s.txt
+   0037fa94  Log file %s is opened
+   0037faac  %s%s%.2d.txt
+   0037fabc  %s%s.txt
+   0037fac8  %s%s%s%.2d.txt
+   0037fad8  %s%s%s.txt
+   0037fae4  aoelog
+   0037faec  Log file is closed
+   0037fb00  Closing debug log file '%s'.
+   0037fb20  ===Logging===
+   0037fb3c  (unknown caller)
+   0037fb50  (unknown)
+   0037fb5c  (no surface name)
+   0037fb70  ::PtrClear
+   0037fb7c  take_snapshot
+   0037fb8c  blend2
+   0037fba0  vcr
+   0037fba4  vcr
+   0037fba8  vcr
+   0037fbac  vcr
+   0037fbb0  vcr
+   0037fbb4  vcr
+   0037fbb8  vcr
+   0037fbbc  vcr
+   0037fbc0  vcr
+   0037fbc4  vcr
+   0037fbc8  vcr
+   0037fbcc  vcr
+   0037fbd0  vcr
+   0037fbd4  vcr
+   0037fbd8  vcr
+   0037fbdc  vcr
+   0037fbe0  vcr
+   0037fbe4  vcr
+   0037fbe8  vcr
+   0037fbec  vcr
+   0037fbf0  vcr
+   0037fbf4  vcr
+   0037fbf8  vcr
+   0037fbfc  vcr
+   0037fc00  vcr
+   0037fc04  vcr
+   0037fc08  vcr
+   0037fc0c  vcr
+   0037fc10  vcr
+   0037fc14  vcr
+   0037fc18  vcr
+   0037fc1c  vcr
+   0037fc20  vcr
+   0037fc24  vcr
+   0037fc28  vcr
+   0037fc2c  vcr
+   0037fc30  vcr
+   0037fc34  vcr
+   0037fc38  vcr
+   0037fc3c  vcr
+   0037fc40  vcr
+   0037fc44  vcr
+   0037fc48  vcr
+   0037fc4c  vcr
+   0037fc50  vcr
+   0037fc54  vcr
+   0037fc58  vcr
+   0037fc5c  vcr
+   0037fc60  vcr
+   0037fc64  vcr
+   0037fc68  D3DOK_NOAUTOGEN
+   0037fc78  (unknown D3D_ Error)
+   0037fc90  D3D_OK
+   0037fc98  D3DERR_UNSUPPORTEDTEXTUREFILTER
+   0037fcb8  D3DERR_UNSUPPORTEDFACTORVALUE
+   0037fcd8  D3DERR_UNSUPPORTEDCOLOROPERATION
+   0037fcfc  D3DERR_UNSUPPORTEDCOLORARG
+   0037fd18  D3DERR_UNSUPPORTEDALPHAOPERATION
+   0037fd3c  D3DERR_UNSUPPORTEDALPHAARG
+   0037fd58  D3DERR_TOOMANYOPERATIONS
+   0037fd74  D3DERR_NOTFOUND
+   0037fd84  D3DERR_NOTAVAILABLE
+   0037fd98  D3DERR_MOREDATA
+   0037fda8  D3DERR_INVALIDDEVICE
+   0037fdc0  D3DERR_INVALIDCALL
+
+=== taunt / chat command handling strings (taunt %d)
+   00374260  AILog LOGGING STARTED --------------------------------------------
+   0037f9c0  Logging to File %s
+   0037f9d4  Logging to OUTPUT %s
+   0037fb20  ===Logging===

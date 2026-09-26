@@ -1,0 +1,64 @@
+### D:\aoe2_work\x1_drs\anib_60002.bin line 2819: (defrule) opened while depth=1 (prev rule ended at 0)
+    context:
+       2814| =>
+       2815| 	(chat-local-to-self "abuse market; sell wood")
+       2816| 	(sell-commodity wood)
+       2817| )
+       2818| 
+       2819| (defrule
+       2820| 	(food-amount > 5000)
+### D:\aoe2_work\x1_drs\anib_60002.bin line 2828: (defrule) opened while depth=2 (prev rule ended at 1)
+    context:
+       2823| =>
+       2824| 	(chat-local-to-self "abuse market; sell food")
+       2825| 	(sell-commodity food)
+       2826| )
+       2827| 
+       2828| (defrule
+       2829| 	(gold-amount < 1200)
+### D:\aoe2_work\x1_drs\anib_60002.bin line 2837: (defrule) opened while depth=3 (prev rule ended at 2)
+    context:
+       2832| =>
+       2833| 	(chat-local-to-self "need gold; sell wood")
+       2834| 	(sell-commodity wood)
+       2835| )
+       2836| 
+       2837| (defrule
+       2838| 	(gold-amount < 1200)
+### D:\aoe2_work\x1_drs\anib_60002.bin line 2846: (defrule) opened while depth=4 (prev rule ended at 3)
+    context:
+       2841| =>
+       2842| 	(chat-local-to-self "need gold; sell food")
+       2843| 	(sell-commodity food)
+       2844| )
+       2845| 
+       2846| (defrule
+       2847| 	(gold-amount < 1200)
+### D:\aoe2_work\x1_drs\anib_60002.bin line 2856: (defrule) opened while depth=5 (prev rule ended at 4)
+    context:
+       2851| =>
+       2852| 	(chat-local-to-self "need gold; sell stone")
+       2853| 	(sell-commodity stone)
+       2854| )
+       2855| 
+       2856| (defrule
+       2857| 	(stone-amount < 650)
+### D:\aoe2_work\x1_drs\anib_60002.bin line 2866: (defrule) opened while depth=5 (prev rule ended at 5)
+    context:
+       2861| =>
+       2862| 	(chat-local-to-self "need stone")
+       2863| 	(buy-commodity stone)
+       2864| )
+       2865| 
+       2866| (defrule
+       2867| 	(wood-amount < 1100)
+### D:\aoe2_work\x1_drs\anib_60002.bin line 2875: (defrule) opened while depth=5 (prev rule ended at 5)
+    context:
+       2870| =>
+       2871| 	(chat-local-to-self "need wood")
+       2872| 	(buy-commodity wood)
+       2873| )
+       2874| 
+       2875| (defrule
+       2876| 	(food-amount < 1600)
+final depth = 5

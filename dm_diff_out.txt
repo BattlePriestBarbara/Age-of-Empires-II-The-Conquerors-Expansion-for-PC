@@ -1,0 +1,96 @@
+
+==========================================================================================
+x1 -> anib_60027 : retail 629 lines / live 700 lines (+71)
+  retail directives: 108  (col0=108, indented=0)
+  live   directives: 134  (col0=134, indented=0)
+  --- retail tail (exact) ---
+   r  616|#load-if-defined LARGE-MAP
+   r  617|(defconst feudal-mill-count 1)
+   r  618|(defconst castle-mill-count 2)
+   r  619|(defconst imperial-mill-count 3)
+   r  620|(defconst mining-count 12)
+   r  621|#end-if
+   r  622|;**************************
+   r  623|#load-if-defined GIANT-MAP
+   r  624|(defconst feudal-mill-count 2)
+   r  625|(defconst castle-mill-count 3)
+   r  626|(defconst imperial-mill-count 4)
+   r  627|(defconst mining-count 15)
+   r  628|#end-if
+   r  629|
+  --- live: first 14 lines after the retail part ---
+   l  630|;##  HD DEATH-MATCH AI PATCH - catch-all for unknown population limits        ##
+   l  631|;##                                                                          ##
+   l  632|;##  Problem: the engine defines only POPULATION-CAP-25/50/75/100/125/150/   ##
+   l  633|;##  175/200 (that symbol table lives in AoK HD.exe).  At any other lobby    ##
+   l  634|;##  limit - e.g. 500 - NOT ONE of them is defined, so every constant the    ##
+   l  635|;##  retail file defines *only* inside those blocks (deathmatch-unit-max,     ##
+   l  636|;##  unit-max, civ-*, *-percent-pop, town sizes ...) stays undefined.  A rule ##
+   l  637|;##  that mentions an undefined constant is invalid, which killed the whole   ##
+   l  638|;##  death-match AI: no villagers, no houses, no army.                        ##
+   l  639|;##                                                                          ##
+   l  640|;##  Fix: this block is compiled only if none of the 8 classic caps is        ##
+   l  641|;##  active.  It repeats the POPULATION-CAP-200 block scaled to a 500 slot      ##
+   l  642|;##  game (x2.5); town sizes keep their cap-200 values.                     ##
+   l  643|;##############################################################################
+  --- live tail (exact) ---
+   l  691|(defconst fifty-percent-pop 250)
+   l  692|#end-if
+   l  693|#end-if
+   l  694|#end-if
+   l  695|#end-if
+   l  696|#end-if
+   l  697|#end-if
+   l  698|#end-if
+   l  699|#end-if
+   l  700|
+  prefix identical to retail : True
+  appended bytes=2541  non-ascii=[]  CR count=71  tabs=0
+
+==========================================================================================
+aok -> anib_60010 : retail 674 lines / live 742 lines (+68)
+  retail directives: 145  (col0=145, indented=0)
+  live   directives: 171  (col0=171, indented=0)
+  --- retail tail (exact) ---
+   r  661|=>
+   r  662|	(set-goal rush-control 4)
+   r  663|)
+   r  664|
+   r  665|(defrule	;200 in regicide
+   r  666|	(goal military-parity SUPERIOR)
+   r  667|	(can-spy)
+   r  668|=>
+   r  669|	(spy)
+   r  670|	(disable-self)
+   r  671|)
+   r  672|
+   r  673|
+   r  674|#end-if
+  --- live: first 14 lines after the retail part ---
+   l  675|;##############################################################################
+   l  676|;##  HD DEATH-MATCH AI PATCH - catch-all for unknown population limits        ##
+   l  677|;##                                                                          ##
+   l  678|;##  Problem: the engine defines only POPULATION-CAP-25/50/75/100/125/150/   ##
+   l  679|;##  175/200 (that symbol table lives in AoK HD.exe).  At any other lobby    ##
+   l  680|;##  limit - e.g. 500 - NOT ONE of them is defined, so every constant the    ##
+   l  681|;##  retail file defines *only* inside those blocks (deathmatch-unit-max,     ##
+   l  682|;##  unit-max, civ-*, *-percent-pop, town sizes ...) stays undefined.  A rule ##
+   l  683|;##  that mentions an undefined constant is invalid, which killed the whole   ##
+   l  684|;##  death-match AI: no villagers, no houses, no army.                        ##
+   l  685|;##                                                                          ##
+   l  686|;##  Fix: this block is compiled only if none of the 8 classic caps is        ##
+   l  687|;##  active.  It repeats the POPULATION-CAP-200 block scaled to a 500 slot      ##
+   l  688|;##  game (x2.5); town sizes keep their cap-200 values.                     ##
+  --- live tail (exact) ---
+   l  733|(defconst thirty-percent-pop 150)
+   l  734|#end-if
+   l  735|#end-if
+   l  736|#end-if
+   l  737|#end-if
+   l  738|#end-if
+   l  739|#end-if
+   l  740|#end-if
+   l  741|#end-if
+   l  742|
+  prefix identical to retail : True
+  appended bytes=2419  non-ascii=[]  CR count=68  tabs=0

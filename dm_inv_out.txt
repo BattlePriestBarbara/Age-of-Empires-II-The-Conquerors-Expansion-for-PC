@@ -1,0 +1,162 @@
+
+### gamedata_x1.drs.orig
+
+anib_60001   29337B rules=96   gates=DIFFICULTY-EASIEST,DIFFICULTY-EASY | ;starting goals
+    loads : petersen castle; petersen civ loads; petersen difficulty loads; petersen full tech; petersen gather; petersen rush; petersen upgrades
+    uses  : castle-town-size=1, civ-castle=3, civ-dark=4, civ-dark-rush=7, civ-feudal=5, feudal-town-size=1, imperial-town-size=1, pop-cap=1, ten-percent-pop=1, thirty-percent-pop=1, twenty-percent-pop=1
+
+anib_60002   54203B rules=244  gates=DIFFICULTY-EASIEST,DIFFICULTY-EASY,DIFFICULTY-HARD,DIFFICULTY-HARDEST,DIFFICULTY-MODERATE | ;goals 1 and 2 = boats
+    loads : petersen tower; petersen wonder
+    uses  : civ-castle=1, civ-dark-rush=2, deathmatch-unit-max=56, fifteen-percent-pop=1, five-percent-pop=5, imperial-town-size=1, ten-percent-pop=5, unit-max=56
+
+anib_60003   49519B rules=180  gates=-                                  | ;start the run-through
+    uses  : civ-castle=8, five-percent-pop=16
+
+anib_60004    4463B rules=20   gates=-                                  | (defrule
+    uses  : civ-castle=1, civ-dark=1, civ-feudal=1, five-percent-pop=2, pop-cap=2, ten-percent-pop=5
+
+anib_60005    3544B rules=14   gates=-                                  | ;need to add a section in which he joins our side then betrays u
+
+anib_60006    2693B rules=8    gates=-                                  | ;goal 2 NO = no problem; 2 YES = we've won at sea!
+    uses  : fifteen-percent-pop=3, five-percent-pop=3, ten-percent-pop=3, thirty-percent-pop=3
+
+anib_60007   26355B rules=71   gates=-                                  | (defrule
+    uses  : fifteen-percent-pop=4, five-percent-pop=80, pop-cap=1, ten-percent-pop=69, twenty-percent-pop=1, unit-max=6
+
+anib_60008    4827B rules=19   gates=DIFFICULTY-EASIEST,DIFFICULTY-EASY,DIFFICULTY-HARD,DIFFICULTY-HARDEST,DIFFICULTY-MODERATE | #load-if-defined DIFFICULTY-EASIEST
+    loads : petersen market; petersen tower; petersen wonder
+
+anib_60009   23059B rules=84   gates=-                                  | (defrule
+    uses  : five-percent-pop=2, ten-percent-pop=16, thirty-percent-pop=3, twenty-percent-pop=4, unit-max=18
+
+anib_60010   13739B rules=60   gates=-                                  | #load-if-defined GAME-SPEED-LOCKED
+    loads : petersen fishboat; petersen warboat; petersen warboat island
+    uses  : five-percent-pop=1, imperial-town-size=2
+
+anib_60011   19573B rules=130  gates=-                                  | ;*********************************************************
+
+anib_60012    5078B rules=24   gates=-                                  | ;start the pass
+
+anib_60013   20650B rules=74   gates=DIFFICULTY-MODERATE                | ;UPGRADES & BUILDS RELATED TO OTHER PLAYERS
+    uses  : castle-town-size=1, civ-castle=1, civ-feudal=1, deathmatch-unit-max=1, feudal-town-size=1, imperial-town-size=1
+
+anib_60014    1251B rules=5    gates=-                                  | ;make the castle
+    uses  : five-percent-pop=1
+
+anib_60015    2647B rules=10   gates=-                                  | (defrule
+    uses  : five-percent-pop=2
+
+anib_60016    3609B rules=13   gates=-                                  | #load-if-not-defined VICTORY-CONQUEST
+    uses  : imperial-town-size=2, unit-max=1
+
+anib_60017   12623B rules=45   gates=-                                  | ;if I'm short on resources, ask allies for some before using the
+    uses  : civ-dark=1, civ-dark-rush=1, civ-feudal=1
+
+anib_60018     475B rules=3    gates=-                                  | ;all this file really does for now is ensure more villagers than
+    uses  : fifty-percent-pop=1
+
+anib_60019    9574B rules=38   gates=-                                  | ;DARK AGE
+    uses  : twenty-percent-pop=2
+
+anib_60020    5062B rules=21   gates=-                                  | ;make sure we have allies
+
+anib_60021   12949B rules=48   gates=DIFFICULTY-EASIEST,DIFFICULTY-EASY,DIFFICULTY-HARD,DIFFICULTY-HARDEST,DIFFICULTY-MODERATE | (defrule
+    uses  : fifteen-percent-pop=1, pop-cap=1, ten-percent-pop=1, thirty-percent-pop=1
+
+anib_60022    4272B rules=24   gates=-                                  | ;insults the player
+
+anib_60023   30008B rules=83   gates=DIFFICULTY-EASIEST,DIFFICULTY-EASY | ;THE BULLY
+
+anib_60024    3129B rules=12   gates=-                                  | ;best ship-builders = byzantines, japanese, persian, saracen, vi
+    uses  : pop-cap=2
+
+anib_60025    2842B rules=15   gates=-                                  | ;error trapping
+    uses  : civ-castle=1, civ-dark-rush=1, five-percent-pop=1
+
+anib_60026     918B rules=0    gates=DEATH-MATCH                        | (load "petersen constants")
+    loads : AI petersen rules; petersen constants; petersen deathmatch; petersen diplomacy; petersen groups; petersen map loads; petersen resign; petersen supplement; wonder kill; wonder rush
+
+anib_60027   19383B rules=0    gates=DIFFICULTY-EASIEST,DIFFICULTY-EASY,DIFFICULTY-HARD,DIFFICULTY-HARDEST,DIFFICULTY-MODERATE,POPULATION-CAP-100,POPULATION-CAP-125,POPULATION-CAP-150,POPULATION-CAP-175,POPULATION-CAP-200,POPULATION-CAP-25,POPULATION-CAP-50,POPULATION-CAP-75 | ; Common constants used in AI goals - other constants will follo
+    uses  : castle-town-size=8, civ-castle=8, civ-dark=8, civ-dark-rush=8, civ-feudal=8, deathmatch-unit-max=8, feudal-town-size=8, fifteen-percent-pop=8, fifty-percent-pop=8, five-percent-pop=8, imperial-town-size=8, pop-cap=8, ten-percent-pop=8, thirty-percent-pop=8, twenty-percent-pop=8, unit-max=40
+
+anib_60028   55492B rules=226  gates=DIFFICULTY-EASIEST,DIFFICULTY-EASY,DIFFICULTY-HARDEST | ;if I'm short on resources, ask allies for some before using the
+    uses  : castle-town-size=1, civ-castle=10, civ-dark=1, civ-dark-rush=1, civ-feudal=3, deathmatch-unit-max=1, feudal-town-size=1, imperial-town-size=1, ten-percent-pop=3, unit-max=1
+
+anib_60029   52174B rules=229  gates=DIFFICULTY-EASIEST,DIFFICULTY-EASY,DIFFICULTY-HARD,DIFFICULTY-HARDEST,DIFFICULTY-MODERATE | ;goals 1 and 2 = boats
+    uses  : civ-castle=1, civ-dark-rush=2, fifteen-percent-pop=5, five-percent-pop=35, imperial-town-size=1, ten-percent-pop=26, thirty-percent-pop=4, twenty-percent-pop=3, unit-max=1
+
+### gamedata.drs.orig
+
+anib_60001   28550B rules=91   gates=DIFFICULTY-EASIEST,DIFFICULTY-EASY | ;starting loads
+    loads : petersen castle; petersen civ loads; petersen difficulty loads; petersen full tech; petersen gather; petersen rush; petersen upgrades
+    uses  : castle-town-size=1, civ-castle=4, civ-dark=5, civ-dark-rush=8, civ-feudal=5, feudal-town-size=1, imperial-town-size=1, pop-cap=1, ten-percent-pop=1
+
+anib_60002   45718B rules=212  gates=DIFFICULTY-EASIEST,DIFFICULTY-EASY,DIFFICULTY-HARD,DIFFICULTY-HARDEST,DIFFICULTY-MODERATE | ;goals 1 and 2 = boats
+    loads : petersen tower; petersen wonder
+    uses  : civ-castle=1, civ-dark-rush=2, deathmatch-unit-max=39, fifteen-percent-pop=1, five-percent-pop=5, imperial-town-size=1, ten-percent-pop=4, unit-max=39
+
+anib_60003   41578B rules=152  gates=-                                  | ;start the run-through
+    uses  : civ-castle=8, civ-dark=1, five-percent-pop=16
+
+anib_60004    3276B rules=13   gates=-                                  | (defrule
+    uses  : civ-castle=1, civ-dark=1, civ-feudal=1, five-percent-pop=5, pop-cap=2, ten-percent-pop=4
+
+anib_60005    3544B rules=14   gates=-                                  | ;need to add a section in which he joins our side then betrays u
+
+anib_60006    4083B rules=16   gates=-                                  | ;for war war-galleys
+    uses  : fifteen-percent-pop=8, five-percent-pop=8, ten-percent-pop=3
+
+anib_60007   17783B rules=51   gates=-                                  | (defrule
+    uses  : fifteen-percent-pop=2, five-percent-pop=52, pop-cap=1, ten-percent-pop=37, twenty-percent-pop=1, unit-max=6
+
+anib_60008   17098B rules=51   gates=DIFFICULTY-EASIEST,DIFFICULTY-EASY,DIFFICULTY-HARD,DIFFICULTY-HARDEST,DIFFICULTY-MODERATE | #load-if-defined DIFFICULTY-EASIEST
+    loads : petersen diplomacy; petersen market; petersen tower; petersen wonder
+
+anib_60009   19315B rules=67   gates=-                                  | (defrule
+    uses  : five-percent-pop=1, ten-percent-pop=14, thirty-percent-pop=3, twenty-percent-pop=3, unit-max=16
+
+anib_60010   14168B rules=26   gates=DIFFICULTY-EASIEST,DIFFICULTY-EASY,DIFFICULTY-HARD,DIFFICULTY-HARDEST,DIFFICULTY-MODERATE,POPULATION-CAP-100,POPULATION-CAP-125,POPULATION-CAP-150,POPULATION-CAP-175,POPULATION-CAP-200,POPULATION-CAP-25,POPULATION-CAP-50,POPULATION-CAP-75 | #load-if-defined GAME-SPEED-LOCKED
+    loads : petersen fishboat; petersen warboat; petersen warboat island
+    uses  : castle-town-size=8, civ-castle=8, civ-dark=8, civ-dark-rush=8, civ-feudal=8, deathmatch-unit-max=8, feudal-town-size=8, fifteen-percent-pop=8, five-percent-pop=9, imperial-town-size=10, pop-cap=8, ten-percent-pop=8, thirty-percent-pop=8, twenty-percent-pop=8, unit-max=40
+
+anib_60011   15124B rules=106  gates=-                                  | ;*********************************************************
+
+anib_60012    4583B rules=22   gates=-                                  | ;start the pass
+
+anib_60013    1350B rules=4    gates=DIFFICULTY-MODERATE                | ;UPGRADES & BUILDS RELATED TO OTHER PLAYERS
+
+anib_60014    1013B rules=4    gates=-                                  | ;make the castle
+
+anib_60015    2370B rules=9    gates=-                                  | (defrule
+    uses  : five-percent-pop=2
+
+anib_60016    3050B rules=10   gates=-                                  | #load-if-not-defined VICTORY-CONQUEST
+    uses  : imperial-town-size=2, unit-max=1
+
+anib_60017   12154B rules=45   gates=-                                  | ;if I'm short on resources, ask allies for some before using the
+    uses  : civ-dark=1, civ-dark-rush=4, civ-feudal=1
+
+anib_60018     338B rules=2    gates=-                                  | ;all this file really does for now is ensure more villagers than
+
+anib_60019   15138B rules=73   gates=-                                  | (defrule
+    uses  : fifteen-percent-pop=2, five-percent-pop=2, ten-percent-pop=2, twenty-percent-pop=2
+
+anib_60020    5177B rules=20   gates=-                                  | ;make sure we have allies
+
+anib_60021   12002B rules=42   gates=DIFFICULTY-EASIEST,DIFFICULTY-EASY,DIFFICULTY-HARD,DIFFICULTY-HARDEST,DIFFICULTY-MODERATE | (defrule
+    uses  : fifteen-percent-pop=1, pop-cap=1, ten-percent-pop=1
+
+anib_60022    4272B rules=24   gates=-                                  | ;insults the player
+
+anib_60023   19478B rules=55   gates=-                                  | ;THE BULLY
+
+anib_60024    8218B rules=26   gates=-                                  | ;for a variety of warships	goal 2 1 = "normal" status; goal 2 2 
+    uses  : fifteen-percent-pop=1, five-percent-pop=9, pop-cap=2, ten-percent-pop=7, thirty-percent-pop=3, twenty-percent-pop=6
+
+anib_60025    3267B rules=17   gates=-                                  | ;error trapping
+    uses  : civ-castle=1, civ-dark-rush=1, five-percent-pop=1
+
+anib_60026     255B rules=0    gates=DEATH-MATCH                        | (load "petersen constants")
+    loads : AI petersen rules; petersen constants; petersen deathmatch; petersen groups; petersen map loads; petersen resign; petersen supplement
+
+anib_60027    9832B rules=0    gates=-                                  | ; Common constants used in AI goals - other constants will follo

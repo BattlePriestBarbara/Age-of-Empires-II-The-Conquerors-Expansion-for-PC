@@ -1,0 +1,22 @@
+=== gamedata.drs
+  live file : D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\gamedata.drs  md5 0504f9fcaed2a1b87dde1a6db04576e7
+  backup    : D:\aoe2_work\backup_drs\gamedata.drs.orig  md5 be574545e247b85a196109836a1f9d44  (kept)
+  live anib_60002 : 47443 bytes, script md5 533717b597ee815a3c0bffe0b0412fd5, patch present: True
+  live anib_60010 : 16587 bytes, script md5 a273baf57e0b3f7c17554e8a5176920e, patch present: True
+  live archive md5 0504f9fcaed2a1b87dde1a6db04576e7
+  installed : D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\gamedata.drs  md5 0504f9fcaed2a1b87dde1a6db04576e7
+  patch marker found in the installed anib_60002 (47443 bytes)
+  patch marker found in the installed anib_60010 (16587 bytes)
+  installed archive: 48 entries, 2 differ from the backup: [((b'anib', 60002), (45718, '369e8466f747ff9f503408e081c566c6'), (47443, '533717b597ee815a3c0bffe0b0412fd5')), ((b'anib', 60010), (14168, 'd70770b528caf21520c73bced85781da'), (16587, 'a273baf57e0b3f7c17554e8a5176920e'))]
+=== gamedata_x1.drs
+  live file : D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\gamedata_x1.drs  md5 46ebe235b2c5099b01be545ec8ae0240
+  backup    : D:\aoe2_work\backup_drs\gamedata_x1.drs.orig  md5 f41c418333e624b7a1077ad166f9dcb0  (kept)
+  live anib_60002 : 55928 bytes, script md5 a1f4880e8bfeb2ca7dc2bde0e14985f6, patch present: True
+  live anib_60027 : 21924 bytes, script md5 854ca2fd4a07df644b6642696105ccfd, patch present: True
+  live archive md5 46ebe235b2c5099b01be545ec8ae0240
+  installed : D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\gamedata_x1.drs  md5 46ebe235b2c5099b01be545ec8ae0240
+  patch marker found in the installed anib_60002 (55928 bytes)
+  patch marker found in the installed anib_60027 (21924 bytes)
+  installed archive: 76 entries, 2 differ from the backup: [((b'anib', 60002), (54203, '430feba4dc7ecb3ee47c68d2917adac2'), (55928, 'a1f4880e8bfeb2ca7dc2bde0e14985f6')), ((b'anib', 60027), (19383, '45e05207f2f0d1988f7c2c9561033e94'), (21924, '854ca2fd4a07df644b6642696105ccfd'))]
+
+done at 2026-09-26 22:32:41

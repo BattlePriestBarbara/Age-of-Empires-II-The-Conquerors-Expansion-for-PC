@@ -1,0 +1,162 @@
+exe: D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\AoK HD.exe  (4444160 bytes, 32668 printable runs)
+
+=== strings containing 'chat' : 23
+    <chat-local
+    Local chat add: %s
+    Local chat single player add: %s
+    chat-local-to-self
+    chat-local-using-id
+    chat-local-using-range
+    chat-to-all
+    chat-to-all-using-id
+    chat-to-all-using-range
+    chat-to-allies
+    chat-to-allies-using-id
+    chat-to-allies-using-range
+    chat-to-enemies
+    chat-to-enemies-using-id
+    chat-to-enemies-using-range
+    chat-to-player
+    chat-to-player-using-id
+    chat-to-player-using-range
+    chat-trace
+    chat_panel[%d]
+    chat_word_wrap_panel
+    chatrcvd.wav
+    is chat type
+
+=== strings containing 'acknowledge' : 3
+    =acknowledge-event
+    Clear player acknowledgements
+    u=acknowledge-taunt
+
+=== strings containing 'log' : 103
+      Technology:      %d.
+    $@infinite/indefinite log
+    .?AVCEG_ForceRefClass_attemptToCloseVoteDialog@?1??attemptToCloseVoteDialog@TCommunications_Handler@@IAEHXZ@
+    .?AVFullMapPrintDialog@@
+    .?AVFullMapPrintStatusDialog@@
+    .?AVRGE_Dialog_List@@
+    .?AVTDialogPanel@@
+    .?AVTHelpDialog@@
+    .?AVTListDialog@@
+    .?AVTMessageDialog@@
+    .?AVTMessageDialogTOS@@
+    .?AVTRIBE_Dialog_Match_Visibility@@
+    .?AVTRIBE_Dialog_Mod_manager@@
+    .?AVTRIBE_Dialog_Mod_publish@@
+    .?AVTRIBE_Dialog_Quickmatch@@
+    .?AVTRIBE_Dialog_Sed_Menu@@
+    .?AVTRIBE_Objectives_Dialog@@
+    .?AVTribeAboutDialog@@
+    .?AVTribeAddressListDialog@@
+    .?AVTribeConfigDialog@@
+    .?AVTribeDiplomacyDialog@@
+    .?AVTribeMenuDialog@@
+    .?AVTribePlayerNameDialog@@
+    .?AVTribeScenarioDifficultyDialog@@
+    .?AVTribeSendMessageDialog@@
+    .?AVTribeSendQuickMessageDialog@@
+    .?AVTribeVoteSystemDialog@@
+    .?AVlogic_error@std@@
+    AILog\%s.log
+    AOKDialog
+    About Dialog
+    Address List Dialog
+    Cancel Dialog
+    Chat Edit Dialog
+    CloseProgramDialog
+    Closing debug log file '%s'.
+    Config Dialog
+    Create Dialog
+    Diplomacy Dialog
+    Full Map Print Dialog
+    ... (63 more)
+
+=== strings containing 'taunt' : 4
+    taunt
+    taunt-detected
+    taunt-using-range
+    taunt\<locale>\
+
+=== strings containing 'attack-now' : 1
+    attack-now
+
+=== strings containing 'research' : 10
+    can-afford-research
+    can-research
+    can-research-with-escrow
+    my-unique-research
+    research
+    research-available
+    research-completed
+    tpnl_obj::draw_research
+    tpnl_obj::draw_research2
+    tpnl_obj::draw_research3
+
+=== strings containing 'build' : 31
+    %stemp_buildlist%d.tmp
+    .?AVCEG_ForceRefClass_command_build_wall@?1??command_build_wall@TRIBE_Command@@QAEXPAPAVRGE_Static_Object@@FFJJJJ@Z@
+    =build
+    =can-build-gate-with-escrow
+    >enemy-buildings-in-town
+    Failed to build ELO structure: nNumHumanPlayers - %f, fWinningTeamELOTotal - %f, fLosersELOTotal - %f
+    build-forward
+    build-gate
+    build-wall
+    building-available
+    building-count
+    building-count-total
+    building-type-count
+    building-type-count-total
+    can-build
+    can-build-gate
+    can-build-wall
+    can-build-wall-with-escrow
+    can-build-with-escrow
+    cc-players-building-count
+    cc-players-building-type-count
+    delete-building
+    players-building-count
+    players-building-type-count
+    sn-build-frequency
+    sn-cap-civilian-builders
+    sn-max-build-plan-gatherer-percentage
+    sn-number-build-attempts-before-skip
+    sn-number-forward-builders
+    sn-percent-civilian-builders
+    u>can-afford-building
+
+=== strings containing 'escrow' : 5
+    .>can-train-with-escrow
+    can-spy-with-escrow
+    escrow-amount
+    release-escrow
+    set-escrow-percentage
+
+=== strings containing 'train' : 4
+    can-train
+    internal error: non-vectorized pool violated port constraints
+    internal error: result violated port constraints
+    train
+
+=== strings containing 'town-size' : 2
+    sn-maximum-town-size
+    sn-minimum-town-size
+
+=== strings containing 'housing-headroom' : 1
+    housing-headroom
+
+=== strings containing 'population-headroom' : 1
+    population-headroom
+
+=== strings containing 'can-build' : 0
+
+=== strings containing 'can-research' : 0
+
+=== strings containing 'difficulty' : 5
+    Setting difficulty level to %d.
+    difficulty
+    petersen difficulty loads.per
+    set-difficulty-parameter
+    sn-do-not-scale-for-difficulty-level

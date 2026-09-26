@@ -1,0 +1,23 @@
+# ---------------------------------------------------------------------------
+# game data - NEVER upload this (Age of Empires II HD assets / *.drs archives)
+# ---------------------------------------------------------------------------
+x1_drs/
+aok_drs/
+x1p1_drs/
+backup_drs/
+patched_drs/
+patched_drs2/
+patch_out/
+patch_out2/
+patched_scripts/
+*.drs
+*.drs.orig
+*.exe
+
+# ---------------------------------------------------------------------------
+# python / editor
+# ---------------------------------------------------------------------------
+__pycache__/
+*.pyc
+.vscode/
+.idea/

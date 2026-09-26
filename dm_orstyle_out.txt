@@ -1,0 +1,209 @@
+
+============================================================================================
+=== x1 anib_60002 death match   lines=2883
+    delta histogram (delta = #'(' - #')' on the line): {-1: 435, 0: 2013, 1: 435}
+      (defrule (+1)          243
+      ) alone (-1)           435
+      OTHER delta +1         192
+      OTHER    70 delta +1 | 	(or
+      OTHER    72 delta +1 | 		(and
+      OTHER    86 delta +1 | 	(or
+      OTHER    88 delta +1 | 		(and
+      OTHER   128 delta +1 | 	(or
+      OTHER   130 delta +1 | 		(and
+      OTHER   144 delta +1 | 	(nor 
+      OTHER   148 delta +1 | 	(or
+      OTHER   150 delta +1 | 		(and
+      OTHER   191 delta +1 | 	(or
+      OTHER   193 delta +1 | 		(and
+      OTHER   207 delta +1 | 	(or
+      OTHER   209 delta +1 | 		(and
+      OTHER   250 delta +1 | 	(or
+      OTHER   252 delta +1 | 		(and
+      OTHER   266 delta +1 | 	(or
+      OTHER   268 delta +1 | 		(and
+      OTHER   309 delta +1 | 	(or
+      OTHER   311 delta +1 | 		(and
+      OTHER   325 delta +1 | 	(or
+      OTHER   327 delta +1 | 		(and
+      OTHER   342 delta +1 | 	(or
+      OTHER   344 delta +1 | 		(and
+      OTHER   358 delta +1 | 	(nor 
+      OTHER   362 delta +1 | 	(or
+      OTHER   364 delta +1 | 		(and
+      OTHER   379 delta +1 | 	(or
+      OTHER   381 delta +1 | 		(and
+      OTHER   422 delta +1 | 	(or
+      OTHER   424 delta +1 | 		(and
+      OTHER   438 delta +1 | 	(or
+      OTHER   440 delta +1 | 		(and
+      OTHER   480 delta +1 | 	(or
+      OTHER   482 delta +1 | 		(and
+      OTHER   495 delta +1 | 	(or
+      OTHER   499 delta +1 | 	(or
+      OTHER   501 delta +1 | 		(and
+      OTHER   516 delta +1 | 	(nor
+      OTHER   520 delta +1 | 	(or
+      OTHER   522 delta +1 | 		(and
+
+============================================================================================
+=== x1 anib_60027 constants   lines=628
+    delta histogram (delta = #'(' - #')' on the line): {0: 628}
+
+============================================================================================
+=== x1 anib_60003   lines=2390
+    delta histogram (delta = #'(' - #')' on the line): {-1: 343, 0: 1704, 1: 343}
+      (defrule (+1)          180
+      ) alone (-1)           343
+      OTHER delta +1         163
+      OTHER    13 delta +1 | 	(or
+      OTHER    14 delta +1 | 		(or
+      OTHER    27 delta +1 | 	(or
+      OTHER    28 delta +1 | 		(or
+      OTHER    32 delta +1 | 		(or
+      OTHER    34 delta +1 | 			(or
+      OTHER    35 delta +1 | 				(or
+      OTHER    39 delta +1 | 				(or
+      OTHER    53 delta +1 | 	(or
+      OTHER    54 delta +1 | 		(or
+      OTHER    58 delta +1 | 		(or
+      OTHER    59 delta +1 | 			(or
+      OTHER    63 delta +1 | 			(or
+      OTHER    76 delta +1 | 	(or
+      OTHER    77 delta +1 | 		(or
+      OTHER    79 delta +1 | 			(or
+      OTHER    84 delta +1 | 		(or
+      OTHER    85 delta +1 | 			(or
+      OTHER    89 delta +1 | 			(or
+      OTHER   102 delta +1 | 	(or
+      OTHER   104 delta +1 | 		(or
+      OTHER   105 delta +1 | 			(or
+      OTHER   109 delta +1 | 			(or
+      OTHER   122 delta +1 | 	(or
+      OTHER   123 delta +1 | 		(or
+      OTHER   127 delta +1 | 		(or
+      OTHER   138 delta +1 | 	(or
+      OTHER   153 delta +1 | 	(or
+      OTHER   173 delta +1 | 	(nor
+      OTHER   187 delta +1 | 	(or
+      OTHER   229 delta +1 | 	(or
+      OTHER   230 delta +1 | 		(or
+      OTHER   234 delta +1 | 		(or
+      OTHER   246 delta +1 | 	(or
+      OTHER   247 delta +1 | 		(or
+      OTHER   251 delta +1 | 		(or
+      OTHER   289 delta +1 | 	(or
+      OTHER   290 delta +1 | 		(or
+      OTHER   294 delta +1 | 		(or
+      OTHER   295 delta +1 | 			(or
+
+============================================================================================
+=== x1 anib_60029   lines=2581
+    delta histogram (delta = #'(' - #')' on the line): {-1: 342, 0: 1897, 1: 342}
+      (defrule (+1)          229
+      ) alone (-1)           342
+      OTHER delta +1         113
+      OTHER   301 delta +1 | 	(nor 
+      OTHER   349 delta +1 | 	(or
+      OTHER   350 delta +1 | 		(or
+      OTHER   354 delta +1 | 		(or
+      OTHER   369 delta +1 | 	(or
+      OTHER   370 delta +1 | 		(or
+      OTHER   374 delta +1 | 		(or
+      OTHER   389 delta +1 | 	(or
+      OTHER   428 delta +1 | 	(or
+      OTHER   429 delta +1 | 		(and
+      OTHER   459 delta +1 | 	(or
+      OTHER   460 delta +1 | 		(or
+      OTHER   464 delta +1 | 		(or
+      OTHER   478 delta +1 | 	(or
+      OTHER   479 delta +1 | 		(or
+      OTHER   483 delta +1 | 		(or
+      OTHER  1025 delta +1 | 	(or
+      OTHER  1026 delta +1 | 		(or
+      OTHER  1030 delta +1 | 		(or
+      OTHER  1044 delta +1 | 	(or
+      OTHER  1045 delta +1 | 		(or
+      OTHER  1049 delta +1 | 		(or
+      OTHER  1063 delta +1 | 	(or
+      OTHER  1721 delta +1 | 	(or
+      OTHER  1723 delta +1 | 		(or
+      OTHER  1754 delta +1 | 	(or
+      OTHER  1755 delta +1 | 		(or
+      OTHER  1759 delta +1 | 		(or
+      OTHER  1914 delta +1 | 	(nor
+      OTHER  1916 delta +1 | 		(or
+      OTHER  1929 delta +1 | 	(or
+      OTHER  1930 delta +1 | 		(or
+      OTHER  1934 delta +1 | 		(or
+      OTHER  1947 delta +1 | 	(or
+      OTHER  1948 delta +1 | 		(or
+      OTHER  1952 delta +1 | 		(or
+      OTHER  1954 delta +1 | 			(or
+      OTHER  1982 delta +1 | 	(or
+      OTHER  1983 delta +1 | 		(or
+      OTHER  1987 delta +1 | 		(or
+
+============================================================================================
+=== x1 anib_60010   lines=728
+    delta histogram (delta = #'(' - #')' on the line): {-1: 63, 0: 602, 1: 63}
+      (defrule (+1)          59
+      ) alone (-1)           63
+      OTHER delta +1         4
+      OTHER   458 delta +1 | 	(or
+      OTHER   475 delta +1 | 	(or
+      OTHER   649 delta +1 | 	(or
+      OTHER   661 delta +1 | 	(or
+
+============================================================================================
+=== x1 anib_60008   lines=222
+    delta histogram (delta = #'(' - #')' on the line): {-1: 19, 0: 184, 1: 19}
+      (defrule (+1)          19
+      ) alone (-1)           19
+
+============================================================================================
+=== aok anib_60002 death match   lines=2444
+    delta histogram (delta = #'(' - #')' on the line): {-1: 375, 0: 1694, 1: 375}
+      (defrule (+1)          212
+      ) alone (-1)           375
+      OTHER delta +1         163
+      OTHER    41 delta +1 | 	(or
+      OTHER    43 delta +1 | 		(and
+      OTHER    57 delta +1 | 	(or
+      OTHER    61 delta +1 | 	(or
+      OTHER    63 delta +1 | 		(and
+      OTHER   101 delta +1 | 	(or
+      OTHER   103 delta +1 | 		(and
+      OTHER   116 delta +1 | 	(or
+      OTHER   120 delta +1 | 	(or
+      OTHER   122 delta +1 | 		(and
+      OTHER   162 delta +1 | 	(or
+      OTHER   164 delta +1 | 		(and
+      OTHER   178 delta +1 | 	(or
+      OTHER   180 delta +1 | 		(and
+      OTHER   185 delta +1 | 	(or
+      OTHER   198 delta +1 | 	(or
+      OTHER   200 delta +1 | 		(and
+      OTHER   214 delta +1 | 	(or
+      OTHER   216 delta +1 | 		(and
+      OTHER   256 delta +1 | 	(or
+      OTHER   258 delta +1 | 		(and
+      OTHER   272 delta +1 | 	(or
+      OTHER   274 delta +1 | 		(and
+      OTHER   288 delta +1 | 	(or
+      OTHER   290 delta +1 | 		(and
+      OTHER   329 delta +1 | 	(or
+      OTHER   331 delta +1 | 		(and
+      OTHER   345 delta +1 | 	(or
+      OTHER   347 delta +1 | 		(and
+      OTHER   352 delta +1 | 	(or
+      OTHER   365 delta +1 | 	(or
+      OTHER   367 delta +1 | 		(and
+      OTHER   381 delta +1 | 	(or
+      OTHER   383 delta +1 | 		(and
+      OTHER   422 delta +1 | 	(or
+      OTHER   424 delta +1 | 		(and
+      OTHER   438 delta +1 | 	(or
+      OTHER   440 delta +1 | 		(and
+      OTHER   454 delta +1 | 	(or
+      OTHER   456 delta +1 | 		(and

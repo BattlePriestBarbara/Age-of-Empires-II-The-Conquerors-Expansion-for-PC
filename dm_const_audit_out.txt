@@ -1,0 +1,32 @@
+==============================================================================
+Age of Kings (gamedata.drs)
+  DM script : D:\aoe2_work\aok_drs\anib_60002.bin (43274 bytes, 2445 lines)
+  constants : D:\aoe2_work\aok_drs\anib_60010.bin (674 lines)
+  pop-cap blocks in this constants file: ['25', '50', '75', '100', '125', '150', '175', '200']
+  constants used by the DM script that exist ONLY for cap 25..200:
+    civ-castle               last def (cap 200 block, line  294) = 70     used 1 time(s)
+    civ-dark-rush            last def (cap 200 block, line  291) = 20     used 2 time(s)
+    deathmatch-unit-max      last def (cap 200 block, line  296) = 170    used 39 time(s)
+    fifteen-percent-pop      last def (cap 200 block, line  324) = 30     used 1 time(s)
+    five-percent-pop         last def (cap 200 block, line  322) = 10     used 5 time(s)
+    imperial-town-size       last def (cap 200 block, line  300) = 40     used 1 time(s)
+    ten-percent-pop          last def (cap 200 block, line  323) = 20     used 4 time(s)
+    unit-max                 last def (cap 200 block, line  319) = 190    used 39 time(s)
+  -> these 8 symbols must be defined by the fallback block
+==============================================================================
+Conquerors (gamedata_x1.drs)
+  DM script : D:\aoe2_work\x1_drs\anib_60002.bin (51320 bytes, 2884 lines)
+  constants : D:\aoe2_work\x1_drs\anib_60027.bin (629 lines)
+  pop-cap blocks in this constants file: ['25', '50', '75', '100', '125', '150', '175', '200']
+  constants used by the DM script that exist ONLY for cap 25..200:
+    civ-castle               last def (cap 200 block, line  550) = 70     used 1 time(s)
+    civ-dark-rush            last def (cap 200 block, line  545) = 20     used 2 time(s)
+    deathmatch-unit-max      last def (cap 200 block, line  552) = 170    used 56 time(s)
+    fifteen-percent-pop      last def (cap 200 block, line  581) = 30     used 1 time(s)
+    five-percent-pop         last def (cap 200 block, line  579) = 10     used 5 time(s)
+    imperial-town-size       last def (cap 200 block, line  556) = 40     used 1 time(s)
+    ten-percent-pop          last def (cap 200 block, line  580) = 20     used 5 time(s)
+    unit-max                 last def (cap 200 block, line  576) = 190    used 56 time(s)
+  -> these 8 symbols must be defined by the fallback block
+
+scan written to dm_const_audit_out.txt

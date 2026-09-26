@@ -1,0 +1,8 @@
+# 统一行尾，避免 Windows 下的 CRLF/LF 警告与脏 diff
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.bat text eol=crlf
+# 明确的二进制（正常情况下也被 .gitignore 排除）
+*.drs binary
+*.exe binary
+*.pyc binary

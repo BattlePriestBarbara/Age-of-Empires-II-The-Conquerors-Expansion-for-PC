@@ -1,0 +1,38 @@
+==============================================================================
+x1_drs/anib_60002.bin  (2884 lines)
+civ blocks found: 18 -> AZTEC-CIV, HUN-CIV, KOREAN-CIV, MAYAN-CIV, SPANISH-CIV, BRITON-CIV, BYZANTINE-CIV, CELTIC-CIV, CHINESE-CIV, FRANKISH-CIV, GOTHIC-CIV, JAPANESE-CIV, MONGOL-CIV, PERSIAN-CIV, SARACEN-CIV, TEUTONIC-CIV, TURKISH-CIV, VIKING-CIV
+  aztec          lines    41..97    dice=[2] trains=1->elite-eagle-warrior, 2->arbalest
+  hun            lines    99..160   dice=[2] trains=1->heavy-cavalry-archer, 2->hussar
+  korean         lines   162..219   dice=[2] trains=1->heavy-cavalry-archer, 2->hand-cannoneer
+  mayan          lines   221..278   dice=[2] trains=1->champion, 2->elite-eagle-warrior
+  spanish        lines   280..391   dice=[5] trains=1->champion, 2->paladin, 3->hussar, 4->hand-cannoneer, 5->heavy-cavalry-archer
+  briton         lines   393..449   dice=[2] trains=1->champion, 2->hussar
+  byzantine      lines   451..532   dice=[3] trains=1->heavy-cavalry-archer, 2->hand-cannoneer, 2->arbalest, 3->hussar
+  celtic         lines   534..624   dice=[4] trains=1->paladin, 2->light-cavalry, 3->heavy-cavalry-archer, 4->heavy-scorpion
+  chinese        lines   626..698   dice=[3] trains=1->champion, 2->hussar, 3->heavy-scorpion
+  frankish       lines   700..789   dice=[4] trains=1->paladin, 2->hussar, 3->heavy-cavalry-archer, 4->heavy-scorpion
+  gothic         lines   791..863   dice=[3] trains=1->hussar, 2->heavy-cavalry-archer, 3->heavy-scorpion
+  japanese       lines   865..941   dice=[3] trains=1->heavy-cavalry-archer, 2->hand-cannoneer, 2->arbalest, 3->heavy-scorpion
+  mongol         lines   943..999   dice=[2] trains=1->champion, 2->hussar
+  persian        lines  1001..1062  dice=[2] trains=1->heavy-cavalry-archer, 2->hussar
+  saracen        lines  1064..1141  dice=[3] trains=1->heavy-cavalry-archer, 2->hand-cannoneer, 2->arbalest, 3->hussar
+  teutonic       lines  1143..1199  dice=[2] trains=1->paladin, 2->heavy-scorpion
+  turkish        lines  1201..1273  dice=[3] trains=1->champion, 2->hussar, 3->heavy-scorpion
+  viking         lines  1275..1347  dice=[3] trains=1->light-cavalry, 2->arbalest, 3->heavy-scorpion
+
+==============================================================================
+aok_drs/anib_60002.bin  (2445 lines)
+civ blocks found: 13 -> BRITON-CIV, BYZANTINE-CIV, CELTIC-CIV, CHINESE-CIV, FRANKISH-CIV, GOTHIC-CIV, JAPANESE-CIV, MONGOL-CIV, PERSIAN-CIV, SARACEN-CIV, TEUTONIC-CIV, TURKISH-CIV, VIKING-CIV
+  briton         lines    13..71    dice=[2] trains=1->champion, 2->light-cavalry
+  byzantine      lines    73..132   dice=[2] trains=1->heavy-cavalry-archer, 2->hand-cannoneer, 2->arbalest
+  celtic         lines   134..226   dice=[4] trains=1->paladin, 2->light-cavalry, 3->heavy-cavalry-archer, 4->heavy-scorpion
+  chinese        lines   228..299   dice=[3] trains=1->champion, 3->light-cavalry, 3->heavy-scorpion
+  frankish       lines   301..392   dice=[4] trains=1->paladin, 2->light-cavalry, 3->heavy-cavalry-archer, 4->heavy-scorpion
+  gothic         lines   394..465   dice=[3] trains=1->light-cavalry, 2->heavy-cavalry-archer, 3->heavy-scorpion
+  japanese       lines   467..542   dice=[3] trains=1->heavy-cavalry-archer, 2->hand-cannoneer, 2->arbalest, 3->heavy-scorpion
+  mongol         lines   544..576   dice=[] trains=None->champion
+  persian        lines   578..611   dice=[] trains=None->heavy-cavalry-archer
+  saracen        lines   613..673   dice=[2] trains=1->heavy-cavalry-archer, 2->hand-cannoneer, 2->arbalest
+  teutonic       lines   675..730   dice=[2] trains=1->paladin, 2->heavy-scorpion
+  turkish        lines   732..803   dice=[3] trains=1->champion, 2->light-cavalry, 3->heavy-scorpion
+  viking         lines   805..876   dice=[3] trains=1->light-cavalry, 2->arbalest, 3->heavy-scorpion

@@ -1,0 +1,456 @@
+== aok_drs : 48 files ==
+   anib_54000.bin           3584
+   anib_54101.bin           6380
+   anib_54102.bin           11501
+   anib_54103.bin           11451
+   anib_54201.bin           5020
+   anib_54202.bin           22800
+   anib_54203.bin           7333
+   anib_54204.bin           4790
+   anib_54205.bin           12646
+   anib_54206.bin           11586
+   anib_54207.bin           6546
+   anib_54208.bin           15095
+   anib_54209.bin           6777
+   anib_54210.bin           9128
+   anib_54211.bin           21559
+   anib_54212.bin           7935
+   anib_54213.bin           17632
+   anib_54214.bin           14552
+   anib_54216.bin           731
+   anib_54217.bin           9748
+   anib_54218.bin           11204
+   anib_60001.bin           28550
+   anib_60002.bin           45718
+   anib_60003.bin           41578
+   anib_60004.bin           3276
+   anib_60005.bin           3544
+   anib_60006.bin           4083
+   anib_60007.bin           17783
+   anib_60008.bin           17098
+   anib_60009.bin           19315
+   anib_60010.bin           14168
+   anib_60011.bin           15124
+   anib_60012.bin           4583
+   anib_60013.bin           1350
+   anib_60014.bin           1013
+   anib_60015.bin           2370
+   anib_60016.bin           3050
+   anib_60017.bin           12154
+   anib_60018.bin           338
+   anib_60019.bin           15138
+   anib_60020.bin           5177
+   anib_60021.bin           12002
+   anib_60022.bin           4272
+   anib_60023.bin           19478
+   anib_60024.bin           8218
+   anib_60025.bin           3267
+   anib_60026.bin           255
+   anib_60027.bin           9832
+
+== x1_drs : 76 files ==
+   anib_54000.bin           18733
+   anib_54101.bin           6380
+   anib_54102.bin           13504
+   anib_54103.bin           13468
+   anib_54201.bin           4989
+   anib_54202.bin           22761
+   anib_54203.bin           7422
+   anib_54204.bin           7676
+   anib_54205.bin           15783
+   anib_54206.bin           11548
+   anib_54207.bin           6508
+   anib_54208.bin           16815
+   anib_54209.bin           6743
+   anib_54210.bin           11179
+   anib_54211.bin           23331
+   anib_54212.bin           7894
+   anib_54213.bin           17595
+   anib_54217.bin           9714
+   anib_54218.bin           13502
+   anib_54219.bin           13773
+   anib_54220.bin           3165
+   anib_54221.bin           15458
+   anib_54222.bin           18514
+   anib_54223.bin           20500
+   anib_54225.bin           6722
+   anib_54226.bin           4813
+   anib_54227.bin           19818
+   anib_55001.bin           5116
+   anib_55002.bin           3636
+   anib_55003.bin           3224
+   anib_55004.bin           17634
+   anib_55005.bin           14202
+   anib_55006.bin           3977
+   anib_55007.bin           4882
+   anib_55008.bin           4370
+   anib_55009.bin           13921
+   anib_55010.bin           4882
+   anib_56001.bin           8197
+   anib_56002.bin           8557
+   anib_56003.bin           6703
+   anib_56004.bin           3515
+   anib_56005.bin           5087
+   anib_56006.bin           4065
+   anib_56007.bin           4666
+   anib_56008.bin           4492
+   anib_56009.bin           4852
+   anib_56010.bin           5434
+   anib_60001.bin           29337
+   anib_60002.bin           54203
+   anib_60003.bin           49519
+   anib_60004.bin           4463
+   anib_60005.bin           3544
+   anib_60006.bin           2693
+   anib_60007.bin           26355
+   anib_60008.bin           4827
+   anib_60009.bin           23059
+   anib_60010.bin           13739
+   anib_60011.bin           19573
+   anib_60012.bin           5078
+   anib_60013.bin           20650
+   anib_60014.bin           1251
+   anib_60015.bin           2647
+   anib_60016.bin           3609
+   anib_60017.bin           12623
+   anib_60018.bin           475
+   anib_60019.bin           9574
+   anib_60020.bin           5062
+   anib_60021.bin           12949
+   anib_60022.bin           4272
+   anib_60023.bin           30008
+   anib_60024.bin           3129
+   anib_60025.bin           2842
+   anib_60026.bin           918
+   anib_60027.bin           19383
+   anib_60028.bin           55492
+   anib_60029.bin           52174
+
+== x1p1_drs : 7 files ==
+   pls_5168.bin             14466
+   pls_5176.bin             14466
+   pls_5182.bin             14466
+   pls_5218.bin             162006
+   pls_5219.bin             162006
+   pls_5220.bin             162006
+   anib_54228.bin           1281
+
+---- x1_drs\anib_60002.bin  (54203 bytes, 2884 lines) first 60 lines ----
+     1 | ;goals 1 and 2 = boats
+     2 | ;goal 3 = groups
+     3 | ;goal combat-arm = his unique unit type (also loads correct upgrades)
+     4 | ;goal 36 = good infantry -- 36 NO = don't build, YES = build, 
+     5 | ;	2 = only build if we don't have a castle. 
+     6 | ;goal 37 = good cavalry
+     7 | ;goal 38 = good horse-archers
+     8 | ;goal 39 = good archers
+     9 | 
+    10 | ;starting goals
+    11 | (defrule
+    12 | 	(true)
+    13 | =>
+    14 | 	(set-goal military-parity YES)	;goal 3
+    15 | 	(set-goal attack-control NO)	;goal 4
+    16 | 	(set-goal need-deathmatch-villagers NO)	;goal 7
+    17 | 
+    18 | 	(set-goal secondary-build 1)	;goal 8
+    19 | 	(set-goal soldiers-available NO);goal 10
+    20 | 	(set-goal attack-enabled YES)	;goal 13
+    21 | 	(set-goal age-advancement NO)	;goal 14
+    22 | 
+    23 | 	(set-goal make-warboat NO)		;goal 15
+    24 | 	(set-goal upgrade-conflict NO)	;goal 16
+    25 | 
+    26 | 	(disable-self)
+    27 | )
+    28 | 
+    29 | (defrule
+    30 | 	(true)
+    31 | =>
+    32 | 	(set-goal pre-unique-arm NO)	;goal 17
+    33 | 	(set-goal wonder-attempt MAYBE)	;goal 20
+    34 | 	(set-goal sea-owner NO)			;goal 23
+    35 | 	(set-goal enemy-soldiers NO)	;goal 26
+    36 | 	(set-goal siege-available YES)	;goal 34
+    37 | 	(disable-self)
+    38 | )
+    39 | 
+    40 | ;*********************************************************
+    41 | #load-if-defined AZTEC-CIV
+    42 | ;train jaguar men, eagle men, champs, arbalests
+    43 | (defrule
+    44 | 	(goal combat-arm NOTICE)
+    45 | =>
+    46 | 	(set-goal combat-arm INFANTRY)
+    47 | 	(set-goal monk-rating GOOD)
+    48 | 	(set-goal 36 2)
+    49 | 	(set-goal 37 NO)
+    50 | 	(set-goal 38 NO)
+    51 | 	(set-goal 39 YES)
+    52 | 
+    53 | 	(set-strategic-number sn-wood-gatherer-percentage 20)
+    54 | 	(set-strategic-number sn-food-gatherer-percentage 50)
+    55 | 	(set-strategic-number sn-gold-gatherer-percentage 25)
+    56 | 	(set-strategic-number sn-stone-gatherer-percentage 5)
+    57 | 	(disable-self)
+    58 | )
+    59 | 
+    60 | (defrule
+
+---- x1_drs\anib_60026.bin  (918 bytes, 52 lines) first 60 lines ----
+     1 | (load "petersen constants")
+     2 | 
+     3 | ;******************************
+     4 | #load-if-defined WONDER-RACE
+     5 | 
+     6 | (load "wonder rush")
+     7 | 
+     8 | #end-if
+     9 | ;******************************
+    10 | #load-if-defined DEATH-MATCH
+    11 | 
+    12 | (load "petersen map loads")
+    13 | (load "petersen diplomacy")
+    14 | 
+    15 | 
+    16 | (load "petersen supplement")
+    17 | (load "petersen groups")
+    18 | (load "petersen resign")
+    19 | 
+    20 | 
+    21 | (load "petersen deathmatch")
+    22 | 
+    23 | #end-if
+    24 | ;******************************
+    25 | #load-if-defined DEFEND-WONDER
+    26 | 
+    27 | (load "petersen map loads")
+    28 | (load "petersen diplomacy")
+    29 | 
+    30 | (load "wonder kill")
+    31 | 
+    32 | #end-if
+    33 | ;******************************
+    34 | #load-if-not-defined DEATH-MATCH
+    35 | #load-if-not-defined DEFEND-WONDER
+    36 | #load-if-not-defined WONDER-RACE
+    37 | 
+    38 | (load "petersen map loads")
+    39 | (load "petersen diplomacy")
+    40 | 
+    41 | (load "petersen supplement")
+    42 | (load "petersen groups")
+    43 | (load "petersen resign")
+    44 | 
+    45 | 
+    46 | (load "AI petersen rules")
+    47 | 
+    48 | #end-if
+    49 | #end-if
+    50 | #end-if
+    51 | ;******************************
+    52 | 
+
+---- x1_drs\anib_60027.bin  (19383 bytes, 629 lines) first 60 lines ----
+     1 | ; Common constants used in AI goals - other constants will follow the specific goals
+     2 | 	; Common.
+     3 | 	(defconst NO 0)		 ;Used to indicate not set or initial value (as Normal)
+     4 | 	(defconst YES 1)		 ;Used to indicate set
+     5 | 	(defconst NORMAL 0)	 ;Used for default values
+     6 | 	(defconst NOTICE 99)  ;Used for special highlight or initialization values that should be set
+     7 | 
+     8 | 	; Constants used for ratings (i.e. monk-rating)
+     9 | 	(defconst EXCELLENT 99); For any rating-type value highest to lowest
+    10 | 	(defconst GOOD	70)		
+    11 | 	(defconst MEDIUM 50)
+    12 | 	(defconst FAIR 30)
+    13 | 	(defconst POOR 10) 
+    14 | 
+    15 | 	; Constants used for combat or defense strategy selection
+    16 | 	(defconst INFANTRY 1)
+    17 | 	(defconst CAVALRY 2)
+    18 | 	(defconst LIGHTCAV 3)
+    19 | 	(defconst CAVARCHER 4)
+    20 | 	(defconst ARCHER 5)
+    21 | 	(defconst EAGLEMAN 6)
+    22 | 	(defconst SCORPION 12)
+    23 | 	(defconst UNIQUE 13)
+    24 | 	(defconst UNIT20 20) ;SP - wasn't sure what 20 was used for in combat-arm and combat-supp
+    25 | 
+    26 | ;NOTE: Goal 1 0 = no boats; Goal 1 1 = boats; Goal 1 10 = lotsa boats (island map)
+    27 | 	(defconst boat-strategy 1)
+    28 | 	(defconst SOMEBOATS 1)	;this actually means we're on a water map
+    29 | 	(defconst MANYBOATS 10)	; this actually means we're on an islands map
+    30 | 
+    31 | ;goal 2 0 okay on boats; 2 1 need warships! 2 2 we've won with ships
+    32 | 	(defconst boats-needed 2)
+    33 | 	(defconst WARSHIPS 1)	;I don't think this is used any more
+    34 | 	(defconst CONTROL 2)
+    35 | 
+    36 | ;Goal  3 0 = military parity; Goal  3 1 = an enemy outnumbers us!
+    37 | 	(defconst military-parity 3)
+    38 | 	;uses NO, YES
+    39 | 	(defconst SUPERIOR 2)
+    40 | 
+    41 | ;goal  4 = used to track attack group AI
+    42 | 	(defconst attack-control 4)
+    43 | 	;SP - need doc for
+    44 | 	;0=   okay to launch an attack
+    45 | 	;1=	not okay - because we're outnumbered, building a wonder, or have no enemies
+    46 | 	;2=	not okay - because we lack siege
+    47 | 	;3=	not okay - because we're trying to rush to the next age and want to limit losses
+    48 | 
+    49 | ;goal  5 = controls gather rates - 5 0 = normal; 5 1 = wood; 5 2 = food; 5 3 = gold; 5 4 = stone
+    50 | 	(defconst resource-needed 5)
+    51 | 	(defconst WOOD 1)
+    52 | 	(defconst FOOD 2)
+    53 | 	(defconst GOLD 3)
+    54 | 	(defconst STONE 4)
+    55 | 	;(defconst GOLD-STONE 5) this means you want both gold & stone
+    56 | 
+    57 | ;goal  6 = controls rushes!; also uses NOTICE
+    58 | 	(defconst rush-control 6)
+    59 | 	(defconst FEUDAL 2) ;we have just eliminated this as too puny
+    60 | 	(defconst CASTLE 3)
+
+---- x1_drs\anib_60028.bin  (55492 bytes, 2629 lines) first 60 lines ----
+     1 | ;if I'm short on resources, ask allies for some before using the market
+     2 | (defrule
+     3 | 	(player-in-game any-ally)
+     4 | 	(players-building-type-count any-ally market > 0)
+     5 | =>
+     6 | 	(enable-timer 1 60)
+     7 | 	(disable-self)
+     8 | )
+     9 | 
+    10 | (defrule
+    11 | 	(true)
+    12 | =>
+    13 | 	(set-goal resource-needed NO)
+    14 | 	(disable-self)
+    15 | )
+    16 | 
+    17 | ;****************************************
+    18 | (defrule
+    19 | 	(goal resource-needed WOOD)
+    20 | 	(timer-triggered t-tribute)
+    21 | 	(not (stance-toward any-human ally) )
+    22 | =>
+    23 | 	(chat-to-player-using-id every-ally 22123)	;4
+    24 | )
+    25 | 
+    26 | (defrule
+    27 | 	(goal resource-needed FOOD)
+    28 | 	(timer-triggered t-tribute)
+    29 | 	(not (stance-toward any-human ally) )
+    30 | =>
+    31 | 	(chat-to-player-using-id every-ally 22122)	;3
+    32 | )
+    33 | 
+    34 | (defrule
+    35 | 	(goal resource-needed GOLD)
+    36 | 	(timer-triggered t-tribute)
+    37 | 	(not (stance-toward any-human ally) )
+    38 | =>
+    39 | 	(chat-to-player-using-id every-ally 22124)	;5
+    40 | )
+    41 | 
+    42 | (defrule
+    43 | 	(goal resource-needed STONE)
+    44 | 	(timer-triggered t-tribute)
+    45 | 	(not (stance-toward any-human ally) )
+    46 | =>
+    47 | 	(chat-to-player-using-id every-ally 22125)	;6
+    48 | )
+    49 | 
+    50 | (defrule
+    51 | 	(goal resource-needed WOOD)
+    52 | 	(timer-triggered t-tribute)
+    53 | 	(stance-toward any-human ally)
+    54 | 	(not (goal wonder-attempt POSSIBLE) )
+    55 | 	(or
+    56 | 		(wood-amount > 250)
+    57 | 		(and
+    58 | 			(current-age < imperial-age)
+    59 | 			(wood-amount > 150)
+    60 | 		)
+
+---- x1_drs\anib_60029.bin  (52174 bytes, 2582 lines) first 60 lines ----
+     1 | ;goals 1 and 2 = boats
+     2 | ;goal 3 = groups
+     3 | ;goal combat-arm = his unique unit type (also loads correct upgrades)
+     4 | ;goal 36 = good infantry -- 36 NO = don't build, YES = build, 
+     5 | ;	2 = only build if we don't have a castle. 
+     6 | ;goal 37 = good cavalry
+     7 | ;goal 38 = good horse-archers
+     8 | ;goal 39 = good archers
+     9 | 
+    10 | ;starting goals
+    11 | (defrule
+    12 | 	(true)
+    13 | =>
+    14 | 	(set-goal military-parity NO)	;goal 3
+    15 | 	(set-goal attack-control NO)	;goal 4
+    16 | 	(set-goal need-deathmatch-villagers NO)	;goal 7
+    17 | 
+    18 | 	(set-goal secondary-build YES)	;goal 8
+    19 | 	(set-goal soldiers-available NO);goal 10
+    20 | 	(set-goal combat-supp NO)		;goal 12
+    21 | 
+    22 | 	(set-goal attack-enabled YES)	;goal 13
+    23 | 	(set-goal age-advancement NO)	;goal 14
+    24 | 	(set-goal make-warboat NO)		;goal 15
+    25 | 
+    26 | 	(disable-self)
+    27 | )
+    28 | 
+    29 | ;note that goal "enemy-soldiers" is, in wonder-kill, the siege-building goal. 
+    30 | (defrule
+    31 | 	(true)
+    32 | =>
+    33 | 	(set-goal upgrade-conflict NO)	;goal 16
+    34 | 	(set-goal pre-unique-arm NO)	;goal 17
+    35 | 	(set-goal sea-owner NO)			;goal 23
+    36 | 
+    37 | 	(set-goal siege-available YES)	;goal 34
+    38 | 	(disable-self)
+    39 | )
+    40 | 
+    41 | (defrule
+    42 | 	(strategic-number sn-number-explore-groups != 1)
+    43 | =>
+    44 | 	(set-strategic-number sn-number-explore-groups 1)
+    45 | )
+    46 | 
+    47 | ;which side are we?
+    48 | (defrule
+    49 | 	(cc-players-building-type-count any-enemy wonder > 0)
+    50 | =>
+    51 | 	(set-goal wonder-attempt ATTACK)
+    52 | 	(enable-timer t-production 60)
+    53 | 	(disable-self)
+    54 | )
+    55 | 
+    56 | (defrule
+    57 | 	(building-type-count wonder > 0)
+    58 | =>
+    59 | 	(set-goal wonder-attempt DEFEND)
+    60 | 	(enable-timer t-production 60)
+
+---- aok_drs\anib_60026.bin  (255 bytes, 16 lines) first 60 lines ----
+     1 | (load "petersen constants")
+     2 | (load "petersen map loads")
+     3 | (load "petersen supplement")
+     4 | (load "petersen groups")
+     5 | (load "petersen resign")
+     6 | 
+     7 | #load-if-defined DEATH-MATCH
+     8 | 
+     9 | 	(load "petersen deathmatch")
+    10 | 
+    11 | #else
+    12 | 
+    13 | (load "AI petersen rules")
+    14 | 
+    15 | #end-if
+    16 | 

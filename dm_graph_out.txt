@@ -1,0 +1,203 @@
+
+####################################################################################################
+# gamedata_x1.drs.orig
+####################################################################################################
+
+ anib_60001   29337B rules=96   def=0   ;starting goals
+     -> loads : petersen civ loads; petersen difficulty loads; petersen gather; petersen upgrades; petersen castle; petersen full tech; petersen rush
+     ! uses   : castle-town-size x20719, civ-castle x18239, civ-dark x15086, civ-dark-rush x17171, civ-feudal x17859, deathmatch-unit-max x19810, feudal-town-size x21879, fifteen-percent-pop x19225, fifty-percent-pop x19482, five-percent-pop x19354, imperial-town-size x22170, pop-cap x13078, ten-percent-pop x17742, thirty-percent-pop x19398, town-size x17230, twenty-percent-pop x18179, unit-max x15991
+
+ anib_60002   54203B rules=244  def=0   ;goals 1 and 2 = boats
+     -> loads : petersen tower; petersen wonder
+     ! uses   : castle-town-size x38081, civ-castle x33859, civ-dark x28602, civ-dark-rush x32318, civ-feudal x33157, deathmatch-unit-max x37275, feudal-town-size x39866, fifteen-percent-pop x35194, fifty-percent-pop x35682, five-percent-pop x35437, imperial-town-size x40976, pop-cap x24741, ten-percent-pop x32783, thirty-percent-pop x35995, town-size x31439, twenty-percent-pop x33407, unit-max x29702
+
+ anib_60003   49519B rules=180  def=0   ;start the run-through
+     ! uses   : castle-town-size x34921, civ-castle x30539, civ-dark x26100, civ-dark-rush x29454, civ-feudal x30696, deathmatch-unit-max x32068, feudal-town-size x36199, fifteen-percent-pop x32991, fifty-percent-pop x33326, five-percent-pop x33212, imperial-town-size x37083, pop-cap x23452, ten-percent-pop x30642, thirty-percent-pop x33181, town-size x28466, twenty-percent-pop x31474, unit-max x24507
+
+ anib_60004    4463B rules=20   def=0   (defrule
+     ! uses   : castle-town-size x3207, civ-castle x2789, civ-dark x2305, civ-dark-rush x2620, civ-feudal x2780, deathmatch-unit-max x3081, feudal-town-size x3409, fifteen-percent-pop x3028, fifty-percent-pop x3089, five-percent-pop x3042, imperial-town-size x3348, pop-cap x2077, ten-percent-pop x2767, thirty-percent-pop x3086, town-size x2700, twenty-percent-pop x2858, unit-max x2473
+
+ anib_60005    3544B rules=14   def=0   ;need to add a section in which he joins our side then betrays us!
+     ! uses   : castle-town-size x2464, civ-castle x2172, civ-dark x1722, civ-dark-rush x2003, civ-feudal x2103, deathmatch-unit-max x2473, feudal-town-size x2624, fifteen-percent-pop x2239, fifty-percent-pop x2351, five-percent-pop x2239, imperial-town-size x2716, pop-cap x1540, ten-percent-pop x2077, thirty-percent-pop x2398, town-size x2075, twenty-percent-pop x2194, unit-max x1997
+
+ anib_60006    2693B rules=8    def=0   ;goal 2 NO = no problem; 2 YES = we've won at sea!
+     ! uses   : castle-town-size x2019, civ-castle x1706, civ-dark x1385, civ-dark-rush x1493, civ-feudal x1632, deathmatch-unit-max x1808, feudal-town-size x2072, fifteen-percent-pop x1878, fifty-percent-pop x1895, five-percent-pop x1887, imperial-town-size x2150, pop-cap x1318, ten-percent-pop x1735, thirty-percent-pop x1882, town-size x1692, twenty-percent-pop x1784, unit-max x1512
+
+ anib_60007   26355B rules=71   def=0   (defrule
+     ! uses   : castle-town-size x19770, civ-castle x17063, civ-dark x13612, civ-dark-rush x14858, civ-feudal x16342, deathmatch-unit-max x18638, feudal-town-size x20026, fifteen-percent-pop x18975, fifty-percent-pop x19619, five-percent-pop x19171, imperial-town-size x21230, pop-cap x12633, ten-percent-pop x17659, thirty-percent-pop x19530, town-size x16378, twenty-percent-pop x18437, unit-max x15112
+
+ anib_60008    4827B rules=19   def=0   #load-if-defined DIFFICULTY-EASIEST
+     -> loads : petersen tower; petersen market; petersen wonder
+     ! uses   : castle-town-size x3384, civ-castle x3116, civ-dark x2347, civ-dark-rush x2668, civ-feudal x3016, deathmatch-unit-max x3275, feudal-town-size x3582, fifteen-percent-pop x3056, fifty-percent-pop x3091, five-percent-pop x3082, imperial-town-size x3633, pop-cap x1931, ten-percent-pop x2806, thirty-percent-pop x3046, town-size x2769, twenty-percent-pop x2867, unit-max x2389
+
+ anib_60009   23059B rules=84   def=0   (defrule
+     ! uses   : castle-town-size x15901, civ-castle x14073, civ-dark x12056, civ-dark-rush x13221, civ-feudal x13821, deathmatch-unit-max x15181, feudal-town-size x16359, fifteen-percent-pop x14984, fifty-percent-pop x15124, five-percent-pop x15092, imperial-town-size x17127, pop-cap x11056, ten-percent-pop x14048, thirty-percent-pop x15104, town-size x13186, twenty-percent-pop x14274, unit-max x12475
+
+ anib_60010   13739B rules=60   def=0   #load-if-defined GAME-SPEED-LOCKED
+     -> loads : petersen fishboat; petersen warboat; petersen warboat island
+     ! uses   : castle-town-size x8838, civ-castle x7919, civ-dark x6097, civ-dark-rush x6811, civ-feudal x7880, deathmatch-unit-max x8131, feudal-town-size x9603, fifteen-percent-pop x7918, fifty-percent-pop x7958, five-percent-pop x7940, imperial-town-size x9260, pop-cap x5372, ten-percent-pop x7137, thirty-percent-pop x7715, town-size x7330, twenty-percent-pop x7266, unit-max x6307
+
+ anib_60011   19573B rules=130  def=0   ;*********************************************************
+     ! uses   : castle-town-size x11716, civ-castle x10392, civ-dark x9095, civ-dark-rush x9818, civ-feudal x10499, deathmatch-unit-max x11792, feudal-town-size x12443, fifteen-percent-pop x10856, fifty-percent-pop x10882, five-percent-pop x10856, imperial-town-size x13215, pop-cap x8586, ten-percent-pop x10485, thirty-percent-pop x10694, town-size x9631, twenty-percent-pop x10514, unit-max x10084
+
+ anib_60012    5078B rules=24   def=0   ;start the pass
+     ! uses   : castle-town-size x3785, civ-castle x3321, civ-dark x2610, civ-dark-rush x2876, civ-feudal x3263, deathmatch-unit-max x3316, feudal-town-size x4000, fifteen-percent-pop x3250, fifty-percent-pop x3274, five-percent-pop x3256, imperial-town-size x4006, pop-cap x2382, ten-percent-pop x3054, thirty-percent-pop x3255, town-size x3087, twenty-percent-pop x3205, unit-max x2706
+
+ anib_60013   20650B rules=74   def=0   ;UPGRADES & BUILDS RELATED TO OTHER PLAYERS
+     ! uses   : castle-town-size x14232, civ-castle x12829, civ-dark x10201, civ-dark-rush x11647, civ-feudal x12492, deathmatch-unit-max x13794, feudal-town-size x15103, fifteen-percent-pop x12593, fifty-percent-pop x13093, five-percent-pop x12635, imperial-town-size x15235, pop-cap x9402, ten-percent-pop x11974, thirty-percent-pop x13290, town-size x11701, twenty-percent-pop x12564, unit-max x11236
+
+ anib_60014    1251B rules=5    def=0   ;make the castle
+     ! uses   : castle-town-size x954, civ-castle x871, civ-dark x615, civ-dark-rush x704, civ-feudal x764, deathmatch-unit-max x877, feudal-town-size x962, fifteen-percent-pop x842, fifty-percent-pop x845, five-percent-pop x850, imperial-town-size x1005, pop-cap x554, ten-percent-pop x789, thirty-percent-pop x844, town-size x779, twenty-percent-pop x801, unit-max x699
+
+ anib_60015    2647B rules=10   def=0   (defrule
+     ! uses   : castle-town-size x1877, civ-castle x1654, civ-dark x1293, civ-dark-rush x1475, civ-feudal x1650, deathmatch-unit-max x1737, feudal-town-size x2032, fifteen-percent-pop x1683, fifty-percent-pop x1729, five-percent-pop x1691, imperial-town-size x1976, pop-cap x1131, ten-percent-pop x1544, thirty-percent-pop x1729, town-size x1576, twenty-percent-pop x1615, unit-max x1361
+
+ anib_60016    3609B rules=13   def=0   #load-if-not-defined VICTORY-CONQUEST
+     ! uses   : castle-town-size x2558, civ-castle x2241, civ-dark x1711, civ-dark-rush x1937, civ-feudal x2154, deathmatch-unit-max x2413, feudal-town-size x2716, fifteen-percent-pop x2334, fifty-percent-pop x2381, five-percent-pop x2350, imperial-town-size x2770, pop-cap x1490, ten-percent-pop x2162, thirty-percent-pop x2364, town-size x2157, twenty-percent-pop x2259, unit-max x1889
+
+ anib_60017   12623B rules=45   def=0   ;if I'm short on resources, ask allies for some before using the marke
+     ! uses   : castle-town-size x8918, civ-castle x7680, civ-dark x6253, civ-dark-rush x6955, civ-feudal x7701, deathmatch-unit-max x8283, feudal-town-size x9464, fifteen-percent-pop x8127, fifty-percent-pop x8319, five-percent-pop x8156, imperial-town-size x9448, pop-cap x5867, ten-percent-pop x7691, thirty-percent-pop x8224, town-size x7455, twenty-percent-pop x7989, unit-max x6447
+
+ anib_60018     475B rules=3    def=0   ;all this file really does for now is ensure more villagers than a "no
+     ! uses   : castle-town-size x347, civ-castle x312, civ-dark x243, civ-dark-rush x275, civ-feudal x302, deathmatch-unit-max x305, feudal-town-size x365, fifteen-percent-pop x313, fifty-percent-pop x317, five-percent-pop x317, imperial-town-size x378, pop-cap x214, ten-percent-pop x284, thirty-percent-pop x313, town-size x280, twenty-percent-pop x289, unit-max x250
+
+ anib_60019    9574B rules=38   def=0   ;DARK AGE
+     ! uses   : castle-town-size x6332, civ-castle x5547, civ-dark x4277, civ-dark-rush x4927, civ-feudal x5263, deathmatch-unit-max x6144, feudal-town-size x6643, fifteen-percent-pop x6139, fifty-percent-pop x6159, five-percent-pop x6143, imperial-town-size x6954, pop-cap x3829, ten-percent-pop x5882, thirty-percent-pop x6142, town-size x5431, twenty-percent-pop x5943, unit-max x4607
+
+ anib_60020    5062B rules=21   def=0   ;make sure we have allies
+     ! uses   : castle-town-size x3613, civ-castle x3197, civ-dark x2439, civ-dark-rush x2763, civ-feudal x3065, deathmatch-unit-max x3221, feudal-town-size x3816, fifteen-percent-pop x3142, fifty-percent-pop x3291, five-percent-pop x3151, imperial-town-size x3843, pop-cap x2291, ten-percent-pop x2943, thirty-percent-pop x3282, town-size x2930, twenty-percent-pop x3123, unit-max x2626
+
+ anib_60021   12949B rules=48   def=0   (defrule
+     ! uses   : castle-town-size x9247, civ-castle x8218, civ-dark x6668, civ-dark-rush x7293, civ-feudal x7818, deathmatch-unit-max x8688, feudal-town-size x9571, fifteen-percent-pop x8588, fifty-percent-pop x8898, five-percent-pop x8629, imperial-town-size x9869, pop-cap x6037, ten-percent-pop x8046, thirty-percent-pop x8828, town-size x7695, twenty-percent-pop x8418, unit-max x7153
+
+ anib_60022    4272B rules=24   def=0   ;insults the player
+     ! uses   : castle-town-size x3044, civ-castle x2848, civ-dark x2267, civ-dark-rush x2611, civ-feudal x2752, deathmatch-unit-max x3169, feudal-town-size x3205, fifteen-percent-pop x2829, fifty-percent-pop x2946, five-percent-pop x2866, imperial-town-size x3287, pop-cap x1808, ten-percent-pop x2577, thirty-percent-pop x3010, town-size x2582, twenty-percent-pop x2694, unit-max x2425
+
+ anib_60023   30008B rules=83   def=0   ;THE BULLY
+     ! uses   : castle-town-size x20479, civ-castle x18221, civ-dark x14559, civ-dark-rush x17072, civ-feudal x17434, deathmatch-unit-max x19997, feudal-town-size x21829, fifteen-percent-pop x18502, fifty-percent-pop x19081, five-percent-pop x18538, imperial-town-size x22223, pop-cap x13107, ten-percent-pop x17374, thirty-percent-pop x19460, town-size x17324, twenty-percent-pop x18046, unit-max x16402
+
+ anib_60024    3129B rules=12   def=0   ;best ship-builders = byzantines, japanese, persian, saracen, viking
+     ! uses   : castle-town-size x2315, civ-castle x2082, civ-dark x1643, civ-dark-rush x1881, civ-feudal x1963, deathmatch-unit-max x2122, feudal-town-size x2392, fifteen-percent-pop x2121, fifty-percent-pop x2172, five-percent-pop x2147, imperial-town-size x2463, pop-cap x1456, ten-percent-pop x1955, thirty-percent-pop x2185, town-size x1948, twenty-percent-pop x2025, unit-max x1678
+
+ anib_60025    2842B rules=15   def=0   ;error trapping
+     ! uses   : castle-town-size x1830, civ-castle x1636, civ-dark x1359, civ-dark-rush x1583, civ-feudal x1649, deathmatch-unit-max x1697, feudal-town-size x1964, fifteen-percent-pop x1694, fifty-percent-pop x1718, five-percent-pop x1702, imperial-town-size x1978, pop-cap x1229, ten-percent-pop x1584, thirty-percent-pop x1713, town-size x1492, twenty-percent-pop x1610, unit-max x1358
+
+ anib_60026     918B rules=0    def=0   (load "petersen constants")
+     -> loads : petersen constants; wonder rush; petersen map loads; petersen diplomacy; petersen supplement; petersen groups; petersen resign; petersen deathmatch; w
+     * gate   : DEATH-MATCH
+     ! uses   : castle-town-size x507, civ-castle x430, civ-dark x345, civ-dark-rush x382, civ-feudal x452, deathmatch-unit-max x474, feudal-town-size x576, fifteen-percent-pop x476, fifty-percent-pop x479, five-percent-pop x476, imperial-town-size x561, pop-cap x311, ten-percent-pop x434, thirty-percent-pop x464, town-size x433, twenty-percent-pop x439, unit-max x343
+
+ anib_60027   19383B rules=0    def=312 ; Common constants used in AI goals - other constants will follow the 
+     = defines: castle-town-size, civ-castle, civ-dark, civ-dark-rush, civ-feudal, deathmatch-unit-max, feudal-town-size, fifteen-percent-pop, fifty-percent-pop, five-percent-pop, imperial-town-size, pop-cap, ten-percent-pop, thirty-percent-pop, twenty-percent-pop, unit-max
+     * gate   : POPULATION-CAP-100, POPULATION-CAP-125, POPULATION-CAP-150, POPULATION-CAP-175, POPULATION-CAP-200, POPULATION-CAP-25, POPULATION-CAP-50, POPULATION-CAP-75
+     ! uses   : castle-town-size x12486, civ-castle x10533, civ-dark x8321, civ-dark-rush x9503, civ-feudal x10486, deathmatch-unit-max x11808, feudal-town-size x13533, fifteen-percent-pop x11816, fifty-percent-pop x11916, five-percent-pop x11931, imperial-town-size x12759, pop-cap x7453, ten-percent-pop x10532, thirty-percent-pop x11469, town-size x10706, twenty-percent-pop x10749, unit-max x8859
+
+ anib_60028   55492B rules=226  def=0   ;if I'm short on resources, ask allies for some before using the marke
+     ! uses   : castle-town-size x37730, civ-castle x32925, civ-dark x26583, civ-dark-rush x30196, civ-feudal x32853, deathmatch-unit-max x35707, feudal-town-size x40101, fifteen-percent-pop x35050, fifty-percent-pop x35459, five-percent-pop x35208, imperial-town-size x40180, pop-cap x23777, ten-percent-pop x32607, thirty-percent-pop x35024, town-size x31534, twenty-percent-pop x33430, unit-max x27391
+
+ anib_60029   52174B rules=229  def=0   ;goals 1 and 2 = boats
+     ! uses   : castle-town-size x36279, civ-castle x31841, civ-dark x26025, civ-dark-rush x29336, civ-feudal x30888, deathmatch-unit-max x34927, feudal-town-size x37844, fifteen-percent-pop x33993, fifty-percent-pop x34671, five-percent-pop x34202, imperial-town-size x39186, pop-cap x23594, ten-percent-pop x31602, thirty-percent-pop x34580, town-size x30083, twenty-percent-pop x32509, unit-max x28147
+
+####################################################################################################
+# gamedata.drs.orig
+####################################################################################################
+
+ anib_60001   28550B rules=91   def=0   ;starting loads
+     -> loads : petersen civ loads; petersen difficulty loads; petersen gather; petersen upgrades; petersen castle; petersen full tech; petersen rush
+     ! uses   : castle-town-size x20129, civ-castle x17883, civ-dark x14387, civ-dark-rush x16592, civ-feudal x17253, deathmatch-unit-max x19460, feudal-town-size x21226, fifteen-percent-pop x18387, fifty-percent-pop x18746, five-percent-pop x18503, imperial-town-size x21706, pop-cap x12464, ten-percent-pop x16981, thirty-percent-pop x18807, town-size x16626, twenty-percent-pop x17487, unit-max x15688
+
+ anib_60002   45718B rules=212  def=0   ;goals 1 and 2 = boats
+     -> loads : petersen tower; petersen wonder
+     ! uses   : castle-town-size x32120, civ-castle x28674, civ-dark x24069, civ-dark-rush x27175, civ-feudal x28089, deathmatch-unit-max x31364, feudal-town-size x33570, fifteen-percent-pop x29804, fifty-percent-pop x30263, five-percent-pop x30030, imperial-town-size x34462, pop-cap x20770, ten-percent-pop x27702, thirty-percent-pop x30464, town-size x26540, twenty-percent-pop x28281, unit-max x24872
+
+ anib_60003   41578B rules=152  def=0   ;start the run-through
+     ! uses   : castle-town-size x29191, civ-castle x25500, civ-dark x21952, civ-dark-rush x24716, civ-feudal x25776, deathmatch-unit-max x26844, feudal-town-size x30332, fifteen-percent-pop x27606, fifty-percent-pop x27866, five-percent-pop x27790, imperial-town-size x31070, pop-cap x19588, ten-percent-pop x25565, thirty-percent-pop x27708, town-size x23755, twenty-percent-pop x26281, unit-max x20434
+
+ anib_60004    3276B rules=13   def=0   (defrule
+     ! uses   : castle-town-size x2373, civ-castle x2073, civ-dark x1683, civ-dark-rush x1930, civ-feudal x2048, deathmatch-unit-max x2274, feudal-town-size x2508, fifteen-percent-pop x2270, fifty-percent-pop x2315, five-percent-pop x2285, imperial-town-size x2504, pop-cap x1529, ten-percent-pop x2066, thirty-percent-pop x2314, town-size x2002, twenty-percent-pop x2127, unit-max x1820
+
+ anib_60005    3544B rules=14   def=0   ;need to add a section in which he joins our side then betrays us!
+     ! uses   : castle-town-size x2464, civ-castle x2172, civ-dark x1722, civ-dark-rush x2003, civ-feudal x2103, deathmatch-unit-max x2473, feudal-town-size x2624, fifteen-percent-pop x2239, fifty-percent-pop x2351, five-percent-pop x2239, imperial-town-size x2716, pop-cap x1540, ten-percent-pop x2077, thirty-percent-pop x2398, town-size x2075, twenty-percent-pop x2194, unit-max x1997
+
+ anib_60006    4083B rules=16   def=0   ;for war war-galleys
+     ! uses   : castle-town-size x3113, civ-castle x2636, civ-dark x2171, civ-dark-rush x2353, civ-feudal x2526, deathmatch-unit-max x2822, feudal-town-size x3219, fifteen-percent-pop x2932, fifty-percent-pop x2952, five-percent-pop x2946, imperial-town-size x3331, pop-cap x2084, ten-percent-pop x2716, thirty-percent-pop x2915, town-size x2614, twenty-percent-pop x2783, unit-max x2377
+
+ anib_60007   17783B rules=51   def=0   (defrule
+     ! uses   : castle-town-size x13175, civ-castle x11429, civ-dark x9166, civ-dark-rush x10005, civ-feudal x10993, deathmatch-unit-max x12493, feudal-town-size x13392, fifteen-percent-pop x12591, fifty-percent-pop x13001, five-percent-pop x12722, imperial-town-size x14132, pop-cap x8452, ten-percent-pop x11721, thirty-percent-pop x12957, town-size x10885, twenty-percent-pop x12215, unit-max x10119
+
+ anib_60008   17098B rules=51   def=0   #load-if-defined DIFFICULTY-EASIEST
+     -> loads : petersen tower; petersen diplomacy; petersen market; petersen wonder
+     ! uses   : castle-town-size x12162, civ-castle x10945, civ-dark x8553, civ-dark-rush x10047, civ-feudal x10452, deathmatch-unit-max x11820, feudal-town-size x12934, fifteen-percent-pop x11011, fifty-percent-pop x11286, five-percent-pop x11058, imperial-town-size x13176, pop-cap x7456, ten-percent-pop x10292, thirty-percent-pop x11422, town-size x10233, twenty-percent-pop x10633, unit-max x9325
+
+ anib_60009   19315B rules=67   def=0   (defrule
+     ! uses   : castle-town-size x13335, civ-castle x11806, civ-dark x10141, civ-dark-rush x11124, civ-feudal x11608, deathmatch-unit-max x12775, feudal-town-size x13713, fifteen-percent-pop x12604, fifty-percent-pop x12723, five-percent-pop x12698, imperial-town-size x14334, pop-cap x9260, ten-percent-pop x11808, thirty-percent-pop x12723, town-size x11087, twenty-percent-pop x11988, unit-max x10502
+
+ anib_60010   14168B rules=26   def=182 #load-if-defined GAME-SPEED-LOCKED
+     -> loads : petersen fishboat; petersen warboat; petersen warboat island
+     = defines: castle-town-size, civ-castle, civ-dark, civ-dark-rush, civ-feudal, deathmatch-unit-max, feudal-town-size, fifteen-percent-pop, five-percent-pop, imperial-town-size, pop-cap, ten-percent-pop, thirty-percent-pop, twenty-percent-pop, unit-max
+     * gate   : POPULATION-CAP-100, POPULATION-CAP-125, POPULATION-CAP-150, POPULATION-CAP-175, POPULATION-CAP-200, POPULATION-CAP-25, POPULATION-CAP-50, POPULATION-CAP-75
+     ! uses   : castle-town-size x8829, civ-castle x7577, civ-dark x6033, civ-dark-rush x6705, civ-feudal x7855, deathmatch-unit-max x8473, feudal-town-size x9755, fifteen-percent-pop x8449, fifty-percent-pop x8494, five-percent-pop x8490, imperial-town-size x9010, pop-cap x5342, ten-percent-pop x7399, thirty-percent-pop x8041, town-size x7521, twenty-percent-pop x7515, unit-max x6358
+
+ anib_60011   15124B rules=106  def=0   ;*********************************************************
+     ! uses   : castle-town-size x9162, civ-castle x8172, civ-dark x7089, civ-dark-rush x7660, civ-feudal x8243, deathmatch-unit-max x9127, feudal-town-size x9737, fifteen-percent-pop x8419, fifty-percent-pop x8439, five-percent-pop x8419, imperial-town-size x10278, pop-cap x6703, ten-percent-pop x8112, thirty-percent-pop x8278, town-size x7523, twenty-percent-pop x8135, unit-max x7807
+
+ anib_60012    4583B rules=22   def=0   ;start the pass
+     ! uses   : castle-town-size x3435, civ-castle x3009, civ-dark x2347, civ-dark-rush x2581, civ-feudal x2952, deathmatch-unit-max x3012, feudal-town-size x3633, fifteen-percent-pop x2950, fifty-percent-pop x2971, five-percent-pop x2955, imperial-town-size x3635, pop-cap x2127, ten-percent-pop x2765, thirty-percent-pop x2950, town-size x2807, twenty-percent-pop x2909, unit-max x2444
+
+ anib_60013    1350B rules=4    def=0   ;UPGRADES & BUILDS RELATED TO OTHER PLAYERS
+     ! uses   : castle-town-size x910, civ-castle x782, civ-dark x598, civ-dark-rush x670, civ-feudal x773, deathmatch-unit-max x832, feudal-town-size x984, fifteen-percent-pop x812, fifty-percent-pop x842, five-percent-pop x812, imperial-town-size x957, pop-cap x557, ten-percent-pop x772, thirty-percent-pop x837, town-size x759, twenty-percent-pop x815, unit-max x633
+
+ anib_60014    1013B rules=4    def=0   ;make the castle
+     ! uses   : castle-town-size x775, civ-castle x716, civ-dark x503, civ-dark-rush x580, civ-feudal x624, deathmatch-unit-max x715, feudal-town-size x778, fifteen-percent-pop x680, fifty-percent-pop x682, five-percent-pop x687, imperial-town-size x816, pop-cap x440, ten-percent-pop x634, thirty-percent-pop x682, town-size x629, twenty-percent-pop x641, unit-max x567
+
+ anib_60015    2370B rules=9    def=0   (defrule
+     ! uses   : castle-town-size x1659, civ-castle x1467, civ-dark x1136, civ-dark-rush x1290, civ-feudal x1461, deathmatch-unit-max x1534, feudal-town-size x1800, fifteen-percent-pop x1496, fifty-percent-pop x1541, five-percent-pop x1505, imperial-town-size x1747, pop-cap x1006, ten-percent-pop x1363, thirty-percent-pop x1523, town-size x1390, twenty-percent-pop x1433, unit-max x1215
+
+ anib_60016    3050B rules=10   def=0   #load-if-not-defined VICTORY-CONQUEST
+     ! uses   : castle-town-size x2180, civ-castle x1876, civ-dark x1436, civ-dark-rush x1642, civ-feudal x1810, deathmatch-unit-max x2031, feudal-town-size x2310, fifteen-percent-pop x1977, fifty-percent-pop x2020, five-percent-pop x1990, imperial-town-size x2326, pop-cap x1242, ten-percent-pop x1820, thirty-percent-pop x2001, town-size x1833, twenty-percent-pop x1909, unit-max x1577
+
+ anib_60017   12154B rules=45   def=0   ;if I'm short on resources, ask allies for some before using the marke
+     ! uses   : castle-town-size x8542, civ-castle x7359, civ-dark x5989, civ-dark-rush x6684, civ-feudal x7400, deathmatch-unit-max x7930, feudal-town-size x9081, fifteen-percent-pop x7783, fifty-percent-pop x7964, five-percent-pop x7818, imperial-town-size x9044, pop-cap x5606, ten-percent-pop x7350, thirty-percent-pop x7872, town-size x7130, twenty-percent-pop x7637, unit-max x6137
+
+ anib_60018     338B rules=2    def=0   ;all this file really does for now is ensure more villagers than a "no
+     ! uses   : castle-town-size x243, civ-castle x215, civ-dark x163, civ-dark-rush x191, civ-feudal x206, deathmatch-unit-max x209, feudal-town-size x259, fifteen-percent-pop x212, fifty-percent-pop x215, five-percent-pop x213, imperial-town-size x266, pop-cap x147, ten-percent-pop x195, thirty-percent-pop x214, town-size x199, twenty-percent-pop x199, unit-max x170
+
+ anib_60019   15138B rules=73   def=0   (defrule
+     ! uses   : castle-town-size x10010, civ-castle x8722, civ-dark x6924, civ-dark-rush x7950, civ-feudal x8613, deathmatch-unit-max x9622, feudal-town-size x10690, fifteen-percent-pop x9612, fifty-percent-pop x9626, five-percent-pop x9620, imperial-town-size x10862, pop-cap x6391, ten-percent-pop x9299, thirty-percent-pop x9544, town-size x8577, twenty-percent-pop x9388, unit-max x7241
+
+ anib_60020    5177B rules=20   def=0   ;make sure we have allies
+     ! uses   : castle-town-size x3718, civ-castle x3276, civ-dark x2507, civ-dark-rush x2836, civ-feudal x3148, deathmatch-unit-max x3312, feudal-town-size x3933, fifteen-percent-pop x3256, fifty-percent-pop x3401, five-percent-pop x3265, imperial-town-size x3960, pop-cap x2346, ten-percent-pop x3058, thirty-percent-pop x3394, town-size x3030, twenty-percent-pop x3234, unit-max x2669
+
+ anib_60021   12002B rules=42   def=0   (defrule
+     ! uses   : castle-town-size x8598, civ-castle x7652, civ-dark x6210, civ-dark-rush x6807, civ-feudal x7250, deathmatch-unit-max x8076, feudal-town-size x8890, fifteen-percent-pop x8005, fifty-percent-pop x8290, five-percent-pop x8047, imperial-town-size x9210, pop-cap x5647, ten-percent-pop x7515, thirty-percent-pop x8230, town-size x7182, twenty-percent-pop x7853, unit-max x6686
+
+ anib_60022    4272B rules=24   def=0   ;insults the player
+     ! uses   : castle-town-size x3044, civ-castle x2848, civ-dark x2267, civ-dark-rush x2611, civ-feudal x2752, deathmatch-unit-max x3169, feudal-town-size x3205, fifteen-percent-pop x2829, fifty-percent-pop x2946, five-percent-pop x2866, imperial-town-size x3287, pop-cap x1808, ten-percent-pop x2577, thirty-percent-pop x3010, town-size x2582, twenty-percent-pop x2694, unit-max x2425
+
+ anib_60023   19478B rules=55   def=0   ;THE BULLY
+     ! uses   : castle-town-size x12997, civ-castle x11541, civ-dark x9164, civ-dark-rush x10724, civ-feudal x11024, deathmatch-unit-max x12779, feudal-town-size x13834, fifteen-percent-pop x11657, fifty-percent-pop x12051, five-percent-pop x11673, imperial-town-size x14115, pop-cap x8292, ten-percent-pop x10921, thirty-percent-pop x12327, town-size x10904, twenty-percent-pop x11372, unit-max x10477
+
+ anib_60024    8218B rules=26   def=0   ;for a variety of warships	goal 2 1 = "normal" status; goal 2 2 = the 
+     ! uses   : castle-town-size x6219, civ-castle x5357, civ-dark x4348, civ-dark-rush x4773, civ-feudal x5062, deathmatch-unit-max x5561, feudal-town-size x6349, fifteen-percent-pop x5768, fifty-percent-pop x5841, five-percent-pop x5804, imperial-town-size x6611, pop-cap x4086, ten-percent-pop x5379, thirty-percent-pop x5824, town-size x5228, twenty-percent-pop x5545, unit-max x4592
+
+ anib_60025    3267B rules=17   def=0   ;error trapping
+     ! uses   : castle-town-size x2068, civ-castle x1840, civ-dark x1551, civ-dark-rush x1805, civ-feudal x1871, deathmatch-unit-max x1937, feudal-town-size x2232, fifteen-percent-pop x1924, fifty-percent-pop x1950, five-percent-pop x1932, imperial-town-size x2246, pop-cap x1395, ten-percent-pop x1800, thirty-percent-pop x1943, town-size x1694, twenty-percent-pop x1828, unit-max x1556
+
+ anib_60026     255B rules=0    def=0   (load "petersen constants")
+     -> loads : petersen constants; petersen map loads; petersen supplement; petersen groups; petersen resign; petersen deathmatch; AI petersen rules
+     * gate   : DEATH-MATCH
+     ! uses   : castle-town-size x179, civ-castle x155, civ-dark x108, civ-dark-rush x128, civ-feudal x147, deathmatch-unit-max x162, feudal-town-size x196, fifteen-percent-pop x163, fifty-percent-pop x163, five-percent-pop x163, imperial-town-size x201, pop-cap x103, ten-percent-pop x156, thirty-percent-pop x162, town-size x152, twenty-percent-pop x156, unit-max x114
+
+ anib_60027    9832B rules=0    def=98  ; Common constants used in AI goals - other constants will follow the 
+     ! uses   : castle-town-size x6540, civ-castle x5536, civ-dark x4268, civ-dark-rush x5009, civ-feudal x5171, deathmatch-unit-max x5955, feudal-town-size x6882, fifteen-percent-pop x5884, fifty-percent-pop x5957, five-percent-pop x5940, imperial-town-size x6789, pop-cap x3916, ten-percent-pop x5438, thirty-percent-pop x5918, town-size x5559, twenty-percent-pop x5577, unit-max x4613
+
+
+=== who defines the cap constants ===
+-- gamedata_x1.drs.orig
+   anib_60027 defines pop-cap              lines [250, 293, 336, 379, 422, 465, 508, 551]
+   anib_60027 defines deathmatch-unit-max  lines [251, 294, 337, 380, 423, 466, 509, 552]
+   anib_60027 defines unit-max             lines [259, 263, 267, 271, 275, 302, 306, 310, 314, 318, 345, 349]
+-- gamedata.drs.orig
+   anib_60010 defines pop-cap              lines [22, 61, 100, 139, 178, 217, 256, 295]
+   anib_60010 defines deathmatch-unit-max  lines [23, 62, 101, 140, 179, 218, 257, 296]
+   anib_60010 defines unit-max             lines [30, 34, 38, 42, 46, 69, 73, 77, 81, 85, 108, 112]

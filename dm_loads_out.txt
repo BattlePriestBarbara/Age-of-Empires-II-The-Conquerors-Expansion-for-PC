@@ -1,0 +1,1117 @@
+=== per-file: DEATH-MATCH / GAME-TYPE mentions and (load ...) targets ===
+--- anib_60001.bin  (ai petersen rules.per)  29337 bytes
+      LOAD: petersen castle
+      LOAD: petersen civ loads
+      LOAD: petersen difficulty loads
+      LOAD: petersen full tech
+      LOAD: petersen gather
+      LOAD: petersen rush
+      LOAD: petersen upgrades
+--- anib_60002.bin  (petersen deathmatch.per)  54203 bytes
+      LOAD: petersen tower
+      LOAD: petersen wonder
+--- anib_60004.bin  (petersen fishboat.per)  4463 bytes
+      IF: #load-if-not-defined DEATH-MATCH
+--- anib_60007.bin  (petersen supplement.per)  26355 bytes
+      IF: #load-if-not-defined DEATH-MATCH
+--- anib_60008.bin  (petersen difficulty loads.per)  4827 bytes
+      LOAD: petersen market
+      LOAD: petersen tower
+      LOAD: petersen wonder
+--- anib_60010.bin  (petersen map loads.per)  13739 bytes
+      LOAD: petersen fishboat
+      LOAD: petersen warboat
+      LOAD: petersen warboat island
+--- anib_60026.bin  (randomgame.per)  918 bytes
+      IF: #load-if-defined DEATH-MATCH
+      IF: #load-if-not-defined DEATH-MATCH
+      LOAD: AI petersen rules
+      LOAD: petersen constants
+      LOAD: petersen deathmatch
+      LOAD: petersen diplomacy
+      LOAD: petersen groups
+      LOAD: petersen map loads
+      LOAD: petersen resign
+      LOAD: petersen supplement
+      LOAD: wonder kill
+      LOAD: wonder rush
+
+=== anib_60026.bin (randomgame.per) full text ===
+    1| (load "petersen constants")
+    2| 
+    3| ;******************************
+    4| #load-if-defined WONDER-RACE
+    5| 
+    6| (load "wonder rush")
+    7| 
+    8| #end-if
+    9| ;******************************
+   10| #load-if-defined DEATH-MATCH
+   11| 
+   12| (load "petersen map loads")
+   13| (load "petersen diplomacy")
+   14| 
+   15| 
+   16| (load "petersen supplement")
+   17| (load "petersen groups")
+   18| (load "petersen resign")
+   19| 
+   20| 
+   21| (load "petersen deathmatch")
+   22| 
+   23| #end-if
+   24| ;******************************
+   25| #load-if-defined DEFEND-WONDER
+   26| 
+   27| (load "petersen map loads")
+   28| (load "petersen diplomacy")
+   29| 
+   30| (load "wonder kill")
+   31| 
+   32| #end-if
+   33| ;******************************
+   34| #load-if-not-defined DEATH-MATCH
+   35| #load-if-not-defined DEFEND-WONDER
+   36| #load-if-not-defined WONDER-RACE
+   37| 
+   38| (load "petersen map loads")
+   39| (load "petersen diplomacy")
+   40| 
+   41| (load "petersen supplement")
+   42| (load "petersen groups")
+   43| (load "petersen resign")
+   44| 
+   45| 
+   46| (load "AI petersen rules")
+   47| 
+   48| #end-if
+   49| #end-if
+   50| #end-if
+   51| ;******************************
+   52| 
+
+=== anib_60008.bin (petersen difficulty loads.per) full text ===
+    1| #load-if-defined DIFFICULTY-EASIEST
+    2| 
+    3| (defrule
+    4| 	(true)
+    5| =>
+    6| 	(set-strategic-number sn-percent-enemy-sighted-response 10)
+    7| 	(set-strategic-number sn-easiest-reaction-percentage 20)
+    8| 	(set-difficulty-parameter ability-to-maintain-distance 100)
+    9| 	(set-difficulty-parameter ability-to-dodge-missiles 100)
+   10| 	(disable-self)
+   11| )
+   12| 
+   13| ;crude age advancement rules
+   14| (defrule
+   15| 	(goal age-advancement NO)
+   16| 	(players-current-age every-human >= feudal-age)
+   17| 	(can-research-with-escrow feudal-age)
+   18| =>
+   19| 	(release-escrow food)
+   20| 	(research feudal-age)
+   21| 	(set-goal age-advancement NOTICE)
+   22| 	(enable-timer t-ageup 300)
+   23| )
+   24| 
+   25| (defrule
+   26| 	(current-age == feudal-age)
+   27| =>
+   28| 	(disable-timer t-ageup)
+   29| 	(set-goal age-advancement NO)
+   30| 	(disable-self)
+   31| )
+   32| 
+   33| (defrule
+   34| 	(goal age-advancement NO)
+   35| 	(players-current-age every-human >= castle-age)
+   36| 	(can-research-with-escrow castle-age)
+   37| =>
+   38| 	(release-escrow food)
+   39| 	(release-escrow gold)
+   40| 	(research castle-age)
+   41| 	(set-goal age-advancement NOTICE)
+   42| 	(enable-timer t-ageup 300)
+   43| )
+   44| 
+   45| (defrule
+   46| 	(current-age == castle-age)
+   47| =>
+   48| 	(disable-timer t-ageup)
+   49| 	(set-goal age-advancement NO)
+   50| 	(disable-self)
+   51| )
+   52| 
+   53| (defrule
+   54| 	(goal age-advancement NOTICE)
+   55| 	(current-age < castle-age)
+   56| 	(timer-triggered t-ageup)
+   57| =>
+   58| 	(disable-timer t-ageup)
+   59| 	(set-goal age-advancement NO)
+   60| )
+   61| #end-if
+   62| ;********************************
+   63| #load-if-defined DIFFICULTY-EASY
+   64| (load "petersen tower")
+   65| 
+   66| 
+   67| 
+   68| (defrule
+   69| 	(true)
+   70| =>
+   71| 	(set-strategic-number sn-percent-enemy-sighted-response 25)
+   72| 	(set-strategic-number sn-easier-reaction-percentage 20)
+   73| 	(set-strategic-number sn-hits-before-alliance-change 50)
+   74| 	(set-difficulty-parameter ability-to-maintain-distance 75)
+   75| 	(set-difficulty-parameter ability-to-dodge-missiles 75)
+   76| 	(disable-self)
+   77| )
+   78| 
+   79| ;crude age advancement rules
+   80| (defrule
+   81| 	(goal age-advancement NO)
+   82| 	(players-current-age every-human >= feudal-age)
+   83| 	(can-research-with-escrow feudal-age)
+   84| =>
+   85| 	(release-escrow food)
+   86| 	(research feudal-age)
+   87| 	(set-goal age-advancement NOTICE)
+   88| 	(enable-timer t-ageup 300)
+   89| )
+   90| 
+   91| (defrule
+   92| 	(current-age == feudal-age)
+   93| =>
+   94| 	(disable-timer t-ageup)
+   95| 	(set-goal age-advancement NO)
+   96| 	(disable-self)
+   97| )
+   98| 
+   99| (defrule
+  100| 	(goal age-advancement NO)
+  101| 	(players-current-age every-human >= castle-age)
+  102| 	(can-research-with-escrow castle-age)
+  103| =>
+  104| 	(release-escrow food)
+  105| 	(release-escrow gold)
+  106| 	(research castle-age)
+  107| 	(set-goal age-advancement NOTICE)
+  108| 	(enable-timer t-ageup 300)
+  109| )
+  110| 
+  111| (defrule
+  112| 	(current-age == castle-age)
+  113| =>
+  114| 	(disable-timer t-ageup)
+  115| 	(set-goal age-advancement NO)
+  116| 	(disable-self)
+  117| )
+  118| 
+  119| (defrule
+  120| 	(goal age-advancement NO)
+  121| 	(players-current-age every-human == imperial-age)
+  122| 	(can-research-with-escrow imperial-age)
+  123| =>
+  124| 	(release-escrow food)
+  125| 	(release-escrow gold)
+  126| 	(research imperial-age)
+  127| 	(set-goal age-advancement NOTICE)
+  128| 	(enable-timer t-ageup 300)
+  129| )
+  130| 
+  131| (defrule
+  132| 	(current-age == imperial-age)
+  133| =>
+  134| 	(disable-timer t-ageup)
+  135| 	(set-goal age-advancement NO)
+  136| 	(disable-self)
+  137| )
+  138| 
+  139| (defrule
+  140| 	(goal age-advancement NOTICE)
+  141| 	(current-age < imperial-age)
+  142| 	(timer-triggered t-ageup)
+  143| =>
+  144| 	(disable-timer t-ageup)
+  145| 	(set-goal age-advancement NO)
+  146| )
+  147| #end-if
+  148| 
+  149| ;********************************
+  150| #load-if-defined DIFFICULTY-MODERATE
+  151| (load "petersen market")
+  152| (load "petersen tower")
+  153| (load "petersen wonder")
+  154| 
+  155| (defrule
+  156| 	(true)
+  157| =>
+  158| 	(set-strategic-number sn-percent-enemy-sighted-response 75)
+  159| 	(set-strategic-number sn-hits-before-alliance-change 25)
+  160| 	(set-difficulty-parameter ability-to-maintain-distance 50)
+  161| 	(set-difficulty-parameter ability-to-dodge-missiles 50)
+  162| 	(disable-self)
+  163| )
+  164| #end-if
+  165| 
+  166| ;********************************
+  167| #load-if-defined DIFFICULTY-HARD
+  168| (load "petersen market")
+  169| (load "petersen tower")
+  170| (load "petersen wonder")
+  171| 
+  172| (defrule
+  173| 	(true)
+  174| =>
+  175| 	(set-strategic-number sn-percent-enemy-sighted-response 99)
+  176| 	(set-strategic-number sn-hits-before-alliance-change 10)
+  177| 	(set-difficulty-parameter ability-to-maintain-distance 25)
+  178| 	(set-difficulty-parameter ability-to-dodge-missiles 25)
+  179| 	(disable-self)
+  180| )
+  181| 
+  182| #end-if
+  183| 
+  184| ;********************************
+  185| #load-if-defined DIFFICULTY-HARDEST
+  186| (load "petersen market")
+  187| (load "petersen tower")
+  188| (load "petersen wonder")
+  189| 
+  190| (defrule
+  191| 	(true)
+  192| =>
+  193| 	(set-strategic-number sn-percent-enemy-sighted-response 99)
+  194| 	(set-strategic-number sn-hits-before-alliance-change 10)
+  195| 	(set-difficulty-parameter ability-to-maintain-distance 0)
+  196| 	(set-difficulty-parameter ability-to-dodge-missiles 0)
+  197| 	(disable-self)
+  198| )
+  199| 
+  200| (defrule
+  201| 	(current-age == imperial-age)
+  202| =>
+  203| 	(disable-timer t-chatmore)
+  204| 	(enable-timer t-chatmore 1800)
+  205| 	(disable-self)
+  206| )
+  207| 
+  208| (defrule
+  209| 	(timer-triggered t-chatmore)
+  210| =>
+  211| 	(cc-add-resource wood 500)
+  212| 	(cc-add-resource food 500)
+  213| 	(cc-add-resource gold 500)
+  214| 	(cc-add-resource stone 500)
+  215| 	(disable-timer t-chatmore)
+  216| 	(enable-timer t-chatmore 1200)
+  217| )
+  218| 
+  219| #end-if
+  220| 
+  221| 
+  222| 
+  223| 
+
+=== DM file: lines mentioning secondary-build ===
+   18| 	(set-goal secondary-build 1)	;goal 8
+   61| 	(goal secondary-build 1)
+   67| 	(goal secondary-build 1)
+   79| 	(set-goal secondary-build 0)
+   83| 	(goal secondary-build 1)
+   95| 	(set-goal secondary-build 0)
+  119| 	(goal secondary-build 1)
+  125| 	(goal secondary-build 1)
+  137| 	(set-goal secondary-build 0)
+  141| 	(goal secondary-build 1)
+  157| 	(set-goal secondary-build 0)
+  182| 	(goal secondary-build 1)
+  188| 	(goal secondary-build 1)
+  200| 	(set-goal secondary-build 0)
+  204| 	(goal secondary-build 1)
+  216| 	(set-goal secondary-build 0)
+  241| 	(goal secondary-build 1)
+  247| 	(goal secondary-build 1)
+  259| 	(set-goal secondary-build 0)
+  263| 	(goal secondary-build 1)
+  275| 	(set-goal secondary-build 0)
+  300| 	(goal secondary-build 1)
+  306| 	(goal secondary-build 1)
+  318| 	(set-goal secondary-build 0)
+  322| 	(goal secondary-build 1)
+  334| 	(set-goal secondary-build 0)
+  338| 	(goal secondary-build 1)
+  351| 	(set-goal secondary-build 0)
+  355| 	(goal secondary-build 1)
+  371| 	(set-goal secondary-build 0)
+  375| 	(goal secondary-build 1)
+  388| 	(set-goal secondary-build 0)
+  413| 	(goal secondary-build 1)
+  419| 	(goal secondary-build 1)
+  431| 	(set-goal secondary-build 0)
+  435| 	(goal secondary-build 1)
+  447| 	(set-goal secondary-build 0)
+  471| 	(goal secondary-build 1)
+  477| 	(goal secondary-build 1)
+  489| 	(set-goal secondary-build 0)
+  493| 	(goal secondary-build 1)
+  509| 	(set-goal secondary-build 0)
+  513| 	(goal secondary-build 1)
+  529| 	(set-goal secondary-build 0)
+  554| 	(goal secondary-build 1)
+  560| 	(goal secondary-build 1)
+  572| 	(set-goal secondary-build 0)
+  576| 	(goal secondary-build 1)
+  589| 	(set-goal secondary-build 0)
+  593| 	(goal secondary-build 1)
+  605| 	(set-goal secondary-build 0)
+  609| 	(goal secondary-build 1)
+  621| 	(set-goal secondary-build 0)
+  646| 	(goal secondary-build 1)
+  652| 	(goal secondary-build 1)
+  664| 	(set-goal secondary-build 0)
+  668| 	(goal secondary-build 1)
+  680| 	(set-goal secondary-build 0)
+  684| 	(goal secondary-build 1)
+  696| 	(set-goal secondary-build 0)
+  720| 	(goal secondary-build 1)
+  726| 	(goal secondary-build 1)
+  738| 	(set-goal secondary-build 0)
+  742| 	(goal secondary-build 1)
+  755| 	(set-goal secondary-build 0)
+  759| 	(goal secondary-build 1)
+  771| 	(set-goal secondary-build 0)
+  775| 	(goal secondary-build 1)
+  787| 	(set-goal secondary-build 0)
+  811| 	(goal secondary-build 1)
+  817| 	(goal secondary-build 1)
+  829| 	(set-goal secondary-build 0)
+  833| 	(goal secondary-build 1)
+  845| 	(set-goal secondary-build 0)
+  849| 	(goal secondary-build 1)
+  861| 	(set-goal secondary-build 0)
+  885| 	(goal secondary-build 1)
+  891| 	(goal secondary-build 1)
+  903| 	(set-goal secondary-build 0)
+  907| 	(goal secondary-build 1)
+  923| 	(set-goal secondary-build 0)
+  927| 	(goal secondary-build 1)
+  939| 	(set-goal secondary-build 0)
+  963| 	(goal secondary-build 1)
+  969| 	(goal secondary-build 1)
+  981| 	(set-goal secondary-build 0)
+  985| 	(goal secondary-build 1)
+  997| 	(set-goal secondary-build 0)
+ 1021| 	(goal secondary-build 1)
+ 1027| 	(goal secondary-build 1)
+ 1039| 	(set-goal secondary-build 0)
+ 1043| 	(goal secondary-build 1)
+ 1059| 	(set-goal secondary-build 0)
+ 1084| 	(goal secondary-build 1)
+ 1090| 	(goal secondary-build 1)
+ 1102| 	(set-goal secondary-build 0)
+ 1106| 	(goal secondary-build 1)
+ 1122| 	(set-goal secondary-build 0)
+ 1126| 	(goal secondary-build 1)
+ 1139| 	(set-goal secondary-build 0)
+ 1163| 	(goal secondary-build 1)
+ 1169| 	(goal secondary-build 1)
+ 1181| 	(set-goal secondary-build 0)
+ 1185| 	(goal secondary-build 1)
+ 1197| 	(set-goal secondary-build 0)
+ 1221| 	(goal secondary-build 1)
+ 1227| 	(goal secondary-build 1)
+ 1239| 	(set-goal secondary-build 0)
+ 1243| 	(goal secondary-build 1)
+ 1255| 	(set-goal secondary-build 0)
+ 1259| 	(goal secondary-build 1)
+ 1271| 	(set-goal secondary-build 0)
+ 1295| 	(goal secondary-build 1)
+ 1301| 	(goal secondary-build 1)
+ 1313| 	(set-goal secondary-build 0)
+ 1317| 	(goal secondary-build 1)
+ 1329| 	(set-goal secondary-build 0)
+ 1333| 	(goal secondary-build 1)
+ 1345| 	(set-goal secondary-build 0)
+ 2343| 	(set-goal secondary-build 1)
+
+=== DM file: context of first (set-goal secondary-build 1) rules ===
+   11| (defrule
+   12| 	(true)
+   13| =>
+   14| 	(set-goal military-parity YES)	;goal 3
+   15| 	(set-goal attack-control NO)	;goal 4
+   16| 	(set-goal need-deathmatch-villagers NO)	;goal 7
+   17| 
+   18| 	(set-goal secondary-build 1)	;goal 8
+   19| 	(set-goal soldiers-available NO);goal 10
+   20| 	(set-goal attack-enabled YES)	;goal 13
+   21| 	(set-goal age-advancement NO)	;goal 14
+   22| 
+   23| 	(set-goal make-warboat NO)		;goal 15
+   24| 	(set-goal upgrade-conflict NO)	;goal 16
+   25| 
+   26| 	(disable-self)
+   27| )
+
+   60| (defrule
+   61| 	(goal secondary-build 1)
+   62| =>
+   63| 	(generate-random-number 2)
+   64| )
+
+   66| (defrule
+   67| 	(goal secondary-build 1)
+   68| 	(random-number == 1)
+   69| 	(can-train elite-eagle-warrior)
+   70| 	(or
+   71| 		(population < deathmatch-unit-max)
+   72| 		(and
+   73| 			(population < unit-max)
+   74| 			(goal need-deathmatch-villagers NO)
+   75| 		)
+
+   82| (defrule
+   83| 	(goal secondary-build 1)
+   84| 	(random-number == 2)
+   85| 	(can-train arbalest)
+   86| 	(or
+   87| 		(population < deathmatch-unit-max)
+   88| 		(and
+   89| 			(population < unit-max)
+   90| 			(goal need-deathmatch-villagers NO)
+   91| 		)
+
+  118| (defrule
+  119| 	(goal secondary-build 1)
+  120| =>
+  121| 	(generate-random-number 2)
+  122| )
+
+  124| (defrule
+  125| 	(goal secondary-build 1)
+  126| 	(random-number == 1)
+  127| 	(can-train heavy-cavalry-archer)
+  128| 	(or
+  129| 		(population < deathmatch-unit-max)
+  130| 		(and
+  131| 			(population < unit-max)
+  132| 			(goal need-deathmatch-villagers NO)
+  133| 		)
+
+  140| (defrule
+  141| 	(goal secondary-build 1)
+  142| 	(random-number == 2)
+  143| 	(can-train hussar)
+  144| 	(nor 
+  145| 		(can-train elite-tarkan)
+  146| 		(can-train paladin)
+  147| 	)
+
+  181| (defrule
+  182| 	(goal secondary-build 1)
+  183| =>
+  184| 	(generate-random-number 2)
+  185| )
+
+  187| (defrule
+  188| 	(goal secondary-build 1)
+  189| 	(random-number == 1)
+  190| 	(can-train heavy-cavalry-archer)
+  191| 	(or
+  192| 		(population < deathmatch-unit-max)
+  193| 		(and
+  194| 			(population < unit-max)
+  195| 			(goal need-deathmatch-villagers NO)
+  196| 		)
+
+  203| (defrule
+  204| 	(goal secondary-build 1)
+  205| 	(random-number == 2)
+  206| 	(can-train hand-cannoneer)
+  207| 	(or
+  208| 		(population < deathmatch-unit-max)
+  209| 		(and
+  210| 			(population < unit-max)
+  211| 			(goal need-deathmatch-villagers NO)
+  212| 		)
+
+  240| (defrule
+  241| 	(goal secondary-build 1)
+  242| =>
+  243| 	(generate-random-number 2)
+  244| )
+
+  246| (defrule
+  247| 	(goal secondary-build 1)
+  248| 	(random-number == 1)
+  249| 	(can-train champion)
+  250| 	(or
+  251| 		(population < deathmatch-unit-max)
+  252| 		(and
+  253| 			(population < unit-max)
+  254| 			(goal need-deathmatch-villagers NO)
+  255| 		)
+
+  262| (defrule
+  263| 	(goal secondary-build 1)
+  264| 	(random-number == 2)
+  265| 	(can-train elite-eagle-warrior)
+  266| 	(or
+  267| 		(population < deathmatch-unit-max)
+  268| 		(and
+  269| 			(population < unit-max)
+  270| 			(goal need-deathmatch-villagers NO)
+  271| 		)
+
+  299| (defrule
+  300| 	(goal secondary-build 1)
+  301| =>
+  302| 	(generate-random-number 5)
+  303| )
+
+  305| (defrule
+  306| 	(goal secondary-build 1)
+  307| 	(random-number == 1)
+  308| 	(can-train champion)
+  309| 	(or
+  310| 		(population < deathmatch-unit-max)
+  311| 		(and
+  312| 			(population < unit-max)
+  313| 			(goal need-deathmatch-villagers NO)
+  314| 		)
+
+  321| (defrule
+  322| 	(goal secondary-build 1)
+  323| 	(random-number == 2)
+  324| 	(can-train paladin)
+  325| 	(or
+  326| 		(population < deathmatch-unit-max)
+  327| 		(and
+  328| 			(population < unit-max)
+  329| 			(goal need-deathmatch-villagers NO)
+  330| 		)
+
+  337| (defrule
+  338| 	(goal secondary-build 1)
+  339| 	(random-number == 3)
+  340| 	(can-train hussar)
+  341| 	(not (can-train paladin) )
+  342| 	(or
+  343| 		(population < deathmatch-unit-max)
+  344| 		(and
+  345| 			(population < unit-max)
+  346| 			(goal need-deathmatch-villagers NO)
+  347| 		)
+
+  354| (defrule
+  355| 	(goal secondary-build 1)
+  356| 	(random-number == 4)
+  357| 	(can-train hand-cannoneer)
+  358| 	(nor 
+  359| 		(can-train elite-conquistador) 
+  360| 		(can-train heavy-cavalry-archer)
+  361| 	)
+
+  374| (defrule
+  375| 	(goal secondary-build 1)
+  376| 	(random-number == 5)
+  377| 	(can-train heavy-cavalry-archer)
+  378| 	(not (can-train elite-conquistador) )
+  379| 	(or
+  380| 		(population < deathmatch-unit-max)
+  381| 		(and
+  382| 			(population < unit-max)
+  383| 			(goal need-deathmatch-villagers NO)
+  384| 		)
+
+  412| (defrule
+  413| 	(goal secondary-build 1)
+  414| =>
+  415| 	(generate-random-number 2)
+  416| )
+
+  418| (defrule
+  419| 	(goal secondary-build 1)
+  420| 	(random-number == 1)
+  421| 	(can-train champion)
+  422| 	(or
+  423| 		(population < deathmatch-unit-max)
+  424| 		(and
+  425| 			(population < unit-max)
+  426| 			(goal need-deathmatch-villagers NO)
+  427| 		)
+
+  434| (defrule
+  435| 	(goal secondary-build 1)
+  436| 	(random-number == 2)
+  437| 	(can-train hussar)
+  438| 	(or
+  439| 		(population < deathmatch-unit-max)
+  440| 		(and
+  441| 			(population < unit-max)
+  442| 			(goal need-deathmatch-villagers NO)
+  443| 		)
+
+  470| (defrule
+  471| 	(goal secondary-build 1)
+  472| =>
+  473| 	(generate-random-number 3)
+  474| )
+
+  476| (defrule
+  477| 	(goal secondary-build 1)
+  478| 	(random-number == 1)
+  479| 	(can-train heavy-cavalry-archer)
+  480| 	(or
+  481| 		(population < deathmatch-unit-max)
+  482| 		(and
+  483| 			(population < unit-max)
+  484| 			(goal need-deathmatch-villagers NO)
+  485| 		)
+
+  492| (defrule
+  493| 	(goal secondary-build 1)
+  494| 	(random-number == 2)
+  495| 	(or
+  496| 		(can-train hand-cannoneer)
+  497| 		(can-train arbalest)
+  498| 	)
+
+  512| (defrule
+  513| 	(goal secondary-build 1)
+  514| 	(random-number == 3)
+  515| 	(can-train hussar)
+  516| 	(nor
+  517| 		(can-train elite-cataphract)
+  518| 		(can-train paladin)
+  519| 	)
+
+  553| (defrule
+  554| 	(goal secondary-build 1)
+  555| =>
+  556| 	(generate-random-number 4)
+  557| )
+
+  559| (defrule
+  560| 	(goal secondary-build 1)
+  561| 	(random-number == 1)
+  562| 	(can-train paladin)
+  563| 	(or
+  564| 		(population < deathmatch-unit-max)
+  565| 		(and
+  566| 			(population < unit-max)
+  567| 			(goal need-deathmatch-villagers NO)
+  568| 		)
+
+  575| (defrule
+  576| 	(goal secondary-build 1)
+  577| 	(random-number == 2)
+  578| 	(can-train light-cavalry)
+  579| 	(not (can-afford-unit paladin) )
+  580| 	(or
+  581| 		(population < deathmatch-unit-max)
+  582| 		(and
+  583| 			(population < unit-max)
+  584| 			(goal need-deathmatch-villagers NO)
+  585| 		)
+
+  592| (defrule
+  593| 	(goal secondary-build 1)
+  594| 	(random-number == 3)
+  595| 	(can-train heavy-cavalry-archer)
+  596| 	(or
+  597| 		(population < deathmatch-unit-max)
+  598| 		(and
+  599| 			(population < unit-max)
+  600| 			(goal need-deathmatch-villagers NO)
+  601| 		)
+
+  608| (defrule
+  609| 	(goal secondary-build 1)
+  610| 	(random-number == 4)
+  611| 	(can-train heavy-scorpion)
+  612| 	(or
+  613| 		(population < deathmatch-unit-max)
+  614| 		(and
+  615| 			(population < unit-max)
+  616| 			(goal need-deathmatch-villagers NO)
+  617| 		)
+
+  645| (defrule
+  646| 	(goal secondary-build 1)
+  647| =>
+  648| 	(generate-random-number 3)
+  649| )
+
+  651| (defrule
+  652| 	(goal secondary-build 1)
+  653| 	(random-number == 1)
+  654| 	(can-train champion)
+  655| 	(or
+  656| 		(population < deathmatch-unit-max)
+  657| 		(and
+  658| 			(population < unit-max)
+  659| 			(goal need-deathmatch-villagers NO)
+  660| 		)
+
+  667| (defrule
+  668| 	(goal secondary-build 1)
+  669| 	(random-number == 2)
+  670| 	(can-train hussar)
+  671| 	(or
+  672| 		(population < deathmatch-unit-max)
+  673| 		(and
+  674| 			(population < unit-max)
+  675| 			(goal need-deathmatch-villagers NO)
+  676| 		)
+
+  683| (defrule
+  684| 	(goal secondary-build 1)
+  685| 	(random-number == 3)
+  686| 	(can-train heavy-scorpion)
+  687| 	(or
+  688| 		(population < deathmatch-unit-max)
+  689| 		(and
+  690| 			(population < unit-max)
+  691| 			(goal need-deathmatch-villagers NO)
+  692| 		)
+
+  719| (defrule
+  720| 	(goal secondary-build 1)
+  721| =>
+  722| 	(generate-random-number 4)
+  723| )
+
+  725| (defrule
+  726| 	(goal secondary-build 1)
+  727| 	(random-number == 1)
+  728| 	(can-train paladin)
+  729| 	(or
+  730| 		(population < deathmatch-unit-max)
+  731| 		(and
+  732| 			(population < unit-max)
+  733| 			(goal need-deathmatch-villagers NO)
+  734| 		)
+
+  741| (defrule
+  742| 	(goal secondary-build 1)
+  743| 	(random-number == 2)
+  744| 	(can-train hussar)
+  745| 	(not (can-afford-unit paladin) )
+  746| 	(or
+  747| 		(population < deathmatch-unit-max)
+  748| 		(and
+  749| 			(population < unit-max)
+  750| 			(goal need-deathmatch-villagers NO)
+  751| 		)
+
+  758| (defrule
+  759| 	(goal secondary-build 1)
+  760| 	(random-number == 3)
+  761| 	(can-train heavy-cavalry-archer)
+  762| 	(or
+  763| 		(population < deathmatch-unit-max)
+  764| 		(and
+  765| 			(population < unit-max)
+  766| 			(goal need-deathmatch-villagers NO)
+  767| 		)
+
+  774| (defrule
+  775| 	(goal secondary-build 1)
+  776| 	(random-number == 4)
+  777| 	(can-train heavy-scorpion)
+  778| 	(or
+  779| 		(population < deathmatch-unit-max)
+  780| 		(and
+  781| 			(population < unit-max)
+  782| 			(goal need-deathmatch-villagers NO)
+  783| 		)
+
+  810| (defrule
+  811| 	(goal secondary-build 1)
+  812| =>
+  813| 	(generate-random-number 3)
+  814| )
+
+  816| (defrule
+  817| 	(goal secondary-build 1)
+  818| 	(random-number == 1)
+  819| 	(can-train hussar)
+  820| 	(or
+  821| 		(population < deathmatch-unit-max)
+  822| 		(and
+  823| 			(population < unit-max)
+  824| 			(goal need-deathmatch-villagers NO)
+  825| 		)
+
+  832| (defrule
+  833| 	(goal secondary-build 1)
+  834| 	(random-number == 2)
+  835| 	(can-train heavy-cavalry-archer)
+  836| 	(or
+  837| 		(population < deathmatch-unit-max)
+  838| 		(and
+  839| 			(population < unit-max)
+  840| 			(goal need-deathmatch-villagers NO)
+  841| 		)
+
+  848| (defrule
+  849| 	(goal secondary-build 1)
+  850| 	(random-number == 3)
+  851| 	(can-train heavy-scorpion)
+  852| 	(or
+  853| 		(population < deathmatch-unit-max)
+  854| 		(and
+  855| 			(population < unit-max)
+  856| 			(goal need-deathmatch-villagers NO)
+  857| 		)
+
+  884| (defrule
+  885| 	(goal secondary-build 1)
+  886| =>
+  887| 	(generate-random-number 3)
+  888| )
+
+  890| (defrule
+  891| 	(goal secondary-build 1)
+  892| 	(random-number == 1)
+  893| 	(can-train heavy-cavalry-archer)
+  894| 	(or
+  895| 		(population < deathmatch-unit-max)
+  896| 		(and
+  897| 			(population < unit-max)
+  898| 			(goal need-deathmatch-villagers NO)
+  899| 		)
+
+  906| (defrule
+  907| 	(goal secondary-build 1)
+  908| 	(random-number == 2)
+  909| 	(or
+  910| 		(can-train hand-cannoneer)
+  911| 		(can-train arbalest)
+  912| 	)
+
+  926| (defrule
+  927| 	(goal secondary-build 1)
+  928| 	(random-number == 3)
+  929| 	(can-train heavy-scorpion)
+  930| 	(or
+  931| 		(population < deathmatch-unit-max)
+  932| 		(and
+  933| 			(population < unit-max)
+  934| 			(goal need-deathmatch-villagers NO)
+  935| 		)
+
+  962| (defrule
+  963| 	(goal secondary-build 1)
+  964| =>
+  965| 	(generate-random-number 2)
+  966| )
+
+  968| (defrule
+  969| 	(goal secondary-build 1)
+  970| 	(random-number == 1)
+  971| 	(can-train champion)
+  972| 	(or
+  973| 		(population < deathmatch-unit-max)
+  974| 		(and
+  975| 			(population < unit-max)
+  976| 			(goal need-deathmatch-villagers NO)
+  977| 		)
+
+  984| (defrule
+  985| 	(goal secondary-build 1)
+  986| 	(random-number == 2)
+  987| 	(can-train hussar)
+  988| 	(or
+  989| 		(population < deathmatch-unit-max)
+  990| 		(and
+  991| 			(population < unit-max)
+  992| 			(goal need-deathmatch-villagers NO)
+  993| 		)
+
+ 1020| (defrule
+ 1021| 	(goal secondary-build 1)
+ 1022| =>
+ 1023| 	(generate-random-number 2)
+ 1024| )
+
+ 1026| (defrule
+ 1027| 	(goal secondary-build 1)
+ 1028| 	(random-number == 1)
+ 1029| 	(can-train heavy-cavalry-archer)
+ 1030| 	(or
+ 1031| 		(population < deathmatch-unit-max)
+ 1032| 		(and
+ 1033| 			(population < unit-max)
+ 1034| 			(goal need-deathmatch-villagers NO)
+ 1035| 		)
+
+ 1042| (defrule
+ 1043| 	(goal secondary-build 1)
+ 1044| 	(random-number == 2)
+ 1045| 	(can-train hussar)
+ 1046| 	(nor
+ 1047| 		(can-train elite-war-elephant)
+ 1048| 		(can-train paladin)
+ 1049| 	)
+
+ 1083| (defrule
+ 1084| 	(goal secondary-build 1)
+ 1085| =>
+ 1086| 	(generate-random-number 3)
+ 1087| )
+
+ 1089| (defrule
+ 1090| 	(goal secondary-build 1)
+ 1091| 	(random-number == 1)
+ 1092| 	(can-train heavy-cavalry-archer)
+ 1093| 	(or
+ 1094| 		(population < deathmatch-unit-max)
+ 1095| 		(and
+ 1096| 			(population < unit-max)
+ 1097| 			(goal need-deathmatch-villagers NO)
+ 1098| 		)
+
+ 1105| (defrule
+ 1106| 	(goal secondary-build 1)
+ 1107| 	(random-number == 2)
+ 1108| 	(or
+ 1109| 		(can-train hand-cannoneer)
+ 1110| 		(can-train arbalest)
+ 1111| 	)
+
+ 1125| (defrule
+ 1126| 	(goal secondary-build 1)
+ 1127| 	(random-number == 3)
+ 1128| 	(can-train hussar)
+ 1129| 	(not (can-train elite-mameluke) )
+ 1130| 	(or
+ 1131| 		(population < deathmatch-unit-max)
+ 1132| 		(and
+ 1133| 			(population < unit-max)
+ 1134| 			(goal need-deathmatch-villagers NO)
+ 1135| 		)
+
+ 1162| (defrule
+ 1163| 	(goal secondary-build 1)
+ 1164| =>
+ 1165| 	(generate-random-number 2)
+ 1166| )
+
+ 1168| (defrule
+ 1169| 	(goal secondary-build 1)
+ 1170| 	(random-number == 1)
+ 1171| 	(can-train paladin)
+ 1172| 	(or
+ 1173| 		(population < deathmatch-unit-max)
+ 1174| 		(and
+ 1175| 			(population < unit-max)
+ 1176| 			(goal need-deathmatch-villagers NO)
+ 1177| 		)
+
+ 1184| (defrule
+ 1185| 	(goal secondary-build 1)
+ 1186| 	(random-number == 2)
+ 1187| 	(can-train heavy-scorpion)
+ 1188| 	(or
+ 1189| 		(population < deathmatch-unit-max)
+ 1190| 		(and
+ 1191| 			(population < unit-max)
+ 1192| 			(goal need-deathmatch-villagers NO)
+ 1193| 		)
+
+ 1220| (defrule
+ 1221| 	(goal secondary-build 1)
+ 1222| =>
+ 1223| 	(generate-random-number 3)
+ 1224| )
+
+ 1226| (defrule
+ 1227| 	(goal secondary-build 1)
+ 1228| 	(random-number == 1)
+ 1229| 	(can-train champion)
+ 1230| 	(or
+ 1231| 		(population < deathmatch-unit-max)
+ 1232| 		(and
+ 1233| 			(population < unit-max)
+ 1234| 			(goal need-deathmatch-villagers NO)
+ 1235| 		)
+
+ 1242| (defrule
+ 1243| 	(goal secondary-build 1)
+ 1244| 	(random-number == 2)
+ 1245| 	(can-train hussar)
+ 1246| 	(or
+ 1247| 		(population < deathmatch-unit-max)
+ 1248| 		(and
+ 1249| 			(population < unit-max)
+ 1250| 			(goal need-deathmatch-villagers NO)
+ 1251| 		)
+
+ 1258| (defrule
+ 1259| 	(goal secondary-build 1)
+ 1260| 	(random-number == 3)
+ 1261| 	(can-train heavy-scorpion)
+ 1262| 	(or
+ 1263| 		(population < deathmatch-unit-max)
+ 1264| 		(and
+ 1265| 			(population < unit-max)
+ 1266| 			(goal need-deathmatch-villagers NO)
+ 1267| 		)
+
+ 1294| (defrule
+ 1295| 	(goal secondary-build 1)
+ 1296| =>
+ 1297| 	(generate-random-number 3)
+ 1298| )
+
+ 1300| (defrule
+ 1301| 	(goal secondary-build 1)
+ 1302| 	(random-number == 1)
+ 1303| 	(can-train light-cavalry)
+ 1304| 	(or
+ 1305| 		(population < deathmatch-unit-max)
+ 1306| 		(and
+ 1307| 			(population < unit-max)
+ 1308| 			(goal need-deathmatch-villagers NO)
+ 1309| 		)
+
+ 1316| (defrule
+ 1317| 	(goal secondary-build 1)
+ 1318| 	(random-number == 2)
+ 1319| 	(can-train arbalest)
+ 1320| 	(or
+ 1321| 		(population < deathmatch-unit-max)
+ 1322| 		(and
+ 1323| 			(population < unit-max)
+ 1324| 			(goal need-deathmatch-villagers NO)
+ 1325| 		)
+
+ 1332| (defrule
+ 1333| 	(goal secondary-build 1)
+ 1334| 	(random-number == 3)
+ 1335| 	(can-train heavy-scorpion)
+ 1336| 	(or
+ 1337| 		(population < deathmatch-unit-max)
+ 1338| 		(and
+ 1339| 			(population < unit-max)
+ 1340| 			(goal need-deathmatch-villagers NO)
+ 1341| 		)
+
+ 2332| (defrule
+ 2333| 	(can-train my-unique-unit-line)
+ 2334| 	(or
+ 2335| 		(population < deathmatch-unit-max)
+ 2336| 		(and
+ 2337| 			(population < unit-max)
+ 2338| 			(goal need-deathmatch-villagers NO)
+ 2339| 		)
+ 2340| 	)
+ 2341| =>
+ 2342| 	(train my-unique-unit-line)
+ 2343| 	(set-goal secondary-build 1)
+ 2344| )

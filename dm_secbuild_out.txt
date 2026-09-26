@@ -1,0 +1,9 @@
+=== x1_drs/anib_60002.bin : 118 rules gated by (goal secondary-build ...)
+    train                        53
+    set-goal                     50
+    generate-random-number       18
+
+=== aok_drs/anib_60002.bin : 76 rules gated by (goal secondary-build ...)
+    train                        35
+    set-goal                     32
+    generate-random-number       11

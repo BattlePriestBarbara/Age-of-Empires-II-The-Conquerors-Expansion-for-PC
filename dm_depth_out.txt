@@ -1,0 +1,215 @@
+anib_54000.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54101.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54102.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54103.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54201.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54202.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54203.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54204.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54205.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54206.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54207.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54208.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54209.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54210.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54211.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54212.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54213.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54214.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54216.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54217.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54218.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60001.bin                                             max depth= 1 (line 211)  lines>=8: 0  final depth=0
+anib_60002.bin                                             max depth= 1 (line 13)  lines>=8: 0  final depth=0
+anib_60003.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60004.bin                                             max depth= 1 (line 71)  lines>=8: 0  final depth=0
+anib_60005.bin                                             max depth= 1 (line 58)  lines>=8: 0  final depth=0
+anib_60006.bin                                             max depth= 1 (line 114)  lines>=8: 0  final depth=0
+anib_60007.bin                                             max depth= 1 (line 322)  lines>=8: 0  final depth=0
+anib_60008.bin                                             max depth= 2 (line 3)  lines>=8: 0  final depth=0
+anib_60009.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60010.bin                                             max depth= 2 (line 29)  lines>=8: 0  final depth=0
+anib_60011.bin                                             max depth= 1 (line 2)  lines>=8: 0  final depth=0
+anib_60012.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60013.bin                                             max depth= 1 (line 3)  lines>=8: 0  final depth=0
+anib_60014.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60015.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60016.bin                                             max depth= 2 (line 115)  lines>=8: 0  final depth=0
+anib_60017.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60018.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60019.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60020.bin                                             max depth= 1 (line 99)  lines>=8: 0  final depth=0
+anib_60021.bin                                             max depth= 1 (line 278)  lines>=8: 0  final depth=0
+anib_60022.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60023.bin                                             max depth= 1 (line 2)  lines>=8: 0  final depth=0
+anib_60024.bin                                             max depth= 1 (line 186)  lines>=8: 0  final depth=0
+anib_60025.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60026.bin                                             max depth= 1 (line 7)  lines>=8: 0  final depth=0
+anib_60027.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54000.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54101.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54102.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54103.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54201.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54202.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54203.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54204.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54205.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54206.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54207.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54208.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54209.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54210.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54211.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54212.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54213.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54217.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54218.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54219.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54220.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54221.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54222.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54223.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54225.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54226.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_54227.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_55001.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_55002.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_55003.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_55004.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_55005.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_55006.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_55007.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_55008.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_55009.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_55010.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_56001.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_56002.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_56003.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_56004.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_56005.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_56006.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_56007.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_56008.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_56009.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_56010.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60001.bin                                             max depth= 4 (line 147)  lines>=8: 0  final depth=0
+anib_60002.bin                                             max depth= 1 (line 41)  lines>=8: 0  final depth=0
+anib_60003.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60004.bin                                             max depth= 2 (line 90)  lines>=8: 0  final depth=0
+anib_60005.bin                                             max depth= 1 (line 58)  lines>=8: 0  final depth=0
+anib_60006.bin                                             max depth= 1 (line 44)  lines>=8: 0  final depth=0
+anib_60007.bin                                             max depth= 1 (line 365)  lines>=8: 0  final depth=0
+anib_60008.bin                                             max depth= 1 (line 1)  lines>=8: 0  final depth=0
+anib_60009.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60010.bin                                             max depth= 2 (line 120)  lines>=8: 0  final depth=0
+anib_60011.bin                                             max depth= 1 (line 2)  lines>=8: 0  final depth=0
+anib_60012.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60013.bin                                             max depth= 3 (line 5)  lines>=8: 0  final depth=0
+anib_60014.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60015.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60016.bin                                             max depth= 1 (line 1)  lines>=8: 0  final depth=0
+anib_60017.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60018.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60019.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60020.bin                                             max depth= 1 (line 99)  lines>=8: 0  final depth=0
+anib_60021.bin                                             max depth= 2 (line 609)  lines>=8: 0  final depth=0
+anib_60022.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60023.bin                                             max depth= 3 (line 424)  lines>=8: 0  final depth=0
+anib_60024.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60025.bin                                             max depth= 0 (line None)  lines>=8: 0  final depth=0
+anib_60026.bin                                             max depth= 3 (line 36)  lines>=8: 0  final depth=0
+anib_60027.bin                                             max depth= 2 (line 258)  lines>=8: 0  final depth=0
+anib_60028.bin                                             max depth= 1 (line 616)  lines>=8: 0  final depth=0
+anib_60029.bin                                             max depth= 1 (line 170)  lines>=8: 0  final depth=0
+petersen constants (Age of Kings).per                      max depth= 9 (line 709)  lines>=8: 6  final depth=0
+      line   697 depth 8  #load-if-not-defined POPULATION-CAP-200
+      line   709 depth 9  #load-if-defined DIFFICULTY-EASIEST
+      line   713 depth 9  #load-if-defined DIFFICULTY-EASY
+      line   717 depth 9  #load-if-defined DIFFICULTY-MODERATE
+      line   721 depth 9  #load-if-defined DIFFICULTY-HARD
+      line   725 depth 9  #load-if-defined DIFFICULTY-HARDEST
+petersen constants (Conquerors).per                        max depth= 9 (line 666)  lines>=8: 6  final depth=0
+      line   651 depth 8  #load-if-not-defined POPULATION-CAP-200
+      line   666 depth 9  #load-if-defined DIFFICULTY-EASIEST
+      line   670 depth 9  #load-if-defined DIFFICULTY-EASY
+      line   674 depth 9  #load-if-defined DIFFICULTY-MODERATE
+      line   678 depth 9  #load-if-defined DIFFICULTY-HARD
+      line   682 depth 9  #load-if-defined DIFFICULTY-HARDEST
+petersen deathmatch (Age of Kings).per                     max depth= 1 (line 13)  lines>=8: 0  final depth=0
+petersen deathmatch (Conquerors).per                       max depth= 1 (line 41)  lines>=8: 0  final depth=0
+aok_drs_anib_60002.bin                                     max depth= 1 (line 13)  lines>=8: 0  final depth=0
+aok_drs_anib_60010.bin                                     max depth= 9 (line 709)  lines>=8: 6  final depth=0
+      line   697 depth 8  #load-if-not-defined POPULATION-CAP-200
+      line   709 depth 9  #load-if-defined DIFFICULTY-EASIEST
+      line   713 depth 9  #load-if-defined DIFFICULTY-EASY
+      line   717 depth 9  #load-if-defined DIFFICULTY-MODERATE
+      line   721 depth 9  #load-if-defined DIFFICULTY-HARD
+      line   725 depth 9  #load-if-defined DIFFICULTY-HARDEST
+x1_drs_anib_60002.bin                                      max depth= 1 (line 41)  lines>=8: 0  final depth=0
+x1_drs_anib_60027.bin                                      max depth= 9 (line 666)  lines>=8: 6  final depth=0
+      line   651 depth 8  #load-if-not-defined POPULATION-CAP-200
+      line   666 depth 9  #load-if-defined DIFFICULTY-EASIEST
+      line   670 depth 9  #load-if-defined DIFFICULTY-EASY
+      line   674 depth 9  #load-if-defined DIFFICULTY-MODERATE
+      line   678 depth 9  #load-if-defined DIFFICULTY-HARD
+      line   682 depth 9  #load-if-defined DIFFICULTY-HARDEST
+
+=== direct look at the 8-fold catch-all in one file
+     644  #load-if-not-defined POPULATION-CAP-25
+     645  #load-if-not-defined POPULATION-CAP-50
+     646  #load-if-not-defined POPULATION-CAP-75
+     647  #load-if-not-defined POPULATION-CAP-100
+     648  #load-if-not-defined POPULATION-CAP-125
+     649  #load-if-not-defined POPULATION-CAP-150
+     650  #load-if-not-defined POPULATION-CAP-175
+     651  #load-if-not-defined POPULATION-CAP-200
+     652  (defconst civ-dark-rush 50)
+     653  (defconst civ-dark 63)
+     654  (defconst civ-dark-mod 38)
+     655  (defconst civ-feudal-mod 50)
+     656  (defconst civ-feudal 100)
+     657  (defconst civ-castle 175)
+     658  (defconst pop-cap 500)
+     659  (defconst deathmatch-unit-max 425)
+     660  
+     661  (defconst feudal-town-size 20)
+     662  (defconst castle-town-size 35)
+     663  (defconst imperial-town-size 40)
+     664  (defconst town-center-count 9)
+     665  
+     666  #load-if-defined DIFFICULTY-EASIEST
+     667  (defconst unit-max 325)
+     668  #end-if
+     669  
+     670  #load-if-defined DIFFICULTY-EASY
+     671  (defconst unit-max 325)
+     672  #end-if
+     673  
+     674  #load-if-defined DIFFICULTY-MODERATE
+     675  (defconst unit-max 400)
+     676  #end-if
+     677  
+     678  #load-if-defined DIFFICULTY-HARD
+     679  (defconst unit-max 475)
+     680  #end-if
+     681  
+     682  #load-if-defined DIFFICULTY-HARDEST
+     683  (defconst unit-max 475)
+     684  #end-if
+     685  
+     686  (defconst five-percent-pop 25)
+     687  (defconst ten-percent-pop 50)
+     688  (defconst fifteen-percent-pop 75)
+     689  (defconst twenty-percent-pop 100)
+     690  (defconst thirty-percent-pop 150)
+     691  (defconst fifty-percent-pop 250)
+     692  #end-if
+     693  #end-if
+     694  #end-if
+     695  #end-if
+     696  #end-if
+     697  #end-if
+     698  #end-if
+     699  #end-if
+     700  

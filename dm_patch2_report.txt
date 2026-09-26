@@ -1,0 +1,141 @@
+=== token attestation sources
+    x1_drs/anib_60002.bin                54203 bytes
+    x1_drs/anib_60027.bin                19383 bytes
+    x1_drs/anib_60010.bin                13739 bytes
+    x1_drs/anib_60001.bin                29337 bytes
+    x1_drs/anib_60029.bin                52174 bytes
+    x1_drs/anib_60008.bin                 4827 bytes
+    x1_drs/anib_60003.bin                49519 bytes
+    x1_drs/anib_60026.bin                  918 bytes
+    aok_drs/anib_60002.bin               45718 bytes
+    aok_drs/anib_60027.bin                9832 bytes
+    aok_drs/anib_60010.bin               14168 bytes
+    aok_drs/anib_60001.bin               28550 bytes
+    aok_drs/anib_60008.bin               17098 bytes
+    aok_drs/anib_60003.bin               41578 bytes
+    aok_drs/anib_60026.bin                 255 bytes
+    AoK HD.exe keyword tables           271161 bytes
+
+=== appended block: 14 rules, 5868 bytes, parentheses balanced, no difficulty/multiplayer gate left in the code, every
+    logical block with at most 2 children
+    36 symbols used, 0 unattested
+      age-advancement              x1_drs/anib_60002.bin
+      build                        x1_drs/anib_60002.bin
+      building-type-count-total    x1_drs/anib_60002.bin
+      can-build                    x1_drs/anib_60002.bin
+      can-research                 x1_drs/anib_60002.bin
+      castle-age                   x1_drs/anib_60002.bin
+      cc-add-resource              x1_drs/anib_60001.bin
+      chat-to-all                  x1_drs/anib_60010.bin
+      defrule                      x1_drs/anib_60002.bin
+      disable-self                 x1_drs/anib_60002.bin
+      disable-timer                x1_drs/anib_60002.bin
+      enable-timer                 x1_drs/anib_60002.bin
+      feudal-age                   x1_drs/anib_60002.bin
+      fifteen-percent-pop          x1_drs/anib_60002.bin
+      food                         x1_drs/anib_60002.bin
+      food-amount                  x1_drs/anib_60002.bin
+      goal                         x1_drs/anib_60002.bin
+      gold                         x1_drs/anib_60002.bin
+      gold-amount                  x1_drs/anib_60002.bin
+      house                        x1_drs/anib_60002.bin
+      housing-headroom             x1_drs/anib_60002.bin
+      imperial-age                 x1_drs/anib_60002.bin
+      or                           x1_drs/anib_60002.bin
+      population-headroom          x1_drs/anib_60002.bin
+      research                     x1_drs/anib_60002.bin
+      secondary-build              x1_drs/anib_60002.bin
+      set-goal                     x1_drs/anib_60002.bin
+      stone                        x1_drs/anib_60002.bin
+      stone-amount                 x1_drs/anib_60002.bin
+      t-ageup                      x1_drs/anib_60002.bin
+      t-attackgroup                x1_drs/anib_60027.bin
+      t-tribute                    x1_drs/anib_60027.bin
+      timer-triggered              x1_drs/anib_60002.bin
+      true                         x1_drs/anib_60002.bin
+      wood                         x1_drs/anib_60002.bin
+      wood-amount                  x1_drs/anib_60002.bin
+    uppercase enum symbols: NOTICE
+
+=== engine shape rules (measured with dm_blockshape.py)
+    rule 1  at most 2 children per logical block (the engine has two argument slots):
+            appended dm block blocks by child count : {2: 3}
+            its deepest block       : 4 leaf fact(s) (shipped scripts use up to 7)
+            (or <fact> <fact>) x2   attested: x1_drs/anib_60002.bin line 495
+            (or or or) x1   attested: x1_drs/anib_60002.bin line 1514
+    rule 2  every fact arity is one a shipped script already uses:
+            build                      1 arg(s)   attested: x1_drs/anib_60002.bin line 1589
+            building-type-count-total  3 arg(s)   attested: x1_drs/anib_60002.bin line 1584
+            can-build                  1 arg(s)   attested: x1_drs/anib_60002.bin line 1587
+            can-research               1 arg(s)   attested: x1_drs/anib_60002.bin line 1595
+            cc-add-resource            2 arg(s)   attested: x1_drs/anib_60001.bin line 151
+            chat-to-all                1 arg(s)   allowed exception: M1, the in-game 'this patched script is running' marker.  chat-to-all is in the exe AI keyword table and takes one string; the shipped scripts only ever call the localised chat-to-all-using-id variant, so no shipped script attests the argument form.  AoK HD.exe does lex string literals (it ships ERR2010 'Missing closing quote'), and the v2 run reported no error for M1 although M1 sits at line ~2890, i.e. *before* the reported line 3021.
+            defrule                    1 arg(s)   attested: x1_drs/anib_60002.bin line 11
+            disable-self               0 arg(s)   attested: x1_drs/anib_60002.bin line 26
+            disable-timer              1 arg(s)   attested: x1_drs/anib_60002.bin line 1609
+            enable-timer               2 arg(s)   attested: x1_drs/anib_60002.bin line 1527
+            food-amount                2 arg(s)   attested: x1_drs/anib_60002.bin line 1517
+            goal                       2 arg(s)   attested: x1_drs/anib_60002.bin line 44
+            gold-amount                2 arg(s)   attested: x1_drs/anib_60002.bin line 1520
+            housing-headroom           2 arg(s)   attested: x1_drs/anib_60002.bin line 1685
+            population-headroom        2 arg(s)   attested: x1_drs/anib_60002.bin line 1686
+            research                   1 arg(s)   attested: x1_drs/anib_60002.bin line 1601
+            set-goal                   2 arg(s)   attested: x1_drs/anib_60002.bin line 14
+            stone-amount               2 arg(s)   attested: x1_drs/anib_60002.bin line 1521
+            timer-triggered            1 arg(s)   attested: x1_drs/anib_60002.bin line 1667
+            true                       0 arg(s)   attested: x1_drs/anib_60002.bin line 12
+            wood-amount                2 arg(s)   attested: x1_drs/anib_60002.bin line 1516
+    verdict: the appended block breaks neither rule
+    (the base marker is rule (defrule (true) => ...) and uses 0 logical block(s))
+    base marker: 4 symbols, all attested, shape clean
+
+=== gates removed (retail rule -> appended rule)
+    house    L1675 (difficulty <= moderate)                  -> H1
+    house    L1694 #load-if-defined DIFFICULTY-EASY          -> H2
+                    (military-population < civ-dark-rush) dropped
+    house    L1683 #load-if-defined DIFFICULTY-EASIEST       -> H3
+                    (military-population < 10) dropped
+    feudal   L1597 (or (players-current-age every-human >= feudal-age)
+                   (difficulty <= moderate))                  -> A1
+    castle   L1617 same gate                                 -> A2
+    imperial L1639 (or (difficulty <= moderate)
+                   (and (players-current-age every-human == imperial-age)
+                   (difficulty == easy)))                     -> A3
+
+=== gamedata_x1.drs   (x1_drs, dataset tag x1)
+    pristine : D:\aoe2_aoefix\backup_drs\gamedata_x1.drs.orig
+      md5 f41c418333e624b7a1077ad166f9dcb0
+    installed: D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\gamedata_x1.drs  md5 59ca9130ce14f649a52d47f64b1357b3
+      v1 patch currently present in the installed anib_60002: False
+    anib_60002 preprocessor: 25 opener(s) (#load-if/#if), 25 #end-if, final depth 0
+    anib_60001 preprocessor: 6 opener(s), 6 #end-if, final depth 0
+    anib_60002  54203 -> 60071 bytes (+5868)
+      md5 430feba4dc7ecb3ee47c68d2917adac2 -> 19898a758e1d48a3f4a5b36b73317489
+      -> D:\aoe2_aoefix\patch_out2\x1_drs_anib_60002.bin
+    anib_60001  29337 -> 29641 bytes (+304)  marker only
+      -> D:\aoe2_aoefix\patch_out2\x1_drs_anib_60001.bin
+
+=== gamedata.drs   (aok_drs, dataset tag aok)
+    pristine : D:\aoe2_aoefix\backup_drs\gamedata.drs.orig
+      md5 be574545e247b85a196109836a1f9d44
+    installed: D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\gamedata.drs  md5 bc3ae18a686cbd6b1804ecaa9e72d589
+      v1 patch currently present in the installed anib_60002: False
+    anib_60002 preprocessor: 21 opener(s) (#load-if/#if), 21 #end-if, final depth 0
+    anib_60001 preprocessor: 3 opener(s), 3 #end-if, final depth 0
+    anib_60002  45718 -> 51587 bytes (+5869)
+      md5 369e8466f747ff9f503408e081c566c6 -> 20e5c89f82180b052c2b22efc66e918b
+      -> D:\aoe2_aoefix\patch_out2\aok_drs_anib_60002.bin
+    anib_60001  28550 -> 28855 bytes (+305)  marker only
+      -> D:\aoe2_aoefix\patch_out2\aok_drs_anib_60001.bin
+
+=== settings used
+    houses max            : 40  (200 population slots)
+    house timer           : t-tribute (retail index 1), first 30s, repeat 20s
+    resource timer        : t-attackgroup (retail index 2), first 10s, repeat 60s
+    new symbols           : none - every token is a shipped one
+    shape rules           : <= 2 children per logical block and
+                            fact arities as shipped (the lesson
+                            of the in-game ERR2011 of v2)
+    caveat                : timers 1 and 2 are unused by every script of
+                            a death match, but a scenario-embedded AI
+                            could still use them

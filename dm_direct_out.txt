@@ -1,0 +1,413 @@
+=== directive-looking strings in the exe
+   0000177b  hl#w
+   00001792  h4#w
+   000017bf  h,#w
+   000017d3  h(#w
+   000017e7  h #w
+   0000c64a  t$ h(#w
+   00013f33  t#f=4
+   00026c5f  t#h`
+   000287e0  t#j
+   0003572f  t#f=
+   0003f05f  Az#j
+   0004513a  <#t
+   0004752f  #tI
+   00047f6f  ~#S
+   0004d44c  #u-
+   00054958  #HE
+   00055fed  #Vw
+   00058651  #VWwO
+   0005a076  t#V
+   0005be9c  #Pw
+   0005bf62  #VwP
+   0005dfba  j#h
+   0005e487  j#h|kw
+   00063752  #t^
+   0006a67b  :D$#uW
+   000741da  t#h
+   0007fc3f  ju#S
+   0008b443  #tM
+   0008e074  <#ul
+   000994ce  Ph(#w
+   0009b90c  t#i
+   0009d6d2  _dh(#w
+   0009e836  Wh(#w
+   000a4630  t#W
+   000ae20c  t#f=/
+   000af4c8  #P'
+   000b06a0  WWUWh(#w
+   000b1528  Sh(#w
+   000b5d8c  jdjFj#h
+   000b5e35  jxj#Uh
+   000b6063  j8j#h(#w
+   000b6086  jVj#h(#w
+   000b7ad4  j#S
+   000b88cf  j@h(#w
+   000b9606  QRWSh(#w
+   000b9b02  SUh(#w
+   000b9f29  jFj#hS
+   000b9f53  jxj#Wh
+   000ba03d  jxj#j
+   000bb194  jAh(#w
+   000bc75f  Wj&h(#w
+   000bf8d2  h#kt
+   000caabf  jBSjAh(#w
+   000cbb64  jBj(h(#w
+   000d179e  D$(h(#w
+   000dafd4  (#w
+   000db1e8  |$(h(#w
+   000dcf66  ?h(#w
+   000de905  ~,h(#w
+   000e205d  #k$
+   000e6838  #hN
+   000e7934  8E#t?3
+   000eba7d  V#RW
+   000ebb61  N#QW
+   000ecac3  D$((#w
+   000f15e1  #L$
+   000f21a0  u#W
+   000f2690  N,j#WWWWWQ
+   000f46c7  t#Wj
+   000fee36  #P"
+   000ffccb  #B"
+   0010e468  |#W
+   00112c66  j#j
+   00112e41  h#K
+   00114750  jAj#j
+   00115bb9  h#N
+   0012055a  $#x
+   00120b4c  0#x
+   00120f2f  P#x
+   001212b5  h8#x
+   00122557  RQhx#x
+   001225b9  RRQh\#x
+   00133722  u+h(#w
+   00133c33  Rh(#w
+   00136c46  t#P
+   00136d84  #lS
+   0013a423  }#V
+   0013c157  u#f
+   0013d206  #T$ 
+   001488f3  Nlh(#w
+   0014b390  Sjhj#S
+   0014da08  t#VW
+   0014e7b0  #T$$
+   00154fb0  #D$,
+   0016b69a  t#f
+   0016fe27  #D$
+   00177c8c  z^#u
+   001826e4  j#X
+   00195741  t#f=&
+   001ab8ee  z#j
+   001b243e  SVh(#w
+   001b2759  Vh(#w
+   001b41e9  ~#V
+   001b75e1  u#j
+   001b985f  #D$P
+   001c7d67  j#Rj(j(SWP
+   001cb553  #h',
+   001cbe45  #PQ
+   001cbef6  Q#R
+   001cd4bf  SWh(#w
+   001d9607  j#hW!
+   001d9b1e  u1h(#w
+   001e1244  j#h,
+   001e5c12  ~bUUh(#w
+   001e726a  B$h#P
+   001eaa19  u#h
+   001eab81  #t7
+   001eb09e  ~bSSh(#w
+   001eeeff  ou#QQQQQj
+   001f002a  Wj#P
+   001f3ca4  j#R
+   001f3cc5  1j#P
+   001f676a  B$Su#h
+   001f6f68  SSh(#w
+   001f9080  j#SP
+   001f9253  j"h(#w
+   00202b29  j(j(h(#w
+   00203cfd  j#h y
+   00203d12  j#h!y
+   002048ad  SSSSh(#w
+   00206fa4  #k`
+   00207c39  }#j
+   0020a8b2  jdjKj#h
+   0020a8d2  j}j_j#jdjdWV
+   00213e3a  Qj5h(#w
+   00214171  j#h(#w
+   0021429b  j?h(#w
+   0021507c  j3h(#w
+   00215373  8#ui
+   00222798  L$<h(#w
+   0022b24b  h#x
+   0022b283  j2h(#w
+   0025432b  #Eg
+   002640a3  v#SW
+   00264ad4  t#It
+   0026755c  0v#j
+   00269998  t&It#It Iu)
+   0026bce6  t#HHt
+   0026df35  F t#j
+   002718a4  3#g
+   002719f3  k#g
+   0027235b  )#g
+   0027642d  #Wg
+   00278515  Ht#H
+   00286c98  |#G
+   0028e64c  ?#u
+   0029f279  #E,
+   0029f286  #E(
+   0029f293  #E4
+   0029f2a0  #E<
+   0029f2ad  #E8
+   0029f31f  #E0
+   002a00f4  @#l
+   002a6b68  |#j
+   002b5673  w#Sh8
+   002b56de  }#Sh
+   002b6b47  #hk
+   0030046e  r#h
+   0030981c  q,#u
+   00309983  #CL
+   00309b16  #FL
+   00309c1e  #V,
+   0030ee66  }#SP
+   00317ca3  HN#u4;t
+   0032256c  ,#r
+   00322570  [#r
+   00322574  x#r
+   00325634  u#V
+   0032b49b  #L$$#
+   0032fc72  v#Wh
+   00332db7  ;#U
+   00332e6b  D#M
+   00332e83  9#U
+   0033876f  #T$
+   0033b8ef  A#E
+   0033c071  t#SSUP
+   003508bf  S#w
+   00350e24  #PnI
+   00373370      Type=%-4d %-20s gID=%-4d Cat=%d uID=%-3d inProg=%d bldAtt=%-2d skip=%d #blds=%d cap=%d bldFrom=%d permSkip=%d skipCy=%d.
+   003733f0  BLT Type=%-4d %-20s gID=%-4d Cat=%d uID=%-3d inProg=%d bldAtt=%-2d skip=%d #blds=%d cap=%d bldFrom=%d permSkip=%d skipCy=%d.
+   00373714  #end-if
+   0037371c  #else
+   00373724  #load-if-not-defined
+   0037373c  #load-if-defined
+   00373dfe  $A33#A
+   00373e06  #A=
+   00377bd0  p#G
+   00377d84  ERR3005: Unexpected #end-if
+   00377da0  ERR3004: Unexpected #else
+   00377f54  ERR3006: Missing #end-if
+   00380954  #QNAN
+   00380968  #INF
+   003832f8  Jm_j%%#L%^_j1$  ^@)Am %c%^dWcWAm:: *_%^::
+   0038333c  hxAm1Z#L1$
+   00383370  %%%^*_#LdW @)%^%^?>
+   00383384  3C@)AmAm1$Am 1$ ^AmhxcW }{#L%c%c::'1$
+   003833cc  %%Am1$#L1ZdW
+   003833dc  43#L%cw>::43#L%cw>::43#L%cw>::
+   003833fc  #L +!%^&TAm  ^@)Am %c%^dWcWAm:: @)Amhx?>
+   00383428  @)%^43 ?>%^ ::%^_j  ^_j%%dW  ^@)#L1$ %^dW
+   00383454   ^%^ 1$%c#L ^@)Am%%AmAmdW1$
+   00383508  #L %% 43#LdWdWAm%%
+   00384690  p#V
+   0038ebe0  <m#N
+   0038f28c  #rCa
+   0038f5ed  S#OV
+   0038ff91  8#c
+   00390b91  ;\#E;m
+   00391b6f  #AL
+   003927bb  I#r
+   00393045  &#V
+   003949ab  J#q
+   003975ee  KtGs#B
+   0039969d  h8#a
+   0039ac78  ~#RJ
+   0039d56c  "#aL
+   0039ff73  *j#o
+   003a0acf  .#tE
+   003a61e1  #Zv
+   003a6446  2&#G
+   003a6539  W#P
+   003a7057  9#j
+   003a7fbe  +#o
+   003a99f0  #H_j
+   003ac845  &#G~c!
+   003ad7cd  *>H#i
+   003ad851  K#zX
+   003ae50f  w#K^
+   003af864  hi#PqrAL
+   003b143d  An#Y
+   003b26e2  G#N
+   003b3321  Cq\#u1
+   003b442b  h.#Wd
+   003b650b  )#xI%
+   003b7451  av#N
+   003baaa7  #r2
+   003bbc3d  }%#N
+   003bcba9  #OC
+   003bd969  #BX
+   003c102d  #W1
+   003c10fe  9#L
+   003c2338  #D4
+   003c4319  &#U
+   003c5692  5d#O
+   003c58c5  L#R8
+   003c5f35  R#x
+   003c6b17  '#y
+   003cab19  #s?
+   003cc7b0  too many nested #includes
+   003cc7d0  include interface required to support #include from resource or memory
+   003cc824  unexpected #elif following #else
+   003cc848  unexpected #elif
+   003cc85c  unexpected #else following #else
+   003cc880  unexpected #else
+   003cc894  unexpected #endif
+   003d831b  #File created by Microsoft (R) D3DX library
+   003d835e  #Timestamp: 
+   003d874d  #Z?A
+   003d8785  #g?
+   003d89db  >#y
+   003f0212  #E*9$E
+   003f0923  E#u
+   003f0c7d  )#F
+   003f0c81  _#Fy
+   003f0c86  #Fn
+   003f0c8a  #Fg
+   003f136b  F#i
+   003f2087  F#d
+   003f2443  G#q
+   003f2a01  .#G&A#G7T#GHg#GZz#Gl
+   003f3865  #kG
+   003f3fcf  G#U
+   003f46af  G#M
+   003f62b7  G#u
+   003f634b  G#C
+   003f7827  H#F
+   003f7c6d  f!Hjm!H#t!H
+   003fb61a  4{#s
+   003fd5ea  #wi#:
+   003fde2a  #wi#:=
+   0040074c  f#I=
+   00400992  8#o
+   004009d7  ?#F
+   00400bb3  #D5p
+   00400d62   #J
+   00401ff8  #w_j
+   00404ec0  1#QNAN
+   00404ec8  1#INF
+   00404ed0  1#IND
+   00404ed8  1#SNAN
+   00429e2f  @#Q
+   0042cdc4  #Tw
+
+=== strings with .per / .ai / anib / %s.per
+   000d003a  'QPhanib'
+   000e0ad9  'L$4QPhanib'
+   000eee9d  'QVhanib'
+   000eeefe  'RVhanib'
+   0014398c  'hanib'
+   001439a2  'hanib'
+   001439b8  'hanib'
+   001439ce  'hanib'
+   001439e7  'hanib'
+   001439fd  'hanib'
+   00143a13  'hanib'
+   00143a29  'hanib'
+   00143a42  'hanib'
+   00143a58  'hanib'
+   00143a6e  'hanib'
+   00143a84  'hanib'
+   00143a9d  'hanib'
+   00143ab3  'hanib'
+   00143ac9  'hanib'
+   00143adf  'hanib'
+   00143af8  'hanib'
+   00143b0e  'hanib'
+   00143b24  'hanib'
+   00143b3a  'hanib'
+   00143b53  'hanib'
+   00143b69  'hanib'
+   00143b7f  'hanib'
+   00143b95  'hanib'
+   00143bae  'hanib'
+   00143bc4  'hanib'
+   00143bda  'hanib'
+   00143bf0  'hanib'
+   00143c09  'hanib'
+   00167d57  'QPhanib'
+   001b33d7  'RPhanib'
+   001d9b55  'L$,QPhanib'
+   001f8ba3  'Phanib'
+   001fa0be  'Phanib'
+   0021953b  'RPhanib'
+   00377c4c  '%s.per'
+   00377cb1  '    %s  %s.per'
+   00377d01  '    %s  %s.per'
+   0037e184  '*.scn;*.avi;*.cpn;*.cpx;*.mp3;*.ai;*.per;*.scx;*.png;*.jpg;*.mgx;*.slp;*.sin;*.pal'
+   0037e249  '*.ai;*.per'
+   00381d9c  '%s%s.ai'
+   00381de0  '%s%s.per'
+   00381e0c  '%s.ai'
+   00383bd0  'wonder kill.per'
+   00383be0  'wonder rush.per'
+   00383bf0  'petersen constants.per'
+   00383c08  'randomgame.per'
+   00383c18  'petersen rush.per'
+   00383c2c  'petersen warboat island.per'
+   00383c48  'petersen dip bully.per'
+   00383c60  'petersen dip insult.per'
+   00383c78  'petersen groups.per'
+   00383c8c  'petersen dip feeder.per'
+   00383ca4  'petersen gather.per'
+   00383cb8  'petersen dip boomer.per'
+   00383cd0  'petersen market.per'
+   00383ce4  'petersen wonder.per'
+   00383cf8  'petersen resign.per'
+   00383d0c  'petersen castle.per'
+   00383d20  'petersen diplomacy.per'
+   00383d38  'petersen tower.per'
+   00383d4c  'petersen civ loads.per'
+   00383d64  'petersen map loads.per'
+   00383d7c  'petersen full tech.per'
+   00383d94  'petersen difficulty loads.per'
+   00383db4  'petersen supplement.per'
+   00383dcc  'petersen warboat.per'
+   00383de4  'petersen dip liar.per'
+   00383dfc  'petersen fishboat.per'
+   00383e14  'petersen upgrades.per'
+   00383e2c  'petersen deathmatch.per'
+   00383e44  'ai petersen rules.per'
+   00383eb4  '*.per'
+   0038cd08  '*.ai'
+   0038d834  '.ai'
+
+=== AI error jump table @VA 0x00475284 (27 entries)
+   [ 0] 0x00474dcc
+   [ 1] 0x00474de3
+   [ 2] 0x00474dfa
+   [ 3] 0x00474e04
+   [ 4] 0x00474e1b
+   [ 5] 0x00474e32
+   [ 6] 0x00474e3c
+   [ 7] 0x00474e53
+   [ 8] 0x00474e6a
+   [ 9] 0x00474e74
+   [10] 0x00474e8b
+   [11] 0x00474ea2
+   [12] 0x00474eac
+   [13] 0x00474ec3
+   [14] 0x00474eda
+   [15] 0x00474ee4
+   [16] 0x00474efb
+   [17] 0x00474f12
+   [18] 0x00474f1c
+   [19] 0x00474f33
+   [20] 0x00474f47
+   [21] 0x00474f4e
+   [22] 0x00474f62
+   [23] 0x00474f76
+   [24] 0x00474f7d
+   [25] 0x00474fa5
+   [26] 0x00474f91

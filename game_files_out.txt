@@ -1,0 +1,133 @@
+=== interesting files (size, relpath), sorted by path ===
+   4447896  -- 原版的EXE和DLL等文件备份 --\AoK HD.exe
+    103920  -- 原版的EXE和DLL等文件备份 --\steam_api.dll
+    292184  -- 游戏可能需要的运行库软件 --\DirectX.exe
+  10274136  -- 游戏可能需要的运行库软件 --\vcredist\2010\vcredist_x64.exe
+   8990552  -- 游戏可能需要的运行库软件 --\vcredist\2010\vcredist_x86.exe
+   7194488  -- 游戏可能需要的运行库软件 --\vcredist\2012\vcredist_x64.exe
+   6560088  -- 游戏可能需要的运行库软件 --\vcredist\2012\vcredist_x86.exe
+   4444160  .\AoK HD.exe
+   1856000  .\Launcher.exe
+     98816  .\steam_api.dll
+    368640  .\Steamclient.dll
+     97204  .\tr_spred.txt
+    142336  .\zlibwapi.dll
+   2988544  .\启动游戏.exe
+        84  .\游戏打不开请安装.txt
+      1959  .\说明.txt
+         8  AI\AI.txt
+         9  Avi\Avi.txt
+      4851  Bin\language_base.txt
+    499712  Bin\zh\language.dll
+      3794  Bin\zh\language.txt
+    339968  Bin\zh\language_x1.dll
+     45056  Bin\zh\language_x1_p1.dll
+    329568  Data\blendomatic.dat
+    741518  Data\blendomatic_x1.dat
+     84471  Data\BlkEdge.Dat
+       125  Data\custome_palette_list.txt
+    659808  Data\empires2.dat
+   1037826  Data\empires2_x1.dat
+   1041720  Data\empires2_x1_p1.dat
+    300124  Data\FilterMaps.dat
+    531384  Data\gamedata.drs
+    944156  Data\gamedata_x1.drs
+    530869  Data\gamedata_x1_p1.drs
+  86137347  Data\graphics.drs
+  54029361  Data\interfac.drs
+     73800  Data\lightMaps.dat
+        10  Data\Load\Load.txt
+    124623  Data\LoQMaps.dat
+    164000  Data\PatternMasks.dat
+  29678340  Data\sounds.drs
+  12003432  Data\sounds_x1.drs
+      7208  Data\STemplet.dat
+   6649972  Data\terrain.drs
+    209287  Data\TileEdge.Dat
+    327680  Data\view_icm.dat
+      1250  History\zh\Armies.txt
+      2853  History\zh\ArmiesMongols.txt
+      4035  History\zh\ArmiesOrg.txt
+      1376  History\zh\ArmiesStrat.txt
+      7794  History\zh\ArmiesTactics.txt
+      1795  History\zh\Aztecs.txt
+      1951  History\zh\barbarianinvaders.txt
+      3767  History\zh\British original.txt
+      3767  History\zh\british regular.txt
+     19213  History\zh\british test.txt
+      2447  History\zh\british.txt
+      2606  History\zh\Byzantines.txt
+      3934  History\zh\CastleDefenses.txt
+      3074  History\zh\CastleEvolution.txt
+       718  History\zh\Castles.txt
+      8326  History\zh\CastleSiege.txt
+      1787  History\zh\Celts.txt
+      1371  History\zh\charlemagne.txt
+      2240  History\zh\Chinese.txt
+      2196  History\zh\darkagereligion.txt
+       264  History\zh\darkages.txt
+      2917  History\zh\DarkArmies.txt
+      1592  History\zh\economy.txt
+      1216  History\zh\feudalcontract.txt
+       194  History\zh\feudalism.txt
+      3030  History\zh\feudalismdecline.txt
+      2298  History\zh\Franks.txt
+      2012  History\zh\Goths.txt
+      1912  History\zh\Gunpowder.txt
+      3171  History\zh\history.txt
+      2401  History\zh\Huns.txt
+      1873  History\zh\Japanese.txt
+      7082  History\zh\Knights.txt
+      1332  History\zh\Koreans.txt
+       306  History\zh\latemiddleages.txt
+      1115  History\zh\Mayans.txt
+       809  History\zh\middleages.txt
+      2296  History\zh\Mongols.txt
+      4083  History\zh\Naval.txt
+      1027  History\zh\Persians.txt
+      1380  History\zh\politics.txt
+       994  History\zh\religion.txt
+      1736  History\zh\renaissance.txt
+      2433  History\zh\Saracens.txt
+      2290  History\zh\Spanish.txt
+       710  History\zh\technology.txt
+      2360  History\zh\Teutons.txt
+      3169  History\zh\thecrusades.txt
+      2187  History\zh\thefallofrome.txt
+      1422  History\zh\themanor.txt
+      1996  History\zh\thevikings.txt
+      2065  History\zh\Turks.txt
+      2426  History\zh\Vikings.txt
+      1115  History\zh\Warfare.txt
+       606  History\zh\Weapons.txt
+      4006  History\zh\WeaponsCav.txt
+      2254  History\zh\WeaponsHand.txt
+      2779  History\zh\WeaponsMissile.txt
+        11  Learn\Learn.txt
+       433  mods\forbidden_files.txt
+        12  Random\Random.txt
+        13  Support\Support.txt
+
+=== .drs only ===
+    531384  Data\gamedata.drs
+    944156  Data\gamedata_x1.drs
+    530869  Data\gamedata_x1_p1.drs
+  86137347  Data\graphics.drs
+  54029361  Data\interfac.drs
+  29678340  Data\sounds.drs
+  12003432  Data\sounds_x1.drs
+   6649972  Data\terrain.drs
+
+=== text previews of small AI-ish files ===
+--- AI\AI.txt (8 bytes) ---
+b'AI.txt\r\n'
+--- Avi\Avi.txt (9 bytes) ---
+b'Avi.txt\r\n'
+--- Data\Load\Load.txt (10 bytes) ---
+b'Load.txt\r\n'
+--- Learn\Learn.txt (11 bytes) ---
+b'Learn.txt\r\n'
+--- Random\Random.txt (12 bytes) ---
+b'Random.txt\r\n'
+--- Support\Support.txt (13 bytes) ---
+b'Support.txt\r\n'

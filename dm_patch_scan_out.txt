@@ -1,0 +1,1249 @@
+======================================================================
+anib_60002.bin  petersen deathmatch.per   dir=aok_drs  bytes=45718  lines=2445
+  DEATH mentions at lines: [42, 45, 62, 65, 102, 105, 121, 124, 163, 166, 179, 182, 199, 202, 215, 218, 257, 260, 273, 276, 289, 292, 330, 333, 346, 349, 366, 369, 382, 385, 423, 426, 439, 442, 455, 458, 496, 499, 515, 518]
+  --- context around line 42 ---
+     37| (defrule
+     38| 	(goal secondary-build 1)
+     39| 	(random-number == 1)
+     40| 	(can-train champion)
+     41| 	(or
+     42| 		(population < deathmatch-unit-max)
+     43| 		(and
+     44| 			(population < unit-max)
+     45| 			(goal need-deathmatch-villagers NO)
+     46| 		)
+     47| 	)
+
+  --- context around line 45 ---
+     40| 	(can-train champion)
+     41| 	(or
+     42| 		(population < deathmatch-unit-max)
+     43| 		(and
+     44| 			(population < unit-max)
+     45| 			(goal need-deathmatch-villagers NO)
+     46| 		)
+     47| 	)
+     48| =>
+     49| 	(train champion)
+     50| 	(set-goal secondary-build 0)
+
+  --- context around line 62 ---
+     57| 	(or
+     58| 		(goal combat-arm 1)
+     59| 		(goal combat-arm 5)
+     60| 	)
+     61| 	(or
+     62| 		(population < deathmatch-unit-max)
+     63| 		(and
+     64| 			(population < unit-max)
+     65| 			(goal need-deathmatch-villagers NO)
+     66| 		)
+     67| 	)
+
+  --- context around line 65 ---
+     60| 	)
+     61| 	(or
+     62| 		(population < deathmatch-unit-max)
+     63| 		(and
+     64| 			(population < unit-max)
+     65| 			(goal need-deathmatch-villagers NO)
+     66| 		)
+     67| 	)
+     68| =>
+     69| 	(train light-cavalry)
+     70| )
+
+  --- context around line 102 ---
+     97| (defrule
+     98| 	(goal secondary-build 1)
+     99| 	(random-number == 1)
+    100| 	(can-train heavy-cavalry-archer)
+    101| 	(or
+    102| 		(population < deathmatch-unit-max)
+    103| 		(and
+    104| 			(population < unit-max)
+    105| 			(goal need-deathmatch-villagers NO)
+    106| 		)
+    107| 	)
+
+  --- context around line 105 ---
+    100| 	(can-train heavy-cavalry-archer)
+    101| 	(or
+    102| 		(population < deathmatch-unit-max)
+    103| 		(and
+    104| 			(population < unit-max)
+    105| 			(goal need-deathmatch-villagers NO)
+    106| 		)
+    107| 	)
+    108| =>
+    109| 	(train heavy-cavalry-archer)
+    110| 	(set-goal secondary-build 0)
+
+  --- context around line 121 ---
+    116| 	(or
+    117| 		(can-train hand-cannoneer)
+    118| 		(can-train arbalest)
+    119| 	)
+    120| 	(or
+    121| 		(population < deathmatch-unit-max)
+    122| 		(and
+    123| 			(population < unit-max)
+    124| 			(goal need-deathmatch-villagers NO)
+    125| 		)
+    126| 	)
+
+  --- context around line 124 ---
+    119| 	)
+    120| 	(or
+    121| 		(population < deathmatch-unit-max)
+    122| 		(and
+    123| 			(population < unit-max)
+    124| 			(goal need-deathmatch-villagers NO)
+    125| 		)
+    126| 	)
+    127| =>
+    128| 	(train hand-cannoneer)
+    129| 	(train arbalest)
+
+  --- context around line 163 ---
+    158| (defrule
+    159| 	(goal secondary-build 1)
+    160| 	(random-number == 1)
+    161| 	(can-train paladin)
+    162| 	(or
+    163| 		(population < deathmatch-unit-max)
+    164| 		(and
+    165| 			(population < unit-max)
+    166| 			(goal need-deathmatch-villagers NO)
+    167| 		)
+    168| 	)
+
+  --- context around line 166 ---
+    161| 	(can-train paladin)
+    162| 	(or
+    163| 		(population < deathmatch-unit-max)
+    164| 		(and
+    165| 			(population < unit-max)
+    166| 			(goal need-deathmatch-villagers NO)
+    167| 		)
+    168| 	)
+    169| =>
+    170| 	(train paladin)
+    171| 	(set-goal secondary-build 0)
+
+  --- context around line 179 ---
+    174| (defrule
+    175| 	(goal secondary-build 1)
+    176| 	(random-number == 2)
+    177| 	(can-train light-cavalry)
+    178| 	(or
+    179| 		(population < deathmatch-unit-max)
+    180| 		(and
+    181| 			(population < unit-max)
+    182| 			(goal need-deathmatch-villagers NO)
+    183| 		)
+    184| 	)
+
+  --- context around line 182 ---
+    177| 	(can-train light-cavalry)
+    178| 	(or
+    179| 		(population < deathmatch-unit-max)
+    180| 		(and
+    181| 			(population < unit-max)
+    182| 			(goal need-deathmatch-villagers NO)
+    183| 		)
+    184| 	)
+    185| 	(or
+    186| 		(current-age < imperial-age)
+    187| 		(not (can-afford-unit paladin) )
+
+  --- context around line 199 ---
+    194| (defrule
+    195| 	(goal secondary-build 1)
+    196| 	(random-number == 3)
+    197| 	(can-train heavy-cavalry-archer)
+    198| 	(or
+    199| 		(population < deathmatch-unit-max)
+    200| 		(and
+    201| 			(population < unit-max)
+    202| 			(goal need-deathmatch-villagers NO)
+    203| 		)
+    204| 	)
+
+  --- context around line 202 ---
+    197| 	(can-train heavy-cavalry-archer)
+    198| 	(or
+    199| 		(population < deathmatch-unit-max)
+    200| 		(and
+    201| 			(population < unit-max)
+    202| 			(goal need-deathmatch-villagers NO)
+    203| 		)
+    204| 	)
+    205| =>
+    206| 	(train heavy-cavalry-archer)
+    207| 	(set-goal secondary-build 0)
+
+  --- context around line 215 ---
+    210| (defrule
+    211| 	(goal secondary-build 1)
+    212| 	(random-number == 4)
+    213| 	(can-train heavy-scorpion)
+    214| 	(or
+    215| 		(population < deathmatch-unit-max)
+    216| 		(and
+    217| 			(population < unit-max)
+    218| 			(goal need-deathmatch-villagers NO)
+    219| 		)
+    220| 	)
+
+  --- context around line 218 ---
+    213| 	(can-train heavy-scorpion)
+    214| 	(or
+    215| 		(population < deathmatch-unit-max)
+    216| 		(and
+    217| 			(population < unit-max)
+    218| 			(goal need-deathmatch-villagers NO)
+    219| 		)
+    220| 	)
+    221| =>
+    222| 	(train heavy-scorpion)
+    223| 	(set-goal secondary-build 0)
+
+  --- context around line 257 ---
+    252| (defrule
+    253| 	(goal secondary-build 1)
+    254| 	(random-number == 1)
+    255| 	(can-train champion)
+    256| 	(or
+    257| 		(population < deathmatch-unit-max)
+    258| 		(and
+    259| 			(population < unit-max)
+    260| 			(goal need-deathmatch-villagers NO)
+    261| 		)
+    262| 	)
+
+  --- context around line 260 ---
+    255| 	(can-train champion)
+    256| 	(or
+    257| 		(population < deathmatch-unit-max)
+    258| 		(and
+    259| 			(population < unit-max)
+    260| 			(goal need-deathmatch-villagers NO)
+    261| 		)
+    262| 	)
+    263| =>
+    264| 	(train champion)
+    265| 	(set-goal secondary-build 0)
+
+  --- context around line 273 ---
+    268| (defrule
+    269| 	(goal secondary-build 1)
+    270| 	(random-number == 3)
+    271| 	(can-train light-cavalry)
+    272| 	(or
+    273| 		(population < deathmatch-unit-max)
+    274| 		(and
+    275| 			(population < unit-max)
+    276| 			(goal need-deathmatch-villagers NO)
+    277| 		)
+    278| 	)
+
+  --- context around line 276 ---
+    271| 	(can-train light-cavalry)
+    272| 	(or
+    273| 		(population < deathmatch-unit-max)
+    274| 		(and
+    275| 			(population < unit-max)
+    276| 			(goal need-deathmatch-villagers NO)
+    277| 		)
+    278| 	)
+    279| =>
+    280| 	(train light-cavalry)
+    281| 	(set-goal secondary-build 0)
+
+  --- context around line 289 ---
+    284| (defrule
+    285| 	(goal secondary-build 1)
+    286| 	(random-number == 3)
+    287| 	(can-train heavy-scorpion)
+    288| 	(or
+    289| 		(population < deathmatch-unit-max)
+    290| 		(and
+    291| 			(population < unit-max)
+    292| 			(goal need-deathmatch-villagers NO)
+    293| 		)
+    294| 	)
+
+  --- context around line 292 ---
+    287| 	(can-train heavy-scorpion)
+    288| 	(or
+    289| 		(population < deathmatch-unit-max)
+    290| 		(and
+    291| 			(population < unit-max)
+    292| 			(goal need-deathmatch-villagers NO)
+    293| 		)
+    294| 	)
+    295| =>
+    296| 	(train heavy-scorpion)
+    297| 	(set-goal secondary-build 0)
+
+  --- context around line 330 ---
+    325| (defrule
+    326| 	(goal secondary-build 1)
+    327| 	(random-number == 1)
+    328| 	(can-train paladin)
+    329| 	(or
+    330| 		(population < deathmatch-unit-max)
+    331| 		(and
+    332| 			(population < unit-max)
+    333| 			(goal need-deathmatch-villagers NO)
+    334| 		)
+    335| 	)
+
+  --- context around line 333 ---
+    328| 	(can-train paladin)
+    329| 	(or
+    330| 		(population < deathmatch-unit-max)
+    331| 		(and
+    332| 			(population < unit-max)
+    333| 			(goal need-deathmatch-villagers NO)
+    334| 		)
+    335| 	)
+    336| =>
+    337| 	(train paladin)
+    338| 	(set-goal secondary-build 0)
+
+  --- context around line 346 ---
+    341| (defrule
+    342| 	(goal secondary-build 1)
+    343| 	(random-number == 2)
+    344| 	(can-train light-cavalry)
+    345| 	(or
+    346| 		(population < deathmatch-unit-max)
+    347| 		(and
+    348| 			(population < unit-max)
+    349| 			(goal need-deathmatch-villagers NO)
+    350| 		)
+    351| 	)
+
+  --- context around line 349 ---
+    344| 	(can-train light-cavalry)
+    345| 	(or
+    346| 		(population < deathmatch-unit-max)
+    347| 		(and
+    348| 			(population < unit-max)
+    349| 			(goal need-deathmatch-villagers NO)
+    350| 		)
+    351| 	)
+    352| 	(or
+    353| 		(current-age < imperial-age)
+    354| 		(not (can-afford-unit paladin) )
+
+  --- context around line 366 ---
+    361| (defrule
+    362| 	(goal secondary-build 1)
+    363| 	(random-number == 3)
+    364| 	(can-train heavy-cavalry-archer)
+    365| 	(or
+    366| 		(population < deathmatch-unit-max)
+    367| 		(and
+    368| 			(population < unit-max)
+    369| 			(goal need-deathmatch-villagers NO)
+    370| 		)
+    371| 	)
+
+  --- context around line 369 ---
+    364| 	(can-train heavy-cavalry-archer)
+    365| 	(or
+    366| 		(population < deathmatch-unit-max)
+    367| 		(and
+    368| 			(population < unit-max)
+    369| 			(goal need-deathmatch-villagers NO)
+    370| 		)
+    371| 	)
+    372| =>
+    373| 	(train heavy-cavalry-archer)
+    374| 	(set-goal secondary-build 0)
+
+  --- context around line 382 ---
+    377| (defrule
+    378| 	(goal secondary-build 1)
+    379| 	(random-number == 4)
+    380| 	(can-train heavy-scorpion)
+    381| 	(or
+    382| 		(population < deathmatch-unit-max)
+    383| 		(and
+    384| 			(population < unit-max)
+    385| 			(goal need-deathmatch-villagers NO)
+    386| 		)
+    387| 	)
+
+  --- context around line 385 ---
+    380| 	(can-train heavy-scorpion)
+    381| 	(or
+    382| 		(population < deathmatch-unit-max)
+    383| 		(and
+    384| 			(population < unit-max)
+    385| 			(goal need-deathmatch-villagers NO)
+    386| 		)
+    387| 	)
+    388| =>
+    389| 	(train heavy-scorpion)
+    390| 	(set-goal secondary-build 0)
+
+  --- context around line 423 ---
+    418| (defrule
+    419| 	(goal secondary-build 1)
+    420| 	(random-number == 1)
+    421| 	(can-train light-cavalry)
+    422| 	(or
+    423| 		(population < deathmatch-unit-max)
+    424| 		(and
+    425| 			(population < unit-max)
+    426| 			(goal need-deathmatch-villagers NO)
+    427| 		)
+    428| 	)
+
+  --- context around line 426 ---
+    421| 	(can-train light-cavalry)
+    422| 	(or
+    423| 		(population < deathmatch-unit-max)
+    424| 		(and
+    425| 			(population < unit-max)
+    426| 			(goal need-deathmatch-villagers NO)
+    427| 		)
+    428| 	)
+    429| =>
+    430| 	(train light-cavalry)
+    431| 	(set-goal secondary-build 0)
+
+  --- context around line 439 ---
+    434| (defrule
+    435| 	(goal secondary-build 1)
+    436| 	(random-number == 2)
+    437| 	(can-train heavy-cavalry-archer)
+    438| 	(or
+    439| 		(population < deathmatch-unit-max)
+    440| 		(and
+    441| 			(population < unit-max)
+    442| 			(goal need-deathmatch-villagers NO)
+    443| 		)
+    444| 	)
+
+  --- context around line 442 ---
+    437| 	(can-train heavy-cavalry-archer)
+    438| 	(or
+    439| 		(population < deathmatch-unit-max)
+    440| 		(and
+    441| 			(population < unit-max)
+    442| 			(goal need-deathmatch-villagers NO)
+    443| 		)
+    444| 	)
+    445| =>
+    446| 	(train heavy-cavalry-archer)
+    447| 	(set-goal secondary-build 0)
+
+  --- context around line 455 ---
+    450| (defrule
+    451| 	(goal secondary-build 1)
+    452| 	(random-number == 3)
+    453| 	(can-train heavy-scorpion)
+    454| 	(or
+    455| 		(population < deathmatch-unit-max)
+    456| 		(and
+    457| 			(population < unit-max)
+    458| 			(goal need-deathmatch-villagers NO)
+    459| 		)
+    460| 	)
+
+  --- context around line 458 ---
+    453| 	(can-train heavy-scorpion)
+    454| 	(or
+    455| 		(population < deathmatch-unit-max)
+    456| 		(and
+    457| 			(population < unit-max)
+    458| 			(goal need-deathmatch-villagers NO)
+    459| 		)
+    460| 	)
+    461| =>
+    462| 	(train heavy-scorpion)
+    463| 	(set-goal secondary-build 0)
+
+  --- context around line 496 ---
+    491| (defrule
+    492| 	(goal secondary-build 1)
+    493| 	(random-number == 1)
+    494| 	(can-train heavy-cavalry-archer)
+    495| 	(or
+    496| 		(population < deathmatch-unit-max)
+    497| 		(and
+    498| 			(population < unit-max)
+    499| 			(goal need-deathmatch-villagers NO)
+    500| 		)
+    501| 	)
+
+  --- context around line 499 ---
+    494| 	(can-train heavy-cavalry-archer)
+    495| 	(or
+    496| 		(population < deathmatch-unit-max)
+    497| 		(and
+    498| 			(population < unit-max)
+    499| 			(goal need-deathmatch-villagers NO)
+    500| 		)
+    501| 	)
+    502| =>
+    503| 	(train heavy-cavalry-archer)
+    504| 	(set-goal secondary-build 0)
+
+  --- context around line 515 ---
+    510| 	(or
+    511| 		(can-train hand-cannoneer)
+    512| 		(can-train arbalest)
+    513| 	)
+    514| 	(or
+    515| 		(population < deathmatch-unit-max)
+    516| 		(and
+    517| 			(population < unit-max)
+    518| 			(goal need-deathmatch-villagers NO)
+    519| 		)
+    520| 	)
+
+  --- context around line 518 ---
+    513| 	)
+    514| 	(or
+    515| 		(population < deathmatch-unit-max)
+    516| 		(and
+    517| 			(population < unit-max)
+    518| 			(goal need-deathmatch-villagers NO)
+    519| 		)
+    520| 	)
+    521| =>
+    522| 	(train hand-cannoneer)
+    523| 	(train arbalest)
+
+  --- context around line 532 ---
+    527| (defrule
+    528| 	(goal secondary-build 1)
+    529| 	(random-number == 3)
+    530| 	(can-train heavy-scorpion)
+    531| 	(or
+    532| 		(population < deathmatch-unit-max)
+    533| 		(and
+    534| 			(population < unit-max)
+    535| 			(goal need-deathmatch-villagers NO)
+    536| 		)
+    537| 	)
+
+  --- context around line 535 ---
+    530| 	(can-train heavy-scorpion)
+    531| 	(or
+    532| 		(population < deathmatch-unit-max)
+    533| 		(and
+    534| 			(population < unit-max)
+    535| 			(goal need-deathmatch-villagers NO)
+    536| 		)
+    537| 	)
+    538| =>
+    539| 	(train heavy-scorpion)
+    540| 	(set-goal secondary-build 0)
+
+  --- context around line 566 ---
+    561| 
+    562| (defrule
+    563| 	(goal secondary-build 1)
+    564| 	(can-train champion)
+    565| 	(or
+    566| 		(population < deathmatch-unit-max)
+    567| 		(and
+    568| 			(population < unit-max)
+    569| 			(goal need-deathmatch-villagers NO)
+    570| 		)
+    571| 	)
+
+  --- context around line 569 ---
+    564| 	(can-train champion)
+    565| 	(or
+    566| 		(population < deathmatch-unit-max)
+    567| 		(and
+    568| 			(population < unit-max)
+    569| 			(goal need-deathmatch-villagers NO)
+    570| 		)
+    571| 	)
+    572| =>
+    573| 	(train champion)
+    574| 	(set-goal secondary-build 0)
+
+  --- context around line 600 ---
+    595| 
+    596| (defrule
+    597| 	(goal secondary-build 1)
+    598| 	(can-train heavy-cavalry-archer)
+    599| 	(or
+    600| 		(population < deathmatch-unit-max)
+    601| 		(and
+    602| 			(population < unit-max)
+    603| 			(goal need-deathmatch-villagers NO)
+    604| 		)
+    605| 	)
+
+  --- context around line 603 ---
+    598| 	(can-train heavy-cavalry-archer)
+    599| 	(or
+    600| 		(population < deathmatch-unit-max)
+    601| 		(and
+    602| 			(population < unit-max)
+    603| 			(goal need-deathmatch-villagers NO)
+    604| 		)
+    605| 	)
+    606| =>
+    607| 	(train heavy-cavalry-archer)
+    608| 	(set-goal secondary-build 0)
+
+  --- context around line 642 ---
+    637| (defrule
+    638| 	(goal secondary-build 1)
+    639| 	(random-number == 1)
+    640| 	(can-train heavy-cavalry-archer)
+    641| 	(or
+    642| 		(population < deathmatch-unit-max)
+    643| 		(and
+    644| 			(population < unit-max)
+    645| 			(goal need-deathmatch-villagers NO)
+    646| 		)
+    647| 	)
+
+  --- context around line 645 ---
+    640| 	(can-train heavy-cavalry-archer)
+    641| 	(or
+    642| 		(population < deathmatch-unit-max)
+    643| 		(and
+    644| 			(population < unit-max)
+    645| 			(goal need-deathmatch-villagers NO)
+    646| 		)
+    647| 	)
+    648| =>
+    649| 	(train heavy-cavalry-archer)
+    650| 	(set-goal secondary-build 0)
+
+  --- context around line 661 ---
+    656| 	(or
+    657| 		(can-train hand-cannoneer)
+    658| 		(can-train arbalest)
+    659| 	)
+    660| 	(or
+    661| 		(population < deathmatch-unit-max)
+    662| 		(and
+    663| 			(population < unit-max)
+    664| 			(goal need-deathmatch-villagers NO)
+    665| 		)
+    666| 	)
+
+  --- context around line 664 ---
+    659| 	)
+    660| 	(or
+    661| 		(population < deathmatch-unit-max)
+    662| 		(and
+    663| 			(population < unit-max)
+    664| 			(goal need-deathmatch-villagers NO)
+    665| 		)
+    666| 	)
+    667| =>
+    668| 	(train hand-cannoneer)
+    669| 	(train arbalest)
+
+  --- context around line 704 ---
+    699| (defrule
+    700| 	(goal secondary-build 1)
+    701| 	(random-number == 1)
+    702| 	(can-train paladin)
+    703| 	(or
+    704| 		(population < deathmatch-unit-max)
+    705| 		(and
+    706| 			(population < unit-max)
+    707| 			(goal need-deathmatch-villagers NO)
+    708| 		)
+    709| 	)
+
+  --- context around line 707 ---
+    702| 	(can-train paladin)
+    703| 	(or
+    704| 		(population < deathmatch-unit-max)
+    705| 		(and
+    706| 			(population < unit-max)
+    707| 			(goal need-deathmatch-villagers NO)
+    708| 		)
+    709| 	)
+    710| =>
+    711| 	(train paladin)
+    712| 	(set-goal secondary-build 0)
+
+  --- context around line 720 ---
+    715| (defrule
+    716| 	(goal secondary-build 1)
+    717| 	(random-number == 2)
+    718| 	(can-train heavy-scorpion)
+    719| 	(or
+    720| 		(population < deathmatch-unit-max)
+    721| 		(and
+    722| 			(population < unit-max)
+    723| 			(goal need-deathmatch-villagers NO)
+    724| 		)
+    725| 	)
+
+  --- context around line 723 ---
+    718| 	(can-train heavy-scorpion)
+    719| 	(or
+    720| 		(population < deathmatch-unit-max)
+    721| 		(and
+    722| 			(population < unit-max)
+    723| 			(goal need-deathmatch-villagers NO)
+    724| 		)
+    725| 	)
+    726| =>
+    727| 	(train heavy-scorpion)
+    728| 	(set-goal secondary-build 0)
+
+  --- context around line 761 ---
+    756| (defrule
+    757| 	(goal secondary-build 1)
+    758| 	(random-number == 1)
+    759| 	(can-train champion)
+    760| 	(or
+    761| 		(population < deathmatch-unit-max)
+    762| 		(and
+    763| 			(population < unit-max)
+    764| 			(goal need-deathmatch-villagers NO)
+    765| 		)
+    766| 	)
+
+  --- context around line 764 ---
+    759| 	(can-train champion)
+    760| 	(or
+    761| 		(population < deathmatch-unit-max)
+    762| 		(and
+    763| 			(population < unit-max)
+    764| 			(goal need-deathmatch-villagers NO)
+    765| 		)
+    766| 	)
+    767| =>
+    768| 	(train champion)
+    769| 	(set-goal secondary-build 0)
+
+  --- context around line 777 ---
+    772| (defrule
+    773| 	(goal secondary-build 1)
+    774| 	(random-number == 2)
+    775| 	(can-train light-cavalry)
+    776| 	(or
+    777| 		(population < deathmatch-unit-max)
+    778| 		(and
+    779| 			(population < unit-max)
+    780| 			(goal need-deathmatch-villagers NO)
+    781| 		)
+    782| 	)
+
+  --- context around line 780 ---
+    775| 	(can-train light-cavalry)
+    776| 	(or
+    777| 		(population < deathmatch-unit-max)
+    778| 		(and
+    779| 			(population < unit-max)
+    780| 			(goal need-deathmatch-villagers NO)
+    781| 		)
+    782| 	)
+    783| =>
+    784| 	(train light-cavalry)
+    785| 	(set-goal secondary-build 0)
+
+  --- context around line 793 ---
+    788| (defrule
+    789| 	(goal secondary-build 1)
+    790| 	(random-number == 3)
+    791| 	(can-train heavy-scorpion)
+    792| 	(or
+    793| 		(population < deathmatch-unit-max)
+    794| 		(and
+    795| 			(population < unit-max)
+    796| 			(goal need-deathmatch-villagers NO)
+    797| 		)
+    798| 	)
+
+  --- context around line 796 ---
+    791| 	(can-train heavy-scorpion)
+    792| 	(or
+    793| 		(population < deathmatch-unit-max)
+    794| 		(and
+    795| 			(population < unit-max)
+    796| 			(goal need-deathmatch-villagers NO)
+    797| 		)
+    798| 	)
+    799| =>
+    800| 	(train heavy-scorpion)
+    801| 	(set-goal secondary-build 0)
+
+  --- context around line 834 ---
+    829| (defrule
+    830| 	(goal secondary-build 1)
+    831| 	(random-number == 1)
+    832| 	(can-train light-cavalry)
+    833| 	(or
+    834| 		(population < deathmatch-unit-max)
+    835| 		(and
+    836| 			(population < unit-max)
+    837| 			(goal need-deathmatch-villagers NO)
+    838| 		)
+    839| 	)
+
+  --- context around line 837 ---
+    832| 	(can-train light-cavalry)
+    833| 	(or
+    834| 		(population < deathmatch-unit-max)
+    835| 		(and
+    836| 			(population < unit-max)
+    837| 			(goal need-deathmatch-villagers NO)
+    838| 		)
+    839| 	)
+    840| =>
+    841| 	(train light-cavalry)
+    842| 	(set-goal secondary-build 0)
+
+  --- context around line 850 ---
+    845| (defrule
+    846| 	(goal secondary-build 1)
+    847| 	(random-number == 2)
+    848| 	(can-train arbalest)
+    849| 	(or
+    850| 		(population < deathmatch-unit-max)
+    851| 		(and
+    852| 			(population < unit-max)
+    853| 			(goal need-deathmatch-villagers NO)
+    854| 		)
+    855| 	)
+
+  --- context around line 853 ---
+    848| 	(can-train arbalest)
+    849| 	(or
+    850| 		(population < deathmatch-unit-max)
+    851| 		(and
+    852| 			(population < unit-max)
+    853| 			(goal need-deathmatch-villagers NO)
+    854| 		)
+    855| 	)
+    856| =>
+    857| 	(train arbalest)
+    858| 	(set-goal secondary-build 0)
+
+  --- context around line 866 ---
+    861| (defrule
+    862| 	(goal secondary-build 1)
+    863| 	(random-number == 3)
+    864| 	(can-train heavy-scorpion)
+    865| 	(or
+    866| 		(population < deathmatch-unit-max)
+    867| 		(and
+    868| 			(population < unit-max)
+    869| 			(goal need-deathmatch-villagers NO)
+    870| 		)
+    871| 	)
+
+  --- context around line 869 ---
+    864| 	(can-train heavy-scorpion)
+    865| 	(or
+    866| 		(population < deathmatch-unit-max)
+    867| 		(and
+    868| 			(population < unit-max)
+    869| 			(goal need-deathmatch-villagers NO)
+    870| 		)
+    871| 	)
+    872| =>
+    873| 	(train heavy-scorpion)
+    874| 	(set-goal secondary-build 0)
+
+  --- context around line 965 ---
+    960| (defrule
+    961| 	(true)
+    962| =>
+    963| 	(set-goal military-parity YES)	;goal 3
+    964| 	(set-goal attack-control NO)	;goal 4
+    965| 	(set-goal need-deathmatch-villagers NO)	;goal 7
+    966| 
+    967| 	(set-goal secondary-build 0)	;goal 8
+    968| 	(set-goal soldiers-available NO);goal 10
+    969| 	(set-goal combat-arm NOTICE)	;goal 11
+    970| 
+
+  --- context around line 1782 ---
+   1777| 			(gold-amount < 2000)
+   1778| 			(stone-amount < 700)
+   1779| 		)
+   1780| 	)
+   1781| =>
+   1782| 	(set-goal need-deathmatch-villagers YES)
+   1783| 	(disable-self)
+   1784| )
+   1785| 
+   1786| (defrule
+   1787| 	(building-type-count castle == 0)
+
+  --- context around line 1790 ---
+   1785| 
+   1786| (defrule
+   1787| 	(building-type-count castle == 0)
+   1788| 	(can-train militiaman-line)
+   1789| 	(or
+   1790| 		(population < deathmatch-unit-max)
+   1791| 		(and
+   1792| 			(population < unit-max)
+   1793| 			(goal need-deathmatch-villagers NO)
+   1794| 		)
+   1795| 	)
+
+  --- context around line 1793 ---
+   1788| 	(can-train militiaman-line)
+   1789| 	(or
+   1790| 		(population < deathmatch-unit-max)
+   1791| 		(and
+   1792| 			(population < unit-max)
+   1793| 			(goal need-deathmatch-villagers NO)
+   1794| 		)
+   1795| 	)
+   1796| 	(not (goal 36 NO) )
+   1797| =>
+   1798| 	(train militiaman-line)
+
+  --- context around line 1805 ---
+   1800| 
+   1801| (defrule
+   1802| 	(building-type-count castle == 0)
+   1803| 	(can-train knight-line)
+   1804| 	(or
+   1805| 		(population < deathmatch-unit-max)
+   1806| 		(and
+   1807| 			(population < unit-max)
+   1808| 			(goal need-deathmatch-villagers NO)
+   1809| 		)
+   1810| 	)
+
+  --- context around line 1808 ---
+   1803| 	(can-train knight-line)
+   1804| 	(or
+   1805| 		(population < deathmatch-unit-max)
+   1806| 		(and
+   1807| 			(population < unit-max)
+   1808| 			(goal need-deathmatch-villagers NO)
+   1809| 		)
+   1810| 	)
+   1811| 	(not (goal 37 NO) )
+   1812| =>
+   1813| 	(train knight-line)
+
+  --- context around line 1820 ---
+   1815| 
+   1816| (defrule
+   1817| 	(building-type-count castle == 0)
+   1818| 	(can-train cavalry-archer-line)
+   1819| 	(or
+   1820| 		(population < deathmatch-unit-max)
+   1821| 		(and
+   1822| 			(population < unit-max)
+   1823| 			(goal need-deathmatch-villagers NO)
+   1824| 		)
+   1825| 	)
+
+  --- context around line 1823 ---
+   1818| 	(can-train cavalry-archer-line)
+   1819| 	(or
+   1820| 		(population < deathmatch-unit-max)
+   1821| 		(and
+   1822| 			(population < unit-max)
+   1823| 			(goal need-deathmatch-villagers NO)
+   1824| 		)
+   1825| 	)
+   1826| 	(not (goal 38 NO) )
+   1827| =>
+   1828| 	(train cavalry-archer-line)
+
+  --- context around line 1836 ---
+   1831| (defrule
+   1832| 	(building-type-count castle == 0)
+   1833| 	(can-train archer-line)
+   1834| 	(not (unit-available hand-cannoneer) )
+   1835| 	(or
+   1836| 		(population < deathmatch-unit-max)
+   1837| 		(and
+   1838| 			(population < unit-max)
+   1839| 			(goal need-deathmatch-villagers NO)
+   1840| 		)
+   1841| 	)
+
+  --- context around line 1839 ---
+   1834| 	(not (unit-available hand-cannoneer) )
+   1835| 	(or
+   1836| 		(population < deathmatch-unit-max)
+   1837| 		(and
+   1838| 			(population < unit-max)
+   1839| 			(goal need-deathmatch-villagers NO)
+   1840| 		)
+   1841| 	)
+   1842| 	(not (goal 39 NO) )
+   1843| =>
+   1844| 	(train archer-line)
+
+  --- context around line 1851 ---
+   1846| 
+   1847| (defrule
+   1848| 	(building-type-count castle == 0)
+   1849| 	(can-train hand-cannoneer)
+   1850| 	(or
+   1851| 		(population < deathmatch-unit-max)
+   1852| 		(and
+   1853| 			(population < unit-max)
+   1854| 			(goal need-deathmatch-villagers NO)
+   1855| 		)
+   1856| 	)
+
+  --- context around line 1854 ---
+   1849| 	(can-train hand-cannoneer)
+   1850| 	(or
+   1851| 		(population < deathmatch-unit-max)
+   1852| 		(and
+   1853| 			(population < unit-max)
+   1854| 			(goal need-deathmatch-villagers NO)
+   1855| 		)
+   1856| 	)
+   1857| 	(not (goal 39 NO) )
+   1858| =>
+   1859| 	(train hand-cannoneer)
+
+  --- context around line 1865 ---
+   1860| )
+   1861| 
+   1862| (defrule
+   1863| 	(can-train my-unique-unit-line)
+   1864| 	(or
+   1865| 		(population < deathmatch-unit-max)
+   1866| 		(and
+   1867| 			(population < unit-max)
+   1868| 			(goal need-deathmatch-villagers NO)
+   1869| 		)
+   1870| 	)
+
+  --- context around line 1868 ---
+   1863| 	(can-train my-unique-unit-line)
+   1864| 	(or
+   1865| 		(population < deathmatch-unit-max)
+   1866| 		(and
+   1867| 			(population < unit-max)
+   1868| 			(goal need-deathmatch-villagers NO)
+   1869| 		)
+   1870| 	)
+   1871| =>
+   1872| 	(train my-unique-unit-line)
+   1873| 	(set-goal secondary-build 1)
+
+  --- last 12 lines ---
+   2434| )
+   2435| 
+   2436| (defrule
+   2437| 	(food-amount < 1600)
+   2438| 	(gold-amount > 5000)
+   2439| 	(can-buy-commodity food)
+   2440| =>
+   2441| 	(chat-local-to-self "need food")
+   2442| 	(buy-commodity food)
+   2443| )
+   2444| 
+   2445| 
+
+======================================================================
+anib_60004.bin  petersen fishboat.per   dir=aok_drs  bytes=3276  lines=158
+  DEATH mentions at lines: [71]
+  --- context around line 71 ---
+     66| 	(release-escrow wood)
+     67| 	(build dock)
+     68| )
+     69| 
+     70| ;build fishing ships in dark age
+     71| #load-if-not-defined DEATH-MATCH
+     72| 
+     73| (defrule
+     74| 	(current-age == dark-age)
+     75| 	(building-type-count-total lumber-camp > 0)
+     76| 	(civilian-population < civ-dark)
+
+  --- last 12 lines ---
+    147| )
+    148| 
+    149| (defrule
+    150| 	(current-age >= castle-age)
+    151| 	(cc-players-unit-type-count every-enemy galley-line < five-percent-pop)
+    152| 	(cc-players-unit-type-count every-enemy cannon-galleon-line < five-percent-pop)
+    153| 	(cc-players-unit-type-count every-enemy fire-ship-line < five-percent-pop)
+    154| 	(cc-players-unit-type-count every-enemy longboat-line < five-percent-pop)
+    155| =>
+    156| 	(set-goal 2 2)
+    157| )
+    158| 
+
+======================================================================
+anib_60007.bin  petersen supplement.per   dir=aok_drs  bytes=17783  lines=803
+  DEATH mentions at lines: [322]
+  --- context around line 322 ---
+    317| 	(release-escrow gold)
+    318| 	(train trebuchet)
+    319| )
+    320| 
+    321| ;*********************************
+    322| #load-if-not-defined DEATH-MATCH
+    323| 
+    324| ;build superunits
+    325| (defrule
+    326| 	(current-age == imperial-age)
+    327| =>
+
+  --- last 12 lines ---
+    792| 	(goal siege-available YES)
+    793| 	(goal monk-rating GOOD)
+    794| 	(difficulty <= moderate)
+    795| 	(soldier-count > ten-percent-pop)
+    796| 	(gold-amount >= 300)
+    797| 	(unit-type-count-total monk < fifteen-percent-pop)
+    798| 	(can-train monk)
+    799| =>
+    800| 	(train monk)
+    801| )
+    802| ;************************************************
+    803| 
+
+======================================================================
+anib_60013.bin  petersen diplomacy.per   dir=aok_drs  bytes=1350  lines=65
+  DEATH mentions at lines: []
+  --- last 12 lines ---
+     54| 
+     55| (defrule
+     56| 	(taunt-detected any-ally 6)
+     57| 	(stone-amount > 200)
+     58| 	(not (goal resource-needed STONE) )
+     59| =>
+     60| 	(release-escrow stone)
+     61| 	(tribute-to-player this-any-ally stone 100)
+     62| 	(acknowledge-taunt this-any-ally 6)
+     63| )
+     64| 
+     65| 
+
+======================================================================
+anib_60027.bin  petersen constants.per   dir=aok_drs  bytes=9832  lines=233
+  DEATH mentions at lines: [64, 65, 82]
+  --- context around line 64 ---
+     59| 	(defconst CASTLE 3)
+     60| 	(defconst IMPERIAL 4)
+     61| 	(defconst RUSHING 10)
+     62| 	(defconst BOOMING 18)
+     63| 	(defconst FEEDING 19)
+     64| ;goal 7 used for deathmatch to determine whether or not to build more units
+     65| 	(defconst need-deathmatch-villagers 7)
+     66| 	;uses NO, YES
+     67| ;goal 8 secondary-build controls secondary builds (ensures there are already soldiers before doing a secondary build)
+     68| 	(defconst secondary-build 8)
+     69| 	;0 = it's okay to build a secondary unit
+
+  --- context around line 65 ---
+     60| 	(defconst IMPERIAL 4)
+     61| 	(defconst RUSHING 10)
+     62| 	(defconst BOOMING 18)
+     63| 	(defconst FEEDING 19)
+     64| ;goal 7 used for deathmatch to determine whether or not to build more units
+     65| 	(defconst need-deathmatch-villagers 7)
+     66| 	;uses NO, YES
+     67| ;goal 8 secondary-build controls secondary builds (ensures there are already soldiers before doing a secondary build)
+     68| 	(defconst secondary-build 8)
+     69| 	;0 = it's okay to build a secondary unit
+     70| 	;1 = don't build a secondary unit
+
+  --- context around line 82 ---
+     77| 	(defconst WOOD-STONE 14)
+     78| 	(defconst FOOD-GOLD 23)
+     79| 	(defconst FOOD-STONE 24)
+     80| ;goal 10 used to keep from building siege if I have few or no other units
+     81| 	(defconst soldiers-available 10)
+     82| ;goal 11 = used to determine your main combat arm; in deathmatch, it determines your unique unit type
+     83| 	(defconst combat-arm  11)
+     84| 	;--Converted to constant  combat-arm, uses common offense/defense unit line numbers.
+     85| 		;repl	goal 11 1 = Infantry	goal  12 1
+     86| 		;repl	goal 11 2 = Cavalry		goal  12 2
+     87| 		;repl	goal 11 3 = Light Cav	goal  12 3
+
+  --- last 12 lines ---
+    222| ;timer 9 = the lumber-camp timer
+    223| ;timer 10 = used to see if we've risen in age. Once we're imperial, used to build extraneous units
+    224| (defconst t-tribute 1)
+    225| (defconst t-attackgroup 2)
+    226| (defconst t-production 3)
+    227| (defconst t-chat 5)
+    228| (defconst t-chathelp 6)
+    229| (defconst t-tower 7)
+    230| (defconst t-chatmore 8)
+    231| (defconst t-lumbercamp 9)
+    232| (defconst t-ageup 10)
+    233| ;;;  ]ma
+
+======================================================================
+anib_60028.bin  petersen dip liar.per   dir=x1_drs  bytes=55492  lines=2629
+  DEATH mentions at lines: [2546]
+  --- context around line 2546 ---
+   2541| 
+   2542| ; villager count
+   2543| (defrule
+   2544| 	(current-age == castle-age)
+   2545| 	(difficulty <= moderate)
+   2546| 	(civilian-population < deathmatch-unit-max)
+   2547| 	(civilian-population < 40)
+   2548| 	(can-train villager)
+   2549| =>
+   2550| 	(train villager)
+   2551| )
+
+  --- last 12 lines ---
+   2618| (defrule
+   2619| 	(current-age == imperial-age)
+   2620| 	(difficulty <= hard)
+   2621| 	(current-age-time > 300)
+   2622| 	(building-type-count-total mill < imperial-mill-count)
+   2623| 	(wood-amount > 700)
+   2624| 	(can-build mill)
+   2625| =>
+   2626| 	(build mill)
+   2627| )
+   2628| 
+   2629| 
+
+======================================================================
+anib_60029.bin  petersen dip feeder.per   dir=x1_drs  bytes=52174  lines=2582
+  DEATH mentions at lines: [16]
+  --- context around line 16 ---
+     11| (defrule
+     12| 	(true)
+     13| =>
+     14| 	(set-goal military-parity NO)	;goal 3
+     15| 	(set-goal attack-control NO)	;goal 4
+     16| 	(set-goal need-deathmatch-villagers NO)	;goal 7
+     17| 
+     18| 	(set-goal secondary-build YES)	;goal 8
+     19| 	(set-goal soldiers-available NO);goal 10
+     20| 	(set-goal combat-supp NO)		;goal 12
+     21| 
+
+  --- last 12 lines ---
+   2571| 	(disable-timer t-attackgroup)
+   2572| 	(enable-timer t-attackgroup 30)
+   2573| )
+   2574| 
+   2575| (defrule
+   2576| 	(goal wonder-attempt ATTACK)
+   2577| =>
+   2578| 	(set-strategic-number sn-special-attack-type3 1)
+   2579| 	(disable-self)
+   2580| )
+   2581| 
+   2582| 

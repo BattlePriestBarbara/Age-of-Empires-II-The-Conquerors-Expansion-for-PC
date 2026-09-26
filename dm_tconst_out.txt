@@ -1,0 +1,23 @@
+### aok_drs/anib_60027.bin (233 lines)  every (defconst t- line:
+   224| (defconst t-tribute 1)
+   225| (defconst t-attackgroup 2)
+   226| (defconst t-production 3)
+   227| (defconst t-chat 5)
+   228| (defconst t-chathelp 6)
+   229| (defconst t-tower 7)
+   230| (defconst t-chatmore 8)
+   231| (defconst t-lumbercamp 9)
+   232| (defconst t-ageup 10)
+
+### x1_drs/anib_60027.bin (629 lines)  every (defconst t- line:
+   232| (defconst t-tribute 1)
+   233| (defconst t-attackgroup 2)
+   234| (defconst t-production 3)
+   235| (defconst t-chat 5)
+   236| (defconst t-chathelp 6)
+   237| (defconst t-tower 7)
+   238| (defconst t-chatmore 8)
+   239| (defconst t-lumbercamp 9)
+   240| (defconst t-ageup 10)
+
+### x1p1_drs: no anib_60027.bin; contents=['anib_54228.bin', 'pls_5168.bin', 'pls_5176.bin', 'pls_5182.bin', 'pls_5218.bin', 'pls_5219.bin', 'pls_5220.bin']

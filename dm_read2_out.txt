@@ -1,0 +1,232 @@
+### x1 60027 timer block  lines 560-629
+   560| (defconst unit-max 130)
+   561| #end-if
+   562| 
+   563| #load-if-defined DIFFICULTY-EASY
+   564| (defconst unit-max 130)
+   565| #end-if
+   566| 
+   567| #load-if-defined DIFFICULTY-MODERATE
+   568| (defconst unit-max 160)
+   569| #end-if
+   570| 
+   571| #load-if-defined DIFFICULTY-HARD
+   572| (defconst unit-max 190)
+   573| #end-if
+   574| 
+   575| #load-if-defined DIFFICULTY-HARDEST
+   576| (defconst unit-max 190)
+   577| #end-if
+   578| 
+   579| (defconst five-percent-pop 10)
+   580| (defconst ten-percent-pop 20)
+   581| (defconst fifteen-percent-pop 30)
+   582| (defconst twenty-percent-pop 40)
+   583| (defconst thirty-percent-pop 60)
+   584| (defconst fifty-percent-pop 100)
+   585| #end-if
+   586| ;*************************************************************
+   587| ;*************************************************************
+   588| #load-if-defined TINY-MAP
+   589| (defconst feudal-mill-count 1)
+   590| (defconst castle-mill-count 1)
+   591| (defconst imperial-mill-count 1)
+   592| (defconst mining-count 8)
+   593| #end-if
+   594| ;**************************
+   595| #load-if-defined SMALL-MAP
+   596| (defconst feudal-mill-count 1)
+   597| (defconst castle-mill-count 1)
+   598| (defconst imperial-mill-count 1)
+   599| (defconst mining-count 8)
+   600| #end-if
+   601| ;**************************
+   602| #load-if-defined MEDIUM-MAP
+   603| (defconst feudal-mill-count 1)
+   604| (defconst castle-mill-count 1)
+   605| (defconst imperial-mill-count 1)
+   606| (defconst mining-count 10)
+   607| #end-if
+   608| ;**************************
+   609| #load-if-defined NORMAL-MAP
+   610| (defconst feudal-mill-count 1)
+   611| (defconst castle-mill-count 1)
+   612| (defconst imperial-mill-count 2)
+   613| (defconst mining-count 11)
+   614| #end-if
+   615| ;**************************
+   616| #load-if-defined LARGE-MAP
+   617| (defconst feudal-mill-count 1)
+   618| (defconst castle-mill-count 2)
+   619| (defconst imperial-mill-count 3)
+   620| (defconst mining-count 12)
+   621| #end-if
+   622| ;**************************
+   623| #load-if-defined GIANT-MAP
+   624| (defconst feudal-mill-count 2)
+   625| (defconst castle-mill-count 3)
+   626| (defconst imperial-mill-count 4)
+   627| (defconst mining-count 15)
+   628| #end-if
+   629| 
+
+### x1 60001 cc-add-resource  lines 120-200
+   120| 	(disable-self)
+   121| )
+   122| 
+   123| #load-if-defined KING-OF-THE-HILL
+   124| 
+   125| (defrule
+   126| 	(hold-koh-ruin)
+   127| =>
+   128| 	(set-strategic-number sn-gather-idle-soldiers-at-center 1)
+   129| )
+   130| 
+   131| (defrule
+   132| 	(not (hold-koh-ruin) )
+   133| 	(military-population < twenty-percent-pop)
+   134| =>
+   135| 	(set-strategic-number sn-gather-idle-soldiers-at-center 0)
+   136| )
+   137| 
+   138| (defrule
+   139| 	(not (hold-koh-ruin) )
+   140| 	(military-population > thirty-percent-pop)
+   141| =>
+   142| 	(set-strategic-number sn-gather-idle-soldiers-at-center 1)
+   143| )
+   144| 
+   145| #load-if-not-defined DIFFICULTY-EASIEST
+   146| #load-if-not-defined DIFFICULTY-EASY
+   147| #load-if-not-defined DIFFICULTY-MODERATE
+   148| (defrule
+   149| 	(current-age == dark-age)
+   150| =>
+   151| 	(cc-add-resource wood 100)
+   152| 	(cc-add-resource food 100)
+   153| 	(cc-add-resource gold 100)
+   154| 	(cc-add-resource stone 100)
+   155| 	(disable-self)
+   156| )	
+   157| 
+   158| (defrule
+   159| 	(current-age == feudal-age)
+   160| =>
+   161| 	(cc-add-resource wood 200)
+   162| 	(cc-add-resource food 200)
+   163| 	(cc-add-resource gold 200)
+   164| 	(cc-add-resource stone 200)
+   165| 	(disable-self)
+   166| )	
+   167| 
+   168| (defrule
+   169| 	(current-age == castle-age)
+   170| =>
+   171| 	(cc-add-resource wood 500)
+   172| 	(cc-add-resource food 500)
+   173| 	(cc-add-resource gold 500)
+   174| 	(cc-add-resource stone 500)
+   175| 	(disable-self)
+   176| )	
+   177| 
+   178| (defrule
+   179| 	(current-age == imperial-age)
+   180| =>
+   181| 	(cc-add-resource wood 1000)
+   182| 	(cc-add-resource food 1000)
+   183| 	(cc-add-resource gold 1000)
+   184| 	(cc-add-resource stone 1000)
+   185| 	(disable-timer t-chatmore)
+   186| 	(enable-timer t-chatmore 1800)
+   187| 	(disable-self)
+   188| )	
+   189| 
+   190| (defrule
+   191| 	(timer-triggered t-chatmore)
+   192| =>
+   193| 	(cc-add-resource wood 500)
+   194| 	(cc-add-resource food 500)
+   195| 	(cc-add-resource gold 500)
+   196| 	(cc-add-resource stone 500)
+   197| 	(disable-timer t-chatmore)
+   198| 	(enable-timer t-chatmore 1200)
+   199| )
+   200| 
+
+### x1 60008 cc-add-resource  lines 190-225
+   190| (defrule
+   191| 	(true)
+   192| =>
+   193| 	(set-strategic-number sn-percent-enemy-sighted-response 99)
+   194| 	(set-strategic-number sn-hits-before-alliance-change 10)
+   195| 	(set-difficulty-parameter ability-to-maintain-distance 0)
+   196| 	(set-difficulty-parameter ability-to-dodge-missiles 0)
+   197| 	(disable-self)
+   198| )
+   199| 
+   200| (defrule
+   201| 	(current-age == imperial-age)
+   202| =>
+   203| 	(disable-timer t-chatmore)
+   204| 	(enable-timer t-chatmore 1800)
+   205| 	(disable-self)
+   206| )
+   207| 
+   208| (defrule
+   209| 	(timer-triggered t-chatmore)
+   210| =>
+   211| 	(cc-add-resource wood 500)
+   212| 	(cc-add-resource food 500)
+   213| 	(cc-add-resource gold 500)
+   214| 	(cc-add-resource stone 500)
+   215| 	(disable-timer t-chatmore)
+   216| 	(enable-timer t-chatmore 1200)
+   217| )
+   218| 
+   219| #end-if
+   220| 
+   221| 
+   222| 
+   223| 
+
+### x1 60008 head  lines 1-40
+     1| #load-if-defined DIFFICULTY-EASIEST
+     2| 
+     3| (defrule
+     4| 	(true)
+     5| =>
+     6| 	(set-strategic-number sn-percent-enemy-sighted-response 10)
+     7| 	(set-strategic-number sn-easiest-reaction-percentage 20)
+     8| 	(set-difficulty-parameter ability-to-maintain-distance 100)
+     9| 	(set-difficulty-parameter ability-to-dodge-missiles 100)
+    10| 	(disable-self)
+    11| )
+    12| 
+    13| ;crude age advancement rules
+    14| (defrule
+    15| 	(goal age-advancement NO)
+    16| 	(players-current-age every-human >= feudal-age)
+    17| 	(can-research-with-escrow feudal-age)
+    18| =>
+    19| 	(release-escrow food)
+    20| 	(research feudal-age)
+    21| 	(set-goal age-advancement NOTICE)
+    22| 	(enable-timer t-ageup 300)
+    23| )
+    24| 
+    25| (defrule
+    26| 	(current-age == feudal-age)
+    27| =>
+    28| 	(disable-timer t-ageup)
+    29| 	(set-goal age-advancement NO)
+    30| 	(disable-self)
+    31| )
+    32| 
+    33| (defrule
+    34| 	(goal age-advancement NO)
+    35| 	(players-current-age every-human >= castle-age)
+    36| 	(can-research-with-escrow castle-age)
+    37| =>
+    38| 	(release-escrow food)
+    39| 	(release-escrow gold)
+    40| 	(research castle-age)

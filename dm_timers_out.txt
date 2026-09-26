@@ -1,0 +1,738 @@
+======================================================================
+x1_drs/anib_60002.bin (2884 lines)
+--- defconst lines ---
+--- timer names seen ---
+   t-ageup t-lumbercamp
+--- (true) rules (first 6) ---
+      12| 	(true)
+      13| =>
+      14| 	(set-goal military-parity YES)	;goal 3
+      15| 	(set-goal attack-control NO)	;goal 4
+      16| 	(set-goal need-deathmatch-villagers NO)	;goal 7
+      17| 
+      18| 	(set-goal secondary-build 1)	;goal 8
+      19| 	(set-goal soldiers-available NO);goal 10
+   ---
+      30| 	(true)
+      31| =>
+      32| 	(set-goal pre-unique-arm NO)	;goal 17
+      33| 	(set-goal wonder-attempt MAYBE)	;goal 20
+      34| 	(set-goal sea-owner NO)			;goal 23
+      35| 	(set-goal enemy-soldiers NO)	;goal 26
+      36| 	(set-goal siege-available YES)	;goal 34
+      37| 	(disable-self)
+   ---
+     454| 	(true)
+     455| =>
+     456| 	(set-goal combat-arm CAVALRY)
+     457| 	(set-goal monk-rating GOOD)
+     458| 	(set-goal 36 YES)
+     459| 	(set-goal 37 2)
+     460| 	(set-goal 38 YES)
+     461| 	(set-goal 39 YES)
+   ---
+     537| 	(true)
+     538| =>
+     539| 	(set-goal combat-arm INFANTRY)
+     540| 	(set-goal monk-rating POOR)
+     541| 	(set-goal 36 2)
+     542| 	(set-goal 37 YES)
+     543| 	(set-goal 38 YES)
+     544| 	(set-goal 39 NO)
+   ---
+     629| 	(true)
+     630| =>
+     631| 	(set-goal combat-arm ARCHER)
+     632| 	(set-goal monk-rating FAIR)
+     633| 	(set-goal 36 YES)
+     634| 	(set-goal 37 NO)
+     635| 	(set-goal 38 YES)
+     636| 	(set-goal 39 2)
+   ---
+     703| 	(true)
+     704| =>
+     705| 	(set-goal combat-arm INFANTRY)
+     706| 	(set-goal monk-rating FAIR)
+     707| 	(set-goal 36 2)
+     708| 	(set-goal 37 YES)
+     709| 	(set-goal 38 YES)
+     710| 	(set-goal 39 NO)
+   ---
+
+======================================================================
+x1_drs/anib_60001.bin (1387 lines)
+--- defconst lines ---
+--- timer names seen ---
+   t-ageup t-chatmore t-lumbercamp t-production
+--- (true) rules (first 6) ---
+       3| 	(true)
+       4| =>
+       5| 	(set-goal military-parity YES)	;goal 3
+       6| 	(set-goal attack-control NO)	;goal 4
+       7| 	(set-goal resource-needed NO)	;goal 5
+       8| 
+       9| 	(set-goal rush-control NOTICE)	;goal 6
+      10| 	(set-goal secondary-build NO)	;goal 8
+   ---
+      22| 	(true)
+      23| =>
+      24| 	(set-goal upgrade-conflict NO)	;goal 16
+      25| 	(set-goal wonder-attempt MAYBE)	;goal 20
+      26| 	(set-goal sea-owner NO)			;goal 23
+      27| 	(set-goal enemy-soldiers NO)	;goal 26
+      28| 
+      29| 	(set-goal get-mad NO)			;goal 28
+   ---
+      49| 	(true)
+      50| =>
+      51| 	(set-strategic-number sn-coop-share-information 1)
+      52| 	(set-strategic-number sn-coop-share-attacking 1)
+      53| 	(set-strategic-number sn-maximum-town-size 15)
+      54| 
+      55| 	(set-strategic-number sn-task-ungrouped-soldiers 0)
+      56| 	(set-strategic-number sn-zero-priority-distance 250)
+   ---
+      70| 	(true)
+      71| =>
+      72| 	(set-strategic-number sn-stone-dropsite-distance 3)
+      73| 	(set-strategic-number sn-gold-dropsite-distance 3)
+      74| 	(set-strategic-number sn-retask-gather-amount 20)
+      75| 	(set-strategic-number sn-camp-max-distance 20)
+      76| 
+      77| 	(set-strategic-number sn-mill-max-distance 20)
+   ---
+      87| 	(true)
+      88| =>
+      89| 	(set-strategic-number sn-town-defend-priority 1)
+      90| 	(set-strategic-number sn-gold-defend-priority 2)
+      91| 	(set-strategic-number sn-stone-defend-priority 3)
+      92| 
+      93| 	(set-strategic-number sn-forage-defend-priority 0)
+      94| 	(set-strategic-number sn-relic-defend-priority 0)
+   ---
+     111| 	(true)
+     112| =>
+     113| 	(set-strategic-number sn-maximum-wood-drop-distance 20)
+     114| 	(set-strategic-number sn-maximum-food-drop-distance 8)
+     115| 	(set-strategic-number sn-maximum-hunt-drop-distance 30)
+     116| 
+     117| 	(set-strategic-number sn-maximum-fish-boat-drop-distance 30)
+     118| 	(set-strategic-number sn-maximum-gold-drop-distance 20)
+   ---
+
+======================================================================
+x1_drs/anib_60029.bin (2582 lines)
+--- defconst lines ---
+--- timer names seen ---
+   t-attackgroup t-chatmore t-production
+--- (true) rules (first 6) ---
+      12| 	(true)
+      13| =>
+      14| 	(set-goal military-parity NO)	;goal 3
+      15| 	(set-goal attack-control NO)	;goal 4
+      16| 	(set-goal need-deathmatch-villagers NO)	;goal 7
+      17| 
+      18| 	(set-goal secondary-build YES)	;goal 8
+      19| 	(set-goal soldiers-available NO);goal 10
+   ---
+      31| 	(true)
+      32| =>
+      33| 	(set-goal upgrade-conflict NO)	;goal 16
+      34| 	(set-goal pre-unique-arm NO)	;goal 17
+      35| 	(set-goal sea-owner NO)			;goal 23
+      36| 
+      37| 	(set-goal siege-available YES)	;goal 34
+      38| 	(disable-self)
+   ---
+     274| 	(true)
+     275| =>
+     276| 	(set-goal combat-supp NO)
+     277| )
+     278| 
+     279| ;*********************************************************
+     280| ;production routine
+     281| (defrule
+   ---
+     449| 	(true)
+     450| =>
+     451| 	(set-goal monk-rating GOOD)
+     452| 	(set-goal siege-rating FAIR)
+     453| 	(disable-self)
+     454| )
+     455| 
+     456| (defrule
+   ---
+     526| 	(true)
+     527| =>
+     528| 	(set-goal monk-rating FAIR)
+     529| 	(set-goal siege-rating POOR)
+     530| 	(disable-self)
+     531| )
+     532| 
+     533| (defrule
+   ---
+     575| 	(true)
+     576| =>
+     577| 	(set-goal monk-rating FAIR)
+     578| 	(set-goal siege-rating FAIR)
+     579| 	(disable-self)
+     580| )
+     581| 
+     582| (defrule
+   ---
+
+======================================================================
+x1_drs/anib_60027.bin (629 lines)
+--- defconst lines ---
+       3| 	(defconst NO 0)		 ;Used to indicate not set or initial value (as Normal)
+       4| 	(defconst YES 1)		 ;Used to indicate set
+       5| 	(defconst NORMAL 0)	 ;Used for default values
+       6| 	(defconst NOTICE 99)  ;Used for special highlight or initialization values that should be set
+       9| 	(defconst EXCELLENT 99); For any rating-type value highest to lowest
+      10| 	(defconst GOOD	70)
+      11| 	(defconst MEDIUM 50)
+      12| 	(defconst FAIR 30)
+      13| 	(defconst POOR 10)
+      16| 	(defconst INFANTRY 1)
+      17| 	(defconst CAVALRY 2)
+      18| 	(defconst LIGHTCAV 3)
+      19| 	(defconst CAVARCHER 4)
+      20| 	(defconst ARCHER 5)
+      21| 	(defconst EAGLEMAN 6)
+      22| 	(defconst SCORPION 12)
+      23| 	(defconst UNIQUE 13)
+      24| 	(defconst UNIT20 20) ;SP - wasn't sure what 20 was used for in combat-arm and combat-supp
+      27| 	(defconst boat-strategy 1)
+      28| 	(defconst SOMEBOATS 1)	;this actually means we're on a water map
+      29| 	(defconst MANYBOATS 10)	; this actually means we're on an islands map
+      32| 	(defconst boats-needed 2)
+      33| 	(defconst WARSHIPS 1)	;I don't think this is used any more
+      34| 	(defconst CONTROL 2)
+      37| 	(defconst military-parity 3)
+      39| 	(defconst SUPERIOR 2)
+      42| 	(defconst attack-control 4)
+      50| 	(defconst resource-needed 5)
+      51| 	(defconst WOOD 1)
+      52| 	(defconst FOOD 2)
+      53| 	(defconst GOLD 3)
+      54| 	(defconst STONE 4)
+      55| 	;(defconst GOLD-STONE 5) this means you want both gold & stone
+      58| 	(defconst rush-control 6)
+      59| 	(defconst FEUDAL 2) ;we have just eliminated this as too puny
+      60| 	(defconst CASTLE 3)
+      61| 	(defconst IMPERIAL 4)
+      62| 	(defconst RUSHING 10)
+      63| 	(defconst BOOMING 18)
+      64| 	(defconst FEEDING 19)
+      66| 	(defconst need-deathmatch-villagers 7)
+      69| 	(defconst secondary-build 8)
+      73| 	(defconst resource-supp 9)
+      74| 	(defconst FOOD-ONLY 2)
+      75| 	(defconst GOLD-ONLY 3)
+      76| 	(defconst WOOD-FOOD 12)
+      77| 	(defconst WOOD-GOLD 13)
+      78| 	(defconst WOOD-STONE 14)
+      79| 	(defconst FOOD-GOLD 23)
+      80| 	(defconst FOOD-STONE 24)
+      82| 	(defconst soldiers-available 10)
+      84| 	(defconst combat-arm  11)
+      96| 	(defconst combat-supp 12)
+     100| 	(defconst attack-enabled 13)
+     104| 			(defconst age-advancement 14) ; Uses NO, NOTICE
+     111| 			(defconst make-warboat 15) ; Uses NO, YES
+     114| 			(defconst upgrade-conflict 16)
+     117| 			(defconst pre-unique-arm 17)
+     127| 			(defconst personality 18)
+     128| 			(defconst FEEDER 1)
+     129| 			(defconst BOOMER 2)
+     130| 			(defconst BULLY  3) ;m
+     131| 			(defconst LIAR 4)
+     132| 			(defconst ALLY 5) ;m
+     133| 			(defconst SENTTRIBUTE 10) ;SP - not sure about this one, check and correct
+     139| 			(defconst TRADENEUTRAL 50) ;SP - not sure about this one, check and correct
+     142| 			(defconst make-villagers 19)
+     144| 			(defconst wonder-attempt 20) ; Uses NO, YES, POSSIBLE, MAYBE, NOTICE
+     145| 			(defconst POSSIBLE 10)
+     146| 			(defconst MAYBE 90)		  ;SP:Not sure on this one, took a guess.
+     149| 			(defconst ATTACK 1)	;kill the wonder
+     150| 			(defconst DEFEND 0) ;save the wonder
+     152| 			(defconst castle-attempt 21) ; Uses: NO, YES
+     160| 			(defconst sea-owner 23) ; Uses: NO, YES, NOTICE
+     168| 			(defconst CASTLE-AGE-WOOD 11)
+     169| 			(defconst CASTLE-AGE-FOOD 12)
+     170| 			(defconst CASTLE-AGE-GOLD 13)
+     171| 			(defconst CASTLE-AGE-STONE 14)
+     172| 			(defconst IMPERIAL-AGE-WOOD 21)
+     173| 			(defconst IMPERIAL-AGE-FOOD 22)
+     174| 			(defconst IMPERIAL-AGE-GOLD 23)
+     175| 			(defconst IMPERIAL-AGE-STONE 24)
+     177| 			(defconst enemy-soldiers 26) ;the number given is app the enemy's size
+     178| 			(defconst siege-rating 26) ;uses GOOD, FAIR, POOR -- used only in wonder-kill
+     180| 			(defconst monk-rating 27)  ;Uses: GOOD, FAIR, NO
+     184| 			(defconst get-mad 28)
+     186| 			(defconst ANGRY 2)
+     187| 			(defconst ANGRIER 3)
+     188| 			(defconst ANGRIEST 4)
+     191| 			(defconst make-fire-boat 30) ; Uses: NO, YES
+     194| 			(defconst infantry-upgrades 31)
+     199| 			(defconst archer-upgrades 32)
+     204| 			(defconst cav-upgrades 33)
+     209| 			(defconst siege-available 34)
+     217| 			(defconst wall-build 40) ; Uses: NO, YES, NOTICE
+     232| (defconst t-tribute 1)
+     233| (defconst t-attackgroup 2)
+     234| (defconst t-production 3)
+     235| (defconst t-chat 5)
+     236| (defconst t-chathelp 6)
+     237| (defconst t-tower 7)
+     238| (defconst t-chatmore 8)
+     239| (defconst t-lumbercamp 9)
+     240| (defconst t-ageup 10)
+     244| (defconst civ-dark-rush 10)
+     245| (defconst civ-dark 11)
+     246| (defconst civ-dark-mod 10)
+     247| (defconst civ-feudal-mod 12)
+     248| (defconst civ-feudal 13)
+     249| (defconst civ-castle 15)
+     250| (defconst pop-cap 25)
+     251| (defconst deathmatch-unit-max 13)
+     253| (defconst feudal-town-size 20)
+     254| (defconst castle-town-size 25)
+     255| (defconst imperial-town-size 25)
+     256| (defconst town-center-count 2)
+     259| (defconst unit-max 19)
+     263| (defconst unit-max 19)
+     267| (defconst unit-max 21)
+     271| (defconst unit-max 23)
+     275| (defconst unit-max 23)
+     278| (defconst five-percent-pop 1)
+     279| (defconst ten-percent-pop 3)
+     280| (defconst fifteen-percent-pop 4)
+     281| (defconst twenty-percent-pop 5)
+     282| (defconst thirty-percent-pop 8)
+     283| (defconst fifty-percent-pop 12)
+     287| (defconst civ-dark-rush 15)
+     288| (defconst civ-dark 20)
+     289| (defconst civ-dark-mod 15)
+     290| (defconst civ-feudal-mod 20)
+     291| (defconst civ-feudal 30)
+     292| (defconst civ-castle 35)
+     293| (defconst pop-cap 50)
+     294| (defconst deathmatch-unit-max 25)
+     296| (defconst feudal-town-size 20)
+     297| (defconst castle-town-size 25)
+     298| (defconst imperial-town-size 30)
+     299| (defconst town-center-count 3)
+     302| (defconst unit-max 35)
+     306| (defconst unit-max 35)
+     310| (defconst unit-max 40)
+     314| (defconst unit-max 45)
+     318| (defconst unit-max 45)
+     321| (defconst five-percent-pop 2)
+     322| (defconst ten-percent-pop 5)
+     323| (defconst fifteen-percent-pop 7)
+     324| (defconst twenty-percent-pop 10)
+     325| (defconst thirty-percent-pop 15)
+     326| (defconst fifty-percent-pop 25)
+     330| (defconst civ-dark-rush 20)
+     331| (defconst civ-dark 25)
+     332| (defconst civ-dark-mod 15)
+     333| (defconst civ-feudal-mod 20)
+     334| (defconst civ-feudal 35)
+     335| (defconst civ-castle 40)
+     336| (defconst pop-cap 75)
+     337| (defconst deathmatch-unit-max 55)
+     339| (defconst feudal-town-size 20)
+     340| (defconst castle-town-size 30)
+     341| (defconst imperial-town-size 30)
+     342| (defconst town-center-count 4)
+     345| (defconst unit-max 56)
+     349| (defconst unit-max 56)
+     353| (defconst unit-max 63)
+     357| (defconst unit-max 70)
+     361| (defconst unit-max 70)
+     364| (defconst five-percent-pop 3)
+     365| (defconst ten-percent-pop 8)
+     366| (defconst fifteen-percent-pop 10)
+     367| (defconst twenty-percent-pop 15)
+     368| (defconst thirty-percent-pop 23)
+     369| (defconst fifty-percent-pop 37)
+     373| (defconst civ-dark-rush 20)
+     374| (defconst civ-dark 25)
+     375| (defconst civ-dark-mod 15)
+     376| (defconst civ-feudal-mod 20)
+     377| (defconst civ-feudal 40)
+     378| (defconst civ-castle 50)
+     379| (defconst pop-cap 100)
+     380| (defconst deathmatch-unit-max 70)
+     382| (defconst feudal-town-size 20)
+     383| (defconst castle-town-size 30)
+     384| (defconst imperial-town-size 35)
+     385| (defconst town-center-count 5)
+     388| (defconst unit-max 70)
+     392| (defconst unit-max 70)
+     396| (defconst unit-max 80)
+     400| (defconst unit-max 90)
+     404| (defconst unit-max 90)
+     407| (defconst five-percent-pop 5)
+     408| (defconst ten-percent-pop 10)
+     409| (defconst fifteen-percent-pop 15)
+     410| (defconst twenty-percent-pop 20)
+     411| (defconst thirty-percent-pop 30)
+     412| (defconst fifty-percent-pop 50)
+     416| (defconst civ-dark-rush 20)
+     417| (defconst civ-dark 25)
+     418| (defconst civ-dark-mod 15)
+     419| (defconst civ-feudal-mod 20)
+     420| (defconst civ-feudal 40)
+     421| (defconst civ-castle 55)
+     422| (defconst pop-cap 125)
+     423| (defconst deathmatch-unit-max 95)
+     424| (defconst town-center-count 6)
+     426| (defconst feudal-town-size 20)
+     427| (defconst castle-town-size 35)
+     428| (defconst imperial-town-size 40)
+     431| (defconst unit-max 90)
+     435| (defconst unit-max 90)
+     439| (defconst unit-max 103)
+     443| (defconst unit-max 115)
+     447| (defconst unit-max 115)
+     450| (defconst five-percent-pop 6)
+     451| (defconst ten-percent-pop 13)
+     452| (defconst fifteen-percent-pop 18)
+     453| (defconst twenty-percent-pop 25)
+     454| (defconst thirty-percent-pop 38)
+     455| (defconst fifty-percent-pop 62)
+     459| (defconst civ-dark-rush 20)
+     460| (defconst civ-dark 25)
+     461| (defconst civ-dark-mod 15)
+     462| (defconst civ-feudal-mod 20)
+     463| (defconst civ-feudal 40)
+     464| (defconst civ-castle 60)
+     465| (defconst pop-cap 150)
+     466| (defconst deathmatch-unit-max 120)
+     468| (defconst feudal-town-size 20)
+     469| (defconst castle-town-size 35)
+     470| (defconst imperial-town-size 40)
+     471| (defconst town-center-count 7)
+     474| (defconst unit-max 110)
+     478| (defconst unit-max 110)
+     482| (defconst unit-max 125)
+     486| (defconst unit-max 140)
+     490| (defconst unit-max 140)
+     493| (defconst five-percent-pop 7)
+     494| (defconst ten-percent-pop 15)
+     495| (defconst fifteen-percent-pop 22)
+     496| (defconst twenty-percent-pop 30)
+     497| (defconst thirty-percent-pop 45)
+     498| (defconst fifty-percent-pop 75)
+     502| (defconst civ-dark-rush 20)
+     503| (defconst civ-dark 25)
+     504| (defconst civ-dark-mod 15)
+     505| (defconst civ-feudal-mod 20)
+     506| (defconst civ-feudal 40)
+     507| (defconst civ-castle 65)
+     508| (defconst pop-cap 175)
+     509| (defconst deathmatch-unit-max 145)
+     511| (defconst feudal-town-size 20)
+     512| (defconst castle-town-size 35)
+     513| (defconst imperial-town-size 40)
+     514| (defconst town-center-count 8)
+     517| (defconst unit-max 125)
+     521| (defconst unit-max 125)
+     525| (defconst unit-max 145)
+     529| (defconst unit-max 165)
+     533| (defconst unit-max 165)
+     536| (defconst five-percent-pop 8)
+     537| (defconst ten-percent-pop 18)
+     538| (defconst fifteen-percent-pop 27)
+     539| (defconst twenty-percent-pop 35)
+     540| (defconst thirty-percent-pop 53)
+     541| (defconst fifty-percent-pop 87)
+     545| (defconst civ-dark-rush 20)
+     546| (defconst civ-dark 25)
+     547| (defconst civ-dark-mod 15)
+     548| (defconst civ-feudal-mod 20)
+     549| (defconst civ-feudal 40)
+     550| (defconst civ-castle 70)
+     551| (defconst pop-cap 200)
+     552| (defconst deathmatch-unit-max 170)
+     554| (defconst feudal-town-size 20)
+     555| (defconst castle-town-size 35)
+     556| (defconst imperial-town-size 40)
+     557| (defconst town-center-count 9)
+     560| (defconst unit-max 130)
+     564| (defconst unit-max 130)
+     568| (defconst unit-max 160)
+     572| (defconst unit-max 190)
+     576| (defconst unit-max 190)
+     579| (defconst five-percent-pop 10)
+     580| (defconst ten-percent-pop 20)
+     581| (defconst fifteen-percent-pop 30)
+     582| (defconst twenty-percent-pop 40)
+     583| (defconst thirty-percent-pop 60)
+     584| (defconst fifty-percent-pop 100)
+     589| (defconst feudal-mill-count 1)
+     590| (defconst castle-mill-count 1)
+     591| (defconst imperial-mill-count 1)
+     592| (defconst mining-count 8)
+     596| (defconst feudal-mill-count 1)
+     597| (defconst castle-mill-count 1)
+     598| (defconst imperial-mill-count 1)
+     599| (defconst mining-count 8)
+     603| (defconst feudal-mill-count 1)
+     604| (defconst castle-mill-count 1)
+     605| (defconst imperial-mill-count 1)
+     606| (defconst mining-count 10)
+     610| (defconst feudal-mill-count 1)
+     611| (defconst castle-mill-count 1)
+     612| (defconst imperial-mill-count 2)
+     613| (defconst mining-count 11)
+     617| (defconst feudal-mill-count 1)
+     618| (defconst castle-mill-count 2)
+     619| (defconst imperial-mill-count 3)
+     620| (defconst mining-count 12)
+     624| (defconst feudal-mill-count 2)
+     625| (defconst castle-mill-count 3)
+     626| (defconst imperial-mill-count 4)
+     627| (defconst mining-count 15)
+--- timer names seen ---
+   t-ageup t-attackgroup t-chat t-chathelp t-chatmore t-lumbercamp t-production t-tower t-tribute
+--- (true) rules (first 6) ---
+   none
+
+======================================================================
+x1_drs/anib_60026.bin (52 lines)
+--- defconst lines ---
+--- timer names seen ---
+   
+--- (true) rules (first 6) ---
+   none
+
+======================================================================
+x1_drs/anib_60008.bin (223 lines)
+--- defconst lines ---
+--- timer names seen ---
+   t-ageup t-chatmore
+--- (true) rules (first 6) ---
+       4| 	(true)
+       5| =>
+       6| 	(set-strategic-number sn-percent-enemy-sighted-response 10)
+       7| 	(set-strategic-number sn-easiest-reaction-percentage 20)
+       8| 	(set-difficulty-parameter ability-to-maintain-distance 100)
+       9| 	(set-difficulty-parameter ability-to-dodge-missiles 100)
+      10| 	(disable-self)
+      11| )
+   ---
+      69| 	(true)
+      70| =>
+      71| 	(set-strategic-number sn-percent-enemy-sighted-response 25)
+      72| 	(set-strategic-number sn-easier-reaction-percentage 20)
+      73| 	(set-strategic-number sn-hits-before-alliance-change 50)
+      74| 	(set-difficulty-parameter ability-to-maintain-distance 75)
+      75| 	(set-difficulty-parameter ability-to-dodge-missiles 75)
+      76| 	(disable-self)
+   ---
+     156| 	(true)
+     157| =>
+     158| 	(set-strategic-number sn-percent-enemy-sighted-response 75)
+     159| 	(set-strategic-number sn-hits-before-alliance-change 25)
+     160| 	(set-difficulty-parameter ability-to-maintain-distance 50)
+     161| 	(set-difficulty-parameter ability-to-dodge-missiles 50)
+     162| 	(disable-self)
+     163| )
+   ---
+     173| 	(true)
+     174| =>
+     175| 	(set-strategic-number sn-percent-enemy-sighted-response 99)
+     176| 	(set-strategic-number sn-hits-before-alliance-change 10)
+     177| 	(set-difficulty-parameter ability-to-maintain-distance 25)
+     178| 	(set-difficulty-parameter ability-to-dodge-missiles 25)
+     179| 	(disable-self)
+     180| )
+   ---
+     191| 	(true)
+     192| =>
+     193| 	(set-strategic-number sn-percent-enemy-sighted-response 99)
+     194| 	(set-strategic-number sn-hits-before-alliance-change 10)
+     195| 	(set-difficulty-parameter ability-to-maintain-distance 0)
+     196| 	(set-difficulty-parameter ability-to-dodge-missiles 0)
+     197| 	(disable-self)
+     198| )
+   ---
+
+======================================================================
+x1_drs/anib_60007.bin (1164 lines)
+--- defconst lines ---
+--- timer names seen ---
+   t-ageup
+--- (true) rules (first 6) ---
+   none
+
+======================================================================
+aok_drs/anib_60002.bin (2445 lines)
+--- defconst lines ---
+--- timer names seen ---
+   t-ageup t-lumbercamp
+--- (true) rules (first 6) ---
+      76| 	(true)
+      77| =>
+      78| 	(set-goal combat-arm CAVALRY)
+      79| 	(set-goal 36 YES)
+      80| 	(set-goal 37 2)
+      81| 	(set-goal 38 YES)
+      82| 	(set-goal 39 YES)
+      83| 
+   ---
+     137| 	(true)
+     138| =>
+     139| 	(set-goal combat-arm INFANTRY)
+     140| 	(set-goal 36 2)
+     141| 	(set-goal 37 YES)
+     142| 	(set-goal 38 YES)
+     143| 	(set-goal 39 NO)
+     144| 
+   ---
+     231| 	(true)
+     232| =>
+     233| 	(set-goal combat-arm ARCHER)
+     234| 	(set-goal 36 YES)
+     235| 	(set-goal 37 NO)
+     236| 	(set-goal 38 YES)
+     237| 	(set-goal 39 2)
+     238| 
+   ---
+     304| 	(true)
+     305| =>
+     306| 	(set-goal combat-arm INFANTRY)
+     307| 	(set-goal 36 2)
+     308| 	(set-goal 37 YES)
+     309| 	(set-goal 38 YES)
+     310| 	(set-goal 39 NO)
+     311| 
+   ---
+     397| 	(true)
+     398| =>
+     399| 	(set-goal combat-arm INFANTRY)
+     400| 	(set-goal 36 2)
+     401| 	(set-goal 37 NO)
+     402| 	(set-goal 38 YES)
+     403| 	(set-goal 39 NO)
+     404| 
+   ---
+     470| 	(true)
+     471| =>
+     472| 	(set-goal combat-arm INFANTRY)
+     473| 	(set-goal 36 2)
+     474| 	(set-goal 37 NO)
+     475| 	(set-goal 38 YES)
+     476| 	(set-goal 39 YES)
+     477| 
+   ---
+
+======================================================================
+aok_drs/anib_60027.bin (233 lines)
+--- defconst lines ---
+       3| 	(defconst NO 0)		 ;Used to indicate not set or initial value (as Normal)
+       4| 	(defconst YES 1)		 ;Used to indicate set
+       5| 	(defconst NORMAL 0)	 ;Used for default values
+       6| 	(defconst NOTICE 99)  ;Used for special highlight or initialization values that should be set
+       9| 	(defconst EXCELLENT 100); For any rating-type value highest to lowest
+      10| 	(defconst GOOD	70)
+      11| 	(defconst MEDIUM 50)
+      12| 	(defconst FAIR 30)
+      13| 	(defconst POOR 10)
+      16| 	(defconst INFANTRY 1)
+      17| 	(defconst CAVALRY 2)
+      18| 	(defconst LIGHTCAV 3)
+      19| 	(defconst CAVARCHER 4)
+      20| 	(defconst ARCHER 5)
+      21| 	(defconst SCORPION 12)
+      22| 	(defconst UNIQUE 13)
+      23| 	(defconst UNIT20 20) ;SP - wasn't sure what 20 was used for in combat-arm and combat-supp
+      26| 	(defconst boat-strategy 1)
+      27| 	(defconst SOMEBOATS 1)	;this actually means we're on a water map
+      28| 	(defconst MANYBOATS 10)	; this actually means we're on an islands map
+      31| 	(defconst boats-needed 2)
+      32| 	(defconst WARSHIPS 1)	;I don't think this is used any more
+      33| 	(defconst CONTROL 2)
+      36| 	(defconst military-parity 3)
+      38| 	(defconst SUPERIOR 2)
+      41| 	(defconst attack-control 4)
+      49| 	(defconst resource-needed 5)
+      50| 	(defconst WOOD 1)
+      51| 	(defconst FOOD 2)
+      52| 	(defconst GOLD 3)
+      53| 	(defconst STONE 4)
+      54| 	;(defconst GOLD-STONE 5) this means you want both gold & stone
+      57| 	(defconst rush-control 6)
+      58| 	(defconst FEUDAL 2) ;we have just eliminated this as too puny
+      59| 	(defconst CASTLE 3)
+      60| 	(defconst IMPERIAL 4)
+      61| 	(defconst RUSHING 10)
+      62| 	(defconst BOOMING 18)
+      63| 	(defconst FEEDING 19)
+      65| 	(defconst need-deathmatch-villagers 7)
+      68| 	(defconst secondary-build 8)
+      72| 	(defconst resource-supp 9)
+      73| 	(defconst FOOD-ONLY 2)
+      74| 	(defconst GOLD-ONLY 3)
+      75| 	(defconst WOOD-FOOD 12)
+      76| 	(defconst WOOD-GOLD 13)
+      77| 	(defconst WOOD-STONE 14)
+      78| 	(defconst FOOD-GOLD 23)
+      79| 	(defconst FOOD-STONE 24)
+      81| 	(defconst soldiers-available 10)
+      83| 	(defconst combat-arm  11)
+      94| 	(defconst combat-supp SCORPION)
+     100| 		   (defconst boat-prod 13)
+     103| 			(defconst age-advancement 14) ; Uses NO, NOTICE
+     110| 			(defconst make-warboat 15) ; Uses NO, YES
+     113| 			(defconst upgrade-conflict 16)
+     116| 			(defconst pre-unique-arm 17)
+     126| 			(defconst personality 18)
+     127| 			(defconst FEEDER 1)
+     128| 			(defconst BOOMER 2)
+     129| 			(defconst BULLY  3) ;m
+     130| 			(defconst LIAR 4)
+     131| 			(defconst ALLY 5) ;m
+     132| 			(defconst SENTTRIBUTE 10) ;SP - not sure about this one, check and correct
+     138| 			(defconst TRADENEUTRAL 50) ;SP - not sure about this one, check and correct
+     142| 			(defconst wonder-attempt 20) ; Uses NO, YES, POSSIBLE, MAYBE, NOTICE
+     143| 			(defconst POSSIBLE 10)
+     144| 			(defconst MAYBE 90)		  ;SP:Not sure on this one, took a guess.
+     147| 			(defconst castle-attempt 21) ; Uses: NO, YES
+     155| 			(defconst sea-owner 23) ; Uses: NO, YES, NOTICE
+     161| 			(defconst CASTLE-AGE-WOOD 11)
+     162| 			(defconst CASTLE-AGE-FOOD 12)
+     163| 			(defconst CASTLE-AGE-GOLD 13)
+     164| 			(defconst CASTLE-AGE-STONE 14)
+     165| 			(defconst IMPERIAL-AGE-WOOD 21)
+     166| 			(defconst IMPERIAL-AGE-FOOD 22)
+     167| 			(defconst IMPERIAL-AGE-GOLD 23)
+     168| 			(defconst IMPERIAL-AGE-STONE 24)
+     170| 			(defconst enemy-soldiers 26) ;the number given is app the enemy's size
+     172| 			(defconst monk-rating 27)  ;Uses: GOOD, FAIR, NO
+     177| 			(defconst get-mad 28)
+     179| 			(defconst ANGRY 2)
+     180| 			(defconst ANGRIER 3)
+     181| 			(defconst ANGRIEST 4)
+     184| 			(defconst make-fire-boat 30) ; Uses: NO, YES
+     187| 			(defconst infantry-upgrades 31)
+     192| 			(defconst archer-upgrades 32)
+     197| 			(defconst cav-upgrades 33)
+     202| 			(defconst siege-available 34)
+     210| 			(defconst wall-build 40) ; Uses: NO, YES, NOTICE
+     224| (defconst t-tribute 1)
+     225| (defconst t-attackgroup 2)
+     226| (defconst t-production 3)
+     227| (defconst t-chat 5)
+     228| (defconst t-chathelp 6)
+     229| (defconst t-tower 7)
+     230| (defconst t-chatmore 8)
+     231| (defconst t-lumbercamp 9)
+     232| (defconst t-ageup 10)
+--- timer names seen ---
+   t-ageup t-attackgroup t-chat t-chathelp t-chatmore t-lumbercamp t-production t-tower t-tribute
+--- (true) rules (first 6) ---
+   none

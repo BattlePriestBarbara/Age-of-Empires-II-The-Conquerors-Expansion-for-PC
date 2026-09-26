@@ -1,0 +1,98 @@
+=== every 'petersen' string and its address
+   @0x00783bf0 (file 0x00383bf0)  'petersen constants.per'
+   @0x00783c18 (file 0x00383c18)  'petersen rush.per'
+   @0x00783c2c (file 0x00383c2c)  'petersen warboat island.per'
+   @0x00783c48 (file 0x00383c48)  'petersen dip bully.per'
+   @0x00783c60 (file 0x00383c60)  'petersen dip insult.per'
+   @0x00783c78 (file 0x00383c78)  'petersen groups.per'
+   @0x00783c8c (file 0x00383c8c)  'petersen dip feeder.per'
+   @0x00783ca4 (file 0x00383ca4)  'petersen gather.per'
+   @0x00783cb8 (file 0x00383cb8)  'petersen dip boomer.per'
+   @0x00783cd0 (file 0x00383cd0)  'petersen market.per'
+   @0x00783ce4 (file 0x00383ce4)  'petersen wonder.per'
+   @0x00783cf8 (file 0x00383cf8)  'petersen resign.per'
+   @0x00783d0c (file 0x00383d0c)  'petersen castle.per'
+   @0x00783d20 (file 0x00383d20)  'petersen diplomacy.per'
+   @0x00783d38 (file 0x00383d38)  'petersen tower.per'
+   @0x00783d4c (file 0x00383d4c)  'petersen civ loads.per'
+   @0x00783d64 (file 0x00383d64)  'petersen map loads.per'
+   @0x00783d7c (file 0x00383d7c)  'petersen full tech.per'
+   @0x00783d94 (file 0x00383d94)  'petersen difficulty loads.per'
+   @0x00783db4 (file 0x00383db4)  'petersen supplement.per'
+   @0x00783dcc (file 0x00383dcc)  'petersen warboat.per'
+   @0x00783de4 (file 0x00383de4)  'petersen dip liar.per'
+   @0x00783dfc (file 0x00383dfc)  'petersen fishboat.per'
+   @0x00783e14 (file 0x00383e14)  'petersen upgrades.per'
+   @0x00783e2c (file 0x00383e2c)  'petersen deathmatch.per'
+   @0x00783e44 (file 0x00383e44)  'ai petersen rules.per'
+
+=== every '.per' string
+   @0x0077e249  '*.ai;*.per'
+   @0x00781de0  '%s%s.per'
+   @0x00783bd0  'wonder kill.per'
+   @0x00783be0  'wonder rush.per'
+   @0x00783bf0  'petersen constants.per'
+   @0x00783c08  'randomgame.per'
+   @0x00783c18  'petersen rush.per'
+   @0x00783c2c  'petersen warboat island.per'
+   @0x00783c48  'petersen dip bully.per'
+   @0x00783c60  'petersen dip insult.per'
+   @0x00783c78  'petersen groups.per'
+   @0x00783c8c  'petersen dip feeder.per'
+   @0x00783ca4  'petersen gather.per'
+   @0x00783cb8  'petersen dip boomer.per'
+   @0x00783cd0  'petersen market.per'
+   @0x00783ce4  'petersen wonder.per'
+   @0x00783cf8  'petersen resign.per'
+   @0x00783d0c  'petersen castle.per'
+   @0x00783d20  'petersen diplomacy.per'
+   @0x00783d38  'petersen tower.per'
+   @0x00783d4c  'petersen civ loads.per'
+   @0x00783d64  'petersen map loads.per'
+   @0x00783d7c  'petersen full tech.per'
+   @0x00783d94  'petersen difficulty loads.per'
+   @0x00783db4  'petersen supplement.per'
+   @0x00783dcc  'petersen warboat.per'
+   @0x00783de4  'petersen dip liar.per'
+   @0x00783dfc  'petersen fishboat.per'
+   @0x00783e14  'petersen upgrades.per'
+   @0x00783e2c  'petersen deathmatch.per'
+   @0x00783e44  'ai petersen rules.per'
+
+=== strings mentioning 'AI' as a path / extension
+
+=== the AI-name table region around the .per names (hex+ascii)
+   'petersen deathmatch.per' @0x00783e2c
+
+=== data refs (absolute VA) to each .per name -> code that uses the table
+   *.ai;*.per                   VA 0x0077e249 refs=0 
+   %s%s.per                     VA 0x00781de0 refs=5 0x00508d28 0x005ab403 0x005ab50f 0x005ab5a8 0x005ab608
+   wonder kill.per              VA 0x00783bd0 refs=1 0x00543c00
+   wonder rush.per              VA 0x00783be0 refs=1 0x00543be7
+   petersen constants.per       VA 0x00783bf0 refs=1 0x00543bd1
+   randomgame.per               VA 0x00783c08 refs=1 0x00543bbb
+   petersen rush.per            VA 0x00783c18 refs=1 0x00543ba5
+   petersen warboat island.per  VA 0x00783c2c refs=1 0x00543b8c
+   petersen dip bully.per       VA 0x00783c48 refs=1 0x00543b76
+   petersen dip insult.per      VA 0x00783c60 refs=1 0x00543b60
+   petersen groups.per          VA 0x00783c78 refs=1 0x00543b4a
+   petersen dip feeder.per      VA 0x00783c8c refs=1 0x00543b31
+   petersen gather.per          VA 0x00783ca4 refs=1 0x00543b1b
+   petersen dip boomer.per      VA 0x00783cb8 refs=1 0x00543b05
+   petersen market.per          VA 0x00783cd0 refs=1 0x00543aef
+   petersen wonder.per          VA 0x00783ce4 refs=1 0x00543ad6
+   petersen resign.per          VA 0x00783cf8 refs=1 0x00543ac0
+   petersen castle.per          VA 0x00783d0c refs=1 0x00543aaa
+   petersen diplomacy.per       VA 0x00783d20 refs=1 0x00543a94
+   petersen tower.per           VA 0x00783d38 refs=1 0x00543a7b
+   petersen civ loads.per       VA 0x00783d4c refs=1 0x00543a65
+   petersen map loads.per       VA 0x00783d64 refs=1 0x00543a4f
+   petersen full tech.per       VA 0x00783d7c refs=1 0x00543a39
+   petersen difficulty loads.per VA 0x00783d94 refs=1 0x00543a20
+   petersen supplement.per      VA 0x00783db4 refs=1 0x00543a0a
+   petersen warboat.per         VA 0x00783dcc refs=1 0x005439f4
+   petersen dip liar.per        VA 0x00783de4 refs=1 0x005439de
+   petersen fishboat.per        VA 0x00783dfc refs=1 0x005439c5
+   petersen upgrades.per        VA 0x00783e14 refs=1 0x005439af
+   petersen deathmatch.per      VA 0x00783e2c refs=1 0x00543999
+   ai petersen rules.per        VA 0x00783e44 refs=1 0x00543983

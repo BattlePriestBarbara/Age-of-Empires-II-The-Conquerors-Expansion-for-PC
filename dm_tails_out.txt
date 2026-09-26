@@ -1,0 +1,374 @@
+60002 total lines=2884  total bytes=54203
+
+=== 60002 last 45 lines ===
+ 2840| 	(can-sell-commodity food)
+ 2841| =>
+ 2842| 	(chat-local-to-self "need gold; sell food")
+ 2843| 	(sell-commodity food)
+ 2844| )
+ 2845| 
+ 2846| (defrule
+ 2847| 	(gold-amount < 1200)
+ 2848| 	(stone-amount > 1000)
+ 2849| 	(building-type-count-total castle >= 5)
+ 2850| 	(can-sell-commodity stone)
+ 2851| =>
+ 2852| 	(chat-local-to-self "need gold; sell stone")
+ 2853| 	(sell-commodity stone)
+ 2854| )
+ 2855| 
+ 2856| (defrule
+ 2857| 	(stone-amount < 650)
+ 2858| 	(gold-amount > 5000)
+ 2859| 	(building-type-count-total castle < 5)
+ 2860| 	(can-buy-commodity stone)
+ 2861| =>
+ 2862| 	(chat-local-to-self "need stone")
+ 2863| 	(buy-commodity stone)
+ 2864| )
+ 2865| 
+ 2866| (defrule
+ 2867| 	(wood-amount < 1100)
+ 2868| 	(gold-amount > 5000)
+ 2869| 	(can-buy-commodity wood)
+ 2870| =>
+ 2871| 	(chat-local-to-self "need wood")
+ 2872| 	(buy-commodity wood)
+ 2873| )
+ 2874| 
+ 2875| (defrule
+ 2876| 	(food-amount < 1600)
+ 2877| 	(gold-amount > 5000)
+ 2878| 	(can-buy-commodity food)
+ 2879| =>
+ 2880| 	(chat-local-to-self "need food")
+ 2881| 	(buy-commodity food)
+ 2882| )
+ 2883| 
+ 2884| 
+
+=== 60002 last 6 preprocessor lines ===
+   41| #load-if-defined AZTEC-CIV
+   97| #end-if
+   99| #load-if-defined HUN-CIV
+  160| #end-if
+  162| #load-if-defined KOREAN-CIV
+  219| #end-if
+  221| #load-if-defined MAYAN-CIV
+  278| #end-if
+  280| #load-if-defined SPANISH-CIV
+  391| #end-if
+  393| #load-if-defined BRITON-CIV
+  449| #end-if
+  451| #load-if-defined BYZANTINE-CIV
+  532| #end-if
+  534| #load-if-defined CELTIC-CIV
+  624| #end-if
+  626| #load-if-defined CHINESE-CIV
+  698| #end-if
+  700| #load-if-defined FRANKISH-CIV
+  789| #end-if
+  791| #load-if-defined GOTHIC-CIV
+  863| #end-if
+  865| #load-if-defined JAPANESE-CIV
+  941| #end-if
+  943| #load-if-defined MONGOL-CIV
+  999| #end-if
+ 1001| #load-if-defined PERSIAN-CIV
+ 1062| #end-if
+ 1064| #load-if-defined SARACEN-CIV
+ 1141| #end-if
+ 1143| #load-if-defined TEUTONIC-CIV
+ 1199| #end-if
+ 1201| #load-if-defined TURKISH-CIV
+ 1273| #end-if
+ 1275| #load-if-defined VIKING-CIV
+ 1347| #end-if
+ 1350| #load-if-defined DIFFICULTY-EASIEST
+ 1361| #end-if
+ 1363| #load-if-defined DIFFICULTY-EASY
+ 1377| #end-if
+ 1380| #load-if-defined DIFFICULTY-MODERATE
+ 1394| #end-if
+ 1397| #load-if-defined DIFFICULTY-HARD
+ 1411| #end-if
+ 1414| #load-if-defined DIFFICULTY-HARDEST
+ 1427| #end-if
+ 1682| #load-if-defined DIFFICULTY-EASIEST
+ 1691| #end-if
+ 1693| #load-if-defined DIFFICULTY-EASY
+ 1702| #end-if
+
+=== 60002 first 40 lines ===
+    1| ;goals 1 and 2 = boats
+    2| ;goal 3 = groups
+    3| ;goal combat-arm = his unique unit type (also loads correct upgrades)
+    4| ;goal 36 = good infantry -- 36 NO = don't build, YES = build, 
+    5| ;	2 = only build if we don't have a castle. 
+    6| ;goal 37 = good cavalry
+    7| ;goal 38 = good horse-archers
+    8| ;goal 39 = good archers
+    9| 
+   10| ;starting goals
+   11| (defrule
+   12| 	(true)
+   13| =>
+   14| 	(set-goal military-parity YES)	;goal 3
+   15| 	(set-goal attack-control NO)	;goal 4
+   16| 	(set-goal need-deathmatch-villagers NO)	;goal 7
+   17| 
+   18| 	(set-goal secondary-build 1)	;goal 8
+   19| 	(set-goal soldiers-available NO);goal 10
+   20| 	(set-goal attack-enabled YES)	;goal 13
+   21| 	(set-goal age-advancement NO)	;goal 14
+   22| 
+   23| 	(set-goal make-warboat NO)		;goal 15
+   24| 	(set-goal upgrade-conflict NO)	;goal 16
+   25| 
+   26| 	(disable-self)
+   27| )
+   28| 
+   29| (defrule
+   30| 	(true)
+   31| =>
+   32| 	(set-goal pre-unique-arm NO)	;goal 17
+   33| 	(set-goal wonder-attempt MAYBE)	;goal 20
+   34| 	(set-goal sea-owner NO)			;goal 23
+   35| 	(set-goal enemy-soldiers NO)	;goal 26
+   36| 	(set-goal siege-available YES)	;goal 34
+   37| 	(disable-self)
+   38| )
+   39| 
+   40| ;*********************************************************
+
+
+=== 60007 (supplement) preprocessor + DEATH-MATCH context ===
+60007 total lines=1164 bytes=26355
+  365| #load-if-not-defined DEATH-MATCH
+  441| #end-if
+ 1113| #load-if-defined SPANISH-CIV
+ 1162| #end-if
+
+=== 60007 last 30 lines ===
+ 1135| 	(current-age == imperial-age)
+ 1136| 	(difficulty <= moderate)
+ 1137| 	(unit-type-count-total missionary < ten-percent-pop)
+ 1138| 	(or
+ 1139| 		(goal monk-rating GOOD)
+ 1140| 		(and
+ 1141| 			(goal monk-rating FAIR)
+ 1142| 			(gold-amount >= 300)
+ 1143| 		)
+ 1144| 	)
+ 1145| 	(can-train missionary)
+ 1146| =>
+ 1147| 	(train missionary)
+ 1148| )
+ 1149| 
+ 1150| ;if we have lots of gold, build monks sans restraint
+ 1151| (defrule
+ 1152| 	(goal siege-available YES)
+ 1153| 	(goal monk-rating GOOD)
+ 1154| 	(difficulty <= moderate)
+ 1155| 	(soldier-count > ten-percent-pop)
+ 1156| 	(gold-amount >= 300)
+ 1157| 	(unit-type-count-total missionary < fifteen-percent-pop)
+ 1158| 	(can-train missionary)
+ 1159| =>
+ 1160| 	(train missionary)
+ 1161| )
+ 1162| #end-if
+ 1163| 
+ 1164| 
+
+
+=== 60027 (constants) unit-max / deathmatch-unit-max blocks ===
+60027 total lines=629 bytes=19383
+  243| #load-if-defined POPULATION-CAP-25
+  251| (defconst deathmatch-unit-max 13)
+  258| #load-if-defined DIFFICULTY-EASIEST
+  259| (defconst unit-max 19)
+  260| #end-if
+  262| #load-if-defined DIFFICULTY-EASY
+  263| (defconst unit-max 19)
+  264| #end-if
+  266| #load-if-defined DIFFICULTY-MODERATE
+  267| (defconst unit-max 21)
+  268| #end-if
+  270| #load-if-defined DIFFICULTY-HARD
+  271| (defconst unit-max 23)
+  272| #end-if
+  274| #load-if-defined DIFFICULTY-HARDEST
+  275| (defconst unit-max 23)
+  276| #end-if
+  284| #end-if
+  286| #load-if-defined POPULATION-CAP-50
+  294| (defconst deathmatch-unit-max 25)
+  301| #load-if-defined DIFFICULTY-EASIEST
+  302| (defconst unit-max 35)
+  303| #end-if
+  305| #load-if-defined DIFFICULTY-EASY
+  306| (defconst unit-max 35)
+  307| #end-if
+  309| #load-if-defined DIFFICULTY-MODERATE
+  310| (defconst unit-max 40)
+  311| #end-if
+  313| #load-if-defined DIFFICULTY-HARD
+  314| (defconst unit-max 45)
+  315| #end-if
+  317| #load-if-defined DIFFICULTY-HARDEST
+  318| (defconst unit-max 45)
+  319| #end-if
+  327| #end-if
+  329| #load-if-defined POPULATION-CAP-75
+  337| (defconst deathmatch-unit-max 55)
+  344| #load-if-defined DIFFICULTY-EASIEST
+  345| (defconst unit-max 56)
+  346| #end-if
+  348| #load-if-defined DIFFICULTY-EASY
+  349| (defconst unit-max 56)
+  350| #end-if
+  352| #load-if-defined DIFFICULTY-MODERATE
+  353| (defconst unit-max 63)
+  354| #end-if
+  356| #load-if-defined DIFFICULTY-HARD
+  357| (defconst unit-max 70)
+  358| #end-if
+  360| #load-if-defined DIFFICULTY-HARDEST
+  361| (defconst unit-max 70)
+  362| #end-if
+  370| #end-if
+  372| #load-if-defined POPULATION-CAP-100
+  380| (defconst deathmatch-unit-max 70)
+  387| #load-if-defined DIFFICULTY-EASIEST
+  388| (defconst unit-max 70)
+  389| #end-if
+  391| #load-if-defined DIFFICULTY-EASY
+  392| (defconst unit-max 70)
+  393| #end-if
+  395| #load-if-defined DIFFICULTY-MODERATE
+  396| (defconst unit-max 80)
+  397| #end-if
+  399| #load-if-defined DIFFICULTY-HARD
+  400| (defconst unit-max 90)
+  401| #end-if
+  403| #load-if-defined DIFFICULTY-HARDEST
+  404| (defconst unit-max 90)
+  405| #end-if
+  413| #end-if
+  415| #load-if-defined POPULATION-CAP-125
+  423| (defconst deathmatch-unit-max 95)
+  430| #load-if-defined DIFFICULTY-EASIEST
+  431| (defconst unit-max 90)
+  432| #end-if
+  434| #load-if-defined DIFFICULTY-EASY
+  435| (defconst unit-max 90)
+  436| #end-if
+  438| #load-if-defined DIFFICULTY-MODERATE
+  439| (defconst unit-max 103)
+  440| #end-if
+  442| #load-if-defined DIFFICULTY-HARD
+  443| (defconst unit-max 115)
+  444| #end-if
+  446| #load-if-defined DIFFICULTY-HARDEST
+  447| (defconst unit-max 115)
+  448| #end-if
+  456| #end-if
+  458| #load-if-defined POPULATION-CAP-150
+  466| (defconst deathmatch-unit-max 120)
+  473| #load-if-defined DIFFICULTY-EASIEST
+  474| (defconst unit-max 110)
+  475| #end-if
+  477| #load-if-defined DIFFICULTY-EASY
+  478| (defconst unit-max 110)
+  479| #end-if
+  481| #load-if-defined DIFFICULTY-MODERATE
+  482| (defconst unit-max 125)
+  483| #end-if
+  485| #load-if-defined DIFFICULTY-HARD
+  486| (defconst unit-max 140)
+  487| #end-if
+  489| #load-if-defined DIFFICULTY-HARDEST
+  490| (defconst unit-max 140)
+  491| #end-if
+  499| #end-if
+  501| #load-if-defined POPULATION-CAP-175
+  509| (defconst deathmatch-unit-max 145)
+  516| #load-if-defined DIFFICULTY-EASIEST
+  517| (defconst unit-max 125)
+  518| #end-if
+  520| #load-if-defined DIFFICULTY-EASY
+  521| (defconst unit-max 125)
+  522| #end-if
+  524| #load-if-defined DIFFICULTY-MODERATE
+  525| (defconst unit-max 145)
+  526| #end-if
+  528| #load-if-defined DIFFICULTY-HARD
+  529| (defconst unit-max 165)
+  530| #end-if
+  532| #load-if-defined DIFFICULTY-HARDEST
+  533| (defconst unit-max 165)
+  534| #end-if
+  542| #end-if
+  544| #load-if-defined POPULATION-CAP-200
+  552| (defconst deathmatch-unit-max 170)
+  559| #load-if-defined DIFFICULTY-EASIEST
+  560| (defconst unit-max 130)
+  561| #end-if
+  563| #load-if-defined DIFFICULTY-EASY
+  564| (defconst unit-max 130)
+  565| #end-if
+  567| #load-if-defined DIFFICULTY-MODERATE
+  568| (defconst unit-max 160)
+  569| #end-if
+  571| #load-if-defined DIFFICULTY-HARD
+  572| (defconst unit-max 190)
+  573| #end-if
+  575| #load-if-defined DIFFICULTY-HARDEST
+  576| (defconst unit-max 190)
+  577| #end-if
+  585| #end-if
+  588| #load-if-defined TINY-MAP
+  593| #end-if
+  595| #load-if-defined SMALL-MAP
+  600| #end-if
+  602| #load-if-defined MEDIUM-MAP
+  607| #end-if
+  609| #load-if-defined NORMAL-MAP
+  614| #end-if
+  616| #load-if-defined LARGE-MAP
+  621| #end-if
+  623| #load-if-defined GIANT-MAP
+  628| #end-if
+
+=== 60027 first 20 and last 10 lines ===
+    1| ; Common constants used in AI goals - other constants will follow the specific goals
+    2| 	; Common.
+    3| 	(defconst NO 0)		 ;Used to indicate not set or initial value (as Normal)
+    4| 	(defconst YES 1)		 ;Used to indicate set
+    5| 	(defconst NORMAL 0)	 ;Used for default values
+    6| 	(defconst NOTICE 99)  ;Used for special highlight or initialization values that should be set
+    7| 
+    8| 	; Constants used for ratings (i.e. monk-rating)
+    9| 	(defconst EXCELLENT 99); For any rating-type value highest to lowest
+   10| 	(defconst GOOD	70)		
+   11| 	(defconst MEDIUM 50)
+   12| 	(defconst FAIR 30)
+   13| 	(defconst POOR 10) 
+   14| 
+   15| 	; Constants used for combat or defense strategy selection
+   16| 	(defconst INFANTRY 1)
+   17| 	(defconst CAVALRY 2)
+   18| 	(defconst LIGHTCAV 3)
+   19| 	(defconst CAVARCHER 4)
+   20| 	(defconst ARCHER 5)
+  620| (defconst mining-count 12)
+  621| #end-if
+  622| ;**************************
+  623| #load-if-defined GIANT-MAP
+  624| (defconst feudal-mill-count 2)
+  625| (defconst castle-mill-count 3)
+  626| (defconst imperial-mill-count 4)
+  627| (defconst mining-count 15)
+  628| #end-if
+  629| 

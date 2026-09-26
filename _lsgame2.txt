@@ -1,0 +1,52 @@
+﻿
+FullName                                                                            Length
+--------                                                                            ------
+D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\AI\AI.txt      8
+
+
+
+Name                     Length  
+----                     ------  
+fonts                            
+Load                             
+Loc                              
+Slp                              
+blendomatic.dat          329568  
+blendomatic_x1.dat       741518  
+BlkEdge.Dat              84471   
+clf_pal.pal              3056    
+custome_palette_list.txt 125     
+empires2.dat             659808  
+empires2_x1.dat          1037826 
+empires2_x1_p1.dat       1041720 
+FilterMaps.dat           300124  
+gamedata.drs             535528  
+gamedata_x1.drs          948422  
+gamedata_x1_p1.drs       530869  
+graphics.drs             86137347
+interfac.drs             54029361
+lightMaps.dat            73800   
+LoQMaps.dat              124623  
+pal_2.pal                2976    
+pal_3.pal                2933    
+pal_4.pal                2982    
+pal_5.pal                3103    
+pal_6.pal                2718    
+PatternMasks.dat         164000  
+shadow.col               1167    
+sounds.drs               29678340
+sounds_x1.drs            12003432
+STemplet.dat             7208    
+terrain.drs              6649972 
+TileEdge.Dat             209287  
+view_icm.dat             327680  
+
+
+
+FullName                                                                                           Le
+                                                                                                   ng
+                                                                                                   th
+--------                                                                                           --
+D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\mods\forbidden_files.txt 33
+
+

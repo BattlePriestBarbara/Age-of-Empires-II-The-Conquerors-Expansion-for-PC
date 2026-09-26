@@ -1,0 +1,486 @@
+=== difficulty blocks #1  (lines 1345-1435) ===
+ 1345| 	(set-goal secondary-build 0)
+ 1346| )
+ 1347| #end-if
+ 1348| ;*********************************************************
+ 1349| ;*********************************************************
+ 1350| #load-if-defined DIFFICULTY-EASIEST
+ 1351| (defrule
+ 1352| 	(true)
+ 1353| =>
+ 1354| 	(set-strategic-number sn-percent-enemy-sighted-response 10)
+ 1355| 	(set-strategic-number sn-consecutive-idle-unit-limit 60)
+ 1356| 	(set-strategic-number sn-easiest-reaction-percentage 20)
+ 1357| 	(set-difficulty-parameter ability-to-maintain-distance 100)
+ 1358| 	(set-difficulty-parameter ability-to-dodge-missiles 100)
+ 1359| 	(disable-self)
+ 1360| )
+ 1361| #end-if
+ 1362| ;********************************
+ 1363| #load-if-defined DIFFICULTY-EASY
+ 1364| (load "petersen tower")
+ 1365| 
+ 1366| (defrule
+ 1367| 	(true)
+ 1368| =>
+ 1369| 	(set-strategic-number sn-percent-enemy-sighted-response 25)
+ 1370| 	(set-strategic-number sn-consecutive-idle-unit-limit 20)
+ 1371| 	(set-strategic-number sn-easier-reaction-percentage 20)
+ 1372| 	(set-strategic-number sn-hits-before-alliance-change 50)
+ 1373| 	(set-difficulty-parameter ability-to-maintain-distance 75)
+ 1374| 	(set-difficulty-parameter ability-to-dodge-missiles 75)
+ 1375| 	(disable-self)
+ 1376| )
+ 1377| #end-if
+ 1378| 
+ 1379| ;********************************
+ 1380| #load-if-defined DIFFICULTY-MODERATE
+ 1381| (load "petersen tower")
+ 1382| (load "petersen wonder")
+ 1383| 
+ 1384| (defrule
+ 1385| 	(true)
+ 1386| =>
+ 1387| 	(set-strategic-number sn-percent-enemy-sighted-response 75)
+ 1388| 	(set-strategic-number sn-consecutive-idle-unit-limit 5)
+ 1389| 	(set-strategic-number sn-hits-before-alliance-change 25)
+ 1390| 	(set-difficulty-parameter ability-to-maintain-distance 50)
+ 1391| 	(set-difficulty-parameter ability-to-dodge-missiles 50)
+ 1392| 	(disable-self)
+ 1393| )
+ 1394| #end-if
+ 1395| 
+ 1396| ;********************************
+ 1397| #load-if-defined DIFFICULTY-HARD
+ 1398| (load "petersen tower")
+ 1399| (load "petersen wonder")
+ 1400| 
+ 1401| (defrule
+ 1402| 	(true)
+ 1403| =>
+ 1404| 	(set-strategic-number sn-percent-enemy-sighted-response 99)
+ 1405| 	(set-strategic-number sn-consecutive-idle-unit-limit 1)
+ 1406| 	(set-strategic-number sn-hits-before-alliance-change 10)
+ 1407| 	(set-difficulty-parameter ability-to-maintain-distance 0)
+ 1408| 	(set-difficulty-parameter ability-to-dodge-missiles 0)
+ 1409| 	(disable-self)
+ 1410| )
+ 1411| #end-if
+ 1412| 
+ 1413| ;********************************
+ 1414| #load-if-defined DIFFICULTY-HARDEST
+ 1415| (load "petersen tower")
+ 1416| (load "petersen wonder")
+ 1417| 
+ 1418| (defrule
+ 1419| 	(true)
+ 1420| =>
+ 1421| 	(set-strategic-number sn-percent-enemy-sighted-response 99)
+ 1422| 	(set-strategic-number sn-hits-before-alliance-change 10)
+ 1423| 	(set-difficulty-parameter ability-to-maintain-distance 0)
+ 1424| 	(set-difficulty-parameter ability-to-dodge-missiles 0)
+ 1425| 	(disable-self)
+ 1426| )
+ 1427| #end-if
+ 1428| ;********************************
+ 1429| ;********************************
+ 1430| 
+ 1431| (defrule
+ 1432| 	(cc-players-building-type-count any-enemy castle == 0)
+ 1433| =>
+ 1434| 	(set-goal rush-control RUSHING)
+ 1435| )
+
+=== difficulty blocks #2  (lines 1675-1710) ===
+ 1675| 	(difficulty <= moderate)
+ 1676| 	(building-type-count-total house <= fifteen-percent-pop)
+ 1677| 	(can-build house)
+ 1678| =>
+ 1679| 	(build house)
+ 1680| )
+ 1681| 
+ 1682| #load-if-defined DIFFICULTY-EASIEST
+ 1683| (defrule
+ 1684| 	(military-population < 10)
+ 1685| 	(housing-headroom < 5)
+ 1686| 	(population-headroom > 0)
+ 1687| 	(can-build house)
+ 1688| =>
+ 1689| 	(build house)
+ 1690| )
+ 1691| #end-if
+ 1692| 
+ 1693| #load-if-defined DIFFICULTY-EASY
+ 1694| (defrule
+ 1695| 	(military-population < civ-dark-rush)
+ 1696| 	(housing-headroom < 5)
+ 1697| 	(population-headroom > 0)
+ 1698| 	(can-build house)
+ 1699| =>
+ 1700| 	(build house)
+ 1701| )
+ 1702| #end-if
+ 1703| 
+ 1704| (defrule
+ 1705| 	(strategic-number sn-gold-gatherer-percentage > 0)
+ 1706| 	(building-type-count mining-camp == 0)
+ 1707| 	(resource-found gold)
+ 1708| 	(can-build mining-camp)
+ 1709| =>
+ 1710| 	(build mining-camp)
+
+=== tail  (lines 2820-2884) ===
+ 2820| 	(food-amount > 5000)
+ 2821| 	(commodity-selling-price food >= 20)
+ 2822| 	(can-sell-commodity food)
+ 2823| =>
+ 2824| 	(chat-local-to-self "abuse market; sell food")
+ 2825| 	(sell-commodity food)
+ 2826| )
+ 2827| 
+ 2828| (defrule
+ 2829| 	(gold-amount < 1200)
+ 2830| 	(wood-amount > 5000)
+ 2831| 	(can-sell-commodity wood)
+ 2832| =>
+ 2833| 	(chat-local-to-self "need gold; sell wood")
+ 2834| 	(sell-commodity wood)
+ 2835| )
+ 2836| 
+ 2837| (defrule
+ 2838| 	(gold-amount < 1200)
+ 2839| 	(food-amount > 5000)
+ 2840| 	(can-sell-commodity food)
+ 2841| =>
+ 2842| 	(chat-local-to-self "need gold; sell food")
+ 2843| 	(sell-commodity food)
+ 2844| )
+ 2845| 
+ 2846| (defrule
+ 2847| 	(gold-amount < 1200)
+ 2848| 	(stone-amount > 1000)
+ 2849| 	(building-type-count-total castle >= 5)
+ 2850| 	(can-sell-commodity stone)
+ 2851| =>
+ 2852| 	(chat-local-to-self "need gold; sell stone")
+ 2853| 	(sell-commodity stone)
+ 2854| )
+ 2855| 
+ 2856| (defrule
+ 2857| 	(stone-amount < 650)
+ 2858| 	(gold-amount > 5000)
+ 2859| 	(building-type-count-total castle < 5)
+ 2860| 	(can-buy-commodity stone)
+ 2861| =>
+ 2862| 	(chat-local-to-self "need stone")
+ 2863| 	(buy-commodity stone)
+ 2864| )
+ 2865| 
+ 2866| (defrule
+ 2867| 	(wood-amount < 1100)
+ 2868| 	(gold-amount > 5000)
+ 2869| 	(can-buy-commodity wood)
+ 2870| =>
+ 2871| 	(chat-local-to-self "need wood")
+ 2872| 	(buy-commodity wood)
+ 2873| )
+ 2874| 
+ 2875| (defrule
+ 2876| 	(food-amount < 1600)
+ 2877| 	(gold-amount > 5000)
+ 2878| 	(can-buy-commodity food)
+ 2879| =>
+ 2880| 	(chat-local-to-self "need food")
+ 2881| 	(buy-commodity food)
+ 2882| )
+ 2883| 
+ 2884| 
+
+=== rules mentioning *-amount ===
+ 1511| (defrule
+ 1512| 	(building-type-count siege-workshop >= 3)
+ 1513| 	(building-type-count castle >= 3)
+ 1514| 	(or
+ 1515| 		(or
+ 1516| 			(wood-amount < 5000)
+ 1517| 			(food-amount < 5000)
+ 1518| 		)
+  ---
+ 1511| (defrule
+ 1512| 	(building-type-count siege-workshop >= 3)
+ 1513| 	(building-type-count castle >= 3)
+ 1514| 	(or
+ 1515| 		(or
+ 1516| 			(wood-amount < 5000)
+ 1517| 			(food-amount < 5000)
+ 1518| 		)
+  ---
+ 1511| (defrule
+ 1512| 	(building-type-count siege-workshop >= 3)
+ 1513| 	(building-type-count castle >= 3)
+ 1514| 	(or
+ 1515| 		(or
+ 1516| 			(wood-amount < 5000)
+ 1517| 			(food-amount < 5000)
+ 1518| 		)
+ 1519| 		(or
+ 1520| 			(gold-amount < 2000)
+ 1521| 			(stone-amount < 700)
+ 1522| 		)
+  ---
+ 1511| (defrule
+ 1512| 	(building-type-count siege-workshop >= 3)
+ 1513| 	(building-type-count castle >= 3)
+ 1514| 	(or
+ 1515| 		(or
+ 1516| 			(wood-amount < 5000)
+ 1517| 			(food-amount < 5000)
+ 1518| 		)
+ 1519| 		(or
+ 1520| 			(gold-amount < 2000)
+ 1521| 			(stone-amount < 700)
+ 1522| 		)
+  ---
+ 1531| (defrule
+ 1532| 	(strategic-number sn-percent-civilian-gatherers == 85)
+ 1533| 	(or
+ 1534| 		(or
+ 1535| 			(wood-amount < 500)
+ 1536| 			(food-amount < 500)
+ 1537| 		)
+  ---
+ 1531| (defrule
+ 1532| 	(strategic-number sn-percent-civilian-gatherers == 85)
+ 1533| 	(or
+ 1534| 		(or
+ 1535| 			(wood-amount < 500)
+ 1536| 			(food-amount < 500)
+ 1537| 		)
+  ---
+ 1531| (defrule
+ 1532| 	(strategic-number sn-percent-civilian-gatherers == 85)
+ 1533| 	(or
+ 1534| 		(or
+ 1535| 			(wood-amount < 500)
+ 1536| 			(food-amount < 500)
+ 1537| 		)
+ 1538| 		(or
+ 1539| 			(gold-amount < 500)
+ 1540| 			(stone-amount < 100)
+ 1541| 		)
+  ---
+ 1531| (defrule
+ 1532| 	(strategic-number sn-percent-civilian-gatherers == 85)
+ 1533| 	(or
+ 1534| 		(or
+ 1535| 			(wood-amount < 500)
+ 1536| 			(food-amount < 500)
+ 1537| 		)
+ 1538| 		(or
+ 1539| 			(gold-amount < 500)
+ 1540| 			(stone-amount < 100)
+ 1541| 		)
+  ---
+ 2240| (defrule
+ 2241| 	(or
+ 2242| 		(or
+ 2243| 			(wood-amount < 5000)
+ 2244| 			(food-amount < 5000)
+ 2245| 		)
+  ---
+ 2240| (defrule
+ 2241| 	(or
+ 2242| 		(or
+ 2243| 			(wood-amount < 5000)
+ 2244| 			(food-amount < 5000)
+ 2245| 		)
+  ---
+ 2240| (defrule
+ 2241| 	(or
+ 2242| 		(or
+ 2243| 			(wood-amount < 5000)
+ 2244| 			(food-amount < 5000)
+ 2245| 		)
+ 2246| 		(or
+ 2247| 			(gold-amount < 2000)
+ 2248| 			(stone-amount < 700)
+ 2249| 		)
+  ---
+ 2240| (defrule
+ 2241| 	(or
+ 2242| 		(or
+ 2243| 			(wood-amount < 5000)
+ 2244| 			(food-amount < 5000)
+ 2245| 		)
+ 2246| 		(or
+ 2247| 			(gold-amount < 2000)
+ 2248| 			(stone-amount < 700)
+ 2249| 		)
+  ---
+ 2810| (defrule
+ 2811| 	(wood-amount > 5000)
+ 2812| 	(commodity-selling-price wood >= 20)
+ 2813| 	(can-sell-commodity wood)
+ 2814| =>
+ 2815| 	(chat-local-to-self "abuse market; sell wood")
+ 2816| 	(sell-commodity wood)
+ 2817| )
+  ---
+ 2819| (defrule
+ 2820| 	(food-amount > 5000)
+ 2821| 	(commodity-selling-price food >= 20)
+ 2822| 	(can-sell-commodity food)
+ 2823| =>
+ 2824| 	(chat-local-to-self "abuse market; sell food")
+ 2825| 	(sell-commodity food)
+ 2826| )
+  ---
+ 2828| (defrule
+ 2829| 	(gold-amount < 1200)
+ 2830| 	(wood-amount > 5000)
+ 2831| 	(can-sell-commodity wood)
+ 2832| =>
+ 2833| 	(chat-local-to-self "need gold; sell wood")
+ 2834| 	(sell-commodity wood)
+ 2835| )
+  ---
+ 2828| (defrule
+ 2829| 	(gold-amount < 1200)
+ 2830| 	(wood-amount > 5000)
+ 2831| 	(can-sell-commodity wood)
+ 2832| =>
+ 2833| 	(chat-local-to-self "need gold; sell wood")
+ 2834| 	(sell-commodity wood)
+ 2835| )
+  ---
+ 2837| (defrule
+ 2838| 	(gold-amount < 1200)
+ 2839| 	(food-amount > 5000)
+ 2840| 	(can-sell-commodity food)
+ 2841| =>
+ 2842| 	(chat-local-to-self "need gold; sell food")
+ 2843| 	(sell-commodity food)
+ 2844| )
+  ---
+ 2837| (defrule
+ 2838| 	(gold-amount < 1200)
+ 2839| 	(food-amount > 5000)
+ 2840| 	(can-sell-commodity food)
+ 2841| =>
+ 2842| 	(chat-local-to-self "need gold; sell food")
+ 2843| 	(sell-commodity food)
+ 2844| )
+  ---
+ 2846| (defrule
+ 2847| 	(gold-amount < 1200)
+ 2848| 	(stone-amount > 1000)
+ 2849| 	(building-type-count-total castle >= 5)
+ 2850| 	(can-sell-commodity stone)
+ 2851| =>
+ 2852| 	(chat-local-to-self "need gold; sell stone")
+ 2853| 	(sell-commodity stone)
+ 2854| )
+  ---
+ 2846| (defrule
+ 2847| 	(gold-amount < 1200)
+ 2848| 	(stone-amount > 1000)
+ 2849| 	(building-type-count-total castle >= 5)
+ 2850| 	(can-sell-commodity stone)
+ 2851| =>
+ 2852| 	(chat-local-to-self "need gold; sell stone")
+ 2853| 	(sell-commodity stone)
+ 2854| )
+  ---
+ 2856| (defrule
+ 2857| 	(stone-amount < 650)
+ 2858| 	(gold-amount > 5000)
+ 2859| 	(building-type-count-total castle < 5)
+ 2860| 	(can-buy-commodity stone)
+ 2861| =>
+ 2862| 	(chat-local-to-self "need stone")
+ 2863| 	(buy-commodity stone)
+ 2864| )
+  ---
+ 2856| (defrule
+ 2857| 	(stone-amount < 650)
+ 2858| 	(gold-amount > 5000)
+ 2859| 	(building-type-count-total castle < 5)
+ 2860| 	(can-buy-commodity stone)
+ 2861| =>
+ 2862| 	(chat-local-to-self "need stone")
+ 2863| 	(buy-commodity stone)
+ 2864| )
+  ---
+ 2866| (defrule
+ 2867| 	(wood-amount < 1100)
+ 2868| 	(gold-amount > 5000)
+ 2869| 	(can-buy-commodity wood)
+ 2870| =>
+ 2871| 	(chat-local-to-self "need wood")
+ 2872| 	(buy-commodity wood)
+ 2873| )
+  ---
+ 2866| (defrule
+ 2867| 	(wood-amount < 1100)
+ 2868| 	(gold-amount > 5000)
+ 2869| 	(can-buy-commodity wood)
+ 2870| =>
+ 2871| 	(chat-local-to-self "need wood")
+ 2872| 	(buy-commodity wood)
+ 2873| )
+  ---
+ 2875| (defrule
+ 2876| 	(food-amount < 1600)
+ 2877| 	(gold-amount > 5000)
+ 2878| 	(can-buy-commodity food)
+ 2879| =>
+ 2880| 	(chat-local-to-self "need food")
+ 2881| 	(buy-commodity food)
+ 2882| )
+  ---
+ 2875| (defrule
+ 2876| 	(food-amount < 1600)
+ 2877| 	(gold-amount > 5000)
+ 2878| 	(can-buy-commodity food)
+ 2879| =>
+ 2880| 	(chat-local-to-self "need food")
+ 2881| 	(buy-commodity food)
+ 2882| )
+  ---
+=== rules mentioning headroom ===
+ 1683| (defrule
+ 1684| 	(military-population < 10)
+ 1685| 	(housing-headroom < 5)
+ 1686| 	(population-headroom > 0)
+ 1687| 	(can-build house)
+ 1688| =>
+ 1689| 	(build house)
+ 1690| )
+  ---
+ 1683| (defrule
+ 1684| 	(military-population < 10)
+ 1685| 	(housing-headroom < 5)
+ 1686| 	(population-headroom > 0)
+ 1687| 	(can-build house)
+ 1688| =>
+ 1689| 	(build house)
+ 1690| )
+  ---
+ 1694| (defrule
+ 1695| 	(military-population < civ-dark-rush)
+ 1696| 	(housing-headroom < 5)
+ 1697| 	(population-headroom > 0)
+ 1698| 	(can-build house)
+ 1699| =>
+ 1700| 	(build house)
+ 1701| )
+  ---
+ 1694| (defrule
+ 1695| 	(military-population < civ-dark-rush)
+ 1696| 	(housing-headroom < 5)
+ 1697| 	(population-headroom > 0)
+ 1698| 	(can-build house)
+ 1699| =>
+ 1700| 	(build house)
+ 1701| )
+  ---

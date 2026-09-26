@@ -1,0 +1,1331 @@
+=== candidate directive keywords as null-terminated strings
+   'load-if-defined'      1 hit(s)
+      @0037373d:
+         \X
+         "X
+         .\X
+         .\B
+         Vengeful
+         Passive
+         Friendly
+         Defensive
+         Compassionate
+         Aggressive
+         Emotional AI
+         .[.
+         .oB
+         .\.
+         .|B
+         #end-if
+         #else
+         #load-if-not-defined
+         #load-if-defined
+         =>
+         defconst
+         defrule
+         load-random
+         load
+         `\.
+         P.B
+         ..B
+         "X
+         `.T
+         "X
+         ..B
+          .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+         .\X
+         InfAI
+         .\.
+          .B
+         ERROR!  %d is an unrecognized action id.
+         ,].
+         .
+   '#load-if-defined'     1 hit(s)
+      @0037373c:
+         .\X
+         "X
+         .\X
+         .\B
+         Vengeful
+         Passive
+         Friendly
+         Defensive
+         Compassionate
+         Aggressive
+         Emotional AI
+         .[.
+         .oB
+         .\.
+         .|B
+         #end-if
+         #else
+         #load-if-not-defined
+         #load-if-defined
+         =>
+         defconst
+         defrule
+         load-random
+         load
+         `\.
+         P.B
+         ..B
+         "X
+         `.T
+         "X
+         ..B
+          .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+         .\X
+         InfAI
+         .\.
+          .B
+         ERROR!  %d is an unrecognized action id.
+         ,].
+   'load-if-not-defined'  1 hit(s)
+      @00373725:
+         .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+         .\X
+         .\B
+         Vengeful
+         Passive
+         Friendly
+         Defensive
+         Compassionate
+         Aggressive
+         Emotional AI
+         .[.
+         .oB
+         .\.
+         .|B
+         #end-if
+         #else
+         #load-if-not-defined
+         #load-if-defined
+         =>
+         defconst
+         defrule
+         load-random
+         load
+         `\.
+         P.B
+         ..B
+         "X
+         `.T
+         "X
+         ..B
+          .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+         .\X
+         InfAI
+         .\.
+          .B
+         ERROR!  %d is an unrecognized
+   '#load-if-not-defined' 1 hit(s)
+      @00373724:
+          .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+         .\X
+         .\B
+         Vengeful
+         Passive
+         Friendly
+         Defensive
+         Compassionate
+         Aggressive
+         Emotional AI
+         .[.
+         .oB
+         .\.
+         .|B
+         #end-if
+         #else
+         #load-if-not-defined
+         #load-if-defined
+         =>
+         defconst
+         defrule
+         load-random
+         load
+         `\.
+         P.B
+         ..B
+         "X
+         `.T
+         "X
+         ..B
+          .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+         .\X
+         InfAI
+         .\.
+          .B
+         ERROR!  %d is an unrecognize
+   'end-if'               3 hit(s)
+      @00373715:
+         "X
+         `.T
+         "X
+         ..B
+          .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+         .\X
+         .\B
+         Vengeful
+         Passive
+         Friendly
+         Defensive
+         Compassionate
+         Aggressive
+         Emotional AI
+         .[.
+         .oB
+         .\.
+         .|B
+         #end-if
+         #else
+         #load-if-not-defined
+         #load-if-defined
+         =>
+         defconst
+         defrule
+         load-random
+         load
+         `\.
+         P.B
+         ..B
+         "X
+         `.T
+         "X
+         ..B
+          .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+         .\X
+         InfAI
+         .\.
+          .B
+         ERROR!  %d is
+      @00377d99:
+           %s %d
+             %s  %s.per
+             %s %d: %s
+         Line
+         File
+         Player
+         AI Script Error
+         ERR9001: Unexpected error
+         ERR2013: Unexpected end-of-file
+         ERR3005: Unexpected #end-if
+         ERR3004: Unexpected #else
+         ERR9000: Undocumented error
+         ERR6003: String table full
+         ERR6002: Rule too long
+         ERR3003: Preprocessor nesting too deep
+         ERR8001: No rules
+         ERR2009: Missing right-ha
+      @00377f66:
+         is
+         ERR2007: Missing left-hand side (LHS) of the rule
+         ERR2002: Missing keyword
+         ERR2004: Missing identifier
+         ERR2006: Missing file name
+         ERR3006: Missing #end-if
+         ERR2010: Missing closing quote
+         ERR2011: Missing closing parenthesis
+         ERR2008: Missing arrow
+         ERR6001: List full
+         ERR3001: Invalid preprocessor directive
+         ERR2003: Invalid keyword
+         ERR200
+   '#end-if'              3 hit(s)
+      @00373714:
+         "X
+         `.T
+         "X
+         ..B
+          .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+         .\X
+         .\B
+         Vengeful
+         Passive
+         Friendly
+         Defensive
+         Compassionate
+         Aggressive
+         Emotional AI
+         .[.
+         .oB
+         .\.
+         .|B
+         #end-if
+         #else
+         #load-if-not-defined
+         #load-if-defined
+         =>
+         defconst
+         defrule
+         load-random
+         load
+         `\.
+         P.B
+         ..B
+         "X
+         `.T
+         "X
+         ..B
+          .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+         .\X
+         InfAI
+         .\.
+          .B
+         ERROR!  %d i
+      @00377d98:
+            %s %d
+             %s  %s.per
+             %s %d: %s
+         Line
+         File
+         Player
+         AI Script Error
+         ERR9001: Unexpected error
+         ERR2013: Unexpected end-of-file
+         ERR3005: Unexpected #end-if
+         ERR3004: Unexpected #else
+         ERR9000: Undocumented error
+         ERR6003: String table full
+         ERR6002: Rule too long
+         ERR3003: Preprocessor nesting too deep
+         ERR8001: No rules
+         ERR2009: Missing right-h
+      @00377f65:
+         sis
+         ERR2007: Missing left-hand side (LHS) of the rule
+         ERR2002: Missing keyword
+         ERR2004: Missing identifier
+         ERR2006: Missing file name
+         ERR3006: Missing #end-if
+         ERR2010: Missing closing quote
+         ERR2011: Missing closing parenthesis
+         ERR2008: Missing arrow
+         ERR6001: List full
+         ERR3001: Invalid preprocessor directive
+         ERR2003: Invalid keyword
+         ERR20
+   'else'                 6 hit(s)
+      @0037371d:
+         "X
+         ..B
+          .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+         .\X
+         .\B
+         Vengeful
+         Passive
+         Friendly
+         Defensive
+         Compassionate
+         Aggressive
+         Emotional AI
+         .[.
+         .oB
+         .\.
+         .|B
+         #end-if
+         #else
+         #load-if-not-defined
+         #load-if-defined
+         =>
+         defconst
+         defrule
+         load-random
+         load
+         `\.
+         P.B
+         ..B
+         "X
+         `.T
+         "X
+         ..B
+          .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+         .\X
+         InfAI
+         .\.
+          .B
+         ERROR!  %d is an unre
+      @00377db5:
+         s %d: %s
+         Line
+         File
+         Player
+         AI Script Error
+         ERR9001: Unexpected error
+         ERR2013: Unexpected end-of-file
+         ERR3005: Unexpected #end-if
+         ERR3004: Unexpected #else
+         ERR9000: Undocumented error
+         ERR6003: String table full
+         ERR6002: Rule too long
+         ERR3003: Preprocessor nesting too deep
+         ERR8001: No rules
+         ERR2009: Missing right-hand side (RHS) of the rule
+         E
+      @003cc840:
+         syntax error
+         too many nested #includes
+         include interface required to support #include from resource or memory
+         error: %s
+         unexpected #elif following #else
+         unexpected #elif
+         unexpected #else following #else
+         unexpected #else
+         unexpected #endif
+         column_major
+         row_major
+         )
+         (
+         ;
+         :
+         disable
+         once
+         internal error: production failed
+      @003cc878:
+         interface required to support #include from resource or memory
+         error: %s
+         unexpected #elif following #else
+         unexpected #elif
+         unexpected #else following #else
+         unexpected #else
+         unexpected #endif
+         column_major
+         row_major
+         )
+         (
+         ;
+         :
+         disable
+         once
+         internal error: production failed
+         def
+         pack_matrix
+         '%s' : macro redefinition
+         invalid or u
+      @003cc88c:
+         o support #include from resource or memory
+         error: %s
+         unexpected #elif following #else
+         unexpected #elif
+         unexpected #else following #else
+         unexpected #else
+         unexpected #endif
+         column_major
+         row_major
+         )
+         (
+         ;
+         :
+         disable
+         once
+         internal error: production failed
+         def
+         pack_matrix
+         '%s' : macro redefinition
+         invalid or unsupported integer c
+      @003cca3c:
+         et implemented
+         __LINE__
+         not enough actual parameters for macro '%s'
+         ##
+         #@
+         unexpected end of file in macro expansion
+         #
+         Arg
+         C
+         defined
+         define
+         endif
+         else
+         elif
+         include
+         ifndef
+         ifdef
+         if
+         line
+         pragma
+         undef
+         duplicate macro parameter '%s'
+         D3DX_VERSION
+         DIRECT3D_VERSION
+         D3DX
+         DIRECT3D
+         internal error: out of memory
+         Stack
+         divi
+   '#else'                5 hit(s)
+      @0037371c:
+         "X
+         ..B
+          .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+         .\X
+         .\B
+         Vengeful
+         Passive
+         Friendly
+         Defensive
+         Compassionate
+         Aggressive
+         Emotional AI
+         .[.
+         .oB
+         .\.
+         .|B
+         #end-if
+         #else
+         #load-if-not-defined
+         #load-if-defined
+         =>
+         defconst
+         defrule
+         load-random
+         load
+         `\.
+         P.B
+         ..B
+         "X
+         `.T
+         "X
+         ..B
+          .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+         .\X
+         InfAI
+         .\.
+          .B
+         ERROR!  %d is an unr
+      @00377db4:
+         %s %d: %s
+         Line
+         File
+         Player
+         AI Script Error
+         ERR9001: Unexpected error
+         ERR2013: Unexpected end-of-file
+         ERR3005: Unexpected #end-if
+         ERR3004: Unexpected #else
+         ERR9000: Undocumented error
+         ERR6003: String table full
+         ERR6002: Rule too long
+         ERR3003: Preprocessor nesting too deep
+         ERR8001: No rules
+         ERR2009: Missing right-hand side (RHS) of the rule
+      @003cc83f:
+         syntax error
+         too many nested #includes
+         include interface required to support #include from resource or memory
+         error: %s
+         unexpected #elif following #else
+         unexpected #elif
+         unexpected #else following #else
+         unexpected #else
+         unexpected #endif
+         column_major
+         row_major
+         )
+         (
+         ;
+         :
+         disable
+         once
+         internal error: production failed
+      @003cc877:
+          interface required to support #include from resource or memory
+         error: %s
+         unexpected #elif following #else
+         unexpected #elif
+         unexpected #else following #else
+         unexpected #else
+         unexpected #endif
+         column_major
+         row_major
+         )
+         (
+         ;
+         :
+         disable
+         once
+         internal error: production failed
+         def
+         pack_matrix
+         '%s' : macro redefinition
+         invalid or 
+      @003cc88b:
+         to support #include from resource or memory
+         error: %s
+         unexpected #elif following #else
+         unexpected #elif
+         unexpected #else following #else
+         unexpected #else
+         unexpected #endif
+         column_major
+         row_major
+         )
+         (
+         ;
+         :
+         disable
+         once
+         internal error: production failed
+         def
+         pack_matrix
+         '%s' : macro redefinition
+         invalid or unsupported integer 
+   'elif'                 2 hit(s)
+      @003cc854:
+         many nested #includes
+         include interface required to support #include from resource or memory
+         error: %s
+         unexpected #elif following #else
+         unexpected #elif
+         unexpected #else following #else
+         unexpected #else
+         unexpected #endif
+         column_major
+         row_major
+         )
+         (
+         ;
+         :
+         disable
+         once
+         internal error: production failed
+         def
+         pack_matrix
+         '%s'
+      @003cca44:
+         mented
+         __LINE__
+         not enough actual parameters for macro '%s'
+         ##
+         #@
+         unexpected end of file in macro expansion
+         #
+         Arg
+         C
+         defined
+         define
+         endif
+         else
+         elif
+         include
+         ifndef
+         ifdef
+         if
+         line
+         pragma
+         undef
+         duplicate macro parameter '%s'
+         D3DX_VERSION
+         DIRECT3D_VERSION
+         D3DX
+         DIRECT3D
+         internal error: out of memory
+         Stack
+         division by 
+   '#elif'                1 hit(s)
+      @003cc853:
+          many nested #includes
+         include interface required to support #include from resource or memory
+         error: %s
+         unexpected #elif following #else
+         unexpected #elif
+         unexpected #else following #else
+         unexpected #else
+         unexpected #endif
+         column_major
+         row_major
+         )
+         (
+         ;
+         :
+         disable
+         once
+         internal error: production failed
+         def
+         pack_matrix
+         '%s
+   'ifdef'                1 hit(s)
+      @003cca5c:
+         enough actual parameters for macro '%s'
+         ##
+         #@
+         unexpected end of file in macro expansion
+         #
+         Arg
+         C
+         defined
+         define
+         endif
+         else
+         elif
+         include
+         ifndef
+         ifdef
+         if
+         line
+         pragma
+         undef
+         duplicate macro parameter '%s'
+         D3DX_VERSION
+         DIRECT3D_VERSION
+         D3DX
+         DIRECT3D
+         internal error: out of memory
+         Stack
+         division by zero in preprocessor exp
+   'ifndef'               1 hit(s)
+      @003cca54:
+         not enough actual parameters for macro '%s'
+         ##
+         #@
+         unexpected end of file in macro expansion
+         #
+         Arg
+         C
+         defined
+         define
+         endif
+         else
+         elif
+         include
+         ifndef
+         ifdef
+         if
+         line
+         pragma
+         undef
+         duplicate macro parameter '%s'
+         D3DX_VERSION
+         DIRECT3D_VERSION
+         D3DX
+         DIRECT3D
+         internal error: out of memory
+         Stack
+         division by zero in preproce
+   'undef'                1 hit(s)
+      @003cca78:
+          macro '%s'
+         ##
+         #@
+         unexpected end of file in macro expansion
+         #
+         Arg
+         C
+         defined
+         define
+         endif
+         else
+         elif
+         include
+         ifndef
+         ifdef
+         if
+         line
+         pragma
+         undef
+         duplicate macro parameter '%s'
+         D3DX_VERSION
+         DIRECT3D_VERSION
+         D3DX
+         DIRECT3D
+         internal error: out of memory
+         Stack
+         division by zero in preprocessor expression
+         internal error: stac
+   'include'              1 hit(s)
+      @003cca4c:
+         __LINE__
+         not enough actual parameters for macro '%s'
+         ##
+         #@
+         unexpected end of file in macro expansion
+         #
+         Arg
+         C
+         defined
+         define
+         endif
+         else
+         elif
+         include
+         ifndef
+         ifdef
+         if
+         line
+         pragma
+         undef
+         duplicate macro parameter '%s'
+         D3DX_VERSION
+         DIRECT3D_VERSION
+         D3DX
+         DIRECT3D
+         internal error: out of memory
+         Stack
+         division by zero in 
+   'define'               1 hit(s)
+      @003cca2c:
+         xpressions not yet implemented
+         __LINE__
+         not enough actual parameters for macro '%s'
+         ##
+         #@
+         unexpected end of file in macro expansion
+         #
+         Arg
+         C
+         defined
+         define
+         endif
+         else
+         elif
+         include
+         ifndef
+         ifdef
+         if
+         line
+         pragma
+         undef
+         duplicate macro parameter '%s'
+         D3DX_VERSION
+         DIRECT3D_VERSION
+         D3DX
+         DIRECT3D
+         internal error: out of memor
+   'defconst'             1 hit(s)
+      @00373754:
+         Passive
+         Friendly
+         Defensive
+         Compassionate
+         Aggressive
+         Emotional AI
+         .[.
+         .oB
+         .\.
+         .|B
+         #end-if
+         #else
+         #load-if-not-defined
+         #load-if-defined
+         =>
+         defconst
+         defrule
+         load-random
+         load
+         `\.
+         P.B
+         ..B
+         "X
+         `.T
+         "X
+         ..B
+          .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+         .\X
+         InfAI
+         .\.
+          .B
+         ERROR!  %d is an unrecognized action id.
+         ,].
+         ..B
+         ..B
+         "X
+         `.T
+         "X
+         ..B
+   'if'                   11 hit(s)
+      @00373719:
+         .T
+         "X
+         ..B
+          .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+         .\X
+         .\B
+         Vengeful
+         Passive
+         Friendly
+         Defensive
+         Compassionate
+         Aggressive
+         Emotional AI
+         .[.
+         .oB
+         .\.
+         .|B
+         #end-if
+         #else
+         #load-if-not-defined
+         #load-if-defined
+         =>
+         defconst
+         defrule
+         load-random
+         load
+         `\.
+         P.B
+         ..B
+         "X
+         `.T
+         "X
+         ..B
+          .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+         .\X
+         InfAI
+         .\.
+          .B
+         ERROR!  %d is an 
+      @00377d9d:
+          %d
+             %s  %s.per
+             %s %d: %s
+         Line
+         File
+         Player
+         AI Script Error
+         ERR9001: Unexpected error
+         ERR2013: Unexpected end-of-file
+         ERR3005: Unexpected #end-if
+         ERR3004: Unexpected #else
+         ERR9000: Undocumented error
+         ERR6003: String table full
+         ERR6002: Rule too long
+         ERR3003: Preprocessor nesting too deep
+         ERR8001: No rules
+         ERR2009: Missing right-hand s
+      @00377f6a:
+         ERR2007: Missing left-hand side (LHS) of the rule
+         ERR2002: Missing keyword
+         ERR2004: Missing identifier
+         ERR2006: Missing file name
+         ERR3006: Missing #end-if
+         ERR2010: Missing closing quote
+         ERR2011: Missing closing parenthesis
+         ERR2008: Missing arrow
+         ERR6001: List full
+         ERR3001: Invalid preprocessor directive
+         ERR2003: Invalid keyword
+         ERR2005: I
+      @003cc856:
+         ny nested #includes
+         include interface required to support #include from resource or memory
+         error: %s
+         unexpected #elif following #else
+         unexpected #elif
+         unexpected #else following #else
+         unexpected #else
+         unexpected #endif
+         column_major
+         row_major
+         )
+         (
+         ;
+         :
+         disable
+         once
+         internal error: production failed
+         def
+         pack_matrix
+         '%s' :
+      @003cc8a3:
+          resource or memory
+         error: %s
+         unexpected #elif following #else
+         unexpected #elif
+         unexpected #else following #else
+         unexpected #else
+         unexpected #endif
+         column_major
+         row_major
+         )
+         (
+         ;
+         :
+         disable
+         once
+         internal error: production failed
+         def
+         pack_matrix
+         '%s' : macro redefinition
+         invalid or unsupported integer constant expression
+         fun
+      @003cca37:
+         not yet implemented
+         __LINE__
+         not enough actual parameters for macro '%s'
+         ##
+         #@
+         unexpected end of file in macro expansion
+         #
+         Arg
+         C
+         defined
+         define
+         endif
+         else
+         elif
+         include
+         ifndef
+         ifdef
+         if
+         line
+         pragma
+         undef
+         duplicate macro parameter '%s'
+         D3DX_VERSION
+         DIRECT3D_VERSION
+         D3DX
+         DIRECT3D
+         internal error: out of memory
+         Stack
+      @003cca46:
+         nted
+         __LINE__
+         not enough actual parameters for macro '%s'
+         ##
+         #@
+         unexpected end of file in macro expansion
+         #
+         Arg
+         C
+         defined
+         define
+         endif
+         else
+         elif
+         include
+         ifndef
+         ifdef
+         if
+         line
+         pragma
+         undef
+         duplicate macro parameter '%s'
+         D3DX_VERSION
+         DIRECT3D_VERSION
+         D3DX
+         DIRECT3D
+         internal error: out of memory
+         Stack
+         division by ze
+      @003cca64:
+         ctual parameters for macro '%s'
+         ##
+         #@
+         unexpected end of file in macro expansion
+         #
+         Arg
+         C
+         defined
+         define
+         endif
+         else
+         elif
+         include
+         ifndef
+         ifdef
+         if
+         line
+         pragma
+         undef
+         duplicate macro parameter '%s'
+         D3DX_VERSION
+         DIRECT3D_VERSION
+         D3DX
+         DIRECT3D
+         internal error: out of memory
+         Stack
+         division by zero in preprocessor expression
+   'endif'                2 hit(s)
+      @003cc8a0:
+         rom resource or memory
+         error: %s
+         unexpected #elif following #else
+         unexpected #elif
+         unexpected #else following #else
+         unexpected #else
+         unexpected #endif
+         column_major
+         row_major
+         )
+         (
+         ;
+         :
+         disable
+         once
+         internal error: production failed
+         def
+         pack_matrix
+         '%s' : macro redefinition
+         invalid or unsupported integer constant expression
+      @003cca34:
+         ns not yet implemented
+         __LINE__
+         not enough actual parameters for macro '%s'
+         ##
+         #@
+         unexpected end of file in macro expansion
+         #
+         Arg
+         C
+         defined
+         define
+         endif
+         else
+         elif
+         include
+         ifndef
+         ifdef
+         if
+         line
+         pragma
+         undef
+         duplicate macro parameter '%s'
+         D3DX_VERSION
+         DIRECT3D_VERSION
+         D3DX
+         DIRECT3D
+         internal error: out of memory
+         Stac
+   '#endif'               1 hit(s)
+      @003cc89f:
+         from resource or memory
+         error: %s
+         unexpected #elif following #else
+         unexpected #elif
+         unexpected #else following #else
+         unexpected #else
+         unexpected #endif
+         column_major
+         row_major
+         )
+         (
+         ;
+         :
+         disable
+         once
+         internal error: production failed
+         def
+         pack_matrix
+         '%s' : macro redefinition
+         invalid or unsupported integer constant expression
+   'load'                 2 hit(s)
+      @00373774:
+         e
+         Compassionate
+         Aggressive
+         Emotional AI
+         .[.
+         .oB
+         .\.
+         .|B
+         #end-if
+         #else
+         #load-if-not-defined
+         #load-if-defined
+         =>
+         defconst
+         defrule
+         load-random
+         load
+         `\.
+         P.B
+         ..B
+         "X
+         `.T
+         "X
+         ..B
+          .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+         .\X
+         InfAI
+         .\.
+          .B
+         ERROR!  %d is an unrecognized action id.
+         ,].
+         ..B
+         ..B
+         "X
+         `.T
+         "X
+         ..B
+          .B
+         `.T
+         .\X
+         .\X
+         .\X
+         .\X
+         .\X
+         "X
+      @003dffb3:
+         ler array, sampler must be bound to %i
+         internal error: unexpected argument type
+         cannot match to texm* because texm* can only have bx2 modifier on input texload
+         cannot match to texm* because texm* cannot have source modifiers on input texcoord
+         unable to match texm* because source inputs are not in appropriate texture coordinates. See ps_1_% assembly
+
+=== ERR3xxx neighbours (preprocessor error strings) as raw region
+   region 0x00377eb8 - 0x003782a0
+      ning parenthesis
+      ERR2007: Missing left-hand side (LHS) of the rule
+      ERR2002: Missing keyword
+      ERR2004: Missing identifier
+      ERR2006: Missing file name
+      ERR3006: Missing #end-if
+      ERR2010: Missing closing quote
+      ERR2011: Missing closing parenthesis
+      ERR2008: Missing arrow
+      ERR6001: List full
+      ERR3001: Invalid preprocessor directive
+      ERR2003: Invalid keyword
+      ERR2005: Invalid identifier
+      ERR5002: File read failed
+      ERR5001: File open failed
+      ERR2012: Constant Already Defined
+      Invalid
+      Buildlist Updating
+      Gather Defense Units
+      Relic Gathering
+      Open Tasks
+      Open Builds
+      New Builds
+      Repair
+      Help Build
+      Forward Builders
+      Check For Enemy Things In My Town
+      Task ActSol
+      Task IdleSol
+      Fill SolGroups
+      Task Boats
+      Fill BoatGroups
+      Setup BoatGroups
+      Task Civs
+      Eval CivDist
+      Setup SolGroups
+      No Target
+      :AR
+      -Aff
+      )A  Task ID %d (Type %s) doesn't actually need any tasking.
+        Going to send my units to GetRelic #%d at (%f, %f).

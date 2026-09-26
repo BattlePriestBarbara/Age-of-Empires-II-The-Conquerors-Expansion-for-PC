@@ -1,0 +1,167 @@
+=== filename-ish strings in the exe (.txt/.log/.ailog/.prs)
+   '%s%s%.2d.txt'
+   '%s%s%s%.2d.txt'
+   '%s%s%s.txt'
+   '%s%s.txt'
+   '.?AVAILog@@'
+   '<locale>\\language.txt'
+   'AILog LOGGING STARTED --------------------------------------------'
+   'AILog\\%s.log'
+   'ScnStrTbl.txt'
+   'c:\\%s%.2d.txt'
+   'c:\\%s.txt'
+   'c:\\aoeai.txt'
+   'c:\\aoeunit.txt'
+   'c:\\fps.txt'
+   'forbidden_files.txt'
+   'language_base.txt'
+   'tr_spred.txt'
+   'tr_tree.txt'
+   'tr_wrld.txt'
+   'trigger_info.txt'
+   'trigger_text.txt'
+
+=== strings containing 'line' + number format or AI error report
+   '.?AVAILog@@'
+   '===Logging==='
+   'AI Script Error'
+   'AILog LOGGING STARTED --------------------------------------------'
+   'AILog\\%s.log'
+   'Logging to File %s'
+   'Logging to OUTPUT %s'
+
+=== existing AI/log files on disk
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\tr_spred.txt    97204 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\游戏打不开请安装.txt       84 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\说明.txt     1959 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\3dm\main.html    25010 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\AI\AI.txt        8 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Avi\Avi.txt        9 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Bin\language_base.txt     4851 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Bin\zh\language.txt     3794 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\custome_palette_list.txt      125 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Load\Load.txt       10 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\2logos.slp    36396 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\c_logo.slp    54372 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\eslogo1.slp    38810 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\eslogo2.slp    38810 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\main.sin      645 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\main_32.slp  7280475 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\mslogo1.slp    48384 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\mslogo2.slp    48384 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\Armies.txt     1250 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\ArmiesMongols.txt     2853 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\ArmiesOrg.txt     4035 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\ArmiesStrat.txt     1376 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\ArmiesTactics.txt     7794 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\Aztecs.txt     1795 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\barbarianinvaders.txt     1951 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\British original.txt     3767 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\british regular.txt     3767 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\british test.txt    19213 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\british.txt     2447 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\Byzantines.txt     2606 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\CastleDefenses.txt     3934 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\CastleEvolution.txt     3074 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\Castles.txt      718 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\CastleSiege.txt     8326 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\Celts.txt     1787 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\charlemagne.txt     1371 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\Chinese.txt     2240 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\darkagereligion.txt     2196 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\darkages.txt      264 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\DarkArmies.txt     2917 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\economy.txt     1592 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\feudalcontract.txt     1216 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\feudalism.txt      194 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\feudalismdecline.txt     3030 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\Franks.txt     2298 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\Goths.txt     2012 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\Gunpowder.txt     1912 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\history.txt     3171 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\Huns.txt     2401 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\Japanese.txt     1873 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\Knights.txt     7082 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\Koreans.txt     1332 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\latemiddleages.txt      306 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\Mayans.txt     1115 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\middleages.txt      809 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\Mongols.txt     2296 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\Naval.txt     4083 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\Persians.txt     1027 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\politics.txt     1380 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\History\zh\religion.txt      994 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\custome_palette_list.txt      125 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Load\Load.txt       10 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\2logos.slp    36396 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\c_logo.slp    54372 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\eslogo1.slp    38810 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\eslogo2.slp    38810 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\main.sin      645 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\main_32.slp  7280475 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\mslogo1.slp    48384 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\Slp\mslogo2.slp    48384 B
+   D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\SaveGame (no log/txt files)
+   C:\Users\埃尔隆德\Games                                                    <missing>
+   C:\Users\埃尔隆德\Games\Age of Empires II HD                               <missing>
+   C:\Users\埃尔隆德\Documents\Age of Empires II HD                           <missing>
+   D:\aoe2_work\ai_table_out.txt                                                      8512 B
+   D:\aoe2_work\dm_ailog.py                                                           2387 B
+   D:\aoe2_work\dm_ai_names_out.txt                                                   7682 B
+   D:\aoe2_work\dm_analysis_out.txt                                                  33261 B
+   D:\aoe2_work\dm_apply_console.txt                                                  1940 B
+   D:\aoe2_work\dm_build_out.txt                                                      9666 B
+   D:\aoe2_work\dm_capsym_out.txt                                                     4590 B
+   D:\aoe2_work\dm_caps_out.txt                                                      33596 B
+   D:\aoe2_work\dm_ccall_out.txt                                                      3525 B
+   D:\aoe2_work\dm_cheat2_out.txt                                                     4710 B
+   D:\aoe2_work\dm_cheat_out.txt                                                    101824 B
+   D:\aoe2_work\dm_civunits_out.txt                                                   3838 B
+   D:\aoe2_work\dm_const_audit_console.txt                                            4868 B
+   D:\aoe2_work\dm_const_audit_out.txt                                                2431 B
+   D:\aoe2_work\dm_const_out.txt                                                     24036 B
+   D:\aoe2_work\dm_diff_out.txt                                                       4770 B
+   D:\aoe2_work\dm_dmcheck_out.txt                                                    6740 B
+   D:\aoe2_work\dm_errs_out.txt                                                      14640 B
+   D:\aoe2_work\dm_exe_ai_out.txt                                                    17332 B
+   D:\aoe2_work\dm_exe_logs.py                                                        1038 B
+   D:\aoe2_work\dm_exe_logs_out.txt                                                   7120 B
+   D:\aoe2_work\dm_factcheck_console.txt                                              5998 B
+   D:\aoe2_work\dm_factcheck_out.txt                                                  5993 B
+   D:\aoe2_work\dm_facts_out.txt                                                      4128 B
+   D:\aoe2_work\dm_finalcheck_console.txt                                             8680 B
+   D:\aoe2_work\dm_finalcheck_out.txt                                                 4449 B
+   D:\aoe2_work\dm_graph_out.txt                                                     29241 B
+   D:\aoe2_work\dm_houseregion_out.txt                                                8464 B
+   D:\aoe2_work\dm_house_out.txt                                                      1354 B
+   D:\aoe2_work\dm_ids_out.txt                                                       58678 B
+   D:\aoe2_work\dm_install_console.txt                                                3252 B
+   D:\aoe2_work\dm_install_report.txt                                                 2225 B
+   D:\aoe2_work\dm_inv_out.txt                                                       11591 B
+   D:\aoe2_work\dm_loads2_out.txt                                                     1462 B
+   D:\aoe2_work\dm_loads_out.txt                                                     30294 B
+   D:\aoe2_work\dm_look_out.txt                                                       6692 B
+   D:\aoe2_work\dm_loop_out.txt                                                       5292 B
+   D:\aoe2_work\dm_marker_check_out.txt                                               3496 B
+   D:\aoe2_work\dm_p1_out.txt                                                        14126 B
+   D:\aoe2_work\dm_paren_console.txt                                                  4516 B
+   D:\aoe2_work\dm_paren_out.txt                                                      2257 B
+   D:\aoe2_work\dm_patch_console.txt                                                  5484 B
+   D:\aoe2_work\dm_patch_report.txt                                                   2741 B
+   D:\aoe2_work\dm_patch_scan_out.txt                                                35472 B
+   D:\aoe2_work\dm_pop500_out.txt                                                    10060 B
+   D:\aoe2_work\dm_popcaps_console.txt                                                 968 B
+   D:\aoe2_work\dm_popcaps_out.txt                                                     483 B
+   D:\aoe2_work\dm_ranges_out.txt                                                    12846 B
+   D:\aoe2_work\dm_read1_out.txt                                                      8752 B
+   D:\aoe2_work\dm_read2_out.txt                                                      6954 B
+   D:\aoe2_work\dm_rearm_out.txt                                                     11544 B
+   D:\aoe2_work\dm_rebuild_console.txt                                               40982 B
+   D:\aoe2_work\dm_render_tail_out.txt                                                3474 B
+   D:\aoe2_work\dm_repack_report.txt                                                  1715 B
+   D:\aoe2_work\dm_sb_full_out.txt                                                   77021 B
+   D:\aoe2_work\dm_sb_summary_out.txt                                                 2527 B
+   D:\aoe2_work\dm_scan6_out.txt                                                     19848 B
+   D:\aoe2_work\dm_scope_console.txt                                                  3432 B
+   D:\aoe2_work\dm_scope_out.txt                                                      1715 B
+   D:\aoe2_work\dm_secbuild_out.txt                                                    374 B

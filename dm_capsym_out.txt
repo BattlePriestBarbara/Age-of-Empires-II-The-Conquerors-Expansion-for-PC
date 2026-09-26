@@ -1,0 +1,58 @@
+=== every POPULATION-CAP occurrence in AoK HD.exe
+  POPULATION-CAP   : 8 occurrence(s)
+     @0x003743c8  ||GAME-SPEED-LOCKED|||LOW-RESOURCES-START|MEDIUM-RESOURCES-START||HIGH-RESOURCES-START||||POPULATION-CAP-200||POPULATION-CAP-175||POPULATION-CAP-150||POPULATION-CAP-125||POPULATION
+     @0x003743dc  ||LOW-RESOURCES-START|MEDIUM-RESOURCES-START||HIGH-RESOURCES-START||||POPULATION-CAP-200||POPULATION-CAP-175||POPULATION-CAP-150||POPULATION-CAP-125||POPULATION-CAP-100||POPULATION
+     @0x003743f0  T|MEDIUM-RESOURCES-START||HIGH-RESOURCES-START||||POPULATION-CAP-200||POPULATION-CAP-175||POPULATION-CAP-150||POPULATION-CAP-125||POPULATION-CAP-100||POPULATION-CAP-75|||POPULATION
+     @0x00374404  TART||HIGH-RESOURCES-START||||POPULATION-CAP-200||POPULATION-CAP-175||POPULATION-CAP-150||POPULATION-CAP-125||POPULATION-CAP-100||POPULATION-CAP-75|||POPULATION-CAP-50|||POPULATION
+     @0x00374418  -START||||POPULATION-CAP-200||POPULATION-CAP-175||POPULATION-CAP-150||POPULATION-CAP-125||POPULATION-CAP-100||POPULATION-CAP-75|||POPULATION-CAP-50|||POPULATION-CAP-25|||DIFFICULTY
+     @0x0037442c  -CAP-200||POPULATION-CAP-175||POPULATION-CAP-150||POPULATION-CAP-125||POPULATION-CAP-100||POPULATION-CAP-75|||POPULATION-CAP-50|||POPULATION-CAP-25|||DIFFICULTY-HARDEST||DIFFICULTY
+     @0x00374440  -CAP-175||POPULATION-CAP-150||POPULATION-CAP-125||POPULATION-CAP-100||POPULATION-CAP-75|||POPULATION-CAP-50|||POPULATION-CAP-25|||DIFFICULTY-HARDEST||DIFFICULTY-HARD|DIFFICULTY-MOD
+     @0x00374454  -CAP-150||POPULATION-CAP-125||POPULATION-CAP-100||POPULATION-CAP-75|||POPULATION-CAP-50|||POPULATION-CAP-25|||DIFFICULTY-HARDEST||DIFFICULTY-HARD|DIFFICULTY-MODERATE|DIFFICULTY-EAS
+  --- distinct full symbol names found ---
+     POPULATION-CAP-100
+     POPULATION-CAP-125
+     POPULATION-CAP-150
+     POPULATION-CAP-175
+     POPULATION-CAP-200
+     POPULATION-CAP-25
+     POPULATION-CAP-50
+     POPULATION-CAP-75
+  CAP-%            : 0 occurrence(s)
+
+=== AI tokens: difficulty / build / chat / research / goal
+  hardest                     1 hit(s)
+  hard                        2 hit(s)
+  moderate                    1 hit(s)
+  easy                        1 hit(s)
+  easiest                     2 hit(s)
+  housing-headroom            1 hit(s)
+  population-headroom         1 hit(s)
+  can-build                   6 hit(s)
+  build                      32 hit(s)
+  chat-to-all                 6 hit(s)
+  chat-local-to-self          1 hit(s)
+  enable-timer                1 hit(s)
+  disable-self                1 hit(s)
+  can-research                2 hit(s)
+  set-goal                    1 hit(s)
+  cc-add-resource             1 hit(s)
+  secondary-build             0 hit(s)
+  sn-maximum-town-size        1 hit(s)
+  house                       1 hit(s)
+  difficulty                  5 hit(s)
+  #load-if-not-defined        1 hit(s)
+        @0x00373724 Aggressive||Emotional AI||||.[.|.oB|.\.|.|B|#end-if|#else|||#load-if-not-defined||||#load-if-defined||||=>||defconst||||
+  #load-if-defined            1 hit(s)
+        @0x0037373c ||||.[.|.oB|.\.|.|B|#end-if|#else|||#load-if-not-defined||||#load-if-defined||||=>||defconst||||defrule|load-random|load
+  #else                       6 hit(s)
+        @0x0037371c onate|||Aggressive||Emotional AI||||.[.|.oB|.\.|.|B|#end-if|#else|||#load-if-not-defined||||#load-if-defined||||=>||defc
+        @0x00377db4 end-of-file|ERR3005: Unexpected #end-if|ERR3004: Unexpected #else|||ERR9000: Undocumented error|ERR6003: String table fu
+        @0x003cc83f  resource or memory||error: %s|||unexpected #elif following #else||||unexpected #elif||||unexpected #else following #els
+        @0x003cc867 ted #elif following #else||||unexpected #elif||||unexpected #else following #else||||unexpected #else||||unexpected #end
+  #end-if                     3 hit(s)
+        @0x00373714 Compassionate|||Aggressive||Emotional AI||||.[.|.oB|.\.|.|B|#end-if|#else|||#load-if-not-defined||||#load-if-defined||||
+        @0x00377d98 error|||ERR2013: Unexpected end-of-file|ERR3005: Unexpected #end-if|ERR3004: Unexpected #else|||ERR9000: Undocumented er
+        @0x00377f65 ing identifier|ERR2006: Missing file name||ERR3006: Missing #end-if||||ERR2010: Missing closing quote||ERR2011: Missing 
+  #include                    2 hit(s)
+        @0x003cc7c0 preprocessor command '%s'|||syntax error||||too many nested #includes|||||||include interface required to support #inclu
+        @0x003cc7f6 ested #includes|||||||include interface required to support #include from resource or memory||error: %s|||unexpected #el

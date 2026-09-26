@@ -1,0 +1,42 @@
+﻿
+Name                             
+----                             
+-- 原版的EXE和DLL等文件备份 --            
+-- 游戏可能需要的运行库软件 --               
+3dm                              
+AI                               
+Avi                              
+Bin                              
+Campaign                         
+Data                             
+Docs                             
+History                          
+launcher_res                     
+Learn                            
+mods                             
+Random                           
+savegame                         
+Scenario                         
+shaders                          
+Sound                            
+Support                          
+Taunt                            
+Terrain                          
+_CommonRedist                    
+221380_install.vdf               
+3dmConfig.ini                    
+3DMGAME 中国第一单机游戏门户 全球最大汉化游戏论坛.url
+3DMGame.ini                      
+AoK HD.exe                       
+Launcher.exe                     
+scenariobkg.bmp                  
+Steamclient.dll                  
+steam_api.dll                    
+tr_spred.txt                     
+zlibwapi.dll                     
+启动游戏.exe                         
+最新单机游戏下载大全-3DM下载站.url            
+游戏打不开请安装.txt                     
+说明.txt                           
+
+

@@ -1,0 +1,819 @@
+=== per-file counts: unit-max / deathmatch-unit-max / need-deathmatch-villagers / train villager ===
+anib_60001.bin      29337 bytes  pop<unit-max=  0  dm-unit-max=  0  need-dm-vill=  0  train-villager= 10  all-unit-max=  0
+anib_60002.bin      54203 bytes  pop<unit-max= 56  dm-unit-max= 56  need-dm-vill= 58  train-villager=  2  all-unit-max=112
+anib_60007.bin      26355 bytes  pop<unit-max=  6  dm-unit-max=  0  need-dm-vill=  0  train-villager=  0  all-unit-max=  6
+anib_60009.bin      23059 bytes  pop<unit-max= 18  dm-unit-max=  0  need-dm-vill=  0  train-villager=  0  all-unit-max= 18
+anib_60013.bin      20650 bytes  pop<unit-max=  0  dm-unit-max=  1  need-dm-vill=  0  train-villager=  3  all-unit-max=  1
+anib_60016.bin       3609 bytes  pop<unit-max=  0  dm-unit-max=  0  need-dm-vill=  0  train-villager=  0  all-unit-max=  1
+anib_60018.bin        475 bytes  pop<unit-max=  0  dm-unit-max=  0  need-dm-vill=  0  train-villager=  1  all-unit-max=  0
+anib_60027.bin      19383 bytes  pop<unit-max=  0  dm-unit-max=  8  need-dm-vill=  1  train-villager=  0  all-unit-max= 48
+anib_60028.bin      55492 bytes  pop<unit-max=  0  dm-unit-max=  1  need-dm-vill=  0  train-villager=  6  all-unit-max=  2
+anib_60029.bin      52174 bytes  pop<unit-max=  0  dm-unit-max=  0  need-dm-vill=  1  train-villager=  2  all-unit-max=  1
+
+=== DM script: rules mentioning need-deathmatch-villagers (whole rule) ===
+   11| (defrule
+   12| 	(true)
+   13| =>
+   14| 	(set-goal military-parity YES)	;goal 3
+   15| 	(set-goal attack-control NO)	;goal 4
+   16| 	(set-goal need-deathmatch-villagers NO)	;goal 7
+   17| 
+   18| 	(set-goal secondary-build 1)	;goal 8
+   19| 	(set-goal soldiers-available NO);goal 10
+   20| 	(set-goal attack-enabled YES)	;goal 13
+   21| 	(set-goal age-advancement NO)	;goal 14
+   22| 
+   23| 	(set-goal make-warboat NO)		;goal 15
+   24| 	(set-goal upgrade-conflict NO)	;goal 16
+   25| 
+   26| 	(disable-self)
+   27| )
+
+   66| (defrule
+   67| 	(goal secondary-build 1)
+   68| 	(random-number == 1)
+   69| 	(can-train elite-eagle-warrior)
+   70| 	(or
+   71| 		(population < deathmatch-unit-max)
+   72| 		(and
+   73| 			(population < unit-max)
+   74| 			(goal need-deathmatch-villagers NO)
+   75| 		)
+
+   82| (defrule
+   83| 	(goal secondary-build 1)
+   84| 	(random-number == 2)
+   85| 	(can-train arbalest)
+   86| 	(or
+   87| 		(population < deathmatch-unit-max)
+   88| 		(and
+   89| 			(population < unit-max)
+   90| 			(goal need-deathmatch-villagers NO)
+   91| 		)
+
+  124| (defrule
+  125| 	(goal secondary-build 1)
+  126| 	(random-number == 1)
+  127| 	(can-train heavy-cavalry-archer)
+  128| 	(or
+  129| 		(population < deathmatch-unit-max)
+  130| 		(and
+  131| 			(population < unit-max)
+  132| 			(goal need-deathmatch-villagers NO)
+  133| 		)
+
+  140| (defrule
+  141| 	(goal secondary-build 1)
+  142| 	(random-number == 2)
+  143| 	(can-train hussar)
+  144| 	(nor 
+  145| 		(can-train elite-tarkan)
+  146| 		(can-train paladin)
+  147| 	)
+  148| 	(or
+  149| 		(population < deathmatch-unit-max)
+  150| 		(and
+  151| 			(population < unit-max)
+  152| 			(goal need-deathmatch-villagers NO)
+  153| 		)
+
+  187| (defrule
+  188| 	(goal secondary-build 1)
+  189| 	(random-number == 1)
+  190| 	(can-train heavy-cavalry-archer)
+  191| 	(or
+  192| 		(population < deathmatch-unit-max)
+  193| 		(and
+  194| 			(population < unit-max)
+  195| 			(goal need-deathmatch-villagers NO)
+  196| 		)
+
+  203| (defrule
+  204| 	(goal secondary-build 1)
+  205| 	(random-number == 2)
+  206| 	(can-train hand-cannoneer)
+  207| 	(or
+  208| 		(population < deathmatch-unit-max)
+  209| 		(and
+  210| 			(population < unit-max)
+  211| 			(goal need-deathmatch-villagers NO)
+  212| 		)
+
+  246| (defrule
+  247| 	(goal secondary-build 1)
+  248| 	(random-number == 1)
+  249| 	(can-train champion)
+  250| 	(or
+  251| 		(population < deathmatch-unit-max)
+  252| 		(and
+  253| 			(population < unit-max)
+  254| 			(goal need-deathmatch-villagers NO)
+  255| 		)
+
+  262| (defrule
+  263| 	(goal secondary-build 1)
+  264| 	(random-number == 2)
+  265| 	(can-train elite-eagle-warrior)
+  266| 	(or
+  267| 		(population < deathmatch-unit-max)
+  268| 		(and
+  269| 			(population < unit-max)
+  270| 			(goal need-deathmatch-villagers NO)
+  271| 		)
+
+  305| (defrule
+  306| 	(goal secondary-build 1)
+  307| 	(random-number == 1)
+  308| 	(can-train champion)
+  309| 	(or
+  310| 		(population < deathmatch-unit-max)
+  311| 		(and
+  312| 			(population < unit-max)
+  313| 			(goal need-deathmatch-villagers NO)
+  314| 		)
+
+  321| (defrule
+  322| 	(goal secondary-build 1)
+  323| 	(random-number == 2)
+  324| 	(can-train paladin)
+  325| 	(or
+  326| 		(population < deathmatch-unit-max)
+  327| 		(and
+  328| 			(population < unit-max)
+  329| 			(goal need-deathmatch-villagers NO)
+  330| 		)
+
+  337| (defrule
+  338| 	(goal secondary-build 1)
+  339| 	(random-number == 3)
+  340| 	(can-train hussar)
+  341| 	(not (can-train paladin) )
+  342| 	(or
+  343| 		(population < deathmatch-unit-max)
+  344| 		(and
+  345| 			(population < unit-max)
+  346| 			(goal need-deathmatch-villagers NO)
+  347| 		)
+
+  354| (defrule
+  355| 	(goal secondary-build 1)
+  356| 	(random-number == 4)
+  357| 	(can-train hand-cannoneer)
+  358| 	(nor 
+  359| 		(can-train elite-conquistador) 
+  360| 		(can-train heavy-cavalry-archer)
+  361| 	)
+  362| 	(or
+  363| 		(population < deathmatch-unit-max)
+  364| 		(and
+  365| 			(population < unit-max)
+  366| 			(goal need-deathmatch-villagers NO)
+  367| 		)
+
+  374| (defrule
+  375| 	(goal secondary-build 1)
+  376| 	(random-number == 5)
+  377| 	(can-train heavy-cavalry-archer)
+  378| 	(not (can-train elite-conquistador) )
+  379| 	(or
+  380| 		(population < deathmatch-unit-max)
+  381| 		(and
+  382| 			(population < unit-max)
+  383| 			(goal need-deathmatch-villagers NO)
+  384| 		)
+
+  418| (defrule
+  419| 	(goal secondary-build 1)
+  420| 	(random-number == 1)
+  421| 	(can-train champion)
+  422| 	(or
+  423| 		(population < deathmatch-unit-max)
+  424| 		(and
+  425| 			(population < unit-max)
+  426| 			(goal need-deathmatch-villagers NO)
+  427| 		)
+
+  434| (defrule
+  435| 	(goal secondary-build 1)
+  436| 	(random-number == 2)
+  437| 	(can-train hussar)
+  438| 	(or
+  439| 		(population < deathmatch-unit-max)
+  440| 		(and
+  441| 			(population < unit-max)
+  442| 			(goal need-deathmatch-villagers NO)
+  443| 		)
+
+  476| (defrule
+  477| 	(goal secondary-build 1)
+  478| 	(random-number == 1)
+  479| 	(can-train heavy-cavalry-archer)
+  480| 	(or
+  481| 		(population < deathmatch-unit-max)
+  482| 		(and
+  483| 			(population < unit-max)
+  484| 			(goal need-deathmatch-villagers NO)
+  485| 		)
+
+  492| (defrule
+  493| 	(goal secondary-build 1)
+  494| 	(random-number == 2)
+  495| 	(or
+  496| 		(can-train hand-cannoneer)
+  497| 		(can-train arbalest)
+  498| 	)
+  499| 	(or
+  500| 		(population < deathmatch-unit-max)
+  501| 		(and
+  502| 			(population < unit-max)
+  503| 			(goal need-deathmatch-villagers NO)
+  504| 		)
+
+  512| (defrule
+  513| 	(goal secondary-build 1)
+  514| 	(random-number == 3)
+  515| 	(can-train hussar)
+  516| 	(nor
+  517| 		(can-train elite-cataphract)
+  518| 		(can-train paladin)
+  519| 	)
+  520| 	(or
+  521| 		(population < deathmatch-unit-max)
+  522| 		(and
+  523| 			(population < unit-max)
+  524| 			(goal need-deathmatch-villagers NO)
+  525| 		)
+
+  559| (defrule
+  560| 	(goal secondary-build 1)
+  561| 	(random-number == 1)
+  562| 	(can-train paladin)
+  563| 	(or
+  564| 		(population < deathmatch-unit-max)
+  565| 		(and
+  566| 			(population < unit-max)
+  567| 			(goal need-deathmatch-villagers NO)
+  568| 		)
+
+  575| (defrule
+  576| 	(goal secondary-build 1)
+  577| 	(random-number == 2)
+  578| 	(can-train light-cavalry)
+  579| 	(not (can-afford-unit paladin) )
+  580| 	(or
+  581| 		(population < deathmatch-unit-max)
+  582| 		(and
+  583| 			(population < unit-max)
+  584| 			(goal need-deathmatch-villagers NO)
+  585| 		)
+
+  592| (defrule
+  593| 	(goal secondary-build 1)
+  594| 	(random-number == 3)
+  595| 	(can-train heavy-cavalry-archer)
+  596| 	(or
+  597| 		(population < deathmatch-unit-max)
+  598| 		(and
+  599| 			(population < unit-max)
+  600| 			(goal need-deathmatch-villagers NO)
+  601| 		)
+
+  608| (defrule
+  609| 	(goal secondary-build 1)
+  610| 	(random-number == 4)
+  611| 	(can-train heavy-scorpion)
+  612| 	(or
+  613| 		(population < deathmatch-unit-max)
+  614| 		(and
+  615| 			(population < unit-max)
+  616| 			(goal need-deathmatch-villagers NO)
+  617| 		)
+
+  651| (defrule
+  652| 	(goal secondary-build 1)
+  653| 	(random-number == 1)
+  654| 	(can-train champion)
+  655| 	(or
+  656| 		(population < deathmatch-unit-max)
+  657| 		(and
+  658| 			(population < unit-max)
+  659| 			(goal need-deathmatch-villagers NO)
+  660| 		)
+
+  667| (defrule
+  668| 	(goal secondary-build 1)
+  669| 	(random-number == 2)
+  670| 	(can-train hussar)
+  671| 	(or
+  672| 		(population < deathmatch-unit-max)
+  673| 		(and
+  674| 			(population < unit-max)
+  675| 			(goal need-deathmatch-villagers NO)
+  676| 		)
+
+  683| (defrule
+  684| 	(goal secondary-build 1)
+  685| 	(random-number == 3)
+  686| 	(can-train heavy-scorpion)
+  687| 	(or
+  688| 		(population < deathmatch-unit-max)
+  689| 		(and
+  690| 			(population < unit-max)
+  691| 			(goal need-deathmatch-villagers NO)
+  692| 		)
+
+  725| (defrule
+  726| 	(goal secondary-build 1)
+  727| 	(random-number == 1)
+  728| 	(can-train paladin)
+  729| 	(or
+  730| 		(population < deathmatch-unit-max)
+  731| 		(and
+  732| 			(population < unit-max)
+  733| 			(goal need-deathmatch-villagers NO)
+  734| 		)
+
+  741| (defrule
+  742| 	(goal secondary-build 1)
+  743| 	(random-number == 2)
+  744| 	(can-train hussar)
+  745| 	(not (can-afford-unit paladin) )
+  746| 	(or
+  747| 		(population < deathmatch-unit-max)
+  748| 		(and
+  749| 			(population < unit-max)
+  750| 			(goal need-deathmatch-villagers NO)
+  751| 		)
+
+  758| (defrule
+  759| 	(goal secondary-build 1)
+  760| 	(random-number == 3)
+  761| 	(can-train heavy-cavalry-archer)
+  762| 	(or
+  763| 		(population < deathmatch-unit-max)
+  764| 		(and
+  765| 			(population < unit-max)
+  766| 			(goal need-deathmatch-villagers NO)
+  767| 		)
+
+  774| (defrule
+  775| 	(goal secondary-build 1)
+  776| 	(random-number == 4)
+  777| 	(can-train heavy-scorpion)
+  778| 	(or
+  779| 		(population < deathmatch-unit-max)
+  780| 		(and
+  781| 			(population < unit-max)
+  782| 			(goal need-deathmatch-villagers NO)
+  783| 		)
+
+  816| (defrule
+  817| 	(goal secondary-build 1)
+  818| 	(random-number == 1)
+  819| 	(can-train hussar)
+  820| 	(or
+  821| 		(population < deathmatch-unit-max)
+  822| 		(and
+  823| 			(population < unit-max)
+  824| 			(goal need-deathmatch-villagers NO)
+  825| 		)
+
+  832| (defrule
+  833| 	(goal secondary-build 1)
+  834| 	(random-number == 2)
+  835| 	(can-train heavy-cavalry-archer)
+  836| 	(or
+  837| 		(population < deathmatch-unit-max)
+  838| 		(and
+  839| 			(population < unit-max)
+  840| 			(goal need-deathmatch-villagers NO)
+  841| 		)
+
+  848| (defrule
+  849| 	(goal secondary-build 1)
+  850| 	(random-number == 3)
+  851| 	(can-train heavy-scorpion)
+  852| 	(or
+  853| 		(population < deathmatch-unit-max)
+  854| 		(and
+  855| 			(population < unit-max)
+  856| 			(goal need-deathmatch-villagers NO)
+  857| 		)
+
+  890| (defrule
+  891| 	(goal secondary-build 1)
+  892| 	(random-number == 1)
+  893| 	(can-train heavy-cavalry-archer)
+  894| 	(or
+  895| 		(population < deathmatch-unit-max)
+  896| 		(and
+  897| 			(population < unit-max)
+  898| 			(goal need-deathmatch-villagers NO)
+  899| 		)
+
+  906| (defrule
+  907| 	(goal secondary-build 1)
+  908| 	(random-number == 2)
+  909| 	(or
+  910| 		(can-train hand-cannoneer)
+  911| 		(can-train arbalest)
+  912| 	)
+  913| 	(or
+  914| 		(population < deathmatch-unit-max)
+  915| 		(and
+  916| 			(population < unit-max)
+  917| 			(goal need-deathmatch-villagers NO)
+  918| 		)
+
+  926| (defrule
+  927| 	(goal secondary-build 1)
+  928| 	(random-number == 3)
+  929| 	(can-train heavy-scorpion)
+  930| 	(or
+  931| 		(population < deathmatch-unit-max)
+  932| 		(and
+  933| 			(population < unit-max)
+  934| 			(goal need-deathmatch-villagers NO)
+  935| 		)
+
+  968| (defrule
+  969| 	(goal secondary-build 1)
+  970| 	(random-number == 1)
+  971| 	(can-train champion)
+  972| 	(or
+  973| 		(population < deathmatch-unit-max)
+  974| 		(and
+  975| 			(population < unit-max)
+  976| 			(goal need-deathmatch-villagers NO)
+  977| 		)
+
+  984| (defrule
+  985| 	(goal secondary-build 1)
+  986| 	(random-number == 2)
+  987| 	(can-train hussar)
+  988| 	(or
+  989| 		(population < deathmatch-unit-max)
+  990| 		(and
+  991| 			(population < unit-max)
+  992| 			(goal need-deathmatch-villagers NO)
+  993| 		)
+
+ 1026| (defrule
+ 1027| 	(goal secondary-build 1)
+ 1028| 	(random-number == 1)
+ 1029| 	(can-train heavy-cavalry-archer)
+ 1030| 	(or
+ 1031| 		(population < deathmatch-unit-max)
+ 1032| 		(and
+ 1033| 			(population < unit-max)
+ 1034| 			(goal need-deathmatch-villagers NO)
+ 1035| 		)
+
+ 1042| (defrule
+ 1043| 	(goal secondary-build 1)
+ 1044| 	(random-number == 2)
+ 1045| 	(can-train hussar)
+ 1046| 	(nor
+ 1047| 		(can-train elite-war-elephant)
+ 1048| 		(can-train paladin)
+ 1049| 	)
+ 1050| 	(or
+ 1051| 		(population < deathmatch-unit-max)
+ 1052| 		(and
+ 1053| 			(population < unit-max)
+ 1054| 			(goal need-deathmatch-villagers NO)
+ 1055| 		)
+
+ 1089| (defrule
+ 1090| 	(goal secondary-build 1)
+ 1091| 	(random-number == 1)
+ 1092| 	(can-train heavy-cavalry-archer)
+ 1093| 	(or
+ 1094| 		(population < deathmatch-unit-max)
+ 1095| 		(and
+ 1096| 			(population < unit-max)
+ 1097| 			(goal need-deathmatch-villagers NO)
+ 1098| 		)
+
+ 1105| (defrule
+ 1106| 	(goal secondary-build 1)
+ 1107| 	(random-number == 2)
+ 1108| 	(or
+ 1109| 		(can-train hand-cannoneer)
+ 1110| 		(can-train arbalest)
+ 1111| 	)
+ 1112| 	(or
+ 1113| 		(population < deathmatch-unit-max)
+ 1114| 		(and
+ 1115| 			(population < unit-max)
+ 1116| 			(goal need-deathmatch-villagers NO)
+ 1117| 		)
+
+ 1125| (defrule
+ 1126| 	(goal secondary-build 1)
+ 1127| 	(random-number == 3)
+ 1128| 	(can-train hussar)
+ 1129| 	(not (can-train elite-mameluke) )
+ 1130| 	(or
+ 1131| 		(population < deathmatch-unit-max)
+ 1132| 		(and
+ 1133| 			(population < unit-max)
+ 1134| 			(goal need-deathmatch-villagers NO)
+ 1135| 		)
+
+ 1168| (defrule
+ 1169| 	(goal secondary-build 1)
+ 1170| 	(random-number == 1)
+ 1171| 	(can-train paladin)
+ 1172| 	(or
+ 1173| 		(population < deathmatch-unit-max)
+ 1174| 		(and
+ 1175| 			(population < unit-max)
+ 1176| 			(goal need-deathmatch-villagers NO)
+ 1177| 		)
+
+ 1184| (defrule
+ 1185| 	(goal secondary-build 1)
+ 1186| 	(random-number == 2)
+ 1187| 	(can-train heavy-scorpion)
+ 1188| 	(or
+ 1189| 		(population < deathmatch-unit-max)
+ 1190| 		(and
+ 1191| 			(population < unit-max)
+ 1192| 			(goal need-deathmatch-villagers NO)
+ 1193| 		)
+
+ 1226| (defrule
+ 1227| 	(goal secondary-build 1)
+ 1228| 	(random-number == 1)
+ 1229| 	(can-train champion)
+ 1230| 	(or
+ 1231| 		(population < deathmatch-unit-max)
+ 1232| 		(and
+ 1233| 			(population < unit-max)
+ 1234| 			(goal need-deathmatch-villagers NO)
+ 1235| 		)
+
+ 1242| (defrule
+ 1243| 	(goal secondary-build 1)
+ 1244| 	(random-number == 2)
+ 1245| 	(can-train hussar)
+ 1246| 	(or
+ 1247| 		(population < deathmatch-unit-max)
+ 1248| 		(and
+ 1249| 			(population < unit-max)
+ 1250| 			(goal need-deathmatch-villagers NO)
+ 1251| 		)
+
+ 1258| (defrule
+ 1259| 	(goal secondary-build 1)
+ 1260| 	(random-number == 3)
+ 1261| 	(can-train heavy-scorpion)
+ 1262| 	(or
+ 1263| 		(population < deathmatch-unit-max)
+ 1264| 		(and
+ 1265| 			(population < unit-max)
+ 1266| 			(goal need-deathmatch-villagers NO)
+ 1267| 		)
+
+ 1300| (defrule
+ 1301| 	(goal secondary-build 1)
+ 1302| 	(random-number == 1)
+ 1303| 	(can-train light-cavalry)
+ 1304| 	(or
+ 1305| 		(population < deathmatch-unit-max)
+ 1306| 		(and
+ 1307| 			(population < unit-max)
+ 1308| 			(goal need-deathmatch-villagers NO)
+ 1309| 		)
+
+ 1316| (defrule
+ 1317| 	(goal secondary-build 1)
+ 1318| 	(random-number == 2)
+ 1319| 	(can-train arbalest)
+ 1320| 	(or
+ 1321| 		(population < deathmatch-unit-max)
+ 1322| 		(and
+ 1323| 			(population < unit-max)
+ 1324| 			(goal need-deathmatch-villagers NO)
+ 1325| 		)
+
+ 1332| (defrule
+ 1333| 	(goal secondary-build 1)
+ 1334| 	(random-number == 3)
+ 1335| 	(can-train heavy-scorpion)
+ 1336| 	(or
+ 1337| 		(population < deathmatch-unit-max)
+ 1338| 		(and
+ 1339| 			(population < unit-max)
+ 1340| 			(goal need-deathmatch-villagers NO)
+ 1341| 		)
+
+ 2240| (defrule
+ 2241| 	(or
+ 2242| 		(or
+ 2243| 			(wood-amount < 5000)
+ 2244| 			(food-amount < 5000)
+ 2245| 		)
+ 2246| 		(or
+ 2247| 			(gold-amount < 2000)
+ 2248| 			(stone-amount < 700)
+ 2249| 		)
+ 2250| 	)
+ 2251| =>
+ 2252| 	(set-goal need-deathmatch-villagers YES)
+ 2253| 	(disable-self)
+ 2254| )
+
+ 2256| (defrule
+ 2257| 	(building-type-count castle == 0)
+ 2258| 	(can-train militiaman-line)
+ 2259| 	(or
+ 2260| 		(population < deathmatch-unit-max)
+ 2261| 		(and
+ 2262| 			(population < unit-max)
+ 2263| 			(goal need-deathmatch-villagers NO)
+ 2264| 		)
+
+ 2271| (defrule
+ 2272| 	(building-type-count castle == 0)
+ 2273| 	(can-train knight-line)
+ 2274| 	(or
+ 2275| 		(population < deathmatch-unit-max)
+ 2276| 		(and
+ 2277| 			(population < unit-max)
+ 2278| 			(goal need-deathmatch-villagers NO)
+ 2279| 		)
+
+ 2286| (defrule
+ 2287| 	(building-type-count castle == 0)
+ 2288| 	(can-train cavalry-archer-line)
+ 2289| 	(or
+ 2290| 		(population < deathmatch-unit-max)
+ 2291| 		(and
+ 2292| 			(population < unit-max)
+ 2293| 			(goal need-deathmatch-villagers NO)
+ 2294| 		)
+
+ 2301| (defrule
+ 2302| 	(building-type-count castle == 0)
+ 2303| 	(can-train archer-line)
+ 2304| 	(not (unit-available hand-cannoneer) )
+ 2305| 	(or
+ 2306| 		(population < deathmatch-unit-max)
+ 2307| 		(and
+ 2308| 			(population < unit-max)
+ 2309| 			(goal need-deathmatch-villagers NO)
+ 2310| 		)
+
+ 2317| (defrule
+ 2318| 	(building-type-count castle == 0)
+ 2319| 	(can-train hand-cannoneer)
+ 2320| 	(or
+ 2321| 		(population < deathmatch-unit-max)
+ 2322| 		(and
+ 2323| 			(population < unit-max)
+ 2324| 			(goal need-deathmatch-villagers NO)
+ 2325| 		)
+
+ 2332| (defrule
+ 2333| 	(can-train my-unique-unit-line)
+ 2334| 	(or
+ 2335| 		(population < deathmatch-unit-max)
+ 2336| 		(and
+ 2337| 			(population < unit-max)
+ 2338| 			(goal need-deathmatch-villagers NO)
+ 2339| 		)
+
+=== DM script: rules mentioning (train villager) ===
+ 1550| (defrule
+ 1551| 	(can-train villager)
+ 1552| 	(or
+ 1553| 		(or
+ 1554| 			(civilian-population < 6)
+ 1555| 			(and
+ 1556| 				(current-age == feudal-age)
+ 1557| 				(civilian-population < 8)
+ 1558| 			)
+ 1559| 		)
+ 1560| 		(or
+ 1561| 			(and
+ 1562| 				(current-age == castle-age)
+ 1563| 				(civilian-population < 10)
+ 1564| 			)
+ 1565| 			(and
+ 1566| 				(current-age == imperial-age)
+ 1567| 				(civilian-population < civ-dark-rush)
+ 1568| 			)
+ 1569| 		)
+ 1570| 	)
+ 1571| =>
+ 1572| 	(train villager)
+ 1573| )
+
+ 1575| (defrule
+ 1576| 	(strategic-number sn-percent-civilian-gatherers == 90)
+ 1577| 	(civilian-population < civ-castle)
+ 1578| 	(can-train villager)
+ 1579| =>
+ 1580| 	(train villager)
+ 1581| )
+
+=== main AI (anib_60001.bin): villager / army size logic samples ===
+  282| (defrule
+  283| 	(current-age == dark-age)
+  284| 	(difficulty <= hard)
+  285| 	(unit-type-count-total villager < 27)
+  286| 	(or
+  287| 		(goal rush-control CASTLE)
+  288| 		(goal rush-control IMPERIAL)
+  289| 	)
+  290| 	(can-train villager)
+  291| =>
+  292| 	(train villager)
+
+  295| (defrule
+  296| 	(current-age == dark-age)
+  297| 	(difficulty <= hard)
+  298| 	(civilian-population < civ-dark)
+  299| 	(nor
+  300| 		(goal rush-control CASTLE)
+  301| 		(goal rush-control IMPERIAL)
+  302| 	)
+  303| 	(can-train villager)
+  304| =>
+  305| 	(train villager)
+
+  308| (defrule
+  309| 	(current-age == dark-age)
+  310| 	(difficulty == moderate)
+  311| 	(civilian-population < civ-dark-mod)
+  312| 	(can-train villager)
+  313| =>
+  314| 	(train villager)
+
+  347| (defrule
+  348| 	(unit-type-count-total villager <= 5)
+  349| 	(can-train villager)
+  350| =>
+  351| 	(train villager)
+
+  367| (defrule
+  368| 	(unit-type-count-total villager <= 10)
+  369| 	(can-train villager)
+  370| =>
+  371| 	(train villager)
+
+  579| (defrule
+  580| 	(current-age == feudal-age)
+  581| 	(difficulty <= hard)
+  582| 	(unit-type-count-total villager < 29)
+  583| 	(or
+  584| 		(goal rush-control CASTLE)
+  585| 		(goal rush-control IMPERIAL)
+  586| 	)
+  587| 	(can-train villager)
+  588| =>
+  589| 	(train villager)
+
+  592| (defrule
+  593| 	(current-age == feudal-age)
+  594| 	(difficulty <= hard)
+  595| 	(civilian-population < civ-feudal)
+  596| 	(nor
+  597| 		(goal rush-control CASTLE)
+  598| 		(goal rush-control IMPERIAL)
+  599| 	)
+  600| 	(can-train villager)
+  601| =>
+  602| 	(train villager)
+
+  605| (defrule
+  606| 	(current-age == feudal-age)
+  607| 	(difficulty == moderate)
+  608| 	(civilian-population < civ-feudal-mod)
+  609| 	(can-train villager)
+  610| =>
+  611| 	(train villager)
+
+  951| (defrule
+  952| 	(current-age == castle-age)
+  953| 	(difficulty <= moderate)
+  954| 	(civilian-population < civ-castle)
+  955| 	(can-train villager)
+  956| =>
+  957| 	(train villager)
+
+ 1051| (defrule
+ 1052| 	(current-age == imperial-age)
+ 1053| 	(difficulty <= moderate)
+ 1054| 	(or
+ 1055| 		(and
+ 1056| 			(current-age-time < 1800)
+ 1057| 			(civilian-population < civ-castle)
+ 1058| 		)
+ 1059| 		(civilian-population < civ-feudal)
+ 1060| 	)
+ 1061| 	(can-train villager)
+ 1062| =>
+ 1063| 	(train villager)

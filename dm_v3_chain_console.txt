@@ -1,0 +1,13 @@
+﻿v3 verification chain  2026-09-27 00:38:05
+exit 0  dm_patch2.py
+exit 0  dm_apply2.py
+exit 0  dm_install2.py
+exit 0  dump_block.py
+exit 0  dm_dmcheck.py
+exit 0  dm_line3021.py
+exit 0  dm_dialect.py
+exit 0  dm_v2hit.py
+exit 0  dm_blockshape.py
+exit 0  dm_marker_check.py
+exit 0  dm_readme_verify.py
+exit 0  dm_sim.py --caps 500 --caps 200

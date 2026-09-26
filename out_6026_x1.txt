@@ -1,0 +1,104 @@
+﻿=== X1 60026 ===
+(load "petersen constants")
+
+
+
+;******************************
+
+#load-if-defined WONDER-RACE
+
+
+
+(load "wonder rush")
+
+
+
+#end-if
+
+;******************************
+
+#load-if-defined DEATH-MATCH
+
+
+
+(load "petersen map loads")
+
+(load "petersen diplomacy")
+
+
+
+
+
+(load "petersen supplement")
+
+(load "petersen groups")
+
+(load "petersen resign")
+
+
+
+
+
+(load "petersen deathmatch")
+
+
+
+#end-if
+
+;******************************
+
+#load-if-defined DEFEND-WONDER
+
+
+
+(load "petersen map loads")
+
+(load "petersen diplomacy")
+
+
+
+(load "wonder kill")
+
+
+
+#end-if
+
+;******************************
+
+#load-if-not-defined DEATH-MATCH
+
+#load-if-not-defined DEFEND-WONDER
+
+#load-if-not-defined WONDER-RACE
+
+
+
+(load "petersen map loads")
+
+(load "petersen diplomacy")
+
+
+
+(load "petersen supplement")
+
+(load "petersen groups")
+
+(load "petersen resign")
+
+
+
+
+
+(load "AI petersen rules")
+
+
+
+#end-if
+
+#end-if
+
+#end-if
+
+;******************************
+
+

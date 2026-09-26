@@ -1,0 +1,72 @@
+e_lfanew=0x118 magic=0x010b image_base=0x00400000 sections=6
+   .text    VA=0x00001000 vsize=0x34c72a raw=0x00001000 size=0x34d000
+   .rdata   VA=0x0034e000 vsize=0x0c7732 raw=0x0034e000 size=0x0c8000
+   .data    VA=0x00416000 vsize=0x11a4e4 raw=0x00416000 size=0x017000
+   .version VA=0x00531000 vsize=0x000004 raw=0x0042d000 size=0x001000
+   Inf32Dat VA=0x00532000 vsize=0x00ad90 raw=0x0042e000 size=0x00b000
+   .rsrc    VA=0x0053d000 vsize=0x003a2c raw=0x00439000 size=0x004000
+
+### ERR3003: Preprocessor nesting too deep  (1 hit)
+   string @file 0x00377e0c -> VA 0x00777e0c (.rdata)
+      ref @file 0x00074f34 (VA 0x00474f34, .text)
+         00074f04  00 8d 94 24 f0 00 00 00 52 e9 a5 00 00 00 68 48  ...$....R.....hH
+         00074f14  7e 77 00 e9 8e 00 00 00 68 34 7e 77 00 68 00 01  ~w......h4~w.h..
+         00074f24  00 00 8d 8c 24 f0 00 00 00 51 e9 84 00 00 00 68  ....$....Q.....h
+         00074f34  0c 7e 77 00 68 00 01 00 00 8d 94 24 f0 00 00 00  .~w.h......$....
+         00074f44  52 eb 70 68 f4 7d 77 00 eb 5c 68 d8 7d 77 00 68  R.ph.}w..\h.}w.h
+
+### ERR2012: Constant Already Defined  (1 hit)
+   string @file 0x0037807c -> VA 0x0077807c (.rdata)
+      ref @file 0x00074dcd (VA 0x00474dcd, .text)
+         00074d9d  c7 86 54 07 00 00 00 00 00 00 e8 44 1e 06 00 8b  ..T........D....
+         00074dad  d8 85 db 0f 84 ae 04 00 00 8b 86 e0 08 00 00 83  ................
+         00074dbd  f8 1a 0f 87 e0 01 00 00 ff 24 85 84 52 47 00 68  .........$..RG.h
+         00074dcd  7c 80 77 00 68 00 01 00 00 8d 8c 24 f0 00 00 00  |.w.h......$....
+         00074ddd  51 e9 d4 01 00 00 68 60 80 77 00 68 00 01 00 00  Q.....h`.w.h....
+
+### ERR3006: Missing #end-if  (1 hit)
+   string @file 0x00377f54 -> VA 0x00777f54 (.rdata)
+      ref @file 0x00074e8c (VA 0x00474e8c, .text)
+         00074e5c  00 8d 94 24 f0 00 00 00 52 e9 4d 01 00 00 68 90  ...$....R.M...h.
+         00074e6c  7f 77 00 e9 36 01 00 00 68 70 7f 77 00 68 00 01  .w..6...hp.w.h..
+         00074e7c  00 00 8d 8c 24 f0 00 00 00 51 e9 2c 01 00 00 68  ....$....Q.,...h
+         00074e8c  54 7f 77 00 68 00 01 00 00 8d 94 24 f0 00 00 00  T.w.h......$....
+         00074e9c  52 e9 15 01 00 00 68 38 7f 77 00 e9 fe 00 00 00  R.....h8.w......
+
+### too many nested #includes  (1 hit)
+   string @file 0x003cc7b0 -> VA 0x007cc7b0 (.rdata)
+      ref @file 0x00260455 (VA 0x00660455, .text)
+         00260425  8b 86 6c 02 00 00 39 48 18 75 0d 68 d0 c7 7c 00  ..l...9H.u.h..|.
+         00260435  68 e1 05 00 00 57 eb 28 8b 86 68 02 00 00 85 c0  h....W.(..h.....
+         00260445  74 32 8b 40 6c 41 85 c0 75 f8 83 f9 20 72 25 68  t2.@lA..u... r%h
+         00260455  b0 c7 7c 00 68 e2 05 00 00 8d 86 78 02 00 00 50  ..|.h......x...P
+         00260465  8d 46 18 50 e8 7e ed ff ff 83 c4 10 89 5e 48 89  .F.P.~.......^H.
+
+### ERR3004: Unexpected #else  (1 hit)
+   string @file 0x00377da0 -> VA 0x00777da0 (.rdata)
+      ref @file 0x00074f77 (VA 0x00474f77, .text)
+         00074f47  68 f4 7d 77 00 eb 5c 68 d8 7d 77 00 68 00 01 00  h.}w..\h.}w.h...
+         00074f57  00 8d 8c 24 f0 00 00 00 51 eb 55 68 bc 7d 77 00  ...$....Q.Uh.}w.
+         00074f67  68 00 01 00 00 8d 94 24 f0 00 00 00 52 eb 41 68  h......$....R.Ah
+         00074f77  a0 7d 77 00 eb 2d 68 84 7d 77 00 68 00 01 00 00  .}w..-h.}w.h....
+         00074f87  8d 8c 24 f0 00 00 00 51 eb 26 68 64 7d 77 00 68  ..$....Q.&hd}w.h
+
+### AI Script Error  (1 hit)
+   string @file 0x00377d38 -> VA 0x00777d38 (.rdata)
+      ref @file 0x00074fc0 (VA 0x00474fc0, .text)
+         00074f90  26 68 64 7d 77 00 68 00 01 00 00 8d 94 24 f0 00  &hd}w.h......$..
+         00074fa0  00 00 52 eb 12 68 48 7d 77 00 68 00 01 00 00 8d  ..R..hH}w.h.....
+         00074fb0  84 24 f0 00 00 00 50 e8 f6 e8 2a 00 83 c4 0c 68  .$....P...*....h
+         00074fc0  38 7d 77 00 8d 8c 24 ec 01 00 00 6a 1e 51 e8 df  8}w...$....j.Q..
+         00074fd0  e8 2a 00 68 30 7d 77 00 bf 0f 00 00 00 8d 94 24  .*.h0}w........$
+
+### AILog\%s.log  (1 hit)
+   string @file 0x00384934 -> VA 0x00784934 (.rdata)
+      ref @file 0x001695d2 (VA 0x005695d2, .text)
+         001695a2  d0 81 fa 30 75 00 00 77 08 85 c0 0f 85 49 01 00  ...0u..w.....I..
+         001695b2  00 8b 2d 34 6b 92 00 85 ed 75 64 a1 24 bc 91 00  ..-4k....ud.$...
+         001695c2  8b 48 20 e8 26 f1 f8 ff 8d 54 24 1c 52 6a 01 68  .H .&....T$.Rj.h
+         001695d2  34 49 78 00 89 44 24 3c 8d 84 24 94 00 00 00 8d  4Ix..D$<..$.....
+         001695e2  4c 24 3c 68 00 10 00 00 50 c7 44 24 4c 0f 00 00  L$<h....P.D$L...
+
+### AI\%s  (0 hit)

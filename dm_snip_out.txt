@@ -1,0 +1,273 @@
+=== feudal-age           5 line(s): [1556, 1595, 1597, 1601, 1607]
+    --- rule lines 1550-1573 ---
+       1550| (defrule
+       1551| 	(can-train villager)
+       1552| 	(or
+       1553| 		(or
+       1554| 			(civilian-population < 6)
+       1555| 			(and
+       1556| 				(current-age == feudal-age)
+       1557| 				(civilian-population < 8)
+       1558| 			)
+       1559| 		)
+       1553| 		(or
+       1555| 			(and
+       1562| 				(current-age == castle-age)
+       1563| 				(civilian-population < 10)
+       1558| 			)
+       1555| 			(and
+       1566| 				(current-age == imperial-age)
+       1567| 				(civilian-population < civ-dark-rush)
+       1558| 			)
+       1559| 		)
+       1570| 	)
+       1571| =>
+       1572| 	(train villager)
+       1573| )
+    --- rule lines 1594-1604 ---
+       1594| (defrule
+       1595| 	(can-research feudal-age)
+       1596| 	(or
+       1597| 		(players-current-age every-human >= feudal-age)
+       1598| 		(difficulty <= moderate)
+       1599| 	)
+       1600| =>
+       1601| 	(research feudal-age)
+       1602| 	(set-goal age-advancement NOTICE)
+       1603| 	(enable-timer t-ageup 140)
+       1604| )
+    --- rule lines 1606-1612 ---
+       1606| (defrule
+       1607| 	(current-age == feudal-age)
+       1608| =>
+       1609| 	(disable-timer t-ageup)
+       1610| 	(set-goal age-advancement NO)
+       1611| 	(disable-self)
+       1612| )
+=== castle-age           5 line(s): [1562, 1615, 1617, 1621, 1627]
+    --- rule lines 1614-1624 ---
+       1614| (defrule
+       1615| 	(can-research castle-age)
+       1616| 	(or
+       1617| 		(players-current-age every-human >= castle-age)
+       1618| 		(difficulty <= moderate)
+       1619| 	)
+       1620| =>
+       1621| 	(research castle-age)
+       1622| 	(set-goal age-advancement NOTICE)
+       1623| 	(enable-timer t-ageup 170)
+       1624| )
+    --- rule lines 1626-1632 ---
+       1626| (defrule
+       1627| 	(current-age == castle-age)
+       1628| =>
+       1629| 	(disable-timer t-ageup)
+       1630| 	(set-goal age-advancement NO)
+       1631| 	(disable-self)
+       1632| )
+=== imperial-age         9 line(s): [1566, 1635, 1639, 1644, 1651, 1661, 1663, 1722, 2706]
+    --- rule lines 1634-1647 ---
+       1634| (defrule
+       1635| 	(can-research imperial-age)
+       1636| 	(or
+       1637| 		(difficulty <= moderate)
+       1638| 		(and
+       1639| 			(players-current-age every-human == imperial-age)
+       1640| 			(difficulty == easy)
+       1641| 		)
+       1642| 	)
+       1643| =>
+       1644| 	(research imperial-age)
+       1645| 	(set-goal age-advancement NOTICE)
+       1646| 	(enable-timer t-ageup 200)
+       1647| )
+    --- rule lines 1649-1656 ---
+       1649| (defrule
+       1650| 	(difficulty <= moderate)
+       1651| 	(current-age == imperial-age)
+       1652| =>
+       1653| 	(disable-timer t-ageup)
+       1654| 	(set-goal age-advancement NO)
+       1655| 	(disable-self)
+       1656| )
+    --- rule lines 1658-1671 ---
+       1658| (defrule
+       1659| 	(goal age-advancement NOTICE)
+       1660| 	(or
+       1661| 		(current-age < imperial-age)
+       1662| 		(and
+       1663| 			(current-age < imperial-age)
+       1664| 			(difficulty <= easy)
+       1665| 		)
+       1666| 	)
+       1667| 	(timer-triggered t-ageup)
+       1668| =>
+       1669| 	(disable-timer t-ageup)
+       1670| 	(set-goal age-advancement NO)
+       1671| )
+    --- rule lines 1721-1729 ---
+       1721| (defrule
+       1722| 	(current-age == imperial-age)
+       1723| 	(building-type-count siege-workshop > 0)
+       1724| 	(building-type-count castle > 0)
+       1725| 	(building-type-count town-center < 3)
+       1726| 	(can-build town-center)
+       1727| =>
+       1728| 	(build town-center)
+       1729| )
+    --- rule lines 2705-2710 ---
+       2705| (defrule
+       2706| 	(current-age == imperial-age)
+       2707| 	(can-research ri-loom)
+       2708| =>
+       2709| 	(research ri-loom)
+       2710| )
+=== housing-headroom     2 line(s): [1685, 1696]
+    --- rule lines 1683-1690 ---
+       1683| (defrule
+       1684| 	(military-population < 10)
+       1685| 	(housing-headroom < 5)
+       1686| 	(population-headroom > 0)
+       1687| 	(can-build house)
+       1688| =>
+       1689| 	(build house)
+       1690| )
+    --- rule lines 1694-1701 ---
+       1694| (defrule
+       1695| 	(military-population < civ-dark-rush)
+       1696| 	(housing-headroom < 5)
+       1697| 	(population-headroom > 0)
+       1698| 	(can-build house)
+       1699| =>
+       1700| 	(build house)
+       1701| )
+=== population-headroom  2 line(s): [1686, 1697]
+    --- rule lines 1683-1690 ---
+       1683| (defrule
+       1684| 	(military-population < 10)
+       1685| 	(housing-headroom < 5)
+       1686| 	(population-headroom > 0)
+       1687| 	(can-build house)
+       1688| =>
+       1689| 	(build house)
+       1690| )
+    --- rule lines 1694-1701 ---
+       1694| (defrule
+       1695| 	(military-population < civ-dark-rush)
+       1696| 	(housing-headroom < 5)
+       1697| 	(population-headroom > 0)
+       1698| 	(can-build house)
+       1699| =>
+       1700| 	(build house)
+       1701| )
+=== build house          6 line(s): [1677, 1679, 1687, 1689, 1698, 1700]
+    --- rule lines 1674-1680 ---
+       1674| (defrule
+       1675| 	(difficulty <= moderate)
+       1676| 	(building-type-count-total house <= fifteen-percent-pop)
+       1677| 	(can-build house)
+       1678| =>
+       1679| 	(build house)
+       1680| )
+    --- rule lines 1683-1690 ---
+       1683| (defrule
+       1684| 	(military-population < 10)
+       1685| 	(housing-headroom < 5)
+       1686| 	(population-headroom > 0)
+       1687| 	(can-build house)
+       1688| =>
+       1689| 	(build house)
+       1690| )
+    --- rule lines 1694-1701 ---
+       1694| (defrule
+       1695| 	(military-population < civ-dark-rush)
+       1696| 	(housing-headroom < 5)
+       1697| 	(population-headroom > 0)
+       1698| 	(can-build house)
+       1699| =>
+       1700| 	(build house)
+       1701| )
+=== chat-to-all          0 line(s): []
+=== can-research         93 line(s): [1595, 1615, 1635, 1895, 1901, 1909, 1916, 1923, 1931, 1938, 1945, 1959, 1972, 1985, 1998, 2005, 2012, 2018, 2024, 2031, 2046, 2059, 2065, 2071, 2078, 2084, 2091, 2109, 2122, 2135]
+    --- rule lines 1594-1604 ---
+       1594| (defrule
+       1595| 	(can-research feudal-age)
+       1596| 	(or
+       1597| 		(players-current-age every-human >= feudal-age)
+       1598| 		(difficulty <= moderate)
+       1599| 	)
+       1600| =>
+       1601| 	(research feudal-age)
+       1602| 	(set-goal age-advancement NOTICE)
+       1603| 	(enable-timer t-ageup 140)
+       1604| )
+    --- rule lines 1614-1624 ---
+       1614| (defrule
+       1615| 	(can-research castle-age)
+       1616| 	(or
+       1617| 		(players-current-age every-human >= castle-age)
+       1618| 		(difficulty <= moderate)
+       1619| 	)
+       1620| =>
+       1621| 	(research castle-age)
+       1622| 	(set-goal age-advancement NOTICE)
+       1623| 	(enable-timer t-ageup 170)
+       1624| )
+    --- rule lines 1634-1647 ---
+       1634| (defrule
+       1635| 	(can-research imperial-age)
+       1636| 	(or
+       1637| 		(difficulty <= moderate)
+       1638| 		(and
+       1639| 			(players-current-age every-human == imperial-age)
+       1640| 			(difficulty == easy)
+       1641| 		)
+       1642| 	)
+       1643| =>
+       1644| 	(research imperial-age)
+       1645| 	(set-goal age-advancement NOTICE)
+       1646| 	(enable-timer t-ageup 200)
+       1647| )
+    --- rule lines 1894-1898 ---
+       1894| (defrule
+       1895| 	(can-research my-unique-unit-upgrade)
+       1896| =>
+       1897| 	(research my-unique-unit-upgrade)
+       1898| )
+    --- rule lines 1907-1912 ---
+       1907| (defrule
+       1908| 	(not (goal 1 0) )
+       1909| 	(can-research ri-war-galley)
+       1910| =>
+       1911|     (research ri-war-galley)
+       1912| )
+    --- rule lines 1914-1919 ---
+       1914| (defrule
+       1915| 	(not (goal 1 0) )
+       1916| 	(can-research ri-galleon)
+       1917| =>
+       1918|     (research ri-galleon)
+       1919| )
+    --- rule lines 1921-1926 ---
+       1921| (defrule
+       1922| 	(not (goal 1 0) )
+       1923| 	(can-research ri-fast-fire-ship)
+       1924| =>
+       1925|     (research ri-fast-fire-ship)
+       1926| )
+    --- rule lines 1928-1934 ---
+       1928| (defrule
+       1929| 	(not (goal 1 0) )
+       1930| 	(goal military-parity NO)
+       1931| 	(can-research ri-heavy-demolition-ship)
+       1932| =>
+       1933|     (research ri-heavy-demolition-ship)
+       1934| )
+==== can-build house / house-count lines
+   1676| 	(building-type-count-total house <= fifteen-percent-pop)
+   1677| 	(can-build house)
+   1679| 	(build house)
+   1687| 	(can-build house)
+   1689| 	(build house)
+   1698| 	(can-build house)
+   1700| 	(build house)

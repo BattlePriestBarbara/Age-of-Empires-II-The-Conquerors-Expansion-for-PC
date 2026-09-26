@@ -1,0 +1,310 @@
+--- 1..60 ---
+    1| ;goals 1 and 2 = boats
+    2| ;goal 3 = groups
+    3| ;goal combat-arm = his unique unit type (also loads correct upgrades)
+    4| ;goal 36 = good infantry -- 36 NO = don't build, YES = build, 
+    5| ;	2 = only build if we don't have a castle. 
+    6| ;goal 37 = good cavalry
+    7| ;goal 38 = good horse-archers
+    8| ;goal 39 = good archers
+    9| 
+   10| ;starting goals
+   11| (defrule
+   12| 	(true)
+   13| =>
+   14| 	(set-goal military-parity YES)	;goal 3
+   15| 	(set-goal attack-control NO)	;goal 4
+   16| 	(set-goal need-deathmatch-villagers NO)	;goal 7
+   17| 
+   18| 	(set-goal secondary-build 1)	;goal 8
+   19| 	(set-goal soldiers-available NO);goal 10
+   20| 	(set-goal attack-enabled YES)	;goal 13
+   21| 	(set-goal age-advancement NO)	;goal 14
+   22| 
+   23| 	(set-goal make-warboat NO)		;goal 15
+   24| 	(set-goal upgrade-conflict NO)	;goal 16
+   25| 
+   26| 	(disable-self)
+   27| )
+   28| 
+   29| (defrule
+   30| 	(true)
+   31| =>
+   32| 	(set-goal pre-unique-arm NO)	;goal 17
+   33| 	(set-goal wonder-attempt MAYBE)	;goal 20
+   34| 	(set-goal sea-owner NO)			;goal 23
+   35| 	(set-goal enemy-soldiers NO)	;goal 26
+   36| 	(set-goal siege-available YES)	;goal 34
+   37| 	(disable-self)
+   38| )
+   39| 
+   40| ;*********************************************************
+   41| #load-if-defined AZTEC-CIV
+   42| ;train jaguar men, eagle men, champs, arbalests
+   43| (defrule
+   44| 	(goal combat-arm NOTICE)
+   45| =>
+   46| 	(set-goal combat-arm INFANTRY)
+   47| 	(set-goal monk-rating GOOD)
+   48| 	(set-goal 36 2)
+   49| 	(set-goal 37 NO)
+   50| 	(set-goal 38 NO)
+   51| 	(set-goal 39 YES)
+   52| 
+   53| 	(set-strategic-number sn-wood-gatherer-percentage 20)
+   54| 	(set-strategic-number sn-food-gatherer-percentage 50)
+   55| 	(set-strategic-number sn-gold-gatherer-percentage 25)
+   56| 	(set-strategic-number sn-stone-gatherer-percentage 5)
+   57| 	(disable-self)
+   58| )
+   59| 
+   60| (defrule
+--- 41..100 (aztec block) ---
+   41| #load-if-defined AZTEC-CIV
+   42| ;train jaguar men, eagle men, champs, arbalests
+   43| (defrule
+   44| 	(goal combat-arm NOTICE)
+   45| =>
+   46| 	(set-goal combat-arm INFANTRY)
+   47| 	(set-goal monk-rating GOOD)
+   48| 	(set-goal 36 2)
+   49| 	(set-goal 37 NO)
+   50| 	(set-goal 38 NO)
+   51| 	(set-goal 39 YES)
+   52| 
+   53| 	(set-strategic-number sn-wood-gatherer-percentage 20)
+   54| 	(set-strategic-number sn-food-gatherer-percentage 50)
+   55| 	(set-strategic-number sn-gold-gatherer-percentage 25)
+   56| 	(set-strategic-number sn-stone-gatherer-percentage 5)
+   57| 	(disable-self)
+   58| )
+   59| 
+   60| (defrule
+   61| 	(goal secondary-build 1)
+   62| =>
+   63| 	(generate-random-number 2)
+   64| )
+   65| 
+   66| (defrule
+   67| 	(goal secondary-build 1)
+   68| 	(random-number == 1)
+   69| 	(can-train elite-eagle-warrior)
+   70| 	(or
+   71| 		(population < deathmatch-unit-max)
+   72| 		(and
+   73| 			(population < unit-max)
+   74| 			(goal need-deathmatch-villagers NO)
+   75| 		)
+   76| 	)
+   77| =>
+   78| 	(train elite-eagle-warrior)
+   79| 	(set-goal secondary-build 0)
+   80| )
+   81| 
+   82| (defrule
+   83| 	(goal secondary-build 1)
+   84| 	(random-number == 2)
+   85| 	(can-train arbalest)
+   86| 	(or
+   87| 		(population < deathmatch-unit-max)
+   88| 		(and
+   89| 			(population < unit-max)
+   90| 			(goal need-deathmatch-villagers NO)
+   91| 		)
+   92| 	)
+   93| =>
+   94| 	(train arbalest)
+   95| 	(set-goal secondary-build 0)
+   96| )
+   97| #end-if
+   98| ;*********************************************************
+   99| #load-if-defined HUN-CIV
+  100| ;train tarkans, paladins, light cav, heavy cav archers
+--- 1580..1700 ---
+ 1580| 	(train villager)
+ 1581| )
+ 1582| 
+ 1583| (defrule
+ 1584| 	(building-type-count-total lumber-camp > 0)
+ 1585| 	(idle-farm-count == 0)
+ 1586| 	(sheep-and-forage-too-far)
+ 1587| 	(can-build farm)
+ 1588| =>
+ 1589| 	(build farm)
+ 1590| )
+ 1591| 
+ 1592| ;*********************************
+ 1593| ;age advancement
+ 1594| (defrule
+ 1595| 	(can-research feudal-age)
+ 1596| 	(or
+ 1597| 		(players-current-age every-human >= feudal-age)
+ 1598| 		(difficulty <= moderate)
+ 1599| 	)
+ 1600| =>
+ 1601| 	(research feudal-age)
+ 1602| 	(set-goal age-advancement NOTICE)
+ 1603| 	(enable-timer t-ageup 140)
+ 1604| )
+ 1605| 
+ 1606| (defrule
+ 1607| 	(current-age == feudal-age)
+ 1608| =>
+ 1609| 	(disable-timer t-ageup)
+ 1610| 	(set-goal age-advancement NO)
+ 1611| 	(disable-self)
+ 1612| )
+ 1613| 
+ 1614| (defrule
+ 1615| 	(can-research castle-age)
+ 1616| 	(or
+ 1617| 		(players-current-age every-human >= castle-age)
+ 1618| 		(difficulty <= moderate)
+ 1619| 	)
+ 1620| =>
+ 1621| 	(research castle-age)
+ 1622| 	(set-goal age-advancement NOTICE)
+ 1623| 	(enable-timer t-ageup 170)
+ 1624| )
+ 1625| 
+ 1626| (defrule
+ 1627| 	(current-age == castle-age)
+ 1628| =>
+ 1629| 	(disable-timer t-ageup)
+ 1630| 	(set-goal age-advancement NO)
+ 1631| 	(disable-self)
+ 1632| )
+ 1633| 
+ 1634| (defrule
+ 1635| 	(can-research imperial-age)
+ 1636| 	(or
+ 1637| 		(difficulty <= moderate)
+ 1638| 		(and
+ 1639| 			(players-current-age every-human == imperial-age)
+ 1640| 			(difficulty == easy)
+ 1641| 		)
+ 1642| 	)
+ 1643| =>
+ 1644| 	(research imperial-age)
+ 1645| 	(set-goal age-advancement NOTICE)
+ 1646| 	(enable-timer t-ageup 200)
+ 1647| )
+ 1648| 
+ 1649| (defrule
+ 1650| 	(difficulty <= moderate)
+ 1651| 	(current-age == imperial-age)
+ 1652| =>
+ 1653| 	(disable-timer t-ageup)
+ 1654| 	(set-goal age-advancement NO)
+ 1655| 	(disable-self)
+ 1656| )
+ 1657| 
+ 1658| (defrule
+ 1659| 	(goal age-advancement NOTICE)
+ 1660| 	(or
+ 1661| 		(current-age < imperial-age)
+ 1662| 		(and
+ 1663| 			(current-age < imperial-age)
+ 1664| 			(difficulty <= easy)
+ 1665| 		)
+ 1666| 	)
+ 1667| 	(timer-triggered t-ageup)
+ 1668| =>
+ 1669| 	(disable-timer t-ageup)
+ 1670| 	(set-goal age-advancement NO)
+ 1671| )
+ 1672| ;*********************************
+ 1673| ;buildings
+ 1674| (defrule
+ 1675| 	(difficulty <= moderate)
+ 1676| 	(building-type-count-total house <= fifteen-percent-pop)
+ 1677| 	(can-build house)
+ 1678| =>
+ 1679| 	(build house)
+ 1680| )
+ 1681| 
+ 1682| #load-if-defined DIFFICULTY-EASIEST
+ 1683| (defrule
+ 1684| 	(military-population < 10)
+ 1685| 	(housing-headroom < 5)
+ 1686| 	(population-headroom > 0)
+ 1687| 	(can-build house)
+ 1688| =>
+ 1689| 	(build house)
+ 1690| )
+ 1691| #end-if
+ 1692| 
+ 1693| #load-if-defined DIFFICULTY-EASY
+ 1694| (defrule
+ 1695| 	(military-population < civ-dark-rush)
+ 1696| 	(housing-headroom < 5)
+ 1697| 	(population-headroom > 0)
+ 1698| 	(can-build house)
+ 1699| =>
+ 1700| 	(build house)
+--- tail 2820..2884 ---
+ 2820| 	(food-amount > 5000)
+ 2821| 	(commodity-selling-price food >= 20)
+ 2822| 	(can-sell-commodity food)
+ 2823| =>
+ 2824| 	(chat-local-to-self "abuse market; sell food")
+ 2825| 	(sell-commodity food)
+ 2826| )
+ 2827| 
+ 2828| (defrule
+ 2829| 	(gold-amount < 1200)
+ 2830| 	(wood-amount > 5000)
+ 2831| 	(can-sell-commodity wood)
+ 2832| =>
+ 2833| 	(chat-local-to-self "need gold; sell wood")
+ 2834| 	(sell-commodity wood)
+ 2835| )
+ 2836| 
+ 2837| (defrule
+ 2838| 	(gold-amount < 1200)
+ 2839| 	(food-amount > 5000)
+ 2840| 	(can-sell-commodity food)
+ 2841| =>
+ 2842| 	(chat-local-to-self "need gold; sell food")
+ 2843| 	(sell-commodity food)
+ 2844| )
+ 2845| 
+ 2846| (defrule
+ 2847| 	(gold-amount < 1200)
+ 2848| 	(stone-amount > 1000)
+ 2849| 	(building-type-count-total castle >= 5)
+ 2850| 	(can-sell-commodity stone)
+ 2851| =>
+ 2852| 	(chat-local-to-self "need gold; sell stone")
+ 2853| 	(sell-commodity stone)
+ 2854| )
+ 2855| 
+ 2856| (defrule
+ 2857| 	(stone-amount < 650)
+ 2858| 	(gold-amount > 5000)
+ 2859| 	(building-type-count-total castle < 5)
+ 2860| 	(can-buy-commodity stone)
+ 2861| =>
+ 2862| 	(chat-local-to-self "need stone")
+ 2863| 	(buy-commodity stone)
+ 2864| )
+ 2865| 
+ 2866| (defrule
+ 2867| 	(wood-amount < 1100)
+ 2868| 	(gold-amount > 5000)
+ 2869| 	(can-buy-commodity wood)
+ 2870| =>
+ 2871| 	(chat-local-to-self "need wood")
+ 2872| 	(buy-commodity wood)
+ 2873| )
+ 2874| 
+ 2875| (defrule
+ 2876| 	(food-amount < 1600)
+ 2877| 	(gold-amount > 5000)
+ 2878| 	(can-buy-commodity food)
+ 2879| =>
+ 2880| 	(chat-local-to-self "need food")
+ 2881| 	(buy-commodity food)
+ 2882| )
+ 2883| 
+ 2884| 

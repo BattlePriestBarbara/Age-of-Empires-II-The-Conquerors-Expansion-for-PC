@@ -1,0 +1,69 @@
+pristine corpus: 21 block shapes, 92 fact arities
+
+============================================================================================
+=== control test on the superseded (broken) appended block
+    D:\aoe2_aoefix\dm_block_v2_broken_fixture.txt (5295 bytes, put behind 2883 retail lines)
+    problems found : 1
+      line 3018: (or ...) has 4 children - the engine takes 2, then blames the child at line 3021
+    engine reported: line 3021
+    model names    : line 3021   -> MATCH
+
+============================================================================================
+=== gamedata_x1.drs  (x1_drs)
+    live file       : D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\gamedata_x1.drs  md5 59ca9130ce14f649a52d47f64b1357b3  (950328 bytes)
+    retail script   : 54203 bytes, patched entry 60071 bytes (+5868 appended)
+    retail prefix   : byte-exact
+    --- whole script: 3046 lines, 3046 CRLF, 257 rules, final paren depth 0
+        blocks by child count: {1: 31, 2: 184}    deepest block: 7 leaves
+        block shapes not attested in pristine retail : none
+        fact arities not attested in pristine retail  : none (chat-to-all 1 arg is the documented M1 exception)
+    --- appended tail: 163 lines, 163 CRLF, 14 rules, final paren depth 0
+        blocks by child count: {2: 3}    deepest block: 4 leaves
+        block shapes not attested in pristine retail : none
+        fact arities not attested in pristine retail  : none (chat-to-all 1 arg is the documented M1 exception)
+        the resources rule as installed:
+          | 
+          | 	(timer-triggered t-attackgroup)
+          | 	(or
+          | 		(or
+          | 			(wood-amount < 5000)
+          | 			(food-amount < 5000)
+          | 		)
+          | 		(or
+          | 			(gold-amount < 5000)
+          | 			(stone-amount < 5000)
+          | 		)
+          | 	)
+          | =>
+          | 	(cc-add-resource wood 10000)
+
+============================================================================================
+=== gamedata.drs  (aok_drs)
+    live file       : D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\gamedata.drs  md5 bc3ae18a686cbd6b1804ecaa9e72d589  (537558 bytes)
+    retail script   : 45718 bytes, patched entry 51587 bytes (+5869 appended)
+    retail prefix   : byte-exact
+    --- whole script: 2607 lines, 2607 CRLF, 226 rules, final paren depth 0
+        blocks by child count: {1: 27, 2: 157}    deepest block: 7 leaves
+        block shapes not attested in pristine retail : none
+        fact arities not attested in pristine retail  : none (chat-to-all 1 arg is the documented M1 exception)
+    --- appended tail: 163 lines, 163 CRLF, 14 rules, final paren depth 0
+        blocks by child count: {2: 3}    deepest block: 4 leaves
+        block shapes not attested in pristine retail : none
+        fact arities not attested in pristine retail  : none (chat-to-all 1 arg is the documented M1 exception)
+        the resources rule as installed:
+          | 
+          | 	(timer-triggered t-attackgroup)
+          | 	(or
+          | 		(or
+          | 			(wood-amount < 5000)
+          | 			(food-amount < 5000)
+          | 		)
+          | 		(or
+          | 			(gold-amount < 5000)
+          | 			(stone-amount < 5000)
+          | 		)
+          | 	)
+          | =>
+          | 	(cc-add-resource wood 10000)
+
+VERDICT: control reproduces line 3021; appended tails clean: [('gamedata_x1.drs', True), ('gamedata.drs', True)]

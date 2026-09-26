@@ -1,0 +1,32 @@
+﻿=== AOK 60026 ===
+(load "petersen constants")
+
+(load "petersen map loads")
+
+(load "petersen supplement")
+
+(load "petersen groups")
+
+(load "petersen resign")
+
+
+
+#load-if-defined DEATH-MATCH
+
+
+
+	(load "petersen deathmatch")
+
+
+
+#else
+
+
+
+(load "AI petersen rules")
+
+
+
+#end-if
+
+

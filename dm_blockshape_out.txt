@@ -1,0 +1,211 @@
+============================================================================================
+=== x1 anib_60002 death match   lines=2883  rules=250
+    children per logical block      : {1: 31, 2: 181}
+    leaves of a top level block     : {1: 31, 2: 15, 3: 71, 4: 6, 7: 1}
+    depth of a top level block      : {1: 46, 2: 77, 3: 1}
+    biggest top level block: 7 leaves at line 1552
+    --- block shapes used by retail (keyword + child kinds) ---
+      (and <fact> <fact>)  x73
+      (or <fact> and)  x69
+      (not <fact>)  x31
+      (or <fact> <fact>)  x24
+      (or or or)  x6
+      (nor <fact> <fact>)  x4
+      (or <fact> or)  x3
+      (or and and)  x2
+    --- the 7 leaf block (line 1552) ---
+       1552 | 	(or
+       1553 | 		(or
+       1554 | 			(civilian-population < 6)
+       1555 | 			(and
+       1556 | 				(current-age == feudal-age)
+       1557 | 				(civilian-population < 8)
+       1558 | 			)
+       1559 | 		)
+       1560 | 		(or
+       1561 | 			(and
+       1562 | 				(current-age == castle-age)
+       1563 | 				(civilian-population < 10)
+       1564 | 			)
+       1565 | 			(and
+       1566 | 				(current-age == imperial-age)
+============================================================================================
+=== x1 anib_60003   lines=2390  rules=180
+    children per logical block      : {1: 31, 2: 159}
+    leaves of a top level block     : {1: 28, 2: 62, 3: 25, 4: 6, 5: 3, 6: 1, 7: 2}
+    depth of a top level block      : {1: 87, 2: 34, 3: 5, 4: 1}
+    biggest top level block: 7 leaves at line 27
+    --- block shapes used by retail (keyword + child kinds) ---
+      (or <fact> <fact>)  x96
+      (not <fact>)  x31
+      (or <fact> or)  x18
+      (or or or)  x14
+      (nor <fact> <fact>)  x14
+      (or or <fact>)  x7
+      (nor <fact> or)  x5
+      (or not <fact>)  x3
+      (or or and)  x1
+      (and <fact> <fact>)  x1
+    --- the 7 leaf block (line 27) ---
+         27 | 	(or
+         28 | 		(or
+         29 | 			(civ-selected celtic)
+         30 | 			(civ-selected frankish)
+         31 | 		)
+         32 | 		(or
+         33 | 			(civ-selected aztec)
+         34 | 			(or
+         35 | 				(or
+         36 | 					(civ-selected gothic)
+         37 | 					(civ-selected japanese)
+         38 | 				)
+         39 | 				(or
+         40 | 					(civ-selected teutonic)
+         41 | 					(civ-selected viking)
+============================================================================================
+=== x1 anib_60029   lines=2581  rules=229
+    children per logical block      : {1: 9, 2: 113}
+    leaves of a top level block     : {1: 9, 2: 10, 3: 3, 4: 25, 5: 3, 6: 2}
+    depth of a top level block      : {1: 19, 2: 26, 3: 7}
+    biggest top level block: 6 leaves at line 1982
+    --- block shapes used by retail (keyword + child kinds) ---
+      (or <fact> <fact>)  x67
+      (or or or)  x28
+      (not <fact>)  x9
+      (or <fact> or)  x6
+      (and <fact> <fact>)  x5
+      (or <fact> and)  x2
+      (nor <fact> <fact>)  x1
+      (or and <fact>)  x1
+      (nor <fact> or)  x1
+      (nor or or)  x1
+      (or and and)  x1
+    --- the 6 leaf block (line 1982) ---
+       1982 | 	(or
+       1983 | 		(or
+       1984 | 			(civ-selected hun)
+       1985 | 			(civ-selected korean)
+       1986 | 		)
+       1987 | 		(or
+       1988 | 			(or
+       1989 | 				(civ-selected mayan)
+       1990 | 				(civ-selected spanish)
+       1991 | 			)
+       1992 | 			(or
+       1993 | 				(civ-selected briton)
+       1994 | 				(civ-selected chinese)
+       1995 | 			)
+       1996 | 		)
+============================================================================================
+=== x1 anib_60010   lines=728  rules=115
+    children per logical block      : {1: 5, 2: 4}
+    leaves of a top level block     : {1: 5, 2: 4}
+    depth of a top level block      : {1: 9}
+    biggest top level block: 2 leaves at line 458
+    --- block shapes used by retail (keyword + child kinds) ---
+      (not <fact>)  x5
+      (or <fact> <fact>)  x4
+============================================================================================
+=== x1 anib_60008   lines=222  rules=29
+    children per logical block      : {}
+    leaves of a top level block     : {}
+    depth of a top level block      : {}
+    biggest top level block: 0 leaves at line 0
+    --- block shapes used by retail (keyword + child kinds) ---
+============================================================================================
+=== aok anib_60002 death match   lines=2444  rules=219
+    children per logical block      : {1: 27, 2: 154}
+    leaves of a top level block     : {1: 25, 2: 12, 3: 55, 4: 6, 5: 2, 7: 1}
+    depth of a top level block      : {1: 35, 2: 63, 3: 3}
+    biggest top level block: 7 leaves at line 1109
+    --- block shapes used by retail (keyword + child kinds) ---
+      (and <fact> <fact>)  x56
+      (or <fact> and)  x52
+      (or <fact> <fact>)  x28
+      (not <fact>)  x27
+      (or or or)  x8
+      (or <fact> or)  x4
+      (or <fact> not)  x2
+      (or and and)  x2
+      (or or <fact>)  x2
+    --- the 7 leaf block (line 1109) ---
+       1109 | 	(or
+       1110 | 		(or
+       1111 | 			(civilian-population < 6)
+       1112 | 			(and
+       1113 | 				(current-age == feudal-age)
+       1114 | 				(civilian-population < 8)
+       1115 | 			)
+       1116 | 		)
+       1117 | 		(or
+       1118 | 			(and
+       1119 | 				(current-age == castle-age)
+       1120 | 				(civilian-population < 10)
+       1121 | 			)
+       1122 | 			(and
+       1123 | 				(current-age == imperial-age)
+============================================================================================
+=== aok anib_60003   lines=1993  rules=152
+    children per logical block      : {1: 16, 2: 122}
+    leaves of a top level block     : {1: 16, 2: 49, 3: 25, 4: 3, 5: 1, 6: 2}
+    depth of a top level block      : {1: 65, 2: 28, 3: 3}
+    biggest top level block: 6 leaves at line 27
+    --- block shapes used by retail (keyword + child kinds) ---
+      (or <fact> <fact>)  x75
+      (or <fact> or)  x21
+      (not <fact>)  x16
+      (nor <fact> <fact>)  x13
+      (or or or)  x8
+      (or or <fact>)  x5
+    --- the 6 leaf block (line 27) ---
+         27 | 	(or
+         28 | 		(or
+         29 | 			(civ-selected celtic)
+         30 | 			(civ-selected frankish)
+         31 | 		)
+         32 | 		(or
+         33 | 			(or
+         34 | 				(civ-selected gothic)
+         35 | 				(civ-selected japanese)
+         36 | 			)
+         37 | 			(or
+         38 | 				(civ-selected teutonic)
+         39 | 				(civ-selected viking)
+         40 | 			)
+         41 | 		)
+============================================================================================
+=== aok anib_60008   lines=727  rules=64
+    children per logical block      : {1: 1, 2: 46}
+    leaves of a top level block     : {1: 1, 2: 3, 4: 1, 6: 8}
+    depth of a top level block      : {1: 4, 2: 1, 3: 8}
+    biggest top level block: 6 leaves at line 234
+    --- block shapes used by retail (keyword + child kinds) ---
+      (and <fact> <fact>)  x24
+      (or and or)  x8
+      (or and and)  x8
+      (or <fact> <fact>)  x5
+      (or or or)  x1
+      (not <fact>)  x1
+    --- the 6 leaf block (line 234) ---
+        234 | 		(or
+        235 | 			(and
+        236 | 				(starting-resources == low-resources)
+        237 | 				(players-tribute any-human-neutral wood < 200)
+        238 | 			)
+        239 | 			(or
+        240 | 				(and
+        241 | 					(starting-resources == medium-resources)
+        242 | 					(players-tribute any-human-neutral wood < 500)
+        243 | 				)
+        244 | 				(and
+        245 | 					(starting-resources == high-resources)
+        246 | 					(players-tribute any-human-neutral wood < 1000)
+        247 | 				)
+        248 | 			)
+============================================================================================
+=== aok anib_60027 constants   lines=233  rules=98
+    children per logical block      : {}
+    leaves of a top level block     : {}
+    depth of a top level block      : {}
+    biggest top level block: 0 leaves at line 0
+    --- block shapes used by retail (keyword + child kinds) ---

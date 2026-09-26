@@ -1,0 +1,22 @@
+=== gamedata.drs
+  live before : md5 bc3ae18a686cbd6b1804ecaa9e72d589  (537558 bytes)
+  backup      : D:\aoe2_work\backup_drs\gamedata.drs.orig  md5 be574545e247b85a196109836a1f9d44
+  backup anib_60001 : 28550 bytes, md5 9dbdc8fc63d053ce7346cab7e3a0dceb, no patch
+  backup anib_60002 : 45718 bytes, md5 369e8466f747ff9f503408e081c566c6, no patch
+  live anib_60002 currently carries the v1 block: False
+  installed   : md5 bc3ae18a686cbd6b1804ecaa9e72d589  (537558 bytes)
+  installed anib_60001 : 28855 bytes, marker present, no superseded block
+  installed anib_60002 : 51587 bytes, marker present, retail script intact as a 45718 byte prefix (+5869 bytes appended)
+  installed archive: 48 entries, 2 differ from the backup: [(b'anib', 60001), (b'anib', 60002)]
+=== gamedata_x1.drs
+  live before : md5 59ca9130ce14f649a52d47f64b1357b3  (950328 bytes)
+  backup      : D:\aoe2_work\backup_drs\gamedata_x1.drs.orig  md5 f41c418333e624b7a1077ad166f9dcb0
+  backup anib_60001 : 29337 bytes, md5 5a2604d430a89493e76aac820d34bef9, no patch
+  backup anib_60002 : 54203 bytes, md5 430feba4dc7ecb3ee47c68d2917adac2, no patch
+  live anib_60002 currently carries the v1 block: False
+  installed   : md5 59ca9130ce14f649a52d47f64b1357b3  (950328 bytes)
+  installed anib_60001 : 29641 bytes, marker present, no superseded block
+  installed anib_60002 : 60071 bytes, marker present, retail script intact as a 54203 byte prefix (+5868 bytes appended)
+  installed archive: 76 entries, 2 differ from the backup: [(b'anib', 60001), (b'anib', 60002)]
+
+done at 2026-09-27 00:38:05

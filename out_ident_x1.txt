@@ -1,0 +1,348 @@
+﻿------------------------------------------------------------------------
+anib_60001.bin size=29337 lines=1261
+   | ;starting goals
+   | (defrule
+   | (true)
+   | =>
+   | (set-goal military-parity YES).;goal 3
+   | (set-goal attack-control NO).;goal 4
+   | (set-goal resource-needed NO).;goal 5
+   | (set-goal rush-control NOTICE).;goal 6
+   | (set-goal secondary-build NO).;goal 8
+   | (set-goal combat-arm NOTICE).;goal 11
+------------------------------------------------------------------------
+anib_60002.bin size=54203 lines=2618
+   | ;goals 1 and 2 = boats
+   | ;goal 3 = groups
+   | ;goal combat-arm = his unique unit type (also loads correct upgrades)
+   | ;goal 36 = good infantry -- 36 NO = don't build, YES = build,
+   | ;.2 = only build if we don't have a castle.
+   | ;goal 37 = good cavalry
+   | ;goal 38 = good horse-archers
+   | ;goal 39 = good archers
+   | ;starting goals
+   | (defrule
+------------------------------------------------------------------------
+anib_60003.bin size=49519 lines=2210
+   | ;start the run-through
+   | (defrule
+   | (true)
+   | =>
+   | (set-goal infantry-upgrades NO)
+   | (set-goal archer-upgrades NO)
+   | (set-goal cav-upgrades NO)
+   | )
+   | ;infantry civs
+   | (defrule
+------------------------------------------------------------------------
+anib_60004.bin size=4463 lines=203
+   | (defrule
+   | (true)
+   | =>
+   | (set-strategic-number sn-number-boat-explore-groups 1)
+   | (set-strategic-number sn-dock-defend-priority 1)
+   | (disable-self)
+   | )
+   | ;make docks
+   | (defrule
+   | (building-type-count-total dock == 0)
+------------------------------------------------------------------------
+anib_60005.bin size=3544 lines=151
+   | ;need to add a section in which he joins our side then betrays us!
+   | (defrule
+   | (current-age >= feudal-age)
+   | =>
+   | (set-goal personality NOTICE)
+   | (generate-random-number 6)
+   | (disable-self)
+   | )
+   | (defrule
+   | (goal personality NOTICE)
+------------------------------------------------------------------------
+anib_60006.bin size=2693 lines=134
+   | ;goal 2 NO = no problem; 2 YES = we've won at sea!
+   | ; transport-ships
+   | (defrule
+   | (military-population > 10)
+   | (unit-type-count-total transport-ship < 2)
+   | (can-train transport-ship)
+   | =>
+   | (train transport-ship)
+   | )
+   | ;********************************************
+------------------------------------------------------------------------
+anib_60007.bin size=26355 lines=1089
+   | (defrule
+   | (goal siege-available YES)
+   | (or
+   | (or
+   | (players-building-type-count any-enemy watch-tower-line > 1)
+   | (players-building-type-count any-enemy castle > 0)
+   | )
+   | (or
+   | (players-building-type-count any-enemy bombard-tower > 0)
+   | (players-building-type-count any-enemy town-center > 1)
+------------------------------------------------------------------------
+anib_60008.bin size=4827 lines=193
+   | #load-if-defined DIFFICULTY-EASIEST
+   | (defrule
+   | (true)
+   | =>
+   | (set-strategic-number sn-percent-enemy-sighted-response 10)
+   | (set-strategic-number sn-easiest-reaction-percentage 20)
+   | (set-difficulty-parameter ability-to-maintain-distance 100)
+   | (set-difficulty-parameter ability-to-dodge-missiles 100)
+   | (disable-self)
+   | )
+------------------------------------------------------------------------
+anib_60009.bin size=23059 lines=1133
+   | (defrule
+   | (timer-triggered  t-production)
+   | =>
+   | (generate-random-number 3)
+   | )
+   | (defrule
+   | (timer-triggered  t-production)
+   | (or
+   | (goal military-parity NO)
+   | (random-number == 1)
+------------------------------------------------------------------------
+anib_60010.bin size=13739 lines=660
+   | #load-if-defined GAME-SPEED-LOCKED
+   | (defrule
+   | (true)
+   | =>
+   | (set-goal rush-control 0)
+   | (disable-self)
+   | )
+   | #else
+   | (defrule
+   | (true)
+------------------------------------------------------------------------
+anib_60011.bin size=19573 lines=971
+   | ;*********************************************************
+   | #load-if-defined AZTEC-CIV
+   | (defrule
+   | (goal combat-arm NOTICE)
+   | =>
+   | (set-goal monk-rating GOOD)
+   | (generate-random-number 14)
+   | (set-goal castle-attempt NO)
+   | )
+   | (defrule
+------------------------------------------------------------------------
+anib_60012.bin size=5078 lines=269
+   | ;start the pass
+   | (defrule
+   | (difficulty <= easy)
+   | (nor
+   | (map-type fortress)
+   | (map-type arena)
+   | )
+   | =>
+   | (enable-wall-placement 2)
+   | (disable-self)
+------------------------------------------------------------------------
+anib_60013.bin size=20650 lines=958
+   | ;UPGRADES & BUILDS RELATED TO OTHER PLAYERS
+   | #load-if-not-defined DEFEND-WONDER
+   | #load-if-not-defined WONDER-RACE
+   | #load-if-defined DIFFICULTY-MODERATE
+   | (load-random
+   | 20."petersen dip bully"
+   | 5."petersen dip boomer"
+   | 5."petersen dip feeder"
+   | )
+   | #else
+------------------------------------------------------------------------
+anib_60014.bin size=1251 lines=52
+   | ;make the castle
+   | (defrule
+   | (goal castle-attempt NO)
+   | (current-age == imperial-age)
+   | (stone-amount > 400)
+   | (nor
+   | (goal wonder-attempt POSSIBLE)
+   | (goal wonder-attempt YES)
+   | )
+   | =>
+------------------------------------------------------------------------
+anib_60015.bin size=2647 lines=121
+   | (defrule
+   | (difficulty >= easy)
+   | (game-time > 600)
+   | (soldier-count < five-percent-pop)
+   | (unit-type-count-total villager <= 4)
+   | (nor
+   | (hold-relics)
+   | (hold-koh-ruin)
+   | )
+   | =>
+------------------------------------------------------------------------
+anib_60016.bin size=3609 lines=140
+   | #load-if-not-defined VICTORY-CONQUEST
+   | (defrule
+   | (goal personality 1)
+   | (not (goal wonder-attempt NO) )
+   | =>
+   | (set-goal wonder-attempt NO)
+   | )
+   | (defrule
+   | (goal wonder-attempt MAYBE)
+   | (taunt-detected any-ally 200)
+------------------------------------------------------------------------
+anib_60017.bin size=12623 lines=583
+   | ;if I'm short on resources, ask allies for some before using the market
+   | (defrule
+   | (player-in-game any-ally)
+   | (players-building-type-count any-ally market > 0)
+   | =>
+   | (enable-timer 1 60)
+   | (disable-self)
+   | )
+   | ;****************************************
+   | (defrule
+------------------------------------------------------------------------
+anib_60018.bin size=475 lines=23
+   | ;all this file really does for now is ensure more villagers than a "normal" CP
+   | (defrule
+   | (game-time > 10)
+   | =>
+   | (set-goal personality 2)
+   | (disable-self)
+   | )
+   | ;don't rush
+   | (defrule
+   | (goal personality 2)
+------------------------------------------------------------------------
+anib_60019.bin size=9574 lines=362
+   | ;DARK AGE
+   | (defrule
+   | (current-age == dark-age)
+   | (civilian-population < 9)
+   | =>
+   | (set-strategic-number sn-wood-gatherer-percentage 0)
+   | (set-strategic-number sn-food-gatherer-percentage 100)
+   | (set-strategic-number sn-gold-gatherer-percentage 0)
+   | (set-strategic-number sn-stone-gatherer-percentage 0)
+   | (disable-self)
+------------------------------------------------------------------------
+anib_60020.bin size=5062 lines=223
+   | ;make sure we have allies
+   | (defrule
+   | (difficulty < easy)
+   | (game-time < 30)
+   | (or
+   | (player-computer any-ally)
+   | (player-human any-ally)
+   | )
+   | =>
+   | (set-goal personality NOTICE)
+------------------------------------------------------------------------
+anib_60021.bin size=12949 lines=566
+   | (defrule
+   | (strategic-number sn-number-explore-groups != 1)
+   | =>
+   | (set-strategic-number sn-number-explore-groups 1)
+   | )
+   | (defrule
+   | (goal wall-build YES)
+   | (wall-invisible-percentage 2 > 0)
+   | =>
+   | (set-strategic-number sn-blot-exploration-map 1)
+------------------------------------------------------------------------
+anib_60022.bin size=4272 lines=192
+   | ;insults the player
+   | (defrule
+   | (true)
+   | =>
+   | (enable-timer t-chat 10)
+   | (disable-self)
+   | )
+   | (defrule
+   | (timer-triggered  t-chat)
+   | (players-civ any-human-enemy british)
+------------------------------------------------------------------------
+anib_60023.bin size=30008 lines=1181
+   | ;THE BULLY
+   | #load-if-not-defined TEAMS-LOCKED
+   | #load-if-defined DIFFICULTY-EASIEST
+   | (defrule
+   | (true)
+   | =>
+   | (set-stance every-human neutral)
+   | (set-stance every-computer neutral)
+   | (disable-self)
+   | )
+------------------------------------------------------------------------
+anib_60024.bin size=3129 lines=151
+   | ;best ship-builders = byzantines, japanese, persian, saracen, viking
+   | ;secondary = briton, celts, chinese, turk
+   | ;tertiary = franks, goths, mongols, teuton,
+   | ;first make sure that there is only _one_ main ship-builder
+   | (defrule
+   | (true)
+   | =>
+   | (set-goal sea-owner NOTICE)
+   | (disable-self)
+   | )
+------------------------------------------------------------------------
+anib_60025.bin size=2842 lines=143
+   | ;error trapping
+   | (defrule
+   | (current-age == imperial-age)
+   | (not (goal rush-control NO) )
+   | =>
+   | (set-goal rush-control NO)
+   | )
+   | ;should we launch a rush?
+   | (defrule
+   | (goal rush-control NOTICE)
+------------------------------------------------------------------------
+anib_60026.bin size=918 lines=34
+   | (load "petersen constants")
+   | ;******************************
+   | #load-if-defined WONDER-RACE
+   | (load "wonder rush")
+   | #end-if
+   | ;******************************
+   | #load-if-defined DEATH-MATCH
+   | (load "petersen map loads")
+   | (load "petersen diplomacy")
+   | (load "petersen supplement")
+------------------------------------------------------------------------
+anib_60027.bin size=19383 lines=558
+   | ; Common constants used in AI goals - other constants will follow the specific goals
+   | ; Common.
+   | (defconst NO 0).. ;Used to indicate not set or initial value (as Normal)
+   | (defconst YES 1).. ;Used to indicate set
+   | (defconst NORMAL 0). ;Used for default values
+   | (defconst NOTICE 99)  ;Used for special highlight or initialization values that should be set
+   | ; Constants used for ratings (i.e. monk-rating)
+   | (defconst EXCELLENT 99); For any rating-type value highest to lowest
+   | (defconst GOOD.70)
+   | (defconst MEDIUM 50)
+------------------------------------------------------------------------
+anib_60028.bin size=55492 lines=2387
+   | ;if I'm short on resources, ask allies for some before using the market
+   | (defrule
+   | (player-in-game any-ally)
+   | (players-building-type-count any-ally market > 0)
+   | =>
+   | (enable-timer 1 60)
+   | (disable-self)
+   | )
+   | (defrule
+   | (true)
+------------------------------------------------------------------------
+anib_60029.bin size=52174 lines=2340
+   | ;goals 1 and 2 = boats
+   | ;goal 3 = groups
+   | ;goal combat-arm = his unique unit type (also loads correct upgrades)
+   | ;goal 36 = good infantry -- 36 NO = don't build, YES = build,
+   | ;.2 = only build if we don't have a castle.
+   | ;goal 37 = good cavalry
+   | ;goal 38 = good horse-archers
+   | ;goal 39 = good archers
+   | ;starting goals
+   | (defrule

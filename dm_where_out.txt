@@ -1,0 +1,608 @@
+=== aok_drs : 48 anib files ===
+   anib_54000.bin         3584  fdcd1688497ba9468c9883e5e33655d4
+   anib_54101.bin         6380  f1ef5b4a5aea426f02a4acbcae6a3704
+   anib_54102.bin        11501  96cbdfb6c683bd51d0586a5b74e288d2
+   anib_54103.bin        11451  c7120163a111ba972b9f0c59ca30c240
+   anib_54201.bin         5020  bf0cf77f7e4c7003f83f6223ee5368ba
+   anib_54202.bin        22800  0bafecd33889847c377d37da739bdce5
+   anib_54203.bin         7333  7ad6872970059fa0b563ba5dbcadbb9b
+   anib_54204.bin         4790  cb39b9b887eb6eab588cf1221bff9ca1
+   anib_54205.bin        12646  664d47f5c7d3269a093e024274c71e2f
+   anib_54206.bin        11586  c684a6a80ad1de51e96f0e364316ed31
+   anib_54207.bin         6546  f30c5a38bde35176a1b4718732d5e660
+   anib_54208.bin        15095  fd8cc61e43b33fd01c41642d4cc9523b
+   anib_54209.bin         6777  1e3e794cd364cf32b39f2a62b76b7b1d
+   anib_54210.bin         9128  96ffb1989b3fc60e3607e99b4410fdfb
+   anib_54211.bin        21559  346318ce0c69ede8407756467b39f004
+   anib_54212.bin         7935  278cffacce3d7b15d0f8cec277b512f2
+   anib_54213.bin        17632  975158f6714b395bd7e8ce95e70fddb6
+   anib_54214.bin        14552  ce4de07cf1ff3cd59a40a5679b47f8af
+   anib_54216.bin          731  26caae727ec56c5f0f7dfd9fc0353c79
+   anib_54217.bin         9748  52bfc2a9694fa34dd06e0c79196417cd
+   anib_54218.bin        11204  29a797d86bbe9081eb2f336b1fb6bc6b
+   anib_60001.bin        28550  9dbdc8fc63d053ce7346cab7e3a0dceb
+   anib_60002.bin        45718  369e8466f747ff9f503408e081c566c6
+   anib_60003.bin        41578  b4781daf4ab559f5c317de1955237f83
+   anib_60004.bin         3276  a365c09cc147207ff8b6633f176b5037
+   anib_60005.bin         3544  43752fb6de20d58c2cdf57c304320e3c
+   anib_60006.bin         4083  ca210d1014d4428f694878a4e2a8875c
+   anib_60007.bin        17783  a30f77bc70d8b2756aeec3f1ff804096
+   anib_60008.bin        17098  521bdc0081011fc96ae849cd774f05d0
+   anib_60009.bin        19315  a4cbe8cb001aea47f69abda8c9e6a399
+   anib_60010.bin        14168  d70770b528caf21520c73bced85781da
+   anib_60011.bin        15124  0ca16c94772a37ef0829e42745e91ab9
+   anib_60012.bin         4583  8ef1ee14be75aa706878323179bd2a41
+   anib_60013.bin         1350  b9aceb8ef6afdc5477feac1e3270f800
+   anib_60014.bin         1013  8be7efcb032a14ed67806caf56a1f06a
+   anib_60015.bin         2370  d31fc264d1c0e0c20605da183c55ff7d
+   anib_60016.bin         3050  b2fcc4df6dc484d7a6d210970943d8fa
+   anib_60017.bin        12154  78cab2b9595c7c34cf4fdebb42396c22
+   anib_60018.bin          338  b0f3ba459378cb9e6171bee39c85892c
+   anib_60019.bin        15138  e959ce7cac538c77d159d9166accfff4
+   anib_60020.bin         5177  bd8e147ddfe1bb32ae454c553eda52fb
+   anib_60021.bin        12002  ed4589b98b6466946456abd1478d0856
+   anib_60022.bin         4272  af372927fd1430cf39d3197325594412
+   anib_60023.bin        19478  db34dadf7980a7cf385374181e59179d
+   anib_60024.bin         8218  4e01fe6631ac542333165cb6ee5d41eb
+   anib_60025.bin         3267  4e2e127d1ded6b439101c44548daeebd
+   anib_60026.bin          255  925b167b6c2b42cdb29217ed2b8eb957
+   anib_60027.bin         9832  3327a421837eba2ff07ac0193e56db1d
+=== x1_drs : 76 anib files ===
+   anib_54000.bin        18733  2e9fbdbb79edfa1dfdcabd15cabe3368
+   anib_54101.bin         6380  f1ef5b4a5aea426f02a4acbcae6a3704
+   anib_54102.bin        13504  3d1305b2be86d46a6b13d56df534de91
+   anib_54103.bin        13468  93a053945aa8fcfb3a66bf80201510e2
+   anib_54201.bin         4989  52a92f209596567675aa3c6212dbe9cf
+   anib_54202.bin        22761  282c9fb4afb0d8005a8e2e704f21dca1
+   anib_54203.bin         7422  61e9da885e04f92c42179cd147488a88
+   anib_54204.bin         7676  2862d3a4369a268e831abc27dd8844ab
+   anib_54205.bin        15783  910021c77ec80fee6e3ccfc8eaf5ac28
+   anib_54206.bin        11548  9af6562518c38f84587d01b6af7d7cc1
+   anib_54207.bin         6508  c99670519479c51047abe4a60fcaf196
+   anib_54208.bin        16815  b25ddeee520452c25b34779511e1e13f
+   anib_54209.bin         6743  c4a4ae54a427ece7a942a6f6e1dd84de
+   anib_54210.bin        11179  1c2a4817662adc6e5e2f5d16d2c02808
+   anib_54211.bin        23331  b28f4a71bc1cccbfb8822a504334c3c3
+   anib_54212.bin         7894  c7970bb778a0237eeab6da7e347c959d
+   anib_54213.bin        17595  3e2a0ad85cd628510d898ac3b26613cd
+   anib_54217.bin         9714  ecad12e9a5cc13e5199e19a18927cd3a
+   anib_54218.bin        13502  2c1624f50322fbb8e9bb6d78e62ca7f7
+   anib_54219.bin        13773  4ab807e6e474754cb97e3b1e4a288eee
+   anib_54220.bin         3165  52942c7e4629a3c583ee1a318a866b11
+   anib_54221.bin        15458  85c4e7de086e32b9658ad72802df042a
+   anib_54222.bin        18514  d4a82e4773da13f78ba23a3b88458540
+   anib_54223.bin        20500  95517522cdb334c6c6b6177ba701fbe3
+   anib_54225.bin         6722  e803a1297cdee7a8297a818a8248f8ea
+   anib_54226.bin         4813  1908ee1c2a154d3b44f16ebdfebc2b18
+   anib_54227.bin        19818  9b90a34e2d105fb3517c7a2b2da1412b
+   anib_55001.bin         5116  9695e04328f2f4229f977099aa5788cd
+   anib_55002.bin         3636  4afddac4c2a688c6970dd79eee3e07ff
+   anib_55003.bin         3224  7c74cee850791e92ef22d7fc9456627a
+   anib_55004.bin        17634  477299829029966c4b114ef793e03ee5
+   anib_55005.bin        14202  a79cba1dc1520965415d756438efbc58
+   anib_55006.bin         3977  b458353f8a44f7df8f4dea204dff4995
+   anib_55007.bin         4882  ed8ed9cbcf1824ce1278b497cee979d9
+   anib_55008.bin         4370  1a0a5b43d6594ecc0e9f1c0020754a61
+   anib_55009.bin        13921  5d3cd1b390fc18e66c4f07a8c67e3791
+   anib_55010.bin         4882  5ca156934deb80d25677748d96b22746
+   anib_56001.bin         8197  5acebdd85c97b48aac16b984ff4d3df7
+   anib_56002.bin         8557  a206b8b967e67e8f59d03ce6c1e79e6c
+   anib_56003.bin         6703  1279b1e26394634a3648de67aea4b210
+   anib_56004.bin         3515  9440a8308d84d17eb9d283cd5f2cb351
+   anib_56005.bin         5087  a15da6959ef18595a35b6a75278c07c4
+   anib_56006.bin         4065  cadc86d80b482581add575520f6941bf
+   anib_56007.bin         4666  32f2b4ff1b0e3883248a322a0e4c262a
+   anib_56008.bin         4492  6555cbd741734d6bb9eb9e0d48e91744
+   anib_56009.bin         4852  9463d68d1d3d756c7ce75361757f0617
+   anib_56010.bin         5434  8fa86929bb40a4518ef4cdf0215b6322
+   anib_60001.bin        29337  5a2604d430a89493e76aac820d34bef9
+   anib_60002.bin        54203  430feba4dc7ecb3ee47c68d2917adac2
+   anib_60003.bin        49519  e67711142bba55338cd37601df5ce9ab
+   anib_60004.bin         4463  1e57fe9cc406fe7b4d62cd2cf12bb3e9
+   anib_60005.bin         3544  43752fb6de20d58c2cdf57c304320e3c
+   anib_60006.bin         2693  29bb18dcaa7b6f8a623d01793b5b903c
+   anib_60007.bin        26355  c550357366f1dc93dd2989e3d3eff118
+   anib_60008.bin         4827  9c17b87fe70ee4857ff45f98eb4429b8
+   anib_60009.bin        23059  b326c9713d95ac8ae26b8136cee79f0d
+   anib_60010.bin        13739  ba4fb112e66c469d83de84e6926a8fea
+   anib_60011.bin        19573  9bb4a6109625767266085e4c27289fb4
+   anib_60012.bin         5078  78560c7c811cbdd60d2a8ca194ae7199
+   anib_60013.bin        20650  f267a824a0013a0f3dcd5b50a234e727
+   anib_60014.bin         1251  c78fc96799a0f490f4e9c518bf8d60ea
+   anib_60015.bin         2647  43fe779375a1180d08edf86c7b91431b
+   anib_60016.bin         3609  6fd021cb95fa7a0d612ec25b34f3a8b1
+   anib_60017.bin        12623  443a792cd567a1c96a4c5c34e22171b6
+   anib_60018.bin          475  44a6b2b3b0289786d97a159fde61d2b2
+   anib_60019.bin         9574  730550d8bb28676330dc557e055fd52f
+   anib_60020.bin         5062  5ae439cf4135df80ef53ae640d82eeac
+   anib_60021.bin        12949  043c9723121c7e33aa0231cb34ca1fbe
+   anib_60022.bin         4272  af372927fd1430cf39d3197325594412
+   anib_60023.bin        30008  d01dff55c9ee9d7e2a5fa32c72cff939
+   anib_60024.bin         3129  3663dbfde2543c949686c2f6c0b41a2b
+   anib_60025.bin         2842  151ff9c57dac229f70118b80b41f4651
+   anib_60026.bin          918  0163840ea721c318ad40721f364edbaf
+   anib_60027.bin        19383  45e05207f2f0d1988f7c2c9561033e94
+   anib_60028.bin        55492  2ea88ead1c3367933c1c8a254be74b3d
+   anib_60029.bin        52174  71e04804d6f5b72a570a0a652312db60
+=== x1p1_drs : 1 anib files ===
+   anib_54228.bin         1281  d8f7335a87ac6c44c07fe3b441ceadff
+
+=== cc-add-resource occurrences (all dirs) ===
+-- aok_drs/anib_60008.bin : 4 hits
+     713| (defrule
+     714| 	(timer-triggered t-chatmore)
+     715| =>
+     716| 	(cc-add-resource wood 500)
+     717| 	(cc-add-resource food 500)
+
+     713| (defrule
+     714| 	(timer-triggered t-chatmore)
+     715| =>
+     716| 	(cc-add-resource wood 500)
+     717| 	(cc-add-resource food 500)
+     718| 	(cc-add-resource gold 500)
+
+     713| (defrule
+     714| 	(timer-triggered t-chatmore)
+     715| =>
+     716| 	(cc-add-resource wood 500)
+     717| 	(cc-add-resource food 500)
+     718| 	(cc-add-resource gold 500)
+     719| 	(cc-add-resource stone 500)
+
+     713| (defrule
+     714| 	(timer-triggered t-chatmore)
+     715| =>
+     716| 	(cc-add-resource wood 500)
+     717| 	(cc-add-resource food 500)
+     718| 	(cc-add-resource gold 500)
+     719| 	(cc-add-resource stone 500)
+     720| 	(disable-timer t-chatmore)
+
+-- x1_drs/anib_60001.bin : 20 hits
+     148| (defrule
+     149| 	(current-age == dark-age)
+     150| =>
+     151| 	(cc-add-resource wood 100)
+     152| 	(cc-add-resource food 100)
+
+     148| (defrule
+     149| 	(current-age == dark-age)
+     150| =>
+     151| 	(cc-add-resource wood 100)
+     152| 	(cc-add-resource food 100)
+     153| 	(cc-add-resource gold 100)
+
+     148| (defrule
+     149| 	(current-age == dark-age)
+     150| =>
+     151| 	(cc-add-resource wood 100)
+     152| 	(cc-add-resource food 100)
+     153| 	(cc-add-resource gold 100)
+     154| 	(cc-add-resource stone 100)
+
+     148| (defrule
+     149| 	(current-age == dark-age)
+     150| =>
+     151| 	(cc-add-resource wood 100)
+     152| 	(cc-add-resource food 100)
+     153| 	(cc-add-resource gold 100)
+     154| 	(cc-add-resource stone 100)
+     155| 	(disable-self)
+
+     158| (defrule
+     159| 	(current-age == feudal-age)
+     160| =>
+     161| 	(cc-add-resource wood 200)
+     162| 	(cc-add-resource food 200)
+
+     158| (defrule
+     159| 	(current-age == feudal-age)
+     160| =>
+     161| 	(cc-add-resource wood 200)
+     162| 	(cc-add-resource food 200)
+     163| 	(cc-add-resource gold 200)
+
+     158| (defrule
+     159| 	(current-age == feudal-age)
+     160| =>
+     161| 	(cc-add-resource wood 200)
+     162| 	(cc-add-resource food 200)
+     163| 	(cc-add-resource gold 200)
+     164| 	(cc-add-resource stone 200)
+
+     158| (defrule
+     159| 	(current-age == feudal-age)
+     160| =>
+     161| 	(cc-add-resource wood 200)
+     162| 	(cc-add-resource food 200)
+     163| 	(cc-add-resource gold 200)
+     164| 	(cc-add-resource stone 200)
+     165| 	(disable-self)
+
+     168| (defrule
+     169| 	(current-age == castle-age)
+     170| =>
+     171| 	(cc-add-resource wood 500)
+     172| 	(cc-add-resource food 500)
+
+     168| (defrule
+     169| 	(current-age == castle-age)
+     170| =>
+     171| 	(cc-add-resource wood 500)
+     172| 	(cc-add-resource food 500)
+     173| 	(cc-add-resource gold 500)
+
+     168| (defrule
+     169| 	(current-age == castle-age)
+     170| =>
+     171| 	(cc-add-resource wood 500)
+     172| 	(cc-add-resource food 500)
+     173| 	(cc-add-resource gold 500)
+     174| 	(cc-add-resource stone 500)
+
+     168| (defrule
+     169| 	(current-age == castle-age)
+     170| =>
+     171| 	(cc-add-resource wood 500)
+     172| 	(cc-add-resource food 500)
+     173| 	(cc-add-resource gold 500)
+     174| 	(cc-add-resource stone 500)
+     175| 	(disable-self)
+
+     178| (defrule
+     179| 	(current-age == imperial-age)
+     180| =>
+     181| 	(cc-add-resource wood 1000)
+     182| 	(cc-add-resource food 1000)
+
+     178| (defrule
+     179| 	(current-age == imperial-age)
+     180| =>
+     181| 	(cc-add-resource wood 1000)
+     182| 	(cc-add-resource food 1000)
+     183| 	(cc-add-resource gold 1000)
+
+     178| (defrule
+     179| 	(current-age == imperial-age)
+     180| =>
+     181| 	(cc-add-resource wood 1000)
+     182| 	(cc-add-resource food 1000)
+     183| 	(cc-add-resource gold 1000)
+     184| 	(cc-add-resource stone 1000)
+
+     178| (defrule
+     179| 	(current-age == imperial-age)
+     180| =>
+     181| 	(cc-add-resource wood 1000)
+     182| 	(cc-add-resource food 1000)
+     183| 	(cc-add-resource gold 1000)
+     184| 	(cc-add-resource stone 1000)
+     185| 	(disable-timer t-chatmore)
+
+     190| (defrule
+     191| 	(timer-triggered t-chatmore)
+     192| =>
+     193| 	(cc-add-resource wood 500)
+     194| 	(cc-add-resource food 500)
+
+     190| (defrule
+     191| 	(timer-triggered t-chatmore)
+     192| =>
+     193| 	(cc-add-resource wood 500)
+     194| 	(cc-add-resource food 500)
+     195| 	(cc-add-resource gold 500)
+
+     190| (defrule
+     191| 	(timer-triggered t-chatmore)
+     192| =>
+     193| 	(cc-add-resource wood 500)
+     194| 	(cc-add-resource food 500)
+     195| 	(cc-add-resource gold 500)
+     196| 	(cc-add-resource stone 500)
+
+     190| (defrule
+     191| 	(timer-triggered t-chatmore)
+     192| =>
+     193| 	(cc-add-resource wood 500)
+     194| 	(cc-add-resource food 500)
+     195| 	(cc-add-resource gold 500)
+     196| 	(cc-add-resource stone 500)
+     197| 	(disable-timer t-chatmore)
+
+-- x1_drs/anib_60008.bin : 4 hits
+     208| (defrule
+     209| 	(timer-triggered t-chatmore)
+     210| =>
+     211| 	(cc-add-resource wood 500)
+     212| 	(cc-add-resource food 500)
+
+     208| (defrule
+     209| 	(timer-triggered t-chatmore)
+     210| =>
+     211| 	(cc-add-resource wood 500)
+     212| 	(cc-add-resource food 500)
+     213| 	(cc-add-resource gold 500)
+
+     208| (defrule
+     209| 	(timer-triggered t-chatmore)
+     210| =>
+     211| 	(cc-add-resource wood 500)
+     212| 	(cc-add-resource food 500)
+     213| 	(cc-add-resource gold 500)
+     214| 	(cc-add-resource stone 500)
+
+     208| (defrule
+     209| 	(timer-triggered t-chatmore)
+     210| =>
+     211| 	(cc-add-resource wood 500)
+     212| 	(cc-add-resource food 500)
+     213| 	(cc-add-resource gold 500)
+     214| 	(cc-add-resource stone 500)
+     215| 	(disable-timer t-chatmore)
+
+-- x1_drs/anib_60028.bin : 4 hits
+     887| (defrule
+     888| 	(timer-triggered t-chatmore)
+     889| =>
+     890| 	(cc-add-resource wood 500)
+     891| 	(cc-add-resource food 500)
+
+     887| (defrule
+     888| 	(timer-triggered t-chatmore)
+     889| =>
+     890| 	(cc-add-resource wood 500)
+     891| 	(cc-add-resource food 500)
+     892| 	(cc-add-resource gold 500)
+
+     887| (defrule
+     888| 	(timer-triggered t-chatmore)
+     889| =>
+     890| 	(cc-add-resource wood 500)
+     891| 	(cc-add-resource food 500)
+     892| 	(cc-add-resource gold 500)
+     893| 	(cc-add-resource stone 500)
+
+     887| (defrule
+     888| 	(timer-triggered t-chatmore)
+     889| =>
+     890| 	(cc-add-resource wood 500)
+     891| 	(cc-add-resource food 500)
+     892| 	(cc-add-resource gold 500)
+     893| 	(cc-add-resource stone 500)
+     894| 	(disable-timer t-chatmore)
+
+-- x1_drs/anib_60029.bin : 28 hits
+      94| (defrule
+      95| 	(difficulty == hardest)
+      96| 	(goal wonder-attempt ATTACK)
+      97| =>
+      98| 	(cc-add-resource wood 10000)
+      99| 	(cc-add-resource food 10000)
+
+      94| (defrule
+      95| 	(difficulty == hardest)
+      96| 	(goal wonder-attempt ATTACK)
+      97| =>
+      98| 	(cc-add-resource wood 10000)
+      99| 	(cc-add-resource food 10000)
+     100| 	(cc-add-resource gold 10000)
+
+      94| (defrule
+      95| 	(difficulty == hardest)
+      96| 	(goal wonder-attempt ATTACK)
+      97| =>
+      98| 	(cc-add-resource wood 10000)
+      99| 	(cc-add-resource food 10000)
+     100| 	(cc-add-resource gold 10000)
+     101| 	(cc-add-resource stone 10000)
+
+      94| (defrule
+      95| 	(difficulty == hardest)
+      96| 	(goal wonder-attempt ATTACK)
+      97| =>
+      98| 	(cc-add-resource wood 10000)
+      99| 	(cc-add-resource food 10000)
+     100| 	(cc-add-resource gold 10000)
+     101| 	(cc-add-resource stone 10000)
+     102| 	(disable-self)
+
+     105| (defrule
+     106| 	(difficulty == hard)
+     107| 	(goal wonder-attempt ATTACK)
+     108| =>
+     109| 	(cc-add-resource wood 5000)
+     110| 	(cc-add-resource food 5000)
+
+     105| (defrule
+     106| 	(difficulty == hard)
+     107| 	(goal wonder-attempt ATTACK)
+     108| =>
+     109| 	(cc-add-resource wood 5000)
+     110| 	(cc-add-resource food 5000)
+     111| 	(cc-add-resource gold 5000)
+
+     105| (defrule
+     106| 	(difficulty == hard)
+     107| 	(goal wonder-attempt ATTACK)
+     108| =>
+     109| 	(cc-add-resource wood 5000)
+     110| 	(cc-add-resource food 5000)
+     111| 	(cc-add-resource gold 5000)
+     112| 	(cc-add-resource stone 5000)
+
+     105| (defrule
+     106| 	(difficulty == hard)
+     107| 	(goal wonder-attempt ATTACK)
+     108| =>
+     109| 	(cc-add-resource wood 5000)
+     110| 	(cc-add-resource food 5000)
+     111| 	(cc-add-resource gold 5000)
+     112| 	(cc-add-resource stone 5000)
+     113| 	(disable-self)
+
+     116| (defrule
+     117| 	(difficulty == moderate)
+     118| 	(goal wonder-attempt ATTACK)
+     119| =>
+     120| 	(cc-add-resource wood 1000)
+     121| 	(cc-add-resource food 1500)
+
+     116| (defrule
+     117| 	(difficulty == moderate)
+     118| 	(goal wonder-attempt ATTACK)
+     119| =>
+     120| 	(cc-add-resource wood 1000)
+     121| 	(cc-add-resource food 1500)
+     122| 	(cc-add-resource gold 1500)
+
+     116| (defrule
+     117| 	(difficulty == moderate)
+     118| 	(goal wonder-attempt ATTACK)
+     119| =>
+     120| 	(cc-add-resource wood 1000)
+     121| 	(cc-add-resource food 1500)
+     122| 	(cc-add-resource gold 1500)
+     123| 	(cc-add-resource stone 1000)
+
+     116| (defrule
+     117| 	(difficulty == moderate)
+     118| 	(goal wonder-attempt ATTACK)
+     119| =>
+     120| 	(cc-add-resource wood 1000)
+     121| 	(cc-add-resource food 1500)
+     122| 	(cc-add-resource gold 1500)
+     123| 	(cc-add-resource stone 1000)
+     124| 	(disable-self)
+
+     127| (defrule
+     128| 	(difficulty == hardest)
+     129| 	(goal wonder-attempt DEFEND)
+     130| =>
+     131| 	(cc-add-resource wood 5000)
+     132| 	(cc-add-resource food 5000)
+
+     127| (defrule
+     128| 	(difficulty == hardest)
+     129| 	(goal wonder-attempt DEFEND)
+     130| =>
+     131| 	(cc-add-resource wood 5000)
+     132| 	(cc-add-resource food 5000)
+     133| 	(cc-add-resource gold 5000)
+
+     127| (defrule
+     128| 	(difficulty == hardest)
+     129| 	(goal wonder-attempt DEFEND)
+     130| =>
+     131| 	(cc-add-resource wood 5000)
+     132| 	(cc-add-resource food 5000)
+     133| 	(cc-add-resource gold 5000)
+     134| 	(cc-add-resource stone 5000)
+
+     127| (defrule
+     128| 	(difficulty == hardest)
+     129| 	(goal wonder-attempt DEFEND)
+     130| =>
+     131| 	(cc-add-resource wood 5000)
+     132| 	(cc-add-resource food 5000)
+     133| 	(cc-add-resource gold 5000)
+     134| 	(cc-add-resource stone 5000)
+     135| 	(disable-self)
+
+     138| (defrule
+     139| 	(difficulty == hard)
+     140| 	(goal wonder-attempt DEFEND)
+     141| =>
+     142| 	(cc-add-resource wood 1000)
+     143| 	(cc-add-resource food 1000)
+
+     138| (defrule
+     139| 	(difficulty == hard)
+     140| 	(goal wonder-attempt DEFEND)
+     141| =>
+     142| 	(cc-add-resource wood 1000)
+     143| 	(cc-add-resource food 1000)
+     144| 	(cc-add-resource gold 1000)
+
+     138| (defrule
+     139| 	(difficulty == hard)
+     140| 	(goal wonder-attempt DEFEND)
+     141| =>
+     142| 	(cc-add-resource wood 1000)
+     143| 	(cc-add-resource food 1000)
+     144| 	(cc-add-resource gold 1000)
+     145| 	(cc-add-resource stone 1000)
+
+     138| (defrule
+     139| 	(difficulty == hard)
+     140| 	(goal wonder-attempt DEFEND)
+     141| =>
+     142| 	(cc-add-resource wood 1000)
+     143| 	(cc-add-resource food 1000)
+     144| 	(cc-add-resource gold 1000)
+     145| 	(cc-add-resource stone 1000)
+     146| 	(disable-self)
+
+     149| (defrule
+     150| 	(difficulty == moderate)
+     151| 	(goal wonder-attempt DEFEND)
+     152| =>
+     153| 	(cc-add-resource wood 500)
+     154| 	(cc-add-resource food 500)
+
+     149| (defrule
+     150| 	(difficulty == moderate)
+     151| 	(goal wonder-attempt DEFEND)
+     152| =>
+     153| 	(cc-add-resource wood 500)
+     154| 	(cc-add-resource food 500)
+     155| 	(cc-add-resource gold 500)
+
+     149| (defrule
+     150| 	(difficulty == moderate)
+     151| 	(goal wonder-attempt DEFEND)
+     152| =>
+     153| 	(cc-add-resource wood 500)
+     154| 	(cc-add-resource food 500)
+     155| 	(cc-add-resource gold 500)
+     156| 	(cc-add-resource stone 500)
+
+     149| (defrule
+     150| 	(difficulty == moderate)
+     151| 	(goal wonder-attempt DEFEND)
+     152| =>
+     153| 	(cc-add-resource wood 500)
+     154| 	(cc-add-resource food 500)
+     155| 	(cc-add-resource gold 500)
+     156| 	(cc-add-resource stone 500)
+     157| 	(disable-self)
+
+    1645| (defrule
+    1646| 	(timer-triggered t-chatmore)
+    1647| =>
+    1648| 	(cc-add-resource wood 500)
+    1649| 	(cc-add-resource food 500)
+
+    1645| (defrule
+    1646| 	(timer-triggered t-chatmore)
+    1647| =>
+    1648| 	(cc-add-resource wood 500)
+    1649| 	(cc-add-resource food 500)
+    1650| 	(cc-add-resource gold 500)
+
+    1645| (defrule
+    1646| 	(timer-triggered t-chatmore)
+    1647| =>
+    1648| 	(cc-add-resource wood 500)
+    1649| 	(cc-add-resource food 500)
+    1650| 	(cc-add-resource gold 500)
+    1651| 	(cc-add-resource stone 500)
+
+    1645| (defrule
+    1646| 	(timer-triggered t-chatmore)
+    1647| =>
+    1648| 	(cc-add-resource wood 500)
+    1649| 	(cc-add-resource food 500)
+    1650| 	(cc-add-resource gold 500)
+    1651| 	(cc-add-resource stone 500)
+    1652| 	(disable-timer t-chatmore)

@@ -1,0 +1,56 @@
+﻿========================================================================
+anib_60001.bin  (1386 lines, 6 hits)
+    L117   .(set-strategic-number sn-maximum-fish-boat-drop-distance 30)
+    L118   .(set-strategic-number sn-maximum-gold-drop-distance 20)
+    L119   .(set-strategic-number sn-maximum-stone-drop-distance 20)
+    L120   .(disable-self)
+    L121   )
+    L122   
+  * L123   #load-if-defined KING-OF-THE-HILL
+    L124   
+    L125   (defrule
+    L126   .(hold-koh-ruin)
+    L127   =>
+    L128   .(set-strategic-number sn-gather-idle-soldiers-at-center 1)
+    L129   )
+    L139   .(not (hold-koh-ruin) )
+    L140   .(military-population > thirty-percent-pop)
+    L141   =>
+    L142   .(set-strategic-number sn-gather-idle-soldiers-at-center 1)
+    L143   )
+    L144   
+  * L145   #load-if-not-defined DIFFICULTY-EASIEST
+    L146   #load-if-not-defined DIFFICULTY-EASY
+    L147   #load-if-not-defined DIFFICULTY-MODERATE
+    L148   (defrule
+    L149   .(current-age == dark-age)
+    L150   =>
+    L151   .(cc-add-resource wood 100)
+    L152   .(cc-add-resource food 100)
+    L153   .(cc-add-resource gold 100)
+    L330   .(population-headroom > 0)
+    L331   .(can-build house)
+    L332   =>
+    L333   .(build house)
+    L334   )
+    L335   
+  * L336   #load-if-defined DIFFICULTY-EASIEST
+    L337   (defrule
+    L338   .(building-type-count town-center > 0)
+    L339   .(military-population < 10)
+    L340   .(housing-headroom < 5)
+    L341   .(population-headroom > 0)
+    L342   .(can-build house)
+    L350   =>
+    L351   .(train villager)
+    L352   )
+    L353   
+    L354   #end-if
+    L355   
+  * L356   #load-if-defined DIFFICULTY-EASY
+    L357   (defrule
+    L358   .(building-type-count town-center > 0)
+    L359   .(military-population < civ-dark-rush)
+    L360   .(housing-headroom < 5)
+    L361   .(population-headroom > 0)
+    L362   .(can-build house)

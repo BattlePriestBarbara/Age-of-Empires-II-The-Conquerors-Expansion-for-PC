@@ -1,0 +1,55 @@
+aok_drs: 45718 bytes, 2445 lines, final #if depth=0, stray #end-if=[]
+  -> D:\aoe2_work\patch_out\aok_drs_anib_60002.bin  (47443 bytes, +1725)
+x1_drs: 54203 bytes, 2884 lines, final #if depth=0, stray #end-if=[]
+  -> D:\aoe2_work\patch_out\x1_drs_anib_60002.bin  (55928 bytes, +1725)
+
+=== fix 4: catch-all constants for population limits the engine does not know
+    (engine only knows 25/50/75/100/125/150/175/200 -> at e.g. 500 none of them is defined)
+x1_drs/anib_60027.bin: 19383 -> 21924 bytes (+2541), catch-all defines 19 constants, scaled x2.5 to cap 500
+    civ-dark-rush            20 -> 50
+    civ-dark                 25 -> 63
+    civ-dark-mod             15 -> 38
+    civ-feudal-mod           20 -> 50
+    civ-feudal               40 -> 100
+    civ-castle               70 -> 175
+    pop-cap                 200 -> 500
+    deathmatch-unit-max     170 -> 425
+    unit-max                130 -> 325
+    unit-max                130 -> 325
+    unit-max                160 -> 400
+    unit-max                190 -> 475
+    unit-max                190 -> 475
+    five-percent-pop         10 -> 25
+    ten-percent-pop          20 -> 50
+    fifteen-percent-pop      30 -> 75
+    twenty-percent-pop       40 -> 100
+    thirty-percent-pop       60 -> 150
+    fifty-percent-pop       100 -> 250
+    feudal-town-size       kept at the cap-200 value
+    castle-town-size       kept at the cap-200 value
+    imperial-town-size     kept at the cap-200 value
+    town-center-count      kept at the cap-200 value
+  cross-check against x1_drs/anib_60002.bin: every population-cap constant it uses is covered
+  -> D:\aoe2_work\patch_out\x1_drs_anib_60027.bin
+aok_drs/anib_60010.bin: 14168 -> 16587 bytes (+2419), catch-all defines 15 constants, scaled x2.5 to cap 500
+    civ-dark-rush            20 -> 50
+    civ-dark                 25 -> 63
+    civ-feudal               40 -> 100
+    civ-castle               70 -> 175
+    pop-cap                 200 -> 500
+    deathmatch-unit-max     170 -> 425
+    unit-max                130 -> 325
+    unit-max                130 -> 325
+    unit-max                160 -> 400
+    unit-max                190 -> 475
+    unit-max                190 -> 475
+    five-percent-pop         10 -> 25
+    ten-percent-pop          20 -> 50
+    fifteen-percent-pop      30 -> 75
+    twenty-percent-pop       40 -> 100
+    thirty-percent-pop       60 -> 150
+    feudal-town-size       kept at the cap-200 value
+    castle-town-size       kept at the cap-200 value
+    imperial-town-size     kept at the cap-200 value
+  cross-check against aok_drs/anib_60002.bin: every population-cap constant it uses is covered
+  -> D:\aoe2_work\patch_out\aok_drs_anib_60010.bin

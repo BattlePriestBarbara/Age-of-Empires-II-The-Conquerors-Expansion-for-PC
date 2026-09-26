@@ -1,0 +1,110 @@
+
+============================================================================================
+=== RETAIL x1
+    path            : D:\aoe2_aoefix\backup_drs\gamedata_x1.drs.orig
+    bytes=54203  LF=2883  CRLF=2883  lines(engine)=2883  final depth=0
+    last line       : '\r'
+    LINE 3021 -> FILE HAS ONLY 2883 LINES
+    rules=243  first=11  last=2875
+    lines with negative depth: none
+    --- lines 3009..3033 with running depth ---
+
+============================================================================================
+=== PATCHED x1 (patch_out2)
+    path            : D:\aoe2_aoefix\patch_out2\x1_drs_anib_60002.bin
+    bytes=60071  LF=3046  CRLF=3046  lines(engine)=3046  final depth=0
+    last line       : ')\r'
+    LINE 3021 depth 1->1 : '\t(disable-self)\r'
+    rules=257  first=11  last=3041
+    lines with negative depth: none
+    --- lines 3009..3033 with running depth ---
+        3009 | d0->0 | ;     <resource> <amount>)": anib_60001 uses amounts from 100 to 10000, so the
+        3010 | d0->0 | ;     10000 below is a shipped value too).  Timer t-attackgroup is retail timer index 2:
+        3011 | d0->0 | ;     the constants file declares it and no death-match rule triggers it, so
+        3012 | d0->0 | ;     the countdown below is its only user.  The resources test is written as
+        3013 | d0->0 | ;     the two-child nested (or ...) that retail uses for exactly this check
+        3014 | d0->0 | ;     (lines 1511-1523 and 1533-1542) - a block with more than two children is
+        3015 | d0->0 | ;     what made v2 die with "ERR2011: Missing closing parenthesis".
+        3016 | d0->0 | ;------------------------------------------------------------------------------
+        3017 | d0->1 | (defrule
+        3018 | d1->1 | 	(true)
+        3019 | d1->1 | =>
+        3020 | d1->1 | 	(enable-timer t-attackgroup 10)
+        3021 | d1->1 | 	(disable-self)
+        3022 | d1->0 | )
+        3023 | d0->1 | (defrule
+        3024 | d1->1 | 	(timer-triggered t-attackgroup)
+        3025 | d1->2 | 	(or
+        3026 | d2->3 | 		(or
+        3027 | d3->3 | 			(wood-amount < 5000)
+        3028 | d3->3 | 			(food-amount < 5000)
+        3029 | d3->2 | 		)
+        3030 | d2->3 | 		(or
+        3031 | d3->3 | 			(gold-amount < 5000)
+        3032 | d3->3 | 			(stone-amount < 5000)
+        3033 | d3->2 | 		)
+
+============================================================================================
+=== LIVE x1 (game Data)
+    path            : D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\gamedata_x1.drs
+    bytes=60071  LF=3046  CRLF=3046  lines(engine)=3046  final depth=0
+    last line       : ')\r'
+    LINE 3021 depth 1->1 : '\t(disable-self)\r'
+    rules=257  first=11  last=3041
+    lines with negative depth: none
+    --- lines 3009..3033 with running depth ---
+        3009 | d0->0 | ;     <resource> <amount>)": anib_60001 uses amounts from 100 to 10000, so the
+        3010 | d0->0 | ;     10000 below is a shipped value too).  Timer t-attackgroup is retail timer index 2:
+        3011 | d0->0 | ;     the constants file declares it and no death-match rule triggers it, so
+        3012 | d0->0 | ;     the countdown below is its only user.  The resources test is written as
+        3013 | d0->0 | ;     the two-child nested (or ...) that retail uses for exactly this check
+        3014 | d0->0 | ;     (lines 1511-1523 and 1533-1542) - a block with more than two children is
+        3015 | d0->0 | ;     what made v2 die with "ERR2011: Missing closing parenthesis".
+        3016 | d0->0 | ;------------------------------------------------------------------------------
+        3017 | d0->1 | (defrule
+        3018 | d1->1 | 	(true)
+        3019 | d1->1 | =>
+        3020 | d1->1 | 	(enable-timer t-attackgroup 10)
+        3021 | d1->1 | 	(disable-self)
+        3022 | d1->0 | )
+        3023 | d0->1 | (defrule
+        3024 | d1->1 | 	(timer-triggered t-attackgroup)
+        3025 | d1->2 | 	(or
+        3026 | d2->3 | 		(or
+        3027 | d3->3 | 			(wood-amount < 5000)
+        3028 | d3->3 | 			(food-amount < 5000)
+        3029 | d3->2 | 		)
+        3030 | d2->3 | 		(or
+        3031 | d3->3 | 			(gold-amount < 5000)
+        3032 | d3->3 | 			(stone-amount < 5000)
+        3033 | d3->2 | 		)
+
+============================================================================================
+=== RETAIL aok
+    path            : D:\aoe2_aoefix\backup_drs\gamedata.drs.orig
+    bytes=45718  LF=2444  CRLF=2444  lines(engine)=2444  final depth=0
+    last line       : '\r'
+    LINE 3021 -> FILE HAS ONLY 2444 LINES
+    rules=212  first=15  last=2436
+    lines with negative depth: none
+    --- lines 3009..3033 with running depth ---
+
+============================================================================================
+=== PATCHED aok (patch_out2)
+    path            : D:\aoe2_aoefix\patch_out2\aok_drs_anib_60002.bin
+    bytes=51587  LF=2607  CRLF=2607  lines(engine)=2607  final depth=0
+    last line       : ')\r'
+    LINE 3021 -> FILE HAS ONLY 2607 LINES
+    rules=226  first=15  last=2602
+    lines with negative depth: none
+    --- lines 3009..3033 with running depth ---
+
+============================================================================================
+=== LIVE aok (game Data)
+    path            : D:\新建文件夹 (10)\3DMGAME_Age_of_Empires_II_HD.CHS.Green\Age of Empires II HD\Data\gamedata.drs
+    bytes=51587  LF=2607  CRLF=2607  lines(engine)=2607  final depth=0
+    last line       : ')\r'
+    LINE 3021 -> FILE HAS ONLY 2607 LINES
+    rules=226  first=15  last=2602
+    lines with negative depth: none
+    --- lines 3009..3033 with running depth ---
