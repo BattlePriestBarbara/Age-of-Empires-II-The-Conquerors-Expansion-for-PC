@@ -6,8 +6,9 @@ It
 
   1. creates the target folder,
   2. copies every *.py / *.txt / *.md / *.cmd of the workspace root (tools,
-     evidence logs, documents) and - for a locally runnable chain - the game
-     data folders, which .gitignore keeps out of the repository,
+     evidence logs, documents) plus LICENSE, and - for a locally runnable
+     chain - the game data folders, which .gitignore keeps out of the
+     repository,
   3. makes the copied scripts portable:
         W    = r"D:\\aoe2_work" -> W = os.path.dirname(os.path.abspath(__file__))
         GAME = <hard path>      -> GAME = os.environ.get("AOE2HD_DIR") or <hard path>
@@ -24,6 +25,8 @@ SRC = r"D:\aoe2_work"
 DST = sys.argv[1] if len(sys.argv) > 1 else r"D:\aoe2_aoefix"
 
 COPY_EXT = (".py", ".txt", ".md", ".cmd")
+# extension-less files that still belong into the repository
+COPY_NAMES = ("LICENSE",)
 # game data: copied so the chain runs here, excluded from git
 DATA_DIRS = ("x1_drs", "aok_drs", "x1p1_drs", "backup_drs", "patched_drs",
              "patched_drs2", "patch_out", "patch_out2", "patched_scripts")
@@ -112,7 +115,7 @@ def main():
         if not os.path.isfile(path):
             continue
         ext = os.path.splitext(name)[1].lower()
-        if ext not in COPY_EXT:
+        if ext not in COPY_EXT and name not in COPY_NAMES:
             continue
         if name in MOVE_TO_DOCS:
             shutil.copy2(path, os.path.join(DST, "docs", MOVE_TO_DOCS[name]))
