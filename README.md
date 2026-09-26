@@ -243,3 +243,18 @@ v3 的修法是把同一个判断改成原作的双子节点嵌套（语义不�
 | v1 | 已废弃 | 追加 4 条规则 + 常量 catch-all；**catch-all 被证明是死代码**（500 被折成 `POPULATION-CAP-200`），已从游戏文件清除 |
 | v2 | 已废弃 | 重建为"原作规则去门槛"的 14 条规则；行为方向正确，但实测触发 `ERR2011 @ line 3021`（一个 `or` 带 4 个子节点） |
 | **v3** | **当前** | 把该规则改成原作的双子节点嵌套；新增两条形状硬校验；新增控制组回归（复现 3021）；修掉工具自身 3 个 bug |
+
+## 13. 上传到 GitHub（三步）
+
+这个文件夹已经是一个初始化好的 git 仓库（分支 `master`，首个提交 `c60aff6`，317 个文件 / 约 2.4 MB）。换台机器或换目录都能直接跑（脚本基于自身位置定位，游戏目录读 `AOE2HD_DIR`），所以**可以随意改名/搬位置**。
+
+```bat
+cd D:\aoe2_aoefix
+git remote add origin https://github.com/<你的用户名>/<仓库名>.git
+git branch -M main
+git push -u origin main
+```
+
+* `.gitignore` 已排除全部游戏数据（`*.drs`、`*.drs.orig`、`x1_drs\`、`aok_drs\`、`x1p1_drs\`、`backup_drs\`、`patched_drs*\`、`patch_out*\`、`patched_scripts\`）—— 推上去的只有脚本、日志与文档。
+* 如果连日志也不想入库：`git rm -r --cached *_out.txt *_report.txt *_console.txt`，并在 `.gitignore` 里加 `*_out.txt` 等规则。
+* 仓库里没有任何版权资源（没有 `*.drs`、没有 `AoK HD.exe`、没有解包出的游戏脚本），可以放心公开；但请保留 §11 的免责说明。
